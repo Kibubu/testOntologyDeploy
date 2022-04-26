@@ -8,7 +8,7 @@
 
 <http://w3id.org/steel/ProcessOntology/ConceptA> <http://www.w3.org/2000/01/rdf-schema#comment> "ConceptA Description EN" .
 
-<http://w3id.org/steel/ProcessOntology/ConceptA> <http://www.w3.org/2000/01/rdf-schema#label> "ConceptA Label EN" .
+<http://w3id.org/steel/ProcessOntology/ConceptA> <http://www.w3.org/2000/01/rdf-schema#label> "ConceptA Label DE" .
 
 <http://w3id.org/steel/ProcessOntology/ConceptA> <http://www.w3.org/2000/01/rdf-schema#label> "ConceptA Label EN" .
 
@@ -16,7 +16,7 @@
 
 <http://w3id.org/steel/ProcessOntology/ConceptA> <http://www.w3.org/2004/02/skos/core#altlabel> "ConceptA Synonym EN" .
 
-<http://w3id.org/steel/ProcessOntology/ConceptA> <http://www.w3.org/2004/02/skos/core#preflabel> "ConceptA Label EN" .
+<http://w3id.org/steel/ProcessOntology/ConceptA> <http://www.w3.org/2004/02/skos/core#preflabel> "ConceptA Label DE" .
 
 <http://w3id.org/steel/ProcessOntology/ConceptA> <http://www.w3.org/2004/02/skos/core#preflabel> "ConceptA Label EN" .
 

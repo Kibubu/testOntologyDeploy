@@ -12,7 +12,7 @@
 
 <http://w3id.org/steel/ProcessOntology/ConceptC> <http://www.w3.org/2000/01/rdf-schema#label> "ConceptC Label EN" .
 
-<http://w3id.org/steel/ProcessOntology/ConceptC> <http://www.w3.org/2004/02/skos/core#altlabel> "ConceptC Synonym DE" .
+<http://w3id.org/steel/ProcessOntology/ConceptC> <http://www.w3.org/2004/02/skos/core#altlabel> "ConceptC Synonym EN" .
 
 <http://w3id.org/steel/ProcessOntology/ConceptC> <http://www.w3.org/2004/02/skos/core#altlabel> "ConceptC Synonym EN" .
 

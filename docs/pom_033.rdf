@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/pom_033">
+    <rdf:type rdf:resource="http://www.w3.org/ns/r2rml#PredicateObjectMap"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/pom_033">
+    <ns0:objectMap xmlns:ns0="http://www.w3.org/ns/r2rml#" rdf:resource="https://w3id.org/steel/ProcessOntology/om_036"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/pom_033">
+    <ns0:predicateMap xmlns:ns0="http://www.w3.org/ns/r2rml#" rdf:resource="https://w3id.org/steel/ProcessOntology/pm_039"/>
+  </rdf:Description>
+</rdf:RDF>

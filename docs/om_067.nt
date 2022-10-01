@@ -1,0 +1,4 @@
+<https://w3id.org/steel/ProcessOntology/om_067> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/r2rml#ObjectMap> .
+<https://w3id.org/steel/ProcessOntology/om_067> <http://semweb.mmlab.be/ns/rml#languageMap> <https://w3id.org/steel/ProcessOntology/language_025> .
+<https://w3id.org/steel/ProcessOntology/om_067> <http://semweb.mmlab.be/ns/rml#reference> "Ontological-Concept-ID" .
+<https://w3id.org/steel/ProcessOntology/om_067> <http://www.w3.org/ns/r2rml#termType> <http://www.w3.org/ns/r2rml#Literal> .

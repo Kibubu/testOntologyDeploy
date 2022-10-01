@@ -1,0 +1,4 @@
+<https://w3id.org/steel/ProcessOntology/fn_004> <http://semweb.mmlab.be/ns/rml#logicalSource> <https://w3id.org/steel/ProcessOntology/source_002> .
+<https://w3id.org/steel/ProcessOntology/fn_004> <http://www.w3.org/ns/r2rml#predicateObjectMap> <https://w3id.org/steel/ProcessOntology/pom_032> .
+<https://w3id.org/steel/ProcessOntology/fn_004> <http://www.w3.org/ns/r2rml#predicateObjectMap> <https://w3id.org/steel/ProcessOntology/pom_031> .
+<https://w3id.org/steel/ProcessOntology/fn_004> <http://www.w3.org/ns/r2rml#predicateObjectMap> <https://w3id.org/steel/ProcessOntology/pomexec_004> .

@@ -1,0 +1,7 @@
+
+
+<https://w3id.org/steel/ProcessOntology/om_072> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semweb.mmlab.be/ns/fnml#FunctionTermMap> .
+<https://w3id.org/steel/ProcessOntology/om_072> <http://semweb.mmlab.be/ns/fnml#functionValue> <https://w3id.org/steel/ProcessOntology/fn_010> .
+<https://w3id.org/steel/ProcessOntology/om_072> <http://www.w3.org/ns/r2rml#termType> <http://www.w3.org/ns/r2rml#IRI> .
+
+

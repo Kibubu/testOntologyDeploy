@@ -1,0 +1,3 @@
+<https://w3id.org/steel/ProcessOntology/source_004> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semweb.mmlab.be/ns/rml#LogicalSource> .
+<https://w3id.org/steel/ProcessOntology/source_004> <http://semweb.mmlab.be/ns/rml#referenceFormulation> <http://semweb.mmlab.be/ns/ql#CSV> .
+<https://w3id.org/steel/ProcessOntology/source_004> <http://semweb.mmlab.be/ns/rml#source> "csv/Zugversuch ZwickRoell.csv" .

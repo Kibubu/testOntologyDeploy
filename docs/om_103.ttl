@@ -1,7 +1,0 @@
-
-
-<https://w3id.org/steel/ProcessOntology/om_103> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/r2rml#ObjectMap> .
-<https://w3id.org/steel/ProcessOntology/om_103> <http://www.w3.org/ns/r2rml#constant> ";" .
-<https://w3id.org/steel/ProcessOntology/om_103> <http://www.w3.org/ns/r2rml#termType> <http://www.w3.org/ns/r2rml#Literal> .
-
-

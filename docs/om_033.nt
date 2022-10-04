@@ -1,3 +1,0 @@
-<https://w3id.org/steel/ProcessOntology/om_033> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://semweb.mmlab.be/ns/fnml#FunctionTermMap> .
-<https://w3id.org/steel/ProcessOntology/om_033> <http://semweb.mmlab.be/ns/fnml#functionValue> <https://w3id.org/steel/ProcessOntology/fn_004> .
-<https://w3id.org/steel/ProcessOntology/om_033> <http://www.w3.org/ns/r2rml#termType> <http://www.w3.org/ns/r2rml#IRI> .

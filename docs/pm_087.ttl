@@ -1,6 +1,0 @@
-
-
-<https://w3id.org/steel/ProcessOntology/pm_087> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/r2rml#PredicateMap> .
-<https://w3id.org/steel/ProcessOntology/pm_087> <http://www.w3.org/ns/r2rml#constant> <http://www.w3.org/2004/02/skos/core#altlabel> .
-
-

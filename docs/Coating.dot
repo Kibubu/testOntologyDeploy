@@ -1,0 +1,24 @@
+digraph {
+	rankdir = LR;
+	charset="utf-8";
+
+	"Rhttps://w3id.org/steel/ProcessOntology/Coating" -> "Rhttp://www.w3.org/2002/07/owl#Class" [ label="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/Coating" -> "LThing that you put on the surface of a specimen that influences the surface behaviour|Language: en" [ label="http://www.w3.org/2000/01/rdf-schema#comment" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/Coating" -> "LCoating|Language: en" [ label="http://www.w3.org/2000/01/rdf-schema#label" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/Coating" -> "LBeschichtung|Language: de" [ label="http://www.w3.org/2000/01/rdf-schema#label" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/Coating" -> "LCoating|Language: en" [ label="http://www.w3.org/2004/02/skos/core#preflabel" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/Coating" -> "LBeschichtung|Language: de" [ label="http://www.w3.org/2004/02/skos/core#preflabel" ];
+
+	// Resources
+	"Rhttps://w3id.org/steel/ProcessOntology/Coating" [ label="https://w3id.org/steel/ProcessOntology/Coating", shape = ellipse, color = blue ];
+	"Rhttp://www.w3.org/2002/07/owl#Class" [ label="http://www.w3.org/2002/07/owl#Class", shape = ellipse, color = blue ];
+
+	// Anonymous nodes
+
+	// Literals
+	"LThing that you put on the surface of a specimen that influences the surface behaviour|Language: en" [ label="Thing that you put on the surface of a specimen that influences the surface behaviour|Language: en", shape = record ];
+	"LCoating|Language: en" [ label="Coating|Language: en", shape = record ];
+	"LBeschichtung|Language: de" [ label="Beschichtung|Language: de", shape = record ];
+
+	label="\n\nModel:\n(Unknown)";
+}

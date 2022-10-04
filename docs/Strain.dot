@@ -1,0 +1,28 @@
+digraph {
+	rankdir = LR;
+	charset="utf-8";
+
+	"Rhttps://w3id.org/steel/ProcessOntology/Strain" -> "Rhttp://www.w3.org/2004/02/skos/core#Concept" [ label="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/Strain" -> "Rhttp://www.w3.org/2002/07/owl#Class" [ label="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/Strain" -> "Ltechnische Dehnung bezogen auf die Extensometermesslänge|Language: de" [ label="http://www.w3.org/2000/01/rdf-schema#comment" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/Strain" -> "LStrain|Language: en" [ label="http://www.w3.org/2000/01/rdf-schema#label" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/Strain" -> "LDehnung|Language: de" [ label="http://www.w3.org/2000/01/rdf-schema#label" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/Strain" -> "Lpercentage extension “strain”|Language: en" [ label="http://www.w3.org/2004/02/skos/core#altlabel" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/Strain" -> "LStrain|Language: en" [ label="http://www.w3.org/2004/02/skos/core#preflabel" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/Strain" -> "LDehnung|Language: de" [ label="http://www.w3.org/2004/02/skos/core#preflabel" ];
+
+	// Resources
+	"Rhttps://w3id.org/steel/ProcessOntology/Strain" [ label="https://w3id.org/steel/ProcessOntology/Strain", shape = ellipse, color = blue ];
+	"Rhttp://www.w3.org/2004/02/skos/core#Concept" [ label="http://www.w3.org/2004/02/skos/core#Concept", shape = ellipse, color = blue ];
+	"Rhttp://www.w3.org/2002/07/owl#Class" [ label="http://www.w3.org/2002/07/owl#Class", shape = ellipse, color = blue ];
+
+	// Anonymous nodes
+
+	// Literals
+	"Ltechnische Dehnung bezogen auf die Extensometermesslänge|Language: de" [ label="technische Dehnung bezogen auf die Extensometermesslänge|Language: de", shape = record ];
+	"LStrain|Language: en" [ label="Strain|Language: en", shape = record ];
+	"LDehnung|Language: de" [ label="Dehnung|Language: de", shape = record ];
+	"Lpercentage extension “strain”|Language: en" [ label="percentage extension “strain”|Language: en", shape = record ];
+
+	label="\n\nModel:\n(Unknown)";
+}

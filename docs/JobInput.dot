@@ -1,0 +1,21 @@
+digraph {
+	rankdir = LR;
+	charset="utf-8";
+
+	"Rhttps://w3id.org/steel/ProcessOntology/JobInput" -> "Rhttp://www.w3.org/2002/07/owl#Class" [ label="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/JobInput" -> "Lthe input parameter for a pyiron job|Language: en" [ label="http://www.w3.org/2000/01/rdf-schema#comment" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/JobInput" -> "LPyiron job input|Language: en" [ label="http://www.w3.org/2000/01/rdf-schema#label" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/JobInput" -> "LPyiron job input|Language: en" [ label="http://www.w3.org/2004/02/skos/core#preflabel" ];
+
+	// Resources
+	"Rhttps://w3id.org/steel/ProcessOntology/JobInput" [ label="https://w3id.org/steel/ProcessOntology/JobInput", shape = ellipse, color = blue ];
+	"Rhttp://www.w3.org/2002/07/owl#Class" [ label="http://www.w3.org/2002/07/owl#Class", shape = ellipse, color = blue ];
+
+	// Anonymous nodes
+
+	// Literals
+	"Lthe input parameter for a pyiron job|Language: en" [ label="the input parameter for a pyiron job|Language: en", shape = record ];
+	"LPyiron job input|Language: en" [ label="Pyiron job input|Language: en", shape = record ];
+
+	label="\n\nModel:\n(Unknown)";
+}

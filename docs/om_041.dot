@@ -1,0 +1,22 @@
+digraph {
+	rankdir = LR;
+	charset="utf-8";
+
+	"Rhttps://w3id.org/steel/ProcessOntology/om_041" -> "Rhttp://www.w3.org/ns/r2rml#ObjectMap" [ label="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/om_041" -> "Rhttps://w3id.org/steel/ProcessOntology/language_015" [ label="http://semweb.mmlab.be/ns/rml#languageMap" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/om_041" -> "LOntological-Concept-ID" [ label="http://semweb.mmlab.be/ns/rml#reference" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/om_041" -> "Rhttp://www.w3.org/ns/r2rml#Literal" [ label="http://www.w3.org/ns/r2rml#termType" ];
+
+	// Resources
+	"Rhttps://w3id.org/steel/ProcessOntology/om_041" [ label="https://w3id.org/steel/ProcessOntology/om_041", shape = ellipse, color = blue ];
+	"Rhttp://www.w3.org/ns/r2rml#ObjectMap" [ label="http://www.w3.org/ns/r2rml#ObjectMap", shape = ellipse, color = blue ];
+	"Rhttps://w3id.org/steel/ProcessOntology/language_015" [ label="https://w3id.org/steel/ProcessOntology/language_015", shape = ellipse, color = blue ];
+	"Rhttp://www.w3.org/ns/r2rml#Literal" [ label="http://www.w3.org/ns/r2rml#Literal", shape = ellipse, color = blue ];
+
+	// Anonymous nodes
+
+	// Literals
+	"LOntological-Concept-ID" [ label="Ontological-Concept-ID", shape = record ];
+
+	label="\n\nModel:\n(Unknown)";
+}

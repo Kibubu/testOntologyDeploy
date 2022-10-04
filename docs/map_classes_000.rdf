@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/map_classes_000">
+    <rdf:type rdf:resource="http://www.w3.org/ns/r2rml#TriplesMap"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/map_classes_000">
+    <ns0:label xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#">classes</ns0:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/map_classes_000">
+    <ns0:logicalSource xmlns:ns0="http://semweb.mmlab.be/ns/rml#" rdf:resource="https://w3id.org/steel/ProcessOntology/source_000"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/map_classes_000">
+    <ns0:predicateObjectMap xmlns:ns0="http://www.w3.org/ns/r2rml#" rdf:resource="https://w3id.org/steel/ProcessOntology/pom_006"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/map_classes_000">
+    <ns0:predicateObjectMap xmlns:ns0="http://www.w3.org/ns/r2rml#" rdf:resource="https://w3id.org/steel/ProcessOntology/pom_009"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/map_classes_000">
+    <ns0:predicateObjectMap xmlns:ns0="http://www.w3.org/ns/r2rml#" rdf:resource="https://w3id.org/steel/ProcessOntology/pom_003"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/map_classes_000">
+    <ns0:predicateObjectMap xmlns:ns0="http://www.w3.org/ns/r2rml#" rdf:resource="https://w3id.org/steel/ProcessOntology/pom_002"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/map_classes_000">
+    <ns0:predicateObjectMap xmlns:ns0="http://www.w3.org/ns/r2rml#" rdf:resource="https://w3id.org/steel/ProcessOntology/pom_001"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/map_classes_000">
+    <ns0:predicateObjectMap xmlns:ns0="http://www.w3.org/ns/r2rml#" rdf:resource="https://w3id.org/steel/ProcessOntology/pom_005"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/map_classes_000">
+    <ns0:predicateObjectMap xmlns:ns0="http://www.w3.org/ns/r2rml#" rdf:resource="https://w3id.org/steel/ProcessOntology/pom_000"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/map_classes_000">
+    <ns0:predicateObjectMap xmlns:ns0="http://www.w3.org/ns/r2rml#" rdf:resource="https://w3id.org/steel/ProcessOntology/pom_004"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/map_classes_000">
+    <ns0:subjectMap xmlns:ns0="http://www.w3.org/ns/r2rml#" rdf:resource="https://w3id.org/steel/ProcessOntology/s_000"/>
+  </rdf:Description>
+</rdf:RDF>

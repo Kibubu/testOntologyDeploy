@@ -1,0 +1,22 @@
+digraph {
+	rankdir = LR;
+	charset="utf-8";
+
+	"Rhttps://w3id.org/steel/ProcessOntology/Elasticity" -> "Rhttp://www.w3.org/2002/07/owl#Class" [ label="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/Elasticity" -> "LElasticity|Language: en" [ label="http://www.w3.org/2000/01/rdf-schema#label" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/Elasticity" -> "LDehnbarkeit|Language: de" [ label="http://www.w3.org/2000/01/rdf-schema#label" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/Elasticity" -> "LElasticity|Language: en" [ label="http://www.w3.org/2004/02/skos/core#preflabel" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/Elasticity" -> "LDehnbarkeit|Language: de" [ label="http://www.w3.org/2004/02/skos/core#preflabel" ];
+
+	// Resources
+	"Rhttps://w3id.org/steel/ProcessOntology/Elasticity" [ label="https://w3id.org/steel/ProcessOntology/Elasticity", shape = ellipse, color = blue ];
+	"Rhttp://www.w3.org/2002/07/owl#Class" [ label="http://www.w3.org/2002/07/owl#Class", shape = ellipse, color = blue ];
+
+	// Anonymous nodes
+
+	// Literals
+	"LElasticity|Language: en" [ label="Elasticity|Language: en", shape = record ];
+	"LDehnbarkeit|Language: de" [ label="Dehnbarkeit|Language: de", shape = record ];
+
+	label="\n\nModel:\n(Unknown)";
+}

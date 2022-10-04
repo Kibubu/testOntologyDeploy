@@ -1,0 +1,20 @@
+digraph {
+	rankdir = LR;
+	charset="utf-8";
+
+	"Rhttps://w3id.org/steel/ProcessOntology/pom_041" -> "Rhttp://www.w3.org/ns/r2rml#PredicateObjectMap" [ label="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/pom_041" -> "Rhttps://w3id.org/steel/ProcessOntology/om_045" [ label="http://www.w3.org/ns/r2rml#objectMap" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/pom_041" -> "Rhttps://w3id.org/steel/ProcessOntology/pm_048" [ label="http://www.w3.org/ns/r2rml#predicateMap" ];
+
+	// Resources
+	"Rhttps://w3id.org/steel/ProcessOntology/pom_041" [ label="https://w3id.org/steel/ProcessOntology/pom_041", shape = ellipse, color = blue ];
+	"Rhttp://www.w3.org/ns/r2rml#PredicateObjectMap" [ label="http://www.w3.org/ns/r2rml#PredicateObjectMap", shape = ellipse, color = blue ];
+	"Rhttps://w3id.org/steel/ProcessOntology/om_045" [ label="https://w3id.org/steel/ProcessOntology/om_045", shape = ellipse, color = blue ];
+	"Rhttps://w3id.org/steel/ProcessOntology/pm_048" [ label="https://w3id.org/steel/ProcessOntology/pm_048", shape = ellipse, color = blue ];
+
+	// Anonymous nodes
+
+	// Literals
+
+	label="\n\nModel:\n(Unknown)";
+}

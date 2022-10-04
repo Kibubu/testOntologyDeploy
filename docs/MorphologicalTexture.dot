@@ -1,0 +1,22 @@
+digraph {
+	rankdir = LR;
+	charset="utf-8";
+
+	"Rhttps://w3id.org/steel/ProcessOntology/MorphologicalTexture" -> "Rhttp://www.w3.org/2002/07/owl#Class" [ label="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/MorphologicalTexture" -> "LMorphologische Beschaffenheit|Language: de" [ label="http://www.w3.org/2000/01/rdf-schema#label" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/MorphologicalTexture" -> "LMorphological Texture|Language: en" [ label="http://www.w3.org/2000/01/rdf-schema#label" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/MorphologicalTexture" -> "LMorphologische Beschaffenheit|Language: de" [ label="http://www.w3.org/2004/02/skos/core#preflabel" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/MorphologicalTexture" -> "LMorphological Texture|Language: en" [ label="http://www.w3.org/2004/02/skos/core#preflabel" ];
+
+	// Resources
+	"Rhttps://w3id.org/steel/ProcessOntology/MorphologicalTexture" [ label="https://w3id.org/steel/ProcessOntology/MorphologicalTexture", shape = ellipse, color = blue ];
+	"Rhttp://www.w3.org/2002/07/owl#Class" [ label="http://www.w3.org/2002/07/owl#Class", shape = ellipse, color = blue ];
+
+	// Anonymous nodes
+
+	// Literals
+	"LMorphologische Beschaffenheit|Language: de" [ label="Morphologische Beschaffenheit|Language: de", shape = record ];
+	"LMorphological Texture|Language: en" [ label="Morphological Texture|Language: en", shape = record ];
+
+	label="\n\nModel:\n(Unknown)";
+}

@@ -1,0 +1,25 @@
+digraph {
+	rankdir = LR;
+	charset="utf-8";
+
+	"Rhttps://w3id.org/steel/ProcessOntology/jobStartTime" -> "Rhttp://www.w3.org/2002/07/owl#DatatypeProperty" [ label="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/jobStartTime" -> "Rhttps://w3id.org/steel/ProcessOntology/Job" [ label="http://www.w3.org/2000/01/rdf-schema#domain" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/jobStartTime" -> "Lstart time|Language: en" [ label="http://www.w3.org/2000/01/rdf-schema#label" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/jobStartTime" -> "Rhttp://www.w3.org/2001/XMLSchema#dateTime" [ label="http://www.w3.org/2000/01/rdf-schema#range" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/jobStartTime" -> "Ltime and date when the execution of a job instance was started|Language: en" [ label="http://purl.org/dc/elements/1.1/description" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/jobStartTime" -> "Lstart time|Language: en" [ label="http://www.w3.org/2004/02/skos/core#preflabel" ];
+
+	// Resources
+	"Rhttps://w3id.org/steel/ProcessOntology/jobStartTime" [ label="https://w3id.org/steel/ProcessOntology/jobStartTime", shape = ellipse, color = blue ];
+	"Rhttp://www.w3.org/2002/07/owl#DatatypeProperty" [ label="http://www.w3.org/2002/07/owl#DatatypeProperty", shape = ellipse, color = blue ];
+	"Rhttps://w3id.org/steel/ProcessOntology/Job" [ label="https://w3id.org/steel/ProcessOntology/Job", shape = ellipse, color = blue ];
+	"Rhttp://www.w3.org/2001/XMLSchema#dateTime" [ label="http://www.w3.org/2001/XMLSchema#dateTime", shape = ellipse, color = blue ];
+
+	// Anonymous nodes
+
+	// Literals
+	"Lstart time|Language: en" [ label="start time|Language: en", shape = record ];
+	"Ltime and date when the execution of a job instance was started|Language: en" [ label="time and date when the execution of a job instance was started|Language: en", shape = record ];
+
+	label="\n\nModel:\n(Unknown)";
+}

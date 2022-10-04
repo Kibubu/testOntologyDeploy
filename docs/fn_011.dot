@@ -1,0 +1,22 @@
+digraph {
+	rankdir = LR;
+	charset="utf-8";
+
+	"Rhttps://w3id.org/steel/ProcessOntology/fn_011" -> "Rhttps://w3id.org/steel/ProcessOntology/source_005" [ label="http://semweb.mmlab.be/ns/rml#logicalSource" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/fn_011" -> "Rhttps://w3id.org/steel/ProcessOntology/pom_071" [ label="http://www.w3.org/ns/r2rml#predicateObjectMap" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/fn_011" -> "Rhttps://w3id.org/steel/ProcessOntology/pom_070" [ label="http://www.w3.org/ns/r2rml#predicateObjectMap" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/fn_011" -> "Rhttps://w3id.org/steel/ProcessOntology/pomexec_011" [ label="http://www.w3.org/ns/r2rml#predicateObjectMap" ];
+
+	// Resources
+	"Rhttps://w3id.org/steel/ProcessOntology/fn_011" [ label="https://w3id.org/steel/ProcessOntology/fn_011", shape = ellipse, color = blue ];
+	"Rhttps://w3id.org/steel/ProcessOntology/source_005" [ label="https://w3id.org/steel/ProcessOntology/source_005", shape = ellipse, color = blue ];
+	"Rhttps://w3id.org/steel/ProcessOntology/pom_071" [ label="https://w3id.org/steel/ProcessOntology/pom_071", shape = ellipse, color = blue ];
+	"Rhttps://w3id.org/steel/ProcessOntology/pom_070" [ label="https://w3id.org/steel/ProcessOntology/pom_070", shape = ellipse, color = blue ];
+	"Rhttps://w3id.org/steel/ProcessOntology/pomexec_011" [ label="https://w3id.org/steel/ProcessOntology/pomexec_011", shape = ellipse, color = blue ];
+
+	// Anonymous nodes
+
+	// Literals
+
+	label="\n\nModel:\n(Unknown)";
+}

@@ -1,0 +1,28 @@
+digraph {
+	rankdir = LR;
+	charset="utf-8";
+
+	"Rhttps://w3id.org/steel/ProcessOntology/Remark" -> "Rhttp://www.w3.org/2004/02/skos/core#Concept" [ label="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/Remark" -> "Rhttp://www.w3.org/2002/07/owl#Class" [ label="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/Remark" -> "LA specific comment about the experiment.|Language: en" [ label="http://www.w3.org/2000/01/rdf-schema#comment" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/Remark" -> "LRemark|Language: en" [ label="http://www.w3.org/2000/01/rdf-schema#label" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/Remark" -> "LRemark|Language: en" [ label="http://www.w3.org/2004/02/skos/core#altlabel" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/Remark" -> "LBemerkungen|Language: de" [ label="http://www.w3.org/2004/02/skos/core#altlabel" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/Remark" -> "LBemerkung|Language: de" [ label="http://www.w3.org/2004/02/skos/core#altlabel" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/Remark" -> "LRemark|Language: en" [ label="http://www.w3.org/2004/02/skos/core#preflabel" ];
+
+	// Resources
+	"Rhttps://w3id.org/steel/ProcessOntology/Remark" [ label="https://w3id.org/steel/ProcessOntology/Remark", shape = ellipse, color = blue ];
+	"Rhttp://www.w3.org/2004/02/skos/core#Concept" [ label="http://www.w3.org/2004/02/skos/core#Concept", shape = ellipse, color = blue ];
+	"Rhttp://www.w3.org/2002/07/owl#Class" [ label="http://www.w3.org/2002/07/owl#Class", shape = ellipse, color = blue ];
+
+	// Anonymous nodes
+
+	// Literals
+	"LA specific comment about the experiment.|Language: en" [ label="A specific comment about the experiment.|Language: en", shape = record ];
+	"LRemark|Language: en" [ label="Remark|Language: en", shape = record ];
+	"LBemerkungen|Language: de" [ label="Bemerkungen|Language: de", shape = record ];
+	"LBemerkung|Language: de" [ label="Bemerkung|Language: de", shape = record ];
+
+	label="\n\nModel:\n(Unknown)";
+}

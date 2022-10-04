@@ -1,0 +1,39 @@
+digraph {
+	rankdir = LR;
+	charset="utf-8";
+
+	"Rhttps://w3id.org/steel/ProcessOntology/ParallelLength" -> "Rhttp://www.w3.org/2004/02/skos/core#Concept" [ label="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/ParallelLength" -> "Rhttp://www.w3.org/2002/07/owl#Class" [ label="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/ParallelLength" -> "LThe length of the experiment (description replaced by Zugversuch Instron)|Language: en" [ label="http://www.w3.org/2000/01/rdf-schema#comment" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/ParallelLength" -> "LLänge des parallelen reduzierten Querschnitts der Probe|Language: de" [ label="http://www.w3.org/2000/01/rdf-schema#comment" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/ParallelLength" -> "LThe length of the parallel part of the specimen|Language: en" [ label="http://www.w3.org/2000/01/rdf-schema#comment" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/ParallelLength" -> "LParallelLength|Language: en" [ label="http://www.w3.org/2000/01/rdf-schema#label" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/ParallelLength" -> "Lparallel length|Language: en" [ label="http://www.w3.org/2004/02/skos/core#altlabel" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/ParallelLength" -> "Lparallele Messlänge Lc|Language: de" [ label="http://www.w3.org/2004/02/skos/core#altlabel" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/ParallelLength" -> "LTest length|Language: en" [ label="http://www.w3.org/2004/02/skos/core#altlabel" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/ParallelLength" -> "LMesslänge Lc|Language: de" [ label="http://www.w3.org/2004/02/skos/core#altlabel" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/ParallelLength" -> "LParallel length|Language: en" [ label="http://www.w3.org/2004/02/skos/core#altlabel" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/ParallelLength" -> "LVersuchslänge|Language: de" [ label="http://www.w3.org/2004/02/skos/core#altlabel" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/ParallelLength" -> "LParallelLength|Language: en" [ label="http://www.w3.org/2004/02/skos/core#preflabel" ];
+
+	// Resources
+	"Rhttps://w3id.org/steel/ProcessOntology/ParallelLength" [ label="https://w3id.org/steel/ProcessOntology/ParallelLength", shape = ellipse, color = blue ];
+	"Rhttp://www.w3.org/2004/02/skos/core#Concept" [ label="http://www.w3.org/2004/02/skos/core#Concept", shape = ellipse, color = blue ];
+	"Rhttp://www.w3.org/2002/07/owl#Class" [ label="http://www.w3.org/2002/07/owl#Class", shape = ellipse, color = blue ];
+
+	// Anonymous nodes
+
+	// Literals
+	"LThe length of the experiment (description replaced by Zugversuch Instron)|Language: en" [ label="The length of the experiment (description replaced by Zugversuch Instron)|Language: en", shape = record ];
+	"LLänge des parallelen reduzierten Querschnitts der Probe|Language: de" [ label="Länge des parallelen reduzierten Querschnitts der Probe|Language: de", shape = record ];
+	"LThe length of the parallel part of the specimen|Language: en" [ label="The length of the parallel part of the specimen|Language: en", shape = record ];
+	"LParallelLength|Language: en" [ label="ParallelLength|Language: en", shape = record ];
+	"Lparallel length|Language: en" [ label="parallel length|Language: en", shape = record ];
+	"Lparallele Messlänge Lc|Language: de" [ label="parallele Messlänge Lc|Language: de", shape = record ];
+	"LTest length|Language: en" [ label="Test length|Language: en", shape = record ];
+	"LMesslänge Lc|Language: de" [ label="Messlänge Lc|Language: de", shape = record ];
+	"LParallel length|Language: en" [ label="Parallel length|Language: en", shape = record ];
+	"LVersuchslänge|Language: de" [ label="Versuchslänge|Language: de", shape = record ];
+
+	label="\n\nModel:\n(Unknown)";
+}

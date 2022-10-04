@@ -1,0 +1,34 @@
+digraph {
+	rankdir = LR;
+	charset="utf-8";
+
+	"Rhttps://w3id.org/steel/ProcessOntology/PreliminaryForce" -> "Rhttp://www.w3.org/2002/07/owl#Class" [ label="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/PreliminaryForce" -> "Rhttp://www.w3.org/2004/02/skos/core#Concept" [ label="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/PreliminaryForce" -> "LUm ein Ausrichten der Probe in der Einspannvorrichtung zu erreichen, darf eine Vorkraft aufgebracht werden, die 5 % des spezifizierten oder zu erwartenden Streckgrenzenwertes nicht überschreitet. Eine Korrektur der Dehnung sollte unter Berücksichtigung der Vorkraft vorgenommen werden.|Language: de" [ label="http://www.w3.org/2000/01/rdf-schema#comment" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/PreliminaryForce" -> "L\"Vorkraft\" in DIN EN ISO 6892-1|Language: en" [ label="http://www.w3.org/2000/01/rdf-schema#comment" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/PreliminaryForce" -> "LPreliminaryForce|Language: en" [ label="http://www.w3.org/2000/01/rdf-schema#label" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/PreliminaryForce" -> "LVorlast|Language: de" [ label="http://www.w3.org/2004/02/skos/core#altlabel" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/PreliminaryForce" -> "LPreliminary force|Language: en" [ label="http://www.w3.org/2004/02/skos/core#altlabel" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/PreliminaryForce" -> "LPreliminaryForce|Language: en" [ label="http://www.w3.org/2004/02/skos/core#altlabel" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/PreliminaryForce" -> "LPreload|Language: en" [ label="http://www.w3.org/2004/02/skos/core#altlabel" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/PreliminaryForce" -> "LVorkraft|Language: de" [ label="http://www.w3.org/2004/02/skos/core#altlabel" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/PreliminaryForce" -> "LPreliminaryForce|Language: en" [ label="http://www.w3.org/2004/02/skos/core#preflabel" ];
+
+	// Resources
+	"Rhttps://w3id.org/steel/ProcessOntology/PreliminaryForce" [ label="https://w3id.org/steel/ProcessOntology/PreliminaryForce", shape = ellipse, color = blue ];
+	"Rhttp://www.w3.org/2002/07/owl#Class" [ label="http://www.w3.org/2002/07/owl#Class", shape = ellipse, color = blue ];
+	"Rhttp://www.w3.org/2004/02/skos/core#Concept" [ label="http://www.w3.org/2004/02/skos/core#Concept", shape = ellipse, color = blue ];
+
+	// Anonymous nodes
+
+	// Literals
+	"LUm ein Ausrichten der Probe in der Einspannvorrichtung zu erreichen, darf eine Vorkraft aufgebracht werden, die 5 % des spezifizierten oder zu erwartenden Streckgrenzenwertes nicht überschreitet. Eine Korrektur der Dehnung sollte unter Berücksichtigung der Vorkraft vorgenommen werden.|Language: de" [ label="Um ein Ausrichten der Probe in der Einspannvorrichtung zu erreichen, darf eine Vorkraft aufgebracht werden, die 5 % des spezifizierten oder zu erwartenden Streckgrenzenwertes nicht überschreitet. Eine Korrektur der Dehnung sollte unter Berücksichtigung der Vorkraft vorgenommen werden.|Language: de", shape = record ];
+	"L\"Vorkraft\" in DIN EN ISO 6892-1|Language: en" [ label="\"Vorkraft\" in DIN EN ISO 6892-1|Language: en", shape = record ];
+	"LPreliminaryForce|Language: en" [ label="PreliminaryForce|Language: en", shape = record ];
+	"LVorlast|Language: de" [ label="Vorlast|Language: de", shape = record ];
+	"LPreliminary force|Language: en" [ label="Preliminary force|Language: en", shape = record ];
+	"LPreload|Language: en" [ label="Preload|Language: en", shape = record ];
+	"LVorkraft|Language: de" [ label="Vorkraft|Language: de", shape = record ];
+
+	label="\n\nModel:\n(Unknown)";
+}

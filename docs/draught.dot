@@ -1,0 +1,26 @@
+digraph {
+	rankdir = LR;
+	charset="utf-8";
+
+	"Rhttps://w3id.org/steel/ProcessOntology/draught" -> "Rhttp://www.w3.org/2002/07/owl#Class" [ label="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/draught" -> "Ldraught|Language: en" [ label="http://www.w3.org/2000/01/rdf-schema#label" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/draught" -> "LHöhenabnahme pro Stich|Language: de" [ label="http://www.w3.org/2000/01/rdf-schema#label" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/draught" -> "Lheight reduction|Language: en" [ label="http://www.w3.org/2004/02/skos/core#altlabel" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/draught" -> "LStichabnahme|Language: de" [ label="http://www.w3.org/2004/02/skos/core#altlabel" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/draught" -> "Ldraught|Language: en" [ label="http://www.w3.org/2004/02/skos/core#preflabel" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/draught" -> "LHöhenabnahme pro Stich|Language: de" [ label="http://www.w3.org/2004/02/skos/core#preflabel" ];
+
+	// Resources
+	"Rhttps://w3id.org/steel/ProcessOntology/draught" [ label="https://w3id.org/steel/ProcessOntology/draught", shape = ellipse, color = blue ];
+	"Rhttp://www.w3.org/2002/07/owl#Class" [ label="http://www.w3.org/2002/07/owl#Class", shape = ellipse, color = blue ];
+
+	// Anonymous nodes
+
+	// Literals
+	"Ldraught|Language: en" [ label="draught|Language: en", shape = record ];
+	"LHöhenabnahme pro Stich|Language: de" [ label="Höhenabnahme pro Stich|Language: de", shape = record ];
+	"Lheight reduction|Language: en" [ label="height reduction|Language: en", shape = record ];
+	"LStichabnahme|Language: de" [ label="Stichabnahme|Language: de", shape = record ];
+
+	label="\n\nModel:\n(Unknown)";
+}

@@ -1,0 +1,25 @@
+digraph {
+	rankdir = LR;
+	charset="utf-8";
+
+	"Rhttps://w3id.org/steel/ProcessOntology/PercentagePermanentElongation" -> "Rhttp://www.w3.org/2004/02/skos/core#Concept" [ label="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/PercentagePermanentElongation" -> "Rhttp://www.w3.org/2002/07/owl#Class" [ label="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/PercentagePermanentElongation" -> "LZunahme der Anfangsmesslänge (3.1.1) einer Probe nach Entfernen einer festgelegten Zugspannung, angegeben in Prozent, bezogen auf die Anfangsmesslänge (3.1.1)|Language: de" [ label="http://www.w3.org/2000/01/rdf-schema#comment" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/PercentagePermanentElongation" -> "LPercentagePermanentElongation|Language: en" [ label="http://www.w3.org/2000/01/rdf-schema#label" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/PercentagePermanentElongation" -> "Lpercentage permanent elongation|Language: en" [ label="http://www.w3.org/2004/02/skos/core#altlabel" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/PercentagePermanentElongation" -> "LPercentagePermanentElongation|Language: en" [ label="http://www.w3.org/2004/02/skos/core#preflabel" ];
+
+	// Resources
+	"Rhttps://w3id.org/steel/ProcessOntology/PercentagePermanentElongation" [ label="https://w3id.org/steel/ProcessOntology/PercentagePermanentElongation", shape = ellipse, color = blue ];
+	"Rhttp://www.w3.org/2004/02/skos/core#Concept" [ label="http://www.w3.org/2004/02/skos/core#Concept", shape = ellipse, color = blue ];
+	"Rhttp://www.w3.org/2002/07/owl#Class" [ label="http://www.w3.org/2002/07/owl#Class", shape = ellipse, color = blue ];
+
+	// Anonymous nodes
+
+	// Literals
+	"LZunahme der Anfangsmesslänge (3.1.1) einer Probe nach Entfernen einer festgelegten Zugspannung, angegeben in Prozent, bezogen auf die Anfangsmesslänge (3.1.1)|Language: de" [ label="Zunahme der Anfangsmesslänge (3.1.1) einer Probe nach Entfernen einer festgelegten Zugspannung, angegeben in Prozent, bezogen auf die Anfangsmesslänge (3.1.1)|Language: de", shape = record ];
+	"LPercentagePermanentElongation|Language: en" [ label="PercentagePermanentElongation|Language: en", shape = record ];
+	"Lpercentage permanent elongation|Language: en" [ label="percentage permanent elongation|Language: en", shape = record ];
+
+	label="\n\nModel:\n(Unknown)";
+}

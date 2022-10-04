@@ -1,0 +1,31 @@
+digraph {
+	rankdir = LR;
+	charset="utf-8";
+
+	"Rhttps://w3id.org/steel/ProcessOntology/PercentageExtension" -> "Rhttp://www.w3.org/2004/02/skos/core#Concept" [ label="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/PercentageExtension" -> "Rhttp://www.w3.org/2002/07/owl#Class" [ label="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/PercentageExtension" -> "Lengineering strain|Language: en" [ label="http://www.w3.org/2000/01/rdf-schema#comment" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/PercentageExtension" -> "LPercentageExtension|Language: en" [ label="http://www.w3.org/2000/01/rdf-schema#label" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/PercentageExtension" -> "Lpercentage extension|Language: en" [ label="http://www.w3.org/2004/02/skos/core#altlabel" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/PercentageExtension" -> "Leps-technisch|Language: de" [ label="http://www.w3.org/2004/02/skos/core#altlabel" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/PercentageExtension" -> "Le-technisch|Language: de" [ label="http://www.w3.org/2004/02/skos/core#altlabel" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/PercentageExtension" -> "LTime-dependent engineering strain|Language: en" [ label="http://www.w3.org/2004/02/skos/core#altlabel" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/PercentageExtension" -> "LPercentageExtension|Language: en" [ label="http://www.w3.org/2004/02/skos/core#preflabel" ];
+
+	// Resources
+	"Rhttps://w3id.org/steel/ProcessOntology/PercentageExtension" [ label="https://w3id.org/steel/ProcessOntology/PercentageExtension", shape = ellipse, color = blue ];
+	"Rhttp://www.w3.org/2004/02/skos/core#Concept" [ label="http://www.w3.org/2004/02/skos/core#Concept", shape = ellipse, color = blue ];
+	"Rhttp://www.w3.org/2002/07/owl#Class" [ label="http://www.w3.org/2002/07/owl#Class", shape = ellipse, color = blue ];
+
+	// Anonymous nodes
+
+	// Literals
+	"Lengineering strain|Language: en" [ label="engineering strain|Language: en", shape = record ];
+	"LPercentageExtension|Language: en" [ label="PercentageExtension|Language: en", shape = record ];
+	"Lpercentage extension|Language: en" [ label="percentage extension|Language: en", shape = record ];
+	"Leps-technisch|Language: de" [ label="eps-technisch|Language: de", shape = record ];
+	"Le-technisch|Language: de" [ label="e-technisch|Language: de", shape = record ];
+	"LTime-dependent engineering strain|Language: en" [ label="Time-dependent engineering strain|Language: en", shape = record ];
+
+	label="\n\nModel:\n(Unknown)";
+}

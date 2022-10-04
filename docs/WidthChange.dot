@@ -1,0 +1,31 @@
+digraph {
+	rankdir = LR;
+	charset="utf-8";
+
+	"Rhttps://w3id.org/steel/ProcessOntology/WidthChange" -> "Rhttp://www.w3.org/2004/02/skos/core#Concept" [ label="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/WidthChange" -> "Rhttp://www.w3.org/2002/07/owl#Class" [ label="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/WidthChange" -> "Lchange of width of the extensometer gauge length|Language: en" [ label="http://www.w3.org/2000/01/rdf-schema#comment" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/WidthChange" -> "LChange of the sample width.|Language: en" [ label="http://www.w3.org/2000/01/rdf-schema#comment" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/WidthChange" -> "LWidthChange|Language: en" [ label="http://www.w3.org/2000/01/rdf-schema#label" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/WidthChange" -> "LdB|Language: de" [ label="http://www.w3.org/2004/02/skos/core#altlabel" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/WidthChange" -> "LWidth change|Language: en" [ label="http://www.w3.org/2004/02/skos/core#altlabel" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/WidthChange" -> "LBreitenänderung|Language: de" [ label="http://www.w3.org/2004/02/skos/core#altlabel" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/WidthChange" -> "LWidthChange|Language: en" [ label="http://www.w3.org/2004/02/skos/core#preflabel" ];
+
+	// Resources
+	"Rhttps://w3id.org/steel/ProcessOntology/WidthChange" [ label="https://w3id.org/steel/ProcessOntology/WidthChange", shape = ellipse, color = blue ];
+	"Rhttp://www.w3.org/2004/02/skos/core#Concept" [ label="http://www.w3.org/2004/02/skos/core#Concept", shape = ellipse, color = blue ];
+	"Rhttp://www.w3.org/2002/07/owl#Class" [ label="http://www.w3.org/2002/07/owl#Class", shape = ellipse, color = blue ];
+
+	// Anonymous nodes
+
+	// Literals
+	"Lchange of width of the extensometer gauge length|Language: en" [ label="change of width of the extensometer gauge length|Language: en", shape = record ];
+	"LChange of the sample width.|Language: en" [ label="Change of the sample width.|Language: en", shape = record ];
+	"LWidthChange|Language: en" [ label="WidthChange|Language: en", shape = record ];
+	"LdB|Language: de" [ label="dB|Language: de", shape = record ];
+	"LWidth change|Language: en" [ label="Width change|Language: en", shape = record ];
+	"LBreitenänderung|Language: de" [ label="Breitenänderung|Language: de", shape = record ];
+
+	label="\n\nModel:\n(Unknown)";
+}

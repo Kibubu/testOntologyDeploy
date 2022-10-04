@@ -1,0 +1,28 @@
+digraph {
+	rankdir = LR;
+	charset="utf-8";
+
+	"Rhttps://w3id.org/steel/ProcessOntology/DamaskCode" -> "Rhttp://www.w3.org/2002/07/owl#Class" [ label="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/DamaskCode" -> "LDamask code|Language: en" [ label="http://www.w3.org/2000/01/rdf-schema#label" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/DamaskCode" -> "LDamask Code|Language: de" [ label="http://www.w3.org/2000/01/rdf-schema#label" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/DamaskCode" -> "Rhttps://w3id.org/steel/ProcessOntology/Code" [ label="http://www.w3.org/2000/01/rdf-schema#subClassOf" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/DamaskCode" -> "Lcode damask|Language: en" [ label="http://www.w3.org/2004/02/skos/core#altlabel" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/DamaskCode" -> "LDamask Ablauf|Language: de" [ label="http://www.w3.org/2004/02/skos/core#altlabel" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/DamaskCode" -> "LDamask code|Language: en" [ label="http://www.w3.org/2004/02/skos/core#preflabel" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/DamaskCode" -> "LDamask Code|Language: de" [ label="http://www.w3.org/2004/02/skos/core#preflabel" ];
+
+	// Resources
+	"Rhttps://w3id.org/steel/ProcessOntology/DamaskCode" [ label="https://w3id.org/steel/ProcessOntology/DamaskCode", shape = ellipse, color = blue ];
+	"Rhttp://www.w3.org/2002/07/owl#Class" [ label="http://www.w3.org/2002/07/owl#Class", shape = ellipse, color = blue ];
+	"Rhttps://w3id.org/steel/ProcessOntology/Code" [ label="https://w3id.org/steel/ProcessOntology/Code", shape = ellipse, color = blue ];
+
+	// Anonymous nodes
+
+	// Literals
+	"LDamask code|Language: en" [ label="Damask code|Language: en", shape = record ];
+	"LDamask Code|Language: de" [ label="Damask Code|Language: de", shape = record ];
+	"Lcode damask|Language: en" [ label="code damask|Language: en", shape = record ];
+	"LDamask Ablauf|Language: de" [ label="Damask Ablauf|Language: de", shape = record ];
+
+	label="\n\nModel:\n(Unknown)";
+}

@@ -1,0 +1,39 @@
+digraph {
+	rankdir = LR;
+	charset="utf-8";
+
+	"Rhttps://w3id.org/steel/ProcessOntology/Force" -> "Rhttp://www.w3.org/2002/07/owl#Class" [ label="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/Force" -> "Rhttp://www.w3.org/2004/02/skos/core#Concept" [ label="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/Force" -> "LThe force measured by the load cell|Language: en" [ label="http://www.w3.org/2000/01/rdf-schema#comment" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/Force" -> "LThe force that is measured using the Force-measuring device.|Language: en" [ label="http://www.w3.org/2000/01/rdf-schema#comment" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/Force" -> "LThe force measured with the force measuring system|Language: en" [ label="http://www.w3.org/2000/01/rdf-schema#comment" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/Force" -> "LForce|Language: en" [ label="http://www.w3.org/2000/01/rdf-schema#label" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/Force" -> "LKraft|Language: de" [ label="http://www.w3.org/2000/01/rdf-schema#label" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/Force" -> "LStandardkraft|Language: de" [ label="http://www.w3.org/2004/02/skos/core#altlabel" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/Force" -> "LF|Language: de" [ label="http://www.w3.org/2004/02/skos/core#altlabel" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/Force" -> "LStandard force|Language: en" [ label="http://www.w3.org/2004/02/skos/core#altlabel" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/Force" -> "LForce|Language: en" [ label="http://www.w3.org/2004/02/skos/core#altlabel" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/Force" -> "LForce-measuring device|Language: en" [ label="http://www.w3.org/2004/02/skos/core#altlabel" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/Force" -> "LForce|Language: en" [ label="http://www.w3.org/2004/02/skos/core#preflabel" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/Force" -> "LKraft|Language: de" [ label="http://www.w3.org/2004/02/skos/core#preflabel" ];
+
+	// Resources
+	"Rhttps://w3id.org/steel/ProcessOntology/Force" [ label="https://w3id.org/steel/ProcessOntology/Force", shape = ellipse, color = blue ];
+	"Rhttp://www.w3.org/2002/07/owl#Class" [ label="http://www.w3.org/2002/07/owl#Class", shape = ellipse, color = blue ];
+	"Rhttp://www.w3.org/2004/02/skos/core#Concept" [ label="http://www.w3.org/2004/02/skos/core#Concept", shape = ellipse, color = blue ];
+
+	// Anonymous nodes
+
+	// Literals
+	"LThe force measured by the load cell|Language: en" [ label="The force measured by the load cell|Language: en", shape = record ];
+	"LThe force that is measured using the Force-measuring device.|Language: en" [ label="The force that is measured using the Force-measuring device.|Language: en", shape = record ];
+	"LThe force measured with the force measuring system|Language: en" [ label="The force measured with the force measuring system|Language: en", shape = record ];
+	"LForce|Language: en" [ label="Force|Language: en", shape = record ];
+	"LKraft|Language: de" [ label="Kraft|Language: de", shape = record ];
+	"LStandardkraft|Language: de" [ label="Standardkraft|Language: de", shape = record ];
+	"LF|Language: de" [ label="F|Language: de", shape = record ];
+	"LStandard force|Language: en" [ label="Standard force|Language: en", shape = record ];
+	"LForce-measuring device|Language: en" [ label="Force-measuring device|Language: en", shape = record ];
+
+	label="\n\nModel:\n(Unknown)";
+}

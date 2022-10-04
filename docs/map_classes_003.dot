@@ -1,0 +1,38 @@
+digraph {
+	rankdir = LR;
+	charset="utf-8";
+
+	"Rhttps://w3id.org/steel/ProcessOntology/map_classes_003" -> "Rhttp://www.w3.org/ns/r2rml#TriplesMap" [ label="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/map_classes_003" -> "Lclasses" [ label="http://www.w3.org/2000/01/rdf-schema#label" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/map_classes_003" -> "Rhttps://w3id.org/steel/ProcessOntology/source_003" [ label="http://semweb.mmlab.be/ns/rml#logicalSource" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/map_classes_003" -> "Rhttps://w3id.org/steel/ProcessOntology/pom_045" [ label="http://www.w3.org/ns/r2rml#predicateObjectMap" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/map_classes_003" -> "Rhttps://w3id.org/steel/ProcessOntology/pom_040" [ label="http://www.w3.org/ns/r2rml#predicateObjectMap" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/map_classes_003" -> "Rhttps://w3id.org/steel/ProcessOntology/pom_039" [ label="http://www.w3.org/ns/r2rml#predicateObjectMap" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/map_classes_003" -> "Rhttps://w3id.org/steel/ProcessOntology/pom_038" [ label="http://www.w3.org/ns/r2rml#predicateObjectMap" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/map_classes_003" -> "Rhttps://w3id.org/steel/ProcessOntology/pom_041" [ label="http://www.w3.org/ns/r2rml#predicateObjectMap" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/map_classes_003" -> "Rhttps://w3id.org/steel/ProcessOntology/pom_036" [ label="http://www.w3.org/ns/r2rml#predicateObjectMap" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/map_classes_003" -> "Rhttps://w3id.org/steel/ProcessOntology/pom_042" [ label="http://www.w3.org/ns/r2rml#predicateObjectMap" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/map_classes_003" -> "Rhttps://w3id.org/steel/ProcessOntology/pom_037" [ label="http://www.w3.org/ns/r2rml#predicateObjectMap" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/map_classes_003" -> "Rhttps://w3id.org/steel/ProcessOntology/s_003" [ label="http://www.w3.org/ns/r2rml#subjectMap" ];
+
+	// Resources
+	"Rhttps://w3id.org/steel/ProcessOntology/map_classes_003" [ label="https://w3id.org/steel/ProcessOntology/map_classes_003", shape = ellipse, color = blue ];
+	"Rhttp://www.w3.org/ns/r2rml#TriplesMap" [ label="http://www.w3.org/ns/r2rml#TriplesMap", shape = ellipse, color = blue ];
+	"Rhttps://w3id.org/steel/ProcessOntology/source_003" [ label="https://w3id.org/steel/ProcessOntology/source_003", shape = ellipse, color = blue ];
+	"Rhttps://w3id.org/steel/ProcessOntology/pom_045" [ label="https://w3id.org/steel/ProcessOntology/pom_045", shape = ellipse, color = blue ];
+	"Rhttps://w3id.org/steel/ProcessOntology/pom_040" [ label="https://w3id.org/steel/ProcessOntology/pom_040", shape = ellipse, color = blue ];
+	"Rhttps://w3id.org/steel/ProcessOntology/pom_039" [ label="https://w3id.org/steel/ProcessOntology/pom_039", shape = ellipse, color = blue ];
+	"Rhttps://w3id.org/steel/ProcessOntology/pom_038" [ label="https://w3id.org/steel/ProcessOntology/pom_038", shape = ellipse, color = blue ];
+	"Rhttps://w3id.org/steel/ProcessOntology/pom_041" [ label="https://w3id.org/steel/ProcessOntology/pom_041", shape = ellipse, color = blue ];
+	"Rhttps://w3id.org/steel/ProcessOntology/pom_036" [ label="https://w3id.org/steel/ProcessOntology/pom_036", shape = ellipse, color = blue ];
+	"Rhttps://w3id.org/steel/ProcessOntology/pom_042" [ label="https://w3id.org/steel/ProcessOntology/pom_042", shape = ellipse, color = blue ];
+	"Rhttps://w3id.org/steel/ProcessOntology/pom_037" [ label="https://w3id.org/steel/ProcessOntology/pom_037", shape = ellipse, color = blue ];
+	"Rhttps://w3id.org/steel/ProcessOntology/s_003" [ label="https://w3id.org/steel/ProcessOntology/s_003", shape = ellipse, color = blue ];
+
+	// Anonymous nodes
+
+	// Literals
+	"Lclasses" [ label="classes", shape = record ];
+
+	label="\n\nModel:\n(Unknown)";
+}

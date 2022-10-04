@@ -1,0 +1,37 @@
+digraph {
+	rankdir = LR;
+	charset="utf-8";
+
+	"Rhttps://w3id.org/steel/ProcessOntology/OriginalGaugeLength" -> "Rhttp://www.w3.org/2004/02/skos/core#Concept" [ label="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/OriginalGaugeLength" -> "Rhttp://www.w3.org/2002/07/owl#Class" [ label="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/OriginalGaugeLength" -> "LThe intial gauge length given by the specimen geometry|Language: en" [ label="http://www.w3.org/2000/01/rdf-schema#comment" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/OriginalGaugeLength" -> "LAnfangsmesslänge |Language: de" [ label="http://www.w3.org/2000/01/rdf-schema#comment" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/OriginalGaugeLength" -> "LLänge zwischen den Marken zur Kennzeichnung der Messlänge (3.1) auf der Probe, die vor dem Versuch bei Raumtemperatur gemessen wird|Language: de" [ label="http://www.w3.org/2000/01/rdf-schema#comment" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/OriginalGaugeLength" -> "LOriginalGaugeLength|Language: en" [ label="http://www.w3.org/2000/01/rdf-schema#label" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/OriginalGaugeLength" -> "LMesslänge Lo|Language: de" [ label="http://www.w3.org/2004/02/skos/core#altlabel" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/OriginalGaugeLength" -> "LMesslänge Standardweg|Language: de" [ label="http://www.w3.org/2004/02/skos/core#altlabel" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/OriginalGaugeLength" -> "LInitial measuring length|Language: en" [ label="http://www.w3.org/2004/02/skos/core#altlabel" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/OriginalGaugeLength" -> "Loriginal gauge length|Language: en" [ label="http://www.w3.org/2004/02/skos/core#altlabel" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/OriginalGaugeLength" -> "LOriginal gauge length |Language: en" [ label="http://www.w3.org/2004/02/skos/core#altlabel" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/OriginalGaugeLength" -> "LOriginalGaugeLength|Language: en" [ label="http://www.w3.org/2004/02/skos/core#preflabel" ];
+
+	// Resources
+	"Rhttps://w3id.org/steel/ProcessOntology/OriginalGaugeLength" [ label="https://w3id.org/steel/ProcessOntology/OriginalGaugeLength", shape = ellipse, color = blue ];
+	"Rhttp://www.w3.org/2004/02/skos/core#Concept" [ label="http://www.w3.org/2004/02/skos/core#Concept", shape = ellipse, color = blue ];
+	"Rhttp://www.w3.org/2002/07/owl#Class" [ label="http://www.w3.org/2002/07/owl#Class", shape = ellipse, color = blue ];
+
+	// Anonymous nodes
+
+	// Literals
+	"LThe intial gauge length given by the specimen geometry|Language: en" [ label="The intial gauge length given by the specimen geometry|Language: en", shape = record ];
+	"LAnfangsmesslänge |Language: de" [ label="Anfangsmesslänge |Language: de", shape = record ];
+	"LLänge zwischen den Marken zur Kennzeichnung der Messlänge (3.1) auf der Probe, die vor dem Versuch bei Raumtemperatur gemessen wird|Language: de" [ label="Länge zwischen den Marken zur Kennzeichnung der Messlänge (3.1) auf der Probe, die vor dem Versuch bei Raumtemperatur gemessen wird|Language: de", shape = record ];
+	"LOriginalGaugeLength|Language: en" [ label="OriginalGaugeLength|Language: en", shape = record ];
+	"LMesslänge Lo|Language: de" [ label="Messlänge Lo|Language: de", shape = record ];
+	"LMesslänge Standardweg|Language: de" [ label="Messlänge Standardweg|Language: de", shape = record ];
+	"LInitial measuring length|Language: en" [ label="Initial measuring length|Language: en", shape = record ];
+	"Loriginal gauge length|Language: en" [ label="original gauge length|Language: en", shape = record ];
+	"LOriginal gauge length |Language: en" [ label="Original gauge length |Language: en", shape = record ];
+
+	label="\n\nModel:\n(Unknown)";
+}

@@ -1,0 +1,23 @@
+digraph {
+	rankdir = LR;
+	charset="utf-8";
+
+	"Rhttps://w3id.org/steel/ProcessOntology/ressourceUri" -> "Rhttp://www.w3.org/2002/07/owl#DatatypeProperty" [ label="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/ressourceUri" -> "Rhttps://w3id.org/steel/ProcessOntology/CodeFileRessource" [ label="http://www.w3.org/2000/01/rdf-schema#domain" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/ressourceUri" -> "Luri|Language: en" [ label="http://www.w3.org/2000/01/rdf-schema#label" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/ressourceUri" -> "Rhttp://www.w3.org/2001/XMLSchema#string" [ label="http://www.w3.org/2000/01/rdf-schema#range" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/ressourceUri" -> "Luri|Language: en" [ label="http://www.w3.org/2004/02/skos/core#preflabel" ];
+
+	// Resources
+	"Rhttps://w3id.org/steel/ProcessOntology/ressourceUri" [ label="https://w3id.org/steel/ProcessOntology/ressourceUri", shape = ellipse, color = blue ];
+	"Rhttp://www.w3.org/2002/07/owl#DatatypeProperty" [ label="http://www.w3.org/2002/07/owl#DatatypeProperty", shape = ellipse, color = blue ];
+	"Rhttps://w3id.org/steel/ProcessOntology/CodeFileRessource" [ label="https://w3id.org/steel/ProcessOntology/CodeFileRessource", shape = ellipse, color = blue ];
+	"Rhttp://www.w3.org/2001/XMLSchema#string" [ label="http://www.w3.org/2001/XMLSchema#string", shape = ellipse, color = blue ];
+
+	// Anonymous nodes
+
+	// Literals
+	"Luri|Language: en" [ label="uri|Language: en", shape = record ];
+
+	label="\n\nModel:\n(Unknown)";
+}

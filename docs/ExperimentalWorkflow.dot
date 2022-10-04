@@ -1,0 +1,24 @@
+digraph {
+	rankdir = LR;
+	charset="utf-8";
+
+	"Rhttps://w3id.org/steel/ProcessOntology/ExperimentalWorkflow" -> "Rhttp://www.w3.org/2002/07/owl#Class" [ label="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/ExperimentalWorkflow" -> "LExperimenteller Arbeitsablauf|Language: de" [ label="http://www.w3.org/2000/01/rdf-schema#label" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/ExperimentalWorkflow" -> "LExperimental workflow|Language: en" [ label="http://www.w3.org/2000/01/rdf-schema#label" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/ExperimentalWorkflow" -> "Rhttps://w3id.org/steel/ProcessOntology/Workflow" [ label="http://www.w3.org/2000/01/rdf-schema#subClassOf" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/ExperimentalWorkflow" -> "LExperimenteller Arbeitsablauf|Language: de" [ label="http://www.w3.org/2004/02/skos/core#preflabel" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/ExperimentalWorkflow" -> "LExperimental workflow|Language: en" [ label="http://www.w3.org/2004/02/skos/core#preflabel" ];
+
+	// Resources
+	"Rhttps://w3id.org/steel/ProcessOntology/ExperimentalWorkflow" [ label="https://w3id.org/steel/ProcessOntology/ExperimentalWorkflow", shape = ellipse, color = blue ];
+	"Rhttp://www.w3.org/2002/07/owl#Class" [ label="http://www.w3.org/2002/07/owl#Class", shape = ellipse, color = blue ];
+	"Rhttps://w3id.org/steel/ProcessOntology/Workflow" [ label="https://w3id.org/steel/ProcessOntology/Workflow", shape = ellipse, color = blue ];
+
+	// Anonymous nodes
+
+	// Literals
+	"LExperimenteller Arbeitsablauf|Language: de" [ label="Experimenteller Arbeitsablauf|Language: de", shape = record ];
+	"LExperimental workflow|Language: en" [ label="Experimental workflow|Language: en", shape = record ];
+
+	label="\n\nModel:\n(Unknown)";
+}

@@ -1,0 +1,29 @@
+digraph {
+	rankdir = LR;
+	charset="utf-8";
+
+	"Rhttps://w3id.org/steel/ProcessOntology/AbsoluteCrossheadTravel" -> "Rhttp://www.w3.org/2004/02/skos/core#Concept" [ label="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/AbsoluteCrossheadTravel" -> "Rhttp://www.w3.org/2002/07/owl#Class" [ label="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/AbsoluteCrossheadTravel" -> "LAbsolute position of the crosshead.|Language: en" [ label="http://www.w3.org/2000/01/rdf-schema#comment" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/AbsoluteCrossheadTravel" -> "LAbsolute position der Traverse|Language: de" [ label="http://www.w3.org/2000/01/rdf-schema#comment" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/AbsoluteCrossheadTravel" -> "LAbsoluteCrossheadTravel|Language: en" [ label="http://www.w3.org/2000/01/rdf-schema#label" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/AbsoluteCrossheadTravel" -> "LTraversenweg absolut|Language: de" [ label="http://www.w3.org/2004/02/skos/core#altlabel" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/AbsoluteCrossheadTravel" -> "LAbsolute crosshead travel|Language: en" [ label="http://www.w3.org/2004/02/skos/core#altlabel" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/AbsoluteCrossheadTravel" -> "LAbsoluteCrossheadTravel|Language: en" [ label="http://www.w3.org/2004/02/skos/core#preflabel" ];
+
+	// Resources
+	"Rhttps://w3id.org/steel/ProcessOntology/AbsoluteCrossheadTravel" [ label="https://w3id.org/steel/ProcessOntology/AbsoluteCrossheadTravel", shape = ellipse, color = blue ];
+	"Rhttp://www.w3.org/2004/02/skos/core#Concept" [ label="http://www.w3.org/2004/02/skos/core#Concept", shape = ellipse, color = blue ];
+	"Rhttp://www.w3.org/2002/07/owl#Class" [ label="http://www.w3.org/2002/07/owl#Class", shape = ellipse, color = blue ];
+
+	// Anonymous nodes
+
+	// Literals
+	"LAbsolute position of the crosshead.|Language: en" [ label="Absolute position of the crosshead.|Language: en", shape = record ];
+	"LAbsolute position der Traverse|Language: de" [ label="Absolute position der Traverse|Language: de", shape = record ];
+	"LAbsoluteCrossheadTravel|Language: en" [ label="AbsoluteCrossheadTravel|Language: en", shape = record ];
+	"LTraversenweg absolut|Language: de" [ label="Traversenweg absolut|Language: de", shape = record ];
+	"LAbsolute crosshead travel|Language: en" [ label="Absolute crosshead travel|Language: en", shape = record ];
+
+	label="\n\nModel:\n(Unknown)";
+}

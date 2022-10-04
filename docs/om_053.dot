@@ -1,0 +1,20 @@
+digraph {
+	rankdir = LR;
+	charset="utf-8";
+
+	"Rhttps://w3id.org/steel/ProcessOntology/om_053" -> "Rhttp://www.w3.org/ns/r2rml#ObjectMap" [ label="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/om_053" -> "Lhttp://www.w3.org/2004/02/skos/core#Concept" [ label="http://www.w3.org/ns/r2rml#constant" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/om_053" -> "Rhttp://www.w3.org/ns/r2rml#IRI" [ label="http://www.w3.org/ns/r2rml#termType" ];
+
+	// Resources
+	"Rhttps://w3id.org/steel/ProcessOntology/om_053" [ label="https://w3id.org/steel/ProcessOntology/om_053", shape = ellipse, color = blue ];
+	"Rhttp://www.w3.org/ns/r2rml#ObjectMap" [ label="http://www.w3.org/ns/r2rml#ObjectMap", shape = ellipse, color = blue ];
+	"Rhttp://www.w3.org/ns/r2rml#IRI" [ label="http://www.w3.org/ns/r2rml#IRI", shape = ellipse, color = blue ];
+
+	// Anonymous nodes
+
+	// Literals
+	"Lhttp://www.w3.org/2004/02/skos/core#Concept" [ label="http://www.w3.org/2004/02/skos/core#Concept", shape = record ];
+
+	label="\n\nModel:\n(Unknown)";
+}

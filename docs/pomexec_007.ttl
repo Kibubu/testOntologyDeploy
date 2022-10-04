@@ -1,0 +1,6 @@
+
+
+<https://w3id.org/steel/ProcessOntology/pomexec_007> <http://www.w3.org/ns/r2rml#objectMap> <https://w3id.org/steel/ProcessOntology/omexec_007> .
+<https://w3id.org/steel/ProcessOntology/pomexec_007> <http://www.w3.org/ns/r2rml#predicateMap> <https://w3id.org/steel/ProcessOntology/pmexec_007> .
+
+

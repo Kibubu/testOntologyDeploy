@@ -1,0 +1,34 @@
+digraph {
+	rankdir = LR;
+	charset="utf-8";
+
+	"Rhttps://w3id.org/steel/ProcessOntology/Time" -> "Rhttp://www.w3.org/2004/02/skos/core#Concept" [ label="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/Time" -> "Rhttp://www.w3.org/2002/07/owl#Class" [ label="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/Time" -> "LAuthors|Language: de" [ label="http://www.w3.org/2000/01/rdf-schema#comment" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/Time" -> "LThe time when the data point is recorded in relation to the start. |Language: en" [ label="http://www.w3.org/2000/01/rdf-schema#comment" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/Time" -> "L0.694|Language: en" [ label="http://www.w3.org/2000/01/rdf-schema#comment" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/Time" -> "LTime|Language: en" [ label="http://www.w3.org/2000/01/rdf-schema#label" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/Time" -> "LZeit|Language: de" [ label="http://www.w3.org/2004/02/skos/core#altlabel" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/Time" -> "LTime|Language: en" [ label="http://www.w3.org/2004/02/skos/core#altlabel" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/Time" -> "LTest time|Language: en" [ label="http://www.w3.org/2004/02/skos/core#altlabel" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/Time" -> "LPrüfzeit|Language: de" [ label="http://www.w3.org/2004/02/skos/core#altlabel" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/Time" -> "LTime|Language: en" [ label="http://www.w3.org/2004/02/skos/core#preflabel" ];
+
+	// Resources
+	"Rhttps://w3id.org/steel/ProcessOntology/Time" [ label="https://w3id.org/steel/ProcessOntology/Time", shape = ellipse, color = blue ];
+	"Rhttp://www.w3.org/2004/02/skos/core#Concept" [ label="http://www.w3.org/2004/02/skos/core#Concept", shape = ellipse, color = blue ];
+	"Rhttp://www.w3.org/2002/07/owl#Class" [ label="http://www.w3.org/2002/07/owl#Class", shape = ellipse, color = blue ];
+
+	// Anonymous nodes
+
+	// Literals
+	"LAuthors|Language: de" [ label="Authors|Language: de", shape = record ];
+	"LThe time when the data point is recorded in relation to the start. |Language: en" [ label="The time when the data point is recorded in relation to the start. |Language: en", shape = record ];
+	"L0.694|Language: en" [ label="0.694|Language: en", shape = record ];
+	"LTime|Language: en" [ label="Time|Language: en", shape = record ];
+	"LZeit|Language: de" [ label="Zeit|Language: de", shape = record ];
+	"LTest time|Language: en" [ label="Test time|Language: en", shape = record ];
+	"LPrüfzeit|Language: de" [ label="Prüfzeit|Language: de", shape = record ];
+
+	label="\n\nModel:\n(Unknown)";
+}

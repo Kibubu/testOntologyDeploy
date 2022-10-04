@@ -1,0 +1,25 @@
+digraph {
+	rankdir = LR;
+	charset="utf-8";
+
+	"Rhttps://w3id.org/steel/ProcessOntology/PoissonsRatio" -> "Rhttp://www.w3.org/2004/02/skos/core#Concept" [ label="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/PoissonsRatio" -> "Rhttp://www.w3.org/2002/07/owl#Class" [ label="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/PoissonsRatio" -> "LPoissonsRatio|Language: en" [ label="http://www.w3.org/2000/01/rdf-schema#label" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/PoissonsRatio" -> "Lpoisson`s ratio|Language: en" [ label="http://www.w3.org/2004/02/skos/core#altlabel" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/PoissonsRatio" -> "LQuerkontraktion|Language: de" [ label="http://www.w3.org/2004/02/skos/core#altlabel" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/PoissonsRatio" -> "LPoissonsRatio|Language: en" [ label="http://www.w3.org/2004/02/skos/core#preflabel" ];
+
+	// Resources
+	"Rhttps://w3id.org/steel/ProcessOntology/PoissonsRatio" [ label="https://w3id.org/steel/ProcessOntology/PoissonsRatio", shape = ellipse, color = blue ];
+	"Rhttp://www.w3.org/2004/02/skos/core#Concept" [ label="http://www.w3.org/2004/02/skos/core#Concept", shape = ellipse, color = blue ];
+	"Rhttp://www.w3.org/2002/07/owl#Class" [ label="http://www.w3.org/2002/07/owl#Class", shape = ellipse, color = blue ];
+
+	// Anonymous nodes
+
+	// Literals
+	"LPoissonsRatio|Language: en" [ label="PoissonsRatio|Language: en", shape = record ];
+	"Lpoisson`s ratio|Language: en" [ label="poisson`s ratio|Language: en", shape = record ];
+	"LQuerkontraktion|Language: de" [ label="Querkontraktion|Language: de", shape = record ];
+
+	label="\n\nModel:\n(Unknown)";
+}

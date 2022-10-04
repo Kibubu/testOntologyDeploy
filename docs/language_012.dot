@@ -1,0 +1,16 @@
+digraph {
+	rankdir = LR;
+	charset="utf-8";
+
+	"Rhttps://w3id.org/steel/ProcessOntology/language_012" -> "Lde" [ label="http://www.w3.org/ns/r2rml#constant" ];
+
+	// Resources
+	"Rhttps://w3id.org/steel/ProcessOntology/language_012" [ label="https://w3id.org/steel/ProcessOntology/language_012", shape = ellipse, color = blue ];
+
+	// Anonymous nodes
+
+	// Literals
+	"Lde" [ label="de", shape = record ];
+
+	label="\n\nModel:\n(Unknown)";
+}

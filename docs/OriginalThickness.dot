@@ -1,0 +1,37 @@
+digraph {
+	rankdir = LR;
+	charset="utf-8";
+
+	"Rhttps://w3id.org/steel/ProcessOntology/OriginalThickness" -> "Rhttp://www.w3.org/2002/07/owl#Class" [ label="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/OriginalThickness" -> "Rhttp://www.w3.org/2004/02/skos/core#Concept" [ label="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/OriginalThickness" -> "LOriginal width of the parallel length of a flat test piece|Language: en" [ label="http://www.w3.org/2000/01/rdf-schema#comment" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/OriginalThickness" -> "LThe thickness of the specimen.|Language: en" [ label="http://www.w3.org/2000/01/rdf-schema#comment" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/OriginalThickness" -> "LThe initial thickness of the specimen.|Language: en" [ label="http://www.w3.org/2000/01/rdf-schema#comment" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/OriginalThickness" -> "LOriginalThickness|Language: en" [ label="http://www.w3.org/2000/01/rdf-schema#label" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/OriginalThickness" -> "LProbendicke a|Language: de" [ label="http://www.w3.org/2004/02/skos/core#altlabel" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/OriginalThickness" -> "LSpecimen thickness|Language: en" [ label="http://www.w3.org/2004/02/skos/core#altlabel" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/OriginalThickness" -> "LProbendicke a0|Language: de" [ label="http://www.w3.org/2004/02/skos/core#altlabel" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/OriginalThickness" -> "LOriginal thickness|Language: en" [ label="http://www.w3.org/2004/02/skos/core#altlabel" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/OriginalThickness" -> "LProbendicke|Language: de" [ label="http://www.w3.org/2004/02/skos/core#altlabel" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/OriginalThickness" -> "LOriginalThickness|Language: en" [ label="http://www.w3.org/2004/02/skos/core#preflabel" ];
+
+	// Resources
+	"Rhttps://w3id.org/steel/ProcessOntology/OriginalThickness" [ label="https://w3id.org/steel/ProcessOntology/OriginalThickness", shape = ellipse, color = blue ];
+	"Rhttp://www.w3.org/2002/07/owl#Class" [ label="http://www.w3.org/2002/07/owl#Class", shape = ellipse, color = blue ];
+	"Rhttp://www.w3.org/2004/02/skos/core#Concept" [ label="http://www.w3.org/2004/02/skos/core#Concept", shape = ellipse, color = blue ];
+
+	// Anonymous nodes
+
+	// Literals
+	"LOriginal width of the parallel length of a flat test piece|Language: en" [ label="Original width of the parallel length of a flat test piece|Language: en", shape = record ];
+	"LThe thickness of the specimen.|Language: en" [ label="The thickness of the specimen.|Language: en", shape = record ];
+	"LThe initial thickness of the specimen.|Language: en" [ label="The initial thickness of the specimen.|Language: en", shape = record ];
+	"LOriginalThickness|Language: en" [ label="OriginalThickness|Language: en", shape = record ];
+	"LProbendicke a|Language: de" [ label="Probendicke a|Language: de", shape = record ];
+	"LSpecimen thickness|Language: en" [ label="Specimen thickness|Language: en", shape = record ];
+	"LProbendicke a0|Language: de" [ label="Probendicke a0|Language: de", shape = record ];
+	"LOriginal thickness|Language: en" [ label="Original thickness|Language: en", shape = record ];
+	"LProbendicke|Language: de" [ label="Probendicke|Language: de", shape = record ];
+
+	label="\n\nModel:\n(Unknown)";
+}

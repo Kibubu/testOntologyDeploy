@@ -1,0 +1,16 @@
+
+
+<https://w3id.org/steel/ProcessOntology/map_classes_005> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/r2rml#TriplesMap> .
+<https://w3id.org/steel/ProcessOntology/map_classes_005> <http://www.w3.org/2000/01/rdf-schema#label> "classes" .
+<https://w3id.org/steel/ProcessOntology/map_classes_005> <http://semweb.mmlab.be/ns/rml#logicalSource> <https://w3id.org/steel/ProcessOntology/source_005> .
+<https://w3id.org/steel/ProcessOntology/map_classes_005> <http://www.w3.org/ns/r2rml#predicateObjectMap> <https://w3id.org/steel/ProcessOntology/pom_069> .
+<https://w3id.org/steel/ProcessOntology/map_classes_005> <http://www.w3.org/ns/r2rml#predicateObjectMap> <https://w3id.org/steel/ProcessOntology/pom_063> .
+<https://w3id.org/steel/ProcessOntology/map_classes_005> <http://www.w3.org/ns/r2rml#predicateObjectMap> <https://w3id.org/steel/ProcessOntology/pom_066> .
+<https://w3id.org/steel/ProcessOntology/map_classes_005> <http://www.w3.org/ns/r2rml#predicateObjectMap> <https://w3id.org/steel/ProcessOntology/pom_065> .
+<https://w3id.org/steel/ProcessOntology/map_classes_005> <http://www.w3.org/ns/r2rml#predicateObjectMap> <https://w3id.org/steel/ProcessOntology/pom_062> .
+<https://w3id.org/steel/ProcessOntology/map_classes_005> <http://www.w3.org/ns/r2rml#predicateObjectMap> <https://w3id.org/steel/ProcessOntology/pom_061> .
+<https://w3id.org/steel/ProcessOntology/map_classes_005> <http://www.w3.org/ns/r2rml#predicateObjectMap> <https://w3id.org/steel/ProcessOntology/pom_064> .
+<https://w3id.org/steel/ProcessOntology/map_classes_005> <http://www.w3.org/ns/r2rml#predicateObjectMap> <https://w3id.org/steel/ProcessOntology/pom_060> .
+<https://w3id.org/steel/ProcessOntology/map_classes_005> <http://www.w3.org/ns/r2rml#subjectMap> <https://w3id.org/steel/ProcessOntology/s_005> .
+
+

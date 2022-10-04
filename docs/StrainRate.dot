@@ -1,0 +1,29 @@
+digraph {
+	rankdir = LR;
+	charset="utf-8";
+
+	"Rhttps://w3id.org/steel/ProcessOntology/StrainRate" -> "Rhttp://www.w3.org/2004/02/skos/core#Concept" [ label="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/StrainRate" -> "Rhttp://www.w3.org/2002/07/owl#Class" [ label="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/StrainRate" -> "Lstrain rate either of the parallel length or of the gauge length/extensometer length (should be specified)|Language: en" [ label="http://www.w3.org/2000/01/rdf-schema#comment" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/StrainRate" -> "LStrainRate|Language: en" [ label="http://www.w3.org/2000/01/rdf-schema#label" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/StrainRate" -> "Lstrain rate|Language: en" [ label="http://www.w3.org/2004/02/skos/core#altlabel" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/StrainRate" -> "LStrain Rate|Language: en" [ label="http://www.w3.org/2004/02/skos/core#altlabel" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/StrainRate" -> "LDehngeschwindigkeit|Language: de" [ label="http://www.w3.org/2004/02/skos/core#altlabel" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/StrainRate" -> "LStrainRate|Language: en" [ label="http://www.w3.org/2004/02/skos/core#preflabel" ];
+
+	// Resources
+	"Rhttps://w3id.org/steel/ProcessOntology/StrainRate" [ label="https://w3id.org/steel/ProcessOntology/StrainRate", shape = ellipse, color = blue ];
+	"Rhttp://www.w3.org/2004/02/skos/core#Concept" [ label="http://www.w3.org/2004/02/skos/core#Concept", shape = ellipse, color = blue ];
+	"Rhttp://www.w3.org/2002/07/owl#Class" [ label="http://www.w3.org/2002/07/owl#Class", shape = ellipse, color = blue ];
+
+	// Anonymous nodes
+
+	// Literals
+	"Lstrain rate either of the parallel length or of the gauge length/extensometer length (should be specified)|Language: en" [ label="strain rate either of the parallel length or of the gauge length/extensometer length (should be specified)|Language: en", shape = record ];
+	"LStrainRate|Language: en" [ label="StrainRate|Language: en", shape = record ];
+	"Lstrain rate|Language: en" [ label="strain rate|Language: en", shape = record ];
+	"LStrain Rate|Language: en" [ label="Strain Rate|Language: en", shape = record ];
+	"LDehngeschwindigkeit|Language: de" [ label="Dehngeschwindigkeit|Language: de", shape = record ];
+
+	label="\n\nModel:\n(Unknown)";
+}

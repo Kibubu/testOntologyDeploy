@@ -1,0 +1,18 @@
+digraph {
+	rankdir = LR;
+	charset="utf-8";
+
+	"Rhttps://w3id.org/steel/ProcessOntology/omexec_010" -> "Lhttp://w3id.org/steel/xlsx2owl-utils/functions.ttl#splitAndExpandPrefixes" [ label="http://www.w3.org/ns/r2rml#constant" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/omexec_010" -> "Rhttp://www.w3.org/ns/r2rml#IRI" [ label="http://www.w3.org/ns/r2rml#termType" ];
+
+	// Resources
+	"Rhttps://w3id.org/steel/ProcessOntology/omexec_010" [ label="https://w3id.org/steel/ProcessOntology/omexec_010", shape = ellipse, color = blue ];
+	"Rhttp://www.w3.org/ns/r2rml#IRI" [ label="http://www.w3.org/ns/r2rml#IRI", shape = ellipse, color = blue ];
+
+	// Anonymous nodes
+
+	// Literals
+	"Lhttp://w3id.org/steel/xlsx2owl-utils/functions.ttl#splitAndExpandPrefixes" [ label="http://w3id.org/steel/xlsx2owl-utils/functions.ttl#splitAndExpandPrefixes", shape = record ];
+
+	label="\n\nModel:\n(Unknown)";
+}

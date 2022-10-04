@@ -1,0 +1,25 @@
+digraph {
+	rankdir = LR;
+	charset="utf-8";
+
+	"Rhttps://w3id.org/steel/ProcessOntology/MeanEngineeringStrainRate" -> "Rhttp://www.w3.org/2004/02/skos/core#Concept" [ label="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/MeanEngineeringStrainRate" -> "Rhttp://www.w3.org/2002/07/owl#Class" [ label="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/MeanEngineeringStrainRate" -> "LMeanEngineeringStrainRate|Language: en" [ label="http://www.w3.org/2000/01/rdf-schema#label" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/MeanEngineeringStrainRate" -> "Lmittlere|Language: de" [ label="http://www.w3.org/2004/02/skos/core#altlabel" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/MeanEngineeringStrainRate" -> "LMean engineering strain rate|Language: en" [ label="http://www.w3.org/2004/02/skos/core#altlabel" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/MeanEngineeringStrainRate" -> "LMeanEngineeringStrainRate|Language: en" [ label="http://www.w3.org/2004/02/skos/core#preflabel" ];
+
+	// Resources
+	"Rhttps://w3id.org/steel/ProcessOntology/MeanEngineeringStrainRate" [ label="https://w3id.org/steel/ProcessOntology/MeanEngineeringStrainRate", shape = ellipse, color = blue ];
+	"Rhttp://www.w3.org/2004/02/skos/core#Concept" [ label="http://www.w3.org/2004/02/skos/core#Concept", shape = ellipse, color = blue ];
+	"Rhttp://www.w3.org/2002/07/owl#Class" [ label="http://www.w3.org/2002/07/owl#Class", shape = ellipse, color = blue ];
+
+	// Anonymous nodes
+
+	// Literals
+	"LMeanEngineeringStrainRate|Language: en" [ label="MeanEngineeringStrainRate|Language: en", shape = record ];
+	"Lmittlere|Language: de" [ label="mittlere|Language: de", shape = record ];
+	"LMean engineering strain rate|Language: en" [ label="Mean engineering strain rate|Language: en", shape = record ];
+
+	label="\n\nModel:\n(Unknown)";
+}

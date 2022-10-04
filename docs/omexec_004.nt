@@ -1,0 +1,2 @@
+<https://w3id.org/steel/ProcessOntology/omexec_004> <http://www.w3.org/ns/r2rml#constant> "http://w3id.org/steel/xlsx2owl-utils/functions.ttl#splitAndExpandPrefixes" .
+<https://w3id.org/steel/ProcessOntology/omexec_004> <http://www.w3.org/ns/r2rml#termType> <http://www.w3.org/ns/r2rml#IRI> .

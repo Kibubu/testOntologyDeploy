@@ -1,0 +1,26 @@
+digraph {
+	rankdir = LR;
+	charset="utf-8";
+
+	"Rhttps://w3id.org/steel/ProcessOntology/UnusualResult" -> "Rhttp://www.w3.org/2002/07/owl#Class" [ label="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/UnusualResult" -> "LExeriment result that differs from a given simulation result, or the other way round.|Language: en" [ label="http://www.w3.org/2000/01/rdf-schema#comment" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/UnusualResult" -> "LUnusual result|Language: en" [ label="http://www.w3.org/2000/01/rdf-schema#label" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/UnusualResult" -> "LUngewöhnliches Ergebnis|Language: de" [ label="http://www.w3.org/2000/01/rdf-schema#label" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/UnusualResult" -> "LUnerwarteter Ausgang|Language: de" [ label="http://www.w3.org/2004/02/skos/core#altlabel" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/UnusualResult" -> "LUnusual result|Language: en" [ label="http://www.w3.org/2004/02/skos/core#preflabel" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/UnusualResult" -> "LUngewöhnliches Ergebnis|Language: de" [ label="http://www.w3.org/2004/02/skos/core#preflabel" ];
+
+	// Resources
+	"Rhttps://w3id.org/steel/ProcessOntology/UnusualResult" [ label="https://w3id.org/steel/ProcessOntology/UnusualResult", shape = ellipse, color = blue ];
+	"Rhttp://www.w3.org/2002/07/owl#Class" [ label="http://www.w3.org/2002/07/owl#Class", shape = ellipse, color = blue ];
+
+	// Anonymous nodes
+
+	// Literals
+	"LExeriment result that differs from a given simulation result, or the other way round.|Language: en" [ label="Exeriment result that differs from a given simulation result, or the other way round.|Language: en", shape = record ];
+	"LUnusual result|Language: en" [ label="Unusual result|Language: en", shape = record ];
+	"LUngewöhnliches Ergebnis|Language: de" [ label="Ungewöhnliches Ergebnis|Language: de", shape = record ];
+	"LUnerwarteter Ausgang|Language: de" [ label="Unerwarteter Ausgang|Language: de", shape = record ];
+
+	label="\n\nModel:\n(Unknown)";
+}

@@ -1,0 +1,25 @@
+digraph {
+	rankdir = LR;
+	charset="utf-8";
+
+	"Rhttps://w3id.org/steel/ProcessOntology/hasStep" -> "Rhttp://www.w3.org/2002/07/owl#ObjectProperty" [ label="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/hasStep" -> "Rhttps://w3id.org/steel/ProcessOntology/DigitalWorkflow" [ label="http://www.w3.org/2000/01/rdf-schema#domain" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/hasStep" -> "Lhas Step|Language: en" [ label="http://www.w3.org/2000/01/rdf-schema#label" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/hasStep" -> "Rhttps://w3id.org/steel/ProcessOntology/WorkflowStep" [ label="http://www.w3.org/2000/01/rdf-schema#range" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/hasStep" -> "LThe relation between digital workflows and workflow steps|Language: en" [ label="http://purl.org/dc/elements/1.1/description" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/hasStep" -> "Lhas Step|Language: en" [ label="http://www.w3.org/2004/02/skos/core#preflabel" ];
+
+	// Resources
+	"Rhttps://w3id.org/steel/ProcessOntology/hasStep" [ label="https://w3id.org/steel/ProcessOntology/hasStep", shape = ellipse, color = blue ];
+	"Rhttp://www.w3.org/2002/07/owl#ObjectProperty" [ label="http://www.w3.org/2002/07/owl#ObjectProperty", shape = ellipse, color = blue ];
+	"Rhttps://w3id.org/steel/ProcessOntology/DigitalWorkflow" [ label="https://w3id.org/steel/ProcessOntology/DigitalWorkflow", shape = ellipse, color = blue ];
+	"Rhttps://w3id.org/steel/ProcessOntology/WorkflowStep" [ label="https://w3id.org/steel/ProcessOntology/WorkflowStep", shape = ellipse, color = blue ];
+
+	// Anonymous nodes
+
+	// Literals
+	"Lhas Step|Language: en" [ label="has Step|Language: en", shape = record ];
+	"LThe relation between digital workflows and workflow steps|Language: en" [ label="The relation between digital workflows and workflow steps|Language: en", shape = record ];
+
+	label="\n\nModel:\n(Unknown)";
+}

@@ -1,0 +1,23 @@
+digraph {
+	rankdir = LR;
+	charset="utf-8";
+
+	"Rhttps://w3id.org/steel/ProcessOntology/ScriptJob" -> "Rhttp://www.w3.org/2002/07/owl#Class" [ label="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/ScriptJob" -> "La Pyiron job for executing a script like e.g. JupyterNotebook|Language: en" [ label="http://www.w3.org/2000/01/rdf-schema#comment" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/ScriptJob" -> "LScript Job|Language: en" [ label="http://www.w3.org/2000/01/rdf-schema#label" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/ScriptJob" -> "Rhttps://w3id.org/steel/ProcessOntology/PyironJob" [ label="http://www.w3.org/2000/01/rdf-schema#subClassOf" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/ScriptJob" -> "LScript Job|Language: en" [ label="http://www.w3.org/2004/02/skos/core#preflabel" ];
+
+	// Resources
+	"Rhttps://w3id.org/steel/ProcessOntology/ScriptJob" [ label="https://w3id.org/steel/ProcessOntology/ScriptJob", shape = ellipse, color = blue ];
+	"Rhttp://www.w3.org/2002/07/owl#Class" [ label="http://www.w3.org/2002/07/owl#Class", shape = ellipse, color = blue ];
+	"Rhttps://w3id.org/steel/ProcessOntology/PyironJob" [ label="https://w3id.org/steel/ProcessOntology/PyironJob", shape = ellipse, color = blue ];
+
+	// Anonymous nodes
+
+	// Literals
+	"La Pyiron job for executing a script like e.g. JupyterNotebook|Language: en" [ label="a Pyiron job for executing a script like e.g. JupyterNotebook|Language: en", shape = record ];
+	"LScript Job|Language: en" [ label="Script Job|Language: en", shape = record ];
+
+	label="\n\nModel:\n(Unknown)";
+}

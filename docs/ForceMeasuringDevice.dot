@@ -1,0 +1,41 @@
+digraph {
+	rankdir = LR;
+	charset="utf-8";
+
+	"Rhttps://w3id.org/steel/ProcessOntology/ForceMeasuringDevice" -> "Rhttp://www.w3.org/2002/07/owl#Class" [ label="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/ForceMeasuringDevice" -> "Rhttp://www.w3.org/2004/02/skos/core#Concept" [ label="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/ForceMeasuringDevice" -> "LDie Kraftmesseinrichtung der Zugprüfmaschine muss im relevanten Bereich mindestens der Klasse 1 nach ISO 7500-1 entsprechen.|Language: de" [ label="http://www.w3.org/2000/01/rdf-schema#comment" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/ForceMeasuringDevice" -> "LGenauigkeit der Prüfeinrichtungen: Die Kraftmesseinrichtung der Prüfmaschine muss mindestens der Klasse 1 nach ISO 7500-1 entsprechen.|Language: de" [ label="http://www.w3.org/2000/01/rdf-schema#comment" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/ForceMeasuringDevice" -> "LType of the force transducer. (description replaced by Zugversuch Instron)|Language: en" [ label="http://www.w3.org/2000/01/rdf-schema#comment" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/ForceMeasuringDevice" -> "LType of the force measurement (force transducer, strain gauges, ....)|Language: en" [ label="http://www.w3.org/2000/01/rdf-schema#comment" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/ForceMeasuringDevice" -> "LForceMeasuringDevice|Language: en" [ label="http://www.w3.org/2000/01/rdf-schema#label" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/ForceMeasuringDevice" -> "LKraftaufnehmer|Language: de" [ label="http://www.w3.org/2004/02/skos/core#altlabel" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/ForceMeasuringDevice" -> "LForce transducer|Language: en" [ label="http://www.w3.org/2004/02/skos/core#altlabel" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/ForceMeasuringDevice" -> "Lforce-measuring device|Language: en" [ label="http://www.w3.org/2004/02/skos/core#altlabel" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/ForceMeasuringDevice" -> "LForce-measuring device|Language: en" [ label="http://www.w3.org/2004/02/skos/core#altlabel" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/ForceMeasuringDevice" -> "LKraftmesseinrichtung|Language: de" [ label="http://www.w3.org/2004/02/skos/core#altlabel" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/ForceMeasuringDevice" -> "LForce-measuring system|Language: en" [ label="http://www.w3.org/2004/02/skos/core#altlabel" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/ForceMeasuringDevice" -> "LForceMeasuringDevice|Language: en" [ label="http://www.w3.org/2004/02/skos/core#preflabel" ];
+
+	// Resources
+	"Rhttps://w3id.org/steel/ProcessOntology/ForceMeasuringDevice" [ label="https://w3id.org/steel/ProcessOntology/ForceMeasuringDevice", shape = ellipse, color = blue ];
+	"Rhttp://www.w3.org/2002/07/owl#Class" [ label="http://www.w3.org/2002/07/owl#Class", shape = ellipse, color = blue ];
+	"Rhttp://www.w3.org/2004/02/skos/core#Concept" [ label="http://www.w3.org/2004/02/skos/core#Concept", shape = ellipse, color = blue ];
+
+	// Anonymous nodes
+
+	// Literals
+	"LDie Kraftmesseinrichtung der Zugprüfmaschine muss im relevanten Bereich mindestens der Klasse 1 nach ISO 7500-1 entsprechen.|Language: de" [ label="Die Kraftmesseinrichtung der Zugprüfmaschine muss im relevanten Bereich mindestens der Klasse 1 nach ISO 7500-1 entsprechen.|Language: de", shape = record ];
+	"LGenauigkeit der Prüfeinrichtungen: Die Kraftmesseinrichtung der Prüfmaschine muss mindestens der Klasse 1 nach ISO 7500-1 entsprechen.|Language: de" [ label="Genauigkeit der Prüfeinrichtungen: Die Kraftmesseinrichtung der Prüfmaschine muss mindestens der Klasse 1 nach ISO 7500-1 entsprechen.|Language: de", shape = record ];
+	"LType of the force transducer. (description replaced by Zugversuch Instron)|Language: en" [ label="Type of the force transducer. (description replaced by Zugversuch Instron)|Language: en", shape = record ];
+	"LType of the force measurement (force transducer, strain gauges, ....)|Language: en" [ label="Type of the force measurement (force transducer, strain gauges, ....)|Language: en", shape = record ];
+	"LForceMeasuringDevice|Language: en" [ label="ForceMeasuringDevice|Language: en", shape = record ];
+	"LKraftaufnehmer|Language: de" [ label="Kraftaufnehmer|Language: de", shape = record ];
+	"LForce transducer|Language: en" [ label="Force transducer|Language: en", shape = record ];
+	"Lforce-measuring device|Language: en" [ label="force-measuring device|Language: en", shape = record ];
+	"LForce-measuring device|Language: en" [ label="Force-measuring device|Language: en", shape = record ];
+	"LKraftmesseinrichtung|Language: de" [ label="Kraftmesseinrichtung|Language: de", shape = record ];
+	"LForce-measuring system|Language: en" [ label="Force-measuring system|Language: en", shape = record ];
+
+	label="\n\nModel:\n(Unknown)";
+}

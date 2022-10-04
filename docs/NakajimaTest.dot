@@ -1,0 +1,24 @@
+digraph {
+	rankdir = LR;
+	charset="utf-8";
+
+	"Rhttps://w3id.org/steel/ProcessOntology/NakajimaTest" -> "Rhttp://www.w3.org/2002/07/owl#Class" [ label="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/NakajimaTest" -> "LNakajima Test|Language: en" [ label="http://www.w3.org/2000/01/rdf-schema#label" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/NakajimaTest" -> "LNakajima Test|Language: de" [ label="http://www.w3.org/2000/01/rdf-schema#label" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/NakajimaTest" -> "Rhttps://w3id.org/steel/ProcessOntology/ExperimentalTest" [ label="http://www.w3.org/2000/01/rdf-schema#subClassOf" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/NakajimaTest" -> "LNakajima Test|Language: en" [ label="http://www.w3.org/2004/02/skos/core#preflabel" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/NakajimaTest" -> "LNakajima Test|Language: de" [ label="http://www.w3.org/2004/02/skos/core#preflabel" ];
+
+	// Resources
+	"Rhttps://w3id.org/steel/ProcessOntology/NakajimaTest" [ label="https://w3id.org/steel/ProcessOntology/NakajimaTest", shape = ellipse, color = blue ];
+	"Rhttp://www.w3.org/2002/07/owl#Class" [ label="http://www.w3.org/2002/07/owl#Class", shape = ellipse, color = blue ];
+	"Rhttps://w3id.org/steel/ProcessOntology/ExperimentalTest" [ label="https://w3id.org/steel/ProcessOntology/ExperimentalTest", shape = ellipse, color = blue ];
+
+	// Anonymous nodes
+
+	// Literals
+	"LNakajima Test|Language: en" [ label="Nakajima Test|Language: en", shape = record ];
+	"LNakajima Test|Language: de" [ label="Nakajima Test|Language: de", shape = record ];
+
+	label="\n\nModel:\n(Unknown)";
+}

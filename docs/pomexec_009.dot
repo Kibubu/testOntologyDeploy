@@ -1,0 +1,18 @@
+digraph {
+	rankdir = LR;
+	charset="utf-8";
+
+	"Rhttps://w3id.org/steel/ProcessOntology/pomexec_009" -> "Rhttps://w3id.org/steel/ProcessOntology/omexec_009" [ label="http://www.w3.org/ns/r2rml#objectMap" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/pomexec_009" -> "Rhttps://w3id.org/steel/ProcessOntology/pmexec_009" [ label="http://www.w3.org/ns/r2rml#predicateMap" ];
+
+	// Resources
+	"Rhttps://w3id.org/steel/ProcessOntology/pomexec_009" [ label="https://w3id.org/steel/ProcessOntology/pomexec_009", shape = ellipse, color = blue ];
+	"Rhttps://w3id.org/steel/ProcessOntology/omexec_009" [ label="https://w3id.org/steel/ProcessOntology/omexec_009", shape = ellipse, color = blue ];
+	"Rhttps://w3id.org/steel/ProcessOntology/pmexec_009" [ label="https://w3id.org/steel/ProcessOntology/pmexec_009", shape = ellipse, color = blue ];
+
+	// Anonymous nodes
+
+	// Literals
+
+	label="\n\nModel:\n(Unknown)";
+}

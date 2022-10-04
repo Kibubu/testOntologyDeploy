@@ -1,0 +1,27 @@
+digraph {
+	rankdir = LR;
+	charset="utf-8";
+
+	"Rhttps://w3id.org/steel/ProcessOntology/TrueStressAtFracture" -> "Rhttp://www.w3.org/2004/02/skos/core#Concept" [ label="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/TrueStressAtFracture" -> "Rhttp://www.w3.org/2002/07/owl#Class" [ label="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/TrueStressAtFracture" -> "Ltrue stress at fracture|Language: en" [ label="http://www.w3.org/2000/01/rdf-schema#comment" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/TrueStressAtFracture" -> "LTrueStressAtFracture|Language: en" [ label="http://www.w3.org/2000/01/rdf-schema#label" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/TrueStressAtFracture" -> "Lwahre Bruchspannung|Language: de" [ label="http://www.w3.org/2004/02/skos/core#altlabel" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/TrueStressAtFracture" -> "LTrue stress at fracture|Language: en" [ label="http://www.w3.org/2004/02/skos/core#altlabel" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/TrueStressAtFracture" -> "LTrueStressAtFracture|Language: en" [ label="http://www.w3.org/2004/02/skos/core#preflabel" ];
+
+	// Resources
+	"Rhttps://w3id.org/steel/ProcessOntology/TrueStressAtFracture" [ label="https://w3id.org/steel/ProcessOntology/TrueStressAtFracture", shape = ellipse, color = blue ];
+	"Rhttp://www.w3.org/2004/02/skos/core#Concept" [ label="http://www.w3.org/2004/02/skos/core#Concept", shape = ellipse, color = blue ];
+	"Rhttp://www.w3.org/2002/07/owl#Class" [ label="http://www.w3.org/2002/07/owl#Class", shape = ellipse, color = blue ];
+
+	// Anonymous nodes
+
+	// Literals
+	"Ltrue stress at fracture|Language: en" [ label="true stress at fracture|Language: en", shape = record ];
+	"LTrueStressAtFracture|Language: en" [ label="TrueStressAtFracture|Language: en", shape = record ];
+	"Lwahre Bruchspannung|Language: de" [ label="wahre Bruchspannung|Language: de", shape = record ];
+	"LTrue stress at fracture|Language: en" [ label="True stress at fracture|Language: en", shape = record ];
+
+	label="\n\nModel:\n(Unknown)";
+}

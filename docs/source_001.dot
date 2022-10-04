@@ -1,0 +1,20 @@
+digraph {
+	rankdir = LR;
+	charset="utf-8";
+
+	"Rhttps://w3id.org/steel/ProcessOntology/source_001" -> "Rhttp://semweb.mmlab.be/ns/rml#LogicalSource" [ label="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/source_001" -> "Rhttp://semweb.mmlab.be/ns/ql#CSV" [ label="http://semweb.mmlab.be/ns/rml#referenceFormulation" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/source_001" -> "Lcsv/Zugversuch Instron GF2 PP.csv" [ label="http://semweb.mmlab.be/ns/rml#source" ];
+
+	// Resources
+	"Rhttps://w3id.org/steel/ProcessOntology/source_001" [ label="https://w3id.org/steel/ProcessOntology/source_001", shape = ellipse, color = blue ];
+	"Rhttp://semweb.mmlab.be/ns/rml#LogicalSource" [ label="http://semweb.mmlab.be/ns/rml#LogicalSource", shape = ellipse, color = blue ];
+	"Rhttp://semweb.mmlab.be/ns/ql#CSV" [ label="http://semweb.mmlab.be/ns/ql#CSV", shape = ellipse, color = blue ];
+
+	// Anonymous nodes
+
+	// Literals
+	"Lcsv/Zugversuch Instron GF2 PP.csv" [ label="csv/Zugversuch Instron GF2 PP.csv", shape = record ];
+
+	label="\n\nModel:\n(Unknown)";
+}

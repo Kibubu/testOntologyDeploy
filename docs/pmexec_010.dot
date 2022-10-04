@@ -1,0 +1,16 @@
+digraph {
+	rankdir = LR;
+	charset="utf-8";
+
+	"Rhttps://w3id.org/steel/ProcessOntology/pmexec_010" -> "Rhttps://w3id.org/function/ontology#executes" [ label="http://www.w3.org/ns/r2rml#constant" ];
+
+	// Resources
+	"Rhttps://w3id.org/steel/ProcessOntology/pmexec_010" [ label="https://w3id.org/steel/ProcessOntology/pmexec_010", shape = ellipse, color = blue ];
+	"Rhttps://w3id.org/function/ontology#executes" [ label="https://w3id.org/function/ontology#executes", shape = ellipse, color = blue ];
+
+	// Anonymous nodes
+
+	// Literals
+
+	label="\n\nModel:\n(Unknown)";
+}

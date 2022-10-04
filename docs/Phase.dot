@@ -1,0 +1,24 @@
+digraph {
+	rankdir = LR;
+	charset="utf-8";
+
+	"Rhttps://w3id.org/steel/ProcessOntology/Phase" -> "Rhttp://www.w3.org/2002/07/owl#Class" [ label="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/Phase" -> "LRegion of space (a thermodynamic system), throughout which all physical properties of a material are essentially uniform (Wikipedia)|Language: en" [ label="http://www.w3.org/2000/01/rdf-schema#comment" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/Phase" -> "LPhase|Language: en" [ label="http://www.w3.org/2000/01/rdf-schema#label" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/Phase" -> "LPhase|Language: de" [ label="http://www.w3.org/2000/01/rdf-schema#label" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/Phase" -> "LPhase|Language: en" [ label="http://www.w3.org/2004/02/skos/core#preflabel" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/Phase" -> "LPhase|Language: de" [ label="http://www.w3.org/2004/02/skos/core#preflabel" ];
+
+	// Resources
+	"Rhttps://w3id.org/steel/ProcessOntology/Phase" [ label="https://w3id.org/steel/ProcessOntology/Phase", shape = ellipse, color = blue ];
+	"Rhttp://www.w3.org/2002/07/owl#Class" [ label="http://www.w3.org/2002/07/owl#Class", shape = ellipse, color = blue ];
+
+	// Anonymous nodes
+
+	// Literals
+	"LRegion of space (a thermodynamic system), throughout which all physical properties of a material are essentially uniform (Wikipedia)|Language: en" [ label="Region of space (a thermodynamic system), throughout which all physical properties of a material are essentially uniform (Wikipedia)|Language: en", shape = record ];
+	"LPhase|Language: en" [ label="Phase|Language: en", shape = record ];
+	"LPhase|Language: de" [ label="Phase|Language: de", shape = record ];
+
+	label="\n\nModel:\n(Unknown)";
+}

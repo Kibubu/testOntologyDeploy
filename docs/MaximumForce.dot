@@ -1,0 +1,27 @@
+digraph {
+	rankdir = LR;
+	charset="utf-8";
+
+	"Rhttps://w3id.org/steel/ProcessOntology/MaximumForce" -> "Rhttp://www.w3.org/2004/02/skos/core#Concept" [ label="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/MaximumForce" -> "Rhttp://www.w3.org/2002/07/owl#Class" [ label="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/MaximumForce" -> "Lhighest force that the test piece withstands during the test|Language: en" [ label="http://www.w3.org/2000/01/rdf-schema#comment" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/MaximumForce" -> "LMaximumForce|Language: en" [ label="http://www.w3.org/2000/01/rdf-schema#label" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/MaximumForce" -> "Lmaximum force|Language: en" [ label="http://www.w3.org/2004/02/skos/core#altlabel" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/MaximumForce" -> "LHöchstzugkraft Fm|Language: de" [ label="http://www.w3.org/2004/02/skos/core#altlabel" ];
+	"Rhttps://w3id.org/steel/ProcessOntology/MaximumForce" -> "LMaximumForce|Language: en" [ label="http://www.w3.org/2004/02/skos/core#preflabel" ];
+
+	// Resources
+	"Rhttps://w3id.org/steel/ProcessOntology/MaximumForce" [ label="https://w3id.org/steel/ProcessOntology/MaximumForce", shape = ellipse, color = blue ];
+	"Rhttp://www.w3.org/2004/02/skos/core#Concept" [ label="http://www.w3.org/2004/02/skos/core#Concept", shape = ellipse, color = blue ];
+	"Rhttp://www.w3.org/2002/07/owl#Class" [ label="http://www.w3.org/2002/07/owl#Class", shape = ellipse, color = blue ];
+
+	// Anonymous nodes
+
+	// Literals
+	"Lhighest force that the test piece withstands during the test|Language: en" [ label="highest force that the test piece withstands during the test|Language: en", shape = record ];
+	"LMaximumForce|Language: en" [ label="MaximumForce|Language: en", shape = record ];
+	"Lmaximum force|Language: en" [ label="maximum force|Language: en", shape = record ];
+	"LHöchstzugkraft Fm|Language: de" [ label="Höchstzugkraft Fm|Language: de", shape = record ];
+
+	label="\n\nModel:\n(Unknown)";
+}

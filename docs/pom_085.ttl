@@ -1,8 +1,0 @@
-
-
-<https://w3id.org/steel/ProcessOntology/pom_085> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/r2rml#PredicateObjectMap> .
-<https://w3id.org/steel/ProcessOntology/pom_085> <http://www.w3.org/ns/r2rml#objectMap> <https://w3id.org/steel/ProcessOntology/om_093> .
-<https://w3id.org/steel/ProcessOntology/pom_085> <http://www.w3.org/ns/r2rml#predicateMap> <https://w3id.org/steel/ProcessOntology/pm_100> .
-<https://w3id.org/steel/ProcessOntology/pom_085> <http://www.w3.org/ns/r2rml#predicateMap> <https://w3id.org/steel/ProcessOntology/pm_099> .
-
-

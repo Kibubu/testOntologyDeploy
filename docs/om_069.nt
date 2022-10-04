@@ -1,4 +1,0 @@
-<https://w3id.org/steel/ProcessOntology/om_069> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/r2rml#ObjectMap> .
-<https://w3id.org/steel/ProcessOntology/om_069> <http://semweb.mmlab.be/ns/rml#languageMap> <https://w3id.org/steel/ProcessOntology/language_027> .
-<https://w3id.org/steel/ProcessOntology/om_069> <http://semweb.mmlab.be/ns/rml#reference> "Term-German-Label-Alt-Label" .
-<https://w3id.org/steel/ProcessOntology/om_069> <http://www.w3.org/ns/r2rml#termType> <http://www.w3.org/ns/r2rml#Literal> .

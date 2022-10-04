@@ -1,6 +1,0 @@
-
-
-<https://w3id.org/steel/ProcessOntology/s_001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/r2rml#SubjectMap> .
-<https://w3id.org/steel/ProcessOntology/s_001> <http://www.w3.org/ns/r2rml#template> "https://w3id.org/steel/ProcessOntology/{Ontological-Concept-ID}" .
-
-

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/s_006">
-    <rdf:type rdf:resource="http://www.w3.org/ns/r2rml#SubjectMap"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/s_006">
-    <ns0:template xmlns:ns0="http://www.w3.org/ns/r2rml#">https://w3id.org/steel/ProcessOntology/{Ontological-Concept-ID}</ns0:template>
-  </rdf:Description>
-</rdf:RDF>

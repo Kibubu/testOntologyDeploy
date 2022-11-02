@@ -21,6 +21,12 @@
         }
       
       ],
+    "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+        "value" : "https://w3id.org/steel/ProcessOntology/CodeRessource",
+        "type" : "uri"
+        }
+      
+      ],
     "http://www.w3.org/2004/02/skos/core#preflabel" : [ {
         "value" : "Pyiron job input",
         "lang" : "en",

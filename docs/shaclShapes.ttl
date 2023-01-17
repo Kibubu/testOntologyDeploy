@@ -3,27 +3,7 @@
 @prefix sh:    <http://www.w3.org/ns/shacl#> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
-@prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-
-ex:PropertyLabelShape
-        rdf:type        sh:NodeShape ;
-        rdfs:comment    "Each rdf:Property, owl:DatatypeProperty or owl:ObjectProperty must have at least one rdfs:label" ;
-        rdfs:label      "Properties must have a label" ;
-        sh:property     [ sh:datatype  rdf:langString ;
-                          sh:minCount  1 ;
-                          sh:path      rdfs:label
-                        ] ;
-        sh:targetClass  owl:ObjectProperty , owl:DatatypeProperty , rdf:Property .
-
-ex:ClassLabelShape  rdf:type  sh:NodeShape ;
-        rdfs:comment    "A class must at least have one label" ;
-        rdfs:label      "Label shape" ;
-        sh:property     [ sh:datatype  rdf:langString ;
-                          sh:minCount  1 ;
-                          sh:path      rdfs:label
-                        ] ;
-        sh:targetClass  owl:Class .
 
 ex:PropertyCommentShape
         rdf:type        sh:NodeShape ;
@@ -35,72 +15,14 @@ ex:PropertyCommentShape
                         ] ;
         sh:targetClass  owl:ObjectProperty , owl:DatatypeProperty , rdf:Property .
 
-ex:PropertyNamesWithoutPropertyInName
+ex:PropertyNoSuperpropertyShape
         rdf:type        sh:NodeShape ;
-        rdfs:comment    "Properties should be expressive and not include 'property' in their names." ;
-        rdfs:label      "Properties without 'property' in name." ;
-        sh:sparql       [ sh:select  "\n      SELECT ?this WHERE {\n        ?ontology a owl:Ontology.\n        FILTER (\n          strStarts(str(?this), str(?ontology))) \n\n        bind(substr(str(?this), strlen(str(?ontology)) + 1) as ?propertyName)\n        FILTER (\n          REGEX(STR(?propertyName), \"class\", \"i\")\n        )\n      }\n    " ] ;
-        sh:targetClass  rdfs:Property , owl:ObjectProperty , owl:DatatypeProperty .
-
-ex:PropertyNoCapitaLetterShape
-        rdf:type        sh:NodeShape ;
-        rdfs:comment    "For naming conventions, each rdf:Property, owl:DatatypeProperty or owl:ObjectProperty name must not start with a capital letter" ;
-        rdfs:label      "Properties names must not start with a capital letter" ;
-        sh:sparql       [ sh:select  "\n    SELECT $this\n    WHERE {\n    $this a ?property .\n    FILTER(?property IN (rdf:Property, owl:DatatypeProperty, owl:ObjectProperty)) .\n    BIND(REPLACE(STR($this), '/[A-Z][A-z0-9]*$', '' ) as ?str1) .\n    FILTER(STR($this) != STR(?str1)) .\n    }\n    " ] ;
+        rdfs:comment    "Each rdf:Property, owl:DatatypeProperty or owl:ObjectProperty must have at most one superproperty" ;
+        rdfs:label      "Properties must have at most one superproperty" ;
+        sh:property     [ sh:maxCount  1 ;
+                          sh:path      rdfs:subPropertyOf
+                        ] ;
         sh:targetClass  owl:ObjectProperty , owl:DatatypeProperty , rdf:Property .
-
-<http://example.org/OntologyNeedsMetadata>
-        rdf:type        sh:NodeShape ;
-        rdfs:comment    "The ontology should provide some basic metadata, like rdfs:comment, dct:creator, rdfs:label, owl:versionInfo, dct:modified and owl:priorVersion." ;
-        rdfs:label      "Ontology needs metadata." ;
-        sh:property     [ sh:minCount  1 ;
-                          sh:path      dcterms:modified
-                        ] ;
-        sh:property     [ sh:minCount  1 ;
-                          sh:path      dcterms:creator
-                        ] ;
-        sh:property     [ sh:minCount  1 ;
-                          sh:path      rdfs:comment
-                        ] ;
-        sh:property     [ sh:minCount  1 ;
-                          sh:path      owl:versionInfo
-                        ] ;
-        sh:property     [ sh:minCount  1 ;
-                          sh:path      rdfs:label
-                        ] ;
-        sh:targetClass  owl:Ontology .
-
-ex:ClassNamesWithoutClassInName
-        rdf:type        sh:NodeShape ;
-        rdfs:comment    "Classes should be expressive and not include 'class' in their names." ;
-        rdfs:label      "Class names without 'class' in name." ;
-        sh:sparql       [ sh:select  "\n      SELECT ?this WHERE {\n        ?ontology a owl:Ontology.\n        FILTER (\n          strStarts(str(?this), str(?ontology))\n        )\n        bind(substr(str(?this), strlen(str(?ontology)) + 1) as ?className)\n        FILTER (\n          REGEX(STR(?className), \"class\", \"i\")\n        )\n      }\n    " ] ;
-        sh:targetClass  rdfs:Class , owl:Class .
-
-ex:ClassConnectedShape
-        rdf:type        sh:NodeShape ;
-        rdfs:comment    "Check whether a owl:Class (a) is not part of any hierarchy (using rdfs:subClassOf) (b) does not have any definition axiom (using rdfs:subClassOf or owl:equivalentClass and a class restriction expression) (c) does not appear in any other class definition axiom (using rdfs:subClassOf or owl:equivalentClass and a class restriction expression) (d) does not appear in any rdfs:domain or rdfs:range." ;
-        rdfs:label      "Detect unconnected classes" ;
-        sh:sparql       [ sh:select  "\n    SELECT $this WHERE\n    {\n      FILTER NOT EXISTS {$this rdfs:subClassOf ?any1} .\n      FILTER NOT EXISTS {?any2 owl:equivalentClass $this} .\n      FILTER NOT EXISTS {$this owl:equivalentClass ?any3} .\n      FILTER NOT EXISTS {?any4 rdfs:subClassOf $this} .\n      FILTER NOT EXISTS {?any5 rdfs:range $this} .\n      FILTER NOT EXISTS {?any6 rdfs:domain $this} .\n      }\n    " ] ;
-        sh:targetClass  owl:Class .
-
-ex:ClassNamesStartsWithCapitalLetter
-        rdf:type        sh:NodeShape ;
-        rdfs:comment    "For each class check if name starts with a capital letter." ;
-        rdfs:label      "Class name starts with capital letter." ;
-        sh:sparql       [ sh:select  "\n      SELECT ?this WHERE {\n        ?ontology a owl:Ontology.\n        FILTER (\n          strStarts(str(?this), str(?ontology))\n        )\n        bind(substr(str(?this), strlen(str(?ontology)) +1 ) as ?className)\n        FILTER (\n          REGEX(str(?className),\"^[A-Z]\")\n        )\n      }\n    " ] ;
-        sh:targetClass  rdfs:Class , owl:Class .
-
-ex:ClassCommentShape  rdf:type  sh:NodeShape ;
-        rdfs:comment    "Each owl:Class must have at least one rdfs:comment, which must be unique for each language." ;
-        rdfs:label      "Classes must have a comment" ;
-        sh:property     [ sh:minCount  1 ;
-                          sh:or        ( [ sh:datatype  rdf:langString ]
-                                         [ sh:datatype  xsd:integer ]
-                                       ) ;
-                          sh:path      rdfs:comment
-                        ] ;
-        sh:targetClass  owl:Class .
 
 ex:NamespacePersistentShape
         rdf:type        sh:NodeShape ;
@@ -111,15 +33,6 @@ ex:NamespacePersistentShape
                         ) ;
         sh:targetClass  owl:Ontology .
 
-ex:PropertyNoSuperpropertyShape
-        rdf:type        sh:NodeShape ;
-        rdfs:comment    "Each rdf:Property, owl:DatatypeProperty or owl:ObjectProperty must have at most one superproperty" ;
-        rdfs:label      "Properties must have at most one superproperty" ;
-        sh:property     [ sh:maxCount  1 ;
-                          sh:path      rdfs:subPropertyOf
-                        ] ;
-        sh:targetClass  owl:ObjectProperty , owl:DatatypeProperty , rdf:Property .
-
 ex:ClassNoSynonymShape
         rdf:type        sh:NodeShape ;
         rdfs:comment    "No owl:equivalentClass relationship is allowed between two owl:Class within the same namespace" ;
@@ -127,11 +40,34 @@ ex:ClassNoSynonymShape
         sh:sparql       [ sh:select  "\n    SELECT $this\n    WHERE {\n    $this a owl:Class .\n    $this owl:equivalentClass ?other\n    BIND(REPLACE(STR($this), '(#|/)[^#/]*$', '$1' ) as ?ns1) .\n    BIND(REPLACE(STR(?other), '(#|/)[^#/]*$', '$1' ) as ?ns2) .\n    FILTER(?ns1 = ?ns2) .\n    }\n    " ] ;
         sh:targetClass  owl:Class .
 
+ex:ClassLabelShape  rdf:type  sh:NodeShape ;
+        rdfs:comment    "A class must at least have one label" ;
+        rdfs:label      "Label shape" ;
+        sh:property     [ sh:datatype  rdf:langString ;
+                          sh:minCount  1 ;
+                          sh:path      rdfs:label
+                        ] ;
+        sh:targetClass  owl:Class .
+
+ex:ClassNoLowercaseShape
+        rdf:type        sh:NodeShape ;
+        rdfs:comment    "For naming conventions, each owl:Class name must not start with a lowercase letter" ;
+        rdfs:label      "Classes names must not start with a lowercase letter" ;
+        sh:sparql       [ sh:select  "\n    SELECT $this\n    WHERE {\n    $this a owl:Class .\n    BIND(REPLACE(STR($this), '/([a-z][1]?[A-z0-9]*)$', '' ) as ?str1) .\n    FILTER(STR($this) != STR(?str1)) .\n    }\n    " ] ;
+        sh:targetClass  owl:Class .
+
 ex:PropertyNoInverseShape
         rdf:type        sh:NodeShape ;
         rdfs:comment    "Check if any rdf:Property, owl:DatatypeProperty or owl:ObjectProperty is owl:inverseOf of itself." ;
         rdfs:label      "Detect relationships inverse to themselves" ;
         sh:sparql       [ sh:select  "\n    SELECT $this\n    WHERE {\n    $this a ?property .\n    $this owl:inverseOf $this .\n    FILTER(?property IN (rdf:Property, owl:DatatypeProperty, owl:ObjectProperty)) .\n    }\n    " ] ;
+        sh:targetClass  owl:ObjectProperty , owl:DatatypeProperty , rdf:Property .
+
+ex:PropertyNoCapitaLetterShape
+        rdf:type        sh:NodeShape ;
+        rdfs:comment    "For naming conventions, each rdf:Property, owl:DatatypeProperty or owl:ObjectProperty name must not start with a capital letter" ;
+        rdfs:label      "Properties names must not start with a capital letter" ;
+        sh:sparql       [ sh:select  "\n    SELECT $this\n    WHERE {\n    $this a ?property .\n    FILTER(?property IN (rdf:Property, owl:DatatypeProperty, owl:ObjectProperty)) .\n    BIND(REPLACE(STR($this), '/[A-Z][A-z0-9]*$', '' ) as ?str1) .\n    FILTER(STR($this) != STR(?str1)) .\n    }\n    " ] ;
         sh:targetClass  owl:ObjectProperty , owl:DatatypeProperty , rdf:Property .
 
 ex:SuperclassShape  rdf:type  sh:NodeShape ;
@@ -149,11 +85,21 @@ ex:SuperclassShape  rdf:type  sh:NodeShape ;
                         ] ;
         sh:targetClass  owl:Class .
 
-ex:EnglishLabels  rdf:type  sh:NodeShape ;
-        rdfs:comment    "For each class and property at least a label in english should be available." ;
-        rdfs:label      "Label in english." ;
-        sh:sparql       [ sh:select  "\n      SELECT ?this WHERE {\n      # omit built-in vocab entities\n      FILTER(\n        !(strstarts(str(?this), str(rdf:)) ||\n          strstarts(str(?this), str(rdfs:)) ||\n          strstarts(str(?this), str(owl:)) ||\n          strstarts(str(?this), \"http://www.w3.org/2004/02/skos/core#\")\n        )\n      )\n\n      FILTER NOT EXISTS {?this rdfs:label ?l FILTER(langmatches(lang(?l), \"en\" ))}\n    }" ] ;
-        sh:targetClass  rdfs:Class , rdfs:Property , owl:DatatypeProperty , owl:ObjectProperty , owl:Class .
+ex:ClassCommentShape  rdf:type  sh:NodeShape ;
+        rdfs:comment    "Each owl:Class must have at least one rdfs:comment, which must be unique for each language." ;
+        rdfs:label      "Classes must have a comment" ;
+        sh:property     [ sh:datatype  rdf:langString ;
+                          sh:minCount  1 ;
+                          sh:path      rdfs:comment
+                        ] ;
+        sh:targetClass  owl:Class .
+
+ex:ClassConnectedShape
+        rdf:type        sh:NodeShape ;
+        rdfs:comment    "Check whether a owl:Class (a) is not part of any hierarchy (using rdfs:subClassOf) (b) does not have any definition axiom (using rdfs:subClassOf or owl:equivalentClass and a class restriction expression) (c) does not appear in any other class definition axiom (using rdfs:subClassOf or owl:equivalentClass and a class restriction expression) (d) does not appear in any rdfs:domain or rdfs:range." ;
+        rdfs:label      "Detect unconnected classes" ;
+        sh:sparql       [ sh:select  "\n    SELECT $this WHERE\n    {\n    $this a owl:Class .\n    FILTER NOT EXISTS {$this rdfs:subClassOf ?any1} .\n    FILTER NOT EXISTS {?any2 owl:equivalentClass $this} .\n    FILTER NOT EXISTS {$this owl:equivalentClass ?any3} .\n    FILTER NOT EXISTS {?any4 rdfs:subClassOf $this} .\n    FILTER NOT EXISTS {?any5 rdfs:range $this} .\n    FILTER NOT EXISTS {?any6 rdfs:domain $this} .\n    }\n    " ] ;
+        sh:targetClass  owl:Class .
 
 ex:ClassCyclesShape  rdf:type  sh:NodeShape ;
         rdfs:comment    "No owl:Class can be rdfs:subClassOf itself in any level" ;
@@ -161,9 +107,12 @@ ex:ClassCyclesShape  rdf:type  sh:NodeShape ;
         sh:sparql       [ sh:select  "\n    SELECT $this WHERE\n    {\n    $this a owl:Class .\n    $this rdfs:subClassOf+ $this .\n    }\n    " ] ;
         sh:targetClass  owl:Class .
 
-ex:ClassNoLowercaseShape
+ex:PropertyLabelShape
         rdf:type        sh:NodeShape ;
-        rdfs:comment    "For naming conventions, each owl:Class name must not start with a lowercase letter" ;
-        rdfs:label      "Classes names must not start with a lowercase letter" ;
-        sh:sparql       [ sh:select  "\n    SELECT $this\n    WHERE {\n    $this a owl:Class .\n    BIND(REPLACE(STR($this), '/([a-z][1]?[A-z0-9]*)$', '' ) as ?str1) .\n    FILTER(STR($this) != STR(?str1)) .\n    }\n    " ] ;
-        sh:targetClass  owl:Class .
+        rdfs:comment    "Each rdf:Property, owl:DatatypeProperty or owl:ObjectProperty must have at least one rdfs:label" ;
+        rdfs:label      "Properties must have a label" ;
+        sh:property     [ sh:datatype  rdf:langString ;
+                          sh:minCount  1 ;
+                          sh:path      rdfs:label
+                        ] ;
+        sh:targetClass  owl:ObjectProperty , owl:DatatypeProperty , rdf:Property .

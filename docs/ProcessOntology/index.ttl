@@ -194,20 +194,17 @@
         skos:altlabel   "Gleichungslöser"@de ;
         skos:preflabel  "Solver"@en , "Solver"@de .
 
-<https://w3id.org/steel/ProcessOntology/ProofStrength%2CTotalExtension>
-        rdf:type        skos:Concept , owl:Class ;
-        rdfs:label      "ProofStrength,TotalExtension"@en ;
-        skos:altlabel   "proof strength, total extension"@en ;
-        skos:preflabel  "ProofStrength,TotalExtension"@en .
-
 :Force  rdf:type        owl:Class , skos:Concept ;
         rdfs:comment    "The force measured by the load cell"@en , "The force that is measured using the Force-measuring device."@en , "The force measured with the force measuring system"@en ;
         rdfs:label      "Force"@en , "Kraft"@de ;
         skos:altlabel   "Standardkraft"@de , "F"@de , "Standard force"@en , "Force"@en , "Force-measuring device"@en ;
         skos:preflabel  "Force"@en , "Kraft"@de .
 
-<https://w3id.org/steel/ProcessOntology/emmo%3AhasPart>
-        rdf:type  owl:ObjectProperty .
+<https://w3id.org/steel/ProcessOntology/ProofStrength%2CTotalExtension>
+        rdf:type        skos:Concept , owl:Class ;
+        rdfs:label      "ProofStrength,TotalExtension"@en ;
+        skos:altlabel   "proof strength, total extension"@en ;
+        skos:preflabel  "ProofStrength,TotalExtension"@en .
 
 :jobStartTime  rdf:type  owl:DatatypeProperty ;
         rdfs:domain     :Job ;

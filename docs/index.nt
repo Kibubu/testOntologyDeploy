@@ -94,35 +94,6 @@
 <https://w3id.org/steel/ProcessOntology/Computer-controlledTensileTestingMachine> <http://www.w3.org/2000/01/rdf-schema#label> "Computer-controlledTensileTestingMachine"@en .
 <https://w3id.org/steel/ProcessOntology/Computer-controlledTensileTestingMachine> <http://www.w3.org/2004/02/skos/core#altlabel> "computer-controlled tensile testing machine"@en .
 <https://w3id.org/steel/ProcessOntology/Computer-controlledTensileTestingMachine> <http://www.w3.org/2004/02/skos/core#preflabel> "Computer-controlledTensileTestingMachine"@en .
-<https://w3id.org/steel/ProcessOntology/ConceptSimulA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/steel/ProcessOntology/ConceptSimulA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<https://w3id.org/steel/ProcessOntology/ConceptSimulA> <http://www.w3.org/2000/01/rdf-schema#comment> "Description of simulation concept A"@en .
-<https://w3id.org/steel/ProcessOntology/ConceptSimulA> <http://www.w3.org/2000/01/rdf-schema#label> "ConceptSimulA"@en .
-<https://w3id.org/steel/ProcessOntology/ConceptSimulA> <http://www.w3.org/2000/01/rdf-schema#subClassOf> "https://material-digital.de/pmdco/ValueObject" .
-<https://w3id.org/steel/ProcessOntology/ConceptSimulA> <http://www.w3.org/2004/02/skos/core#altlabel> "Concept Simulation A"@en .
-<https://w3id.org/steel/ProcessOntology/ConceptSimulA> <http://www.w3.org/2004/02/skos/core#altlabel> "Konzept Simulation A"@de .
-<https://w3id.org/steel/ProcessOntology/ConceptSimulA> <http://www.w3.org/2004/02/skos/core#preflabel> "ConceptSimulA"@en .
-<https://w3id.org/steel/ProcessOntology/ConceptSimulA> <https://w3id.org/steel/ProcessOntology/UnitLabel> "m/s" .
-<https://w3id.org/steel/ProcessOntology/ConceptSimulA> <https://w3id.org/steel/ProcessOntology/hasLabelSourceDe> "Handbuch" .
-<https://w3id.org/steel/ProcessOntology/ConceptSimulA> <https://w3id.org/steel/ProcessOntology/hasLabelSourceEn> "manual" .
-<https://w3id.org/steel/ProcessOntology/ConceptSimulB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/steel/ProcessOntology/ConceptSimulB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<https://w3id.org/steel/ProcessOntology/ConceptSimulB> <http://www.w3.org/2000/01/rdf-schema#comment> "Description of Simulation Concept B"@en .
-<https://w3id.org/steel/ProcessOntology/ConceptSimulB> <http://www.w3.org/2000/01/rdf-schema#label> "ConceptSimulB"@en .
-<https://w3id.org/steel/ProcessOntology/ConceptSimulB> <http://www.w3.org/2000/01/rdf-schema#subClassOf> "https://material-digital.de/pmdco/ValueObject" .
-<https://w3id.org/steel/ProcessOntology/ConceptSimulB> <http://www.w3.org/2004/02/skos/core#altlabel> "Concept Simulation B"@en .
-<https://w3id.org/steel/ProcessOntology/ConceptSimulB> <http://www.w3.org/2004/02/skos/core#preflabel> "ConceptSimulB"@en .
-<https://w3id.org/steel/ProcessOntology/ConceptSimulB> <https://w3id.org/steel/ProcessOntology/hasLabelSourceEn> "manual" .
-<https://w3id.org/steel/ProcessOntology/ConceptSimulC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/steel/ProcessOntology/ConceptSimulC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<https://w3id.org/steel/ProcessOntology/ConceptSimulC> <http://www.w3.org/2000/01/rdf-schema#comment> "Description of simulation concept C"@en .
-<https://w3id.org/steel/ProcessOntology/ConceptSimulC> <http://www.w3.org/2000/01/rdf-schema#label> "ConceptSimulC"@en .
-<https://w3id.org/steel/ProcessOntology/ConceptSimulC> <http://www.w3.org/2000/01/rdf-schema#subClassOf> "https://material-digital.de/pmdco/ValueObject" .
-<https://w3id.org/steel/ProcessOntology/ConceptSimulC> <http://www.w3.org/2004/02/skos/core#altlabel> "Concept Simul C"@en .
-<https://w3id.org/steel/ProcessOntology/ConceptSimulC> <http://www.w3.org/2004/02/skos/core#altlabel> "Konzept Simul C"@de .
-<https://w3id.org/steel/ProcessOntology/ConceptSimulC> <http://www.w3.org/2004/02/skos/core#preflabel> "ConceptSimulC"@en .
-<https://w3id.org/steel/ProcessOntology/ConceptSimulC> <https://w3id.org/steel/ProcessOntology/hasLabelSourceDe> "Handbuch" .
-<https://w3id.org/steel/ProcessOntology/ConceptSimulC> <https://w3id.org/steel/ProcessOntology/hasLabelSourceEn> "manual" .
 <https://w3id.org/steel/ProcessOntology/ConstitutiveModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/steel/ProcessOntology/ConstitutiveModelParameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/steel/ProcessOntology/CoordinateSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -1368,18 +1339,6 @@
 <https://w3id.org/steel/ProcessOntology/executedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/steel/ProcessOntology/Workflow> .
 <https://w3id.org/steel/ProcessOntology/executedBy> <http://www.w3.org/2000/01/rdf-schema#label> "executedBy"@en .
 <https://w3id.org/steel/ProcessOntology/executedBy> <http://www.w3.org/2004/02/skos/core#preflabel> "executedBy"@en .
-<https://w3id.org/steel/ProcessOntology/hasConceptSimulA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/steel/ProcessOntology/hasConceptSimulA> <http://www.w3.org/2000/01/rdf-schema#label> "hasConceptSimulA"@en .
-<https://w3id.org/steel/ProcessOntology/hasConceptSimulA> <http://www.w3.org/2000/01/rdf-schema#range> "https://w3id.org/steel/ProcessOntology/ConceptSimulA" .
-<https://w3id.org/steel/ProcessOntology/hasConceptSimulA> <http://www.w3.org/2004/02/skos/core#preflabel> "hasConceptSimulA"@en .
-<https://w3id.org/steel/ProcessOntology/hasConceptSimulB> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/steel/ProcessOntology/hasConceptSimulB> <http://www.w3.org/2000/01/rdf-schema#label> "hasConceptSimulB"@en .
-<https://w3id.org/steel/ProcessOntology/hasConceptSimulB> <http://www.w3.org/2000/01/rdf-schema#range> "https://w3id.org/steel/ProcessOntology/ConceptSimulB" .
-<https://w3id.org/steel/ProcessOntology/hasConceptSimulB> <http://www.w3.org/2004/02/skos/core#preflabel> "hasConceptSimulB"@en .
-<https://w3id.org/steel/ProcessOntology/hasConceptSimulC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/steel/ProcessOntology/hasConceptSimulC> <http://www.w3.org/2000/01/rdf-schema#label> "hasConceptSimulC"@en .
-<https://w3id.org/steel/ProcessOntology/hasConceptSimulC> <http://www.w3.org/2000/01/rdf-schema#range> "https://w3id.org/steel/ProcessOntology/ConceptSimulC" .
-<https://w3id.org/steel/ProcessOntology/hasConceptSimulC> <http://www.w3.org/2004/02/skos/core#preflabel> "hasConceptSimulC"@en .
 <https://w3id.org/steel/ProcessOntology/hasHDF> <http://purl.org/dc/elements/1.1/description> "The pyiron jobs has hdf5 file"@en .
 <https://w3id.org/steel/ProcessOntology/hasHDF> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/steel/ProcessOntology/hasHDF> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/steel/ProcessOntology/PyironJob> .

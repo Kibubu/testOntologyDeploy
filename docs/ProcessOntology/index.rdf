@@ -282,18 +282,6 @@
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasStandard">
     <skos:preflabel xml:lang="en">has standard</skos:preflabel>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasConceptSimulC">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasConceptSimulC">
-    <rdfs:label xml:lang="en">hasConceptSimulC</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasConceptSimulC">
-    <rdfs:range>https://w3id.org/steel/ProcessOntology/ConceptSimulC</rdfs:range>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasConceptSimulC">
-    <skos:preflabel xml:lang="en">hasConceptSimulC</skos:preflabel>
-  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/TimeSeries">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
@@ -444,27 +432,6 @@
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/related">
     <skos:preflabel xml:lang="en">is related to</skos:preflabel>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/SampleIdentifier-2">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/SampleIdentifier-2">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/SampleIdentifier-2">
-    <rdfs:comment xml:lang="en">Unique ID (IWM intern)</rdfs:comment>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/SampleIdentifier-2">
-    <rdfs:label xml:lang="en">SampleIdentifier-2</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/SampleIdentifier-2">
-    <skos:altlabel xml:lang="en">Sample identifier 2</skos:altlabel>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/SampleIdentifier-2">
-    <skos:altlabel xml:lang="de">Probenkennung 2</skos:altlabel>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/SampleIdentifier-2">
-    <skos:preflabel xml:lang="en">SampleIdentifier-2</skos:preflabel>
-  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/LowerYieldStrength">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   </rdf:Description>
@@ -504,23 +471,26 @@
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/rollingDirection">
     <skos:preflabel xml:lang="de">Walzrichtung</skos:preflabel>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasJob">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/SampleIdentifier-2">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasJob">
-    <rdfs:domain rdf:resource="https://w3id.org/steel/ProcessOntology/PyironProject"/>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/SampleIdentifier-2">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasJob">
-    <rdfs:label xml:lang="en">has job</rdfs:label>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/SampleIdentifier-2">
+    <rdfs:comment xml:lang="en">Unique ID (IWM intern)</rdfs:comment>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasJob">
-    <rdfs:range rdf:resource="https://w3id.org/steel/ProcessOntology/PyironJob"/>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/SampleIdentifier-2">
+    <rdfs:label xml:lang="en">SampleIdentifier-2</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasJob">
-    <dc:description xml:lang="en">The relation between pyiron project and jobs</dc:description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/SampleIdentifier-2">
+    <skos:altlabel xml:lang="en">Sample identifier 2</skos:altlabel>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasJob">
-    <skos:preflabel xml:lang="en">has job</skos:preflabel>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/SampleIdentifier-2">
+    <skos:altlabel xml:lang="de">Probenkennung 2</skos:altlabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/SampleIdentifier-2">
+    <skos:preflabel xml:lang="en">SampleIdentifier-2</skos:preflabel>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/CrossheadSeparationRate">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -552,38 +522,23 @@
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/CrossheadSeparationRate">
     <skos:preflabel xml:lang="en">CrossheadSeparationRate</skos:preflabel>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/ConceptSimulA">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasJob">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/ConceptSimulA">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasJob">
+    <rdfs:domain rdf:resource="https://w3id.org/steel/ProcessOntology/PyironProject"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/ConceptSimulA">
-    <rdfs:comment xml:lang="en">Description of simulation concept A</rdfs:comment>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasJob">
+    <rdfs:label xml:lang="en">has job</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/ConceptSimulA">
-    <rdfs:label xml:lang="en">ConceptSimulA</rdfs:label>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasJob">
+    <rdfs:range rdf:resource="https://w3id.org/steel/ProcessOntology/PyironJob"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/ConceptSimulA">
-    <rdfs:subClassOf>https://material-digital.de/pmdco/ValueObject</rdfs:subClassOf>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasJob">
+    <dc:description xml:lang="en">The relation between pyiron project and jobs</dc:description>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/ConceptSimulA">
-    <skos:altlabel xml:lang="de">Konzept Simulation A</skos:altlabel>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/ConceptSimulA">
-    <skos:altlabel xml:lang="en">Concept Simulation A</skos:altlabel>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/ConceptSimulA">
-    <skos:preflabel xml:lang="en">ConceptSimulA</skos:preflabel>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/ConceptSimulA">
-    <UnitLabel>m/s</UnitLabel>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/ConceptSimulA">
-    <hasLabelSourceDe>Handbuch</hasLabelSourceDe>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/ConceptSimulA">
-    <hasLabelSourceEn>manual</hasLabelSourceEn>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasJob">
+    <skos:preflabel xml:lang="en">has job</skos:preflabel>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/SimulationCode">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
@@ -1461,18 +1416,6 @@
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/ressourceUri">
     <skos:preflabel xml:lang="en">uri</skos:preflabel>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasConceptSimulA">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasConceptSimulA">
-    <rdfs:label xml:lang="en">hasConceptSimulA</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasConceptSimulA">
-    <rdfs:range>https://w3id.org/steel/ProcessOntology/ConceptSimulA</rdfs:range>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasConceptSimulA">
-    <skos:preflabel xml:lang="en">hasConceptSimulA</skos:preflabel>
-  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/PyironProject">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
@@ -2165,27 +2108,6 @@ or
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/ShearTest">
     <skos:preflabel xml:lang="de">Schertest</skos:preflabel>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/TrueStressAtFracture">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/TrueStressAtFracture">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/TrueStressAtFracture">
-    <rdfs:comment xml:lang="en">true stress at fracture</rdfs:comment>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/TrueStressAtFracture">
-    <rdfs:label xml:lang="en">TrueStressAtFracture</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/TrueStressAtFracture">
-    <skos:altlabel xml:lang="de">wahre Bruchspannung</skos:altlabel>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/TrueStressAtFracture">
-    <skos:altlabel xml:lang="en">True stress at fracture</skos:altlabel>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/TrueStressAtFracture">
-    <skos:preflabel xml:lang="en">TrueStressAtFracture</skos:preflabel>
-  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/CharacteristicEngineeringStrainRate">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   </rdf:Description>
@@ -2267,20 +2189,26 @@ or
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/PercentageTotalExtensionAtMaximumForce">
     <skos:preflabel xml:lang="en">PercentageTotalExtensionAtMaximumForce</skos:preflabel>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/stripTension">
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/TrueStressAtFracture">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/TrueStressAtFracture">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/stripTension">
-    <rdfs:label xml:lang="en">strip tension</rdfs:label>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/TrueStressAtFracture">
+    <rdfs:comment xml:lang="en">true stress at fracture</rdfs:comment>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/stripTension">
-    <rdfs:label xml:lang="de">Bandzug</rdfs:label>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/TrueStressAtFracture">
+    <rdfs:label xml:lang="en">TrueStressAtFracture</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/stripTension">
-    <skos:preflabel xml:lang="en">strip tension</skos:preflabel>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/TrueStressAtFracture">
+    <skos:altlabel xml:lang="de">wahre Bruchspannung</skos:altlabel>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/stripTension">
-    <skos:preflabel xml:lang="de">Bandzug</skos:preflabel>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/TrueStressAtFracture">
+    <skos:altlabel xml:lang="en">True stress at fracture</skos:altlabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/TrueStressAtFracture">
+    <skos:preflabel xml:lang="en">TrueStressAtFracture</skos:preflabel>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/ExtensionAtFracture">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -2303,29 +2231,20 @@ or
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/ExtensionAtFracture">
     <skos:preflabel xml:lang="en">ExtensionAtFracture</skos:preflabel>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/ConceptSimulB">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/ConceptSimulB">
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/stripTension">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/ConceptSimulB">
-    <rdfs:comment xml:lang="en">Description of Simulation Concept B</rdfs:comment>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/stripTension">
+    <rdfs:label xml:lang="en">strip tension</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/ConceptSimulB">
-    <rdfs:label xml:lang="en">ConceptSimulB</rdfs:label>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/stripTension">
+    <rdfs:label xml:lang="de">Bandzug</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/ConceptSimulB">
-    <rdfs:subClassOf>https://material-digital.de/pmdco/ValueObject</rdfs:subClassOf>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/stripTension">
+    <skos:preflabel xml:lang="en">strip tension</skos:preflabel>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/ConceptSimulB">
-    <skos:altlabel xml:lang="en">Concept Simulation B</skos:altlabel>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/ConceptSimulB">
-    <skos:preflabel xml:lang="en">ConceptSimulB</skos:preflabel>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/ConceptSimulB">
-    <hasLabelSourceEn>manual</hasLabelSourceEn>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/stripTension">
+    <skos:preflabel xml:lang="de">Bandzug</skos:preflabel>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/FluidSolidTransition">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
@@ -3208,18 +3127,6 @@ or
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/TestSpeed">
     <skos:preflabel xml:lang="en">TestSpeed</skos:preflabel>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasConceptSimulB">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasConceptSimulB">
-    <rdfs:label xml:lang="en">hasConceptSimulB</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasConceptSimulB">
-    <rdfs:range>https://w3id.org/steel/ProcessOntology/ConceptSimulB</rdfs:range>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasConceptSimulB">
-    <skos:preflabel xml:lang="en">hasConceptSimulB</skos:preflabel>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/Code">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
@@ -4141,36 +4048,6 @@ or
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/NominalEngineeringStrainRate">
     <skos:preflabel xml:lang="en">NominalEngineeringStrainRate</skos:preflabel>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/ConceptSimulC">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/ConceptSimulC">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/ConceptSimulC">
-    <rdfs:comment xml:lang="en">Description of simulation concept C</rdfs:comment>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/ConceptSimulC">
-    <rdfs:label xml:lang="en">ConceptSimulC</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/ConceptSimulC">
-    <rdfs:subClassOf>https://material-digital.de/pmdco/ValueObject</rdfs:subClassOf>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/ConceptSimulC">
-    <skos:altlabel xml:lang="de">Konzept Simul C</skos:altlabel>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/ConceptSimulC">
-    <skos:altlabel xml:lang="en">Concept Simul C</skos:altlabel>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/ConceptSimulC">
-    <skos:preflabel xml:lang="en">ConceptSimulC</skos:preflabel>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/ConceptSimulC">
-    <hasLabelSourceDe>Handbuch</hasLabelSourceDe>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/ConceptSimulC">
-    <hasLabelSourceEn>manual</hasLabelSourceEn>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/StressRate">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>

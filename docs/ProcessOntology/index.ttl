@@ -430,17 +430,17 @@
         rdfs:subClassOf  :PyironJob ;
         skos:preflabel   "Reference Job"@en .
 
+:TestPieceLength  rdf:type  skos:Concept , owl:Class ;
+        rdfs:label      "TestPieceLength"@en ;
+        skos:altlabel   "Test piece length"@en , "Probengesamtlänge Lt"@de ;
+        skos:preflabel  "TestPieceLength"@en .
+
 :MechanicalCard  rdf:type  owl:Class ;
         skos:altlabel  "MaterialKarte"@de , "MaterialCard"@en .
 
 :ChemicalComposition  rdf:type  owl:Class ;
         rdfs:label      "Chemische Zusammensetzung"@de , "Chemical Composition"@en ;
         skos:preflabel  "Chemische Zusammensetzung"@de , "Chemical Composition"@en .
-
-:TestPieceLength  rdf:type  skos:Concept , owl:Class ;
-        rdfs:label      "TestPieceLength"@en ;
-        skos:altlabel   "Test piece length"@en , "Probengesamtlänge Lt"@de ;
-        skos:preflabel  "TestPieceLength"@en .
 
 :Remark  rdf:type       skos:Concept , owl:Class ;
         rdfs:comment    "A specific comment about the experiment."@en ;
@@ -998,10 +998,10 @@
 
 :JobInput  rdf:type      owl:Class ;
         rdfs:comment     "the input parameter for a pyiron job"@en ;
-        rdfs:label       "Pyiron job input"@en ;
+        rdfs:label       "Pyiron job input"@en , "Job-Input-Parameter"@de ;
         rdfs:seeAlso     :PyironJob ;
         rdfs:subClassOf  :CodeRessource ;
-        skos:preflabel   "Pyiron job input"@en ;
+        skos:preflabel   "Pyiron job input"@en , "Job-Input-Parameter"@de ;
         skos:related     :PyironJob .
 
 :SimulationWorkflow  rdf:type  owl:Class ;
@@ -1244,8 +1244,8 @@
 
 :JobMetadata  rdf:type  owl:Class ;
         rdfs:comment    "each pyiron job has some metadata which is stored in the central sql database"@en ;
-        rdfs:label      "Pyiron job metadata"@en ;
-        skos:preflabel  "Pyiron job metadata"@en .
+        rdfs:label      "Pyiron job metadata"@en , "Job-Metadaten"@de ;
+        skos:preflabel  "Pyiron job metadata"@en , "Job-Metadaten"@de .
 
 :hasMatPiecewiseLinearPlasticityLogInterpolation
         rdf:type        owl:ObjectProperty ;
@@ -1427,11 +1427,9 @@
         skos:altlabel   "tensile strength"@en , "Zugfestigkeit Rm"@de ;
         skos:preflabel  "TensileStrength"@en .
 
-:hasStrainRateScaleIdendifier
-        rdf:type        owl:ObjectProperty ;
-        rdfs:label      "hasStrainRateScaleIdendifier"@en ;
-        rdfs:range      "https://w3id.org/steel/ProcessOntology/StrainRateScaleIdendifier" ;
-        skos:preflabel  "hasStrainRateScaleIdendifier"@en .
+:rollingForce  rdf:type  owl:Class ;
+        rdfs:label      "rolling force"@en , "Walzkraft"@de ;
+        skos:preflabel  "rolling force"@en , "Walzkraft"@de .
 
 :GrainSize  rdf:type    owl:Class ;
         rdfs:label      "Korngröße"@de , "Grain size"@en ;
@@ -1443,10 +1441,6 @@
         rdfs:range      "https://w3id.org/steel/ProcessOntology/FailureCriteriaTypeAdd" ;
         skos:preflabel  "hasFailureCriteriaTypeAdd"@en .
 
-:rollingForce  rdf:type  owl:Class ;
-        rdfs:label      "rolling force"@en , "Walzkraft"@de ;
-        skos:preflabel  "rolling force"@en , "Walzkraft"@de .
-
 :PoissonRatio  rdf:type    skos:Concept , owl:Class ;
         rdfs:comment       "Poission Ratio to determine the linear elasticity"@en ;
         rdfs:label         "PoissonRatio"@en ;
@@ -1455,6 +1449,12 @@
         skos:preflabel     "PoissonRatio"@en ;
         :UnitLabel         "1" ;
         :hasLabelSourceEn  "LS-DYNA_Manual_Volume_2" .
+
+:hasStrainRateScaleIdendifier
+        rdf:type        owl:ObjectProperty ;
+        rdfs:label      "hasStrainRateScaleIdendifier"@en ;
+        rdfs:range      "https://w3id.org/steel/ProcessOntology/StrainRateScaleIdendifier" ;
+        skos:preflabel  "hasStrainRateScaleIdendifier"@en .
 
 :Color  rdf:type        owl:Class ;
         rdfs:comment    "A Color, Green, Yellow, etc.."@en ;
@@ -1865,8 +1865,9 @@
         skos:preflabel  "Schaden"@de , "Damage"@en .
 
 :JobOutput  rdf:type    owl:Class ;
-        rdfs:label      "Pyiron job output"@en ;
-        skos:preflabel  "Pyiron job output"@en .
+        rdfs:comment    "the output parameter for a pyiron job"@en ;
+        rdfs:label      "Pyiron job output"@en , "Job-Output-Parameter"@de ;
+        skos:preflabel  "Pyiron job output"@en , "Job-Output-Parameter"@de .
 
 :rollingDirection  rdf:type  owl:Class ;
         rdfs:label      "rolling direction"@en , "Walzrichtung"@de ;

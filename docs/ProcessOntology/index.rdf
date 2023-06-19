@@ -1331,6 +1331,24 @@ LT.0.0: Applies only to shells. |NUMFIP| is the percentage of layers which must 
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/ReferenceJob">
     <skos:preflabel xml:lang="en">Reference Job</skos:preflabel>
   </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/TestPieceLength">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/TestPieceLength">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/TestPieceLength">
+    <rdfs:label xml:lang="en">TestPieceLength</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/TestPieceLength">
+    <skos:altlabel xml:lang="en">Test piece length</skos:altlabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/TestPieceLength">
+    <skos:altlabel xml:lang="de">Probengesamtlänge Lt</skos:altlabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/TestPieceLength">
+    <skos:preflabel xml:lang="en">TestPieceLength</skos:preflabel>
+  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/MechanicalCard">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
@@ -1354,24 +1372,6 @@ LT.0.0: Applies only to shells. |NUMFIP| is the percentage of layers which must 
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/ChemicalComposition">
     <skos:preflabel xml:lang="en">Chemical Composition</skos:preflabel>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/TestPieceLength">
-    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/TestPieceLength">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/TestPieceLength">
-    <rdfs:label xml:lang="en">TestPieceLength</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/TestPieceLength">
-    <skos:altlabel xml:lang="en">Test piece length</skos:altlabel>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/TestPieceLength">
-    <skos:altlabel xml:lang="de">Probengesamtlänge Lt</skos:altlabel>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/TestPieceLength">
-    <skos:preflabel xml:lang="en">TestPieceLength</skos:preflabel>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/Remark">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -3236,6 +3236,9 @@ N.GT.0: The Nth additional history variable is the driving quantity for damage.<
     <rdfs:label xml:lang="en">Pyiron job input</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/JobInput">
+    <rdfs:label xml:lang="de">Job-Input-Parameter</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/JobInput">
     <rdfs:seeAlso rdf:resource="https://w3id.org/steel/ProcessOntology/PyironJob"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/JobInput">
@@ -3243,6 +3246,9 @@ N.GT.0: The Nth additional history variable is the driving quantity for damage.<
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/JobInput">
     <skos:preflabel xml:lang="en">Pyiron job input</skos:preflabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/JobInput">
+    <skos:preflabel xml:lang="de">Job-Input-Parameter</skos:preflabel>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/JobInput">
     <skos:related rdf:resource="https://w3id.org/steel/ProcessOntology/PyironJob"/>
@@ -3976,7 +3982,13 @@ N.GT.0: The Nth additional history variable is the driving quantity for damage.<
     <rdfs:label xml:lang="en">Pyiron job metadata</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/JobMetadata">
+    <rdfs:label xml:lang="de">Job-Metadaten</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/JobMetadata">
     <skos:preflabel xml:lang="en">Pyiron job metadata</skos:preflabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/JobMetadata">
+    <skos:preflabel xml:lang="de">Job-Metadaten</skos:preflabel>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasMatPiecewiseLinearPlasticityLogInterpolation">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
@@ -4533,17 +4545,20 @@ N.GT.0: The Nth additional history variable is the driving quantity for damage.<
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/TensileStrength">
     <skos:preflabel xml:lang="en">TensileStrength</skos:preflabel>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasStrainRateScaleIdendifier">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/rollingForce">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasStrainRateScaleIdendifier">
-    <rdfs:label xml:lang="en">hasStrainRateScaleIdendifier</rdfs:label>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/rollingForce">
+    <rdfs:label xml:lang="en">rolling force</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasStrainRateScaleIdendifier">
-    <rdfs:range>https://w3id.org/steel/ProcessOntology/StrainRateScaleIdendifier</rdfs:range>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/rollingForce">
+    <rdfs:label xml:lang="de">Walzkraft</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasStrainRateScaleIdendifier">
-    <skos:preflabel xml:lang="en">hasStrainRateScaleIdendifier</skos:preflabel>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/rollingForce">
+    <skos:preflabel xml:lang="en">rolling force</skos:preflabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/rollingForce">
+    <skos:preflabel xml:lang="de">Walzkraft</skos:preflabel>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/GrainSize">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
@@ -4572,21 +4587,6 @@ N.GT.0: The Nth additional history variable is the driving quantity for damage.<
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasFailureCriteriaTypeAdd">
     <skos:preflabel xml:lang="en">hasFailureCriteriaTypeAdd</skos:preflabel>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/rollingForce">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/rollingForce">
-    <rdfs:label xml:lang="en">rolling force</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/rollingForce">
-    <rdfs:label xml:lang="de">Walzkraft</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/rollingForce">
-    <skos:preflabel xml:lang="en">rolling force</skos:preflabel>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/rollingForce">
-    <skos:preflabel xml:lang="de">Walzkraft</skos:preflabel>
-  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/PoissonRatio">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   </rdf:Description>
@@ -4613,6 +4613,18 @@ N.GT.0: The Nth additional history variable is the driving quantity for damage.<
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/PoissonRatio">
     <hasLabelSourceEn>LS-DYNA_Manual_Volume_2</hasLabelSourceEn>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasStrainRateScaleIdendifier">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasStrainRateScaleIdendifier">
+    <rdfs:label xml:lang="en">hasStrainRateScaleIdendifier</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasStrainRateScaleIdendifier">
+    <rdfs:range>https://w3id.org/steel/ProcessOntology/StrainRateScaleIdendifier</rdfs:range>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasStrainRateScaleIdendifier">
+    <skos:preflabel xml:lang="en">hasStrainRateScaleIdendifier</skos:preflabel>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/Color">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
@@ -5915,10 +5927,19 @@ Identifier which relates the Table to descibe the yield stress by using differen
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/JobOutput">
+    <rdfs:comment xml:lang="en">the output parameter for a pyiron job</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/JobOutput">
     <rdfs:label xml:lang="en">Pyiron job output</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/JobOutput">
+    <rdfs:label xml:lang="de">Job-Output-Parameter</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/JobOutput">
     <skos:preflabel xml:lang="en">Pyiron job output</skos:preflabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/JobOutput">
+    <skos:preflabel xml:lang="de">Job-Output-Parameter</skos:preflabel>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/rollingDirection">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>

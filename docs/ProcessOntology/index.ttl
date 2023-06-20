@@ -430,17 +430,17 @@
         rdfs:subClassOf  :PyironJob ;
         skos:preflabel   "Reference Job"@en .
 
-:TestPieceLength  rdf:type  skos:Concept , owl:Class ;
-        rdfs:label      "TestPieceLength"@en ;
-        skos:altlabel   "Test piece length"@en , "Probengesamtlänge Lt"@de ;
-        skos:preflabel  "TestPieceLength"@en .
-
 :MechanicalCard  rdf:type  owl:Class ;
         skos:altlabel  "MaterialKarte"@de , "MaterialCard"@en .
 
 :ChemicalComposition  rdf:type  owl:Class ;
         rdfs:label      "Chemische Zusammensetzung"@de , "Chemical Composition"@en ;
         skos:preflabel  "Chemische Zusammensetzung"@de , "Chemical Composition"@en .
+
+:TestPieceLength  rdf:type  skos:Concept , owl:Class ;
+        rdfs:label      "TestPieceLength"@en ;
+        skos:altlabel   "Test piece length"@en , "Probengesamtlänge Lt"@de ;
+        skos:preflabel  "TestPieceLength"@en .
 
 :Remark  rdf:type       skos:Concept , owl:Class ;
         rdfs:comment    "A specific comment about the experiment."@en ;
@@ -560,8 +560,8 @@
 
 :FluidSolidTransition
         rdf:type        owl:Class ;
-        rdfs:label      "Fluid solid transition"@en , "?"@de ;
-        skos:preflabel  "Fluid solid transition"@en , "?"@de .
+        rdfs:label      "Fluid solid transition"@en ;
+        skos:preflabel  "Fluid solid transition"@en .
 
 :RelativeStandardDeviationOfTheSlope
         rdf:type        skos:Concept , owl:Class ;
@@ -888,13 +888,13 @@
         skos:preflabel  "MaximumForceNoDiscontinousYielding"@en .
 
 :Benchmark  rdf:type    owl:Class ;
-        rdfs:label      "Benchmark"@en , "??"@de ;
+        rdfs:label      "Messlatte"@de , "Benchmark"@en ;
         skos:altlabel   "Richtwert"@de , " Maßstab"@de , " Bezugspunkt"@de ;
-        skos:preflabel  "Benchmark"@en , "??"@de .
+        skos:preflabel  "Messlatte"@de , "Benchmark"@en .
 
 :FrameOfMaterial  rdf:type  owl:Class ;
-        rdfs:label      "frame of material"@en ;
-        skos:preflabel  "frame of material"@en .
+        rdfs:label      "frame of material"@en , "Rahmenmaterial"@de ;
+        skos:preflabel  "frame of material"@en , "Rahmenmaterial"@de .
 
 :OriginalWidth  rdf:type  owl:Class , skos:Concept ;
         rdfs:comment    "The width of the specimen."@en , "Original width of the parallel length of a flat test piece"@en ;
@@ -1427,9 +1427,11 @@
         skos:altlabel   "tensile strength"@en , "Zugfestigkeit Rm"@de ;
         skos:preflabel  "TensileStrength"@en .
 
-:rollingForce  rdf:type  owl:Class ;
-        rdfs:label      "rolling force"@en , "Walzkraft"@de ;
-        skos:preflabel  "rolling force"@en , "Walzkraft"@de .
+:hasStrainRateScaleIdendifier
+        rdf:type        owl:ObjectProperty ;
+        rdfs:label      "hasStrainRateScaleIdendifier"@en ;
+        rdfs:range      "https://w3id.org/steel/ProcessOntology/StrainRateScaleIdendifier" ;
+        skos:preflabel  "hasStrainRateScaleIdendifier"@en .
 
 :GrainSize  rdf:type    owl:Class ;
         rdfs:label      "Korngröße"@de , "Grain size"@en ;
@@ -1441,6 +1443,10 @@
         rdfs:range      "https://w3id.org/steel/ProcessOntology/FailureCriteriaTypeAdd" ;
         skos:preflabel  "hasFailureCriteriaTypeAdd"@en .
 
+:rollingForce  rdf:type  owl:Class ;
+        rdfs:label      "rolling force"@en , "Walzkraft"@de ;
+        skos:preflabel  "rolling force"@en , "Walzkraft"@de .
+
 :PoissonRatio  rdf:type    skos:Concept , owl:Class ;
         rdfs:comment       "Poission Ratio to determine the linear elasticity"@en ;
         rdfs:label         "PoissonRatio"@en ;
@@ -1449,12 +1455,6 @@
         skos:preflabel     "PoissonRatio"@en ;
         :UnitLabel         "1" ;
         :hasLabelSourceEn  "LS-DYNA_Manual_Volume_2" .
-
-:hasStrainRateScaleIdendifier
-        rdf:type        owl:ObjectProperty ;
-        rdfs:label      "hasStrainRateScaleIdendifier"@en ;
-        rdfs:range      "https://w3id.org/steel/ProcessOntology/StrainRateScaleIdendifier" ;
-        skos:preflabel  "hasStrainRateScaleIdendifier"@en .
 
 :Color  rdf:type        owl:Class ;
         rdfs:comment    "A Color, Green, Yellow, etc.."@en ;

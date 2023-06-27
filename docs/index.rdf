@@ -1331,30 +1331,6 @@ LT.0.0: Applies only to shells. |NUMFIP| is the percentage of layers which must 
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/ReferenceJob">
     <skos:preflabel xml:lang="en">Reference Job</skos:preflabel>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/MechanicalCard">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/MechanicalCard">
-    <skos:altlabel xml:lang="de">MaterialKarte</skos:altlabel>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/MechanicalCard">
-    <skos:altlabel xml:lang="en">MaterialCard</skos:altlabel>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/ChemicalComposition">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/ChemicalComposition">
-    <rdfs:label xml:lang="de">Chemische Zusammensetzung</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/ChemicalComposition">
-    <rdfs:label xml:lang="en">Chemical Composition</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/ChemicalComposition">
-    <skos:preflabel xml:lang="de">Chemische Zusammensetzung</skos:preflabel>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/ChemicalComposition">
-    <skos:preflabel xml:lang="en">Chemical Composition</skos:preflabel>
-  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/TestPieceLength">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   </rdf:Description>
@@ -1372,6 +1348,42 @@ LT.0.0: Applies only to shells. |NUMFIP| is the percentage of layers which must 
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/TestPieceLength">
     <skos:preflabel xml:lang="en">TestPieceLength</skos:preflabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/MechanicalCard">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/MechanicalCard">
+    <rdfs:label xml:lang="de">meschanische Karte</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/MechanicalCard">
+    <rdfs:label xml:lang="en">mechanical card</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/MechanicalCard">
+    <skos:altlabel xml:lang="de">MaterialKarte</skos:altlabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/MechanicalCard">
+    <skos:altlabel xml:lang="en">MaterialCard</skos:altlabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/MechanicalCard">
+    <skos:preflabel xml:lang="de">meschanische Karte</skos:preflabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/MechanicalCard">
+    <skos:preflabel xml:lang="en">mechanical card</skos:preflabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/ChemicalComposition">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/ChemicalComposition">
+    <rdfs:label xml:lang="de">Chemische Zusammensetzung</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/ChemicalComposition">
+    <rdfs:label xml:lang="en">Chemical Composition</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/ChemicalComposition">
+    <skos:preflabel xml:lang="de">Chemische Zusammensetzung</skos:preflabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/ChemicalComposition">
+    <skos:preflabel xml:lang="en">Chemical Composition</skos:preflabel>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/Remark">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -4545,17 +4557,20 @@ N.GT.0: The Nth additional history variable is the driving quantity for damage.<
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/TensileStrength">
     <skos:preflabel xml:lang="en">TensileStrength</skos:preflabel>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasStrainRateScaleIdendifier">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/rollingForce">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasStrainRateScaleIdendifier">
-    <rdfs:label xml:lang="en">hasStrainRateScaleIdendifier</rdfs:label>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/rollingForce">
+    <rdfs:label xml:lang="en">rolling force</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasStrainRateScaleIdendifier">
-    <rdfs:range>https://w3id.org/steel/ProcessOntology/StrainRateScaleIdendifier</rdfs:range>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/rollingForce">
+    <rdfs:label xml:lang="de">Walzkraft</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasStrainRateScaleIdendifier">
-    <skos:preflabel xml:lang="en">hasStrainRateScaleIdendifier</skos:preflabel>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/rollingForce">
+    <skos:preflabel xml:lang="en">rolling force</skos:preflabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/rollingForce">
+    <skos:preflabel xml:lang="de">Walzkraft</skos:preflabel>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/GrainSize">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
@@ -4584,21 +4599,6 @@ N.GT.0: The Nth additional history variable is the driving quantity for damage.<
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasFailureCriteriaTypeAdd">
     <skos:preflabel xml:lang="en">hasFailureCriteriaTypeAdd</skos:preflabel>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/rollingForce">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/rollingForce">
-    <rdfs:label xml:lang="en">rolling force</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/rollingForce">
-    <rdfs:label xml:lang="de">Walzkraft</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/rollingForce">
-    <skos:preflabel xml:lang="en">rolling force</skos:preflabel>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/rollingForce">
-    <skos:preflabel xml:lang="de">Walzkraft</skos:preflabel>
-  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/PoissonRatio">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   </rdf:Description>
@@ -4625,6 +4625,18 @@ N.GT.0: The Nth additional history variable is the driving quantity for damage.<
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/PoissonRatio">
     <hasLabelSourceEn>LS-DYNA_Manual_Volume_2</hasLabelSourceEn>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasStrainRateScaleIdendifier">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasStrainRateScaleIdendifier">
+    <rdfs:label xml:lang="en">hasStrainRateScaleIdendifier</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasStrainRateScaleIdendifier">
+    <rdfs:range>https://w3id.org/steel/ProcessOntology/StrainRateScaleIdendifier</rdfs:range>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasStrainRateScaleIdendifier">
+    <skos:preflabel xml:lang="en">hasStrainRateScaleIdendifier</skos:preflabel>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/Color">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
@@ -5109,6 +5121,18 @@ Identifier which relates the Table to descibe the yield stress by using differen
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/processChainSimulation">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/processChainSimulation">
+    <rdfs:label xml:lang="de">Prozesskettensimulation</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/processChainSimulation">
+    <rdfs:label xml:lang="en">Process chain simulation</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/processChainSimulation">
+    <skos:preflabel xml:lang="de">Prozesskettensimulation</skos:preflabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/processChainSimulation">
+    <skos:preflabel xml:lang="en">Process chain simulation</skos:preflabel>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/TestingDirection">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>

@@ -430,17 +430,19 @@
         rdfs:subClassOf  :PyironJob ;
         skos:preflabel   "Reference Job"@en .
 
-:MechanicalCard  rdf:type  owl:Class ;
-        skos:altlabel  "MaterialKarte"@de , "MaterialCard"@en .
-
-:ChemicalComposition  rdf:type  owl:Class ;
-        rdfs:label      "Chemische Zusammensetzung"@de , "Chemical Composition"@en ;
-        skos:preflabel  "Chemische Zusammensetzung"@de , "Chemical Composition"@en .
-
 :TestPieceLength  rdf:type  skos:Concept , owl:Class ;
         rdfs:label      "TestPieceLength"@en ;
         skos:altlabel   "Test piece length"@en , "Probengesamtlänge Lt"@de ;
         skos:preflabel  "TestPieceLength"@en .
+
+:MechanicalCard  rdf:type  owl:Class ;
+        rdfs:label      "meschanische Karte"@de , "mechanical card"@en ;
+        skos:altlabel   "MaterialKarte"@de , "MaterialCard"@en ;
+        skos:preflabel  "meschanische Karte"@de , "mechanical card"@en .
+
+:ChemicalComposition  rdf:type  owl:Class ;
+        rdfs:label      "Chemische Zusammensetzung"@de , "Chemical Composition"@en ;
+        skos:preflabel  "Chemische Zusammensetzung"@de , "Chemical Composition"@en .
 
 :Remark  rdf:type       skos:Concept , owl:Class ;
         rdfs:comment    "A specific comment about the experiment."@en ;
@@ -1427,11 +1429,9 @@
         skos:altlabel   "tensile strength"@en , "Zugfestigkeit Rm"@de ;
         skos:preflabel  "TensileStrength"@en .
 
-:hasStrainRateScaleIdendifier
-        rdf:type        owl:ObjectProperty ;
-        rdfs:label      "hasStrainRateScaleIdendifier"@en ;
-        rdfs:range      "https://w3id.org/steel/ProcessOntology/StrainRateScaleIdendifier" ;
-        skos:preflabel  "hasStrainRateScaleIdendifier"@en .
+:rollingForce  rdf:type  owl:Class ;
+        rdfs:label      "rolling force"@en , "Walzkraft"@de ;
+        skos:preflabel  "rolling force"@en , "Walzkraft"@de .
 
 :GrainSize  rdf:type    owl:Class ;
         rdfs:label      "Korngröße"@de , "Grain size"@en ;
@@ -1443,10 +1443,6 @@
         rdfs:range      "https://w3id.org/steel/ProcessOntology/FailureCriteriaTypeAdd" ;
         skos:preflabel  "hasFailureCriteriaTypeAdd"@en .
 
-:rollingForce  rdf:type  owl:Class ;
-        rdfs:label      "rolling force"@en , "Walzkraft"@de ;
-        skos:preflabel  "rolling force"@en , "Walzkraft"@de .
-
 :PoissonRatio  rdf:type    skos:Concept , owl:Class ;
         rdfs:comment       "Poission Ratio to determine the linear elasticity"@en ;
         rdfs:label         "PoissonRatio"@en ;
@@ -1455,6 +1451,12 @@
         skos:preflabel     "PoissonRatio"@en ;
         :UnitLabel         "1" ;
         :hasLabelSourceEn  "LS-DYNA_Manual_Volume_2" .
+
+:hasStrainRateScaleIdendifier
+        rdf:type        owl:ObjectProperty ;
+        rdfs:label      "hasStrainRateScaleIdendifier"@en ;
+        rdfs:range      "https://w3id.org/steel/ProcessOntology/StrainRateScaleIdendifier" ;
+        skos:preflabel  "hasStrainRateScaleIdendifier"@en .
 
 :Color  rdf:type        owl:Class ;
         rdfs:comment    "A Color, Green, Yellow, etc.."@en ;
@@ -1609,7 +1611,9 @@
         skos:preflabel  "TestingFacility"@en .
 
 :processChainSimulation
-        rdf:type  owl:Class .
+        rdf:type        owl:Class ;
+        rdfs:label      "Prozesskettensimulation"@de , "Process chain simulation"@en ;
+        skos:preflabel  "Prozesskettensimulation"@de , "Process chain simulation"@en .
 
 :TestingDirection  rdf:type  skos:Concept , owl:Class ;
         rdfs:comment    "testing direction related to the rolling direction"@en ;

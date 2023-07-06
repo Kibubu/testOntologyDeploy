@@ -1467,7 +1467,7 @@
 :TestPiece  rdf:type    owl:Class ;
         rdfs:comment    "Something that a test is perfomed on"@en ;
         rdfs:label      "Test piece"@en , "Probe"@de ;
-        skos:altlabel   "sample, specimen"@en ;
+        skos:altlabel   "sample"@en , " specimen"@en ;
         skos:preflabel  "Test piece"@en , "Probe"@de .
 
 :codeVersion  rdf:type  owl:DatatypeProperty ;

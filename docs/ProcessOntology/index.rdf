@@ -4672,7 +4672,10 @@ N.GT.0: The Nth additional history variable is the driving quantity for damage.<
     <rdfs:label xml:lang="de">Probe</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/TestPiece">
-    <skos:altlabel xml:lang="en">sample, specimen</skos:altlabel>
+    <skos:altlabel xml:lang="en">sample</skos:altlabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/TestPiece">
+    <skos:altlabel xml:lang="en"> specimen</skos:altlabel>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/TestPiece">
     <skos:preflabel xml:lang="en">Test piece</skos:preflabel>

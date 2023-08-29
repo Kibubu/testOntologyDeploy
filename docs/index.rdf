@@ -1100,6 +1100,9 @@ LT.0.0: |LCSDG| is the ID of a function (*DEFINE_FUNCTION) with the arguments tr
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/YieldStrength">
     <skos:preflabel xml:lang="en">YieldStrength</skos:preflabel>
   </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/InitialFlowStress_g0">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/PercentageReductionOfArea">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   </rdf:Description>
@@ -7030,6 +7033,9 @@ N.GT.0: The Nth additional history variable is the driving quantity for damage.<
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/ExtensionAtFracture">
     <isBasedOn rdf:resource="https://w3id.org/steel/ProcessOntology/Extension"/>
   </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/FlowStressExponent_a">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/ProjectName">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   </rdf:Description>
@@ -9090,6 +9096,9 @@ N.GT.0: The Nth additional history variable is the driving quantity for damage.<
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasYieldStrength_MPa">
     <hasUnitLabel>MPa</hasUnitLabel>
   </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/YoungModulus">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/TestPieceGeometry">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
@@ -9309,6 +9318,18 @@ N.GT.0: The Nth additional history variable is the driving quantity for damage.<
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasStressRate">
     <skos:preflabel xml:lang="en">hasStressRate</skos:preflabel>
   </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasShearLengthAfterFracture2">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasShearLengthAfterFracture2">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasShearLengthAfterFracture2">
+    <rdfs:label xml:lang="en">hasShearLengthAfterFracture2</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasShearLengthAfterFracture2">
+    <skos:preflabel xml:lang="en">hasShearLengthAfterFracture2</skos:preflabel>
+  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/TestingDirection">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   </rdf:Description>
@@ -9356,18 +9377,6 @@ N.GT.0: The Nth additional history variable is the driving quantity for damage.<
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/InitialDisplacementRate">
     <skos:preflabel xml:lang="en">InitialDisplacementRate</skos:preflabel>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasShearLengthAfterFracture2">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasShearLengthAfterFracture2">
-    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasShearLengthAfterFracture2">
-    <rdfs:label xml:lang="en">hasShearLengthAfterFracture2</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasShearLengthAfterFracture2">
-    <skos:preflabel xml:lang="en">hasShearLengthAfterFracture2</skos:preflabel>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasCoefficientOfCorrelation_-">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
@@ -10091,6 +10100,12 @@ N.GT.0: The Nth additional history variable is the driving quantity for damage.<
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasTesterObject">
     <skos:preflabel xml:lang="en">hasTester</skos:preflabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/FinalFlowStress_ginf">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/ElasticConstants_C11_C12_C44">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasNominalEngineeringStrainRate">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
@@ -10987,6 +11002,9 @@ N.GT.0: The Nth additional history variable is the driving quantity for damage.<
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasStandardDeviationOfTheSlope_MPa">
     <hasUnitLabel>MPa</hasUnitLabel>
   </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/HardeningModulus_h0">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/TruePlasticThicknessStrain">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   </rdf:Description>
@@ -11040,6 +11058,9 @@ N.GT.0: The Nth additional history variable is the driving quantity for damage.<
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasShearStrength_MPa">
     <hasUnitLabel>MPa</hasUnitLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/StressExponent_n">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasYieldingIdentifierIsoThermal">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
@@ -12306,21 +12327,6 @@ GT.0.0: Fixed value for stress-state independent critical equivalent plastic str
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/processChainSimulation">
     <skos:preflabel xml:lang="de">Prozesskettensimulation</skos:preflabel>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasDisplacementTransducerObject">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasDisplacementTransducerObject">
-    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasDisplacementTransducerObject">
-    <rdfs:label xml:lang="en">hasDisplacementTransducer</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasDisplacementTransducerObject">
-    <rdfs:range>https://w3id.org/steel/ProcessOntology/DisplacementTransducer</rdfs:range>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasDisplacementTransducerObject">
-    <skos:preflabel xml:lang="en">hasDisplacementTransducer</skos:preflabel>
-  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasShearLength_mm">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </rdf:Description>
@@ -12338,6 +12344,21 @@ GT.0.0: Fixed value for stress-state independent critical equivalent plastic str
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasShearLength_mm">
     <hasUnitLabel>mm</hasUnitLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasDisplacementTransducerObject">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasDisplacementTransducerObject">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasDisplacementTransducerObject">
+    <rdfs:label xml:lang="en">hasDisplacementTransducer</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasDisplacementTransducerObject">
+    <rdfs:range>https://w3id.org/steel/ProcessOntology/DisplacementTransducer</rdfs:range>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasDisplacementTransducerObject">
+    <skos:preflabel xml:lang="en">hasDisplacementTransducer</skos:preflabel>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasPressureChamber">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>

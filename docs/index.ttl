@@ -405,6 +405,9 @@
         skos:altlabel   "yield strength"@en ;
         skos:preflabel  "YieldStrength"@en .
 
+:InitialFlowStress_g0
+        rdf:type  owl:Class .
+
 :PercentageReductionOfArea
         rdf:type        skos:Concept , owl:Class ;
         rdfs:comment    "maximum change in cross-sectional area which has occured during the test expressed as a percentage of the original cross-sectional area"@en ;
@@ -2386,6 +2389,9 @@
         skos:preflabel  "ExtensionAtFracture"@en ;
         :isBasedOn      :Extension .
 
+:FlowStressExponent_a
+        rdf:type  owl:Class .
+
 :ProjectName  rdf:type  skos:Concept , owl:Class ;
         rdfs:comment    "Name of the Project."@en , "Instabilität"@en ;
         rdfs:label      "ProjectName"@en ;
@@ -3070,6 +3076,8 @@
         skos:preflabel      "hasYieldStrength_MPa"@en ;
         :hasUnitLabel       "MPa" .
 
+:YoungModulus  rdf:type  owl:Class .
+
 :TestPieceGeometry  rdf:type  owl:Class , skos:Concept ;
         rdfs:comment    "The type of the specimen."@en ;
         rdfs:label      "TestPieceGeometry"@en ;
@@ -3142,6 +3150,11 @@
         rdfs:label      "hasStressRate"@en ;
         skos:preflabel  "hasStressRate"@en .
 
+:hasShearLengthAfterFracture2
+        rdf:type        owl:DatatypeProperty , rdf:Property ;
+        rdfs:label      "hasShearLengthAfterFracture2"@en ;
+        skos:preflabel  "hasShearLengthAfterFracture2"@en .
+
 :TestingDirection  rdf:type  skos:Concept , owl:Class ;
         rdfs:comment    "testing direction related to the rolling direction"@en ;
         rdfs:label      "TestingDirection"@en ;
@@ -3156,11 +3169,6 @@
         rdfs:label      "InitialDisplacementRate"@en ;
         skos:altlabel   "Initial displacement rate v0"@en , "Abzugsgeschw."@de ;
         skos:preflabel  "InitialDisplacementRate"@en .
-
-:hasShearLengthAfterFracture2
-        rdf:type        owl:DatatypeProperty , rdf:Property ;
-        rdfs:label      "hasShearLengthAfterFracture2"@en ;
-        skos:preflabel  "hasShearLengthAfterFracture2"@en .
 
 :hasCoefficientOfCorrelation_-
         rdf:type            owl:DatatypeProperty , rdf:Property ;
@@ -3413,6 +3421,12 @@
         rdfs:label      "hasTester"@en ;
         rdfs:range      "https://w3id.org/steel/ProcessOntology/Tester" ;
         skos:preflabel  "hasTester"@en .
+
+:FinalFlowStress_ginf
+        rdf:type  owl:Class .
+
+:ElasticConstants_C11_C12_C44
+        rdf:type  owl:Class .
 
 :hasNominalEngineeringStrainRate
         rdf:type        owl:DatatypeProperty , rdf:Property ;
@@ -3706,6 +3720,8 @@
         skos:preflabel      "hasStandardDeviationOfTheSlope_MPa"@en ;
         :hasUnitLabel       "MPa" .
 
+:HardeningModulus_h0  rdf:type  owl:Class .
+
 :TruePlasticThicknessStrain
         rdf:type        skos:Concept , owl:Class ;
         rdfs:comment    "Plastischer Anteil des Umformgrads in Dickenrichtung ermittelt mit Hilfe des hydraulischen Tiefungsversuchs."@de ;
@@ -3726,6 +3742,8 @@
         rdfs:subPropertyOf  :hasShearStrength ;
         skos:preflabel      "hasShearStrength_MPa"@en ;
         :hasUnitLabel       "MPa" .
+
+:StressExponent_n  rdf:type  owl:Class .
 
 :hasYieldingIdentifierIsoThermal
         rdf:type        owl:ObjectProperty ;
@@ -4160,17 +4178,17 @@
         rdfs:label      "Process chain simulation"@en , "Prozesskettensimulation"@de ;
         skos:preflabel  "Process chain simulation"@en , "Prozesskettensimulation"@de .
 
-:hasDisplacementTransducerObject
-        rdf:type        owl:ObjectProperty , rdf:Property ;
-        rdfs:label      "hasDisplacementTransducer"@en ;
-        rdfs:range      "https://w3id.org/steel/ProcessOntology/DisplacementTransducer" ;
-        skos:preflabel  "hasDisplacementTransducer"@en .
-
 :hasShearLength_mm  rdf:type  owl:DatatypeProperty , rdf:Property ;
         rdfs:label          "hasShearLength_mm"@en ;
         rdfs:subPropertyOf  :hasShearLength ;
         skos:preflabel      "hasShearLength_mm"@en ;
         :hasUnitLabel       "mm" .
+
+:hasDisplacementTransducerObject
+        rdf:type        owl:ObjectProperty , rdf:Property ;
+        rdfs:label      "hasDisplacementTransducer"@en ;
+        rdfs:range      "https://w3id.org/steel/ProcessOntology/DisplacementTransducer" ;
+        skos:preflabel  "hasDisplacementTransducer"@en .
 
 :hasPressureChamber  rdf:type  owl:DatatypeProperty , rdf:Property ;
         rdfs:label      "hasPressureChamber"@en ;

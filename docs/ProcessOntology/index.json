@@ -1795,6 +1795,15 @@
       ]
     }
   ,
+  "https://w3id.org/steel/ProcessOntology/ElasticConstants_C11_C12_C44" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+        "value" : "http://www.w3.org/2002/07/owl#Class",
+        "type" : "uri"
+        }
+      
+      ]
+    }
+  ,
   "https://w3id.org/steel/ProcessOntology/Elasticity" : {
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
         "value" : "http://www.w3.org/2002/07/owl#Class",
@@ -3449,6 +3458,15 @@
       ]
     }
   ,
+  "https://w3id.org/steel/ProcessOntology/FinalFlowStress_ginf" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+        "value" : "http://www.w3.org/2002/07/owl#Class",
+        "type" : "uri"
+        }
+      
+      ]
+    }
+  ,
   "https://w3id.org/steel/ProcessOntology/FinalGaugeLengthAfterFracture" : {
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
         "value" : "http://www.w3.org/2002/07/owl#Class",
@@ -3556,6 +3574,15 @@
         "value" : "flat rolling",
         "lang" : "en",
         "type" : "literal"
+        }
+      
+      ]
+    }
+  ,
+  "https://w3id.org/steel/ProcessOntology/FlowStressExponent_a" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+        "value" : "http://www.w3.org/2002/07/owl#Class",
+        "type" : "uri"
         }
       
       ]
@@ -4433,6 +4460,15 @@
       ]
     }
   ,
+  "https://w3id.org/steel/ProcessOntology/HardeningModulus_h0" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+        "value" : "http://www.w3.org/2002/07/owl#Class",
+        "type" : "uri"
+        }
+      
+      ]
+    }
+  ,
   "https://w3id.org/steel/ProcessOntology/InitialDisplacementRate" : {
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
         "value" : "http://www.w3.org/2002/07/owl#Class",
@@ -4476,6 +4512,15 @@
         "value" : "InitialDisplacementRate",
         "lang" : "en",
         "type" : "literal"
+        }
+      
+      ]
+    }
+  ,
+  "https://w3id.org/steel/ProcessOntology/InitialFlowStress_g0" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+        "value" : "http://www.w3.org/2002/07/owl#Class",
+        "type" : "uri"
         }
       
       ]
@@ -10690,6 +10735,15 @@
       ]
     }
   ,
+  "https://w3id.org/steel/ProcessOntology/StressExponent_n" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+        "value" : "http://www.w3.org/2002/07/owl#Class",
+        "type" : "uri"
+        }
+      
+      ]
+    }
+  ,
   "https://w3id.org/steel/ProcessOntology/StressRate" : {
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
         "value" : "http://www.w3.org/2002/07/owl#Class",
@@ -13567,6 +13621,15 @@
     "https://w3id.org/steel/ProcessOntology/hasLabelSourceEn" : [ {
         "value" : "LS-DYNA_Manual_Volume_2",
         "type" : "literal"
+        }
+      
+      ]
+    }
+  ,
+  "https://w3id.org/steel/ProcessOntology/YoungModulus" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+        "value" : "http://www.w3.org/2002/07/owl#Class",
+        "type" : "uri"
         }
       
       ]

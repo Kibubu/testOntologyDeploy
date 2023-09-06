@@ -39,13 +39,7 @@
       
       ],
     "http://www.w3.org/2004/02/skos/core#altlabel" : [ {
-        "value" : "epsw(dL)",
-        "lang" : "de",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "true strain",
+        "value" : "Epsilon True",
         "lang" : "en",
         "type" : "literal"
         }

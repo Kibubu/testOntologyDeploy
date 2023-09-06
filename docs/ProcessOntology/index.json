@@ -982,12 +982,6 @@
         "type" : "uri"
         }
       
-      ],
-    "https://w3id.org/steel/ProcessOntology/isBasedOn" : [ {
-        "value" : "https://w3id.org/steel/ProcessOntology/x",
-        "type" : "uri"
-        }
-      
       ]
     }
   ,
@@ -1069,12 +1063,6 @@
       ],
     "http://www.w3.org/2004/02/skos/core#related" : [ {
         "value" : "https://w3id.org/steel/ProcessOntology/ParallelLength",
-        "type" : "uri"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/isBasedOn" : [ {
-        "value" : "https://w3id.org/steel/ProcessOntology/x",
         "type" : "uri"
         }
       
@@ -1583,12 +1571,6 @@
       
       ],
     "http://www.w3.org/2004/02/skos/core#altlabel" : [ {
-        "value" : "Diameter D1 after fracture",
-        "lang" : "en",
-        "type" : "literal"
-        }
-      ,
-      {
         "value" : "Probendurchmesser nach Bruch D1",
         "lang" : "de",
         "type" : "literal"
@@ -1636,12 +1618,6 @@
       
       ],
     "http://www.w3.org/2004/02/skos/core#altlabel" : [ {
-        "value" : "Diameter D2 after fracture",
-        "lang" : "en",
-        "type" : "literal"
-        }
-      ,
-      {
         "value" : "Probendurchmesser nach Bruch D2",
         "lang" : "de",
         "type" : "literal"
@@ -2112,6 +2088,12 @@
       
       ],
     "http://www.w3.org/2004/02/skos/core#altlabel" : [ {
+        "value" : "Sigma Tech",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      ,
+      {
         "value" : "Sigma-technisch",
         "lang" : "de",
         "type" : "literal"
@@ -2703,6 +2685,12 @@
       ],
     "http://www.w3.org/2004/02/skos/core#altlabel" : [ {
         "value" : "Bruchverl\u00E4ngerung",
+        "lang" : "de",
+        "type" : "literal"
+        }
+      ,
+      {
+        "value" : "DLBruch",
         "lang" : "de",
         "type" : "literal"
         }
@@ -3765,12 +3753,6 @@
       ,
       {
         "value" : "https://w3id.org/steel/ProcessOntology/ForceMeasuringSystem",
-        "type" : "uri"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/isBasedOn" : [ {
-        "value" : "https://w3id.org/steel/ProcessOntology/x",
         "type" : "uri"
         }
       
@@ -5159,12 +5141,6 @@
         }
       ,
       {
-        "value" : "Dehngrenze ReL",
-        "lang" : "de",
-        "type" : "literal"
-        }
-      ,
-      {
         "value" : "lower yield strength",
         "lang" : "en",
         "type" : "literal"
@@ -5353,12 +5329,6 @@
         "value" : "Machine",
         "lang" : "en",
         "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/isBasedOn" : [ {
-        "value" : "https://w3id.org/steel/ProcessOntology/x",
-        "type" : "uri"
         }
       
       ]
@@ -5732,12 +5702,6 @@
         "type" : "literal"
         }
       
-      ],
-    "https://w3id.org/steel/ProcessOntology/isBasedOn" : [ {
-        "value" : "https://w3id.org/steel/ProcessOntology/x",
-        "type" : "uri"
-        }
-      
       ]
     }
   ,
@@ -5943,6 +5907,12 @@
       
       ],
     "http://www.w3.org/2004/02/skos/core#altlabel" : [ {
+        "value" : "Fm",
+        "lang" : "de",
+        "type" : "literal"
+        }
+      ,
+      {
         "value" : "H\u00F6chstzugkraft Fm",
         "lang" : "de",
         "type" : "literal"
@@ -6345,6 +6315,12 @@
         }
       ,
       {
+        "value" : "SU",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      ,
+      {
         "value" : "Su",
         "lang" : "de",
         "type" : "literal"
@@ -6467,19 +6443,13 @@
       
       ],
     "http://www.w3.org/2004/02/skos/core#altlabel" : [ {
+        "value" : "E",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      ,
+      {
         "value" : "E-Modul",
-        "lang" : "de",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "EModul",
-        "lang" : "de",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "Elastizit\u00E4tsmodul",
         "lang" : "de",
         "type" : "literal"
         }
@@ -6936,8 +6906,8 @@
         }
       ,
       {
-        "value" : "So",
-        "lang" : "de",
+        "value" : "S0",
+        "lang" : "en",
         "type" : "literal"
         }
       ,
@@ -7059,12 +7029,6 @@
         "type" : "literal"
         }
       
-      ],
-    "https://w3id.org/steel/ProcessOntology/isBasedOn" : [ {
-        "value" : "https://w3id.org/steel/ProcessOntology/x",
-        "type" : "uri"
-        }
-      
       ]
     }
   ,
@@ -7147,12 +7111,6 @@
         "value" : "OriginalThickness",
         "lang" : "en",
         "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/isBasedOn" : [ {
-        "value" : "https://w3id.org/steel/ProcessOntology/x",
-        "type" : "uri"
         }
       
       ]
@@ -7245,12 +7203,6 @@
         "type" : "uri"
         }
       
-      ],
-    "https://w3id.org/steel/ProcessOntology/isBasedOn" : [ {
-        "value" : "https://w3id.org/steel/ProcessOntology/x",
-        "type" : "uri"
-        }
-      
       ]
     }
   ,
@@ -7305,12 +7257,6 @@
         }
       ,
       {
-        "value" : "Messl\u00E4nge Lc",
-        "lang" : "de",
-        "type" : "literal"
-        }
-      ,
-      {
         "value" : "Parallel length",
         "lang" : "en",
         "type" : "literal"
@@ -7350,12 +7296,6 @@
       ],
     "http://www.w3.org/2004/02/skos/core#related" : [ {
         "value" : "https://w3id.org/steel/ProcessOntology/TestPieceGeometry",
-        "type" : "uri"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/isBasedOn" : [ {
-        "value" : "https://w3id.org/steel/ProcessOntology/x",
         "type" : "uri"
         }
       
@@ -7450,13 +7390,7 @@
       ],
     "http://www.w3.org/2004/02/skos/core#altlabel" : [ {
         "value" : "A",
-        "lang" : "de",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "Bruchdehnung A20mm",
-        "lang" : "de",
+        "lang" : "en",
         "type" : "literal"
         }
       ,
@@ -7525,6 +7459,12 @@
       
       ],
     "http://www.w3.org/2004/02/skos/core#altlabel" : [ {
+        "value" : "Epsilon Tech",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      ,
+      {
         "value" : "Time-dependent engineering strain",
         "lang" : "en",
         "type" : "literal"
@@ -7533,18 +7473,6 @@
       {
         "value" : "e-technisch",
         "lang" : "de",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "eps-technisch",
-        "lang" : "de",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "percentage extension",
-        "lang" : "en",
         "type" : "literal"
         }
       
@@ -7644,19 +7572,7 @@
         }
       ,
       {
-        "value" : "eps-plast",
-        "lang" : "de",
-        "type" : "literal"
-        }
-      ,
-      {
         "value" : "percentage permanent extension",
-        "lang" : "en",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "percentage permanent extension ",
         "lang" : "en",
         "type" : "literal"
         }
@@ -7720,8 +7636,8 @@
       
       ],
     "http://www.w3.org/2004/02/skos/core#altlabel" : [ {
-        "value" : "Dehnung bei H\u00F6chstkraft Ag",
-        "lang" : "de",
+        "value" : "Ag",
+        "lang" : "en",
         "type" : "literal"
         }
       ,
@@ -7804,7 +7720,7 @@
       ,
       {
         "value" : "Z",
-        "lang" : "de",
+        "lang" : "en",
         "type" : "literal"
         }
       ,
@@ -8230,13 +8146,7 @@
       
       ],
     "http://www.w3.org/2004/02/skos/core#altlabel" : [ {
-        "value" : "Querkontraktion",
-        "lang" : "de",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "poisson`s ratio",
+        "value" : "Poisson",
         "lang" : "en",
         "type" : "literal"
         }
@@ -8646,12 +8556,6 @@
         "type" : "literal"
         }
       
-      ],
-    "https://w3id.org/steel/ProcessOntology/isBasedOn" : [ {
-        "value" : "https://w3id.org/steel/ProcessOntology/x",
-        "type" : "uri"
-        }
-      
       ]
     }
   ,
@@ -8704,12 +8608,6 @@
         "value" : "ProjectNumber",
         "lang" : "en",
         "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/isBasedOn" : [ {
-        "value" : "https://w3id.org/steel/ProcessOntology/x",
-        "type" : "uri"
         }
       
       ]
@@ -8813,12 +8711,6 @@
       ],
     "http://www.w3.org/2004/02/skos/core#altlabel" : [ {
         "value" : "Rp0.2",
-        "lang" : "de",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "proof strength, 0.2 %",
         "lang" : "en",
         "type" : "literal"
         }
@@ -8877,12 +8769,6 @@
       ],
     "http://www.w3.org/2004/02/skos/core#altlabel" : [ {
         "value" : "Rp1",
-        "lang" : "de",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "proof strength, 1 %",
         "lang" : "en",
         "type" : "literal"
         }
@@ -9138,13 +9024,7 @@
       
       ],
     "http://www.w3.org/2004/02/skos/core#altlabel" : [ {
-        "value" : "r",
-        "lang" : "de",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "r-value",
+        "value" : "Rinc",
         "lang" : "en",
         "type" : "literal"
         }
@@ -9737,12 +9617,6 @@
         "value" : "SampleIdentifier",
         "lang" : "en",
         "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/isBasedOn" : [ {
-        "value" : "https://w3id.org/steel/ProcessOntology/x",
-        "type" : "uri"
         }
       
       ]
@@ -10625,12 +10499,6 @@
       
       ],
     "http://www.w3.org/2004/02/skos/core#altlabel" : [ {
-        "value" : "Dehngeschwindigkeit",
-        "lang" : "de",
-        "type" : "literal"
-        }
-      ,
-      {
         "value" : "Strain Rate",
         "lang" : "en",
         "type" : "literal"
@@ -11263,6 +11131,12 @@
       
       ],
     "http://www.w3.org/2004/02/skos/core#altlabel" : [ {
+        "value" : "Rm",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      ,
+      {
         "value" : "Zugfestigkeit Rm",
         "lang" : "de",
         "type" : "literal"
@@ -11509,12 +11383,6 @@
         "type" : "uri"
         }
       
-      ],
-    "https://w3id.org/steel/ProcessOntology/isBasedOn" : [ {
-        "value" : "https://w3id.org/steel/ProcessOntology/x",
-        "type" : "uri"
-        }
-      
       ]
     }
   ,
@@ -11663,12 +11531,6 @@
         "type" : "literal"
         }
       
-      ],
-    "https://w3id.org/steel/ProcessOntology/isBasedOn" : [ {
-        "value" : "https://w3id.org/steel/ProcessOntology/x",
-        "type" : "uri"
-        }
-      
       ]
     }
   ,
@@ -11776,12 +11638,6 @@
         "type" : "literal"
         }
       
-      ],
-    "https://w3id.org/steel/ProcessOntology/isBasedOn" : [ {
-        "value" : "https://w3id.org/steel/ProcessOntology/x",
-        "type" : "uri"
-        }
-      
       ]
     }
   ,
@@ -11887,12 +11743,6 @@
       ],
     "http://www.w3.org/2004/02/skos/core#related" : [ {
         "value" : "https://w3id.org/steel/ProcessOntology/RollingDirection",
-        "type" : "uri"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/isBasedOn" : [ {
-        "value" : "https://w3id.org/steel/ProcessOntology/x",
         "type" : "uri"
         }
       
@@ -12254,12 +12104,6 @@
         "type" : "literal"
         }
       
-      ],
-    "https://w3id.org/steel/ProcessOntology/isBasedOn" : [ {
-        "value" : "https://w3id.org/steel/ProcessOntology/x",
-        "type" : "uri"
-        }
-      
       ]
     }
   ,
@@ -12495,12 +12339,6 @@
         "type" : "literal"
         }
       
-      ],
-    "https://w3id.org/steel/ProcessOntology/isBasedOn" : [ {
-        "value" : "https://w3id.org/steel/ProcessOntology/x",
-        "type" : "uri"
-        }
-      
       ]
     }
   ,
@@ -12679,13 +12517,7 @@
       
       ],
     "http://www.w3.org/2004/02/skos/core#altlabel" : [ {
-        "value" : "epsw(dL)",
-        "lang" : "de",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "true strain",
+        "value" : "Epsilon True",
         "lang" : "en",
         "type" : "literal"
         }
@@ -12750,6 +12582,12 @@
       
       ],
     "http://www.w3.org/2004/02/skos/core#altlabel" : [ {
+        "value" : "Sigma True",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      ,
+      {
         "value" : "Sigw(dL)",
         "lang" : "de",
         "type" : "literal"
@@ -12922,14 +12760,8 @@
       
       ],
     "http://www.w3.org/2004/02/skos/core#altlabel" : [ {
-        "value" : "eps-wBreite",
+        "value" : "e-wBreite",
         "lang" : "de",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "true width strain",
-        "lang" : "en",
         "type" : "literal"
         }
       
@@ -13227,14 +13059,8 @@
       
       ],
     "http://www.w3.org/2004/02/skos/core#altlabel" : [ {
-        "value" : "Breite, B",
+        "value" : "B",
         "lang" : "de",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "Width",
-        "lang" : "en",
         "type" : "literal"
         }
       
@@ -13447,13 +13273,7 @@
       
       ],
     "http://www.w3.org/2004/02/skos/core#altlabel" : [ {
-        "value" : "engineering width strain",
-        "lang" : "en",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "eps-Breite",
+        "value" : "e-Breite",
         "lang" : "de",
         "type" : "literal"
         }
@@ -13578,12 +13398,6 @@
     "http://www.w3.org/2004/02/skos/core#altlabel" : [ {
         "value" : "Fp0.2",
         "lang" : "de",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "yield force, 0.2%",
-        "lang" : "en",
         "type" : "literal"
         }
       

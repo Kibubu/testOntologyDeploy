@@ -20,13 +20,7 @@
       
       ],
     "http://www.w3.org/2004/02/skos/core#altlabel" : [ {
-        "value" : "r",
-        "lang" : "de",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "r-value",
+        "value" : "Rinc",
         "lang" : "en",
         "type" : "literal"
         }

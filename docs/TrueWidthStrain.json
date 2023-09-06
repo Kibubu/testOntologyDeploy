@@ -27,14 +27,8 @@
       
       ],
     "http://www.w3.org/2004/02/skos/core#altlabel" : [ {
-        "value" : "eps-wBreite",
+        "value" : "e-wBreite",
         "lang" : "de",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "true width strain",
-        "lang" : "en",
         "type" : "literal"
         }
       

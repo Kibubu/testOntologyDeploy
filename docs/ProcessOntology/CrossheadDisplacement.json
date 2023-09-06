@@ -63,12 +63,6 @@
         "type" : "uri"
         }
       
-      ],
-    "https://w3id.org/steel/ProcessOntology/isBasedOn" : [ {
-        "value" : "https://w3id.org/steel/ProcessOntology/x",
-        "type" : "uri"
-        }
-      
       ]
     }
   }

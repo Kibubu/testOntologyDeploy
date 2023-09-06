@@ -10,6 +10,5 @@
 <https://w3id.org/steel/ProcessOntology/TestTemperature> <http://www.w3.org/2004/02/skos/core#altlabel> "Temperatur"@de .
 <https://w3id.org/steel/ProcessOntology/TestTemperature> <http://www.w3.org/2004/02/skos/core#altlabel> "Prüftemperatur"@de .
 <https://w3id.org/steel/ProcessOntology/TestTemperature> <http://www.w3.org/2004/02/skos/core#preflabel> "TestTemperature"@en .
-<https://w3id.org/steel/ProcessOntology/TestTemperature> <https://w3id.org/steel/ProcessOntology/isBasedOn> <https://w3id.org/steel/ProcessOntology/x> .
 
 

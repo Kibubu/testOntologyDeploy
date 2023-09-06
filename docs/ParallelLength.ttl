@@ -11,11 +11,9 @@
 <https://w3id.org/steel/ProcessOntology/ParallelLength> <http://www.w3.org/2004/02/skos/core#altlabel> "parallel length"@en .
 <https://w3id.org/steel/ProcessOntology/ParallelLength> <http://www.w3.org/2004/02/skos/core#altlabel> "parallele Messlänge Lc"@de .
 <https://w3id.org/steel/ProcessOntology/ParallelLength> <http://www.w3.org/2004/02/skos/core#altlabel> "Test length"@en .
-<https://w3id.org/steel/ProcessOntology/ParallelLength> <http://www.w3.org/2004/02/skos/core#altlabel> "Messlänge Lc"@de .
 <https://w3id.org/steel/ProcessOntology/ParallelLength> <http://www.w3.org/2004/02/skos/core#altlabel> "Parallel length"@en .
 <https://w3id.org/steel/ProcessOntology/ParallelLength> <http://www.w3.org/2004/02/skos/core#altlabel> "Versuchslänge"@de .
 <https://w3id.org/steel/ProcessOntology/ParallelLength> <http://www.w3.org/2004/02/skos/core#preflabel> "ParallelLength"@en .
 <https://w3id.org/steel/ProcessOntology/ParallelLength> <http://www.w3.org/2004/02/skos/core#related> <https://w3id.org/steel/ProcessOntology/TestPieceGeometry> .
-<https://w3id.org/steel/ProcessOntology/ParallelLength> <https://w3id.org/steel/ProcessOntology/isBasedOn> <https://w3id.org/steel/ProcessOntology/x> .
 
 

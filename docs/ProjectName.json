@@ -39,6 +39,12 @@
         }
       ,
       {
+        "value" : "Project Name",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      ,
+      {
         "value" : "Project name",
         "lang" : "en",
         "type" : "literal"
@@ -61,6 +67,12 @@
         "value" : "ProjectName",
         "lang" : "en",
         "type" : "literal"
+        }
+      
+      ],
+    "https://w3id.org/steel/ProcessOntology/isBasedOn" : [ {
+        "value" : "https://w3id.org/steel/ProcessOntology/x",
+        "type" : "uri"
         }
       
       ]

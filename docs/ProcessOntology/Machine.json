@@ -39,6 +39,12 @@
         }
       ,
       {
+        "value" : "Machine Type",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      ,
+      {
         "value" : "Machine data",
         "lang" : "en",
         "type" : "literal"
@@ -73,6 +79,12 @@
         "value" : "Machine",
         "lang" : "en",
         "type" : "literal"
+        }
+      
+      ],
+    "https://w3id.org/steel/ProcessOntology/isBasedOn" : [ {
+        "value" : "https://w3id.org/steel/ProcessOntology/x",
+        "type" : "uri"
         }
       
       ]

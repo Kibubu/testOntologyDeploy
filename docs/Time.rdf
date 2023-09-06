@@ -36,4 +36,7 @@
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/Time">
     <ns0:preflabel xmlns:ns0="http://www.w3.org/2004/02/skos/core#" xml:lang="en">Time</ns0:preflabel>
   </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/Time">
+    <ns0:isBasedOn xmlns:ns0="https://w3id.org/steel/ProcessOntology/" rdf:resource="https://w3id.org/steel/ProcessOntology/x"/>
+  </rdf:Description>
 </rdf:RDF>

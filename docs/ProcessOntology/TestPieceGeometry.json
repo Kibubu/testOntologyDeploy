@@ -45,6 +45,12 @@
         }
       ,
       {
+        "value" : "Specimen Type",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      ,
+      {
         "value" : "Specimen type",
         "lang" : "en",
         "type" : "literal"
@@ -66,6 +72,12 @@
       ],
     "http://www.w3.org/2004/02/skos/core#related" : [ {
         "value" : "https://w3id.org/steel/ProcessOntology/TestStandard",
+        "type" : "uri"
+        }
+      
+      ],
+    "https://w3id.org/steel/ProcessOntology/isBasedOn" : [ {
+        "value" : "https://w3id.org/steel/ProcessOntology/x",
         "type" : "uri"
         }
       

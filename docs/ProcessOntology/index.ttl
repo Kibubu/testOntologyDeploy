@@ -670,11 +670,12 @@
         skos:preflabel      "hasPreliminaryForce_MPa"@en ;
         :hasUnitLabel       "MPa" .
 
-:Material  rdf:type     skos:Concept , owl:Class ;
-        rdfs:comment    "Bezeichnung des Werkstoffs."@de , "The material used in the experiment."@en ;
+:Material  rdf:type     owl:Class , skos:Concept ;
+        rdfs:comment    "The material used in the experiment."@en , "Bezeichnung des Werkstoffs."@de ;
         rdfs:label      "Material"@en ;
-        skos:altlabel   "material"@en , "Material"@en , "Werkstoff"@de ;
-        skos:preflabel  "Material"@en .
+        skos:altlabel   "Werkstoff"@de , "Material"@en , "material"@en ;
+        skos:preflabel  "Material"@en ;
+        :isBasedOn      :x .
 
 <https://w3id.org/steel/ProcessOntology/hasPercentagePermanentElongation_%25>
         rdf:type            owl:DatatypeProperty , rdf:Property ;
@@ -1022,9 +1023,10 @@
         rdfs:comment    "The length of the experiment (description replaced by Zugversuch Instron)"@en , "Länge des parallelen reduzierten Querschnitts der Probe"@de , "The length of the parallel part of the specimen"@en ;
         rdfs:label      "ParallelLength"@en ;
         rdfs:seeAlso    :TestPieceGeometry ;
-        skos:altlabel   "parallel length"@en , "parallele Messlänge Lc"@de , "Test length"@en , "Messlänge Lc"@de , "Parallel length"@en , "Versuchslänge"@de ;
+        skos:altlabel   "LC"@en , "parallel length"@en , "parallele Messlänge Lc"@de , "Test length"@en , "Messlänge Lc"@de , "Parallel length"@en , "Versuchslänge"@de ;
         skos:preflabel  "ParallelLength"@en ;
-        skos:related    :TestPieceGeometry .
+        skos:related    :TestPieceGeometry ;
+        :isBasedOn      :x .
 
 :numberOfPasses  rdf:type  owl:Class ;
         rdfs:label      "number of passes"@en , "Stichzahl"@de ;
@@ -1207,7 +1209,8 @@
         rdfs:comment    "Date and time when the experiment was conducted."@en , "Date when the experiment was conducted."@en ;
         rdfs:label      "TimeStamp"@en ;
         skos:altlabel   "Date"@en , "Date/Time"@en , "Datum/Uhrzeit"@de , "Datum"@de ;
-        skos:preflabel  "TimeStamp"@en .
+        skos:preflabel  "TimeStamp"@en ;
+        :isBasedOn      :x .
 
 :hasRelativeStandardDeviationOfTheSlopeObject
         rdf:type        owl:ObjectProperty , rdf:Property ;
@@ -1634,7 +1637,8 @@
         rdfs:comment    "The temperature during the experiment."@en , "The initial test temperature during the experiment (neglecting adiabatic heating)"@en ;
         rdfs:label      "TestTemperature"@en ;
         skos:altlabel   "Temperature"@en , "Test temperature"@en , "Temperatur"@de , "Prüftemperatur"@de ;
-        skos:preflabel  "TestTemperature"@en .
+        skos:preflabel  "TestTemperature"@en ;
+        :isBasedOn      :x .
 
 :hasMatTabulatedJohnsonCook
         rdf:type        owl:ObjectProperty ;
@@ -1698,7 +1702,7 @@
 :ExperimentIdentifier
         rdf:type        skos:Concept , owl:Class ;
         rdfs:label      "ExperimentIdentifier"@en ;
-        skos:altlabel   "Identifier based on Label-System"@en , "Proben-ID"@de ;
+        skos:altlabel   "Label ID"@en , "Identifier based on Label-System"@en , "Proben-ID"@de ;
         skos:preflabel  "ExperimentIdentifier"@en .
 
 :hasMaximumForceNoDiscontinousYielding_N
@@ -1975,8 +1979,9 @@
 :OriginalGaugeLength  rdf:type  skos:Concept , owl:Class ;
         rdfs:comment    "The intial gauge length given by the specimen geometry"@en , "Anfangsmesslänge "@de , "Länge zwischen den Marken zur Kennzeichnung der Messlänge (3.1) auf der Probe, die vor dem Versuch bei Raumtemperatur gemessen wird"@de ;
         rdfs:label      "OriginalGaugeLength"@en ;
-        skos:altlabel   "Messlänge Lo"@de , "Messlänge Standardweg"@de , "Initial measuring length"@en , "original gauge length"@en , "Original gauge length "@en ;
-        skos:preflabel  "OriginalGaugeLength"@en .
+        skos:altlabel   "Messlänge Lo"@de , "Messlänge Standardweg"@de , "L0"@en , "Initial measuring length"@en , "original gauge length"@en , "Original gauge length "@en ;
+        skos:preflabel  "OriginalGaugeLength"@en ;
+        :isBasedOn      :x .
 
 :hasPercentageElongationAfterFracture
         rdf:type        owl:DatatypeProperty , rdf:Property ;
@@ -2269,7 +2274,8 @@
         rdfs:comment    "Authors"@de , "Zeit während des hydraulischen Tiefungsversuchs."@de , "The time when the data point is recorded in relation to the start. "@en , "0.694"@en ;
         rdfs:label      "Time"@en ;
         skos:altlabel   "Zeit"@de , "Time"@en , "Test time"@en , "Prüfzeit"@de ;
-        skos:preflabel  "Time"@en .
+        skos:preflabel  "Time"@en ;
+        :isBasedOn      :x .
 
 :DiameterAfterFracture2
         rdf:type        skos:Concept , owl:Class ;
@@ -2408,8 +2414,9 @@
 :ProjectName  rdf:type  skos:Concept , owl:Class ;
         rdfs:comment    "Name of the Project."@en , "Instabilität"@en ;
         rdfs:label      "ProjectName"@en ;
-        skos:altlabel   "Projektname"@de , "Project name"@en , "Projekt"@de , "Project"@en ;
-        skos:preflabel  "ProjectName"@en .
+        skos:altlabel   "Projektname"@de , "Project name"@en , "Projekt"@de , "Project Name"@en , "Project"@en ;
+        skos:preflabel  "ProjectName"@en ;
+        :isBasedOn      :x .
 
 :Temperature  rdf:type  skos:Concept , owl:Class ;
         rdfs:comment    "Versuche unter kontrollierten Bedingungen müssen bei einer Temperatur von (23 ± 5) °C durchgeführt werden."@de ;
@@ -2850,8 +2857,9 @@
 :ProjectNumber  rdf:type  skos:Concept , owl:Class ;
         rdfs:comment    "Project identification number."@en ;
         rdfs:label      "ProjectNumber"@en ;
-        skos:altlabel   "Project number"@en , "Projektnummer"@de ;
-        skos:preflabel  "ProjectNumber"@en .
+        skos:altlabel   "Project number"@en , "Project No."@en , "Projektnummer"@de ;
+        skos:preflabel  "ProjectNumber"@en ;
+        :isBasedOn      :x .
 
 :Coating  rdf:type      owl:Class ;
         rdfs:comment    "Thing that you put on the surface of a specimen that influences the surface behaviour"@en ;
@@ -2967,8 +2975,9 @@
 :OriginalThickness  rdf:type  owl:Class , skos:Concept ;
         rdfs:comment    "Original width of the parallel length of a flat test piece"@en , "The thickness of the specimen."@en , "The initial thickness of the specimen."@en ;
         rdfs:label      "OriginalThickness"@en ;
-        skos:altlabel   "Probendicke a"@de , "Specimen thickness"@en , "Probendicke a0"@de , "Original thickness"@en , "Probendicke"@de ;
-        skos:preflabel  "OriginalThickness"@en .
+        skos:altlabel   "Thickness"@en , "Probendicke a"@de , "Specimen thickness"@en , "Probendicke a0"@de , "Original thickness"@en , "Probendicke"@de ;
+        skos:preflabel  "OriginalThickness"@en ;
+        :isBasedOn      :x .
 
 :hasStress_MPa  rdf:type    owl:DatatypeProperty , rdf:Property ;
         rdfs:label          "hasStress_MPa"@en ;
@@ -3095,9 +3104,10 @@
         rdfs:comment    "The type of the specimen."@en ;
         rdfs:label      "TestPieceGeometry"@en ;
         rdfs:seeAlso    :TestStandard ;
-        skos:altlabel   "Specimen type"@en , "Probentyp"@de , "Probenform"@de , "Test piece geometry"@en ;
+        skos:altlabel   "Specimen type"@en , "Probentyp"@de , "Specimen Type"@en , "Probenform"@de , "Test piece geometry"@en ;
         skos:preflabel  "TestPieceGeometry"@en ;
-        skos:related    :TestStandard .
+        skos:related    :TestStandard ;
+        :isBasedOn      :x .
 
 :hasEngineeringStress
         rdf:type        owl:DatatypeProperty , rdf:Property ;
@@ -3168,13 +3178,14 @@
         rdfs:label      "hasShearLengthAfterFracture2"@en ;
         skos:preflabel  "hasShearLengthAfterFracture2"@en .
 
-:TestingDirection  rdf:type  skos:Concept , owl:Class ;
+:TestingDirection  rdf:type  owl:Class , skos:Concept ;
         rdfs:comment    "testing direction related to the rolling direction"@en ;
         rdfs:label      "TestingDirection"@en ;
         rdfs:seeAlso    :RollingDirection ;
         skos:altlabel   "testing direction"@en , "Orientierung"@de ;
         skos:preflabel  "TestingDirection"@en ;
-        skos:related    :RollingDirection .
+        skos:related    :RollingDirection ;
+        :isBasedOn      :x .
 
 :InitialDisplacementRate
         rdf:type        skos:Concept , owl:Class ;
@@ -3274,7 +3285,8 @@
         rdfs:seeAlso    :ForceMeasuringSystem , :ForceMeasuringDevice ;
         skos:altlabel   "Standardkraft"@de , "F"@de , "Standard force"@en , "Force"@en , "Force-measuring device"@en ;
         skos:preflabel  "Force"@en , "Kraft"@de ;
-        skos:related    :ForceMeasuringDevice , :ForceMeasuringSystem .
+        skos:related    :ForceMeasuringDevice , :ForceMeasuringSystem ;
+        :isBasedOn      :x .
 
 <https://w3id.org/steel/ProcessOntology/hasPercentageYieldPointExtension_%25>
         rdf:type            owl:DatatypeProperty , rdf:Property ;
@@ -3453,9 +3465,10 @@
         rdfs:comment    "Displacement of the actuator"@en ;
         rdfs:label      "CrossheadDisplacement"@en ;
         rdfs:seeAlso    :Machine ;
-        skos:altlabel   "Crosshead displacement"@en , "Maschine"@de ;
+        skos:altlabel   "Machine Displacement"@en , "Crosshead displacement"@en , "Maschine"@de ;
         skos:preflabel  "CrossheadDisplacement"@en ;
-        skos:related    :Machine .
+        skos:related    :Machine ;
+        :isBasedOn      :x .
 
 :hasGaugeLengthObject
         rdf:type        owl:ObjectProperty , rdf:Property ;
@@ -3483,8 +3496,9 @@
 :Machine  rdf:type      skos:Concept , owl:Class ;
         rdfs:comment    "Data of the machine used for the experiment."@en , "Die Prüfmaschine sollte mit einer analogen Messwertausgabe, die nicht durch die Software beeinflusst wird, ausgerüstet sein. Ist eine solche Ausgabe nicht vorgesehen, sollten digitale Rohdaten ausgegeben werden können. Der Prüfmaschinenhersteller sollte Auskunft über die Erzeugung der digitalen Rohdaten und ihre Verarbeitung durch die Software geben. Die Rohdaten sollten in SI-Einheiten angegeben werden und sich auf die Kraft, die Verlängerung (der Extensometer-Messlänge), den Traversenweg, die Zeit und die Probenmaße beziehen. Ein Beispiel eines geeigneten Datenformats ist in Bild A.1 dargestellt."@de ;
         rdfs:label      "Machine"@en ;
-        skos:altlabel   "Testing Machine"@en , "Machine data"@en , "Prüfmaschine"@de , "Prüfmasch."@de , "Maschinendaten"@de , "Machine"@en ;
-        skos:preflabel  "Machine"@en .
+        skos:altlabel   "Testing Machine"@en , "Machine data"@en , "Prüfmaschine"@de , "Machine Type"@en , "Prüfmasch."@de , "Maschinendaten"@de , "Machine"@en ;
+        skos:preflabel  "Machine"@en ;
+        :isBasedOn      :x .
 
 :Stress  rdf:type       skos:Concept , owl:Class ;
         rdfs:label      "Stress"@en , "Spannung"@de ;
@@ -3973,9 +3987,10 @@
         rdfs:comment    "The displacement of the crosshead per time"@en , "The speed of the experiment."@en ;
         rdfs:label      "CrossheadSeparationRate"@en ;
         rdfs:seeAlso    :ParallelLength ;
-        skos:altlabel   "Test speed"@en , "Prüfgeschwindigkeit"@de , "crosshead separation rate"@en , "Crosshead separation rate vc"@en ;
+        skos:altlabel   "Test speed"@en , "Prüfgeschwindigkeit"@de , "v0"@en , "crosshead separation rate"@en , "Crosshead separation rate vc"@en ;
         skos:preflabel  "CrossheadSeparationRate"@en ;
-        skos:related    :ParallelLength .
+        skos:related    :ParallelLength ;
+        :isBasedOn      :x .
 
 :hasExtension_mm  rdf:type  owl:DatatypeProperty , rdf:Property ;
         rdfs:label          "hasExtension_mm"@en ;
@@ -4019,8 +4034,9 @@
 :SampleIdentifier  rdf:type  skos:Concept , owl:Class ;
         rdfs:comment    "Unique ID (IWM intern)"@en ;
         rdfs:label      "SampleIdentifier"@en ;
-        skos:altlabel   "Sample identifier"@en , "Probennummer"@de , "Proben-Nr."@de ;
-        skos:preflabel  "SampleIdentifier"@en .
+        skos:altlabel   "Sample identifier"@en , "Proben-Nr."@de , "Probennummer"@de , "Specimen Name"@en ;
+        skos:preflabel  "SampleIdentifier"@en ;
+        :isBasedOn      :x .
 
 :hasOperator  rdf:type  owl:DatatypeProperty , rdf:Property ;
         rdfs:label      "hasOperator"@en ;
@@ -4047,9 +4063,10 @@
         rdfs:comment    "The width of the specimen."@en , "Original width of the parallel length of a flat test piece"@en ;
         rdfs:label      "OriginalWidth"@en ;
         rdfs:seeAlso    :TestPieceGeometry ;
-        skos:altlabel   "Probenbreite b"@de , "Specimen width"@en , "Probenbreite"@de , "Probenbreite b0"@de , "Original width"@en ;
+        skos:altlabel   "Probenbreite b"@de , "Specimen width"@en , "Probenbreite"@de , "Probenbreite b0"@de , "Original width"@en , "Width"@en ;
         skos:preflabel  "OriginalWidth"@en ;
-        skos:related    :TestPieceGeometry .
+        skos:related    :TestPieceGeometry ;
+        :isBasedOn      :x .
 
 :hasInnerDiameterBlankHolder
         rdf:type        owl:DatatypeProperty , rdf:Property ;
@@ -4107,10 +4124,11 @@
         skos:preflabel  "Grid"@en .
 
 :TestStandard  rdf:type  skos:Concept , owl:Class ;
-        rdfs:comment    "Test Standard unter dem der hydraulische Tiefungsversuch durchgeführt wurde."@de , "The norm according to which the experiment was conducted."@en ;
+        rdfs:comment    "The norm according to which the experiment was conducted."@en , "Test Standard unter dem der hydraulische Tiefungsversuch durchgeführt wurde."@de ;
         rdfs:label      "TestStandard"@en ;
-        skos:altlabel   "Test standard"@en , "Prüfnorm"@de ;
-        skos:preflabel  "TestStandard"@en .
+        skos:altlabel   "Testing Standard"@en , "Test standard"@en , "Prüfnorm"@de ;
+        skos:preflabel  "TestStandard"@en ;
+        :isBasedOn      :x .
 
 :hasCharacteristicEngineeringStrainRate_s-1
         rdf:type            owl:DatatypeProperty , rdf:Property ;
@@ -4300,7 +4318,7 @@
         rdfs:comment    "Displacement of the extensometer (!) length"@en ;
         rdfs:label      "Extension"@en ;
         rdfs:seeAlso    :ExtensionMeasuringSystem , :ExtensometerGaugeLength , :DisplacementTransducer ;
-        skos:altlabel   "Standardweg"@de , "Standard travel"@en , "extension"@en , "dL"@de , "Extension"@en ;
+        skos:altlabel   "Standardweg"@de , "Displacement"@en , "Standard travel"@en , "extension"@en , "dL"@de , "Extension"@en ;
         skos:preflabel  "Extension"@en ;
         skos:related    :DisplacementTransducer , :ExtensometerGaugeLength , :ExtensionMeasuringSystem ;
         :isBasedOn      :ExtensometerGaugeLength , :OriginalGaugeLength .

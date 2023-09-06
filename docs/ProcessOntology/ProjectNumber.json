@@ -27,6 +27,12 @@
       
       ],
     "http://www.w3.org/2004/02/skos/core#altlabel" : [ {
+        "value" : "Project No.",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      ,
+      {
         "value" : "Project number",
         "lang" : "en",
         "type" : "literal"
@@ -43,6 +49,12 @@
         "value" : "ProjectNumber",
         "lang" : "en",
         "type" : "literal"
+        }
+      
+      ],
+    "https://w3id.org/steel/ProcessOntology/isBasedOn" : [ {
+        "value" : "https://w3id.org/steel/ProcessOntology/x",
+        "type" : "uri"
         }
       
       ]

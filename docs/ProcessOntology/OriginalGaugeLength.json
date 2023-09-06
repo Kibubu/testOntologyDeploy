@@ -45,6 +45,12 @@
         }
       ,
       {
+        "value" : "L0",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      ,
+      {
         "value" : "Messl\u00E4nge Lo",
         "lang" : "de",
         "type" : "literal"
@@ -73,6 +79,12 @@
         "value" : "OriginalGaugeLength",
         "lang" : "en",
         "type" : "literal"
+        }
+      
+      ],
+    "https://w3id.org/steel/ProcessOntology/isBasedOn" : [ {
+        "value" : "https://w3id.org/steel/ProcessOntology/x",
+        "type" : "uri"
         }
       
       ]

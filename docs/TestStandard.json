@@ -43,12 +43,24 @@
         "lang" : "en",
         "type" : "literal"
         }
+      ,
+      {
+        "value" : "Testing Standard",
+        "lang" : "en",
+        "type" : "literal"
+        }
       
       ],
     "http://www.w3.org/2004/02/skos/core#preflabel" : [ {
         "value" : "TestStandard",
         "lang" : "en",
         "type" : "literal"
+        }
+      
+      ],
+    "https://w3id.org/steel/ProcessOntology/isBasedOn" : [ {
+        "value" : "https://w3id.org/steel/ProcessOntology/x",
+        "type" : "uri"
         }
       
       ]

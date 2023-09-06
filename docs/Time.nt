@@ -10,3 +10,4 @@
 <https://w3id.org/steel/ProcessOntology/Time> <http://www.w3.org/2004/02/skos/core#altlabel> "Time"@en .
 <https://w3id.org/steel/ProcessOntology/Time> <http://www.w3.org/2004/02/skos/core#altlabel> "Zeit"@de .
 <https://w3id.org/steel/ProcessOntology/Time> <http://www.w3.org/2004/02/skos/core#preflabel> "Time"@en .
+<https://w3id.org/steel/ProcessOntology/Time> <https://w3id.org/steel/ProcessOntology/isBasedOn> <https://w3id.org/steel/ProcessOntology/x> .

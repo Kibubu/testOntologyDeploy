@@ -546,6 +546,7 @@
 <https://w3id.org/steel/ProcessOntology/Force> <http://www.w3.org/2004/02/skos/core#altlabel> "Force-measuring device"@en .
 <https://w3id.org/steel/ProcessOntology/Force> <http://www.w3.org/2004/02/skos/core#altlabel> "Standard force"@en .
 <https://w3id.org/steel/ProcessOntology/Force> <http://www.w3.org/2004/02/skos/core#altlabel> "Standardkraft"@de .
+<https://w3id.org/steel/ProcessOntology/Force> <http://www.w3.org/2004/02/skos/core#altlabel> "force"@en .
 <https://w3id.org/steel/ProcessOntology/Force> <http://www.w3.org/2004/02/skos/core#preflabel> "Force"@en .
 <https://w3id.org/steel/ProcessOntology/Force> <http://www.w3.org/2004/02/skos/core#preflabel> "Kraft"@de .
 <https://w3id.org/steel/ProcessOntology/Force> <http://www.w3.org/2004/02/skos/core#related> <https://w3id.org/steel/ProcessOntology/ForceMeasuringDevice> .
@@ -919,13 +920,25 @@
 <https://w3id.org/steel/ProcessOntology/MinTimeStep4ElementDel> <http://www.w3.org/2004/02/skos/core#preflabel> "MinTimeStep4ElementDel"@en .
 <https://w3id.org/steel/ProcessOntology/MinTimeStep4ElementDel> <https://w3id.org/steel/ProcessOntology/UnitLabel> "s" .
 <https://w3id.org/steel/ProcessOntology/MinTimeStep4ElementDel> <https://w3id.org/steel/ProcessOntology/hasLabelSourceEn> "LS-DYNA_Manual_Volume_2" .
+<https://w3id.org/steel/ProcessOntology/MinimumCrossSectionAfterFracture> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/steel/ProcessOntology/MinimumCrossSectionAfterFracture> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/steel/ProcessOntology/MinimumCrossSectionAfterFracture> <http://www.w3.org/2000/01/rdf-schema#comment> "minimum cross-sectional area after fracture"@en .
+<https://w3id.org/steel/ProcessOntology/MinimumCrossSectionAfterFracture> <http://www.w3.org/2000/01/rdf-schema#label> "MinimumCrossSectionAfterFracture"@en .
+<https://w3id.org/steel/ProcessOntology/MinimumCrossSectionAfterFracture> <http://www.w3.org/2004/02/skos/core#altlabel> "SU"@en .
+<https://w3id.org/steel/ProcessOntology/MinimumCrossSectionAfterFracture> <http://www.w3.org/2004/02/skos/core#altlabel> "minimum cross-sectional area after fracture"@en .
+<https://w3id.org/steel/ProcessOntology/MinimumCrossSectionAfterFracture> <http://www.w3.org/2004/02/skos/core#preflabel> "MinimumCrossSectionAfterFracture"@en .
+<https://w3id.org/steel/ProcessOntology/MinimumCrossSectionAfterFracture> <https://w3id.org/steel/ProcessOntology/isBasedOn> <https://w3id.org/steel/ProcessOntology/DiameterAfterFracture1> .
+<https://w3id.org/steel/ProcessOntology/MinimumCrossSectionAfterFracture> <https://w3id.org/steel/ProcessOntology/isBasedOn> <https://w3id.org/steel/ProcessOntology/DiameterAfterFracture2> .
+<https://w3id.org/steel/ProcessOntology/MinimumCrossSectionAfterFracture> <https://w3id.org/steel/ProcessOntology/isBasedOn> <https://w3id.org/steel/ProcessOntology/ThicknessAfterFracture1> .
+<https://w3id.org/steel/ProcessOntology/MinimumCrossSectionAfterFracture> <https://w3id.org/steel/ProcessOntology/isBasedOn> <https://w3id.org/steel/ProcessOntology/ThicknessAfterFracture2> .
+<https://w3id.org/steel/ProcessOntology/MinimumCrossSectionAfterFracture> <https://w3id.org/steel/ProcessOntology/isBasedOn> <https://w3id.org/steel/ProcessOntology/WidthAfterFracture1> .
+<https://w3id.org/steel/ProcessOntology/MinimumCrossSectionAfterFracture> <https://w3id.org/steel/ProcessOntology/isBasedOn> <https://w3id.org/steel/ProcessOntology/WidthAfterFracture2> .
 <https://w3id.org/steel/ProcessOntology/MinimumCrosssectionAfterFracture> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/steel/ProcessOntology/MinimumCrosssectionAfterFracture> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <https://w3id.org/steel/ProcessOntology/MinimumCrosssectionAfterFracture> <http://www.w3.org/2000/01/rdf-schema#comment> "minimum cross-sectional area after fracture"@en .
 <https://w3id.org/steel/ProcessOntology/MinimumCrosssectionAfterFracture> <http://www.w3.org/2000/01/rdf-schema#label> "MinimumCrosssectionAfterFracture"@en .
 <https://w3id.org/steel/ProcessOntology/MinimumCrosssectionAfterFracture> <http://www.w3.org/2004/02/skos/core#altlabel> "Bruchquerschnitt Su"@de .
 <https://w3id.org/steel/ProcessOntology/MinimumCrosssectionAfterFracture> <http://www.w3.org/2004/02/skos/core#altlabel> "Minimum cross-sectional area after fracture"@en .
-<https://w3id.org/steel/ProcessOntology/MinimumCrosssectionAfterFracture> <http://www.w3.org/2004/02/skos/core#altlabel> "SU"@en .
 <https://w3id.org/steel/ProcessOntology/MinimumCrosssectionAfterFracture> <http://www.w3.org/2004/02/skos/core#altlabel> "Su"@de .
 <https://w3id.org/steel/ProcessOntology/MinimumCrosssectionAfterFracture> <http://www.w3.org/2004/02/skos/core#preflabel> "MinimumCrosssectionAfterFracture"@en .
 <https://w3id.org/steel/ProcessOntology/MinimumCrosssectionAfterFracture> <https://w3id.org/steel/ProcessOntology/isBasedOn> <https://w3id.org/steel/ProcessOntology/DiameterAfterFracture1> .
@@ -1004,6 +1017,16 @@
 <https://w3id.org/steel/ProcessOntology/Operator> <http://www.w3.org/2004/02/skos/core#altlabel> "Operator"@en .
 <https://w3id.org/steel/ProcessOntology/Operator> <http://www.w3.org/2004/02/skos/core#preflabel> "Mathematische Operation"@de .
 <https://w3id.org/steel/ProcessOntology/Operator> <http://www.w3.org/2004/02/skos/core#preflabel> "Operator"@en .
+<https://w3id.org/steel/ProcessOntology/OriginalCrossSection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/steel/ProcessOntology/OriginalCrossSection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/steel/ProcessOntology/OriginalCrossSection> <http://www.w3.org/2000/01/rdf-schema#comment> "original crosssection area of the parallel length"@en .
+<https://w3id.org/steel/ProcessOntology/OriginalCrossSection> <http://www.w3.org/2000/01/rdf-schema#label> "OriginalCrossSection"@en .
+<https://w3id.org/steel/ProcessOntology/OriginalCrossSection> <http://www.w3.org/2004/02/skos/core#altlabel> "S0"@en .
+<https://w3id.org/steel/ProcessOntology/OriginalCrossSection> <http://www.w3.org/2004/02/skos/core#altlabel> "original cross-sectional area"@en .
+<https://w3id.org/steel/ProcessOntology/OriginalCrossSection> <http://www.w3.org/2004/02/skos/core#preflabel> "OriginalCrossSection"@en .
+<https://w3id.org/steel/ProcessOntology/OriginalCrossSection> <https://w3id.org/steel/ProcessOntology/isBasedOn> <https://w3id.org/steel/ProcessOntology/Diameter> .
+<https://w3id.org/steel/ProcessOntology/OriginalCrossSection> <https://w3id.org/steel/ProcessOntology/isBasedOn> <https://w3id.org/steel/ProcessOntology/OriginalThickness> .
+<https://w3id.org/steel/ProcessOntology/OriginalCrossSection> <https://w3id.org/steel/ProcessOntology/isBasedOn> <https://w3id.org/steel/ProcessOntology/OriginalWidth> .
 <https://w3id.org/steel/ProcessOntology/OriginalCrosssection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/steel/ProcessOntology/OriginalCrosssection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <https://w3id.org/steel/ProcessOntology/OriginalCrosssection> <http://www.w3.org/2000/01/rdf-schema#comment> "Crosssection of the sample."@en .
@@ -1023,6 +1046,11 @@
 <https://w3id.org/steel/ProcessOntology/OriginalCrosssection> <https://w3id.org/steel/ProcessOntology/isBasedOn> <https://w3id.org/steel/ProcessOntology/OriginalThickness> .
 <https://w3id.org/steel/ProcessOntology/OriginalCrosssection> <https://w3id.org/steel/ProcessOntology/isBasedOn> <https://w3id.org/steel/ProcessOntology/OriginalWidth> .
 <https://w3id.org/steel/ProcessOntology/OriginalCrosssection> <https://w3id.org/steel/ProcessOntology/isBasedOn> <https://w3id.org/steel/ProcessOntology/ShearLength> .
+<https://w3id.org/steel/ProcessOntology/OriginalDiameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/steel/ProcessOntology/OriginalDiameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/steel/ProcessOntology/OriginalDiameter> <http://www.w3.org/2000/01/rdf-schema#label> "OriginalDiameter"@en .
+<https://w3id.org/steel/ProcessOntology/OriginalDiameter> <http://www.w3.org/2004/02/skos/core#altlabel> "original diameter"@en .
+<https://w3id.org/steel/ProcessOntology/OriginalDiameter> <http://www.w3.org/2004/02/skos/core#preflabel> "OriginalDiameter"@en .
 <https://w3id.org/steel/ProcessOntology/OriginalGaugeLength> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/steel/ProcessOntology/OriginalGaugeLength> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <https://w3id.org/steel/ProcessOntology/OriginalGaugeLength> <http://www.w3.org/2000/01/rdf-schema#comment> "Anfangsmessl\u00E4nge "@de .
@@ -1048,6 +1076,7 @@
 <https://w3id.org/steel/ProcessOntology/OriginalThickness> <http://www.w3.org/2004/02/skos/core#altlabel> "Probendicke"@de .
 <https://w3id.org/steel/ProcessOntology/OriginalThickness> <http://www.w3.org/2004/02/skos/core#altlabel> "Specimen thickness"@en .
 <https://w3id.org/steel/ProcessOntology/OriginalThickness> <http://www.w3.org/2004/02/skos/core#altlabel> "Thickness"@en .
+<https://w3id.org/steel/ProcessOntology/OriginalThickness> <http://www.w3.org/2004/02/skos/core#altlabel> "original thickness"@en .
 <https://w3id.org/steel/ProcessOntology/OriginalThickness> <http://www.w3.org/2004/02/skos/core#preflabel> "OriginalThickness"@en .
 <https://w3id.org/steel/ProcessOntology/OriginalWidth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/steel/ProcessOntology/OriginalWidth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
@@ -1061,6 +1090,7 @@
 <https://w3id.org/steel/ProcessOntology/OriginalWidth> <http://www.w3.org/2004/02/skos/core#altlabel> "Probenbreite"@de .
 <https://w3id.org/steel/ProcessOntology/OriginalWidth> <http://www.w3.org/2004/02/skos/core#altlabel> "Specimen width"@en .
 <https://w3id.org/steel/ProcessOntology/OriginalWidth> <http://www.w3.org/2004/02/skos/core#altlabel> "Width"@en .
+<https://w3id.org/steel/ProcessOntology/OriginalWidth> <http://www.w3.org/2004/02/skos/core#altlabel> "original width"@en .
 <https://w3id.org/steel/ProcessOntology/OriginalWidth> <http://www.w3.org/2004/02/skos/core#preflabel> "OriginalWidth"@en .
 <https://w3id.org/steel/ProcessOntology/OriginalWidth> <http://www.w3.org/2004/02/skos/core#related> <https://w3id.org/steel/ProcessOntology/TestPieceGeometry> .
 <https://w3id.org/steel/ProcessOntology/ParallelLength> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -1839,6 +1869,11 @@
 <https://w3id.org/steel/ProcessOntology/TotalElongation> <http://www.w3.org/2000/01/rdf-schema#label> "Total Elongation"@en .
 <https://w3id.org/steel/ProcessOntology/TotalElongation> <http://www.w3.org/2004/02/skos/core#preflabel> "Bruchdehnung"@de .
 <https://w3id.org/steel/ProcessOntology/TotalElongation> <http://www.w3.org/2004/02/skos/core#preflabel> "Total Elongation"@en .
+<https://w3id.org/steel/ProcessOntology/TotalLength> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/steel/ProcessOntology/TotalLength> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/steel/ProcessOntology/TotalLength> <http://www.w3.org/2000/01/rdf-schema#label> "TotalLength"@en .
+<https://w3id.org/steel/ProcessOntology/TotalLength> <http://www.w3.org/2004/02/skos/core#altlabel> "total length"@en .
+<https://w3id.org/steel/ProcessOntology/TotalLength> <http://www.w3.org/2004/02/skos/core#preflabel> "TotalLength"@en .
 <https://w3id.org/steel/ProcessOntology/TruePlasticStrainAtFracture> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/steel/ProcessOntology/TruePlasticStrainAtFracture> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <https://w3id.org/steel/ProcessOntology/TruePlasticStrainAtFracture> <http://www.w3.org/2000/01/rdf-schema#comment> "true plastic strain at fracture"@en .
@@ -2848,6 +2883,21 @@
 <https://w3id.org/steel/ProcessOntology/hasMinTimeStep4ElementDel> <http://www.w3.org/2000/01/rdf-schema#label> "hasMinTimeStep4ElementDel"@en .
 <https://w3id.org/steel/ProcessOntology/hasMinTimeStep4ElementDel> <http://www.w3.org/2000/01/rdf-schema#range> "https://w3id.org/steel/ProcessOntology/MinTimeStep4ElementDel" .
 <https://w3id.org/steel/ProcessOntology/hasMinTimeStep4ElementDel> <http://www.w3.org/2004/02/skos/core#preflabel> "hasMinTimeStep4ElementDel"@en .
+<https://w3id.org/steel/ProcessOntology/hasMinimumCrossSectionAfterFracture> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<https://w3id.org/steel/ProcessOntology/hasMinimumCrossSectionAfterFracture> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/steel/ProcessOntology/hasMinimumCrossSectionAfterFracture> <http://www.w3.org/2000/01/rdf-schema#label> "hasMinimumCrossSectionAfterFracture"@en .
+<https://w3id.org/steel/ProcessOntology/hasMinimumCrossSectionAfterFracture> <http://www.w3.org/2004/02/skos/core#preflabel> "hasMinimumCrossSectionAfterFracture"@en .
+<https://w3id.org/steel/ProcessOntology/hasMinimumCrossSectionAfterFractureObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<https://w3id.org/steel/ProcessOntology/hasMinimumCrossSectionAfterFractureObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/steel/ProcessOntology/hasMinimumCrossSectionAfterFractureObject> <http://www.w3.org/2000/01/rdf-schema#label> "hasMinimumCrossSectionAfterFracture"@en .
+<https://w3id.org/steel/ProcessOntology/hasMinimumCrossSectionAfterFractureObject> <http://www.w3.org/2000/01/rdf-schema#range> "https://w3id.org/steel/ProcessOntology/MinimumCrossSectionAfterFracture" .
+<https://w3id.org/steel/ProcessOntology/hasMinimumCrossSectionAfterFractureObject> <http://www.w3.org/2004/02/skos/core#preflabel> "hasMinimumCrossSectionAfterFracture"@en .
+<https://w3id.org/steel/ProcessOntology/hasMinimumCrossSectionAfterFracture_mm2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<https://w3id.org/steel/ProcessOntology/hasMinimumCrossSectionAfterFracture_mm2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/steel/ProcessOntology/hasMinimumCrossSectionAfterFracture_mm2> <http://www.w3.org/2000/01/rdf-schema#label> "hasMinimumCrossSectionAfterFracture_mm2"@en .
+<https://w3id.org/steel/ProcessOntology/hasMinimumCrossSectionAfterFracture_mm2> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/steel/ProcessOntology/hasMinimumCrossSectionAfterFracture> .
+<https://w3id.org/steel/ProcessOntology/hasMinimumCrossSectionAfterFracture_mm2> <http://www.w3.org/2004/02/skos/core#preflabel> "hasMinimumCrossSectionAfterFracture_mm2"@en .
+<https://w3id.org/steel/ProcessOntology/hasMinimumCrossSectionAfterFracture_mm2> <https://w3id.org/steel/ProcessOntology/hasUnitLabel> "mm2" .
 <https://w3id.org/steel/ProcessOntology/hasMinimumCrosssectionAfterFracture> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
 <https://w3id.org/steel/ProcessOntology/hasMinimumCrosssectionAfterFracture> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://w3id.org/steel/ProcessOntology/hasMinimumCrosssectionAfterFracture> <http://www.w3.org/2000/01/rdf-schema#label> "hasMinimumCrosssectionAfterFracture"@en .
@@ -2936,6 +2986,21 @@
 <https://w3id.org/steel/ProcessOntology/hasOperatorObject> <http://www.w3.org/2000/01/rdf-schema#label> "hasOperator"@en .
 <https://w3id.org/steel/ProcessOntology/hasOperatorObject> <http://www.w3.org/2000/01/rdf-schema#range> "https://w3id.org/steel/ProcessOntology/Operator" .
 <https://w3id.org/steel/ProcessOntology/hasOperatorObject> <http://www.w3.org/2004/02/skos/core#preflabel> "hasOperator"@en .
+<https://w3id.org/steel/ProcessOntology/hasOriginalCrossSection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<https://w3id.org/steel/ProcessOntology/hasOriginalCrossSection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/steel/ProcessOntology/hasOriginalCrossSection> <http://www.w3.org/2000/01/rdf-schema#label> "hasOriginalCrossSection"@en .
+<https://w3id.org/steel/ProcessOntology/hasOriginalCrossSection> <http://www.w3.org/2004/02/skos/core#preflabel> "hasOriginalCrossSection"@en .
+<https://w3id.org/steel/ProcessOntology/hasOriginalCrossSectionObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<https://w3id.org/steel/ProcessOntology/hasOriginalCrossSectionObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/steel/ProcessOntology/hasOriginalCrossSectionObject> <http://www.w3.org/2000/01/rdf-schema#label> "hasOriginalCrossSection"@en .
+<https://w3id.org/steel/ProcessOntology/hasOriginalCrossSectionObject> <http://www.w3.org/2000/01/rdf-schema#range> "https://w3id.org/steel/ProcessOntology/OriginalCrossSection" .
+<https://w3id.org/steel/ProcessOntology/hasOriginalCrossSectionObject> <http://www.w3.org/2004/02/skos/core#preflabel> "hasOriginalCrossSection"@en .
+<https://w3id.org/steel/ProcessOntology/hasOriginalCrossSection_mm2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<https://w3id.org/steel/ProcessOntology/hasOriginalCrossSection_mm2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/steel/ProcessOntology/hasOriginalCrossSection_mm2> <http://www.w3.org/2000/01/rdf-schema#label> "hasOriginalCrossSection_mm2"@en .
+<https://w3id.org/steel/ProcessOntology/hasOriginalCrossSection_mm2> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/steel/ProcessOntology/hasOriginalCrossSection> .
+<https://w3id.org/steel/ProcessOntology/hasOriginalCrossSection_mm2> <http://www.w3.org/2004/02/skos/core#preflabel> "hasOriginalCrossSection_mm2"@en .
+<https://w3id.org/steel/ProcessOntology/hasOriginalCrossSection_mm2> <https://w3id.org/steel/ProcessOntology/hasUnitLabel> "mm2" .
 <https://w3id.org/steel/ProcessOntology/hasOriginalCrosssection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
 <https://w3id.org/steel/ProcessOntology/hasOriginalCrosssection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://w3id.org/steel/ProcessOntology/hasOriginalCrosssection> <http://www.w3.org/2000/01/rdf-schema#label> "hasOriginalCrosssection"@en .
@@ -2951,6 +3016,21 @@
 <https://w3id.org/steel/ProcessOntology/hasOriginalCrosssection_mm2> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/steel/ProcessOntology/hasOriginalCrosssection> .
 <https://w3id.org/steel/ProcessOntology/hasOriginalCrosssection_mm2> <http://www.w3.org/2004/02/skos/core#preflabel> "hasOriginalCrosssection_mm2"@en .
 <https://w3id.org/steel/ProcessOntology/hasOriginalCrosssection_mm2> <https://w3id.org/steel/ProcessOntology/hasUnitLabel> "mm2" .
+<https://w3id.org/steel/ProcessOntology/hasOriginalDiameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<https://w3id.org/steel/ProcessOntology/hasOriginalDiameter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/steel/ProcessOntology/hasOriginalDiameter> <http://www.w3.org/2000/01/rdf-schema#label> "hasOriginalDiameter"@en .
+<https://w3id.org/steel/ProcessOntology/hasOriginalDiameter> <http://www.w3.org/2004/02/skos/core#preflabel> "hasOriginalDiameter"@en .
+<https://w3id.org/steel/ProcessOntology/hasOriginalDiameterObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<https://w3id.org/steel/ProcessOntology/hasOriginalDiameterObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/steel/ProcessOntology/hasOriginalDiameterObject> <http://www.w3.org/2000/01/rdf-schema#label> "hasOriginalDiameter"@en .
+<https://w3id.org/steel/ProcessOntology/hasOriginalDiameterObject> <http://www.w3.org/2000/01/rdf-schema#range> "https://w3id.org/steel/ProcessOntology/OriginalDiameter" .
+<https://w3id.org/steel/ProcessOntology/hasOriginalDiameterObject> <http://www.w3.org/2004/02/skos/core#preflabel> "hasOriginalDiameter"@en .
+<https://w3id.org/steel/ProcessOntology/hasOriginalDiameter_mm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<https://w3id.org/steel/ProcessOntology/hasOriginalDiameter_mm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/steel/ProcessOntology/hasOriginalDiameter_mm> <http://www.w3.org/2000/01/rdf-schema#label> "hasOriginalDiameter_mm"@en .
+<https://w3id.org/steel/ProcessOntology/hasOriginalDiameter_mm> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/steel/ProcessOntology/hasOriginalDiameter> .
+<https://w3id.org/steel/ProcessOntology/hasOriginalDiameter_mm> <http://www.w3.org/2004/02/skos/core#preflabel> "hasOriginalDiameter_mm"@en .
+<https://w3id.org/steel/ProcessOntology/hasOriginalDiameter_mm> <https://w3id.org/steel/ProcessOntology/hasUnitLabel> "mm" .
 <https://w3id.org/steel/ProcessOntology/hasOriginalGaugeLength> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
 <https://w3id.org/steel/ProcessOntology/hasOriginalGaugeLength> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://w3id.org/steel/ProcessOntology/hasOriginalGaugeLength> <http://www.w3.org/2000/01/rdf-schema#label> "hasOriginalGaugeLength"@en .
@@ -3847,12 +3927,6 @@
 <https://w3id.org/steel/ProcessOntology/hasTestingRateObject> <http://www.w3.org/2000/01/rdf-schema#label> "hasTestingRate"@en .
 <https://w3id.org/steel/ProcessOntology/hasTestingRateObject> <http://www.w3.org/2000/01/rdf-schema#range> "https://w3id.org/steel/ProcessOntology/TestingRate" .
 <https://w3id.org/steel/ProcessOntology/hasTestingRateObject> <http://www.w3.org/2004/02/skos/core#preflabel> "hasTestingRate"@en .
-<https://w3id.org/steel/ProcessOntology/hasTestingRate_s-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
-<https://w3id.org/steel/ProcessOntology/hasTestingRate_s-1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://w3id.org/steel/ProcessOntology/hasTestingRate_s-1> <http://www.w3.org/2000/01/rdf-schema#label> "hasTestingRate_s-1"@en .
-<https://w3id.org/steel/ProcessOntology/hasTestingRate_s-1> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/steel/ProcessOntology/hasTestingRate> .
-<https://w3id.org/steel/ProcessOntology/hasTestingRate_s-1> <http://www.w3.org/2004/02/skos/core#preflabel> "hasTestingRate_s-1"@en .
-<https://w3id.org/steel/ProcessOntology/hasTestingRate_s-1> <https://w3id.org/steel/ProcessOntology/hasUnitLabel> "s-1" .
 <https://w3id.org/steel/ProcessOntology/hasThicknessAfterFracture1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
 <https://w3id.org/steel/ProcessOntology/hasThicknessAfterFracture1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://w3id.org/steel/ProcessOntology/hasThicknessAfterFracture1> <http://www.w3.org/2000/01/rdf-schema#label> "hasThicknessAfterFracture1"@en .
@@ -3922,6 +3996,21 @@
 <https://w3id.org/steel/ProcessOntology/hasTime_s> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/steel/ProcessOntology/hasTime> .
 <https://w3id.org/steel/ProcessOntology/hasTime_s> <http://www.w3.org/2004/02/skos/core#preflabel> "hasTime_s"@en .
 <https://w3id.org/steel/ProcessOntology/hasTime_s> <https://w3id.org/steel/ProcessOntology/hasUnitLabel> "s" .
+<https://w3id.org/steel/ProcessOntology/hasTotalLength> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<https://w3id.org/steel/ProcessOntology/hasTotalLength> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/steel/ProcessOntology/hasTotalLength> <http://www.w3.org/2000/01/rdf-schema#label> "hasTotalLength"@en .
+<https://w3id.org/steel/ProcessOntology/hasTotalLength> <http://www.w3.org/2004/02/skos/core#preflabel> "hasTotalLength"@en .
+<https://w3id.org/steel/ProcessOntology/hasTotalLengthObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<https://w3id.org/steel/ProcessOntology/hasTotalLengthObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/steel/ProcessOntology/hasTotalLengthObject> <http://www.w3.org/2000/01/rdf-schema#label> "hasTotalLength"@en .
+<https://w3id.org/steel/ProcessOntology/hasTotalLengthObject> <http://www.w3.org/2000/01/rdf-schema#range> "https://w3id.org/steel/ProcessOntology/TotalLength" .
+<https://w3id.org/steel/ProcessOntology/hasTotalLengthObject> <http://www.w3.org/2004/02/skos/core#preflabel> "hasTotalLength"@en .
+<https://w3id.org/steel/ProcessOntology/hasTotalLength_mm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<https://w3id.org/steel/ProcessOntology/hasTotalLength_mm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/steel/ProcessOntology/hasTotalLength_mm> <http://www.w3.org/2000/01/rdf-schema#label> "hasTotalLength_mm"@en .
+<https://w3id.org/steel/ProcessOntology/hasTotalLength_mm> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/steel/ProcessOntology/hasTotalLength> .
+<https://w3id.org/steel/ProcessOntology/hasTotalLength_mm> <http://www.w3.org/2004/02/skos/core#preflabel> "hasTotalLength_mm"@en .
+<https://w3id.org/steel/ProcessOntology/hasTotalLength_mm> <https://w3id.org/steel/ProcessOntology/hasUnitLabel> "mm" .
 <https://w3id.org/steel/ProcessOntology/hasTruePlasticStrainAtFracture> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
 <https://w3id.org/steel/ProcessOntology/hasTruePlasticStrainAtFracture> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://w3id.org/steel/ProcessOntology/hasTruePlasticStrainAtFracture> <http://www.w3.org/2000/01/rdf-schema#label> "hasTruePlasticStrainAtFracture"@en .

@@ -45,24 +45,6 @@
       
       ],
     "http://www.w3.org/2004/02/skos/core#altlabel" : [ {
-        "value" : "Force transducer",
-        "lang" : "en",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "Force-measuring device",
-        "lang" : "en",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "Force-measuring system",
-        "lang" : "en",
-        "type" : "literal"
-        }
-      ,
-      {
         "value" : "Kraftaufnehmer",
         "lang" : "de",
         "type" : "literal"
@@ -76,6 +58,12 @@
       ,
       {
         "value" : "force-measuring device",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      ,
+      {
+        "value" : "force-measuring system",
         "lang" : "en",
         "type" : "literal"
         }

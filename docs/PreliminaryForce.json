@@ -19,7 +19,7 @@
         }
       ,
       {
-        "value" : "Um ein Ausrichten der Probe in der Einspannvorrichtung zu erreichen, darf eine Vorkraft aufgebracht werden, die 5 % des spezifizierten oder zu erwartenden Streckgrenzenwertes nicht \u00FCberschreitet. Eine Korrektur der Dehnung sollte unter Ber\u00FCcksichtigung der Vorkraft vorgenommen werden.",
+        "value" : "Um ein Ausrichten der Probe in der Einspannvorrichtung zu erreichen, darf eine Vorkraft aufgebracht werden, die 5 % des spezifizierten oder zu erwartenden Streckgrenzenwertes nicht \u00FCberschreitet",
         "lang" : "de",
         "type" : "literal"
         }
@@ -45,18 +45,6 @@
         }
       ,
       {
-        "value" : "PreliminaryForce",
-        "lang" : "en",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "Preload",
-        "lang" : "en",
-        "type" : "literal"
-        }
-      ,
-      {
         "value" : "Vorkraft",
         "lang" : "de",
         "type" : "literal"
@@ -65,6 +53,12 @@
       {
         "value" : "Vorlast",
         "lang" : "de",
+        "type" : "literal"
+        }
+      ,
+      {
+        "value" : "preliminary force",
+        "lang" : "en",
         "type" : "literal"
         }
       

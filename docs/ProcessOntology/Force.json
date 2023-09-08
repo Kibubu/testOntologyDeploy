@@ -74,14 +74,14 @@
         }
       ,
       {
-        "value" : "Standard force",
-        "lang" : "en",
+        "value" : "Standardkraft",
+        "lang" : "de",
         "type" : "literal"
         }
       ,
       {
-        "value" : "Standardkraft",
-        "lang" : "de",
+        "value" : "force",
+        "lang" : "en",
         "type" : "literal"
         }
       

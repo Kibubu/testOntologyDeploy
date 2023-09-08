@@ -23,6 +23,12 @@
         "lang" : "en",
         "type" : "literal"
         }
+      ,
+      {
+        "value" : "Traversenweg je Zeiteinheit",
+        "lang" : "de",
+        "type" : "literal"
+        }
       
       ],
     "http://www.w3.org/2000/01/rdf-schema#label" : [ {
@@ -47,12 +53,6 @@
       {
         "value" : "Pr\u00FCfgeschwindigkeit",
         "lang" : "de",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "Test speed",
-        "lang" : "en",
         "type" : "literal"
         }
       ,

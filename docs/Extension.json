@@ -17,6 +17,24 @@
         "lang" : "en",
         "type" : "literal"
         }
+      ,
+      {
+        "value" : "Verl\u00E4ngerung (der Extensometer-Messl\u00E4nge)",
+        "lang" : "de",
+        "type" : "literal"
+        }
+      ,
+      {
+        "value" : "Zunahme der Extensometer-Messl\u00E4nge zu einem beliebigen Zeitpunkt des Versuchs",
+        "lang" : "de",
+        "type" : "literal"
+        }
+      ,
+      {
+        "value" : "increase in the extensometer gauge length (3.5), at any moment during the test",
+        "lang" : "en",
+        "type" : "literal"
+        }
       
       ],
     "http://www.w3.org/2000/01/rdf-schema#label" : [ {
@@ -50,12 +68,6 @@
       ,
       {
         "value" : "Extension",
-        "lang" : "en",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "Standard travel",
         "lang" : "en",
         "type" : "literal"
         }

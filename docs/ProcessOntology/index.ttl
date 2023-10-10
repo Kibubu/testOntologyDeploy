@@ -150,6 +150,12 @@
         rdfs:label      "hasGrid"@en ;
         skos:preflabel  "hasGrid"@en .
 
+:hasSpecificPlasticWorkValueObject
+        rdf:type        owl:ObjectProperty , rdf:Property ;
+        rdfs:label      "hasSpecificPlasticWorkValue"@en ;
+        rdfs:range      "https://w3id.org/steel/ProcessOntology/SpecificPlasticWorkValue" ;
+        skos:preflabel  "hasSpecificPlasticWorkValue"@en .
+
 :hasTimeDependentEngineeringStrainRateObject
         rdf:type        owl:ObjectProperty , rdf:Property ;
         rdfs:label      "hasTimeDependentEngineeringStrainRate"@en ;
@@ -792,10 +798,10 @@
         skos:preflabel      "hasPreliminaryForce_MPa"@en ;
         :hasUnitLabel       "MPa" .
 
-:Material  rdf:type     owl:Class , skos:Concept ;
-        rdfs:comment    "The material used in the experiment."@en , "Bezeichnung des Werkstoffs."@de , "Bezeichnung des Werkstoffs"@de ;
+:Material  rdf:type     skos:Concept , owl:Class ;
+        rdfs:comment    "Bezeichnung des Werkstoffs."@de , "The material used in the experiment."@en ;
         rdfs:label      "Material"@en ;
-        skos:altlabel   "Werkstoff"@de , "Material"@en , "material"@en ;
+        skos:altlabel   "material"@en , "Material"@en , "Werkstoff"@de ;
         skos:preflabel  "Material"@en .
 
 <https://w3id.org/steel/ProcessOntology/hasPercentagePermanentElongation_%25>
@@ -1003,6 +1009,10 @@
         rdfs:range      "https://w3id.org/steel/ProcessOntology/HardeningCurve" ;
         skos:preflabel  "hasHardeningCurve"@en .
 
+:hasAmplitudeFile  rdf:type  owl:DatatypeProperty , rdf:Property ;
+        rdfs:label      "hasAmplitudeFile"@en ;
+        skos:preflabel  "hasAmplitudeFile"@en .
+
 :HDF5   rdf:type        owl:Class ;
         rdfs:label      "HDF5 File Format"@en , "HDF5 Dateiformat"@de ;
         skos:preflabel  "HDF5 File Format"@en , "HDF5 Dateiformat"@de .
@@ -1026,6 +1036,11 @@
 :hasDiameter  rdf:type  owl:DatatypeProperty , rdf:Property ;
         rdfs:label      "hasDiameter"@en ;
         skos:preflabel  "hasDiameter"@en .
+
+:hasSpecificPlasticWorkValue
+        rdf:type        owl:DatatypeProperty , rdf:Property ;
+        rdfs:label      "hasSpecificPlasticWorkValue"@en ;
+        skos:preflabel  "hasSpecificPlasticWorkValue"@en .
 
 :hasEbsdFileName  rdf:type  owl:DatatypeProperty , rdf:Property ;
         rdfs:label      "hasEbsdFileName"@en ;
@@ -1114,6 +1129,12 @@
         skos:altlabel   "maximum force"@en , "Höchstzugkraft Fm"@de , "Fm"@de ;
         skos:preflabel  "MaximumForce"@en ;
         :isBasedOn      :Force .
+
+:hasEffecticStrainObject
+        rdf:type        owl:ObjectProperty , rdf:Property ;
+        rdfs:label      "hasEffecticStrain"@en ;
+        rdfs:range      "https://w3id.org/steel/ProcessOntology/EffecticStrain" ;
+        skos:preflabel  "hasEffecticStrain"@en .
 
 :FrameRate  rdf:type    skos:Concept , owl:Class ;
         rdfs:comment    "sampling rate of the strain measuring system (e.g. high speed video recording)"@en ;
@@ -1224,7 +1245,6 @@
         skos:preflabel  "hasFailureStrainIdentifier4StrainRate"@en .
 
 :SpecificPlasticWork  rdf:type  skos:Concept , owl:Class ;
-        rdfs:comment    "Spezifische plastische Arbeit, die zur Bestimmung des Punkts auf dem Fließort verwendet wurde"@de ;
         rdfs:label      "SpecificPlasticWork"@en ;
         skos:altlabel   "Specific plastic work"@en ;
         skos:preflabel  "SpecificPlasticWork"@en .
@@ -1239,6 +1259,12 @@
         rdfs:comment    "like Tensile Test etc, maybe an experiment"@en ;
         rdfs:label      "Test"@en , "Test"@de ;
         skos:preflabel  "Test"@en , "Test"@de .
+
+:hasEffectiveStressObject
+        rdf:type        owl:ObjectProperty , rdf:Property ;
+        rdfs:label      "hasEffectiveStress"@en ;
+        rdfs:range      "https://w3id.org/steel/ProcessOntology/EffectiveStress" ;
+        skos:preflabel  "hasEffectiveStress"@en .
 
 :hasProofStrength_0.2PercentageObject
         rdf:type        owl:ObjectProperty , rdf:Property ;
@@ -1921,6 +1947,12 @@
         skos:preflabel      "hasFrameRate_s-1"@en ;
         :hasUnitLabel       "s-1" .
 
+:hasBoundaryFileObject
+        rdf:type        owl:ObjectProperty , rdf:Property ;
+        rdfs:label      "hasBoundaryFile"@en ;
+        rdfs:range      "https://w3id.org/steel/ProcessOntology/BoundaryFile" ;
+        skos:preflabel  "hasBoundaryFile"@en .
+
 :hasStrainRate  rdf:type  owl:DatatypeProperty , rdf:Property ;
         rdfs:label      "hasStrainRate"@en ;
         skos:preflabel  "hasStrainRate"@en .
@@ -2182,10 +2214,11 @@
         rdfs:label      "Pyiron notebook"@en , "Pyiron Notebook"@de ;
         skos:preflabel  "Pyiron notebook"@en , "Pyiron Notebook"@de .
 
-:JobMetadata  rdf:type  owl:Class ;
-        rdfs:comment    "each pyiron job has some metadata which is stored in the central sql database"@en ;
-        rdfs:label      "Pyiron job metadata"@en , "Job-Metadaten"@de ;
-        skos:preflabel  "Pyiron job metadata"@en , "Job-Metadaten"@de .
+:hasPercentageElongationObject
+        rdf:type        owl:ObjectProperty , rdf:Property ;
+        rdfs:label      "hasPercentageElongation"@en ;
+        rdfs:range      "https://w3id.org/steel/ProcessOntology/PercentageElongation" ;
+        skos:preflabel  "hasPercentageElongation"@en .
 
 :MatPiecewiseLinearPlasticityLogInterpolation
         rdf:type           skos:Concept , owl:Class ;
@@ -2196,11 +2229,10 @@
         skos:preflabel     "MatPiecewiseLinearPlasticityLogInterpolation"@en ;
         :hasLabelSourceEn  "LS-DYNA_Manual_Volume_2" .
 
-:hasPercentageElongationObject
-        rdf:type        owl:ObjectProperty , rdf:Property ;
-        rdfs:label      "hasPercentageElongation"@en ;
-        rdfs:range      "https://w3id.org/steel/ProcessOntology/PercentageElongation" ;
-        skos:preflabel  "hasPercentageElongation"@en .
+:JobMetadata  rdf:type  owl:Class ;
+        rdfs:comment    "each pyiron job has some metadata which is stored in the central sql database"@en ;
+        rdfs:label      "Pyiron job metadata"@en , "Job-Metadaten"@de ;
+        skos:preflabel  "Pyiron job metadata"@en , "Job-Metadaten"@de .
 
 :ChemicalComposition  rdf:type  owl:Class ;
         rdfs:label      "Chemical Composition"@en , "Chemische Zusammensetzung"@de ;
@@ -2582,6 +2614,12 @@
         :UnitLabel         "s" ;
         :hasLabelSourceEn  "LS-DYNA_Manual_Volume_2" .
 
+:AmplitudeFile  rdf:type  skos:Concept , owl:Class ;
+        rdfs:comment    "Datei mit Informationen zu den verwendeten Amplituden"@de ;
+        rdfs:label      "AmplitudeFile"@en ;
+        skos:altlabel   "Amplitude file"@en ;
+        skos:preflabel  "AmplitudeFile"@en .
+
 :DamageTreatment  rdf:type  skos:Concept , owl:Class ;
         rdfs:comment       "interpreted digit-wise as follows: DTYP = [𝑁𝑀] = 𝑀+10×𝑁\nM.EQ.0: Damage is accumulated, but there is no coupling to flow stress and no failure.\nM.EQ.1: Damage is accumulated, and element failure occurs for 𝐷 = 1. Coupling of damage to flow stress depending on parameters.\nN.EQ.0: Equivalent plastic strain is the driving quantity for the damage.\nN.GT.0: The Nth additional history variable is the driving quantity for damage."@en ;
         rdfs:label         "DamageTreatment"@en ;
@@ -2642,6 +2680,13 @@
 :ShearTest  rdf:type    owl:Class ;
         rdfs:label      "Shear Test"@en , "Schertest"@de ;
         skos:preflabel  "Shear Test"@en , "Schertest"@de .
+
+:SpecificPlasticWorkValue
+        rdf:type        skos:Concept , owl:Class ;
+        rdfs:comment    "Spezifische plastische Arbeit, die zur Bestimmung des Punkts auf dem Fließort verwendet wurde"@de ;
+        rdfs:label      "SpecificPlasticWorkValue"@en ;
+        skos:altlabel   "Specific plastic work value"@en ;
+        skos:preflabel  "SpecificPlasticWorkValue"@en .
 
 :hasMinTimeStep4ElementDel
         rdf:type        owl:ObjectProperty ;
@@ -2722,17 +2767,17 @@
         skos:preflabel      "hasElasticConstantC11_MPa"@en ;
         :hasUnitLabel       "MPa" .
 
-:hasOriginalGaugeLength
-        rdf:type        owl:DatatypeProperty , rdf:Property ;
-        rdfs:label      "hasOriginalGaugeLength"@en ;
-        skos:preflabel  "hasOriginalGaugeLength"@en .
-
 <https://w3id.org/steel/ProcessOntology/hasPercentageElongation_%25>
         rdf:type            owl:DatatypeProperty , rdf:Property ;
         rdfs:label          "hasPercentageElongation_%"@en ;
         rdfs:subPropertyOf  :hasPercentageElongation ;
         skos:preflabel      "hasPercentageElongation_%"@en ;
         :hasUnitLabel       "%" .
+
+:hasOriginalGaugeLength
+        rdf:type        owl:DatatypeProperty , rdf:Property ;
+        rdfs:label      "hasOriginalGaugeLength"@en ;
+        skos:preflabel  "hasOriginalGaugeLength"@en .
 
 :PhaseBoundary  rdf:type  owl:Class ;
         rdfs:label      "Phase Boundary"@en , "Phasengrenze"@de ;
@@ -2825,6 +2870,10 @@
         rdfs:comment    "Versuche unter kontrollierten Bedingungen müssen bei einer Temperatur von (23 ± 5) °C durchgeführt werden."@de ;
         rdfs:label      "Temperature"@en ;
         skos:preflabel  "Temperature"@en .
+
+:hasEffectiveStress  rdf:type  owl:DatatypeProperty , rdf:Property ;
+        rdfs:label      "hasEffectiveStress"@en ;
+        skos:preflabel  "hasEffectiveStress"@en .
 
 :hasMinimumCrosssectionAfterFractureObject
         rdf:type        owl:ObjectProperty , rdf:Property ;
@@ -2986,6 +3035,11 @@
         rdfs:domain     :Workflow ;
         rdfs:label      "environment"@en ;
         skos:preflabel  "environment"@en .
+
+:EffecticStrain  rdf:type  skos:Concept , owl:Class ;
+        rdfs:label      "EffecticStrain"@en ;
+        skos:altlabel   "Effective strain"@en ;
+        skos:preflabel  "EffecticStrain"@en .
 
 <https://w3id.org/steel/ProcessOntology/hasPercentageExtension_-%20>
         rdf:type            owl:DatatypeProperty , rdf:Property ;
@@ -3233,6 +3287,12 @@
         rdfs:label      "hasGrainNumber"@en ;
         skos:preflabel  "hasGrainNumber"@en .
 
+:BoundaryFile  rdf:type  skos:Concept , owl:Class ;
+        rdfs:comment    "Datei mit Informationen zu den verwendeten Randbedingungen"@de ;
+        rdfs:label      "BoundaryFile"@en ;
+        skos:altlabel   "Boundary file"@en ;
+        skos:preflabel  "BoundaryFile"@en .
+
 :hasStressObject  rdf:type  owl:ObjectProperty , rdf:Property ;
         rdfs:label      "hasStress"@en ;
         rdfs:range      "https://w3id.org/steel/ProcessOntology/Stress" ;
@@ -3321,6 +3381,13 @@
         rdfs:range      "https://w3id.org/steel/ProcessOntology/SampleIdentifier" ;
         skos:preflabel  "hasSampleIdentifier"@en .
 
+<https://w3id.org/steel/ProcessOntology/hasPercentagePlasticExtensionAtMaximumForce_%25>
+        rdf:type            owl:DatatypeProperty , rdf:Property ;
+        rdfs:label          "hasPercentagePlasticExtensionAtMaximumForce_%"@en ;
+        rdfs:subPropertyOf  :hasPercentagePlasticExtensionAtMaximumForce ;
+        skos:preflabel      "hasPercentagePlasticExtensionAtMaximumForce_%"@en ;
+        :hasUnitLabel       "%" .
+
 :Benchmark  rdf:type    owl:Class ;
         rdfs:label      "Benchmark"@en , "Messlatte"@de ;
         skos:altlabel   "Richtwert"@de , " Maßstab"@de , " Bezugspunkt"@de ;
@@ -3332,12 +3399,9 @@
         dc:description  "operations on data, can be other workflows, has pervious and following step"@en ;
         skos:preflabel  "steps"@en .
 
-<https://w3id.org/steel/ProcessOntology/hasPercentagePlasticExtensionAtMaximumForce_%25>
-        rdf:type            owl:DatatypeProperty , rdf:Property ;
-        rdfs:label          "hasPercentagePlasticExtensionAtMaximumForce_%"@en ;
-        rdfs:subPropertyOf  :hasPercentagePlasticExtensionAtMaximumForce ;
-        skos:preflabel      "hasPercentagePlasticExtensionAtMaximumForce_%"@en ;
-        :hasUnitLabel       "%" .
+:hasBoundaryFile  rdf:type  owl:DatatypeProperty , rdf:Property ;
+        rdfs:label      "hasBoundaryFile"@en ;
+        skos:preflabel  "hasBoundaryFile"@en .
 
 :FractureStress  rdf:type  owl:Class ;
         rdfs:label      "Fracture Stress"@en , "Bruchspannung"@de ;
@@ -4662,17 +4726,21 @@
         rdfs:range      "https://w3id.org/steel/ProcessOntology/ElasticConstantC11" ;
         skos:preflabel  "hasElasticConstantC11"@en .
 
+:hasHardeningLawObject
+        rdf:type        owl:ObjectProperty , rdf:Property ;
+        rdfs:label      "hasHardeningLaw"@en ;
+        rdfs:range      "https://w3id.org/steel/ProcessOntology/HardeningLaw" ;
+        skos:preflabel  "hasHardeningLaw"@en .
+
 :DefaultValue  rdf:type  skos:Concept , owl:Class ;
         rdfs:comment    "unterer oder oberer Wert für die Spannung beziehungsweise Extensometer-Dehnung, der für die Beschreibung des Bereichs, in dem der Elastizitätsmodul berechnet wird, benutzt wird"@de ;
         rdfs:label      "DefaultValue"@en ;
         skos:altlabel   "default value"@en ;
         skos:preflabel  "DefaultValue"@en .
 
-:hasHardeningLawObject
-        rdf:type        owl:ObjectProperty , rdf:Property ;
-        rdfs:label      "hasHardeningLaw"@en ;
-        rdfs:range      "https://w3id.org/steel/ProcessOntology/HardeningLaw" ;
-        skos:preflabel  "hasHardeningLaw"@en .
+:hasGaugeLength  rdf:type  owl:DatatypeProperty , rdf:Property ;
+        rdfs:label      "hasGaugeLength"@en ;
+        skos:preflabel  "hasGaugeLength"@en .
 
 :hasSubJob  rdf:type    owl:ObjectProperty ;
         rdfs:domain     :PyironJob ;
@@ -4685,9 +4753,9 @@
         rdfs:label      "hasDiameterAfterFracture1"@en ;
         skos:preflabel  "hasDiameterAfterFracture1"@en .
 
-:hasGaugeLength  rdf:type  owl:DatatypeProperty , rdf:Property ;
-        rdfs:label      "hasGaugeLength"@en ;
-        skos:preflabel  "hasGaugeLength"@en .
+:hasEffecticStrain  rdf:type  owl:DatatypeProperty , rdf:Property ;
+        rdfs:label      "hasEffecticStrain"@en ;
+        skos:preflabel  "hasEffecticStrain"@en .
 
 :hasLowerYieldStrengthObject
         rdf:type        owl:ObjectProperty , rdf:Property ;
@@ -4760,6 +4828,12 @@
         rdfs:label      "hasElasticConstantC44"@en ;
         rdfs:range      "https://w3id.org/steel/ProcessOntology/ElasticConstantC44" ;
         skos:preflabel  "hasElasticConstantC44"@en .
+
+:hasAmplitudeFileObject
+        rdf:type        owl:ObjectProperty , rdf:Property ;
+        rdfs:label      "hasAmplitudeFile"@en ;
+        rdfs:range      "https://w3id.org/steel/ProcessOntology/AmplitudeFile" ;
+        skos:preflabel  "hasAmplitudeFile"@en .
 
 :hasShearLengthObject
         rdf:type        owl:ObjectProperty , rdf:Property ;
@@ -4859,6 +4933,11 @@
         skos:altlabel   "extensometer gauge length"@en , "Extensometer gauge length "@en , "Messlänge L0"@de , "Messlänge Lo"@de , "L0"@en ;
         skos:preflabel  "ExtensometerGaugeLength"@en ;
         skos:related    :OriginalGaugeLength , :ExtensionMeasuringSystem .
+
+:EffectiveStress  rdf:type  skos:Concept , owl:Class ;
+        rdfs:label      "EffectiveStress"@en ;
+        skos:altlabel   "Effective stress"@en ;
+        skos:preflabel  "EffectiveStress"@en .
 
 :rollingDirection  rdf:type  owl:Class ;
         rdfs:label      "rolling direction"@en , "Walzrichtung"@de ;

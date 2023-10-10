@@ -3491,6 +3491,9 @@ or
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/SpecificPlasticWork">
+    <rdfs:comment xml:lang="de">Daten für die spezifische plastische Arbeit des durchgeführten Mikrostruktursimulation</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/SpecificPlasticWork">
     <rdfs:label xml:lang="en">SpecificPlasticWork</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/SpecificPlasticWork">
@@ -8189,6 +8192,9 @@ N.GT.0: The Nth additional history variable is the driving quantity for damage.<
     <rdfs:comment xml:lang="de">Zunahme der mit einem Extensometer in der Extensometer-Messlänge gemessenen Dehnung je Zeiteinheit</rdfs:comment>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/StrainRate">
+    <rdfs:comment xml:lang="de">Dehnrate, die für die Mikrostruktursimulation verwendet wurde</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/StrainRate">
     <rdfs:comment xml:lang="en">strain rate either of the parallel length or of the gauge length/extensometer length (should be specified)</rdfs:comment>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/StrainRate">
@@ -8205,6 +8211,9 @@ N.GT.0: The Nth additional history variable is the driving quantity for damage.<
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/StrainRate">
     <rdfs:seeAlso rdf:resource="https://w3id.org/steel/ProcessOntology/CrossheadSeparationRate"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/StrainRate">
+    <skos:altlabel xml:lang="en">Strain rate</skos:altlabel>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/StrainRate">
     <skos:altlabel xml:lang="en">strain rate</skos:altlabel>
@@ -8795,6 +8804,9 @@ N.GT.0: The Nth additional history variable is the driving quantity for damage.<
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/EffecticStrain">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/EffecticStrain">
+    <rdfs:comment xml:lang="de">Daten für die effektive Dehnung der durchgeführten Mikrostruktursimulation</rdfs:comment>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/EffecticStrain">
     <rdfs:label xml:lang="en">EffecticStrain</rdfs:label>
@@ -14450,6 +14462,9 @@ GT.0.0: Fixed value for stress-state independent critical equivalent plastic str
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/EffectiveStress">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/EffectiveStress">
+    <rdfs:comment xml:lang="de">Daten für die effektive Spannung der durchgeführten Mikrostruktursimulation</rdfs:comment>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/EffectiveStress">
     <rdfs:label xml:lang="en">EffectiveStress</rdfs:label>

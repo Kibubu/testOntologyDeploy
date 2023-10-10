@@ -2038,6 +2038,13 @@
         }
       
       ],
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+        "value" : "Daten f\u00FCr die effektive Dehnung der durchgef\u00FChrten Mikrostruktursimulation",
+        "lang" : "de",
+        "type" : "literal"
+        }
+      
+      ],
     "http://www.w3.org/2000/01/rdf-schema#label" : [ {
         "value" : "EffecticStrain",
         "lang" : "en",
@@ -2070,6 +2077,13 @@
       {
         "value" : "http://www.w3.org/2004/02/skos/core#Concept",
         "type" : "uri"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+        "value" : "Daten f\u00FCr die effektive Spannung der durchgef\u00FChrten Mikrostruktursimulation",
+        "lang" : "de",
+        "type" : "literal"
         }
       
       ],
@@ -11747,6 +11761,13 @@
         }
       
       ],
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+        "value" : "Daten f\u00FCr die spezifische plastische Arbeit des durchgef\u00FChrten Mikrostruktursimulation",
+        "lang" : "de",
+        "type" : "literal"
+        }
+      
+      ],
     "http://www.w3.org/2000/01/rdf-schema#label" : [ {
         "value" : "SpecificPlasticWork",
         "lang" : "en",
@@ -11963,6 +11984,12 @@
       
       ],
     "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+        "value" : "Dehnrate, die f\u00FCr die Mikrostruktursimulation verwendet wurde",
+        "lang" : "de",
+        "type" : "literal"
+        }
+      ,
+      {
         "value" : "Zunahme der mit einem Extensometer in der Extensometer-Messl\u00E4nge gemessenen Dehnung je Zeiteinheit",
         "lang" : "de",
         "type" : "literal"
@@ -12011,6 +12038,12 @@
       ],
     "http://www.w3.org/2004/02/skos/core#altlabel" : [ {
         "value" : "Strain Rate",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      ,
+      {
+        "value" : "Strain rate",
         "lang" : "en",
         "type" : "literal"
         }

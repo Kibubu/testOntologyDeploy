@@ -1245,6 +1245,7 @@
         skos:preflabel  "hasFailureStrainIdentifier4StrainRate"@en .
 
 :SpecificPlasticWork  rdf:type  skos:Concept , owl:Class ;
+        rdfs:comment    "Daten für die spezifische plastische Arbeit des durchgeführten Mikrostruktursimulation"@de ;
         rdfs:label      "SpecificPlasticWork"@en ;
         skos:altlabel   "Specific plastic work"@en ;
         skos:preflabel  "SpecificPlasticWork"@en .
@@ -2836,10 +2837,10 @@
         skos:preflabel  "uses Code"@en .
 
 :StrainRate  rdf:type   owl:Class , skos:Concept ;
-        rdfs:comment    "the rate at which a material deforms under applied stress. It is a measure of how quickly the material's shape or dimensions change in response to external forces, such as tension, compression, or shear. Strain rate is typically expressed in units of inverse time (e.g., s^-1 or min^-1)."@en , "Zunahme der mit einem Extensometer in der Extensometer-Messlänge gemessenen Dehnung je Zeiteinheit"@de , "strain rate either of the parallel length or of the gauge length/extensometer length (should be specified)"@en ;
+        rdfs:comment    "the rate at which a material deforms under applied stress. It is a measure of how quickly the material's shape or dimensions change in response to external forces, such as tension, compression, or shear. Strain rate is typically expressed in units of inverse time (e.g., s^-1 or min^-1)."@en , "Zunahme der mit einem Extensometer in der Extensometer-Messlänge gemessenen Dehnung je Zeiteinheit"@de , "Dehnrate, die für die Mikrostruktursimulation verwendet wurde"@de , "strain rate either of the parallel length or of the gauge length/extensometer length (should be specified)"@en ;
         rdfs:label      "StrainRate"@en ;
         rdfs:seeAlso    :ParallelLength , :Time , :PercentageExtension , :CrossheadSeparationRate ;
-        skos:altlabel   "strain rate"@en , "Strain Rate"@en ;
+        skos:altlabel   "Strain rate"@en , "strain rate"@en , "Strain Rate"@en ;
         skos:preflabel  "StrainRate"@en ;
         skos:related    :CrossheadSeparationRate , :PercentageExtension , :ParallelLength , :Time .
 
@@ -3037,6 +3038,7 @@
         skos:preflabel  "environment"@en .
 
 :EffecticStrain  rdf:type  skos:Concept , owl:Class ;
+        rdfs:comment    "Daten für die effektive Dehnung der durchgeführten Mikrostruktursimulation"@de ;
         rdfs:label      "EffecticStrain"@en ;
         skos:altlabel   "Effective strain"@en ;
         skos:preflabel  "EffecticStrain"@en .
@@ -4935,6 +4937,7 @@
         skos:related    :OriginalGaugeLength , :ExtensionMeasuringSystem .
 
 :EffectiveStress  rdf:type  skos:Concept , owl:Class ;
+        rdfs:comment    "Daten für die effektive Spannung der durchgeführten Mikrostruktursimulation"@de ;
         rdfs:label      "EffectiveStress"@en ;
         skos:altlabel   "Effective stress"@en ;
         skos:preflabel  "EffectiveStress"@en .

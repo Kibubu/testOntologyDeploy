@@ -12,6 +12,13 @@
         }
       
       ],
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+        "value" : "Daten f\u00FCr die spezifische plastische Arbeit des durchgef\u00FChrten Mikrostruktursimulation",
+        "lang" : "de",
+        "type" : "literal"
+        }
+      
+      ],
     "http://www.w3.org/2000/01/rdf-schema#label" : [ {
         "value" : "SpecificPlasticWork",
         "lang" : "en",

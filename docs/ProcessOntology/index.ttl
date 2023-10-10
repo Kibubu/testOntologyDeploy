@@ -65,6 +65,11 @@
         rdfs:label      "hasLatticeStructure"@en ;
         skos:preflabel  "hasLatticeStructure"@en .
 
+:hasAnisotropicYieldFunctionParameters
+        rdf:type        owl:DatatypeProperty , rdf:Property ;
+        rdfs:label      "hasAnisotropicYieldFunctionParameters"@en ;
+        skos:preflabel  "hasAnisotropicYieldFunctionParameters"@en .
+
 :hasPermanentSetStrength
         rdf:type        owl:DatatypeProperty , rdf:Property ;
         rdfs:label      "hasPermanentSetStrength"@en ;
@@ -1089,21 +1094,21 @@
         skos:altlabel   "upper yield strength"@en ;
         skos:preflabel  "UpperYieldStrength"@en .
 
-:MaximumForceDiscontinousYielding
-        rdf:type        skos:Concept , owl:Class ;
-        rdfs:comment    "<bei Werkstoffen, die ein diskontinuierliches Fließen zeigen> größte Kraft, der die Probe während des Versuchs nach dem Beginn der Verfestigung standhält"@de ;
-        rdfs:label      "MaximumForceDiscontinousYielding"@en ;
-        skos:altlabel   "maximum force \"discontinous yielding\""@en ;
-        skos:preflabel  "MaximumForceDiscontinousYielding"@en .
+:hasOriginalWidth  rdf:type  owl:DatatypeProperty , rdf:Property ;
+        rdfs:label      "hasOriginalWidth"@en ;
+        skos:preflabel  "hasOriginalWidth"@en .
 
 :metadata  rdf:type     owl:DatatypeProperty ;
         rdfs:domain     :Workflow ;
         rdfs:label      "metadata"@en ;
         skos:preflabel  "metadata"@en .
 
-:hasOriginalWidth  rdf:type  owl:DatatypeProperty , rdf:Property ;
-        rdfs:label      "hasOriginalWidth"@en ;
-        skos:preflabel  "hasOriginalWidth"@en .
+:MaximumForceDiscontinousYielding
+        rdf:type        skos:Concept , owl:Class ;
+        rdfs:comment    "<bei Werkstoffen, die ein diskontinuierliches Fließen zeigen> größte Kraft, der die Probe während des Versuchs nach dem Beginn der Verfestigung standhält"@de ;
+        rdfs:label      "MaximumForceDiscontinousYielding"@en ;
+        skos:altlabel   "maximum force \"discontinous yielding\""@en ;
+        skos:preflabel  "MaximumForceDiscontinousYielding"@en .
 
 :FinalGaugeLengthAfterFracture
         rdf:type        skos:Concept , owl:Class ;
@@ -3043,6 +3048,12 @@
         skos:altlabel   "Effective strain"@en ;
         skos:preflabel  "EffecticStrain"@en .
 
+:hasAnisotropicYieldFunctionObject
+        rdf:type        owl:ObjectProperty , rdf:Property ;
+        rdfs:label      "hasAnisotropicYieldFunction"@en ;
+        rdfs:range      "https://w3id.org/steel/ProcessOntology/AnisotropicYieldFunction" ;
+        skos:preflabel  "hasAnisotropicYieldFunction"@en .
+
 <https://w3id.org/steel/ProcessOntology/hasPercentageExtension_-%20>
         rdf:type            owl:DatatypeProperty , rdf:Property ;
         rdfs:label          "hasPercentageExtension_- "@en ;
@@ -3340,6 +3351,13 @@
         :UnitLabel         "1" ;
         :hasLabelSourceEn  "LS-DYNA_Manual_Volume_2" .
 
+:AnisotropicYieldFunction
+        rdf:type        skos:Concept , owl:Class ;
+        rdfs:comment    "Anisotropes Fließortmodell, das für die Bestimmung der Parameter verwendet wurde"@de ;
+        rdfs:label      "AnisotropicYieldFunction"@en ;
+        skos:altlabel   "Anisotropic yield function"@en ;
+        skos:preflabel  "AnisotropicYieldFunction"@en .
+
 :Standard  rdf:type     owl:Class ;
         rdfs:comment    "Standard as described by ISO / DIN / etc"@en ;
         rdfs:label      "Standard"@en , "Norm"@de ;
@@ -3517,18 +3535,18 @@
         skos:preflabel      "hasTrueWidthStrain_1"@en ;
         :hasUnitLabel       "1" .
 
-:hasTaylorQuinneyCoefficient
-        rdf:type        owl:ObjectProperty ;
-        rdfs:label      "hasTaylorQuinneyCoefficient"@en ;
-        rdfs:range      "https://w3id.org/steel/ProcessOntology/TaylorQuinneyCoefficient" ;
-        skos:preflabel  "hasTaylorQuinneyCoefficient"@en .
-
 :hasOriginalThickness_mm
         rdf:type            owl:DatatypeProperty , rdf:Property ;
         rdfs:label          "hasOriginalThickness_mm"@en ;
         rdfs:subPropertyOf  :hasOriginalThickness ;
         skos:preflabel      "hasOriginalThickness_mm"@en ;
         :hasUnitLabel       "mm" .
+
+:hasTaylorQuinneyCoefficient
+        rdf:type        owl:ObjectProperty ;
+        rdfs:label      "hasTaylorQuinneyCoefficient"@en ;
+        rdfs:range      "https://w3id.org/steel/ProcessOntology/TaylorQuinneyCoefficient" ;
+        skos:preflabel  "hasTaylorQuinneyCoefficient"@en .
 
 :hasRadiusDieObject  rdf:type  owl:ObjectProperty , rdf:Property ;
         rdfs:label      "hasRadiusDie"@en ;
@@ -3821,6 +3839,12 @@
         skos:preflabel  "Force"@en , "Kraft"@de ;
         skos:related    :ForceMeasuringDevice , :ForceMeasuringSystem .
 
+:hasThicknessAfterFracture1Object
+        rdf:type        owl:ObjectProperty , rdf:Property ;
+        rdfs:label      "hasThicknessAfterFracture1"@en ;
+        rdfs:range      "https://w3id.org/steel/ProcessOntology/ThicknessAfterFracture1" ;
+        skos:preflabel  "hasThicknessAfterFracture1"@en .
+
 <https://w3id.org/steel/ProcessOntology/hasPercentageYieldPointExtension_%25>
         rdf:type            owl:DatatypeProperty , rdf:Property ;
         rdfs:label          "hasPercentageYieldPointExtension_%"@en ;
@@ -3828,11 +3852,10 @@
         skos:preflabel      "hasPercentageYieldPointExtension_%"@en ;
         :hasUnitLabel       "%" .
 
-:hasThicknessAfterFracture1Object
-        rdf:type        owl:ObjectProperty , rdf:Property ;
-        rdfs:label      "hasThicknessAfterFracture1"@en ;
-        rdfs:range      "https://w3id.org/steel/ProcessOntology/ThicknessAfterFracture1" ;
-        skos:preflabel  "hasThicknessAfterFracture1"@en .
+:hasAnisotropicYieldFunction
+        rdf:type        owl:DatatypeProperty , rdf:Property ;
+        rdfs:label      "hasAnisotropicYieldFunction"@en ;
+        skos:preflabel  "hasAnisotropicYieldFunction"@en .
 
 :hasPercentagePermanentExtensionObject
         rdf:type        owl:ObjectProperty , rdf:Property ;
@@ -4023,6 +4046,13 @@
         rdfs:label      "hasCrystalPlasticityParameterFile"@en ;
         rdfs:range      "https://w3id.org/steel/ProcessOntology/CrystalPlasticityParameterFile" ;
         skos:preflabel  "hasCrystalPlasticityParameterFile"@en .
+
+:AnisotropicYieldFunctionParameters
+        rdf:type        skos:Concept , owl:Class ;
+        rdfs:comment    "Parameters des betrachteten anisotropen Fließortmodells"@de ;
+        rdfs:label      "AnisotropicYieldFunctionParameters"@en ;
+        skos:altlabel   "Anisotropic yield function parameters"@en ;
+        skos:preflabel  "AnisotropicYieldFunctionParameters"@en .
 
 :CrossheadDisplacement
         rdf:type        skos:Concept , owl:Class ;
@@ -4409,6 +4439,12 @@
         rdfs:seeAlso    pmdco:TensileTest ;
         skos:preflabel  "Tensile Test"@en , "Zugversuch"@de ;
         skos:related    pmdco:TensileTest .
+
+:hasAnisotropicYieldFunctionParametersObject
+        rdf:type        owl:ObjectProperty , rdf:Property ;
+        rdfs:label      "hasAnisotropicYieldFunctionParameters"@en ;
+        rdfs:range      "https://w3id.org/steel/ProcessOntology/AnisotropicYieldFunctionParameters" ;
+        skos:preflabel  "hasAnisotropicYieldFunctionParameters"@en .
 
 :hasSampleIdentifier  rdf:type  owl:DatatypeProperty , rdf:Property ;
         rdfs:label      "hasSampleIdentifier"@en ;

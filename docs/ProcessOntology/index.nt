@@ -19,6 +19,18 @@
 <https://w3id.org/steel/ProcessOntology/AmplitudeFile> <http://www.w3.org/2000/01/rdf-schema#label> "AmplitudeFile"@en .
 <https://w3id.org/steel/ProcessOntology/AmplitudeFile> <http://www.w3.org/2004/02/skos/core#altlabel> "Amplitude file"@en .
 <https://w3id.org/steel/ProcessOntology/AmplitudeFile> <http://www.w3.org/2004/02/skos/core#preflabel> "AmplitudeFile"@en .
+<https://w3id.org/steel/ProcessOntology/AnisotropicYieldFunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/steel/ProcessOntology/AnisotropicYieldFunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/steel/ProcessOntology/AnisotropicYieldFunction> <http://www.w3.org/2000/01/rdf-schema#comment> "Anisotropes Flie\u00DFortmodell, das f\u00FCr die Bestimmung der Parameter verwendet wurde"@de .
+<https://w3id.org/steel/ProcessOntology/AnisotropicYieldFunction> <http://www.w3.org/2000/01/rdf-schema#label> "AnisotropicYieldFunction"@en .
+<https://w3id.org/steel/ProcessOntology/AnisotropicYieldFunction> <http://www.w3.org/2004/02/skos/core#altlabel> "Anisotropic yield function"@en .
+<https://w3id.org/steel/ProcessOntology/AnisotropicYieldFunction> <http://www.w3.org/2004/02/skos/core#preflabel> "AnisotropicYieldFunction"@en .
+<https://w3id.org/steel/ProcessOntology/AnisotropicYieldFunctionParameters> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/steel/ProcessOntology/AnisotropicYieldFunctionParameters> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/steel/ProcessOntology/AnisotropicYieldFunctionParameters> <http://www.w3.org/2000/01/rdf-schema#comment> "Parameters des betrachteten anisotropen Flie\u00DFortmodells"@de .
+<https://w3id.org/steel/ProcessOntology/AnisotropicYieldFunctionParameters> <http://www.w3.org/2000/01/rdf-schema#label> "AnisotropicYieldFunctionParameters"@en .
+<https://w3id.org/steel/ProcessOntology/AnisotropicYieldFunctionParameters> <http://www.w3.org/2004/02/skos/core#altlabel> "Anisotropic yield function parameters"@en .
+<https://w3id.org/steel/ProcessOntology/AnisotropicYieldFunctionParameters> <http://www.w3.org/2004/02/skos/core#preflabel> "AnisotropicYieldFunctionParameters"@en .
 <https://w3id.org/steel/ProcessOntology/Benchmark> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/steel/ProcessOntology/Benchmark> <http://www.w3.org/2000/01/rdf-schema#label> "Benchmark"@en .
 <https://w3id.org/steel/ProcessOntology/Benchmark> <http://www.w3.org/2000/01/rdf-schema#label> "Messlatte"@de .
@@ -2347,6 +2359,24 @@
 <https://w3id.org/steel/ProcessOntology/hasAmplitudeFileObject> <http://www.w3.org/2000/01/rdf-schema#label> "hasAmplitudeFile"@en .
 <https://w3id.org/steel/ProcessOntology/hasAmplitudeFileObject> <http://www.w3.org/2000/01/rdf-schema#range> "https://w3id.org/steel/ProcessOntology/AmplitudeFile" .
 <https://w3id.org/steel/ProcessOntology/hasAmplitudeFileObject> <http://www.w3.org/2004/02/skos/core#preflabel> "hasAmplitudeFile"@en .
+<https://w3id.org/steel/ProcessOntology/hasAnisotropicYieldFunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<https://w3id.org/steel/ProcessOntology/hasAnisotropicYieldFunction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/steel/ProcessOntology/hasAnisotropicYieldFunction> <http://www.w3.org/2000/01/rdf-schema#label> "hasAnisotropicYieldFunction"@en .
+<https://w3id.org/steel/ProcessOntology/hasAnisotropicYieldFunction> <http://www.w3.org/2004/02/skos/core#preflabel> "hasAnisotropicYieldFunction"@en .
+<https://w3id.org/steel/ProcessOntology/hasAnisotropicYieldFunctionObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<https://w3id.org/steel/ProcessOntology/hasAnisotropicYieldFunctionObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/steel/ProcessOntology/hasAnisotropicYieldFunctionObject> <http://www.w3.org/2000/01/rdf-schema#label> "hasAnisotropicYieldFunction"@en .
+<https://w3id.org/steel/ProcessOntology/hasAnisotropicYieldFunctionObject> <http://www.w3.org/2000/01/rdf-schema#range> "https://w3id.org/steel/ProcessOntology/AnisotropicYieldFunction" .
+<https://w3id.org/steel/ProcessOntology/hasAnisotropicYieldFunctionObject> <http://www.w3.org/2004/02/skos/core#preflabel> "hasAnisotropicYieldFunction"@en .
+<https://w3id.org/steel/ProcessOntology/hasAnisotropicYieldFunctionParameters> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<https://w3id.org/steel/ProcessOntology/hasAnisotropicYieldFunctionParameters> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/steel/ProcessOntology/hasAnisotropicYieldFunctionParameters> <http://www.w3.org/2000/01/rdf-schema#label> "hasAnisotropicYieldFunctionParameters"@en .
+<https://w3id.org/steel/ProcessOntology/hasAnisotropicYieldFunctionParameters> <http://www.w3.org/2004/02/skos/core#preflabel> "hasAnisotropicYieldFunctionParameters"@en .
+<https://w3id.org/steel/ProcessOntology/hasAnisotropicYieldFunctionParametersObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<https://w3id.org/steel/ProcessOntology/hasAnisotropicYieldFunctionParametersObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/steel/ProcessOntology/hasAnisotropicYieldFunctionParametersObject> <http://www.w3.org/2000/01/rdf-schema#label> "hasAnisotropicYieldFunctionParameters"@en .
+<https://w3id.org/steel/ProcessOntology/hasAnisotropicYieldFunctionParametersObject> <http://www.w3.org/2000/01/rdf-schema#range> "https://w3id.org/steel/ProcessOntology/AnisotropicYieldFunctionParameters" .
+<https://w3id.org/steel/ProcessOntology/hasAnisotropicYieldFunctionParametersObject> <http://www.w3.org/2004/02/skos/core#preflabel> "hasAnisotropicYieldFunctionParameters"@en .
 <https://w3id.org/steel/ProcessOntology/hasBiaxialStress> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
 <https://w3id.org/steel/ProcessOntology/hasBiaxialStress> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://w3id.org/steel/ProcessOntology/hasBiaxialStress> <http://www.w3.org/2000/01/rdf-schema#label> "hasBiaxialStress"@en .

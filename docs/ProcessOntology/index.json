@@ -187,6 +187,90 @@
       ]
     }
   ,
+  "https://w3id.org/steel/ProcessOntology/AnisotropicYieldFunction" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+        "value" : "http://www.w3.org/2002/07/owl#Class",
+        "type" : "uri"
+        }
+      ,
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+        "value" : "Anisotropes Flie\u00DFortmodell, das f\u00FCr die Bestimmung der Parameter verwendet wurde",
+        "lang" : "de",
+        "type" : "literal"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+        "value" : "AnisotropicYieldFunction",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      
+      ],
+    "http://www.w3.org/2004/02/skos/core#altlabel" : [ {
+        "value" : "Anisotropic yield function",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      
+      ],
+    "http://www.w3.org/2004/02/skos/core#preflabel" : [ {
+        "value" : "AnisotropicYieldFunction",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      
+      ]
+    }
+  ,
+  "https://w3id.org/steel/ProcessOntology/AnisotropicYieldFunctionParameters" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+        "value" : "http://www.w3.org/2002/07/owl#Class",
+        "type" : "uri"
+        }
+      ,
+      {
+        "value" : "http://www.w3.org/2004/02/skos/core#Concept",
+        "type" : "uri"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+        "value" : "Parameters des betrachteten anisotropen Flie\u00DFortmodells",
+        "lang" : "de",
+        "type" : "literal"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+        "value" : "AnisotropicYieldFunctionParameters",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      
+      ],
+    "http://www.w3.org/2004/02/skos/core#altlabel" : [ {
+        "value" : "Anisotropic yield function parameters",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      
+      ],
+    "http://www.w3.org/2004/02/skos/core#preflabel" : [ {
+        "value" : "AnisotropicYieldFunctionParameters",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      
+      ]
+    }
+  ,
   "https://w3id.org/steel/ProcessOntology/Benchmark" : {
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
         "value" : "http://www.w3.org/2002/07/owl#Class",
@@ -15870,6 +15954,130 @@
       ],
     "http://www.w3.org/2004/02/skos/core#preflabel" : [ {
         "value" : "hasAmplitudeFile",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      
+      ]
+    }
+  ,
+  "https://w3id.org/steel/ProcessOntology/hasAnisotropicYieldFunction" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+        }
+      ,
+      {
+        "value" : "http://www.w3.org/2002/07/owl#DatatypeProperty",
+        "type" : "uri"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+        "value" : "hasAnisotropicYieldFunction",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      
+      ],
+    "http://www.w3.org/2004/02/skos/core#preflabel" : [ {
+        "value" : "hasAnisotropicYieldFunction",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      
+      ]
+    }
+  ,
+  "https://w3id.org/steel/ProcessOntology/hasAnisotropicYieldFunctionObject" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+        }
+      ,
+      {
+        "value" : "http://www.w3.org/2002/07/owl#ObjectProperty",
+        "type" : "uri"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+        "value" : "hasAnisotropicYieldFunction",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+        "value" : "https://w3id.org/steel/ProcessOntology/AnisotropicYieldFunction",
+        "type" : "literal"
+        }
+      
+      ],
+    "http://www.w3.org/2004/02/skos/core#preflabel" : [ {
+        "value" : "hasAnisotropicYieldFunction",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      
+      ]
+    }
+  ,
+  "https://w3id.org/steel/ProcessOntology/hasAnisotropicYieldFunctionParameters" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+        }
+      ,
+      {
+        "value" : "http://www.w3.org/2002/07/owl#DatatypeProperty",
+        "type" : "uri"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+        "value" : "hasAnisotropicYieldFunctionParameters",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      
+      ],
+    "http://www.w3.org/2004/02/skos/core#preflabel" : [ {
+        "value" : "hasAnisotropicYieldFunctionParameters",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      
+      ]
+    }
+  ,
+  "https://w3id.org/steel/ProcessOntology/hasAnisotropicYieldFunctionParametersObject" : {
+    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
+        "type" : "uri"
+        }
+      ,
+      {
+        "value" : "http://www.w3.org/2002/07/owl#ObjectProperty",
+        "type" : "uri"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+        "value" : "hasAnisotropicYieldFunctionParameters",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+        "value" : "https://w3id.org/steel/ProcessOntology/AnisotropicYieldFunctionParameters",
+        "type" : "literal"
+        }
+      
+      ],
+    "http://www.w3.org/2004/02/skos/core#preflabel" : [ {
+        "value" : "hasAnisotropicYieldFunctionParameters",
         "lang" : "en",
         "type" : "literal"
         }

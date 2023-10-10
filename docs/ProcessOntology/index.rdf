@@ -171,6 +171,18 @@
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasLatticeStructure">
     <skos:preflabel xml:lang="en">hasLatticeStructure</skos:preflabel>
   </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasAnisotropicYieldFunctionParameters">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasAnisotropicYieldFunctionParameters">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasAnisotropicYieldFunctionParameters">
+    <rdfs:label xml:lang="en">hasAnisotropicYieldFunctionParameters</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasAnisotropicYieldFunctionParameters">
+    <skos:preflabel xml:lang="en">hasAnisotropicYieldFunctionParameters</skos:preflabel>
+  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasPermanentSetStrength">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </rdf:Description>
@@ -3043,6 +3055,30 @@ or
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/UpperYieldStrength">
     <skos:preflabel xml:lang="en">UpperYieldStrength</skos:preflabel>
   </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasOriginalWidth">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasOriginalWidth">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasOriginalWidth">
+    <rdfs:label xml:lang="en">hasOriginalWidth</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasOriginalWidth">
+    <skos:preflabel xml:lang="en">hasOriginalWidth</skos:preflabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/metadata">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/metadata">
+    <rdfs:domain rdf:resource="https://w3id.org/steel/ProcessOntology/Workflow"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/metadata">
+    <rdfs:label xml:lang="en">metadata</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/metadata">
+    <skos:preflabel xml:lang="en">metadata</skos:preflabel>
+  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/MaximumForceDiscontinousYielding">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
   </rdf:Description>
@@ -3060,30 +3096,6 @@ or
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/MaximumForceDiscontinousYielding">
     <skos:preflabel xml:lang="en">MaximumForceDiscontinousYielding</skos:preflabel>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/metadata">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/metadata">
-    <rdfs:domain rdf:resource="https://w3id.org/steel/ProcessOntology/Workflow"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/metadata">
-    <rdfs:label xml:lang="en">metadata</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/metadata">
-    <skos:preflabel xml:lang="en">metadata</skos:preflabel>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasOriginalWidth">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasOriginalWidth">
-    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasOriginalWidth">
-    <rdfs:label xml:lang="en">hasOriginalWidth</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasOriginalWidth">
-    <skos:preflabel xml:lang="en">hasOriginalWidth</skos:preflabel>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/FinalGaugeLengthAfterFracture">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -8817,6 +8829,21 @@ N.GT.0: The Nth additional history variable is the driving quantity for damage.<
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/EffecticStrain">
     <skos:preflabel xml:lang="en">EffecticStrain</skos:preflabel>
   </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasAnisotropicYieldFunctionObject">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasAnisotropicYieldFunctionObject">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasAnisotropicYieldFunctionObject">
+    <rdfs:label xml:lang="en">hasAnisotropicYieldFunction</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasAnisotropicYieldFunctionObject">
+    <rdfs:range>https://w3id.org/steel/ProcessOntology/AnisotropicYieldFunction</rdfs:range>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasAnisotropicYieldFunctionObject">
+    <skos:preflabel xml:lang="en">hasAnisotropicYieldFunction</skos:preflabel>
+  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasPercentageExtension_-%20">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </rdf:Description>
@@ -9675,6 +9702,24 @@ N.GT.0: The Nth additional history variable is the driving quantity for damage.<
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/StrainRateScaleParameterP">
     <hasLabelSourceEn>LS-DYNA_Manual_Volume_2</hasLabelSourceEn>
   </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/AnisotropicYieldFunction">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/AnisotropicYieldFunction">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/AnisotropicYieldFunction">
+    <rdfs:comment xml:lang="de">Anisotropes Fließortmodell, das für die Bestimmung der Parameter verwendet wurde</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/AnisotropicYieldFunction">
+    <rdfs:label xml:lang="en">AnisotropicYieldFunction</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/AnisotropicYieldFunction">
+    <skos:altlabel xml:lang="en">Anisotropic yield function</skos:altlabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/AnisotropicYieldFunction">
+    <skos:preflabel xml:lang="en">AnisotropicYieldFunction</skos:preflabel>
+  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/Standard">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
   </rdf:Description>
@@ -10278,18 +10323,6 @@ N.GT.0: The Nth additional history variable is the driving quantity for damage.<
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasTrueWidthStrain_1">
     <hasUnitLabel>1</hasUnitLabel>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasTaylorQuinneyCoefficient">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasTaylorQuinneyCoefficient">
-    <rdfs:label xml:lang="en">hasTaylorQuinneyCoefficient</rdfs:label>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasTaylorQuinneyCoefficient">
-    <rdfs:range>https://w3id.org/steel/ProcessOntology/TaylorQuinneyCoefficient</rdfs:range>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasTaylorQuinneyCoefficient">
-    <skos:preflabel xml:lang="en">hasTaylorQuinneyCoefficient</skos:preflabel>
-  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasOriginalThickness_mm">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </rdf:Description>
@@ -10307,6 +10340,18 @@ N.GT.0: The Nth additional history variable is the driving quantity for damage.<
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasOriginalThickness_mm">
     <hasUnitLabel>mm</hasUnitLabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasTaylorQuinneyCoefficient">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasTaylorQuinneyCoefficient">
+    <rdfs:label xml:lang="en">hasTaylorQuinneyCoefficient</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasTaylorQuinneyCoefficient">
+    <rdfs:range>https://w3id.org/steel/ProcessOntology/TaylorQuinneyCoefficient</rdfs:range>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasTaylorQuinneyCoefficient">
+    <skos:preflabel xml:lang="en">hasTaylorQuinneyCoefficient</skos:preflabel>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasRadiusDieObject">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
@@ -11187,6 +11232,21 @@ N.GT.0: The Nth additional history variable is the driving quantity for damage.<
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/Force">
     <skos:related rdf:resource="https://w3id.org/steel/ProcessOntology/ForceMeasuringSystem"/>
   </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasThicknessAfterFracture1Object">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasThicknessAfterFracture1Object">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasThicknessAfterFracture1Object">
+    <rdfs:label xml:lang="en">hasThicknessAfterFracture1</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasThicknessAfterFracture1Object">
+    <rdfs:range>https://w3id.org/steel/ProcessOntology/ThicknessAfterFracture1</rdfs:range>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasThicknessAfterFracture1Object">
+    <skos:preflabel xml:lang="en">hasThicknessAfterFracture1</skos:preflabel>
+  </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasPercentageYieldPointExtension_%25">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </rdf:Description>
@@ -11205,20 +11265,17 @@ N.GT.0: The Nth additional history variable is the driving quantity for damage.<
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasPercentageYieldPointExtension_%25">
     <hasUnitLabel>%</hasUnitLabel>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasThicknessAfterFracture1Object">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasAnisotropicYieldFunction">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasThicknessAfterFracture1Object">
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasAnisotropicYieldFunction">
     <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasThicknessAfterFracture1Object">
-    <rdfs:label xml:lang="en">hasThicknessAfterFracture1</rdfs:label>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasAnisotropicYieldFunction">
+    <rdfs:label xml:lang="en">hasAnisotropicYieldFunction</rdfs:label>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasThicknessAfterFracture1Object">
-    <rdfs:range>https://w3id.org/steel/ProcessOntology/ThicknessAfterFracture1</rdfs:range>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasThicknessAfterFracture1Object">
-    <skos:preflabel xml:lang="en">hasThicknessAfterFracture1</skos:preflabel>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasAnisotropicYieldFunction">
+    <skos:preflabel xml:lang="en">hasAnisotropicYieldFunction</skos:preflabel>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasPercentagePermanentExtensionObject">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
@@ -11741,6 +11798,24 @@ N.GT.0: The Nth additional history variable is the driving quantity for damage.<
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasCrystalPlasticityParameterFileObject">
     <skos:preflabel xml:lang="en">hasCrystalPlasticityParameterFile</skos:preflabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/AnisotropicYieldFunctionParameters">
+    <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/AnisotropicYieldFunctionParameters">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/AnisotropicYieldFunctionParameters">
+    <rdfs:comment xml:lang="de">Parameters des betrachteten anisotropen Fließortmodells</rdfs:comment>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/AnisotropicYieldFunctionParameters">
+    <rdfs:label xml:lang="en">AnisotropicYieldFunctionParameters</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/AnisotropicYieldFunctionParameters">
+    <skos:altlabel xml:lang="en">Anisotropic yield function parameters</skos:altlabel>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/AnisotropicYieldFunctionParameters">
+    <skos:preflabel xml:lang="en">AnisotropicYieldFunctionParameters</skos:preflabel>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/CrossheadDisplacement">
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
@@ -12906,6 +12981,21 @@ N.GT.0: The Nth additional history variable is the driving quantity for damage.<
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/TensileTest">
     <skos:related rdf:resource="https://material-digital.de/pmdco/TensileTest"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasAnisotropicYieldFunctionParametersObject">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasAnisotropicYieldFunctionParametersObject">
+    <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasAnisotropicYieldFunctionParametersObject">
+    <rdfs:label xml:lang="en">hasAnisotropicYieldFunctionParameters</rdfs:label>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasAnisotropicYieldFunctionParametersObject">
+    <rdfs:range>https://w3id.org/steel/ProcessOntology/AnisotropicYieldFunctionParameters</rdfs:range>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasAnisotropicYieldFunctionParametersObject">
+    <skos:preflabel xml:lang="en">hasAnisotropicYieldFunctionParameters</skos:preflabel>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/hasSampleIdentifier">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>

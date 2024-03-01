@@ -111,6 +111,15 @@
         rdfs:range      "https://w3id.org/steel/ProcessOntology/HCT980C" ;
         skos:preflabel  "hasHCT980C"@en .
 
+:MeasuringDevice  rdf:type  skos:Concept , owl:Class ;
+        rdfs:label       "MeasuringDevice"@en ;
+        rdfs:seeAlso     :Machine ;
+        skos:altlabel    "Messmittel"@de ;
+        skos:preflabel   "MeasuringDevice"@en ;
+        skos:related     :Machine ;
+        :hasExampleData  "Hochgeschwindigkeits Prüfmaschine" ;
+        :hasLabelSource  "Messmitteldatenbank"@de .
+
 :hasExtensometerGaugeLength_mm
         rdf:type            owl:DatatypeProperty , rdf:Property ;
         rdfs:label          "hasExtensometerGaugeLength_mm"@en ;
@@ -1141,6 +1150,10 @@
         rdfs:subPropertyOf  :hasRadiusCurvature ;
         skos:preflabel      "hasRadiusCurvature_mm"@en ;
         :hasUnitLabel       "mm" .
+
+:hasMeasuringDevice  rdf:type  owl:DatatypeProperty , rdf:Property ;
+        rdfs:label      "hasMeasuringDevice"@en ;
+        skos:preflabel  "hasMeasuringDevice"@en .
 
 :TestTemperatur  rdf:type              skos:Concept , owl:Class ;
         rdfs:label                     "TestTemperatur"@en ;
@@ -2833,6 +2846,15 @@
         rdfs:label      "hasTimeStamp"@en ;
         skos:preflabel  "hasTimeStamp"@en .
 
+:MeasuringAid  rdf:type  skos:Concept , owl:Class ;
+        rdfs:label       "MeasuringAid"@en ;
+        rdfs:seeAlso     :ForceMeasuringDevice ;
+        skos:altlabel    "Messhilfsmittel"@de ;
+        skos:preflabel   "MeasuringAid"@en ;
+        skos:related     :ForceMeasuringDevice ;
+        :hasExampleData  "Kraftmesszelle" ;
+        :hasLabelSource  "Messmitteldatenbank"@de .
+
 :hasYieldStrengthObject
         rdf:type        owl:ObjectProperty , rdf:Property ;
         rdfs:label      "hasYieldStrength"@en ;
@@ -3018,6 +3040,10 @@
         rdfs:label      "hasPercentageElongation"@en ;
         rdfs:range      "https://w3id.org/steel/ProcessOntology/PercentageElongation" ;
         skos:preflabel  "hasPercentageElongation"@en .
+
+:hasMeasuringAid  rdf:type  owl:DatatypeProperty , rdf:Property ;
+        rdfs:label      "hasMeasuringAid"@en ;
+        skos:preflabel  "hasMeasuringAid"@en .
 
 :MatPiecewiseLinearPlasticityLogInterpolation
         rdf:type           skos:Concept , owl:Class ;
@@ -4686,6 +4712,12 @@
         skos:preflabel      "hasPercentagePlasticExtensionAtMaximumForce_%"@en ;
         :hasUnitLabel       "%" .
 
+:hasMeasuringAidObject
+        rdf:type        owl:ObjectProperty , rdf:Property ;
+        rdfs:label      "hasMeasuringAid"@en ;
+        rdfs:range      "https://w3id.org/steel/ProcessOntology/MeasuringAid" ;
+        skos:preflabel  "hasMeasuringAid"@en .
+
 :Benchmark  rdf:type    owl:Class ;
         rdfs:label      "Benchmark"@en , "Messlatte"@de ;
         skos:altlabel   "Richtwert"@de , " Maßstab"@de , " Bezugspunkt"@de ;
@@ -5139,17 +5171,17 @@
         rdfs:comment                   "Facility that conducted the experiment."@en ;
         rdfs:label                     "TestingFacility"@en ;
         rdfs:seeAlso                   :TestingFacility ;
-        skos:altlabel                  "Prüfinstitut"@de , "Testing facility"@en ;
+        skos:altlabel                  "Prüfinstitut"@de , "Testing facility"@en , "Organization"@en ;
         skos:preflabel                 "TestingFacility"@en ;
         skos:related                   :TestingFacility ;
         :hasDescriptionCitationSource  "Authors"@en ;
         :hasExampleData                "Fraunhofer IWM" ;
-        :hasLabelSource                "AFZ-BU-S1.TXT"@de , "deepl translator"@en , "DX56_D_FZ2_WR00_43.TXT"@de .
+        :hasLabelSource                "AFZ-BU-S1.TXT"@de , "K-Item"@en , "deepl translator"@en , "DX56_D_FZ2_WR00_43.TXT"@de .
 
 :MechanicalCard  rdf:type  owl:Class ;
-        rdfs:label      "mechanical card"@en , "meschanische Karte"@de ;
+        rdfs:label      "mechanical card"@en , "Materialkarte"@de ;
         skos:altlabel   "MaterialCard"@en , "MaterialKarte"@de ;
-        skos:preflabel  "mechanical card"@en , "meschanische Karte"@de .
+        skos:preflabel  "mechanical card"@en , "Materialkarte"@de .
 
 <https://w3id.org/steel/ProcessOntology/hasInitialDisplacementRate_mm%20s%20-1>
         rdf:type            owl:DatatypeProperty , rdf:Property ;
@@ -5698,11 +5730,11 @@
 :Machine  rdf:type                     skos:Concept , owl:Class ;
         rdfs:comment                   "Data of the machine used for the experiment."@en ;
         rdfs:label                     "Machine"@en ;
-        skos:altlabel                  "Testing Machine"@en , "Prüfmaschine"@de , "Machine Type"@en , "Prüfmasch."@de , "Maschinendaten"@de ;
+        skos:altlabel                  "Testing Machine"@en , "Prüfmaschine"@de , "Machine Type"@en , "Prüfmasch."@de , "Maschinendaten"@de , "Testing machine"@en ;
         skos:preflabel                 "Machine"@en ;
         :hasDescriptionCitationSource  "Authors"@en ;
         :hasExampleData                "Instron 5985" , "SZM500" , "ZwickRoell Blechumformprüfmaschine 600kN - BUP600" , "SZM100" ;
-        :hasLabelSource                "YS1-FzR4-S1Q"@en , "YS1-FzR4-S1Q"@de , "YS1-Sz0°-S1L"@de , "AFZ1-NZ50-25-D1Q"@en , "deepl translator"@en , "AFZ1-ST-D1"@en , "standard definition specific"@en , "AFZ1-Fz-S1Q.xlsx"@de , "AFZ-BU-S1.TXT"@de , "YS1-Fz-D1Q"@de ;
+        :hasLabelSource                "YS1-FzR4-S1Q"@en , "YS1-FzR4-S1Q"@de , "YS1-Sz0°-S1L"@de , "AFZ1-NZ50-25-D1Q"@en , "deepl translator"@en , "AFZ1-ST-D1"@en , "standard definition specific"@en , "AFZ1-Fz-S1Q.xlsx"@de , "K-Type"@en , "AFZ-BU-S1.TXT"@de , "YS1-Fz-D1Q"@de ;
         :hasTypicalUnitLabel           "einheitslos" .
 
 :Stress  rdf:type                      skos:Concept , owl:Class ;
@@ -6217,6 +6249,12 @@
         rdfs:label      "hasOriginalCrossSection"@en ;
         rdfs:range      "https://w3id.org/steel/ProcessOntology/OriginalCrossSection" ;
         skos:preflabel  "hasOriginalCrossSection"@en .
+
+:hasMeasuringDeviceObject
+        rdf:type        owl:ObjectProperty , rdf:Property ;
+        rdfs:label      "hasMeasuringDevice"@en ;
+        rdfs:range      "https://w3id.org/steel/ProcessOntology/MeasuringDevice" ;
+        skos:preflabel  "hasMeasuringDevice"@en .
 
 :Job    rdf:type        owl:Class ;
         rdfs:label      "Job"@en , "Job"@de ;

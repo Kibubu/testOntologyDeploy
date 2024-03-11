@@ -76,11 +76,6 @@
         }
       ,
       {
-        "value" : "142003",
-        "type" : "literal"
-        }
-      ,
-      {
         "value" : "324116",
         "type" : "literal"
         }
@@ -117,12 +112,6 @@
       ,
       {
         "value" : "AWA_1_01_Rz-46N171",
-        "lang" : "de",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "DX56_D_FZ2_WR00_43.TXT",
         "lang" : "de",
         "type" : "literal"
         }

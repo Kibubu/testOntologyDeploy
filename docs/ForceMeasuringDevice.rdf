@@ -16,9 +16,6 @@
     <ns0:comment xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">Type of the force transducer</ns0:comment>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/ForceMeasuringDevice">
-    <ns0:comment xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">Type of the force transducer. (description replaced by Zugversuch Instron)</ns0:comment>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/ForceMeasuringDevice">
     <ns0:comment xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">Type of the force measurement (force transducer, strain gauges, ....)</ns0:comment>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/ForceMeasuringDevice">
@@ -56,12 +53,6 @@
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/ForceMeasuringDevice">
     <ns0:hasExampleData xmlns:ns0="https://w3id.org/steel/ProcessOntology/">Bulge Druck: Öldruckaufnehmer in der Kammer unterhalb der Probe, Tiefungskraft: Öldruckaufnehmer am Tiefungskolben</ns0:hasExampleData>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/ForceMeasuringDevice">
-    <ns0:hasExampleData xmlns:ns0="https://w3id.org/steel/ProcessOntology/">xForce K</ns0:hasExampleData>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/ForceMeasuringDevice">
-    <ns0:hasLabelSource xmlns:ns0="https://w3id.org/steel/ProcessOntology/" xml:lang="de">DX56_D_FZ2_WR00_43.TXT</ns0:hasLabelSource>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/ForceMeasuringDevice">
     <ns0:hasLabelSource xmlns:ns0="https://w3id.org/steel/ProcessOntology/" xml:lang="en">DIN EN ISO 6892-1, G.3.1.1</ns0:hasLabelSource>

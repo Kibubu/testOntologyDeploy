@@ -2029,12 +2029,6 @@
       
       ],
     "https://w3id.org/steel/ProcessOntology/hasLabelSource" : [ {
-        "value" : "AFZ1-Fz-101Q.xlm",
-        "lang" : "de",
-        "type" : "literal"
-        }
-      ,
-      {
         "value" : "AFZ1-Fz-S1Q.xlsx",
         "lang" : "de",
         "type" : "literal"
@@ -2184,12 +2178,6 @@
       
       ],
     "https://w3id.org/steel/ProcessOntology/hasLabelSource" : [ {
-        "value" : "AFZ1-Fz-S1Q.xlm",
-        "lang" : "de",
-        "type" : "literal"
-        }
-      ,
-      {
         "value" : "AFZ1-Fz-S1Q.xlsx",
         "lang" : "de",
         "type" : "literal"
@@ -3511,21 +3499,10 @@
         "value" : "Tiefungskolben",
         "type" : "literal"
         }
-      ,
-      {
-        "value" : "makroXtens",
-        "type" : "literal"
-        }
       
       ],
     "https://w3id.org/steel/ProcessOntology/hasLabelSource" : [ {
         "value" : "AFZ-BU-S1.TXT",
-        "lang" : "de",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "DX56_D_FZ2_WR00_43.TXT",
         "lang" : "de",
         "type" : "literal"
         }
@@ -4839,12 +4816,6 @@
       
       ],
     "https://w3id.org/steel/ProcessOntology/hasLabelSource" : [ {
-        "value" : "AFZ1-Fz-S1Q.xlm",
-        "lang" : "en",
-        "type" : "literal"
-        }
-      ,
-      {
         "value" : "AFZ1-Fz-S1Q.xlsx",
         "lang" : "en",
         "type" : "literal"
@@ -5743,12 +5714,6 @@
       
       ],
     "https://w3id.org/steel/ProcessOntology/hasLabelSource" : [ {
-        "value" : "AFZ1-Fz-S1Q.xlm",
-        "lang" : "de",
-        "type" : "literal"
-        }
-      ,
-      {
         "value" : "AFZ1-Fz-S1Q.xlsx",
         "lang" : "de",
         "type" : "literal"
@@ -5896,12 +5861,6 @@
       
       ],
     "https://w3id.org/steel/ProcessOntology/hasLabelSource" : [ {
-        "value" : "AFZ1-Fz-S1Q.xlm",
-        "lang" : "de",
-        "type" : "literal"
-        }
-      ,
-      {
         "value" : "AFZ1-Fz-S1Q.xlsx",
         "lang" : "de",
         "type" : "literal"
@@ -6146,12 +6105,6 @@
     "https://w3id.org/steel/ProcessOntology/hasLabelSource" : [ {
         "value" : " ",
         "lang" : "en",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "AFZ1-Fz-S1Q.xlm",
-        "lang" : "de",
         "type" : "literal"
         }
       ,
@@ -7537,12 +7490,6 @@
         }
       ,
       {
-        "value" : "AFZ1-Fz-S1Q.xlm",
-        "lang" : "de",
-        "type" : "literal"
-        }
-      ,
-      {
         "value" : "AFZ1-Fz-S1Q.xlsx",
         "lang" : "de",
         "type" : "literal"
@@ -7718,12 +7665,6 @@
         "lang" : "en",
         "type" : "literal"
         }
-      ,
-      {
-        "value" : "Type of the force transducer. (description replaced by Zugversuch Instron)",
-        "lang" : "en",
-        "type" : "literal"
-        }
       
       ],
     "http://www.w3.org/2000/01/rdf-schema#label" : [ {
@@ -7800,11 +7741,6 @@
         "value" : "Bulge Druck: \u00D6ldruckaufnehmer in der Kammer unterhalb der Probe, Tiefungskraft: \u00D6ldruckaufnehmer am Tiefungskolben",
         "type" : "literal"
         }
-      ,
-      {
-        "value" : "xForce K",
-        "type" : "literal"
-        }
       
       ],
     "https://w3id.org/steel/ProcessOntology/hasLabelSource" : [ {
@@ -7834,12 +7770,6 @@
       {
         "value" : "DIN EN ISO 6892-1, G.3.1.1",
         "lang" : "en",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "DX56_D_FZ2_WR00_43.TXT",
-        "lang" : "de",
         "type" : "literal"
         }
       
@@ -12038,11 +11968,6 @@
         }
       ,
       {
-        "value" : "DX56D",
-        "type" : "literal"
-        }
-      ,
-      {
         "value" : "H340LAD",
         "type" : "literal"
         }
@@ -12060,12 +11985,6 @@
       ],
     "https://w3id.org/steel/ProcessOntology/hasLabelSource" : [ {
         "value" : "AFZ-BU-S1.TXT",
-        "lang" : "de",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "AFZ1-Fz-S1Q.xlm",
         "lang" : "de",
         "type" : "literal"
         }
@@ -12125,12 +12044,6 @@
         }
       ,
       {
-        "value" : "DX56_D_FZ2_WR00_43.TXT",
-        "lang" : "de",
-        "type" : "literal"
-        }
-      ,
-      {
         "value" : "General Knowledge",
         "lang" : "de",
         "type" : "literal"
@@ -12163,12 +12076,6 @@
       {
         "value" : "YS1-Sz0\u00B0-S1L",
         "lang" : "de",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "deepl translator",
-        "lang" : "en",
         "type" : "literal"
         }
       
@@ -12614,12 +12521,6 @@
       
       ],
     "https://w3id.org/steel/ProcessOntology/hasLabelSource" : [ {
-        "value" : "AFZ1-Fz-S1Q.xlm",
-        "lang" : "de",
-        "type" : "literal"
-        }
-      ,
-      {
         "value" : "AFZ1-Fz-S1Q.xlsx",
         "lang" : "de",
         "type" : "literal"
@@ -13843,12 +13744,6 @@
       
       ],
     "https://w3id.org/steel/ProcessOntology/hasLabelSource" : [ {
-        "value" : "AFZ1-Fz-S1Q.xlm",
-        "lang" : "en",
-        "type" : "literal"
-        }
-      ,
-      {
         "value" : "AFZ1-Fz-S1Q.xlsx",
         "lang" : "en",
         "type" : "literal"
@@ -14349,12 +14244,6 @@
       
       ],
     "https://w3id.org/steel/ProcessOntology/hasLabelSource" : [ {
-        "value" : "AFZ1-Fz-S1Q.xlm",
-        "lang" : "en",
-        "type" : "literal"
-        }
-      ,
-      {
         "value" : "AFZ1-Fz-S1Q.xlsx",
         "lang" : "en",
         "type" : "literal"
@@ -15132,12 +15021,6 @@
       
       ],
     "https://w3id.org/steel/ProcessOntology/hasLabelSource" : [ {
-        "value" : "AFZ1-Fz-S1Q.xlm",
-        "lang" : "en",
-        "type" : "literal"
-        }
-      ,
-      {
         "value" : "AFZ1-Fz-S1Q.xlsx",
         "lang" : "en",
         "type" : "literal"
@@ -15225,12 +15108,6 @@
       
       ],
     "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-        "value" : "Crosssection of the sample.",
-        "lang" : "en",
-        "type" : "literal"
-        }
-      ,
-      {
         "value" : "original cross-sectional area of the parallel length",
         "lang" : "en",
         "type" : "literal"
@@ -15263,20 +15140,8 @@
         }
       ,
       {
-        "value" : "Crosssection",
-        "lang" : "en",
-        "type" : "literal"
-        }
-      ,
-      {
         "value" : "Original cross section",
         "lang" : "en",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "Querschnitt",
-        "lang" : "de",
         "type" : "literal"
         }
       ,
@@ -15319,18 +15184,6 @@
       
       ],
     "https://w3id.org/steel/ProcessOntology/hasLabelSource" : [ {
-        "value" : "Author",
-        "lang" : "de",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "Author",
-        "lang" : "en",
-        "type" : "literal"
-        }
-      ,
-      {
         "value" : "YS1-Fz-D1Q",
         "lang" : "de",
         "type" : "literal"
@@ -15598,12 +15451,6 @@
       
       ],
     "https://w3id.org/steel/ProcessOntology/hasLabelSource" : [ {
-        "value" : "AFZ1-Fz-S1Q.xlm",
-        "lang" : "de",
-        "type" : "literal"
-        }
-      ,
-      {
         "value" : "AFZ1-Fz-S1Q.xlsx",
         "lang" : "de",
         "type" : "literal"
@@ -15815,12 +15662,6 @@
       
       ],
     "https://w3id.org/steel/ProcessOntology/hasLabelSource" : [ {
-        "value" : "AFZ1-Fz-S1Q.xlm",
-        "lang" : "de",
-        "type" : "literal"
-        }
-      ,
-      {
         "value" : "AFZ1-Fz-S1Q.xlsx",
         "lang" : "de",
         "type" : "literal"
@@ -16027,12 +15868,6 @@
       
       ],
     "https://w3id.org/steel/ProcessOntology/hasLabelSource" : [ {
-        "value" : "AFZ1-Fz-S1Q.xlm",
-        "lang" : "de",
-        "type" : "literal"
-        }
-      ,
-      {
         "value" : "AFZ1-Fz-S1Q.xlsx",
         "lang" : "de",
         "type" : "literal"
@@ -16228,12 +16063,6 @@
       
       ],
     "https://w3id.org/steel/ProcessOntology/hasLabelSource" : [ {
-        "value" : "AFZ1-Fz-101Q.xlm",
-        "lang" : "de",
-        "type" : "literal"
-        }
-      ,
-      {
         "value" : "AFZ1-Fz-S1Q.xlsx",
         "lang" : "de",
         "type" : "literal"
@@ -16490,12 +16319,6 @@
       
       ],
     "https://w3id.org/steel/ProcessOntology/hasLabelSource" : [ {
-        "value" : "AFZ1-Fz-S1Q.xlm",
-        "lang" : "en",
-        "type" : "literal"
-        }
-      ,
-      {
         "value" : "AFZ1-Fz-S1Q.xlsx",
         "lang" : "en",
         "type" : "literal"
@@ -16655,12 +16478,6 @@
     "https://w3id.org/steel/ProcessOntology/hasLabelSource" : [ {
         "value" : "AFZ1-Fz-S1Q.xlm",
         "lang" : "de",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "AFZ1-Fz-S1Q.xlm",
-        "lang" : "en",
         "type" : "literal"
         }
       ,
@@ -17047,12 +16864,6 @@
       
       ],
     "https://w3id.org/steel/ProcessOntology/hasLabelSource" : [ {
-        "value" : "AFZ1-Fz-S1Q.xlm",
-        "lang" : "en",
-        "type" : "literal"
-        }
-      ,
-      {
         "value" : "AFZ1-Fz-S1Q.xlsx",
         "lang" : "en",
         "type" : "literal"
@@ -17223,12 +17034,6 @@
       
       ],
     "https://w3id.org/steel/ProcessOntology/hasLabelSource" : [ {
-        "value" : "AFZ1-Fz-S1Q.xlm",
-        "lang" : "en",
-        "type" : "literal"
-        }
-      ,
-      {
         "value" : "AFZ1-Fz-S1Q.xlsx",
         "lang" : "en",
         "type" : "literal"
@@ -18116,12 +17921,6 @@
       
       ],
     "https://w3id.org/steel/ProcessOntology/hasLabelSource" : [ {
-        "value" : "AFZ1-Fz-S1Q.xlm",
-        "lang" : "en",
-        "type" : "literal"
-        }
-      ,
-      {
         "value" : "AFZ1-Fz-S1Q.xlsx",
         "lang" : "en",
         "type" : "literal"
@@ -18666,11 +18465,6 @@
       
       ],
     "https://w3id.org/steel/ProcessOntology/hasExampleData" : [ {
-        "value" : "3D-Blechmodelle2",
-        "type" : "literal"
-        }
-      ,
-      {
         "value" : "Crashartig",
         "type" : "literal"
         }
@@ -18698,12 +18492,6 @@
         }
       ,
       {
-        "value" : "AFZ1-Fz-S1Q.xlm",
-        "lang" : "de",
-        "type" : "literal"
-        }
-      ,
-      {
         "value" : "AFZ1-Fz-S1Q.xlsx",
         "lang" : "de",
         "type" : "literal"
@@ -18717,12 +18505,6 @@
       ,
       {
         "value" : "AWA_1_01_Rz-46N171",
-        "lang" : "de",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "DX56_D_FZ2_WR00_43.TXT",
         "lang" : "de",
         "type" : "literal"
         }
@@ -18836,11 +18618,6 @@
         }
       ,
       {
-        "value" : "142003",
-        "type" : "literal"
-        }
-      ,
-      {
         "value" : "324116",
         "type" : "literal"
         }
@@ -18877,12 +18654,6 @@
       ,
       {
         "value" : "AWA_1_01_Rz-46N171",
-        "lang" : "de",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "DX56_D_FZ2_WR00_43.TXT",
         "lang" : "de",
         "type" : "literal"
         }
@@ -19150,12 +18921,6 @@
       
       ],
     "https://w3id.org/steel/ProcessOntology/hasLabelSource" : [ {
-        "value" : "AFZ1-Fz-S1Q.xlm",
-        "lang" : "en",
-        "type" : "literal"
-        }
-      ,
-      {
         "value" : "AFZ1-Fz-S1Q.xlsx",
         "lang" : "en",
         "type" : "literal"
@@ -19248,12 +19013,6 @@
       
       ],
     "https://w3id.org/steel/ProcessOntology/hasLabelSource" : [ {
-        "value" : "AFZ1-Fz-S1Q.xlm",
-        "lang" : "en",
-        "type" : "literal"
-        }
-      ,
-      {
         "value" : "AFZ1-Fz-S1Q.xlsx",
         "lang" : "en",
         "type" : "literal"
@@ -19816,12 +19575,6 @@
       
       ],
     "https://w3id.org/steel/ProcessOntology/hasLabelSource" : [ {
-        "value" : "AFZ1-Fz-S1Q.xlm",
-        "lang" : "en",
-        "type" : "literal"
-        }
-      ,
-      {
         "value" : "AFZ1-Fz-S1Q.xlsx",
         "lang" : "en",
         "type" : "literal"
@@ -21028,12 +20781,6 @@
       ,
       {
         "value" : "AFZ-BU-S1.TXT",
-        "lang" : "de",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "AFZ1-Fz-S1Q.xlm",
         "lang" : "de",
         "type" : "literal"
         }
@@ -22894,12 +22641,6 @@
       
       ],
     "https://w3id.org/steel/ProcessOntology/hasLabelSource" : [ {
-        "value" : "AFZ1-Fz-S1Q.xlm",
-        "lang" : "en",
-        "type" : "literal"
-        }
-      ,
-      {
         "value" : "AFZ1-Fz-S1Q.xlsx",
         "lang" : "en",
         "type" : "literal"
@@ -23910,12 +23651,6 @@
       
       ],
     "https://w3id.org/steel/ProcessOntology/hasLabelSource" : [ {
-        "value" : "AFZ1-Fz-S1Q.xlm",
-        "lang" : "en",
-        "type" : "literal"
-        }
-      ,
-      {
         "value" : "AFZ1-Fz-S1Q.xlsx",
         "lang" : "en",
         "type" : "literal"
@@ -24078,12 +23813,6 @@
         }
       ,
       {
-        "value" : "Maschinendaten",
-        "lang" : "de",
-        "type" : "literal"
-        }
-      ,
-      {
         "value" : "Pr\u00FCfmaschine",
         "lang" : "de",
         "type" : "literal"
@@ -24132,20 +23861,9 @@
         "value" : "Instron 5985",
         "type" : "literal"
         }
-      ,
-      {
-        "value" : "ZwickRoell Kappa50DS",
-        "type" : "literal"
-        }
       
       ],
     "https://w3id.org/steel/ProcessOntology/hasLabelSource" : [ {
-        "value" : "AFZ1-Fz-S1Q.xlm",
-        "lang" : "de",
-        "type" : "literal"
-        }
-      ,
-      {
         "value" : "AFZ1-Fz-S1Q.xlsx",
         "lang" : "de",
         "type" : "literal"
@@ -24160,12 +23878,6 @@
       {
         "value" : "DIN EN ISO 6892-1, A.2.1",
         "lang" : "en",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "DX56_D_FZ2_WR00_43.TXT",
-        "lang" : "de",
         "type" : "literal"
         }
       
@@ -24454,12 +24166,6 @@
         }
       ,
       {
-        "value" : "Specimen type",
-        "lang" : "en",
-        "type" : "literal"
-        }
-      ,
-      {
         "value" : "Test piece geometry",
         "lang" : "en",
         "type" : "literal"
@@ -24488,11 +24194,6 @@
       ],
     "https://w3id.org/steel/ProcessOntology/hasExampleData" : [ {
         "value" : "Crashbox",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "FZ2 (L0=80_b0=20_R20)",
         "type" : "literal"
         }
       ,
@@ -24529,12 +24230,6 @@
         }
       ,
       {
-        "value" : "AFZ1-Fz-S1Q.xlm",
-        "lang" : "de",
-        "type" : "literal"
-        }
-      ,
-      {
         "value" : "AFZ1-Fz-S1Q.xlsx",
         "lang" : "de",
         "type" : "literal"
@@ -24565,12 +24260,6 @@
         }
       ,
       {
-        "value" : "DX56_D_FZ2_WR00_43.TXT",
-        "lang" : "de",
-        "type" : "literal"
-        }
-      ,
-      {
         "value" : "YS1-Fz-D1Q",
         "lang" : "de",
         "type" : "literal"
@@ -24591,12 +24280,6 @@
       {
         "value" : "YS1-Sz0\u00B0-S1L",
         "lang" : "de",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "deepl translator",
-        "lang" : "en",
         "type" : "literal"
         }
       
@@ -24810,18 +24493,6 @@
         "lang" : "en",
         "type" : "literal"
         }
-      ,
-      {
-        "value" : "DX56_D_FZ2_WR00_43.TXT",
-        "lang" : "de",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "deepl translator",
-        "lang" : "en",
-        "type" : "literal"
-        }
       
       ]
     }
@@ -25000,12 +24671,6 @@
       
       ],
     "https://w3id.org/steel/ProcessOntology/hasLabelSource" : [ {
-        "value" : "AFZ1-Fz-S1Q.xlm",
-        "lang" : "de",
-        "type" : "literal"
-        }
-      ,
-      {
         "value" : "AFZ1-Fz-S1Q.xlsx",
         "lang" : "de",
         "type" : "literal"
@@ -25213,12 +24878,6 @@
         "lang" : "de",
         "type" : "literal"
         }
-      ,
-      {
-        "value" : "Tester",
-        "lang" : "en",
-        "type" : "literal"
-        }
       
       ],
     "http://www.w3.org/2004/02/skos/core#preflabel" : [ {
@@ -25239,11 +24898,6 @@
         "value" : "K\u00FCrzel",
         "type" : "literal"
         }
-      ,
-      {
-        "value" : "Name, ID",
-        "type" : "literal"
-        }
       
       ],
     "https://w3id.org/steel/ProcessOntology/hasLabelSource" : [ {
@@ -25253,19 +24907,7 @@
         }
       ,
       {
-        "value" : "AFZ1-Fz-S1Q.xlm",
-        "lang" : "de",
-        "type" : "literal"
-        }
-      ,
-      {
         "value" : "AFZ1-Fz-S1Q.xlsx",
-        "lang" : "de",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "DX56_D_FZ2_WR00_43.TXT",
         "lang" : "de",
         "type" : "literal"
         }
@@ -25279,12 +24921,6 @@
       {
         "value" : "YS1-Sz0\u00B0-S1L",
         "lang" : "de",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "deepl translator",
-        "lang" : "en",
         "type" : "literal"
         }
       
@@ -25363,12 +24999,6 @@
       
       ],
     "https://w3id.org/steel/ProcessOntology/hasLabelSource" : [ {
-        "value" : "AFZ1-Fz-S1Q.xlm",
-        "lang" : "de",
-        "type" : "literal"
-        }
-      ,
-      {
         "value" : "AFZ1-Fz-S1Q.xlsx",
         "lang" : "de",
         "type" : "literal"
@@ -25462,12 +25092,6 @@
       ],
     "https://w3id.org/steel/ProcessOntology/hasLabelSource" : [ {
         "value" : "AFZ-BU-S1.TXT",
-        "lang" : "de",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "DX56_D_FZ2_WR00_43.TXT",
         "lang" : "de",
         "type" : "literal"
         }
@@ -25729,12 +25353,6 @@
       
       ],
     "https://w3id.org/steel/ProcessOntology/hasLabelSource" : [ {
-        "value" : "AFZ1-Fz-S1Q.xlm",
-        "lang" : "de",
-        "type" : "literal"
-        }
-      ,
-      {
         "value" : "AFZ1-Fz-S1Q.xlsx",
         "lang" : "de",
         "type" : "literal"
@@ -25801,12 +25419,6 @@
       
       ],
     "https://w3id.org/steel/ProcessOntology/hasLabelSource" : [ {
-        "value" : "AFZ1-Fz-S1Q.xlm",
-        "lang" : "de",
-        "type" : "literal"
-        }
-      ,
-      {
         "value" : "AFZ1-Fz-S1Q.xlsx",
         "lang" : "de",
         "type" : "literal"
@@ -25958,12 +25570,6 @@
       ],
     "https://w3id.org/steel/ProcessOntology/hasLabelSource" : [ {
         "value" : "AFZ-BU-S1.TXT",
-        "lang" : "de",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "AFZ1-Fz-S1Q.xlm",
         "lang" : "de",
         "type" : "literal"
         }
@@ -26414,11 +26020,6 @@
         }
       ,
       {
-        "value" : "44335.4",
-        "type" : "literal"
-        }
-      ,
-      {
         "value" : "45093.6",
         "type" : "literal"
         }
@@ -26426,12 +26027,6 @@
       ],
     "https://w3id.org/steel/ProcessOntology/hasLabelSource" : [ {
         "value" : "AFZ-BU-S1.TXT",
-        "lang" : "de",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "AFZ1-Fz-S1Q.xlm",
         "lang" : "de",
         "type" : "literal"
         }
@@ -26451,12 +26046,6 @@
       {
         "value" : "AFZ1-ST-D1",
         "lang" : "en",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "DX56_D_FZ2_WR00_43.TXT",
-        "lang" : "de",
         "type" : "literal"
         }
       ,
@@ -26838,12 +26427,6 @@
       
       ],
     "https://w3id.org/steel/ProcessOntology/hasLabelSource" : [ {
-        "value" : "AFZ1-Fz-S1Q.xlm",
-        "lang" : "en",
-        "type" : "literal"
-        }
-      ,
-      {
         "value" : "AFZ1-Fz-S1Q.xlsx",
         "lang" : "en",
         "type" : "literal"
@@ -26892,12 +26475,6 @@
       
       ],
     "https://w3id.org/steel/ProcessOntology/hasLabelSource" : [ {
-        "value" : "AFZ1-Fz-S1Q.xlm",
-        "lang" : "en",
-        "type" : "literal"
-        }
-      ,
-      {
         "value" : "AFZ1-Fz-S1Q.xlsx",
         "lang" : "en",
         "type" : "literal"
@@ -27250,12 +26827,6 @@
       
       ],
     "https://w3id.org/steel/ProcessOntology/hasLabelSource" : [ {
-        "value" : "AFZ1-Fz-S1Q.xlm",
-        "lang" : "en",
-        "type" : "literal"
-        }
-      ,
-      {
         "value" : "AFZ1-Fz-S1Q.xlsx",
         "lang" : "en",
         "type" : "literal"
@@ -27392,12 +26963,6 @@
       
       ],
     "https://w3id.org/steel/ProcessOntology/hasLabelSource" : [ {
-        "value" : "AFZ1-Fz-S1Q.xlm",
-        "lang" : "en",
-        "type" : "literal"
-        }
-      ,
-      {
         "value" : "AFZ1-Fz-S1Q.xlsx",
         "lang" : "en",
         "type" : "literal"
@@ -28285,12 +27850,6 @@
       
       ],
     "https://w3id.org/steel/ProcessOntology/hasLabelSource" : [ {
-        "value" : "AFZ1-Fz-S1Q.xlm",
-        "lang" : "de",
-        "type" : "literal"
-        }
-      ,
-      {
         "value" : "AFZ1-Fz-S1Q.xlsx",
         "lang" : "de",
         "type" : "literal"
@@ -28351,12 +27910,6 @@
       
       ],
     "https://w3id.org/steel/ProcessOntology/hasLabelSource" : [ {
-        "value" : "AFZ1-Fz-S1Q.xlm",
-        "lang" : "de",
-        "type" : "literal"
-        }
-      ,
-      {
         "value" : "AFZ1-Fz-S1Q.xlsx",
         "lang" : "de",
         "type" : "literal"
@@ -28448,12 +28001,6 @@
       
       ],
     "https://w3id.org/steel/ProcessOntology/hasLabelSource" : [ {
-        "value" : "AFZ1-Fz-S1Q.xlm",
-        "lang" : "de",
-        "type" : "literal"
-        }
-      ,
-      {
         "value" : "AFZ1-Fz-S1Q.xlsx",
         "lang" : "de",
         "type" : "literal"

@@ -13,12 +13,6 @@
       
       ],
     "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-        "value" : "Crosssection of the sample.",
-        "lang" : "en",
-        "type" : "literal"
-        }
-      ,
-      {
         "value" : "original cross-sectional area of the parallel length",
         "lang" : "en",
         "type" : "literal"
@@ -51,20 +45,8 @@
         }
       ,
       {
-        "value" : "Crosssection",
-        "lang" : "en",
-        "type" : "literal"
-        }
-      ,
-      {
         "value" : "Original cross section",
         "lang" : "en",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "Querschnitt",
-        "lang" : "de",
         "type" : "literal"
         }
       ,
@@ -107,18 +89,6 @@
       
       ],
     "https://w3id.org/steel/ProcessOntology/hasLabelSource" : [ {
-        "value" : "Author",
-        "lang" : "de",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "Author",
-        "lang" : "en",
-        "type" : "literal"
-        }
-      ,
-      {
         "value" : "YS1-Fz-D1Q",
         "lang" : "de",
         "type" : "literal"

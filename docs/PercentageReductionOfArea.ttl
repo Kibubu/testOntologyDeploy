@@ -15,7 +15,6 @@
 <https://w3id.org/steel/ProcessOntology/PercentageReductionOfArea> <https://w3id.org/steel/ProcessOntology/hasDescriptionCitationSource> "Authors"@en .
 <https://w3id.org/steel/ProcessOntology/PercentageReductionOfArea> <https://w3id.org/steel/ProcessOntology/hasExampleData> "67.42" .
 <https://w3id.org/steel/ProcessOntology/PercentageReductionOfArea> <https://w3id.org/steel/ProcessOntology/hasExampleData> "78.0" .
-<https://w3id.org/steel/ProcessOntology/PercentageReductionOfArea> <https://w3id.org/steel/ProcessOntology/hasLabelSource> "AFZ1-Fz-S1Q.xlm"@en .
 <https://w3id.org/steel/ProcessOntology/PercentageReductionOfArea> <https://w3id.org/steel/ProcessOntology/hasLabelSource> "AFZ1-Fz-S1Q.xlsx"@en .
 <https://w3id.org/steel/ProcessOntology/PercentageReductionOfArea> <https://w3id.org/steel/ProcessOntology/hasLabelSource> "YS1-Sz0°-S1L"@de .
 <https://w3id.org/steel/ProcessOntology/PercentageReductionOfArea> <https://w3id.org/steel/ProcessOntology/hasLabelSource> "YS1-Fz-D1Q"@de .

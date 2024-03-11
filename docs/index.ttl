@@ -700,7 +700,7 @@
         skos:preflabel                 "PercentageReductionOfArea"@en ;
         :hasDescriptionCitationSource  "DIN EN ISO 6892-1, 3.8"@en , "DIN EN ISO 6892-1, 3.8"@de , "Authors"@en ;
         :hasExampleData                "67.42" , "78.0" ;
-        :hasLabelSource                "AFZ1-Fz-S1Q.xlm"@en , "AFZ1-Fz-S1Q.xlsx"@en , "YS1-Sz0°-S1L"@de , "YS1-Fz-D1Q"@de , "DIN EN ISO 6892-1, 3.8"@en , "DIN EN ISO 6892-1, 3.8"@de ;
+        :hasLabelSource                "AFZ1-Fz-S1Q.xlsx"@en , "YS1-Sz0°-S1L"@de , "YS1-Fz-D1Q"@de , "DIN EN ISO 6892-1, 3.8"@en , "DIN EN ISO 6892-1, 3.8"@de ;
         :hasSymbol                     "Z"@en ;
         :hasSymbolLatex                "Z"@en ;
         :hasTypicalUnitLabel           "%" ;
@@ -863,7 +863,7 @@
         skos:preflabel                 "EngineeringStress"@en ;
         :hasDescriptionCitationSource  "ISO 26203-2, 2011, 4"@en , "Authors"@de ;
         :hasExampleData                "9751" ;
-        :hasLabelSource                "YS1-Fz-D1Q"@de , "YS1-FzR4-S1Q"@en , "YS1-FzR4-S1Q"@de , "AFZ1-Fz-S1Q.xlsx"@en , "Standard definition specific"@de , "AFZ1-Fz-S1Q.xlm"@en , "ISO 26203-2, 2011, 4"@en , "YS1-Sz0°-S1L"@de ;
+        :hasLabelSource                "YS1-Fz-D1Q"@de , "YS1-FzR4-S1Q"@en , "YS1-FzR4-S1Q"@de , "AFZ1-Fz-S1Q.xlsx"@en , "Standard definition specific"@de , "ISO 26203-2, 2011, 4"@en , "YS1-Sz0°-S1L"@de ;
         :hasSymbol                     "R"@en , "Sig-technisch"@en ;
         :hasSymbolLatex                "R"@en , "Sig-technisch"@en ;
         :hasTypicalUnitLabel           "MPa" ;
@@ -1083,14 +1083,14 @@
         skos:preflabel      "hasPreliminaryForce_MPa"@en ;
         :hasUnitLabel       "MPa" .
 
-:Material  rdf:type                    skos:Concept , owl:Class ;
-        rdfs:comment                   "Bezeichnung des Werkstoffs."@de , "The material used in the experiment."@en ;
+:Material  rdf:type                    owl:Class , skos:Concept ;
+        rdfs:comment                   "The material used in the experiment."@en , "Bezeichnung des Werkstoffs."@de ;
         rdfs:label                     "Material"@en ;
-        skos:altlabel                  "Werkstoff"@de , "MATERIAL_NAME"@en , "Material"@de , "Material"@en , "material"@en ;
+        skos:altlabel                  "Werkstoff"@de , "Material"@en , "Material"@de , "MATERIAL_NAME"@en , "material"@en ;
         skos:preflabel                 "Material"@en ;
-        :hasDescriptionCitationSource  "General Knowledge"@de , "General Knowledge"@en , "Authors"@en , "DIN EN ISO 16808:2022-08, 12"@de , "DIN EN ISO 16808:2022-08, 12"@en ;
-        :hasExampleData                "ZStE340" , "DX56D" , "H340LAD" , "HX340LAD" , "42CrMoS4" ;
-        :hasLabelSource                "AFZ1-Fz-S1Q.xlsx"@de , "AFZ-BU-S1.TXT"@de , "DIN EN ISO 16808:2022-08, 12"@de , "DIN EN ISO 16808:2022-08, 12"@en , "YS1-FzR4-S1Q"@de , "YS1-FzR4-S1Q"@en , "deepl translator"@en , "General Knowledge"@de , "General Knowledge"@en , "AFZ1-ST-D1"@en , "AFZ1-Fz-S1Q.xlm"@de , "AFZ1-NZ50-25-D1Q"@de , "AFZ1-NZ50-25-D1Q"@en , "AWA_1_01_Rz-46N171"@de , "DX56_D_FZ2_WR00_43.TXT"@de , "YS1-Sz0°-S1L"@de , "YS1-Fz-D1Q"@de , "DIN EN ISO 12004-2: 2021_07, 7"@de , "DIN EN ISO 12004-2: 2021_07"@en .
+        :hasDescriptionCitationSource  "Authors"@en , "DIN EN ISO 16808:2022-08, 12"@en , "DIN EN ISO 16808:2022-08, 12"@de , "General Knowledge"@en , "General Knowledge"@de ;
+        :hasExampleData                "42CrMoS4" , "ZStE340" , "HX340LAD" , "H340LAD" ;
+        :hasLabelSource                "DIN EN ISO 16808:2022-08, 12"@en , "DIN EN ISO 16808:2022-08, 12"@de , "AWA_1_01_Rz-46N171"@de , "AFZ1-NZ50-25-D1Q"@en , "AFZ1-NZ50-25-D1Q"@de , "General Knowledge"@en , "General Knowledge"@de , "AFZ1-Fz-S1Q.xlsx"@de , "YS1-Fz-D1Q"@de , "AFZ1-ST-D1"@en , "DIN EN ISO 12004-2: 2021_07"@en , "AFZ-BU-S1.TXT"@de , "DIN EN ISO 12004-2: 2021_07, 7"@de , "YS1-FzR4-S1Q"@en , "YS1-FzR4-S1Q"@de , "YS1-Sz0°-S1L"@de .
 
 <https://w3id.org/steel/ProcessOntology/hasPercentagePermanentElongation_%25>
         rdf:type            owl:DatatypeProperty , rdf:Property ;
@@ -1537,7 +1537,7 @@
         skos:related                   :MeasuringRange ;
         :hasDescriptionCitationSource  "ISO 26203-2, 2011, 4"@en , "Authors"@en , "Authors"@de ;
         :hasExampleData                "7690" , "500 kN" , "7008" ;
-        :hasLabelSource                "K-Item"@de , "ISO 26203-2, 2011, 4"@en , "Standard definition specific"@de , "AFZ1-Fz-S1Q.xlsx"@de , "YS1-Sz0°-S1L"@de , "YS1-FzR4-S1Q"@de , "AFZ1-Fz-S1Q.xlm"@de ;
+        :hasLabelSource                "K-Item"@de , "ISO 26203-2, 2011, 4"@en , "Standard definition specific"@de , "AFZ1-Fz-S1Q.xlsx"@de , "YS1-Sz0°-S1L"@de , "YS1-FzR4-S1Q"@de ;
         :hasSymbol                     "Fm"@en ;
         :hasSymbolLatex                "Fm"@en , "F_{m}"@en ;
         :hasTypicalUnitLabel           "N" , "kN" ;
@@ -1579,7 +1579,7 @@
         rdfs:label       "TrueFractureStrain"@en ;
         skos:altlabel    "Epsilon True Frac"@en ;
         skos:preflabel   "TrueFractureStrain"@en ;
-        :hasLabelSource  "AFZ1-Fz-S1Q.xlsx"@en , "AFZ1-Fz-S1Q.xlm"@en ;
+        :hasLabelSource  "AFZ1-Fz-S1Q.xlsx"@en ;
         :isBasedOn       :TrueStrain .
 
 :related  rdf:type      owl:ObjectProperty ;
@@ -1775,7 +1775,7 @@
         skos:related                   :TestPieceGeometry ;
         :hasDescriptionCitationSource  "DIN EN ISO 6892-1, 3.2"@en , "DIN EN ISO 6892-1, 3.2"@de , "Authors"@en ;
         :hasExampleData                "25" , "120" ;
-        :hasLabelSource                "YS1-Fz-D1Q"@de , "ISO 26203-2, 2011, 4"@en , "AFZ1-Fz-S1Q.xlsx"@de , "DIN EN ISO 6892-1, 3.2"@en , "DIN EN ISO 6892-1, 3.2"@de , "DX56_D_FZ2_WR00_43.TXT"@de , "AFZ1-Fz-101Q.xlm"@de ;
+        :hasLabelSource                "YS1-Fz-D1Q"@de , "ISO 26203-2, 2011, 4"@en , "AFZ1-Fz-S1Q.xlsx"@de , "DIN EN ISO 6892-1, 3.2"@en , "DIN EN ISO 6892-1, 3.2"@de , "DX56_D_FZ2_WR00_43.TXT"@de ;
         :hasSymbol                     "L_{c}"@en , "Lc"@en ;
         :hasSymbolLatex                "L_c"@en ;
         :hasTypicalUnitLabel           "mm" .
@@ -1944,7 +1944,7 @@
         skos:related                   :ModulusOfElasticity ;
         :hasDescriptionCitationSource  "DIN EN ISO 6892-1, 3.6.5"@en , "DIN EN ISO 6892-1, 3.6.5"@de , "Authors"@en , "ISO 26203-2, 2011, 4"@en ;
         :hasExampleData                "16.34" , "14" ;
-        :hasLabelSource                "YS1-Fz-D1Q"@de , "ISO 26203-2, 2011, 4"@en , "AFZ1-Fz-S1Q.xlm"@en , "DIN EN ISO 6892-1, 3.6.5"@en , "DIN EN ISO 6892-1, 3.6.5"@de , "AFZ1-Fz-S1Q.xlsx"@en ;
+        :hasLabelSource                "YS1-Fz-D1Q"@de , "ISO 26203-2, 2011, 4"@en , "DIN EN ISO 6892-1, 3.6.5"@en , "DIN EN ISO 6892-1, 3.6.5"@de , "AFZ1-Fz-S1Q.xlsx"@en ;
         :hasSymbol                     "A_{g}"@en , "Ag"@en ;
         :hasSymbolLatex                "A_{g}"@en , "A_g"@en ;
         :hasTypicalUnitLabel           "%" ;
@@ -2045,8 +2045,8 @@
         skos:altlabel                  "Date"@en , "Date/Time"@en , "Datum/Uhrzeit"@de , "Datum"@de ;
         skos:preflabel                 "TimeStamp"@en ;
         :hasDescriptionCitationSource  "Authors"@en ;
-        :hasExampleData                "10-11-16" , "13/06/2016" , "44335.4" , "45093.6" , "11.03.2016" ;
-        :hasLabelSource                "AFZ-BU-S1.TXT"@de , "AFZ1-NZ50-25-D1Q"@en , "AFZ1-ST-D1"@en , "AFZ1-Fz-S1Q.xlsx"@de , "YS1-Sz0°-S1L"@de , "deepl translator"@en , "DX56_D_FZ2_WR00_43.TXT"@de , "YS1-Fz-D1Q"@de , "YS1-FzR4-S1Q"@en , "YS1-FzR4-S1Q"@de , "AFZ1-Fz-S1Q.xlm"@de .
+        :hasExampleData                "10-11-16" , "13/06/2016" , "45093.6" , "11.03.2016" ;
+        :hasLabelSource                "AFZ-BU-S1.TXT"@de , "AFZ1-NZ50-25-D1Q"@en , "AFZ1-ST-D1"@en , "AFZ1-Fz-S1Q.xlsx"@de , "YS1-Sz0°-S1L"@de , "deepl translator"@en , "YS1-Fz-D1Q"@de , "YS1-FzR4-S1Q"@en , "YS1-FzR4-S1Q"@de .
 
 :CrystalPlasticityConstitutiveModel
         rdf:type                       owl:Class , skos:Concept ;
@@ -2201,7 +2201,7 @@
         skos:preflabel                 "PercentageExtension"@en ;
         :hasDescriptionCitationSource  "Authors"@en ;
         :hasExampleData                "0.001" , "0.002" ;
-        :hasLabelSource                "AFZ1-Fz-S1Q.xlm"@en , "AFZ1-Fz-S1Q.xlm"@de , "YS1-Fz-D1Q"@de , "AFZ1-Fz-S1Q.xlsx"@en ;
+        :hasLabelSource                "AFZ1-Fz-S1Q.xlm"@de , "YS1-Fz-D1Q"@de , "AFZ1-Fz-S1Q.xlsx"@en ;
         :hasSymbol                     "eps-technisch"@en ;
         :hasSymbolLatex                "eps-technisch"@en ;
         :hasTypicalUnitLabel           "- " , "1" ;
@@ -2338,7 +2338,7 @@
         skos:preflabel                 "ProofStrength_0.2Percentage"@en ;
         :hasDescriptionCitationSource  "Authors"@en ;
         :hasExampleData                "397" ;
-        :hasLabelSource                "AFZ1-Fz-S1Q.xlsx"@en , "AFZ1-Fz-S1Q.xlm"@en ;
+        :hasLabelSource                "AFZ1-Fz-S1Q.xlsx"@en ;
         :hasSymbol                     "Rp02"@en ;
         :hasSymbolLatex                "R_{p02}"@en ;
         :hasTypicalUnitLabel           "MPa" ;
@@ -2584,7 +2584,7 @@
         skos:preflabel                 "WidthChange"@en ;
         :hasDescriptionCitationSource  "Authors"@en ;
         :hasExampleData                "0.001" , "1.14004e-06" ;
-        :hasLabelSource                "AFZ1-Fz-S1Q.xlm"@de , "DX56_D_FZ2_WR00_43.TXT"@de , "deepl translator"@en , "AFZ1-Fz-S1Q.xlsx"@de ;
+        :hasLabelSource                "DX56_D_FZ2_WR00_43.TXT"@de , "deepl translator"@en , "AFZ1-Fz-S1Q.xlsx"@de ;
         :hasTypicalUnitLabel           "mm" ;
         :isBasedOn                     :Width .
 
@@ -2594,7 +2594,7 @@
         skos:altlabel         "Probenbreite B2 nach Bruch"@de ;
         skos:preflabel        "WidthAfterFracture2"@en ;
         skos:related          :WidthAfterFracture1 ;
-        :hasLabelSource       "AFZ1-Fz-S1Q.xlm"@de , "AFZ1-Fz-S1Q.xlsx"@de ;
+        :hasLabelSource       "AFZ1-Fz-S1Q.xlsx"@de ;
         :hasTypicalUnitLabel  "mm" .
 
 :hasSoftwareObject  rdf:type  owl:ObjectProperty , rdf:Property ;
@@ -2647,7 +2647,7 @@
         skos:altlabel         "Probendicke A1 nach Bruch"@de ;
         skos:preflabel        "ThicknessAfterFracture1"@en ;
         skos:related          :ThicknessAfterFracture2 ;
-        :hasLabelSource       "AFZ1-Fz-S1Q.xlm"@de , "YS1-Sz0°-S1L"@de , "AFZ1-Fz-S1Q.xlsx"@de ;
+        :hasLabelSource       "YS1-Sz0°-S1L"@de , "AFZ1-Fz-S1Q.xlsx"@de ;
         :hasTypicalUnitLabel  "mm" .
 
 :rollingSchedule  rdf:type  owl:Class ;
@@ -2743,7 +2743,7 @@
         skos:preflabel                 "TestTemperature"@en ;
         :hasDescriptionCitationSource  "DIN EN ISO 6892-1"@de , "DIN EN ISO 12004-2: 2021_07, 5"@en , "DIN EN ISO 12004-2: 2021_07, 5"@de , "Authors"@en ;
         :hasExampleData                "22" , "25" ;
-        :hasLabelSource                "YS1-FzR4-S1Q"@en , "YS1-FzR4-S1Q"@de , "DIN EN ISO 12004-2: 2021_07, 13"@de , "DIN EN ISO 6892-1, K.4"@en , "DIN EN ISO 6892-1, 5"@de , "DIN EN ISO 12004-2: 2021_07, 5"@en , "AFZ1-Fz-S1Q.xlsx"@de , "DX56_D_FZ2_WR00_43.TXT"@de , "AFZ1-NZ50-25-D1Q"@en , "AFZ1-Fz-S1Q.xlm"@de , "YS1-Sz0°-S1L"@de ;
+        :hasLabelSource                "YS1-FzR4-S1Q"@en , "YS1-FzR4-S1Q"@de , "DIN EN ISO 12004-2: 2021_07, 13"@de , "DIN EN ISO 6892-1, K.4"@en , "DIN EN ISO 6892-1, 5"@de , "DIN EN ISO 12004-2: 2021_07, 5"@en , "AFZ1-Fz-S1Q.xlsx"@de , "DX56_D_FZ2_WR00_43.TXT"@de , "AFZ1-NZ50-25-D1Q"@en , "YS1-Sz0°-S1L"@de ;
         :hasSymbol                     "T"@en ;
         :hasSymbolLatex                "T"@en ;
         :hasTypicalUnitLabel           "°C" .
@@ -2815,7 +2815,7 @@
         skos:preflabel                 "True Stress"@en , "TrueStress"@en , "wahre Spannung"@de ;
         :hasDescriptionCitationSource  "Authors"@de , "ISO 26203-2, 2011, 4"@en ;
         :hasExampleData                "9752" ;
-        :hasLabelSource                "AFZ1-Fz-S1Q.xlsx"@en , "ISO 26203-2, 2011, 4"@en , "YS1-Fz-D1Q"@de , "AFZ1-Fz-S1Q.xlm"@en , "Standard definition specific"@de ;
+        :hasLabelSource                "AFZ1-Fz-S1Q.xlsx"@en , "ISO 26203-2, 2011, 4"@en , "YS1-Fz-D1Q"@de , "Standard definition specific"@de ;
         :hasSymbol                     "Sigw"@en ;
         :hasSymbolLatex                "Sig{w}"@en ;
         :hasTypicalUnitLabel           "MPa" ;
@@ -3072,13 +3072,13 @@
 
 :ForceMeasuringDevice
         rdf:type                       owl:Class , skos:Concept ;
-        rdfs:comment                   "Die Kraftmesseinrichtung der Zugprüfmaschine muss im relevanten Bereich mindestens der Klasse 1 nach ISO 7500-1 entsprechen."@de , "Genauigkeit der Prüfeinrichtungen: Die Kraftmesseinrichtung der Prüfmaschine muss mindestens der Klasse 1 nach ISO 7500-1 entsprechen."@de , "Type of the force transducer"@en , "Type of the force transducer. (description replaced by Zugversuch Instron)"@en , "Type of the force measurement (force transducer, strain gauges, ....)"@en ;
+        rdfs:comment                   "Die Kraftmesseinrichtung der Zugprüfmaschine muss im relevanten Bereich mindestens der Klasse 1 nach ISO 7500-1 entsprechen."@de , "Genauigkeit der Prüfeinrichtungen: Die Kraftmesseinrichtung der Prüfmaschine muss mindestens der Klasse 1 nach ISO 7500-1 entsprechen."@de , "Type of the force transducer"@en , "Type of the force measurement (force transducer, strain gauges, ....)"@en ;
         rdfs:label                     "ForceMeasuringDevice"@en ;
         skos:altlabel                  "Kraftaufnehmer"@de , "force-measuring device"@en , "force-measuring system"@en , "Kraftmesseinrichtung"@de ;
         skos:preflabel                 "ForceMeasuringDevice"@en ;
         :hasDescriptionCitationSource  "DIN EN ISO 6892-1, 9"@en , "DIN EN ISO 6892-1, 9"@de , "DIN EN ISO 6892-1, G.3.1.1"@en , "Authors"@en , "DIN EN ISO 6892-1"@de ;
-        :hasExampleData                "Bulge Druck: Öldruckaufnehmer in der Kammer unterhalb der Probe, Tiefungskraft: Öldruckaufnehmer am Tiefungskolben" , "xForce K" ;
-        :hasLabelSource                "DX56_D_FZ2_WR00_43.TXT"@de , "DIN EN ISO 6892-1, G.3.1.1"@en , "DIN EN ISO 6892-1, G.3.1.1"@de , "AFZ-BU-S1.TXT"@de , "DIN EN ISO 6892-1, 9"@en , "DIN EN ISO 6892-1, 9"@de .
+        :hasExampleData                "Bulge Druck: Öldruckaufnehmer in der Kammer unterhalb der Probe, Tiefungskraft: Öldruckaufnehmer am Tiefungskolben" ;
+        :hasLabelSource                "DIN EN ISO 6892-1, G.3.1.1"@en , "DIN EN ISO 6892-1, G.3.1.1"@de , "AFZ-BU-S1.TXT"@de , "DIN EN ISO 6892-1, 9"@en , "DIN EN ISO 6892-1, 9"@de .
 
 :hasTrueFractureStrain
         rdf:type        owl:DatatypeProperty , rdf:Property ;
@@ -3241,7 +3241,7 @@
         skos:preflabel                 "OriginalGaugeLength"@en ;
         :hasDescriptionCitationSource  "DIN EN ISO 6892-1, 3.1.1"@en , "DIN EN ISO 6892-1, 3.1.1"@de , "Authors"@en ;
         :hasExampleData                "80" , "20" , "30" ;
-        :hasLabelSource                "DX56_D_FZ2_WR00_43.TXT"@de , "YS1-FzR4-S1Q"@en , "YS1-FzR4-S1Q"@de , "ISO 26203-2, 2011, 4"@en , "YS1-Sz0°-S1L"@de , "AFZ1-Fz-S1Q.xlm"@de , "AFZ1-Fz-S1Q.xlsx"@de , "DIN EN ISO 6892-1, 3.1.1"@en , "DIN EN ISO 6892-1, 3.1.1"@de ;
+        :hasLabelSource                "DX56_D_FZ2_WR00_43.TXT"@de , "YS1-FzR4-S1Q"@en , "YS1-FzR4-S1Q"@de , "ISO 26203-2, 2011, 4"@en , "YS1-Sz0°-S1L"@de , "AFZ1-Fz-S1Q.xlsx"@de , "DIN EN ISO 6892-1, 3.1.1"@en , "DIN EN ISO 6892-1, 3.1.1"@de ;
         :hasSymbol                     "Lo"@en , "L0"@en ;
         :hasSymbolLatex                "L_0"@en , "L_o"@en ;
         :hasTypicalUnitLabel           "mm" .
@@ -3384,11 +3384,11 @@
 :Tester  rdf:type                      owl:Class , skos:Concept ;
         rdfs:comment                   "The name or ID of the person who conducted the experiment."@en ;
         rdfs:label                     "Tester"@en ;
-        skos:altlabel                  "Tester"@en , "Prüfer"@de ;
+        skos:altlabel                  "Prüfer"@de ;
         skos:preflabel                 "Tester"@en ;
         :hasDescriptionCitationSource  "Authors"@en ;
-        :hasExampleData                "Kürzel" , "Name, ID" ;
-        :hasLabelSource                "deepl translator"@en , "AFZ1-Fz-S1Q.xlsx"@de , "YS1-FzR4-S1Q"@de , "AFZ1-Fz-S1Q.xlm"@de , "YS1-Sz0°-S1L"@de , " "@en , "DX56_D_FZ2_WR00_43.TXT"@de .
+        :hasExampleData                "Kürzel" ;
+        :hasLabelSource                "AFZ1-Fz-S1Q.xlsx"@de , "YS1-FzR4-S1Q"@de , "YS1-Sz0°-S1L"@de , " "@en .
 
 :Steel  rdf:type         owl:Class , skos:Concept ;
         rdfs:label       "Steel"@en , "Stahl"@de , "steel"@en ;
@@ -3411,7 +3411,7 @@
         skos:altlabel                  "Rp1"@en ;
         skos:preflabel                 "ProofStrength_1Percentage"@en ;
         :hasDescriptionCitationSource  "Authors"@en ;
-        :hasLabelSource                "AFZ1-Fz-S1Q.xlsx"@en , "AFZ1-Fz-S1Q.xlm"@en ;
+        :hasLabelSource                "AFZ1-Fz-S1Q.xlsx"@en ;
         :hasSymbol                     "Rp1"@en ;
         :hasSymbolLatex                "R_{p1}"@en ;
         :hasTypicalUnitLabel           "MPa" ;
@@ -3620,7 +3620,7 @@
         skos:preflabel                 "TensileStrength"@en ;
         :hasDescriptionCitationSource  "DIN EN ISO 6892-1, 3.10.1"@en , "DIN EN ISO 6892-1, 3.10.1"@de , "Authors"@en ;
         :hasExampleData                "468" , "496" ;
-        :hasLabelSource                "AFZ1-Fz-S1Q.xlm"@en , "AFZ1-Fz-S1Q.xlsx"@en , "DIN EN ISO 6892-1, 3.10.1"@en , "DIN EN ISO 6892-1, 3.10.1"@de , "ISO 26203-2, 2011, 4"@en , "YS1-Fz-D1Q"@de ;
+        :hasLabelSource                "AFZ1-Fz-S1Q.xlsx"@en , "DIN EN ISO 6892-1, 3.10.1"@en , "DIN EN ISO 6892-1, 3.10.1"@de , "ISO 26203-2, 2011, 4"@en , "YS1-Fz-D1Q"@de ;
         :hasSymbol                     "Rm"@en , "R_{m}"@en ;
         :hasSymbolLatex                "R_m"@en , "R_{m}"@en ;
         :hasTypicalUnitLabel           "MPa" ;
@@ -3746,13 +3746,13 @@
         skos:preflabel  "Workflow step"@en , "Arbeitsschritt"@de .
 
 :Time   rdf:type                       skos:Concept , owl:Class ;
-        rdfs:comment                   "The time when the data point is recorded in relation to the start. "@en , "0.694"@en , "Recorded time during the hydraulic bulge test."@en , "Authors"@de , "Zeit während des hydraulischen Tiefungsversuchs."@de ;
+        rdfs:comment                   "Authors"@de , "Recorded time during the hydraulic bulge test."@en , "Zeit während des hydraulischen Tiefungsversuchs."@de , "The time when the data point is recorded in relation to the start. "@en , "0.694"@en ;
         rdfs:label                     "Time"@en ;
-        skos:altlabel                  "Time"@en , "Prüfzeit"@de , "time"@en , "Zeit"@de ;
+        skos:altlabel                  "Zeit"@de , "Time"@en , "Prüfzeit"@de , "time"@en ;
         skos:preflabel                 "Time"@en ;
-        :hasDescriptionCitationSource  "The time when the data point is recorded in relation to the start. "@en , "wes"@de , "wes"@en , "Authors"@de , "Authors"@en ;
-        :hasExampleData                "0.694" , "s" , "0.05" ;
-        :hasLabelSource                "YS1-Fz-D1Q"@de , "DIN EN ISO 16808:2022-08, 12"@de , "DIN EN ISO 16808:2022-08, 12"@en , "Authors"@de , "AFZ1-Fz-S1Q.xlm"@de , "DX56_D_FZ2_WR00_43.TXT"@de , "ISO 26203-2, 2011, 4"@en , "DIN EN ISO 6892-1, Abb. 9"@de , "DIN EN ISO 6892-1, Fig. 9"@en , "AFZ1-Fz-S1Q.xlsx"@de , "AFZ-BU-S1.TXT"@de , "AFZ1-ST-D1"@en , "YS1-Sz0°-S1L"@de , "YS1-FzR4-S1Q"@de , "YS1-FzR4-S1Q"@en , "AFZ1-NZ50-25-D1Q"@en ;
+        :hasDescriptionCitationSource  "Authors"@en , "Authors"@de , "The time when the data point is recorded in relation to the start. "@en , "wes"@en , "wes"@de ;
+        :hasExampleData                "0.05" , "0.694" , "s" ;
+        :hasLabelSource                "YS1-Fz-D1Q"@de , "AFZ1-Fz-S1Q.xlsx"@de , "DX56_D_FZ2_WR00_43.TXT"@de , "DIN EN ISO 6892-1, Abb. 9"@de , "YS1-Sz0°-S1L"@de , "AFZ-BU-S1.TXT"@de , "DIN EN ISO 16808:2022-08, 12"@en , "AFZ1-NZ50-25-D1Q"@en , "DIN EN ISO 16808:2022-08, 12"@de , "Authors"@de , "ISO 26203-2, 2011, 4"@en , "AFZ1-ST-D1"@en , "YS1-FzR4-S1Q"@en , "YS1-FzR4-S1Q"@de , "DIN EN ISO 6892-1, Fig. 9"@en ;
         :hasSymbol                     "t"@en ;
         :hasSymbolLatex                "t"@en ;
         :hasTypicalUnitLabel           "s" .
@@ -3913,7 +3913,7 @@
         skos:related                   :CrossheadSeparationRate , :PercentageExtension , :ParallelLength , :Time ;
         :hasDescriptionCitationSource  "General Knowledge"@en , "General Knowledge"@de , "Authors"@en , "DIN EN ISO 6892-1, 3.7.1"@en , "DIN EN ISO 6892-1, 3.7.1"@de ;
         :hasExampleData                "0.001" ;
-        :hasLabelSource                "AFZ1-Fz-S1Q.xlsx"@en , "AFZ1-Fz-S1Q.xlm"@en , "General Knowledge"@en , "General Knowledge"@de , "DIN EN ISO 6892-1, 3.7.1"@en , "DIN EN ISO 6892-1, 3.7.1"@de ;
+        :hasLabelSource                "AFZ1-Fz-S1Q.xlsx"@en , "General Knowledge"@en , "General Knowledge"@de , "DIN EN ISO 6892-1, 3.7.1"@en , "DIN EN ISO 6892-1, 3.7.1"@de ;
         :hasSymbol                     "eLe"@en ;
         :hasSymbolLatex                "dot{e}_{L_e}"@en ;
         :hasTypicalUnitLabel           "1/s" , "s-1" .
@@ -3943,7 +3943,7 @@
         skos:preflabel                 "ExtensionAtFracture"@en ;
         skos:related                   :OriginalCrosssection ;
         :hasDescriptionCitationSource  "Authors"@en ;
-        :hasLabelSource                "YS1-FzR4-S1Q"@de , "AFZ1-Fz-S1Q.xlsx"@de , "AFZ1-Fz-S1Q.xlm"@de , "YS1-Sz0°-S1L"@de ;
+        :hasLabelSource                "YS1-FzR4-S1Q"@de , "AFZ1-Fz-S1Q.xlsx"@de , "YS1-Sz0°-S1L"@de ;
         :hasSymbolLatex                "dLBruch"@en ;
         :hasTypicalUnitLabel           "mm" ;
         :isBasedOn                     :Extension .
@@ -3970,8 +3970,8 @@
         skos:altlabel                  "Projektname"@de , "Project name"@en , "Projekt"@de , "Project Name"@en , "PROJECT_NAME"@en , "Project"@en ;
         skos:preflabel                 "ProjectName"@en ;
         :hasDescriptionCitationSource  "Authors"@en ;
-        :hasExampleData                "Crashartig" , "Instabilität" , "PMD-Refrenzprozess" , "3D-Blechmodelle2" , "MATERIALDIGITAL" ;
-        :hasLabelSource                "AWA_1_01_Rz-46N171"@de , "YS1-Sz0°-S1L"@de , "AFZ1-Fz-S1Q.xlsx"@de , "YS1-Fz-D1Q"@de , "AFZ-BU-S1.TXT"@de , "AFZ1-ST-D1"@en , "AFZ1-Fz-S1Q.xlm"@de , "DX56_D_FZ2_WR00_43.TXT"@de , "YS1-FzR4-S1Q"@en , "YS1-FzR4-S1Q"@de , "deepl translator"@en .
+        :hasExampleData                "Crashartig" , "Instabilität" , "PMD-Refrenzprozess" , "MATERIALDIGITAL" ;
+        :hasLabelSource                "AWA_1_01_Rz-46N171"@de , "YS1-Sz0°-S1L"@de , "AFZ1-Fz-S1Q.xlsx"@de , "YS1-Fz-D1Q"@de , "AFZ-BU-S1.TXT"@de , "AFZ1-ST-D1"@en , "YS1-FzR4-S1Q"@en , "YS1-FzR4-S1Q"@de , "deepl translator"@en .
 
 :hasFormingLimitDiagram
         rdf:type        owl:DatatypeProperty , rdf:Property ;
@@ -4370,7 +4370,7 @@
         skos:related                   :PercentageExtension , :EngineeringStress ;
         :hasDescriptionCitationSource  "DIN EN ISO 6892-1, 3.13"@en , "DIN EN ISO 6892-1, 3.13"@de , "ISO 26203-2, 2011, 4"@en , "Authors"@en , "Authors"@de ;
         :hasExampleData                "187170" , "210000" ;
-        :hasLabelSource                "AFZ1-Fz-S1Q.xlm"@en , "YS1-Fz-D1Q"@de , "ISO 26203-2, 2011, 4"@en , "AFZ1-Fz-S1Q.xlsx"@en , "DIN EN ISO 6892-1, 3.13"@en , "DIN EN ISO 6892-1, 3.13"@de ;
+        :hasLabelSource                "YS1-Fz-D1Q"@de , "ISO 26203-2, 2011, 4"@en , "AFZ1-Fz-S1Q.xlsx"@en , "DIN EN ISO 6892-1, 3.13"@en , "DIN EN ISO 6892-1, 3.13"@de ;
         :hasSymbol                     "E"@en ;
         :hasSymbolLatex                "E"@en ;
         :hasTypicalUnitLabel           "GPa" , "MPa" .
@@ -4513,7 +4513,7 @@
         rdfs:label            "TrueFractureStress"@en ;
         skos:altlabel         "Sigma True Frac"@en ;
         skos:preflabel        "TrueFractureStress"@en ;
-        :hasLabelSource       "AFZ1-Fz-S1Q.xlsx"@en , "AFZ1-Fz-S1Q.xlm"@en ;
+        :hasLabelSource       "AFZ1-Fz-S1Q.xlsx"@en ;
         :hasTypicalUnitLabel  "MPa" ;
         :isBasedOn            :TrueStress .
 
@@ -4664,8 +4664,8 @@
         skos:altlabel                  "Project number"@en , "PROJECT_ID"@en , "Project No."@en , "Projektnummer"@de ;
         skos:preflabel                 "ProjectNumber"@en ;
         :hasDescriptionCitationSource  "Authors"@en ;
-        :hasExampleData                "100056" , "142003" , "40-05452" , "100137" , "324116" ;
-        :hasLabelSource                "deepl translator"@en , "AWA_1_01_Rz-46N171"@de , "DX56_D_FZ2_WR00_43.TXT"@de , "AFZ1-NZ50-25-D1Q"@en , "AFZ1-NZ50-25-D1Q"@de , "YS1-FzR4-S1Q"@en , "AFZ-BU-S1.TXT"@de , "YS1-Fz-D1Q"@de , "AFZ1-ST-D1"@en .
+        :hasExampleData                "100056" , "40-05452" , "100137" , "324116" ;
+        :hasLabelSource                "deepl translator"@en , "AWA_1_01_Rz-46N171"@de , "AFZ1-NZ50-25-D1Q"@en , "AFZ1-NZ50-25-D1Q"@de , "YS1-FzR4-S1Q"@en , "AFZ-BU-S1.TXT"@de , "YS1-Fz-D1Q"@de , "AFZ1-ST-D1"@en .
 
 :hasBatchNumberObject
         rdf:type        owl:ObjectProperty , rdf:Property ;
@@ -4777,7 +4777,7 @@
         skos:preflabel                 "OriginalCrossSection"@en ;
         :hasDescriptionCitationSource  "ISO 26203-2, 2011, 4"@en , "Authors"@en , "DIN EN ISO 6892-1, Tabelle 1"@de , "DIN EN ISO 6892-1, Table 1"@en ;
         :hasExampleData                "14.98" ;
-        :hasLabelSource                "ISO 26203-2, 2011, 4"@en , "DIN EN ISO 6892-1, Tabelle 1"@de , "AFZ1-Fz-S1Q.xlm"@en , "AFZ1-Fz-S1Q.xlsx"@en , "DIN EN ISO 6892-1, Table 1"@en ;
+        :hasLabelSource                "ISO 26203-2, 2011, 4"@en , "DIN EN ISO 6892-1, Tabelle 1"@de , "AFZ1-Fz-S1Q.xlsx"@en , "DIN EN ISO 6892-1, Table 1"@en ;
         :hasSymbol                     "S0"@en , "So"@en ;
         :hasSymbolLatex                "S_{o}"@en , "S_{0}"@en ;
         :hasTypicalUnitLabel           "mm2" ;
@@ -4815,13 +4815,13 @@
 
 :OriginalCrosssection
         rdf:type                       skos:Concept , owl:Class ;
-        rdfs:comment                   "original crosssection area of the parallel length"@en , "Crosssection of the sample."@en , "original cross-sectional area of the parallel length"@en ;
+        rdfs:comment                   "original crosssection area of the parallel length"@en , "original cross-sectional area of the parallel length"@en ;
         rdfs:label                     "OriginalCrosssection"@en ;
-        skos:altlabel                  "Original cross section"@en , "Anfangsquerschnitt So"@de , "Querschnitt"@de , "Crosssection"@en , "S0"@en , "S0"@de , "Anfangsquerschnitt S0"@de ;
+        skos:altlabel                  "Original cross section"@en , "Anfangsquerschnitt So"@de , "S0"@de , "S0"@en , "Anfangsquerschnitt S0"@de ;
         skos:preflabel                 "OriginalCrosssection"@en ;
         :hasDescriptionCitationSource  "Authors"@en ;
         :hasExampleData                "14.98" , "15.05" ;
-        :hasLabelSource                "YS1-Fz-D1Q"@de , "YS1-Sz0°-S1L"@de , "Author"@en , "Author"@de , "YS1-FzR4-S1Q"@en , "YS1-FzR4-S1Q"@de ;
+        :hasLabelSource                "YS1-Fz-D1Q"@de , "YS1-Sz0°-S1L"@de , "YS1-FzR4-S1Q"@en , "YS1-FzR4-S1Q"@de ;
         :hasSymbol                     "S0"@en , "S_{0}"@en ;
         :hasSymbolLatex                "S_{0}"@en ;
         :hasTypicalUnitLabel           "mm2" ;
@@ -4856,7 +4856,7 @@
         skos:preflabel                 "OriginalThickness"@en ;
         :hasDescriptionCitationSource  "DIN EN ISO 6892-1, Tabelle 1"@de , "DIN EN ISO 6892-1, Table 1"@en , "Authors"@en ;
         :hasExampleData                "1.5" , "1.55" , "1490" , "1499" ;
-        :hasLabelSource                "DIN EN ISO 6892-1, Table 1"@en , "AFZ1-Fz-S1Q.xlm"@de , "YS1-Sz0°-S1L"@de , "AFZ1-Fz-S1Q.xlsx"@de , "AFZ1-ST-D1"@en , "YS1-FzR4-S1Q"@en , "YS1-FzR4-S1Q"@de , "DX56_D_FZ2_WR00_43.TXT"@de , "YS1-Fz-D1Q"@de ;
+        :hasLabelSource                "DIN EN ISO 6892-1, Table 1"@en , "YS1-Sz0°-S1L"@de , "AFZ1-Fz-S1Q.xlsx"@de , "AFZ1-ST-D1"@en , "YS1-FzR4-S1Q"@en , "YS1-FzR4-S1Q"@de , "DX56_D_FZ2_WR00_43.TXT"@de , "YS1-Fz-D1Q"@de ;
         :hasSymbol                     "ao"@en , "a_{0}"@en ;
         :hasSymbolLatex                "a_o"@en ;
         :hasTypicalUnitLabel           "mm" .
@@ -5054,8 +5054,8 @@
         skos:altlabel                  "extensometer system"@en , "Displacement transducer"@en , "Dehnungsaufnehmer"@de , "Wegaufnehmer"@de ;
         skos:preflabel                 "DisplacementTransducer"@en ;
         :hasDescriptionCitationSource  "Authors"@en ;
-        :hasExampleData                "Tiefungskolben" , "Clip gauge" , "makroXtens" ;
-        :hasLabelSource                "deepl translator"@en , "AFZ-BU-S1.TXT"@de , "DX56_D_FZ2_WR00_43.TXT"@de .
+        :hasExampleData                "Tiefungskolben" , "Clip gauge" ;
+        :hasLabelSource                "deepl translator"@en , "AFZ-BU-S1.TXT"@de .
 
 :hasYieldForce_0.2Percentage
         rdf:type        owl:DatatypeProperty , rdf:Property ;
@@ -5121,12 +5121,12 @@
         rdfs:comment                   "The type of the specimen."@en ;
         rdfs:label                     "TestPieceGeometry"@en ;
         rdfs:seeAlso                   :TestStandard ;
-        skos:altlabel                  "Specimen type"@en , "Probentyp"@de , "Specimen Type"@en , "Probenform"@de , "Probengeometrie"@de , "Test piece geometry"@en ;
+        skos:altlabel                  "Probentyp"@de , "Specimen Type"@en , "Probenform"@de , "Probengeometrie"@de , "Test piece geometry"@en ;
         skos:preflabel                 "TestPieceGeometry"@en ;
         skos:related                   :TestStandard ;
         :hasDescriptionCitationSource  "Authors"@en ;
-        :hasExampleData                "Crashbox" , "FZ2 (L0=80_b0=20_R20)" , "Notched Flat tensile Specimen" , "FzA20" , "Sz0°" , "Nakajima Specimen" , "Flach-Zug" ;
-        :hasLabelSource                "DX56_D_FZ2_WR00_43.TXT"@de , "AFZ1-NZ50-25-D1Q"@en , "AFZ1-Fz-S1Q.xlm"@de , "YS1-Fz-D1Q"@de , "AFZ1-Fz-S1Q.xlsx"@de , "deepl translator"@en , "YS1-FzR4-S1Q"@en , "YS1-FzR4-S1Q"@de , "DIN EN ISO 12004-2: 2021_07, 11"@en , "YS1-Sz0°-S1L"@de , "DIN EN ISO 12004-2: 2021_07, 11"@de , " "@en , "AFZ1-ST-D1"@en .
+        :hasExampleData                "Crashbox" , "Notched Flat tensile Specimen" , "FzA20" , "Sz0°" , "Nakajima Specimen" , "Flach-Zug" ;
+        :hasLabelSource                "AFZ1-NZ50-25-D1Q"@en , "YS1-Fz-D1Q"@de , "AFZ1-Fz-S1Q.xlsx"@de , "YS1-FzR4-S1Q"@en , "YS1-FzR4-S1Q"@de , "DIN EN ISO 12004-2: 2021_07, 11"@en , "YS1-Sz0°-S1L"@de , "DIN EN ISO 12004-2: 2021_07, 11"@de , " "@en , "AFZ1-ST-D1"@en .
 
 :hasEngineeringStress
         rdf:type        owl:DatatypeProperty , rdf:Property ;
@@ -5176,7 +5176,7 @@
         skos:related                   :TestingFacility ;
         :hasDescriptionCitationSource  "Authors"@en ;
         :hasExampleData                "Fraunhofer IWM" ;
-        :hasLabelSource                "AFZ-BU-S1.TXT"@de , "K-Item"@en , "deepl translator"@en , "DX56_D_FZ2_WR00_43.TXT"@de .
+        :hasLabelSource                "AFZ-BU-S1.TXT"@de , "K-Item"@en , "deepl translator"@en .
 
 :MechanicalCard  rdf:type  owl:Class ;
         rdfs:label      "mechanical card"@en , "Materialkarte"@de ;
@@ -5224,7 +5224,7 @@
         skos:related                   :RollingDirection ;
         :hasDescriptionCitationSource  "Authors"@en ;
         :hasExampleData                "quer" ;
-        :hasLabelSource                "YS1-Sz0°-S1L"@de , "AFZ1-Fz-S1Q.xlm"@de , "AFZ1-Fz-S1Q.xlsx"@de .
+        :hasLabelSource                "YS1-Sz0°-S1L"@de , "AFZ1-Fz-S1Q.xlsx"@de .
 
 :InitialDisplacementRate
         rdf:type                       skos:Concept , owl:Class ;
@@ -5388,7 +5388,7 @@
         skos:related                   :ForceMeasuringDevice , :ForceMeasuringSystem ;
         :hasDescriptionCitationSource  "Authors"@en ;
         :hasExampleData                "0.105" , "2438" , "82.0348" ;
-        :hasLabelSource                "DIN EN ISO 6892-1, Table 1"@en , "deepl translator"@en , "YS1-FzR4-S1Q"@en , "YS1-FzR4-S1Q"@de , "AFZ1-NZ50-25-D1Q"@en , "YS1-Sz0°-S1L"@de , "YS1-Fz-D1Q"@de , "DX56_D_FZ2_WR00_43.TXT"@de , "AFZ1-Fz-S1Q.xlsx"@de , "DIN EN ISO 6892-1, Tabelle 1"@de , "AFZ-BU-S1.TXT"@de , "AFZ1-ST-D1"@en , "AFZ1-Fz-S1Q.xlm"@de ;
+        :hasLabelSource                "DIN EN ISO 6892-1, Table 1"@en , "deepl translator"@en , "YS1-FzR4-S1Q"@en , "YS1-FzR4-S1Q"@de , "AFZ1-NZ50-25-D1Q"@en , "YS1-Sz0°-S1L"@de , "YS1-Fz-D1Q"@de , "DX56_D_FZ2_WR00_43.TXT"@de , "AFZ1-Fz-S1Q.xlsx"@de , "DIN EN ISO 6892-1, Tabelle 1"@de , "AFZ-BU-S1.TXT"@de , "AFZ1-ST-D1"@en ;
         :hasSymbol                     "F"@en ;
         :hasSymbolLatex                "F"@en ;
         :hasTypicalUnitLabel           "kN" , "N" .
@@ -5450,13 +5450,13 @@
         rdfs:range      "https://w3id.org/steel/ProcessOntology/StrainRateScaleParameterP" ;
         skos:preflabel  "hasStrainRateScaleParameterP"@en .
 
-:WidthAfterFracture1  rdf:type  owl:Class , skos:Concept ;
+:WidthAfterFracture1  rdf:type  skos:Concept , owl:Class ;
         rdfs:label            "WidthAfterFracture1"@en ;
         rdfs:seeAlso          :WidthAfterFracture2 ;
         skos:altlabel         "Probenbreite B1 nach Bruch"@de ;
         skos:preflabel        "WidthAfterFracture1"@en ;
         skos:related          :WidthAfterFracture2 ;
-        :hasLabelSource       "AFZ1-Fz-S1Q.xlm"@de , "AFZ1-Fz-S1Q.xlsx"@de ;
+        :hasLabelSource       "AFZ1-Fz-S1Q.xlsx"@de ;
         :hasTypicalUnitLabel  "mm" .
 
 :hasMaximumForceDiscontinousYielding
@@ -5615,7 +5615,7 @@
         skos:preflabel                 "MinimumCrossSectionAfterFracture"@en ;
         :hasDescriptionCitationSource  "DIN EN ISO 6892-1, Tabelle 1"@de , "Authors"@en , "DIN EN ISO 6892-1, Table 1"@en ;
         :hasExampleData                "4879" ;
-        :hasLabelSource                "AFZ1-Fz-S1Q.xlm"@en , "DIN EN ISO 6892-1, Tabelle 1"@de , "DIN EN ISO 6892-1, Table 1"@en , "AFZ1-Fz-S1Q.xlsx"@en ;
+        :hasLabelSource                "DIN EN ISO 6892-1, Tabelle 1"@de , "DIN EN ISO 6892-1, Table 1"@en , "AFZ1-Fz-S1Q.xlsx"@en ;
         :hasSymbol                     "Su"@en ;
         :hasSymbolLatex                "S_{u}"@en ;
         :hasTypicalUnitLabel           "mm2" ;
@@ -5671,7 +5671,7 @@
         skos:related                   :Machine ;
         :hasDescriptionCitationSource  "Authors"@en ;
         :hasExampleData                "14786" ;
-        :hasLabelSource                "AFZ1-ST-D1"@en , "AFZ1-Fz-101Q.xlm"@de , "YS1-FzR4-S1Q"@en , "YS1-Sz0°-S1L"@de , "AFZ1-Fz-S1Q.xlsx"@de ;
+        :hasLabelSource                "AFZ1-ST-D1"@en , "YS1-FzR4-S1Q"@en , "YS1-Sz0°-S1L"@de , "AFZ1-Fz-S1Q.xlsx"@de ;
         :hasTypicalUnitLabel           "mm" .
 
 :hasGaugeLengthObject
@@ -5989,7 +5989,7 @@
         skos:preflabel                 "PoissonsRatio"@en ;
         skos:related                   :TrueWidthStrain , :ModulusOfElasticity , :Material , :TrueStrain ;
         :hasDescriptionCitationSource  "Authors"@en ;
-        :hasLabelSource                "AFZ1-Fz-S1Q.xlm"@en , "AFZ1-Fz-S1Q.xlsx"@en ;
+        :hasLabelSource                "AFZ1-Fz-S1Q.xlsx"@en ;
         :hasSymbol                     "nue"@en ;
         :hasSymbolLatex                "nue"@en ;
         :hasTypicalUnitLabel           "1" .
@@ -6102,12 +6102,12 @@
         rdfs:comment                   "Die Prüfmaschine sollte mit einer analogen Messwertausgabe, die nicht durch die Software beeinflusst wird, ausgerüstet sein. Ist eine solche Ausgabe nicht vorgesehen, sollten digitale Rohdaten ausgegeben werden können. Der Prüfmaschinenhersteller sollte Auskunft über die Erzeugung der digitalen Rohdaten und ihre Verarbeitung durch die Software geben. Die Rohdaten sollten in SI-Einheiten angegeben werden und sich auf die Kraft, die Verlängerung (der Extensometer-Messlänge), den Traversenweg, die Zeit und die Probenmaße beziehen. Ein Beispiel eines geeigneten Datenformats ist in Bild A.1 dargestellt."@de , "Data of the machine used for the experiment."@en ;
         rdfs:label                     "TensileTestingMachine"@en ;
         rdfs:seeAlso                   :Machine ;
-        skos:altlabel                  "tensile testing machine"@en , "Maschinendaten"@de , "Prüfmaschine"@de , "Machine Type"@en ;
+        skos:altlabel                  "tensile testing machine"@en , "Prüfmaschine"@de , "Machine Type"@en ;
         skos:preflabel                 "TensileTestingMachine"@en ;
         skos:related                   :Machine ;
         :hasDescriptionCitationSource  "DIN EN ISO 6892-1, A.2.1"@en , "DIN EN ISO 6892-1"@de , "Authors"@en ;
-        :hasExampleData                "ZwickRoell Kappa50DS" , "Instron 5985" ;
-        :hasLabelSource                "AFZ1-Fz-S1Q.xlm"@de , "AFZ1-Fz-S1Q.xlsx"@de , "DX56_D_FZ2_WR00_43.TXT"@de , "DIN EN ISO 6892-1, A.2.1"@en , "DIN EN ISO 6892-1, A.2.1"@de .
+        :hasExampleData                "Instron 5985" ;
+        :hasLabelSource                "AFZ1-Fz-S1Q.xlsx"@de , "DIN EN ISO 6892-1, A.2.1"@en , "DIN EN ISO 6892-1, A.2.1"@de .
 
 :HardeningModulus_h0  rdf:type  owl:Class .
 
@@ -6527,7 +6527,7 @@
         skos:related                   :ParallelLength ;
         :hasDescriptionCitationSource  "DIN EN ISO 6892-1, 3.7.3"@en , "DIN EN ISO 6892-1, 3.7.3"@de , "Authors"@en ;
         :hasExampleData                "0.01" , "0.1" , "4800" , "0.02" ;
-        :hasLabelSource                "DX56_D_FZ2_WR00_43.TXT"@de , "AFZ1-Fz-S1Q.xlm"@de , "YS1-FzR4-S1Q"@en , "YS1-FzR4-S1Q"@de , "AFZ1-Fz-S1Q.xlsx"@de , "DIN EN ISO 6892-1, 3.7.3"@en , "YS1-Sz0°-S1L"@de , "DIN EN ISO 6892-1, 3.7.3"@de , "AFZ1-ST-D1"@en ;
+        :hasLabelSource                "DX56_D_FZ2_WR00_43.TXT"@de , "YS1-FzR4-S1Q"@en , "YS1-FzR4-S1Q"@de , "AFZ1-Fz-S1Q.xlsx"@de , "DIN EN ISO 6892-1, 3.7.3"@en , "YS1-Sz0°-S1L"@de , "DIN EN ISO 6892-1, 3.7.3"@de , "AFZ1-ST-D1"@en ;
         :hasSymbol                     "vc"@en ;
         :hasSymbolLatex                "nu_c"@en ;
         :hasTypicalUnitLabel           "mm/s" , "mm s -1" .
@@ -6611,7 +6611,7 @@
         skos:preflabel                 "SampleIdentifier"@en ;
         :hasDescriptionCitationSource  "Authors"@en , "Unique ID (IWM intern)"@de ;
         :hasExampleData                "YS1-FzR4-S1Q" , "AFZ-BU-S1" , "AFZ1-ST-D1" , "AFZ1-Fz-101Q" , "AWA_1_01_Rz" , "AFZ1-NZ50-25-D1Q" ;
-        :hasLabelSource                "AFZ1-Fz-S1Q.xlm"@de , " "@en , "AFZ1-ST-D1"@en , "AFZ-BU-S1.TXT"@de , "AFZ1-NZ50-25-D1Q"@en , "AFZ1-NZ50-25-D1Q"@de , "AFZ1-Fz-S1Q.xlsx"@de , "YS1-Sz0°-S1L"@de , "deepl translator"@en , "YS1-Fz-D1Q"@de , "AWA_1_01_Rz-46N171"@de , "YS1-FzR4-S1Q"@en , "YS1-FzR4-S1Q"@de .
+        :hasLabelSource                " "@en , "AFZ1-ST-D1"@en , "AFZ-BU-S1.TXT"@de , "AFZ1-NZ50-25-D1Q"@en , "AFZ1-NZ50-25-D1Q"@de , "AFZ1-Fz-S1Q.xlsx"@de , "YS1-Sz0°-S1L"@de , "deepl translator"@en , "YS1-Fz-D1Q"@de , "AWA_1_01_Rz-46N171"@de , "YS1-FzR4-S1Q"@en , "YS1-FzR4-S1Q"@de .
 
 :hasDescriptionCitationSource
         rdf:type        owl:DatatypeProperty ;
@@ -6659,7 +6659,7 @@
         skos:related                   :TestPieceGeometry ;
         :hasDescriptionCitationSource  "Authors"@en , "DIN EN ISO 6892-1, Tabelle 1"@de , "DIN EN ISO 6892-1, Table 1"@en ;
         :hasExampleData                "20.04" , "10040" , "10054" ;
-        :hasLabelSource                "AFZ1-Fz-S1Q.xlsx"@de , "DIN EN ISO 6892-1, Tabelle 1"@de , "DIN EN ISO 6892-1, Table 1"@en , "YS1-Fz-D1Q"@de , "AFZ1-Fz-S1Q.xlm"@de , "DX56_D_FZ2_WR00_43.TXT"@de , "YS1-FzR4-S1Q"@en , "YS1-FzR4-S1Q"@de ;
+        :hasLabelSource                "AFZ1-Fz-S1Q.xlsx"@de , "DIN EN ISO 6892-1, Tabelle 1"@de , "DIN EN ISO 6892-1, Table 1"@en , "YS1-Fz-D1Q"@de , "DX56_D_FZ2_WR00_43.TXT"@de , "YS1-FzR4-S1Q"@en , "YS1-FzR4-S1Q"@de ;
         :hasSymbol                     "bo"@en , "b_{0}"@en ;
         :hasSymbolLatex                "b_o"@en ;
         :hasTypicalUnitLabel           "mm" .
@@ -6765,7 +6765,7 @@
         skos:preflabel                 "TestStandard"@en ;
         :hasDescriptionCitationSource  "Authors"@en , "Authors"@de , "wes"@de ;
         :hasExampleData                "DIN EN ISO 6892-1" , "DIN EN ISO 12004-2" , "DIN EN ISO 16808" ;
-        :hasLabelSource                "DIN EN ISO 16808:2022-08, 12"@en , "DX56_D_FZ2_WR00_43.TXT"@de , "deepl translator"@en , "AFZ1-NZ50-25-D1Q"@en , "AFZ1-NZ50-25-D1Q"@de , "Authors"@de , "AFZ-BU-S1.TXT"@de , "DIN EN ISO 12004-2: 2021_07, 8"@en .
+        :hasLabelSource                "DIN EN ISO 16808:2022-08, 12"@en , "AFZ1-NZ50-25-D1Q"@en , "AFZ1-NZ50-25-D1Q"@de , "Authors"@de , "AFZ-BU-S1.TXT"@de , "DIN EN ISO 12004-2: 2021_07, 8"@en .
 
 :ThicknessAfterFracture2
         rdf:type              skos:Concept , owl:Class ;
@@ -6774,7 +6774,7 @@
         skos:altlabel         "Probendicke A2 nach Bruch"@de ;
         skos:preflabel        "ThicknessAfterFracture2"@en ;
         skos:related          :ThicknessAfterFracture1 ;
-        :hasLabelSource       "YS1-Sz0°-S1L"@de , "AFZ1-Fz-S1Q.xlm"@de , "AFZ1-Fz-S1Q.xlsx"@de ;
+        :hasLabelSource       "YS1-Sz0°-S1L"@de , "AFZ1-Fz-S1Q.xlsx"@de ;
         :hasTypicalUnitLabel  "mm" .
 
 :hasCharacteristicEngineeringStrainRate_s-1
@@ -6797,7 +6797,7 @@
         skos:altlabel                  "Rinc"@en ;
         skos:preflabel                 "RValue"@en ;
         :hasDescriptionCitationSource  "Authors"@en ;
-        :hasLabelSource                "AFZ1-Fz-S1Q.xlm"@en , "AFZ1-Fz-S1Q.xlsx"@en ;
+        :hasLabelSource                "AFZ1-Fz-S1Q.xlsx"@en ;
         :hasSymbol                     "r-ges"@en ;
         :hasSymbolLatex                "r-ges"@en ;
         :hasTypicalUnitLabel           "1" ;
@@ -6961,7 +6961,7 @@
         skos:related                   :OriginalGaugeLength , :ExtensionMeasuringSystem ;
         :hasDescriptionCitationSource  "Authors"@en , "DIN EN ISO 6892-1, 3.5"@en , "DIN EN ISO 6892-1, 3.5"@de ;
         :hasExampleData                "20" , "20.94" ;
-        :hasLabelSource                "YS1-Sz0°-S1L"@de , "YS1-FzR4-S1Q"@de , "AFZ1-Fz-S1Q.xlsx"@de , "YS1-Fz-D1Q"@de , "ISO 26203-2, 2011, 4"@en , "AFZ1-Fz-S1Q.xlm"@de , " "@en , "DIN EN ISO 6892-1, 3.5"@en , "DIN EN ISO 6892-1, 3.5"@de , "YS1-FzR4-S1Q"@en ;
+        :hasLabelSource                "YS1-Sz0°-S1L"@de , "YS1-FzR4-S1Q"@de , "AFZ1-Fz-S1Q.xlsx"@de , "YS1-Fz-D1Q"@de , "ISO 26203-2, 2011, 4"@en , " "@en , "DIN EN ISO 6892-1, 3.5"@en , "DIN EN ISO 6892-1, 3.5"@de , "YS1-FzR4-S1Q"@en ;
         :hasSymbol                     "L_{0}"@en , "Le"@en ;
         :hasSymbolLatex                "L_e"@en ;
         :hasTypicalUnitLabel           "mm" .
@@ -6987,7 +6987,7 @@
         skos:preflabel                 "True Strain"@en , "wahre Dehnung"@de , "TrueStrain"@en ;
         :hasDescriptionCitationSource  "Authors"@en ;
         :hasExampleData                "0.004" ;
-        :hasLabelSource                "AFZ1-Fz-S1Q.xlsx"@en , "AFZ1-Fz-S1Q.xlm"@en ;
+        :hasLabelSource                "AFZ1-Fz-S1Q.xlsx"@en ;
         :hasSymbol                     "epsw(dL)"@en ;
         :hasSymbolLatex                "epsw(dL)"@en ;
         :hasTypicalUnitLabel           "1" ;
@@ -7022,7 +7022,7 @@
         skos:preflabel                 "PercentageElongationAfterFracture"@en ;
         :hasDescriptionCitationSource  "DIN EN ISO 6892-1, 3.4.2"@en , "DIN EN ISO 6892-1, 3.4.2"@de , "Authors"@en ;
         :hasExampleData                "35.6" , "37.8" ;
-        :hasLabelSource                "AFZ1-Fz-S1Q.xlm"@en , "AFZ1-Fz-S1Q.xlsx"@en , "ISO 26203-2, 2011, 4"@en , "YS1-Fz-D1Q"@de , "DIN EN ISO 6892-1, 3.4.2"@en , "DIN EN ISO 6892-1, 3.4.2"@de ;
+        :hasLabelSource                "AFZ1-Fz-S1Q.xlsx"@en , "ISO 26203-2, 2011, 4"@en , "YS1-Fz-D1Q"@de , "DIN EN ISO 6892-1, 3.4.2"@en , "DIN EN ISO 6892-1, 3.4.2"@de ;
         :hasSymbol                     "A_{20mm}"@en , "A20mm"@en , "A"@en ;
         :hasSymbolLatex                "A_{20mm}"@en , "A"@en ;
         :hasTypicalUnitLabel           "%" ;
@@ -7073,7 +7073,7 @@
         skos:related                   :DisplacementTransducer , :ExtensometerGaugeLength , :ExtensionMeasuringSystem ;
         :hasDescriptionCitationSource  "Authors"@en , "DIN EN ISO 6892-1, 3.6"@en , "DIN EN ISO 6892-1, 3.6"@de ;
         :hasExampleData                "0.026" , "0.001" , "-3.93633e-05" ;
-        :hasLabelSource                "YS1-FzR4-S1Q"@en , "YS1-FzR4-S1Q"@de , "DX56_D_FZ2_WR00_43.TXT"@de , "AFZ1-Fz-S1Q.xlm"@de , "DIN EN ISO 6892-1, 3.6"@en , "DIN EN ISO 6892-1, 3.6"@de , "YS1-Sz0°-S1L"@de , "YS1-Fz-D1Q"@de , "AFZ1-Fz-S1Q.xlsx"@de ;
+        :hasLabelSource                "YS1-FzR4-S1Q"@en , "YS1-FzR4-S1Q"@de , "DX56_D_FZ2_WR00_43.TXT"@de , "DIN EN ISO 6892-1, 3.6"@en , "DIN EN ISO 6892-1, 3.6"@de , "YS1-Sz0°-S1L"@de , "YS1-Fz-D1Q"@de , "AFZ1-Fz-S1Q.xlsx"@de ;
         :hasSymbol                     "dL"@en ;
         :hasSymbolLatex                "dL"@en ;
         :hasTypicalUnitLabel           "mm" ;

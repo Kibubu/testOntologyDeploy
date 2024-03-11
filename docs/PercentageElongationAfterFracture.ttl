@@ -15,7 +15,6 @@
 <https://w3id.org/steel/ProcessOntology/PercentageElongationAfterFracture> <https://w3id.org/steel/ProcessOntology/hasDescriptionCitationSource> "Authors"@en .
 <https://w3id.org/steel/ProcessOntology/PercentageElongationAfterFracture> <https://w3id.org/steel/ProcessOntology/hasExampleData> "35.6" .
 <https://w3id.org/steel/ProcessOntology/PercentageElongationAfterFracture> <https://w3id.org/steel/ProcessOntology/hasExampleData> "37.8" .
-<https://w3id.org/steel/ProcessOntology/PercentageElongationAfterFracture> <https://w3id.org/steel/ProcessOntology/hasLabelSource> "AFZ1-Fz-S1Q.xlm"@en .
 <https://w3id.org/steel/ProcessOntology/PercentageElongationAfterFracture> <https://w3id.org/steel/ProcessOntology/hasLabelSource> "AFZ1-Fz-S1Q.xlsx"@en .
 <https://w3id.org/steel/ProcessOntology/PercentageElongationAfterFracture> <https://w3id.org/steel/ProcessOntology/hasLabelSource> "ISO 26203-2, 2011, 4"@en .
 <https://w3id.org/steel/ProcessOntology/PercentageElongationAfterFracture> <https://w3id.org/steel/ProcessOntology/hasLabelSource> "YS1-Fz-D1Q"@de .

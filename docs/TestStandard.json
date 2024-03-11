@@ -134,18 +134,6 @@
         "lang" : "en",
         "type" : "literal"
         }
-      ,
-      {
-        "value" : "DX56_D_FZ2_WR00_43.TXT",
-        "lang" : "de",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "deepl translator",
-        "lang" : "en",
-        "type" : "literal"
-        }
       
       ]
     }

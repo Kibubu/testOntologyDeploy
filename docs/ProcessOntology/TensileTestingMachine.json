@@ -45,12 +45,6 @@
         }
       ,
       {
-        "value" : "Maschinendaten",
-        "lang" : "de",
-        "type" : "literal"
-        }
-      ,
-      {
         "value" : "Pr\u00FCfmaschine",
         "lang" : "de",
         "type" : "literal"
@@ -99,20 +93,9 @@
         "value" : "Instron 5985",
         "type" : "literal"
         }
-      ,
-      {
-        "value" : "ZwickRoell Kappa50DS",
-        "type" : "literal"
-        }
       
       ],
     "https://w3id.org/steel/ProcessOntology/hasLabelSource" : [ {
-        "value" : "AFZ1-Fz-S1Q.xlm",
-        "lang" : "de",
-        "type" : "literal"
-        }
-      ,
-      {
         "value" : "AFZ1-Fz-S1Q.xlsx",
         "lang" : "de",
         "type" : "literal"
@@ -127,12 +110,6 @@
       {
         "value" : "DIN EN ISO 6892-1, A.2.1",
         "lang" : "en",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "DX56_D_FZ2_WR00_43.TXT",
-        "lang" : "de",
         "type" : "literal"
         }
       

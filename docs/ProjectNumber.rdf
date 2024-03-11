@@ -34,9 +34,6 @@
     <ns0:hasExampleData xmlns:ns0="https://w3id.org/steel/ProcessOntology/">100056</ns0:hasExampleData>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/ProjectNumber">
-    <ns0:hasExampleData xmlns:ns0="https://w3id.org/steel/ProcessOntology/">142003</ns0:hasExampleData>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/ProjectNumber">
     <ns0:hasExampleData xmlns:ns0="https://w3id.org/steel/ProcessOntology/">40-05452</ns0:hasExampleData>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/ProjectNumber">
@@ -50,9 +47,6 @@
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/ProjectNumber">
     <ns0:hasLabelSource xmlns:ns0="https://w3id.org/steel/ProcessOntology/" xml:lang="de">AWA_1_01_Rz-46N171</ns0:hasLabelSource>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/ProjectNumber">
-    <ns0:hasLabelSource xmlns:ns0="https://w3id.org/steel/ProcessOntology/" xml:lang="de">DX56_D_FZ2_WR00_43.TXT</ns0:hasLabelSource>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/ProjectNumber">
     <ns0:hasLabelSource xmlns:ns0="https://w3id.org/steel/ProcessOntology/" xml:lang="en">AFZ1-NZ50-25-D1Q</ns0:hasLabelSource>

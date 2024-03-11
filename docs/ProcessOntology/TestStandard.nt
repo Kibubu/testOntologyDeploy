@@ -20,5 +20,3 @@
 <https://w3id.org/steel/ProcessOntology/TestStandard> <https://w3id.org/steel/ProcessOntology/hasLabelSource> "Authors"@de .
 <https://w3id.org/steel/ProcessOntology/TestStandard> <https://w3id.org/steel/ProcessOntology/hasLabelSource> "DIN EN ISO 12004-2: 2021_07, 8"@en .
 <https://w3id.org/steel/ProcessOntology/TestStandard> <https://w3id.org/steel/ProcessOntology/hasLabelSource> "DIN EN ISO 16808:2022-08, 12"@en .
-<https://w3id.org/steel/ProcessOntology/TestStandard> <https://w3id.org/steel/ProcessOntology/hasLabelSource> "DX56_D_FZ2_WR00_43.TXT"@de .
-<https://w3id.org/steel/ProcessOntology/TestStandard> <https://w3id.org/steel/ProcessOntology/hasLabelSource> "deepl translator"@en .

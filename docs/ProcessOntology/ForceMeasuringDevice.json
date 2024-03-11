@@ -35,12 +35,6 @@
         "lang" : "en",
         "type" : "literal"
         }
-      ,
-      {
-        "value" : "Type of the force transducer. (description replaced by Zugversuch Instron)",
-        "lang" : "en",
-        "type" : "literal"
-        }
       
       ],
     "http://www.w3.org/2000/01/rdf-schema#label" : [ {
@@ -117,11 +111,6 @@
         "value" : "Bulge Druck: \u00D6ldruckaufnehmer in der Kammer unterhalb der Probe, Tiefungskraft: \u00D6ldruckaufnehmer am Tiefungskolben",
         "type" : "literal"
         }
-      ,
-      {
-        "value" : "xForce K",
-        "type" : "literal"
-        }
       
       ],
     "https://w3id.org/steel/ProcessOntology/hasLabelSource" : [ {
@@ -151,12 +140,6 @@
       {
         "value" : "DIN EN ISO 6892-1, G.3.1.1",
         "lang" : "en",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "DX56_D_FZ2_WR00_43.TXT",
-        "lang" : "de",
         "type" : "literal"
         }
       

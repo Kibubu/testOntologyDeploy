@@ -57,12 +57,6 @@
         }
       ,
       {
-        "value" : "Specimen type",
-        "lang" : "en",
-        "type" : "literal"
-        }
-      ,
-      {
         "value" : "Test piece geometry",
         "lang" : "en",
         "type" : "literal"
@@ -91,11 +85,6 @@
       ],
     "https://w3id.org/steel/ProcessOntology/hasExampleData" : [ {
         "value" : "Crashbox",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "FZ2 (L0=80_b0=20_R20)",
         "type" : "literal"
         }
       ,
@@ -132,12 +121,6 @@
         }
       ,
       {
-        "value" : "AFZ1-Fz-S1Q.xlm",
-        "lang" : "de",
-        "type" : "literal"
-        }
-      ,
-      {
         "value" : "AFZ1-Fz-S1Q.xlsx",
         "lang" : "de",
         "type" : "literal"
@@ -168,12 +151,6 @@
         }
       ,
       {
-        "value" : "DX56_D_FZ2_WR00_43.TXT",
-        "lang" : "de",
-        "type" : "literal"
-        }
-      ,
-      {
         "value" : "YS1-Fz-D1Q",
         "lang" : "de",
         "type" : "literal"
@@ -194,12 +171,6 @@
       {
         "value" : "YS1-Sz0\u00B0-S1L",
         "lang" : "de",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "deepl translator",
-        "lang" : "en",
         "type" : "literal"
         }
       

@@ -21,7 +21,6 @@
 <https://w3id.org/steel/ProcessOntology/Force> <https://w3id.org/steel/ProcessOntology/hasExampleData> "2438" .
 <https://w3id.org/steel/ProcessOntology/Force> <https://w3id.org/steel/ProcessOntology/hasExampleData> "82.0348" .
 <https://w3id.org/steel/ProcessOntology/Force> <https://w3id.org/steel/ProcessOntology/hasLabelSource> "AFZ-BU-S1.TXT"@de .
-<https://w3id.org/steel/ProcessOntology/Force> <https://w3id.org/steel/ProcessOntology/hasLabelSource> "AFZ1-Fz-S1Q.xlm"@de .
 <https://w3id.org/steel/ProcessOntology/Force> <https://w3id.org/steel/ProcessOntology/hasLabelSource> "AFZ1-Fz-S1Q.xlsx"@de .
 <https://w3id.org/steel/ProcessOntology/Force> <https://w3id.org/steel/ProcessOntology/hasLabelSource> "AFZ1-NZ50-25-D1Q"@en .
 <https://w3id.org/steel/ProcessOntology/Force> <https://w3id.org/steel/ProcessOntology/hasLabelSource> "AFZ1-ST-D1"@en .

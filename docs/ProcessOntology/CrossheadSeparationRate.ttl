@@ -20,7 +20,6 @@
 <https://w3id.org/steel/ProcessOntology/CrossheadSeparationRate> <https://w3id.org/steel/ProcessOntology/hasExampleData> "4800" .
 <https://w3id.org/steel/ProcessOntology/CrossheadSeparationRate> <https://w3id.org/steel/ProcessOntology/hasExampleData> "0.02" .
 <https://w3id.org/steel/ProcessOntology/CrossheadSeparationRate> <https://w3id.org/steel/ProcessOntology/hasLabelSource> "DX56_D_FZ2_WR00_43.TXT"@de .
-<https://w3id.org/steel/ProcessOntology/CrossheadSeparationRate> <https://w3id.org/steel/ProcessOntology/hasLabelSource> "AFZ1-Fz-S1Q.xlm"@de .
 <https://w3id.org/steel/ProcessOntology/CrossheadSeparationRate> <https://w3id.org/steel/ProcessOntology/hasLabelSource> "YS1-FzR4-S1Q"@en .
 <https://w3id.org/steel/ProcessOntology/CrossheadSeparationRate> <https://w3id.org/steel/ProcessOntology/hasLabelSource> "YS1-FzR4-S1Q"@de .
 <https://w3id.org/steel/ProcessOntology/CrossheadSeparationRate> <https://w3id.org/steel/ProcessOntology/hasLabelSource> "AFZ1-Fz-S1Q.xlsx"@de .

@@ -107,11 +107,6 @@
         }
       ,
       {
-        "value" : "DX56D",
-        "type" : "literal"
-        }
-      ,
-      {
         "value" : "H340LAD",
         "type" : "literal"
         }
@@ -129,12 +124,6 @@
       ],
     "https://w3id.org/steel/ProcessOntology/hasLabelSource" : [ {
         "value" : "AFZ-BU-S1.TXT",
-        "lang" : "de",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "AFZ1-Fz-S1Q.xlm",
         "lang" : "de",
         "type" : "literal"
         }
@@ -194,12 +183,6 @@
         }
       ,
       {
-        "value" : "DX56_D_FZ2_WR00_43.TXT",
-        "lang" : "de",
-        "type" : "literal"
-        }
-      ,
-      {
         "value" : "General Knowledge",
         "lang" : "de",
         "type" : "literal"
@@ -232,12 +215,6 @@
       {
         "value" : "YS1-Sz0\u00B0-S1L",
         "lang" : "de",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "deepl translator",
-        "lang" : "en",
         "type" : "literal"
         }
       

@@ -12,19 +12,6 @@
         }
       
       ],
-    "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-        "value" : "Bezeichnung des Werkstoffs.",
-        "lang" : "de",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "The material used in the experiment.",
-        "lang" : "en",
-        "type" : "literal"
-        }
-      
-      ],
     "http://www.w3.org/2000/01/rdf-schema#label" : [ {
         "value" : "Material",
         "lang" : "en",
@@ -65,37 +52,6 @@
       ],
     "http://www.w3.org/2004/02/skos/core#preflabel" : [ {
         "value" : "Material",
-        "lang" : "en",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasDescriptionCitationSource" : [ {
-        "value" : "Authors",
-        "lang" : "en",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "DIN EN ISO 16808:2022-08, 12",
-        "lang" : "de",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "DIN EN ISO 16808:2022-08, 12",
-        "lang" : "en",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "General Knowledge",
-        "lang" : "de",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "General Knowledge",
         "lang" : "en",
         "type" : "literal"
         }

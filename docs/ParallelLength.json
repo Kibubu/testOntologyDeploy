@@ -12,31 +12,6 @@
         }
       
       ],
-    "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-        "value" : "L\u00E4nge des parallelen reduzierten Querschnitts der Probe",
-        "lang" : "de",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "The length of the experiment (description replaced by Zugversuch Instron)",
-        "lang" : "en",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "The length of the parallel part of the specimen",
-        "lang" : "en",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "length of the parallel reduced section of the test piece",
-        "lang" : "en",
-        "type" : "literal"
-        }
-      
-      ],
     "http://www.w3.org/2000/01/rdf-schema#label" : [ {
         "value" : "ParallelLength",
         "lang" : "en",
@@ -91,25 +66,6 @@
     "http://www.w3.org/2004/02/skos/core#related" : [ {
         "value" : "https://w3id.org/steel/ProcessOntology/TestPieceGeometry",
         "type" : "uri"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasDescriptionCitationSource" : [ {
-        "value" : "Authors",
-        "lang" : "en",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "DIN EN ISO 6892-1, 3.2",
-        "lang" : "de",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "DIN EN ISO 6892-1, 3.2",
-        "lang" : "en",
-        "type" : "literal"
         }
       
       ],

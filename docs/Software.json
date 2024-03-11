@@ -12,13 +12,6 @@
         }
       
       ],
-    "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-        "value" : "Software, die f\u00FCr die Versuchsdurchf\u00FChrung und Datenverarbeitung verwendet wurde.",
-        "lang" : "de",
-        "type" : "literal"
-        }
-      
-      ],
     "http://www.w3.org/2000/01/rdf-schema#label" : [ {
         "value" : "Software",
         "lang" : "de",
@@ -65,19 +58,6 @@
       ,
       {
         "value" : "software",
-        "lang" : "en",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasDescriptionCitationSource" : [ {
-        "value" : "DIN EN ISO 16808:2022-08, 12",
-        "lang" : "de",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "DIN EN ISO 16808:2022-08, 12",
         "lang" : "en",
         "type" : "literal"
         }

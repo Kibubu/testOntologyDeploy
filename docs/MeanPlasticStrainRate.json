@@ -12,19 +12,6 @@
         }
       
       ],
-    "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-        "value" : "Mittelwert der zeitabh\u00E4ngigen technischen Dehnrate: de(t)/dt im Bereich zwischen Flie\u00DFbeginn oder 1% Dehnung und Dehnung bei Maximalkraft",
-        "lang" : "de",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "mean value of the time dependent engineering strain rate: de(t)/dt in the range between start of yield point or 1% strain and strain ar maximum force",
-        "lang" : "en",
-        "type" : "literal"
-        }
-      
-      ],
     "http://www.w3.org/2000/01/rdf-schema#label" : [ {
         "value" : "MeanPlasticStrainRate",
         "lang" : "en",
@@ -41,19 +28,6 @@
       ],
     "http://www.w3.org/2004/02/skos/core#preflabel" : [ {
         "value" : "MeanPlasticStrainRate",
-        "lang" : "en",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasDescriptionCitationSource" : [ {
-        "value" : "Authors",
-        "lang" : "de",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "ISO 26203-2, 2011, 4",
         "lang" : "en",
         "type" : "literal"
         }

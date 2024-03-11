@@ -12,19 +12,6 @@
         }
       
       ],
-    "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-        "value" : "Combination of Elements in a Phase or a whole Sample. Related to Alloys",
-        "lang" : "en",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "Elementzusammensetzung des Werkstoffs",
-        "lang" : "de",
-        "type" : "literal"
-        }
-      
-      ],
     "http://www.w3.org/2000/01/rdf-schema#label" : [ {
         "value" : "Composition",
         "lang" : "en",
@@ -65,13 +52,6 @@
       ,
       {
         "value" : "Zusammensetzung",
-        "lang" : "de",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasDescriptionCitationSource" : [ {
-        "value" : "Authors",
         "lang" : "de",
         "type" : "literal"
         }

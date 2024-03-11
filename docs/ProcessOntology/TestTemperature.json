@@ -12,31 +12,6 @@
         }
       
       ],
-    "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-        "value" : "Pr\u00FCftemperatur",
-        "lang" : "de",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "The initial test temperature during the experiment (neglecting adiabatic heating)",
-        "lang" : "en",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "The temperature during the experiment.",
-        "lang" : "en",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "Versuche unter kontrollierten Bedingungen m\u00FCssen bei einer Temperatur von (23 \u00B1 5) \u00B0C durchgef\u00FChrt werden.",
-        "lang" : "de",
-        "type" : "literal"
-        }
-      
-      ],
     "http://www.w3.org/2000/01/rdf-schema#label" : [ {
         "value" : "TestTemperature",
         "lang" : "en",
@@ -72,31 +47,6 @@
     "http://www.w3.org/2004/02/skos/core#preflabel" : [ {
         "value" : "TestTemperature",
         "lang" : "en",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasDescriptionCitationSource" : [ {
-        "value" : "Authors",
-        "lang" : "en",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "DIN EN ISO 12004-2: 2021_07, 5",
-        "lang" : "de",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "DIN EN ISO 12004-2: 2021_07, 5",
-        "lang" : "en",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "DIN EN ISO 6892-1",
-        "lang" : "de",
         "type" : "literal"
         }
       

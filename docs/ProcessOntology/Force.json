@@ -12,25 +12,6 @@
         }
       
       ],
-    "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-        "value" : "The force measured by the load cell",
-        "lang" : "en",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "The force measured with the force measuring system",
-        "lang" : "en",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "The force that is measured using the Force-measuring device.",
-        "lang" : "en",
-        "type" : "literal"
-        }
-      
-      ],
     "http://www.w3.org/2000/01/rdf-schema#label" : [ {
         "value" : "Force",
         "lang" : "en",
@@ -107,13 +88,6 @@
       {
         "value" : "https://w3id.org/steel/ProcessOntology/ForceMeasuringSystem",
         "type" : "uri"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasDescriptionCitationSource" : [ {
-        "value" : "Authors",
-        "lang" : "en",
-        "type" : "literal"
         }
       
       ],

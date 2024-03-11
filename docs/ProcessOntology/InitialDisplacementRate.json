@@ -12,25 +12,6 @@
         }
       
       ],
-    "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-        "value" : "Pr\u00FCfgeschwindigkeit, die als Auftreffgeschwindigkeit bei Versuchsbeginn nominell eingestellt wurde ",
-        "lang" : "de",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "The velocity of the actuator",
-        "lang" : "en",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "initial displacement rate",
-        "lang" : "en",
-        "type" : "literal"
-        }
-      
-      ],
     "http://www.w3.org/2000/01/rdf-schema#label" : [ {
         "value" : "InitialDisplacementRate",
         "lang" : "en",
@@ -59,25 +40,6 @@
       ],
     "http://www.w3.org/2004/02/skos/core#preflabel" : [ {
         "value" : "InitialDisplacementRate",
-        "lang" : "en",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasDescriptionCitationSource" : [ {
-        "value" : "Authors",
-        "lang" : "de",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "Authors",
-        "lang" : "en",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "ISO 26203-2, 2011, 4",
         "lang" : "en",
         "type" : "literal"
         }

@@ -12,13 +12,6 @@
         }
       
       ],
-    "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-        "value" : "Textur des Mikrostrukturmodells, wird durch drei Eulerwinkel definiert",
-        "lang" : "de",
-        "type" : "literal"
-        }
-      
-      ],
     "http://www.w3.org/2000/01/rdf-schema#label" : [ {
         "value" : "Textur",
         "lang" : "de",
@@ -53,19 +46,6 @@
       ,
       {
         "value" : "Texture",
-        "lang" : "en",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasDescriptionCitationSource" : [ {
-        "value" : "General Knowledge",
-        "lang" : "de",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "General Knowledge",
         "lang" : "en",
         "type" : "literal"
         }

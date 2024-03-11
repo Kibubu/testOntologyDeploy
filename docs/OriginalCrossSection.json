@@ -12,25 +12,6 @@
         }
       
       ],
-    "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-        "value" : "Anfangsquerschnitt innerhalb der parallelen L\u00E4nge",
-        "lang" : "de",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "original cross-sectional area of the parallel length",
-        "lang" : "en",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "original crosssection area of the parallel length",
-        "lang" : "en",
-        "type" : "literal"
-        }
-      
-      ],
     "http://www.w3.org/2000/01/rdf-schema#label" : [ {
         "value" : "OriginalCrossSection",
         "lang" : "en",
@@ -53,31 +34,6 @@
       ],
     "http://www.w3.org/2004/02/skos/core#preflabel" : [ {
         "value" : "OriginalCrossSection",
-        "lang" : "en",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasDescriptionCitationSource" : [ {
-        "value" : "Authors",
-        "lang" : "en",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "DIN EN ISO 6892-1, Tabelle 1",
-        "lang" : "de",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "DIN EN ISO 6892-1, Table 1",
-        "lang" : "en",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "ISO 26203-2, 2011, 4",
         "lang" : "en",
         "type" : "literal"
         }

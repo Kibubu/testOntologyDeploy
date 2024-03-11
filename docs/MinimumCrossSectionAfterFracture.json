@@ -12,19 +12,6 @@
         }
       
       ],
-    "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-        "value" : "kleinster Querschnitt nach dem Bruch",
-        "lang" : "de",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "minimum cross-sectional area after fracture",
-        "lang" : "en",
-        "type" : "literal"
-        }
-      
-      ],
     "http://www.w3.org/2000/01/rdf-schema#label" : [ {
         "value" : "MinimumCrossSectionAfterFracture",
         "lang" : "en",
@@ -47,25 +34,6 @@
       ],
     "http://www.w3.org/2004/02/skos/core#preflabel" : [ {
         "value" : "MinimumCrossSectionAfterFracture",
-        "lang" : "en",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasDescriptionCitationSource" : [ {
-        "value" : "Authors",
-        "lang" : "en",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "DIN EN ISO 6892-1, Tabelle 1",
-        "lang" : "de",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "DIN EN ISO 6892-1, Table 1",
         "lang" : "en",
         "type" : "literal"
         }

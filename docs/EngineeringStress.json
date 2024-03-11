@@ -12,19 +12,6 @@
         }
       
       ],
-    "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-        "value" : "engineering stress",
-        "lang" : "en",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "technische Spannung",
-        "lang" : "de",
-        "type" : "literal"
-        }
-      
-      ],
     "http://www.w3.org/2000/01/rdf-schema#label" : [ {
         "value" : "EngineeringStress",
         "lang" : "en",
@@ -53,19 +40,6 @@
       ],
     "http://www.w3.org/2004/02/skos/core#preflabel" : [ {
         "value" : "EngineeringStress",
-        "lang" : "en",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasDescriptionCitationSource" : [ {
-        "value" : "Authors",
-        "lang" : "de",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "ISO 26203-2, 2011, 4",
         "lang" : "en",
         "type" : "literal"
         }

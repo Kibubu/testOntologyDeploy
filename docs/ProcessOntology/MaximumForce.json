@@ -12,25 +12,6 @@
         }
       
       ],
-    "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-        "value" : "Maximalkraft",
-        "lang" : "de",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "highest force that the test piece withstands during the test",
-        "lang" : "en",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "maximum force",
-        "lang" : "en",
-        "type" : "literal"
-        }
-      
-      ],
     "http://www.w3.org/2000/01/rdf-schema#label" : [ {
         "value" : "MaximumForce",
         "lang" : "en",
@@ -79,25 +60,6 @@
     "http://www.w3.org/2004/02/skos/core#related" : [ {
         "value" : "https://w3id.org/steel/ProcessOntology/MeasuringRange",
         "type" : "uri"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasDescriptionCitationSource" : [ {
-        "value" : "Authors",
-        "lang" : "de",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "Authors",
-        "lang" : "en",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "ISO 26203-2, 2011, 4",
-        "lang" : "en",
-        "type" : "literal"
         }
       
       ],

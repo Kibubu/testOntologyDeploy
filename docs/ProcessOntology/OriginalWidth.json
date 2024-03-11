@@ -12,25 +12,6 @@
         }
       
       ],
-    "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-        "value" : "(Anfangs-)Breite einer Flachprobe in der parallelen L\u00E4nge oder mittlere Breite einer Rohrstreifenprobe oder eines Profildrahtes",
-        "lang" : "de",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "Original width of the parallel length of a flat test piece",
-        "lang" : "en",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "The width of the specimen.",
-        "lang" : "en",
-        "type" : "literal"
-        }
-      
-      ],
     "http://www.w3.org/2000/01/rdf-schema#label" : [ {
         "value" : "OriginalWidth",
         "lang" : "en",
@@ -91,25 +72,6 @@
     "http://www.w3.org/2004/02/skos/core#related" : [ {
         "value" : "https://w3id.org/steel/ProcessOntology/TestPieceGeometry",
         "type" : "uri"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasDescriptionCitationSource" : [ {
-        "value" : "Authors",
-        "lang" : "en",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "DIN EN ISO 6892-1, Tabelle 1",
-        "lang" : "de",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "DIN EN ISO 6892-1, Table 1",
-        "lang" : "en",
-        "type" : "literal"
         }
       
       ],

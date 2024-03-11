@@ -12,37 +12,6 @@
         }
       
       ],
-    "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-        "value" : "0.694",
-        "lang" : "en",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "Authors",
-        "lang" : "de",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "Recorded time during the hydraulic bulge test.",
-        "lang" : "en",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "The time when the data point is recorded in relation to the start. ",
-        "lang" : "en",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "Zeit w\u00E4hrend des hydraulischen Tiefungsversuchs.",
-        "lang" : "de",
-        "type" : "literal"
-        }
-      
-      ],
     "http://www.w3.org/2000/01/rdf-schema#label" : [ {
         "value" : "Time",
         "lang" : "en",
@@ -77,37 +46,6 @@
       ],
     "http://www.w3.org/2004/02/skos/core#preflabel" : [ {
         "value" : "Time",
-        "lang" : "en",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasDescriptionCitationSource" : [ {
-        "value" : "Authors",
-        "lang" : "de",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "Authors",
-        "lang" : "en",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "The time when the data point is recorded in relation to the start. ",
-        "lang" : "en",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "wes",
-        "lang" : "de",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "wes",
         "lang" : "en",
         "type" : "literal"
         }

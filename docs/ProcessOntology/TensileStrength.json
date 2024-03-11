@@ -12,31 +12,6 @@
         }
       
       ],
-    "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-        "value" : "Spannung, die der H\u00F6chstkraft entspricht",
-        "lang" : "de",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "maximum amount of tensile (pulling) stress that a material can withstand before failure ",
-        "lang" : "en",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "stress corresponding to the maximum force",
-        "lang" : "en",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "tensile strength",
-        "lang" : "en",
-        "type" : "literal"
-        }
-      
-      ],
     "http://www.w3.org/2000/01/rdf-schema#label" : [ {
         "value" : "TensileStrength",
         "lang" : "en",
@@ -65,25 +40,6 @@
       ],
     "http://www.w3.org/2004/02/skos/core#preflabel" : [ {
         "value" : "TensileStrength",
-        "lang" : "en",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasDescriptionCitationSource" : [ {
-        "value" : "Authors",
-        "lang" : "en",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "DIN EN ISO 6892-1, 3.10.1",
-        "lang" : "de",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "DIN EN ISO 6892-1, 3.10.1",
         "lang" : "en",
         "type" : "literal"
         }

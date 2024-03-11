@@ -12,13 +12,6 @@
         }
       
       ],
-    "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-        "value" : "Referenzscherrate, die im Kristallplastizit\u00E4tsmodell verwendet wurde",
-        "lang" : "de",
-        "type" : "literal"
-        }
-      
-      ],
     "http://www.w3.org/2000/01/rdf-schema#label" : [ {
         "value" : "ReferenceShearRate",
         "lang" : "en",
@@ -35,19 +28,6 @@
       ],
     "http://www.w3.org/2004/02/skos/core#preflabel" : [ {
         "value" : "ReferenceShearRate",
-        "lang" : "en",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasDescriptionCitationSource" : [ {
-        "value" : "General Knowledge",
-        "lang" : "de",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "General Knowledge",
         "lang" : "en",
         "type" : "literal"
         }

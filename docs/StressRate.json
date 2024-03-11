@@ -12,19 +12,6 @@
         }
       
       ],
-    "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-        "value" : "Zunahme der Spannung je Zeiteinheit",
-        "lang" : "de",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "stress rate",
-        "lang" : "en",
-        "type" : "literal"
-        }
-      
-      ],
     "http://www.w3.org/2000/01/rdf-schema#label" : [ {
         "value" : "StressRate",
         "lang" : "en",
@@ -71,25 +58,6 @@
       {
         "value" : "https://w3id.org/steel/ProcessOntology/Time",
         "type" : "uri"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasDescriptionCitationSource" : [ {
-        "value" : "Authors",
-        "lang" : "en",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "DIN EN ISO 6892-1, 3.7.4",
-        "lang" : "de",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "DIN EN ISO 6892-1, 3.7.4",
-        "lang" : "en",
-        "type" : "literal"
         }
       
       ],

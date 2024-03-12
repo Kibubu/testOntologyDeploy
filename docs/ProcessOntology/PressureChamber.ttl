@@ -1,7 +1,7 @@
 
 
-<https://w3id.org/steel/ProcessOntology/PressureChamber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <https://w3id.org/steel/ProcessOntology/PressureChamber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/steel/ProcessOntology/PressureChamber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <https://w3id.org/steel/ProcessOntology/PressureChamber> <http://www.w3.org/2000/01/rdf-schema#label> "PressureChamber"@en .
 <https://w3id.org/steel/ProcessOntology/PressureChamber> <http://www.w3.org/2004/02/skos/core#altlabel> "Pressure in the Chamber"@en .
 <https://w3id.org/steel/ProcessOntology/PressureChamber> <http://www.w3.org/2004/02/skos/core#altlabel> "Bulge Druck"@de .
@@ -11,7 +11,7 @@
 <https://w3id.org/steel/ProcessOntology/PressureChamber> <https://w3id.org/steel/ProcessOntology/hasLabelSource> "AFZ-BU-S1.TXT"@de .
 <https://w3id.org/steel/ProcessOntology/PressureChamber> <https://w3id.org/steel/ProcessOntology/hasSymbol> "p"@en .
 <https://w3id.org/steel/ProcessOntology/PressureChamber> <https://w3id.org/steel/ProcessOntology/hasSymbolLatex> "p"@en .
-<https://w3id.org/steel/ProcessOntology/PressureChamber> <https://w3id.org/steel/ProcessOntology/hasTypicalUnitLabel> "MPa" .
 <https://w3id.org/steel/ProcessOntology/PressureChamber> <https://w3id.org/steel/ProcessOntology/hasTypicalUnitLabel> "N/mm2" .
+<https://w3id.org/steel/ProcessOntology/PressureChamber> <https://w3id.org/steel/ProcessOntology/hasTypicalUnitLabel> "MPa" .
 
 

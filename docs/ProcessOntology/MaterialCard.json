@@ -29,6 +29,18 @@
         "lang" : "en",
         "type" : "literal"
         }
+      ,
+      {
+        "value" : "Materialkarte",
+        "lang" : "de",
+        "type" : "literal"
+        }
+      ,
+      {
+        "value" : "material card",
+        "lang" : "en",
+        "type" : "literal"
+        }
       
       ],
     "http://www.w3.org/2004/02/skos/core#altlabel" : [ {
@@ -40,6 +52,18 @@
       {
         "value" : "Material Card",
         "lang" : "en",
+        "type" : "literal"
+        }
+      ,
+      {
+        "value" : "MaterialCard",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      ,
+      {
+        "value" : "MaterialKarte",
+        "lang" : "de",
         "type" : "literal"
         }
       
@@ -58,6 +82,18 @@
       ,
       {
         "value" : "MaterialCard",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      ,
+      {
+        "value" : "Materialkarte",
+        "lang" : "de",
+        "type" : "literal"
+        }
+      ,
+      {
+        "value" : "material card",
         "lang" : "en",
         "type" : "literal"
         }

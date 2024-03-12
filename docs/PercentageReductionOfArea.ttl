@@ -5,8 +5,8 @@
 <https://w3id.org/steel/ProcessOntology/PercentageReductionOfArea> <http://www.w3.org/2000/01/rdf-schema#label> "PercentageReductionOfArea"@en .
 <https://w3id.org/steel/ProcessOntology/PercentageReductionOfArea> <http://www.w3.org/2004/02/skos/core#altlabel> "Brucheinschnürung"@de .
 <https://w3id.org/steel/ProcessOntology/PercentageReductionOfArea> <http://www.w3.org/2004/02/skos/core#altlabel> "percentage reduction of area"@en .
-<https://w3id.org/steel/ProcessOntology/PercentageReductionOfArea> <http://www.w3.org/2004/02/skos/core#altlabel> "Z"@en .
 <https://w3id.org/steel/ProcessOntology/PercentageReductionOfArea> <http://www.w3.org/2004/02/skos/core#altlabel> "Brucheinschnürung Z"@de .
+<https://w3id.org/steel/ProcessOntology/PercentageReductionOfArea> <http://www.w3.org/2004/02/skos/core#altlabel> "Z"@en .
 <https://w3id.org/steel/ProcessOntology/PercentageReductionOfArea> <http://www.w3.org/2004/02/skos/core#preflabel> "PercentageReductionOfArea"@en .
 <https://w3id.org/steel/ProcessOntology/PercentageReductionOfArea> <https://w3id.org/steel/ProcessOntology/hasExampleData> "78.0" .
 <https://w3id.org/steel/ProcessOntology/PercentageReductionOfArea> <https://w3id.org/steel/ProcessOntology/hasExampleData> "67.42" .

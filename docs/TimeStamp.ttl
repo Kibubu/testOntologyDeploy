@@ -1,12 +1,12 @@
 
 
-<https://w3id.org/steel/ProcessOntology/TimeStamp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <https://w3id.org/steel/ProcessOntology/TimeStamp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/steel/ProcessOntology/TimeStamp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <https://w3id.org/steel/ProcessOntology/TimeStamp> <http://www.w3.org/2000/01/rdf-schema#label> "TimeStamp"@en .
 <https://w3id.org/steel/ProcessOntology/TimeStamp> <http://www.w3.org/2004/02/skos/core#altlabel> "Datum"@de .
-<https://w3id.org/steel/ProcessOntology/TimeStamp> <http://www.w3.org/2004/02/skos/core#altlabel> "Date"@en .
-<https://w3id.org/steel/ProcessOntology/TimeStamp> <http://www.w3.org/2004/02/skos/core#altlabel> "Date/Time"@en .
 <https://w3id.org/steel/ProcessOntology/TimeStamp> <http://www.w3.org/2004/02/skos/core#altlabel> "Datum/Uhrzeit"@de .
+<https://w3id.org/steel/ProcessOntology/TimeStamp> <http://www.w3.org/2004/02/skos/core#altlabel> "Date/Time"@en .
+<https://w3id.org/steel/ProcessOntology/TimeStamp> <http://www.w3.org/2004/02/skos/core#altlabel> "Date"@en .
 <https://w3id.org/steel/ProcessOntology/TimeStamp> <http://www.w3.org/2004/02/skos/core#preflabel> "TimeStamp"@en .
 <https://w3id.org/steel/ProcessOntology/TimeStamp> <https://w3id.org/steel/ProcessOntology/hasExampleData> "11.03.2016" .
 <https://w3id.org/steel/ProcessOntology/TimeStamp> <https://w3id.org/steel/ProcessOntology/hasExampleData> "45093.6" .

@@ -12,9 +12,9 @@
 <https://w3id.org/steel/ProcessOntology/OriginalWidth> <http://www.w3.org/2004/02/skos/core#altlabel> "Probenbreite b"@de .
 <https://w3id.org/steel/ProcessOntology/OriginalWidth> <http://www.w3.org/2004/02/skos/core#preflabel> "OriginalWidth"@en .
 <https://w3id.org/steel/ProcessOntology/OriginalWidth> <http://www.w3.org/2004/02/skos/core#related> <https://w3id.org/steel/ProcessOntology/TestPieceGeometry> .
-<https://w3id.org/steel/ProcessOntology/OriginalWidth> <https://w3id.org/steel/ProcessOntology/hasExampleData> "10054" .
-<https://w3id.org/steel/ProcessOntology/OriginalWidth> <https://w3id.org/steel/ProcessOntology/hasExampleData> "10040" .
 <https://w3id.org/steel/ProcessOntology/OriginalWidth> <https://w3id.org/steel/ProcessOntology/hasExampleData> "20.04" .
+<https://w3id.org/steel/ProcessOntology/OriginalWidth> <https://w3id.org/steel/ProcessOntology/hasExampleData> "10040" .
+<https://w3id.org/steel/ProcessOntology/OriginalWidth> <https://w3id.org/steel/ProcessOntology/hasExampleData> "10054" .
 <https://w3id.org/steel/ProcessOntology/OriginalWidth> <https://w3id.org/steel/ProcessOntology/hasLabelSource> "YS1-FzR4-S1Q"@de .
 <https://w3id.org/steel/ProcessOntology/OriginalWidth> <https://w3id.org/steel/ProcessOntology/hasLabelSource> "YS1-FzR4-S1Q"@en .
 <https://w3id.org/steel/ProcessOntology/OriginalWidth> <https://w3id.org/steel/ProcessOntology/hasLabelSource> "DX56_D_FZ2_WR00_43.TXT"@de .

@@ -580,11 +580,11 @@
 <https://w3id.org/steel/ProcessOntology/Elasticity> <http://www.w3.org/2000/01/rdf-schema#label> "Elasticity"@en .
 <https://w3id.org/steel/ProcessOntology/Elasticity> <http://www.w3.org/2004/02/skos/core#preflabel> "Dehnbarkeit"@de .
 <https://w3id.org/steel/ProcessOntology/Elasticity> <http://www.w3.org/2004/02/skos/core#preflabel> "Elasticity"@en .
-<https://w3id.org/steel/ProcessOntology/Elastoplastic%20model> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://w3id.org/steel/ProcessOntology/Elastoplastic%20model> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
-<https://w3id.org/steel/ProcessOntology/Elastoplastic%20model> <http://www.w3.org/2000/01/rdf-schema#label> "Elastoplastic model"@en .
-<https://w3id.org/steel/ProcessOntology/Elastoplastic%20model> <http://www.w3.org/2000/01/rdf-schema#subClassOf> "https://material-digital.de/pmdco/ValueObject" .
-<https://w3id.org/steel/ProcessOntology/Elastoplastic%20model> <http://www.w3.org/2004/02/skos/core#preflabel> "Elastoplastic model"@en .
+<https://w3id.org/steel/ProcessOntology/ElastoplasticModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/steel/ProcessOntology/ElastoplasticModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://w3id.org/steel/ProcessOntology/ElastoplasticModel> <http://www.w3.org/2000/01/rdf-schema#label> "ElastoplasticModel"@en .
+<https://w3id.org/steel/ProcessOntology/ElastoplasticModel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> "https://material-digital.de/pmdco/ValueObject" .
+<https://w3id.org/steel/ProcessOntology/ElastoplasticModel> <http://www.w3.org/2004/02/skos/core#preflabel> "ElastoplasticModel"@en .
 <https://w3id.org/steel/ProcessOntology/Element> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://w3id.org/steel/ProcessOntology/Element> <http://www.w3.org/2000/01/rdf-schema#comment> "Chemical Elements"@en .
 <https://w3id.org/steel/ProcessOntology/Element> <http://www.w3.org/2000/01/rdf-schema#label> "Element"@de .
@@ -4518,10 +4518,10 @@
 <https://w3id.org/steel/ProcessOntology/hasElasticConstantC44_MPa> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/steel/ProcessOntology/hasElasticConstantC44> .
 <https://w3id.org/steel/ProcessOntology/hasElasticConstantC44_MPa> <http://www.w3.org/2004/02/skos/core#preflabel> "hasElasticConstantC44_MPa"@en .
 <https://w3id.org/steel/ProcessOntology/hasElasticConstantC44_MPa> <https://w3id.org/steel/ProcessOntology/hasUnitLabel> "MPa" .
-<https://w3id.org/steel/ProcessOntology/hasElastoplastic%20model> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<https://w3id.org/steel/ProcessOntology/hasElastoplastic%20model> <http://www.w3.org/2000/01/rdf-schema#label> "hasElastoplastic model"@en .
-<https://w3id.org/steel/ProcessOntology/hasElastoplastic%20model> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/steel/ProcessOntology/Elastoplastic%20model> .
-<https://w3id.org/steel/ProcessOntology/hasElastoplastic%20model> <http://www.w3.org/2004/02/skos/core#preflabel> "hasElastoplastic model"@en .
+<https://w3id.org/steel/ProcessOntology/hasElastoplasticModel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/steel/ProcessOntology/hasElastoplasticModel> <http://www.w3.org/2000/01/rdf-schema#label> "hasElastoplasticModel"@en .
+<https://w3id.org/steel/ProcessOntology/hasElastoplasticModel> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/steel/ProcessOntology/ElastoplasticModel> .
+<https://w3id.org/steel/ProcessOntology/hasElastoplasticModel> <http://www.w3.org/2004/02/skos/core#preflabel> "hasElastoplasticModel"@en .
 <https://w3id.org/steel/ProcessOntology/hasElementDeletionFlag> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://w3id.org/steel/ProcessOntology/hasElementDeletionFlag> <http://www.w3.org/2000/01/rdf-schema#label> "hasElementDeletionFlag"@en .
 <https://w3id.org/steel/ProcessOntology/hasElementDeletionFlag> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/steel/ProcessOntology/ElementDeletionFlag> .
@@ -7311,7 +7311,7 @@
 <https://w3id.org/steel/ProcessOntology/workflowSteps> <http://www.w3.org/2000/01/rdf-schema#label> "steps"@en .
 <https://w3id.org/steel/ProcessOntology/workflowSteps> <http://www.w3.org/2004/02/skos/core#preflabel> "steps"@en .
 <https://w3id.org/steel/ProcessOntology> <http://purl.org/dc/elements/1.1/description> "Vocabulary of project StahlDigital"@en .
-<https://w3id.org/steel/ProcessOntology> <http://purl.org/dc/terms/date> "2024-03-15T08:22:59+00:00" .
+<https://w3id.org/steel/ProcessOntology> <http://purl.org/dc/terms/date> "2024-03-16T14:35:58+00:00" .
 <https://w3id.org/steel/ProcessOntology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
 <https://w3id.org/steel/ProcessOntology> <http://www.w3.org/2000/01/rdf-schema#label> "StahlDigital Vocabulary"@en .
 <https://w3id.org/steel/ProcessOntology> <http://www.w3.org/2002/07/owl#versionInfo> "0.1 (preliminary)"@en .

@@ -1,6 +1,13 @@
 
 {
   "https://w3id.org/steel/ProcessOntology/ComputerControlledTensileTestingMachine" : {
+    "http://purl.org/dc/terms/description" : [ {
+        "value" : "Maschine, bei der die Regelung und \u00DCberwachung des Versuches, die Messungen und die Datenverarbeitung von einem Computer durchgef\u00FChrt werden",
+        "lang" : "de",
+        "type" : "literal"
+        }
+      
+      ],
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
         "value" : "http://www.w3.org/2002/07/owl#Class",
         "type" : "uri"

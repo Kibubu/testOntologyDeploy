@@ -1,6 +1,37 @@
 
 {
   "https://w3id.org/steel/ProcessOntology/Time" : {
+    "http://purl.org/dc/terms/description" : [ {
+        "value" : "0.694",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      ,
+      {
+        "value" : "Authors",
+        "lang" : "de",
+        "type" : "literal"
+        }
+      ,
+      {
+        "value" : "Recorded time during the hydraulic bulge test.",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      ,
+      {
+        "value" : "The time when the data point is recorded in relation to the start. ",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      ,
+      {
+        "value" : "Zeit w\u00E4hrend des hydraulischen Tiefungsversuchs.",
+        "lang" : "de",
+        "type" : "literal"
+        }
+      
+      ],
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
         "value" : "http://www.w3.org/2002/07/owl#Class",
         "type" : "uri"

@@ -1,6 +1,31 @@
 
 {
   "https://w3id.org/steel/ProcessOntology/TestTemperature" : {
+    "http://purl.org/dc/terms/description" : [ {
+        "value" : "Pr\u00FCftemperatur",
+        "lang" : "de",
+        "type" : "literal"
+        }
+      ,
+      {
+        "value" : "The initial test temperature during the experiment (neglecting adiabatic heating)",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      ,
+      {
+        "value" : "The temperature during the experiment.",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      ,
+      {
+        "value" : "Versuche unter kontrollierten Bedingungen m\u00FCssen bei einer Temperatur von (23 \u00B1 5) \u00B0C durchgef\u00FChrt werden.",
+        "lang" : "de",
+        "type" : "literal"
+        }
+      
+      ],
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
         "value" : "http://www.w3.org/2002/07/owl#Class",
         "type" : "uri"

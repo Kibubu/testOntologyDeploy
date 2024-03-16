@@ -1,6 +1,19 @@
 
 {
   "https://w3id.org/steel/ProcessOntology/MeanPlasticStrainRate" : {
+    "http://purl.org/dc/terms/description" : [ {
+        "value" : "Mittelwert der zeitabh\u00E4ngigen technischen Dehnrate: de(t)/dt im Bereich zwischen Flie\u00DFbeginn oder 1% Dehnung und Dehnung bei Maximalkraft",
+        "lang" : "de",
+        "type" : "literal"
+        }
+      ,
+      {
+        "value" : "mean value of the time dependent engineering strain rate: de(t)/dt in the range between start of yield point or 1% strain and strain ar maximum force",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      
+      ],
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
         "value" : "http://www.w3.org/2002/07/owl#Class",
         "type" : "uri"

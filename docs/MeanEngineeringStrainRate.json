@@ -1,6 +1,19 @@
 
 {
   "https://w3id.org/steel/ProcessOntology/MeanEngineeringStrainRate" : {
+    "http://purl.org/dc/terms/description" : [ {
+        "value" : "mean engineering strain rate = A/tf",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      ,
+      {
+        "value" : "mittlere technische Dehnrate = A/tf",
+        "lang" : "de",
+        "type" : "literal"
+        }
+      
+      ],
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
         "value" : "http://www.w3.org/2002/07/owl#Class",
         "type" : "uri"

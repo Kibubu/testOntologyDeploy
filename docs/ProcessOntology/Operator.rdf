@@ -13,6 +13,12 @@
     <ns0:label xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">Operator</ns0:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/Operator">
+    <ns0:description xmlns:ns0="http://purl.org/dc/terms/" xml:lang="en">Person performed the hydraulic bulge test.</ns0:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/Operator">
+    <ns0:description xmlns:ns0="http://purl.org/dc/terms/" xml:lang="de">Person, die den hydraulischen Tiefungsversuch durchgeführt hat. </ns0:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/Operator">
     <ns0:altlabel xmlns:ns0="http://www.w3.org/2004/02/skos/core#" xml:lang="de">Prüfer</ns0:altlabel>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/Operator">

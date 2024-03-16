@@ -10,6 +10,12 @@
     <ns0:label xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">ProjectName</ns0:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/ProjectName">
+    <ns0:description xmlns:ns0="http://purl.org/dc/terms/" xml:lang="en">Name of the Project.</ns0:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/ProjectName">
+    <ns0:description xmlns:ns0="http://purl.org/dc/terms/" xml:lang="en">Instabilität</ns0:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/ProjectName">
     <ns0:altlabel xmlns:ns0="http://www.w3.org/2004/02/skos/core#" xml:lang="en">Project</ns0:altlabel>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/ProjectName">
@@ -31,13 +37,13 @@
     <ns0:preflabel xmlns:ns0="http://www.w3.org/2004/02/skos/core#" xml:lang="en">ProjectName</ns0:preflabel>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/ProjectName">
-    <ns0:hasExampleData xmlns:ns0="https://w3id.org/steel/ProcessOntology/">PMD-Refrenzprozess</ns0:hasExampleData>
-  </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/ProjectName">
     <ns0:hasExampleData xmlns:ns0="https://w3id.org/steel/ProcessOntology/">Instabilität</ns0:hasExampleData>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/ProjectName">
     <ns0:hasExampleData xmlns:ns0="https://w3id.org/steel/ProcessOntology/">Crashartig</ns0:hasExampleData>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/ProjectName">
+    <ns0:hasExampleData xmlns:ns0="https://w3id.org/steel/ProcessOntology/">PMD-Refrenzprozess</ns0:hasExampleData>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/ProjectName">
     <ns0:hasExampleData xmlns:ns0="https://w3id.org/steel/ProcessOntology/">MATERIALDIGITAL</ns0:hasExampleData>

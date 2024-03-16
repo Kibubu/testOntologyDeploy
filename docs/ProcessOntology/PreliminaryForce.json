@@ -1,6 +1,19 @@
 
 {
   "https://w3id.org/steel/ProcessOntology/PreliminaryForce" : {
+    "http://purl.org/dc/terms/description" : [ {
+        "value" : "\"Vorkraft\" in DIN EN ISO 6892-1",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      ,
+      {
+        "value" : "Um ein Ausrichten der Probe in der Einspannvorrichtung zu erreichen, darf eine Vorkraft aufgebracht werden, die 5 % des spezifizierten oder zu erwartenden Streckgrenzenwertes nicht \u00FCberschreitet",
+        "lang" : "de",
+        "type" : "literal"
+        }
+      
+      ],
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
         "value" : "http://www.w3.org/2002/07/owl#Class",
         "type" : "uri"

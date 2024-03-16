@@ -10,6 +10,18 @@
     <ns0:label xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">OriginalThickness</ns0:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/OriginalThickness">
+    <ns0:description xmlns:ns0="http://purl.org/dc/terms/" xml:lang="en">The initial thickness of the specimen.</ns0:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/OriginalThickness">
+    <ns0:description xmlns:ns0="http://purl.org/dc/terms/" xml:lang="en">Original width of the parallel length of a flat test piece</ns0:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/OriginalThickness">
+    <ns0:description xmlns:ns0="http://purl.org/dc/terms/" xml:lang="en">The thickness of the specimen.</ns0:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/OriginalThickness">
+    <ns0:description xmlns:ns0="http://purl.org/dc/terms/" xml:lang="de">(Anfangs-)Dicke einer Flachprobe oder Wanddicke eines Rohres</ns0:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/OriginalThickness">
     <ns0:altlabel xmlns:ns0="http://www.w3.org/2004/02/skos/core#" xml:lang="en">original thickness</ns0:altlabel>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/OriginalThickness">

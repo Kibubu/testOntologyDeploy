@@ -1,6 +1,19 @@
 
 {
   "https://w3id.org/steel/ProcessOntology/MinimumCrossSectionAfterFracture" : {
+    "http://purl.org/dc/terms/description" : [ {
+        "value" : "kleinster Querschnitt nach dem Bruch",
+        "lang" : "de",
+        "type" : "literal"
+        }
+      ,
+      {
+        "value" : "minimum cross-sectional area after fracture",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      
+      ],
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
         "value" : "http://www.w3.org/2002/07/owl#Class",
         "type" : "uri"

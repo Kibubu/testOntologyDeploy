@@ -1,6 +1,13 @@
 
 {
   "https://w3id.org/steel/ProcessOntology/EstimatedStrainRateOverTheParallelLength" : {
+    "http://purl.org/dc/terms/description" : [ {
+        "value" : "Zunahme der Dehnung \u00FCber die parallele L\u00E4nge der Probe je Zeiteinheit, basierend auf der Traversengeschwindigkeit und der parallelen L\u00E4nge der Probe",
+        "lang" : "de",
+        "type" : "literal"
+        }
+      
+      ],
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
         "value" : "http://www.w3.org/2002/07/owl#Class",
         "type" : "uri"

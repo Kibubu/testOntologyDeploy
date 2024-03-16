@@ -1,6 +1,19 @@
 
 {
   "https://w3id.org/steel/ProcessOntology/PercentageReductionOfArea" : {
+    "http://purl.org/dc/terms/description" : [ {
+        "value" : "gr\u00F6\u00DFte w\u00E4hrend des Versuchs aufgetretene \u00C4nderung des Querschnitts, angegeben in Prozent, bezogen auf den Anfangsquerschnitt",
+        "lang" : "de",
+        "type" : "literal"
+        }
+      ,
+      {
+        "value" : "maximum change in cross-sectional area which has occured during the test expressed as a percentage of the original cross-sectional area",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      
+      ],
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
         "value" : "http://www.w3.org/2002/07/owl#Class",
         "type" : "uri"

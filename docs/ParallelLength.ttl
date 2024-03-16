@@ -4,6 +4,10 @@
 <https://w3id.org/steel/ProcessOntology/ParallelLength> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <https://w3id.org/steel/ProcessOntology/ParallelLength> <http://www.w3.org/2000/01/rdf-schema#label> "ParallelLength"@en .
 <https://w3id.org/steel/ProcessOntology/ParallelLength> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://w3id.org/steel/ProcessOntology/TestPieceGeometry> .
+<https://w3id.org/steel/ProcessOntology/ParallelLength> <http://purl.org/dc/terms/description> "Länge des parallelen reduzierten Querschnitts der Probe"@de .
+<https://w3id.org/steel/ProcessOntology/ParallelLength> <http://purl.org/dc/terms/description> "The length of the parallel part of the specimen"@en .
+<https://w3id.org/steel/ProcessOntology/ParallelLength> <http://purl.org/dc/terms/description> "The length of the experiment (description replaced by Zugversuch Instron)"@en .
+<https://w3id.org/steel/ProcessOntology/ParallelLength> <http://purl.org/dc/terms/description> "length of the parallel reduced section of the test piece"@en .
 <https://w3id.org/steel/ProcessOntology/ParallelLength> <http://www.w3.org/2004/02/skos/core#altlabel> "Versuchslänge"@de .
 <https://w3id.org/steel/ProcessOntology/ParallelLength> <http://www.w3.org/2004/02/skos/core#altlabel> "Parallel length"@en .
 <https://w3id.org/steel/ProcessOntology/ParallelLength> <http://www.w3.org/2004/02/skos/core#altlabel> "parallele Messlänge Lc"@de .

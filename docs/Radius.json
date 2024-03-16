@@ -1,6 +1,19 @@
 
 {
   "https://w3id.org/steel/ProcessOntology/Radius" : {
+    "http://purl.org/dc/terms/description" : [ {
+        "value" : "Kerbradius (nur bei Schr\u00E4gkerb-Scherzugproben)",
+        "lang" : "de",
+        "type" : "literal"
+        }
+      ,
+      {
+        "value" : "Radius of the notch (only for notched shear tensile specimens)",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      
+      ],
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
         "value" : "http://www.w3.org/2002/07/owl#Class",
         "type" : "uri"

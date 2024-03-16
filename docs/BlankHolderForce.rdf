@@ -10,6 +10,12 @@
     <ns0:label xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">BlankHolderForce</ns0:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/BlankHolderForce">
+    <ns0:description xmlns:ns0="http://purl.org/dc/terms/" xml:lang="en">Draw-in shall be prevented as much as possible</ns0:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/BlankHolderForce">
+    <ns0:description xmlns:ns0="http://purl.org/dc/terms/" xml:lang="de">Kraft zum Halten des Schnittteils, das Einschnüren muss sowie wie möglich verhindert werden</ns0:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/BlankHolderForce">
     <ns0:altlabel xmlns:ns0="http://www.w3.org/2004/02/skos/core#" xml:lang="en">Clamping force</ns0:altlabel>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/BlankHolderForce">

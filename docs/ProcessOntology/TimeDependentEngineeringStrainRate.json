@@ -1,6 +1,19 @@
 
 {
   "https://w3id.org/steel/ProcessOntology/TimeDependentEngineeringStrainRate" : {
+    "http://purl.org/dc/terms/description" : [ {
+        "value" : "time-dependent engineering strain rate = de(t)/dt",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      ,
+      {
+        "value" : "zeitabh\u00E4ngige technische Dehnrate = de(t)/dt",
+        "lang" : "de",
+        "type" : "literal"
+        }
+      
+      ],
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
         "value" : "http://www.w3.org/2002/07/owl#Class",
         "type" : "uri"

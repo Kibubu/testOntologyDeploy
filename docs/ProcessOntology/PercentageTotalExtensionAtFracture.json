@@ -1,6 +1,13 @@
 
 {
   "https://w3id.org/steel/ProcessOntology/PercentageTotalExtensionAtFracture" : {
+    "http://purl.org/dc/terms/description" : [ {
+        "value" : "gesamte Verl\u00E4ngerung (elastische plus plastische Verl\u00E4ngerung) der Extensometer-Messl\u00E4nge beim Bruch, angegeben in Prozent, bezogen auf die Extensometer-Messl\u00E4nge",
+        "lang" : "de",
+        "type" : "literal"
+        }
+      
+      ],
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
         "value" : "http://www.w3.org/2002/07/owl#Class",
         "type" : "uri"

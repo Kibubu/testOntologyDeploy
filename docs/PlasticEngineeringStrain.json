@@ -1,6 +1,19 @@
 
 {
   "https://w3id.org/steel/ProcessOntology/PlasticEngineeringStrain" : {
+    "http://purl.org/dc/terms/description" : [ {
+        "value" : "plastic engineering strain ",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      ,
+      {
+        "value" : "plastische technische Dehnung",
+        "lang" : "de",
+        "type" : "literal"
+        }
+      
+      ],
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
         "value" : "http://www.w3.org/2002/07/owl#Class",
         "type" : "uri"

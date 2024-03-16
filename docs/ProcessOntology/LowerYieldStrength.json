@@ -1,6 +1,19 @@
 
 {
   "https://w3id.org/steel/ProcessOntology/LowerYieldStrength" : {
+    "http://purl.org/dc/terms/description" : [ {
+        "value" : "kleinste Spannung w\u00E4hrend des plastischen Flie\u00DFens, wobei Einschwingerscheinungen nicht ber\u00FCcksichtigt werden",
+        "lang" : "de",
+        "type" : "literal"
+        }
+      ,
+      {
+        "value" : "lowest value of stress during plastic yielding, ignoring any initial transient effects",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      
+      ],
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
         "value" : "http://www.w3.org/2002/07/owl#Class",
         "type" : "uri"

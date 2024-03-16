@@ -10,6 +10,12 @@
     <ns0:label xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#" xml:lang="en">LubricationSystem</ns0:label>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/LubricationSystem">
+    <ns0:description xmlns:ns0="http://purl.org/dc/terms/" xml:lang="en">lubrication layer between specimen and punch</ns0:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/LubricationSystem">
+    <ns0:description xmlns:ns0="http://purl.org/dc/terms/" xml:lang="de">Schmiermittelschicht zwischen Stempel und Probe</ns0:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/LubricationSystem">
     <ns0:altlabel xmlns:ns0="http://www.w3.org/2004/02/skos/core#" xml:lang="en">lubrication system</ns0:altlabel>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/LubricationSystem">

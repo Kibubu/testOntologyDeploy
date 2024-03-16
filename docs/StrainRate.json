@@ -1,6 +1,25 @@
 
 {
   "https://w3id.org/steel/ProcessOntology/StrainRate" : {
+    "http://purl.org/dc/terms/description" : [ {
+        "value" : "Dehnrate, die f\u00FCr die Mikrostruktursimulation verwendet wurde",
+        "lang" : "de",
+        "type" : "literal"
+        }
+      ,
+      {
+        "value" : "Zunahme der mit einem Extensometer in der Extensometer-Messl\u00E4nge gemessenen Dehnung je Zeiteinheit",
+        "lang" : "de",
+        "type" : "literal"
+        }
+      ,
+      {
+        "value" : "strain rate either of the parallel length or of the gauge length/extensometer length (should be specified)",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      
+      ],
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
         "value" : "http://www.w3.org/2002/07/owl#Class",
         "type" : "uri"

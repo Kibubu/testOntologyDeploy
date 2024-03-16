@@ -1,6 +1,19 @@
 
 {
   "https://w3id.org/steel/ProcessOntology/ProofStrengthPlasticExtension" : {
+    "http://purl.org/dc/terms/description" : [ {
+        "value" : "Spannung, bei der die plastische Extensometer-Dehnung einem vorgegebenen Prozentanteil der Extensometer-Messl\u00E4nge entspricht",
+        "lang" : "de",
+        "type" : "literal"
+        }
+      ,
+      {
+        "value" : "stress at which the plastic extension is equal to a specified percentage of the extensometer gauge length",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      
+      ],
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
         "value" : "http://www.w3.org/2002/07/owl#Class",
         "type" : "uri"

@@ -1,6 +1,25 @@
 
 {
   "https://w3id.org/steel/ProcessOntology/OriginalCrossSection" : {
+    "http://purl.org/dc/terms/description" : [ {
+        "value" : "Anfangsquerschnitt innerhalb der parallelen L\u00E4nge",
+        "lang" : "de",
+        "type" : "literal"
+        }
+      ,
+      {
+        "value" : "original cross-sectional area of the parallel length",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      ,
+      {
+        "value" : "original crosssection area of the parallel length",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      
+      ],
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
         "value" : "http://www.w3.org/2002/07/owl#Class",
         "type" : "uri"

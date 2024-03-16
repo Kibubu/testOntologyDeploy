@@ -1,6 +1,31 @@
 
 {
   "https://w3id.org/steel/ProcessOntology/ForceMeasuringDevice" : {
+    "http://purl.org/dc/terms/description" : [ {
+        "value" : "Die Kraftmesseinrichtung der Zugpr\u00FCfmaschine muss im relevanten Bereich mindestens der Klasse 1 nach ISO 7500-1 entsprechen.",
+        "lang" : "de",
+        "type" : "literal"
+        }
+      ,
+      {
+        "value" : "Genauigkeit der Pr\u00FCfeinrichtungen: Die Kraftmesseinrichtung der Pr\u00FCfmaschine muss mindestens der Klasse 1 nach ISO 7500-1 entsprechen.",
+        "lang" : "de",
+        "type" : "literal"
+        }
+      ,
+      {
+        "value" : "Type of the force measurement (force transducer, strain gauges, ....)",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      ,
+      {
+        "value" : "Type of the force transducer",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      
+      ],
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
         "value" : "http://www.w3.org/2002/07/owl#Class",
         "type" : "uri"

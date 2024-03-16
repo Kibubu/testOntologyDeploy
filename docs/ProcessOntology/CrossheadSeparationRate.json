@@ -1,6 +1,25 @@
 
 {
   "https://w3id.org/steel/ProcessOntology/CrossheadSeparationRate" : {
+    "http://purl.org/dc/terms/description" : [ {
+        "value" : "The displacement of the crosshead per time",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      ,
+      {
+        "value" : "The speed of the experiment.",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      ,
+      {
+        "value" : "Traversenweg je Zeiteinheit",
+        "lang" : "de",
+        "type" : "literal"
+        }
+      
+      ],
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
         "value" : "http://www.w3.org/2002/07/owl#Class",
         "type" : "uri"

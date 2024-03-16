@@ -1,6 +1,19 @@
 
 {
   "https://w3id.org/steel/ProcessOntology/ProjectName" : {
+    "http://purl.org/dc/terms/description" : [ {
+        "value" : "Instabilit\u00E4t",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      ,
+      {
+        "value" : "Name of the Project.",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      
+      ],
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
         "value" : "http://www.w3.org/2002/07/owl#Class",
         "type" : "uri"

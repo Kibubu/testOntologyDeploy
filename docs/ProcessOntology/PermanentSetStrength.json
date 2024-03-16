@@ -1,6 +1,13 @@
 
 {
   "https://w3id.org/steel/ProcessOntology/PermanentSetStrength" : {
+    "http://purl.org/dc/terms/description" : [ {
+        "value" : "Spannun, bei der nach Wegnahme der Kraft eine vorgegebene bleibende Dehnung oder Extensometer-Dehnung , angegeben jeweils als Prozentanteil der Anfangsmessl\u00E4nge oder der Extensometer-Messl\u00E4nge, nicht \u00FCberschritten wurde",
+        "lang" : "de",
+        "type" : "literal"
+        }
+      
+      ],
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
         "value" : "http://www.w3.org/2002/07/owl#Class",
         "type" : "uri"

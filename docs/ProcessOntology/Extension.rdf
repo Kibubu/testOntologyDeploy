@@ -19,6 +19,18 @@
     <ns0:seeAlso xmlns:ns0="http://www.w3.org/2000/01/rdf-schema#" rdf:resource="https://w3id.org/steel/ProcessOntology/DisplacementTransducer"/>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/Extension">
+    <ns0:description xmlns:ns0="http://purl.org/dc/terms/" xml:lang="de">Verlängerung (der Extensometer-Messlänge)</ns0:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/Extension">
+    <ns0:description xmlns:ns0="http://purl.org/dc/terms/" xml:lang="en">Displacement of the extensometer (!) length</ns0:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/Extension">
+    <ns0:description xmlns:ns0="http://purl.org/dc/terms/" xml:lang="en">increase in the extensometer gauge length (3.5), at any moment during the test</ns0:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/Extension">
+    <ns0:description xmlns:ns0="http://purl.org/dc/terms/" xml:lang="de">Zunahme der Extensometer-Messlänge zu einem beliebigen Zeitpunkt des Versuchs</ns0:description>
+  </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/Extension">
     <ns0:altlabel xmlns:ns0="http://www.w3.org/2004/02/skos/core#" xml:lang="de">Standardweg</ns0:altlabel>
   </rdf:Description>
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/Extension">

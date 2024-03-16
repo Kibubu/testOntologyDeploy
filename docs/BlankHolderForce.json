@@ -1,6 +1,19 @@
 
 {
   "https://w3id.org/steel/ProcessOntology/BlankHolderForce" : {
+    "http://purl.org/dc/terms/description" : [ {
+        "value" : "Draw-in shall be prevented as much as possible",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      ,
+      {
+        "value" : "Kraft zum Halten des Schnittteils, das Einschn\u00FCren muss sowie wie m\u00F6glich verhindert werden",
+        "lang" : "de",
+        "type" : "literal"
+        }
+      
+      ],
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
         "value" : "http://www.w3.org/2002/07/owl#Class",
         "type" : "uri"

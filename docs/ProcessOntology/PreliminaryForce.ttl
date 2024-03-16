@@ -4,6 +4,8 @@
 <https://w3id.org/steel/ProcessOntology/PreliminaryForce> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
 <https://w3id.org/steel/ProcessOntology/PreliminaryForce> <http://www.w3.org/2000/01/rdf-schema#label> "PreliminaryForce"@en .
 <https://w3id.org/steel/ProcessOntology/PreliminaryForce> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://w3id.org/steel/ProcessOntology/ForceMeasuringDevice> .
+<https://w3id.org/steel/ProcessOntology/PreliminaryForce> <http://purl.org/dc/terms/description> "\"Vorkraft\" in DIN EN ISO 6892-1"@en .
+<https://w3id.org/steel/ProcessOntology/PreliminaryForce> <http://purl.org/dc/terms/description> "Um ein Ausrichten der Probe in der Einspannvorrichtung zu erreichen, darf eine Vorkraft aufgebracht werden, die 5 % des spezifizierten oder zu erwartenden Streckgrenzenwertes nicht überschreitet"@de .
 <https://w3id.org/steel/ProcessOntology/PreliminaryForce> <http://www.w3.org/2004/02/skos/core#altlabel> "preliminary force"@en .
 <https://w3id.org/steel/ProcessOntology/PreliminaryForce> <http://www.w3.org/2004/02/skos/core#altlabel> "Vorkraft"@de .
 <https://w3id.org/steel/ProcessOntology/PreliminaryForce> <http://www.w3.org/2004/02/skos/core#altlabel> "Vorlast"@de .

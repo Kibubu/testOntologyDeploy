@@ -1,6 +1,25 @@
 
 {
   "https://w3id.org/steel/ProcessOntology/PercentageElongationAfterFracture" : {
+    "http://purl.org/dc/terms/description" : [ {
+        "value" : "bleibende Verl\u00E4ngerung (3.3) der Messl\u00E4nge nach dem Bruch (Lu \u2212 Lo), angegeben in Prozent, bezogen auf die Anfangsmessl\u00E4nge (3.1.1)",
+        "lang" : "de",
+        "type" : "literal"
+        }
+      ,
+      {
+        "value" : "percentage elongation after fracture",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      ,
+      {
+        "value" : "permanent elongation of the gauge length after fracture, (Lu \u2212 Lo), expressed as a percentage of the original gauge length (3.1.1)",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      
+      ],
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
         "value" : "http://www.w3.org/2002/07/owl#Class",
         "type" : "uri"

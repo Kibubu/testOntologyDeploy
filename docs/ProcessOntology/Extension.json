@@ -1,6 +1,31 @@
 
 {
   "https://w3id.org/steel/ProcessOntology/Extension" : {
+    "http://purl.org/dc/terms/description" : [ {
+        "value" : "Displacement of the extensometer (!) length",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      ,
+      {
+        "value" : "Verl\u00E4ngerung (der Extensometer-Messl\u00E4nge)",
+        "lang" : "de",
+        "type" : "literal"
+        }
+      ,
+      {
+        "value" : "Zunahme der Extensometer-Messl\u00E4nge zu einem beliebigen Zeitpunkt des Versuchs",
+        "lang" : "de",
+        "type" : "literal"
+        }
+      ,
+      {
+        "value" : "increase in the extensometer gauge length (3.5), at any moment during the test",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      
+      ],
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
         "value" : "http://www.w3.org/2002/07/owl#Class",
         "type" : "uri"

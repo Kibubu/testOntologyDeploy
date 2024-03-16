@@ -1,6 +1,31 @@
 
 {
   "https://w3id.org/steel/ProcessOntology/ExtensometerGaugeLength" : {
+    "http://purl.org/dc/terms/description" : [ {
+        "value" : "Anfangsmessl\u00E4nge des Dehnungsaufnehmers (Extensometer), die zum Messen der Verl\u00E4ngerung (3.6) benutzt wird",
+        "lang" : "de",
+        "type" : "literal"
+        }
+      ,
+      {
+        "value" : "The intial gauge length Le used for measurement of extension by means of an extensometer",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      ,
+      {
+        "value" : "The intial gauge length used for measurement of extension by means of an extensometer",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      ,
+      {
+        "value" : "initial extensometer gauge length used for measurement of extension by means of an extensometer",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      
+      ],
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
         "value" : "http://www.w3.org/2002/07/owl#Class",
         "type" : "uri"

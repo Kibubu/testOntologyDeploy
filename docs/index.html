@@ -522,12 +522,6 @@ style="position: -webkit-sticky;
             </li>
         
             <li class="nav-item">
-                <a class="nav-link" href="#id-bc6b8e13c45cb852b3763bfe5914c047">
-                    Elastoplastic model
-                </a>
-            </li>
-        
-            <li class="nav-item">
                 <a class="nav-link" href="#id-51395900c70cddf1338f9c9a9f19d639">
                     Grain size
                 </a>
@@ -943,7 +937,7 @@ style="position: -webkit-sticky;
         
             <li class="nav-item">
                 <a class="nav-link" href="#id-4851b0c133d6a1d86c9b080d7adfa38d">
-                    True Stress
+                    TrueStress
                 </a>
             </li>
         
@@ -2357,6 +2351,12 @@ style="position: -webkit-sticky;
                 </a>
             </li>
         
+            <li class="nav-item">
+                <a class="nav-link" href="#id-372da9f2b29b9adede52df0451ba3ecc">
+                    ElastoplasticModel
+                </a>
+            </li>
+        
         
             <li class="nav-item">
                 <a class="nav-link" href="#id-94b7f1fec65e877800859b5274fc8258">
@@ -2661,6 +2661,12 @@ style="position: -webkit-sticky;
             <li class="nav-item">
                 <a class="nav-link" href="#id-46439ad4b49ae35b80f93a0306a1b585">
                     hasNotchTensileStrength
+                </a>
+            </li>
+        
+            <li class="nav-item">
+                <a class="nav-link" href="#id-b9f9122abf3114b4fe9cdc4e63dcebfb">
+                    hasElastoplasticModel
                 </a>
             </li>
         
@@ -3249,12 +3255,6 @@ style="position: -webkit-sticky;
             <li class="nav-item">
                 <a class="nav-link" href="#id-e6cfbb2725876c303d70010a3501ac69">
                     hasReferenceTemperature
-                </a>
-            </li>
-        
-            <li class="nav-item">
-                <a class="nav-link" href="#id-5c42a424fdd3497708d07a6eb9703498">
-                    hasElastoplastic model
                 </a>
             </li>
         
@@ -6597,7 +6597,8 @@ style="position: -webkit-sticky;
             <p>
             
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>minimum cross-sectional area after fracture</dd></dl>
         </div>
         <div
             id="id-bf313873f729dc1834407cf1662cc042-annotations"
@@ -7231,7 +7232,8 @@ style="position: -webkit-sticky;
             <p>
             
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>Draw-in shall be prevented as much as possible</dd></dl>
         </div>
         <div
             id="id-cd9caac47193e72569b3a871f4fa69a6-annotations"
@@ -7421,9 +7423,10 @@ style="position: -webkit-sticky;
             class="card-text tab-pane fade show active"
             role="tabpanel">
             <p>
-            Load curve ID defining plastic failure strain as a function of plastic strain rate
+            
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>Load curve ID defining plastic failure strain as a function of plastic strain rate</dd></dl>
         </div>
         <div
             id="id-6287525c4065563c457ba3babcc38bf4-annotations"
@@ -7616,12 +7619,13 @@ style="position: -webkit-sticky;
             class="card-text tab-pane fade show active"
             role="tabpanel">
             <p>
-            Failure strain curve/table or function
+            
+            </p>
+            <dl><dt>description</dt>
+                <dd>Failure strain curve/table or function
 GT.0.0: Load curve ID or table ID. As a load curve, it defines equivalent plastic strain to failure as a function of triaxiality. As a table, it defines for each Lode parameter value (between -1 and 1) a load curve ID giving the
 equivalent plastic strain to failure as a function of triaxiality for that Lode parameter value. With HISVN ≠ 0, a 3D table can be used, where failure strain is a function of the history variable (TABLE_3D), Lode parameter (TABLE), and triaxiality (CURVE). With HISVN = 0, a 3D table introduces thermal effects, that is, failure strain is a function of temperature (TABLE_3D), Lode parameter (TABLE), and triaxiality (CURVE).
-LT.0.0: |LCSDG| is the ID of a function (*DEFINE_FUNCTION) with the arguments triaxiality and Lode parameter: 𝑓 (𝜂, 𝐿).
-            </p>
-            <dl></dl>
+LT.0.0: |LCSDG| is the ID of a function (*DEFINE_FUNCTION) with the arguments triaxiality and Lode parameter: 𝑓 (𝜂, 𝐿).</dd></dl>
         </div>
         <div
             id="id-e81e5c80e02c93f4526b2944970836f0-annotations"
@@ -7816,7 +7820,8 @@ LT.0.0: |LCSDG| is the ID of a function (*DEFINE_FUNCTION) with the arguments tr
             <p>
             
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>time-dependent engineering strain rate = de(t)/dt</dd></dl>
         </div>
         <div
             id="id-3c20197082a6cf1c7f737920fbb035fb-annotations"
@@ -8002,7 +8007,8 @@ LT.0.0: |LCSDG| is the ID of a function (*DEFINE_FUNCTION) with the arguments tr
             <p>
             
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>Duration from beginning of test to moment of fracture initiation</dd></dl>
         </div>
         <div
             id="id-58b3a2f9f93a8f6d2bb10cf414328ff1-annotations"
@@ -8509,11 +8515,12 @@ LT.0.0: |LCSDG| is the ID of a function (*DEFINE_FUNCTION) with the arguments tr
             class="card-text tab-pane fade show active"
             role="tabpanel">
             <p>
-            Flag for additional failure criterion F2:
-=0.0: off (default)
-=1.0: on; An additional, load-path independent, failure criterion can be invoked, where the current state of plastic strain is used
+            
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>Flag for additional failure criterion F2:
+=0.0: off (default)
+=1.0: on; An additional, load-path independent, failure criterion can be invoked, where the current state of plastic strain is used</dd></dl>
         </div>
         <div
             id="id-3e67256474a7de1f61f062bc741bf180-annotations"
@@ -8706,9 +8713,10 @@ LT.0.0: |LCSDG| is the ID of a function (*DEFINE_FUNCTION) with the arguments tr
             class="card-text tab-pane fade show active"
             role="tabpanel">
             <p>
-            Table ID defining for each temperature value a load curve ID giving the (quasi-static) effective stress versus effective plastic strain for that temperature
+            
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>Table ID defining for each temperature value a load curve ID giving the (quasi-static) effective stress versus effective plastic strain for that temperature</dd></dl>
         </div>
         <div
             id="id-52236aaae1c5611c1cbba6d4759df175-annotations"
@@ -8961,7 +8969,8 @@ LT.0.0: |LCSDG| is the ID of a function (*DEFINE_FUNCTION) with the arguments tr
             <p>
             
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>maximum change in cross-sectional area which has occured during the test expressed as a percentage of the original cross-sectional area</dd></dl>
         </div>
         <div
             id="id-eca55fa672d8cbf5c462fd20bc7da264-annotations"
@@ -9023,9 +9032,10 @@ LT.0.0: |LCSDG| is the ID of a function (*DEFINE_FUNCTION) with the arguments tr
             class="card-text tab-pane fade show active"
             role="tabpanel">
             <p>
-            Simple incompressible plasticity model with adiabatic approach and logarithmic interpolation
+            
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>Simple incompressible plasticity model with adiabatic approach and logarithmic interpolation</dd></dl>
         </div>
         <div
             id="id-445ea539cf7f7dd0cf849bd0881195c9-annotations"
@@ -9092,7 +9102,8 @@ LT.0.0: |LCSDG| is the ID of a function (*DEFINE_FUNCTION) with the arguments tr
             <p>
             
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>true strain in width direction</dd></dl>
         </div>
         <div
             id="id-e82b77a01e0e910c89f26a9ce8913b60-annotations"
@@ -9348,7 +9359,8 @@ LT.0.0: |LCSDG| is the ID of a function (*DEFINE_FUNCTION) with the arguments tr
             <p>
             
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>length of the parallel portion of the test piece on which elongation is measured at any moment during the test</dd></dl>
         </div>
         <div
             id="id-1dafff283cf973a1c045467fb627d702-annotations"
@@ -9494,7 +9506,8 @@ LT.0.0: |LCSDG| is the ID of a function (*DEFINE_FUNCTION) with the arguments tr
             <p>
             
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>engineering stress</dd></dl>
         </div>
         <div
             id="id-747379420d45195178ffdf8b9e02696e-annotations"
@@ -10003,12 +10016,13 @@ or
             class="card-text tab-pane fade show active"
             role="tabpanel">
             <p>
-            Determines the amount of fully damaged integration points before element deletion:
+            
+            </p>
+            <dl><dt>description</dt>
+                <dd>Determines the amount of fully damaged integration points before element deletion:
 >0…Number of integration points which must fail before the element is deleted
 <0…-NUMINT is percentage of integration points/layers which must fail before shell element fails
-=200...Turns off erosion for shells and solids
-            </p>
-            <dl></dl>
+=200...Turns off erosion for shells and solids</dd></dl>
         </div>
         <div
             id="id-15ce39a0eee5ae22a2efcca9f5906a76-annotations"
@@ -10075,7 +10089,8 @@ or
             <p>
             
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>The material used in the experiment.</dd></dl>
         </div>
         <div
             id="id-6db6d925b084cd0670ef1fd57eea23ae-annotations"
@@ -10645,7 +10660,8 @@ or
             <p>
             
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>notch tensile strength</dd></dl>
         </div>
         <div
             id="id-7f4de063869a2a0b97d18cdaa98a92de-annotations"
@@ -10968,7 +10984,8 @@ or
             <p>
             
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>A specific comment about the experiment.</dd></dl>
         </div>
         <div
             id="id-1745e03f9a860632954cf2957bb376b2-annotations"
@@ -11032,7 +11049,8 @@ or
             <p>
             
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>total engineering strain </dd></dl>
         </div>
         <div
             id="id-b6b8becf3ac0e54f1868f7bbeabea613-annotations"
@@ -11367,73 +11385,6 @@ or
       
           <p><div
     class="card"
-    id="id-bc6b8e13c45cb852b3763bfe5914c047"
-    >
-    <div class="card-header">
-        <h4 class="card-title">Elastoplastic model</h4>
-        <p><small class="text-muted"><a href="https://w3id.org/steel/ProcessOntology/Elastoplastic%20model">https://w3id.org/steel/ProcessOntology/Elastoplastic%20model</a></small></p>
-        <nav
-            class="nav nav-tabs card-header-tabs"
-            id="id-bc6b8e13c45cb852b3763bfe5914c047-nav"
-            role="tablist">
-            <a
-                href="#id-bc6b8e13c45cb852b3763bfe5914c047-description"
-                class="nav-item nav-link active"
-                aria-selected="true"
-                data-bs-toggle="tab"
-                role="tab">Description</a>
-            <a
-                href="#id-bc6b8e13c45cb852b3763bfe5914c047-annotations"
-                class="nav-item nav-link"
-                aria-selected="false"
-                data-bs-toggle="tab"
-                role="tab">Annotations</a>
-            <a
-                href="#id-bc6b8e13c45cb852b3763bfe5914c047-relations"
-                id="id-bc6b8e13c45cb852b3763bfe5914c047-tab-relations"
-                class="nav-item nav-link"
-                aria-selected="false"
-                data-bs-toggle="tab"
-                role="tab">Relations</a>
-        </nav>
-    </div>
-    <div
-        id="id-bc6b8e13c45cb852b3763bfe5914c047-tab-content"
-        class="tab-content card-body">
-        <div
-            id="id-bc6b8e13c45cb852b3763bfe5914c047-description"
-            class="card-text tab-pane fade show active"
-            role="tabpanel">
-            <p>
-            
-            </p>
-            <dl></dl>
-        </div>
-        <div
-            id="id-bc6b8e13c45cb852b3763bfe5914c047-annotations"
-            class="card-text tab-pane fade"
-            role="tabpanel">
-            <dl></dl>
-        </div>
-        <div
-            id="id-bc6b8e13c45cb852b3763bfe5914c047-relations"
-            class="card-text tab-pane fade"
-            role="tabpanel">
-            <dl><dt>has super-classes</dt><dd><a
-    href="#id-367cd62b5d03046287eedef4b86e00c0"
-    >ValueObject</a>
-</dd><dt>is in range of</dt><dd><a
-    href="#id-5c42a424fdd3497708d07a6eb9703498"
-    >hasElastoplastic model</a>
-</dd></dl>
-        </div>
-    </div>
-    <div class="card-footer"></div>
-</div>
-</p>
-      
-          <p><div
-    class="card"
     id="id-51395900c70cddf1338f9c9a9f19d639"
     >
     <div class="card-header">
@@ -11727,7 +11678,8 @@ or
             <p>
             
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>length between gauge length (3.1) marks on the test piece measured after rupture, at room temperature, the two pieces having been carefully fitted back together so that their axes lie in a straight line</dd></dl>
         </div>
         <div
             id="id-6791cc36d3e7d48e65bf05f9e00217af-annotations"
@@ -11855,7 +11807,8 @@ or
             <p>
             
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>highest force that the test piece withstands during the test</dd></dl>
         </div>
         <div
             id="id-e3d9838619f47d49b0b1351cb85d8a9b-annotations"
@@ -11919,7 +11872,8 @@ or
             <p>
             
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>sampling rate of the strain measuring system (e.g. high speed video recording)</dd></dl>
         </div>
         <div
             id="id-ddec0af943b3eb36960504316c908820-annotations"
@@ -12111,7 +12065,8 @@ or
             <p>
             
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>width of the extensometer gauge length in thickness direction</dd></dl>
         </div>
         <div
             id="id-8d1f71aa8653c12fd313afdee3121397-annotations"
@@ -12559,7 +12514,8 @@ or
             <p>
             
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>The length of the parallel part of the specimen</dd></dl>
         </div>
         <div
             id="id-8d11f0c7f57256b6d3995ec21dc2458b-annotations"
@@ -12870,7 +12826,8 @@ or
             <p>
             
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>transition radius between parallel part and clamping part of the test piece</dd></dl>
         </div>
         <div
             id="id-4726b3204a4a9bc138cd9861897b3594-annotations"
@@ -13123,7 +13080,8 @@ or
             <p>
             
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>uniform elongation</dd></dl>
         </div>
         <div
             id="id-a2e3dcfe76e8bf5912673bf6bf4c4c80-annotations"
@@ -13373,7 +13331,8 @@ or
             <p>
             
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>Date and time when the experiment was conducted.</dd></dl>
         </div>
         <div
             id="id-4dabebdb3133c18ee109c3bb3d4e96d8-annotations"
@@ -13499,9 +13458,10 @@ or
             class="card-text tab-pane fade show active"
             role="tabpanel">
             <p>
-            Exponent for nonlinear damage accumulation
+            
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>Exponent for nonlinear damage accumulation</dd></dl>
         </div>
         <div
             id="id-8b52160818244df64aa0598c4f990c14-annotations"
@@ -13632,7 +13592,8 @@ or
             <p>
             
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>Person performed the hydraulic bulge test.</dd></dl>
         </div>
         <div
             id="id-b89d34645e4f19ef50ede881c327bdbd-annotations"
@@ -13694,9 +13655,10 @@ or
             class="card-text tab-pane fade show active"
             role="tabpanel">
             <p>
-            Mass densisty of the material
+            
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>Mass densisty of the material</dd></dl>
         </div>
         <div
             id="id-d5e5450d18e24c4c5f46f35f6254e619-annotations"
@@ -13824,7 +13786,8 @@ or
             <p>
             
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>lowest value of stress during plastic yielding, ignoring any initial transient effects</dd></dl>
         </div>
         <div
             id="id-1c0dc7909712caf7c479ae338f7be587-annotations"
@@ -13888,7 +13851,8 @@ or
             <p>
             
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>engineering strain</dd></dl>
         </div>
         <div
             id="id-f36752562ea8a2cf2702aabbb09f530d-annotations"
@@ -14016,7 +13980,8 @@ or
             <p>
             
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>mean engineering strain rate = A/tf</dd></dl>
         </div>
         <div
             id="id-5a5311ec8e0306565610a8d8ac5c545c-annotations"
@@ -14269,7 +14234,8 @@ or
             <p>
             
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>yield strength, 0.2 %</dd></dl>
         </div>
         <div
             id="id-88821b5e1a73d3e3987d0c2c1c0751b6-annotations"
@@ -14333,7 +14299,8 @@ or
             <p>
             
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>stress rate</dd></dl>
         </div>
         <div
             id="id-43d7278f3219233e1ccecaf8d82cd55a-annotations"
@@ -14395,9 +14362,10 @@ or
             class="card-text tab-pane fade show active"
             role="tabpanel">
             <p>
-            Damage threshold value (critical damage). If a load curve of critical plastic strain or fixed value is given by ECRIT, input is ignored.
+            
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>Damage threshold value (critical damage). If a load curve of critical plastic strain or fixed value is given by ECRIT, input is ignored.</dd></dl>
         </div>
         <div
             id="id-1b13c7ebdffb5e86e64fd9e8defe5993-annotations"
@@ -14526,11 +14494,12 @@ or
             class="card-text tab-pane fade show active"
             role="tabpanel">
             <p>
-            Erosion flag (only for solid elements):
-=0.0: default, element erosion is allowed
-=1.0: element does not erode; deviatoric stresses set to 0 when element fails
+            
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>Erosion flag (only for solid elements):
+=0.0: default, element erosion is allowed
+=1.0: element does not erode; deviatoric stresses set to 0 when element fails</dd></dl>
         </div>
         <div
             id="id-d54acfeae3032ac5e1c8b1009ef26aeb-annotations"
@@ -14717,9 +14686,10 @@ or
             class="card-text tab-pane fade show active"
             role="tabpanel">
             <p>
-            Poission Ratio to determine the linear elasticity
+            
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>Poission Ratio to determine the linear elasticity</dd></dl>
         </div>
         <div
             id="id-a9aea950dd005a7ac291b1310183d38f-annotations"
@@ -14850,7 +14820,8 @@ or
             <p>
             
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>Absolute position of the crosshead.</dd></dl>
         </div>
         <div
             id="id-b14dbcfbeaa2dae897ee8bca4889577f-annotations"
@@ -15042,7 +15013,8 @@ or
             <p>
             
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>Change of the sample width.</dd></dl>
         </div>
         <div
             id="id-57322db5c446cbd95582442c911404bc-annotations"
@@ -15168,9 +15140,10 @@ or
             class="card-text tab-pane fade show active"
             role="tabpanel">
             <p>
-            Measuring system for measurement of force
+            
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>Measuring system for measurement of force</dd></dl>
         </div>
         <div
             id="id-278c008a6bdc71d2f3296f1820458325-annotations"
@@ -15546,10 +15519,11 @@ or
             class="card-text tab-pane fade show active"
             role="tabpanel">
             <p>
-            Identifier which relates the Load Curve to descibe the yield stress as a function of effective plastic strain.
-Identifier which relates the Table to descibe the yield stress by using different Load Curves as a function of effective plastic strain and the strain rate (each load curve is related to an individual stain rate)
+            
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>Identifier which relates the Load Curve to descibe the yield stress as a function of effective plastic strain.
+Identifier which relates the Table to descibe the yield stress by using different Load Curves as a function of effective plastic strain and the strain rate (each load curve is related to an individual stain rate)</dd></dl>
         </div>
         <div
             id="id-a2feb72a6c0e65d9332a45a423f0598d-annotations"
@@ -15616,7 +15590,8 @@ Identifier which relates the Table to descibe the yield stress by using differen
             <p>
             
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>The temperature during the experiment.</dd></dl>
         </div>
         <div
             id="id-de07742592bbb7fcca05e4491bae5832-annotations"
@@ -15742,9 +15717,10 @@ Identifier which relates the Table to descibe the yield stress by using differen
             class="card-text tab-pane fade show active"
             role="tabpanel">
             <p>
-            Number of time steps that the additional failure criterion must be met before element deletion
+            
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>Number of time steps that the additional failure criterion must be met before element deletion</dd></dl>
         </div>
         <div
             id="id-82a237c591911ced7f664103494422fe-annotations"
@@ -15835,7 +15811,7 @@ Identifier which relates the Table to descibe the yield stress by using differen
     id="id-4851b0c133d6a1d86c9b080d7adfa38d"
     >
     <div class="card-header">
-        <h4 class="card-title">True Stress</h4>
+        <h4 class="card-title">TrueStress</h4>
         <p><small class="text-muted"><a href="https://w3id.org/steel/ProcessOntology/TrueStress">https://w3id.org/steel/ProcessOntology/TrueStress</a></small></p>
         <nav
             class="nav nav-tabs card-header-tabs"
@@ -15872,7 +15848,8 @@ Identifier which relates the Table to descibe the yield stress by using differen
             <p>
             
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>true stress</dd></dl>
         </div>
         <div
             id="id-4851b0c133d6a1d86c9b080d7adfa38d-annotations"
@@ -16064,7 +16041,8 @@ Identifier which relates the Table to descibe the yield stress by using differen
             <p>
             
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>Percentage total extension at maximum force Fm (total strain at maximum force, Fm)</dd></dl>
         </div>
         <div
             id="id-dede6fa31c35e20a238dc9ff5696ef75-annotations"
@@ -16128,7 +16106,8 @@ Identifier which relates the Table to descibe the yield stress by using differen
             <p>
             
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>extension expressed as a percentage of the extensometer gauge length</dd></dl>
         </div>
         <div
             id="id-a57dcda860096c30ba1daddfe06ff8d7-annotations"
@@ -16192,7 +16171,8 @@ Identifier which relates the Table to descibe the yield stress by using differen
             <p>
             
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>engineering strain in width direction</dd></dl>
         </div>
         <div
             id="id-54478636881c2f02b209c13eaf8c9b18-annotations"
@@ -16440,9 +16420,10 @@ Identifier which relates the Table to descibe the yield stress by using differen
             class="card-text tab-pane fade show active"
             role="tabpanel">
             <p>
-            Simple incompressible plasticity model with logarithmic interpolation
+            
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>Simple incompressible plasticity model with logarithmic interpolation</dd></dl>
         </div>
         <div
             id="id-3eeced26eedc457f46fb5e4e4198f068-annotations"
@@ -16631,7 +16612,8 @@ Identifier which relates the Table to descibe the yield stress by using differen
             <p>
             
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>Type of the force measurement (force transducer, strain gauges, ....)</dd></dl>
         </div>
         <div
             id="id-4ad5dd32c03b2d7d097b9ed698014da4-annotations"
@@ -16757,9 +16739,10 @@ Identifier which relates the Table to descibe the yield stress by using differen
             class="card-text tab-pane fade show active"
             role="tabpanel">
             <p>
-            Specific heat capacity
+            
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>Specific heat capacity</dd></dl>
         </div>
         <div
             id="id-c7ad6b07d60ee19f56adefc2523fcf99-annotations"
@@ -16826,7 +16809,8 @@ Identifier which relates the Table to descibe the yield stress by using differen
             <p>
             
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>nominal engineering strain rate = vo/Lc</dd></dl>
         </div>
         <div
             id="id-9b9dce8b9c962ed50d84a4defd8d0eda-annotations"
@@ -17012,7 +16996,8 @@ Identifier which relates the Table to descibe the yield stress by using differen
             <p>
             
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>length between gauge length marks on the test piece measured at room temperature before the test</dd></dl>
         </div>
         <div
             id="id-b72e0f82b00f401a47aef7d0a75eab60-annotations"
@@ -17451,7 +17436,8 @@ Identifier which relates the Table to descibe the yield stress by using differen
             <p>
             
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>The name or ID of the person who conducted the experiment.</dd></dl>
         </div>
         <div
             id="id-73144e18d6d9a175f470389e7ac17e93-annotations"
@@ -17579,7 +17565,8 @@ Identifier which relates the Table to descibe the yield stress by using differen
             <p>
             
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>yield strength, 1 %</dd></dl>
         </div>
         <div
             id="id-2702c4dbd9ed2353b215a7ac833898cc-annotations"
@@ -17641,11 +17628,12 @@ Identifier which relates the Table to descibe the yield stress by using differen
             class="card-text tab-pane fade show active"
             role="tabpanel">
             <p>
-            Number or percentage of failed integration points prior to element deletion.
-GT.0.0: Number of integration points which must fail before element is deleted.
-LT.0.0: Applies only to shells. |NUMFIP| is the percentage of layers which must fail before an element is deleted. For shell formulations with 4 integration points per layer, the layer is considered failed if any of the integration points in the layer fails.
+            
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>Number or percentage of failed integration points prior to element deletion.
+GT.0.0: Number of integration points which must fail before element is deleted.
+LT.0.0: Applies only to shells. |NUMFIP| is the percentage of layers which must fail before an element is deleted. For shell formulations with 4 integration points per layer, the layer is considered failed if any of the integration points in the layer fails.</dd></dl>
         </div>
         <div
             id="id-837376d667cb9dedfc40002cd73bdb7a-annotations"
@@ -17776,7 +17764,8 @@ LT.0.0: Applies only to shells. |NUMFIP| is the percentage of layers which must 
             <p>
             
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>Radius of the notch (only for notched shear tensile specimens)</dd></dl>
         </div>
         <div
             id="id-f10c7f3cd918defb19edcb3aae780643-annotations"
@@ -18029,7 +18018,8 @@ LT.0.0: Applies only to shells. |NUMFIP| is the percentage of layers which must 
             <p>
             
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>major true strain</dd></dl>
         </div>
         <div
             id="id-187cc525aa0ee41470752b12147126b1-annotations"
@@ -18221,7 +18211,8 @@ LT.0.0: Applies only to shells. |NUMFIP| is the percentage of layers which must 
             <p>
             
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>deformation work</dd></dl>
         </div>
         <div
             id="id-0564ffb5c314f6725e8bdd83637c0b6c-annotations"
@@ -18285,7 +18276,8 @@ LT.0.0: Applies only to shells. |NUMFIP| is the percentage of layers which must 
             <p>
             
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>tensile strength</dd></dl>
         </div>
         <div
             id="id-bd19080ccd5c6e6edeca2f71388063ac-annotations"
@@ -18347,9 +18339,10 @@ LT.0.0: Applies only to shells. |NUMFIP| is the percentage of layers which must 
             class="card-text tab-pane fade show active"
             role="tabpanel">
             <p>
-            Minimum time step size for automatic element deletion
+            
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>Minimum time step size for automatic element deletion</dd></dl>
         </div>
         <div
             id="id-0a9a26db10a2948ac089d10132dfe5b1-annotations"
@@ -18478,13 +18471,14 @@ LT.0.0: Applies only to shells. |NUMFIP| is the percentage of layers which must 
             class="card-text tab-pane fade show active"
             role="tabpanel">
             <p>
-            interpreted digit-wise as follows: DTYP = [𝑁𝑀] = 𝑀+10×𝑁
+            
+            </p>
+            <dl><dt>description</dt>
+                <dd>interpreted digit-wise as follows: DTYP = [𝑁𝑀] = 𝑀+10×𝑁
 M.EQ.0: Damage is accumulated, but there is no coupling to flow stress and no failure.
 M.EQ.1: Damage is accumulated, and element failure occurs for 𝐷 = 1. Coupling of damage to flow stress depending on parameters.
 N.EQ.0: Equivalent plastic strain is the driving quantity for the damage.
-N.GT.0: The Nth additional history variable is the driving quantity for damage.
-            </p>
-            <dl></dl>
+N.GT.0: The Nth additional history variable is the driving quantity for damage.</dd></dl>
         </div>
         <div
             id="id-3733e2c34e6272eb443413b715d27e87-annotations"
@@ -18549,9 +18543,10 @@ N.GT.0: The Nth additional history variable is the driving quantity for damage.
             class="card-text tab-pane fade show active"
             role="tabpanel">
             <p>
-            Load curve Identifier defining strain rate scaling effect on yield stress.
+            
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>Load curve Identifier defining strain rate scaling effect on yield stress.</dd></dl>
         </div>
         <div
             id="id-5fd79580b7741cf8b72c9e3eead9a1da-annotations"
@@ -18804,7 +18799,8 @@ N.GT.0: The Nth additional history variable is the driving quantity for damage.
             <p>
             
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>length of the shear zone</dd></dl>
         </div>
         <div
             id="id-1ebf32903d81a66b9beebb88fff909c5-annotations"
@@ -19124,7 +19120,8 @@ N.GT.0: The Nth additional history variable is the driving quantity for damage.
             <p>
             
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>The time when the data point is recorded in relation to the start. </dd></dl>
         </div>
         <div
             id="id-2f25e7c1208499eab795d1bbb002f4e5-annotations"
@@ -19566,7 +19563,8 @@ N.GT.0: The Nth additional history variable is the driving quantity for damage.
             <p>
             
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>strain rate either of the parallel length or of the gauge length/extensometer length (should be specified)</dd></dl>
         </div>
         <div
             id="id-e7420d9c2947b3f2a742bfe7b9707c83-annotations"
@@ -19630,7 +19628,8 @@ N.GT.0: The Nth additional history variable is the driving quantity for damage.
             <p>
             
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>punch velocity</dd></dl>
         </div>
         <div
             id="id-33ba720d264f92082b974f576ffafd42-annotations"
@@ -19694,7 +19693,8 @@ N.GT.0: The Nth additional history variable is the driving quantity for damage.
             <p>
             
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>Displacement of the extensometer (!) length at fracture</dd></dl>
         </div>
         <div
             id="id-5d812244482b97d5330219347a00ac10-annotations"
@@ -19819,7 +19819,8 @@ N.GT.0: The Nth additional history variable is the driving quantity for damage.
             <p>
             
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>Name of the Project.</dd></dl>
         </div>
         <div
             id="id-2577d654e873c0e74ec3a54bdb151081-annotations"
@@ -20014,7 +20015,8 @@ N.GT.0: The Nth additional history variable is the driving quantity for damage.
             <p>
             The initial diameter of the parallel length
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>The initial diameter of the parallel length</dd></dl>
         </div>
         <div
             id="id-9f75337886a0f79ad36566a9364a686e-annotations"
@@ -20200,7 +20202,8 @@ N.GT.0: The Nth additional history variable is the driving quantity for damage.
             <p>
             
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>true stress at fracture</dd></dl>
         </div>
         <div
             id="id-019025728673a7d2abceb845a88aae28-annotations"
@@ -20323,11 +20326,12 @@ N.GT.0: The Nth additional history variable is the driving quantity for damage.
             class="card-text tab-pane fade show active"
             role="tabpanel">
             <p>
-            Determines the fraction of plastic work converted into heat:
-<0…|BETA|->load curve for temperature dependend BETA
->0…constant value is used
+            
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>Determines the fraction of plastic work converted into heat:
+<0…|BETA|->load curve for temperature dependend BETA
+>0…constant value is used</dd></dl>
         </div>
         <div
             id="id-ae830f1579e0c27dfc6f82fc02ce2d8e-annotations"
@@ -20706,12 +20710,13 @@ N.GT.0: The Nth additional history variable is the driving quantity for damage.
             class="card-text tab-pane fade show active"
             role="tabpanel">
             <p>
-            Descibes the treatment of failure:
+            
+            </p>
+            <dl><dt>description</dt>
+                <dd>Descibes the treatment of failure:
 <0…User defined failure subroutine, matusr_24 in dyn21.F
 =0…no failure is taken into account
->0…constant failure strain
-            </p>
-            <dl></dl>
+>0…constant failure strain</dd></dl>
         </div>
         <div
             id="id-11ce64d1e2be6f26ef42846afa1db587-annotations"
@@ -21159,7 +21164,8 @@ N.GT.0: The Nth additional history variable is the driving quantity for damage.
             <p>
             
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>Modulus of elasticity</dd></dl>
         </div>
         <div
             id="id-4c89e6fe25840d150b909827308bb36e-annotations"
@@ -21223,7 +21229,8 @@ N.GT.0: The Nth additional history variable is the driving quantity for damage.
             <p>
             
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>Measuring system for measurement of extension in the area of the gauge length</dd></dl>
         </div>
         <div
             id="id-01c2a804dbbd1a352cf73ea2dd230b13-annotations"
@@ -21479,7 +21486,8 @@ N.GT.0: The Nth additional history variable is the driving quantity for damage.
             <p>
             
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>"Vorkraft" in DIN EN ISO 6892-1</dd></dl>
         </div>
         <div
             id="id-bf82de60a59be4063724e7fa0d358cc9-annotations"
@@ -21604,7 +21612,8 @@ N.GT.0: The Nth additional history variable is the driving quantity for damage.
             <p>
             
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>QR-Code from Label System</dd></dl>
         </div>
         <div
             id="id-b2478cb074b2a27b12897281128fdfba-annotations"
@@ -22175,9 +22184,10 @@ N.GT.0: The Nth additional history variable is the driving quantity for damage.
             class="card-text tab-pane fade show active"
             role="tabpanel">
             <p>
-            Parameter P for strain rate approach for using the Cowper and Symonds model which scales the yield stress with the factor: 1+(epsDot/C)^(1/P)
+            
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>Parameter P for strain rate approach for using the Cowper and Symonds model which scales the yield stress with the factor: 1+(epsDot/C)^(1/P)</dd></dl>
         </div>
         <div
             id="id-cdbadb38d7a03eadc3e9cdaeee14ae1e-annotations"
@@ -22433,7 +22443,8 @@ N.GT.0: The Nth additional history variable is the driving quantity for damage.
             <p>
             
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>true total strain </dd></dl>
         </div>
         <div
             id="id-f5fe8602b5040c52e44d22c0da7cfded-annotations"
@@ -22497,7 +22508,8 @@ N.GT.0: The Nth additional history variable is the driving quantity for damage.
             <p>
             
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>Project identification number.</dd></dl>
         </div>
         <div
             id="id-7293fc4b50f830c9ff5a6ecef80b3645-annotations"
@@ -22623,9 +22635,10 @@ N.GT.0: The Nth additional history variable is the driving quantity for damage.
             class="card-text tab-pane fade show active"
             role="tabpanel">
             <p>
-            Slope of linear hardening, if noidentifier for hardening curve (LCSS>0) is prescibed
+            
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>Slope of linear hardening, if noidentifier for hardening curve (LCSS>0) is prescibed</dd></dl>
         </div>
         <div
             id="id-46a98754c893c3c35f6702aa99ee04ab-annotations"
@@ -22814,7 +22827,8 @@ N.GT.0: The Nth additional history variable is the driving quantity for damage.
             <p>
             
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>plastic engineering strain</dd></dl>
         </div>
         <div
             id="id-a13f8711a6f6069f0e1e29efffb314c0-annotations"
@@ -22878,7 +22892,8 @@ N.GT.0: The Nth additional history variable is the driving quantity for damage.
             <p>
             
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>original cross-sectional area of the parallel length</dd></dl>
         </div>
         <div
             id="id-cccee418c670beeb3c247bec176f4909-annotations"
@@ -23004,9 +23019,10 @@ N.GT.0: The Nth additional history variable is the driving quantity for damage.
             class="card-text tab-pane fade show active"
             role="tabpanel">
             <p>
-            Linear Elastic Modulus to determine the linear elasticity
+            
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>Linear Elastic Modulus to determine the linear elasticity</dd></dl>
         </div>
         <div
             id="id-a64e58282e8e41d4f0a7c18ad9bc5791-annotations"
@@ -23073,7 +23089,8 @@ N.GT.0: The Nth additional history variable is the driving quantity for damage.
             <p>
             
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>original cross-sectional area of the parallel length</dd></dl>
         </div>
         <div
             id="id-7d3092d3f0f966d2c625fd6f57819c7f-annotations"
@@ -23135,9 +23152,10 @@ N.GT.0: The Nth additional history variable is the driving quantity for damage.
             class="card-text tab-pane fade show active"
             role="tabpanel">
             <p>
-            Number of time steps for running average of plastic failure strain in the additional failure criterion
+            
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>Number of time steps for running average of plastic failure strain in the additional failure criterion</dd></dl>
         </div>
         <div
             id="id-818b8c5e136717cc2ee1412dd31bb5cd-annotations"
@@ -23204,7 +23222,8 @@ N.GT.0: The Nth additional history variable is the driving quantity for damage.
             <p>
             
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>The initial thickness of the specimen.</dd></dl>
         </div>
         <div
             id="id-d3ccc458d61db94df1c346323a27ab1e-annotations"
@@ -23268,7 +23287,8 @@ N.GT.0: The Nth additional history variable is the driving quantity for damage.
             <p>
             
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>Slope of the elastic pasrt of the stress-strain curve: in the elastic pasrt of the stress-strain curve the value of the slope can closely agree with the value of the modulus of elasticity if optimal conditions are used (high resolution, double-sided averaging extensometers, proper alignment of the test piece, etc.)</dd></dl>
         </div>
         <div
             id="id-954bce4f3e31ed953c5492b4e56d3a70-annotations"
@@ -23713,7 +23733,8 @@ N.GT.0: The Nth additional history variable is the driving quantity for damage.
             <p>
             
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>Unique ID (IWM intern)</dd></dl>
         </div>
         <div
             id="id-c4bf84eb592c5195f054b02caef41648-annotations"
@@ -23777,7 +23798,8 @@ N.GT.0: The Nth additional history variable is the driving quantity for damage.
             <p>
             
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>time dependent engineering strain </dd></dl>
         </div>
         <div
             id="id-d25236084a8b9f5b3cfea80e61bc1b3a-annotations"
@@ -23841,7 +23863,8 @@ N.GT.0: The Nth additional history variable is the driving quantity for damage.
             <p>
             
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>Type of the displacement transducer.</dd></dl>
         </div>
         <div
             id="id-71e95d6d5f3c06afed7afe2209d20e7a-annotations"
@@ -24094,7 +24117,8 @@ N.GT.0: The Nth additional history variable is the driving quantity for damage.
             <p>
             
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>The type of the specimen.</dd></dl>
         </div>
         <div
             id="id-22d3a48d9b02e71e31cb16129798dbae-annotations"
@@ -24286,7 +24310,8 @@ N.GT.0: The Nth additional history variable is the driving quantity for damage.
             <p>
             
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>Facility that conducted the experiment.</dd></dl>
         </div>
         <div
             id="id-1b8277d4e12c677eee83f919e7d3cd60-annotations"
@@ -24351,9 +24376,10 @@ N.GT.0: The Nth additional history variable is the driving quantity for damage.
             class="card-text tab-pane fade show active"
             role="tabpanel">
             <p>
-            Reference element size for which an additional output of damage (and potentially plastic strain) will be generated. This is necessary to ensure the applicability of resulting damage quantities when transferred to different mesh sizes.
+            
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>Reference element size for which an additional output of damage (and potentially plastic strain) will be generated. This is necessary to ensure the applicability of resulting damage quantities when transferred to different mesh sizes.</dd></dl>
         </div>
         <div
             id="id-391325bce15571413db8895b4ea3f00f-annotations"
@@ -24420,7 +24446,8 @@ N.GT.0: The Nth additional history variable is the driving quantity for damage.
             <p>
             
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>testing direction related to the rolling direction</dd></dl>
         </div>
         <div
             id="id-d7437a8b9bf02a565b319d151de5dab5-annotations"
@@ -24484,7 +24511,8 @@ N.GT.0: The Nth additional history variable is the driving quantity for damage.
             <p>
             
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>The velocity of the actuator</dd></dl>
         </div>
         <div
             id="id-fbd12dee59b3e77efa48e6aae20e0c31-annotations"
@@ -25109,7 +25137,8 @@ N.GT.0: The Nth additional history variable is the driving quantity for damage.
             <p>
             
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>The force that is measured using the Force-measuring device.</dd></dl>
         </div>
         <div
             id="id-06131743a62abc6756b5ad66e894f4d6-annotations"
@@ -25365,7 +25394,8 @@ N.GT.0: The Nth additional history variable is the driving quantity for damage.
             <p>
             
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>true plastic strain at fracture</dd></dl>
         </div>
         <div
             id="id-730e92bd7ee44b614f033250cca485bc-annotations"
@@ -25427,9 +25457,10 @@ N.GT.0: The Nth additional history variable is the driving quantity for damage.
             class="card-text tab-pane fade show active"
             role="tabpanel">
             <p>
-            Load curve ID defining plastic failure strain as a function of temperature
+            
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>Load curve ID defining plastic failure strain as a function of temperature</dd></dl>
         </div>
         <div
             id="id-52d64ab2a227585bbd19b1062ac07151-annotations"
@@ -25494,9 +25525,10 @@ N.GT.0: The Nth additional history variable is the driving quantity for damage.
             class="card-text tab-pane fade show active"
             role="tabpanel">
             <p>
-            Simple incompressible plasticity model
+            
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>Simple incompressible plasticity model</dd></dl>
         </div>
         <div
             id="id-42134ceb1f02f167b707d24b9b6212d8-annotations"
@@ -25563,7 +25595,8 @@ N.GT.0: The Nth additional history variable is the driving quantity for damage.
             <p>
             
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>minimum cross-sectional area after fracture</dd></dl>
         </div>
         <div
             id="id-bdbc3464b33f89085f1e348366f446bc-annotations"
@@ -25813,7 +25846,8 @@ N.GT.0: The Nth additional history variable is the driving quantity for damage.
             <p>
             
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>Displacement of the actuator</dd></dl>
         </div>
         <div
             id="id-c03b0c56fee1174a2d21d4632d2aa6ca-annotations"
@@ -25877,7 +25911,8 @@ N.GT.0: The Nth additional history variable is the driving quantity for damage.
             <p>
             
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>minor true strain</dd></dl>
         </div>
         <div
             id="id-8ec60b7bc197ef7935bb292a66a1800b-annotations"
@@ -25939,13 +25974,14 @@ N.GT.0: The Nth additional history variable is the driving quantity for damage.
             class="card-text tab-pane fade show active"
             role="tabpanel">
             <p>
-            Flag which determines the treatment of strain rate to evaluate yielding:
+            
+            </p>
+            <dl><dt>description</dt>
+                <dd>Flag which determines the treatment of strain rate to evaluate yielding:
 =-1.0: Cowper-Symonds with effective deviatoric rate rather than total
 =0.0: Scale yield stress (default)
 =1.0: Viscoplastic formulation
-=3.0: Same as VP = 0, but with filtered effective total strain rates
-            </p>
-            <dl></dl>
+=3.0: Same as VP = 0, but with filtered effective total strain rates</dd></dl>
         </div>
         <div
             id="id-90b486391fa205f100e84bf696b6322f-annotations"
@@ -26012,7 +26048,8 @@ N.GT.0: The Nth additional history variable is the driving quantity for damage.
             <p>
             
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>true plastic strain</dd></dl>
         </div>
         <div
             id="id-79c012fe5463ad6ca6a99236ed76167f-annotations"
@@ -26201,7 +26238,8 @@ N.GT.0: The Nth additional history variable is the driving quantity for damage.
             <p>
             
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>Data of the machine used for the experiment.</dd></dl>
         </div>
         <div
             id="id-42a96b4d2c424f03d9f11e3c1c87426b-annotations"
@@ -26329,7 +26367,8 @@ N.GT.0: The Nth additional history variable is the driving quantity for damage.
             <p>
             
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>plastic engineering strain </dd></dl>
         </div>
         <div
             id="id-756b1dc3546220515c9f830f205a9c53-annotations"
@@ -26676,7 +26715,8 @@ N.GT.0: The Nth additional history variable is the driving quantity for damage.
             <p>
             
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>area on the fixed side of the test piece where only elastic deformations are required during the test</dd></dl>
         </div>
         <div
             id="id-af348ed2976b195c4b2895966787857a-annotations"
@@ -26740,7 +26780,8 @@ N.GT.0: The Nth additional history variable is the driving quantity for damage.
             <p>
             
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>Mean value of the time-dependent engineering strain rate in the range between start of yield or 1% strain and strain at maximum force</dd></dl>
         </div>
         <div
             id="id-1cd9b25206f75b5ad20568fc4a8ae87e-annotations"
@@ -26804,7 +26845,8 @@ N.GT.0: The Nth additional history variable is the driving quantity for damage.
             <p>
             
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>increase in the original gauge length (3.1.1) at any moment during the test</dd></dl>
         </div>
         <div
             id="id-f673b7818b7fae09fd78f9db6c446dae-annotations"
@@ -26991,9 +27033,10 @@ N.GT.0: The Nth additional history variable is the driving quantity for damage.
             class="card-text tab-pane fade show active"
             role="tabpanel">
             <p>
-            Initial yield stress, if noidentifier for hardening curve (LCSS>0) is prescibed
+            
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>Initial yield stress, if noidentifier for hardening curve (LCSS>0) is prescibed</dd></dl>
         </div>
         <div
             id="id-c511d07e8b4b3834df66cdee745c5c99-annotations"
@@ -27183,9 +27226,10 @@ N.GT.0: The Nth additional history variable is the driving quantity for damage.
             class="card-text tab-pane fade show active"
             role="tabpanel">
             <p>
-            Slope of linear hardening, if noidentifier for hardening curve (LCSS>0) is prescibed
+            
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>Slope of linear hardening, if noidentifier for hardening curve (LCSS>0) is prescibed</dd></dl>
         </div>
         <div
             id="id-017bae4f958c5f1a85b0c6c830f2817f-annotations"
@@ -27444,7 +27488,8 @@ N.GT.0: The Nth additional history variable is the driving quantity for damage.
             <p>
             
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>Data of the machine used for the experiment.</dd></dl>
         </div>
         <div
             id="id-dad0c11a556cc20aa4b1c15a4e3799a9-annotations"
@@ -27820,9 +27865,10 @@ N.GT.0: The Nth additional history variable is the driving quantity for damage.
             class="card-text tab-pane fade show active"
             role="tabpanel">
             <p>
-            Table ID with first principal stress limit as function of plastic strain (curves) and plastic strain rate (table). This option is for post-processing purposes only and gives an indication of areas in the structure where failure is likely to occur
+            
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>Table ID with first principal stress limit as function of plastic strain (curves) and plastic strain rate (table). This option is for post-processing purposes only and gives an indication of areas in the structure where failure is likely to occur</dd></dl>
         </div>
         <div
             id="id-d1ad29e535a6bd4daf1deecbbfbd0eef-annotations"
@@ -27889,7 +27935,8 @@ N.GT.0: The Nth additional history variable is the driving quantity for damage.
             <p>
             
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>lubrication layer between specimen and punch</dd></dl>
         </div>
         <div
             id="id-a163262db9139653f0d952e743de083c-annotations"
@@ -28012,9 +28059,10 @@ N.GT.0: The Nth additional history variable is the driving quantity for damage.
             class="card-text tab-pane fade show active"
             role="tabpanel">
             <p>
-            A unique number or label to address the defined material
+            
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>A unique number or label to address the defined material</dd></dl>
         </div>
         <div
             id="id-61a89bb1987a645a26d6da08617b64d4-annotations"
@@ -28148,7 +28196,8 @@ N.GT.0: The Nth additional history variable is the driving quantity for damage.
             <p>
             
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>stress at which the plastic extension is equal to a specified percentage of the extensometer gauge length</dd></dl>
         </div>
         <div
             id="id-7671e916994b9611c93952d0cfadd642-annotations"
@@ -28649,11 +28698,12 @@ N.GT.0: The Nth additional history variable is the driving quantity for damage.
             class="card-text tab-pane fade show active"
             role="tabpanel">
             <p>
-            Exponent for damage-related stress fadeout:
-LT.0.0: |FADEXP| is a load curve ID defining element-size dependent fading exponent.
-GT.0.0: Constant fading exponent
+            
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>Exponent for damage-related stress fadeout:
+LT.0.0: |FADEXP| is a load curve ID defining element-size dependent fading exponent.
+GT.0.0: Constant fading exponent</dd></dl>
         </div>
         <div
             id="id-ffe8b2639d7653300d92b2c1930a3f97-annotations"
@@ -28930,7 +28980,8 @@ GT.0.0: Constant fading exponent
             <p>
             
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>The displacement of the crosshead per time</dd></dl>
         </div>
         <div
             id="id-328224557a451ee7e98a90ea0e54e385-annotations"
@@ -29119,7 +29170,8 @@ GT.0.0: Constant fading exponent
             <p>
             
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>shear strength</dd></dl>
         </div>
         <div
             id="id-169bb87c90f6694ac0d32a6f7b421e42-annotations"
@@ -29181,12 +29233,13 @@ GT.0.0: Constant fading exponent
             class="card-text tab-pane fade show active"
             role="tabpanel">
             <p>
-            Critical plastic strain (material instability)
+            
+            </p>
+            <dl><dt>description</dt>
+                <dd>Critical plastic strain (material instability)
 LT.0.0: |ECRIT| is either a load curve ID defining critical equivalent plastic strain versus triaxiality or a table ID defining critical equivalent plastic strain as a function of triaxiality and Lode parameter (as in LCSDG). With HISVN ≠ 0, a 3D table can be used, where critical strain is a function of the history variable (TABLE_3D), Lode parameter (TABLE), and triaxiality (CURVE). With HISVN = 0, a 3D table introduces thermal effects, that is, critical strain is a function of temperature (TABLE_3D), Lode parameter (TABLE), and triaxiality (CURVE).
 EQ.0.0: Fixed value DCRIT defining critical damage is read (see below).
-GT.0.0: Fixed value for stress-state independent critical equivalent plastic strain.
-            </p>
-            <dl></dl>
+GT.0.0: Fixed value for stress-state independent critical equivalent plastic strain.</dd></dl>
         </div>
         <div
             id="id-98f963f435575f4e1b4628fe189df7f8-annotations"
@@ -29317,7 +29370,8 @@ GT.0.0: Fixed value for stress-state independent critical equivalent plastic str
             <p>
             
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>Unique ID (IWM intern)</dd></dl>
         </div>
         <div
             id="id-58b3d56a0407905a8e54061ef8919e63-annotations"
@@ -29381,7 +29435,8 @@ GT.0.0: Fixed value for stress-state independent critical equivalent plastic str
             <p>
             
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>mean value of the time dependent engineering strain rate: de(t)/dt in the range between start of yield point or 1% strain and strain ar maximum force</dd></dl>
         </div>
         <div
             id="id-740373c809e8154a0e3498d59183dee2-annotations"
@@ -29445,7 +29500,8 @@ GT.0.0: Fixed value for stress-state independent critical equivalent plastic str
             <p>
             
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>Original width of the parallel length of a flat test piece</dd></dl>
         </div>
         <div
             id="id-2ecabb9cc60a285b4de38a4a0d6d307b-annotations"
@@ -29765,7 +29821,8 @@ GT.0.0: Fixed value for stress-state independent critical equivalent plastic str
             <p>
             
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>Test standard to which the test is referred</dd></dl>
         </div>
         <div
             id="id-5db39f5eed040a0df0bee49c6c256d13-annotations"
@@ -30141,9 +30198,10 @@ GT.0.0: Fixed value for stress-state independent critical equivalent plastic str
             class="card-text tab-pane fade show active"
             role="tabpanel">
             <p>
-            Simple incompressible plasticity model with adiabatic approach
+            
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>Simple incompressible plasticity model with adiabatic approach</dd></dl>
         </div>
         <div
             id="id-a738a0ba0ab47a0cd2c7af7129be5bea-annotations"
@@ -30335,7 +30393,8 @@ GT.0.0: Fixed value for stress-state independent critical equivalent plastic str
             <p>
             
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>The intial gauge length Le used for measurement of extension by means of an extensometer</dd></dl>
         </div>
         <div
             id="id-3adf41bcb9f7a692109473b8d0e88893-annotations"
@@ -30524,7 +30583,8 @@ GT.0.0: Fixed value for stress-state independent critical equivalent plastic str
             <p>
             
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>true strain</dd></dl>
         </div>
         <div
             id="id-fabee0e97cad00bf9f425ba30c2caed8-annotations"
@@ -30588,7 +30648,8 @@ GT.0.0: Fixed value for stress-state independent critical equivalent plastic str
             <p>
             
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>percentage elongation after fracture</dd></dl>
         </div>
         <div
             id="id-2d77a60b661cab185a18d0f1deace7d1-annotations"
@@ -30650,9 +30711,10 @@ GT.0.0: Fixed value for stress-state independent critical equivalent plastic str
             class="card-text tab-pane fade show active"
             role="tabpanel">
             <p>
-            Parameter C for strain rate approach for using the Cowper and Symonds model which scales the yield stress with the factor: 1+(epsDot/C)^(1/P)
+            
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>Parameter C for strain rate approach for using the Cowper and Symonds model which scales the yield stress with the factor: 1+(epsDot/C)^(1/P)</dd></dl>
         </div>
         <div
             id="id-3552351ffacdbd89712e982b5a724950-annotations"
@@ -30719,7 +30781,8 @@ GT.0.0: Fixed value for stress-state independent critical equivalent plastic str
             <p>
             
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>Displacement of the extensometer (!) length</dd></dl>
         </div>
         <div
             id="id-e1deaef423b89c45ac6add6b9937bb3f-annotations"
@@ -30781,9 +30844,10 @@ GT.0.0: Fixed value for stress-state independent critical equivalent plastic str
             class="card-text tab-pane fade show active"
             role="tabpanel">
             <p>
-            The load curve ID defines plastic failure strain as a function of triaxiality. The table ID defines for each Lode parameter a load curve ID giving the plastic failure strain versus triaxiality for that Lode parameter
+            
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>The load curve ID defines plastic failure strain as a function of triaxiality. The table ID defines for each Lode parameter a load curve ID giving the plastic failure strain versus triaxiality for that Lode parameter</dd></dl>
         </div>
         <div
             id="id-1e4e7501147176c93e5582c104cd5da7-annotations"
@@ -30909,10 +30973,11 @@ GT.0.0: Fixed value for stress-state independent critical equivalent plastic str
             class="card-text tab-pane fade show active"
             role="tabpanel">
             <p>
-            The load curve ID defines plastic failure strain as a function of element size. The table ID defines for each triaxiality a load curve ID giving the plastic failure strain versus element size for that triaxiality. If a three dimensional table ID is referred, plastic failure strain can be a function of Lode parameter (TABLE_
-3D), triaxiality (TABLE), and element size (CURVE)
+            
             </p>
-            <dl></dl>
+            <dl><dt>description</dt>
+                <dd>The load curve ID defines plastic failure strain as a function of element size. The table ID defines for each triaxiality a load curve ID giving the plastic failure strain versus element size for that triaxiality. If a three dimensional table ID is referred, plastic failure strain can be a function of Lode parameter (TABLE_
+3D), triaxiality (TABLE), and element size (CURVE)</dd></dl>
         </div>
         <div
             id="id-6df51df2a9cbf8e44e83d05f85bcf17c-annotations"
@@ -30930,6 +30995,73 @@ GT.0.0: Fixed value for stress-state independent critical equivalent plastic str
 </dd><dt>is in range of</dt><dd><a
     href="#id-f37bf7ccd4b493b927c429a7c7570b60"
     >hasFailureStrainIdentifier4MeshDependency</a>
+</dd></dl>
+        </div>
+    </div>
+    <div class="card-footer"></div>
+</div>
+</p>
+      
+          <p><div
+    class="card"
+    id="id-372da9f2b29b9adede52df0451ba3ecc"
+    >
+    <div class="card-header">
+        <h4 class="card-title">ElastoplasticModel</h4>
+        <p><small class="text-muted"><a href="https://w3id.org/steel/ProcessOntology/ElastoplasticModel">https://w3id.org/steel/ProcessOntology/ElastoplasticModel</a></small></p>
+        <nav
+            class="nav nav-tabs card-header-tabs"
+            id="id-372da9f2b29b9adede52df0451ba3ecc-nav"
+            role="tablist">
+            <a
+                href="#id-372da9f2b29b9adede52df0451ba3ecc-description"
+                class="nav-item nav-link active"
+                aria-selected="true"
+                data-bs-toggle="tab"
+                role="tab">Description</a>
+            <a
+                href="#id-372da9f2b29b9adede52df0451ba3ecc-annotations"
+                class="nav-item nav-link"
+                aria-selected="false"
+                data-bs-toggle="tab"
+                role="tab">Annotations</a>
+            <a
+                href="#id-372da9f2b29b9adede52df0451ba3ecc-relations"
+                id="id-372da9f2b29b9adede52df0451ba3ecc-tab-relations"
+                class="nav-item nav-link"
+                aria-selected="false"
+                data-bs-toggle="tab"
+                role="tab">Relations</a>
+        </nav>
+    </div>
+    <div
+        id="id-372da9f2b29b9adede52df0451ba3ecc-tab-content"
+        class="tab-content card-body">
+        <div
+            id="id-372da9f2b29b9adede52df0451ba3ecc-description"
+            class="card-text tab-pane fade show active"
+            role="tabpanel">
+            <p>
+            
+            </p>
+            <dl></dl>
+        </div>
+        <div
+            id="id-372da9f2b29b9adede52df0451ba3ecc-annotations"
+            class="card-text tab-pane fade"
+            role="tabpanel">
+            <dl></dl>
+        </div>
+        <div
+            id="id-372da9f2b29b9adede52df0451ba3ecc-relations"
+            class="card-text tab-pane fade"
+            role="tabpanel">
+            <dl><dt>has super-classes</dt><dd><a
+    href="#id-367cd62b5d03046287eedef4b86e00c0"
+    >ValueObject</a>
+</dd><dt>is in range of</dt><dd><a
+    href="#id-b9f9122abf3114b4fe9cdc4e63dcebfb"
+    >hasElastoplasticModel</a>
 </dd></dl>
         </div>
     </div>
@@ -34200,6 +34332,70 @@ GT.0.0: Fixed value for stress-state independent critical equivalent plastic str
             <dl><dt>has range</dt><dd><a
     href="#id-7f4de063869a2a0b97d18cdaa98a92de"
     >NotchTensileStrength</a>
+</dd></dl>
+        </div>
+    </div>
+    <div class="card-footer"></div>
+</div>
+</p>
+      
+          <p><div
+    class="card"
+    id="id-b9f9122abf3114b4fe9cdc4e63dcebfb"
+    >
+    <div class="card-header">
+        <h4 class="card-title">hasElastoplasticModel</h4>
+        <p><small class="text-muted"><a href="https://w3id.org/steel/ProcessOntology/hasElastoplasticModel">https://w3id.org/steel/ProcessOntology/hasElastoplasticModel</a></small></p>
+        <nav
+            class="nav nav-tabs card-header-tabs"
+            id="id-b9f9122abf3114b4fe9cdc4e63dcebfb-nav"
+            role="tablist">
+            <a
+                href="#id-b9f9122abf3114b4fe9cdc4e63dcebfb-description"
+                class="nav-item nav-link active"
+                aria-selected="true"
+                data-bs-toggle="tab"
+                role="tab">Description</a>
+            <a
+                href="#id-b9f9122abf3114b4fe9cdc4e63dcebfb-annotations"
+                class="nav-item nav-link"
+                aria-selected="false"
+                data-bs-toggle="tab"
+                role="tab">Annotations</a>
+            <a
+                href="#id-b9f9122abf3114b4fe9cdc4e63dcebfb-relations"
+                id="id-b9f9122abf3114b4fe9cdc4e63dcebfb-tab-relations"
+                class="nav-item nav-link"
+                aria-selected="false"
+                data-bs-toggle="tab"
+                role="tab">Relations</a>
+        </nav>
+    </div>
+    <div
+        id="id-b9f9122abf3114b4fe9cdc4e63dcebfb-tab-content"
+        class="tab-content card-body">
+        <div
+            id="id-b9f9122abf3114b4fe9cdc4e63dcebfb-description"
+            class="card-text tab-pane fade show active"
+            role="tabpanel">
+            <p>
+            
+            </p>
+            <dl></dl>
+        </div>
+        <div
+            id="id-b9f9122abf3114b4fe9cdc4e63dcebfb-annotations"
+            class="card-text tab-pane fade"
+            role="tabpanel">
+            <dl></dl>
+        </div>
+        <div
+            id="id-b9f9122abf3114b4fe9cdc4e63dcebfb-relations"
+            class="card-text tab-pane fade"
+            role="tabpanel">
+            <dl><dt>has range</dt><dd><a
+    href="#id-372da9f2b29b9adede52df0451ba3ecc"
+    >ElastoplasticModel</a>
 </dd></dl>
         </div>
     </div>
@@ -40493,70 +40689,6 @@ GT.0.0: Fixed value for stress-state independent critical equivalent plastic str
       
           <p><div
     class="card"
-    id="id-5c42a424fdd3497708d07a6eb9703498"
-    >
-    <div class="card-header">
-        <h4 class="card-title">hasElastoplastic model</h4>
-        <p><small class="text-muted"><a href="https://w3id.org/steel/ProcessOntology/hasElastoplastic%20model">https://w3id.org/steel/ProcessOntology/hasElastoplastic%20model</a></small></p>
-        <nav
-            class="nav nav-tabs card-header-tabs"
-            id="id-5c42a424fdd3497708d07a6eb9703498-nav"
-            role="tablist">
-            <a
-                href="#id-5c42a424fdd3497708d07a6eb9703498-description"
-                class="nav-item nav-link active"
-                aria-selected="true"
-                data-bs-toggle="tab"
-                role="tab">Description</a>
-            <a
-                href="#id-5c42a424fdd3497708d07a6eb9703498-annotations"
-                class="nav-item nav-link"
-                aria-selected="false"
-                data-bs-toggle="tab"
-                role="tab">Annotations</a>
-            <a
-                href="#id-5c42a424fdd3497708d07a6eb9703498-relations"
-                id="id-5c42a424fdd3497708d07a6eb9703498-tab-relations"
-                class="nav-item nav-link"
-                aria-selected="false"
-                data-bs-toggle="tab"
-                role="tab">Relations</a>
-        </nav>
-    </div>
-    <div
-        id="id-5c42a424fdd3497708d07a6eb9703498-tab-content"
-        class="tab-content card-body">
-        <div
-            id="id-5c42a424fdd3497708d07a6eb9703498-description"
-            class="card-text tab-pane fade show active"
-            role="tabpanel">
-            <p>
-            
-            </p>
-            <dl></dl>
-        </div>
-        <div
-            id="id-5c42a424fdd3497708d07a6eb9703498-annotations"
-            class="card-text tab-pane fade"
-            role="tabpanel">
-            <dl></dl>
-        </div>
-        <div
-            id="id-5c42a424fdd3497708d07a6eb9703498-relations"
-            class="card-text tab-pane fade"
-            role="tabpanel">
-            <dl><dt>has range</dt><dd><a
-    href="#id-bc6b8e13c45cb852b3763bfe5914c047"
-    >Elastoplastic model</a>
-</dd></dl>
-        </div>
-    </div>
-    <div class="card-footer"></div>
-</div>
-</p>
-      
-          <p><div
-    class="card"
     id="id-b14a2b140bb370cbebb2ea4948bfc026"
     >
     <div class="card-header">
@@ -43564,7 +43696,7 @@ GT.0.0: Fixed value for stress-state independent critical equivalent plastic str
             role="tabpanel">
             <dl><dt>has range</dt><dd><a
     href="#id-4851b0c133d6a1d86c9b080d7adfa38d"
-    >True Stress</a>
+    >TrueStress</a>
 </dd></dl>
         </div>
     </div>

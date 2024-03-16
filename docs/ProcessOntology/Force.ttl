@@ -6,6 +6,9 @@
 <https://w3id.org/steel/ProcessOntology/Force> <http://www.w3.org/2000/01/rdf-schema#label> "Force"@en .
 <https://w3id.org/steel/ProcessOntology/Force> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://w3id.org/steel/ProcessOntology/ForceMeasuringSystem> .
 <https://w3id.org/steel/ProcessOntology/Force> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://w3id.org/steel/ProcessOntology/ForceMeasuringDevice> .
+<https://w3id.org/steel/ProcessOntology/Force> <http://purl.org/dc/terms/description> "The force that is measured using the Force-measuring device."@en .
+<https://w3id.org/steel/ProcessOntology/Force> <http://purl.org/dc/terms/description> "The force measured with the force measuring system"@en .
+<https://w3id.org/steel/ProcessOntology/Force> <http://purl.org/dc/terms/description> "The force measured by the load cell"@en .
 <https://w3id.org/steel/ProcessOntology/Force> <http://www.w3.org/2004/02/skos/core#altlabel> "force"@en .
 <https://w3id.org/steel/ProcessOntology/Force> <http://www.w3.org/2004/02/skos/core#altlabel> "Standardkraft"@de .
 <https://w3id.org/steel/ProcessOntology/Force> <http://www.w3.org/2004/02/skos/core#altlabel> "F"@de .

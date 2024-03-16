@@ -1,6 +1,13 @@
 
 {
   "https://w3id.org/steel/ProcessOntology/TestDirection" : {
+    "http://purl.org/dc/terms/description" : [ {
+        "value" : "die Orientierung der Proben muss die Richtung der geringsten Grenzform\u00E4nderung sein (Stahl Aussparungsrichtung quer zur WR, Aluminium Aussparungsrichtung l\u00E4ngs zur WR)",
+        "lang" : "de",
+        "type" : "literal"
+        }
+      
+      ],
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
         "value" : "http://www.w3.org/2002/07/owl#Class",
         "type" : "uri"

@@ -1,6 +1,13 @@
 
 {
   "https://w3id.org/steel/ProcessOntology/Fracture" : {
+    "http://purl.org/dc/terms/description" : [ {
+        "value" : "Zustand, wenn die Probe vollst\u00E4ndig geteilt ist",
+        "lang" : "de",
+        "type" : "literal"
+        }
+      
+      ],
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
         "value" : "http://www.w3.org/2002/07/owl#Class",
         "type" : "uri"

@@ -1,6 +1,13 @@
 
 {
   "https://w3id.org/steel/ProcessOntology/PercentagePermanentElongation" : {
+    "http://purl.org/dc/terms/description" : [ {
+        "value" : "Zunahme der Anfangsmessl\u00E4nge (3.1.1) einer Probe nach Entfernen einer festgelegten Zugspannung, angegeben in Prozent, bezogen auf die Anfangsmessl\u00E4nge (3.1.1)",
+        "lang" : "de",
+        "type" : "literal"
+        }
+      
+      ],
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
         "value" : "http://www.w3.org/2002/07/owl#Class",
         "type" : "uri"

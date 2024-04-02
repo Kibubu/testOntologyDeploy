@@ -9,7 +9,7 @@
       
       ],
     "http://purl.org/dc/terms/date" : [ {
-        "value" : "2024-03-25T19:22:35+00:00",
+        "value" : "2024-04-02T06:19:48+00:00",
         "type" : "literal"
         }
       
@@ -6596,6 +6596,13 @@
         "type" : "uri"
         }
       
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+        "value" : "DAMASK phenopower law parameter",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      
       ]
     }
   ,
@@ -6754,6 +6761,13 @@
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
         "value" : "http://www.w3.org/2002/07/owl#Class",
         "type" : "uri"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+        "value" : "DAMASK phenopower law parameter",
+        "lang" : "en",
+        "type" : "literal"
         }
       
       ]
@@ -8517,6 +8531,13 @@
         "type" : "uri"
         }
       
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+        "value" : "DAMASK phenopower law parameter",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      
       ]
     }
   ,
@@ -9080,6 +9101,13 @@
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
         "value" : "http://www.w3.org/2002/07/owl#Class",
         "type" : "uri"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+        "value" : "DAMASK phenopower law parameter",
+        "lang" : "en",
+        "type" : "literal"
         }
       
       ]
@@ -10468,12 +10496,6 @@
       {
         "value" : "standard definition specific",
         "lang" : "en",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasTypicalUnitLabel" : [ {
-        "value" : "einheitslos",
         "type" : "literal"
         }
       
@@ -21052,6 +21074,13 @@
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
         "value" : "http://www.w3.org/2002/07/owl#Class",
         "type" : "uri"
+        }
+      
+      ],
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+        "value" : "DAMASK phenopower law parameter",
+        "lang" : "en",
+        "type" : "literal"
         }
       
       ]
@@ -35024,46 +35053,6 @@
     "http://www.w3.org/2004/02/skos/core#preflabel" : [ {
         "value" : "hasMachine",
         "lang" : "en",
-        "type" : "literal"
-        }
-      
-      ]
-    }
-  ,
-  "https://w3id.org/steel/ProcessOntology/hasMachine_einheitslos" : {
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-        "value" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#Property",
-        "type" : "uri"
-        }
-      ,
-      {
-        "value" : "http://www.w3.org/2002/07/owl#DatatypeProperty",
-        "type" : "uri"
-        }
-      
-      ],
-    "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-        "value" : "hasMachine_einheitslos",
-        "lang" : "en",
-        "type" : "literal"
-        }
-      
-      ],
-    "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
-        "value" : "https://w3id.org/steel/ProcessOntology/hasMachine",
-        "type" : "uri"
-        }
-      
-      ],
-    "http://www.w3.org/2004/02/skos/core#preflabel" : [ {
-        "value" : "hasMachine_einheitslos",
-        "lang" : "en",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasUnitLabel" : [ {
-        "value" : "einheitslos",
         "type" : "literal"
         }
       

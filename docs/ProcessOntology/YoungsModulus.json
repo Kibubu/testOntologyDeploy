@@ -19,7 +19,20 @@
         }
       
       ],
+    "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+        "value" : "Modulus of elasticity",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      
+      ],
     "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+        "value" : "Young's modulus",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      ,
+      {
         "value" : "YoungsModulus",
         "lang" : "en",
         "type" : "literal"
@@ -28,7 +41,7 @@
       ],
     "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
         "value" : "https://material-digital.de/pmdco/ValueObject",
-        "type" : "literal"
+        "type" : "uri"
         }
       
       ],
@@ -40,6 +53,12 @@
       
       ],
     "http://www.w3.org/2004/02/skos/core#preflabel" : [ {
+        "value" : "Young's modulus",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      ,
+      {
         "value" : "YoungsModulus",
         "lang" : "en",
         "type" : "literal"
@@ -55,12 +74,6 @@
     "https://w3id.org/steel/ProcessOntology/hasLabelSource" : [ {
         "value" : "LS-DYNA_Manual_Volume_2",
         "lang" : "en",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasLabelSourceEn" : [ {
-        "value" : "LS-DYNA_Manual_Volume_2",
         "type" : "literal"
         }
       

@@ -67,7 +67,7 @@
       
       ],
     "https://w3id.org/steel/ProcessOntology/hasSymbolLatex" : [ {
-        "value" : "sigma_B",
+        "value" : "\\sigma_B",
         "lang" : "en",
         "type" : "literal"
         }

@@ -67,7 +67,7 @@
       
       ],
     "https://w3id.org/steel/ProcessOntology/hasSymbolLatex" : [ {
-        "value" : "rho",
+        "value" : "\\rho",
         "lang" : "en",
         "type" : "literal"
         }

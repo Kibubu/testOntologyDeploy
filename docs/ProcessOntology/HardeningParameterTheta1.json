@@ -60,7 +60,7 @@
       
       ],
     "https://w3id.org/steel/ProcessOntology/hasSymbolLatex" : [ {
-        "value" : "theta_1",
+        "value" : "\\theta_1",
         "lang" : "en",
         "type" : "literal"
         }

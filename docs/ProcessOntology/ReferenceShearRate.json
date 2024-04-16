@@ -60,7 +60,7 @@
       
       ],
     "https://w3id.org/steel/ProcessOntology/hasSymbolLatex" : [ {
-        "value" : "dot{vargamma}_{0}",
+        "value" : "\\dot{\\vargamma}_{0}",
         "lang" : "en",
         "type" : "literal"
         }

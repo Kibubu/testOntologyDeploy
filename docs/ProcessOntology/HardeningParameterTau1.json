@@ -60,7 +60,7 @@
       
       ],
     "https://w3id.org/steel/ProcessOntology/hasSymbolLatex" : [ {
-        "value" : "tau_1",
+        "value" : "\\tau_1",
         "lang" : "en",
         "type" : "literal"
         }

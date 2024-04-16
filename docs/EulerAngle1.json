@@ -67,7 +67,7 @@
       
       ],
     "https://w3id.org/steel/ProcessOntology/hasSymbolLatex" : [ {
-        "value" : "varphi_1",
+        "value" : "\\varphi_1",
         "lang" : "en",
         "type" : "literal"
         }

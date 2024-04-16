@@ -73,7 +73,7 @@
       
       ],
     "https://w3id.org/steel/ProcessOntology/hasSymbolLatex" : [ {
-        "value" : "dot{e}_{pl}",
+        "value" : "\\dot{e}_{pl}",
         "lang" : "en",
         "type" : "literal"
         }

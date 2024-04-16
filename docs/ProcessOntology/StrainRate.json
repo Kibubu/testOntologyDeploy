@@ -157,7 +157,7 @@
       
       ],
     "https://w3id.org/steel/ProcessOntology/hasSymbolLatex" : [ {
-        "value" : "dot{e}_{L_e}",
+        "value" : "\\dot{e}_{L_e}",
         "lang" : "en",
         "type" : "literal"
         }

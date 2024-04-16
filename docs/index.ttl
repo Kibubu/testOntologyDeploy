@@ -21,31 +21,24 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         :hasTypicalUnitLabel  "MPa" .
 
 :MinimumCrosssectionAfterFracture
-        :hasLabelSource       "YS1-Fz-D1Q"@de ;
-        :hasLabelSource       "YS1-Sz0°-S1L"@de ;
-        :hasExampleData       "4879" ;
-        skos:preflabel        "MinimumCrosssectionAfterFracture"@en ;
-        skos:altlabel         "Bruchquerschnitt Su"@de ;
-        skos:altlabel         "SU"@en ;
-        skos:altlabel         "Minimum cross-sectional area after fracture"@en ;
-        skos:altlabel         "Su"@de ;
-        dcterms:description   "minimum cross-sectional area after fracture"@en ;
-        rdfs:subClassOf       pmdco:ValueObject ;
-        :isBasedOn            :DiameterAfterFracture2 ;
-        :isBasedOn            :ThicknessAfterFracture2 ;
-        :isBasedOn            :ShearLengthAfterFracture1 ;
-        :isBasedOn            :WidthAfterFracture1 ;
-        :isBasedOn            :DiameterAfterFracture1 ;
-        :isBasedOn            :ShearLengthAfterFracture2 ;
         :isBasedOn            :WidthAfterFracture2 ;
         :isBasedOn            :ThicknessAfterFracture1 ;
         :hasTypicalUnitLabel  "mm2" ;
-        :hasSymbolLatex       "S_{u}"@en ;
         :hasSymbol            "S_{u}"@en ;
-        :hasSymbol            "Su"@en ;
+        :isBasedOn            :DiameterAfterFracture2 ;
+        :isBasedOn            :ThicknessAfterFracture2 ;
+        :isBasedOn            :WidthAfterFracture1 ;
+        :isBasedOn            :DiameterAfterFracture1 ;
         rdf:type              skos:Concept ;
         rdf:type              owl:Class ;
-        rdfs:label            "MinimumCrosssectionAfterFracture"@en .
+        rdfs:label            "MinimumCrosssectionAfterFracture"@en ;
+        rdfs:subClassOf       pmdco:ValueObject ;
+        dcterms:description   "minimum cross-sectional area after fracture"@en ;
+        skos:altlabel         "Minimum cross-sectional area after fracture"@en ;
+        skos:altlabel         "Bruchquerschnitt Su"@de ;
+        skos:preflabel        "MinimumCrosssectionAfterFracture"@en ;
+        :hasExampleData       "4879" ;
+        :hasLabelSource       "YS1-Fz-D1Q"@de .
 
 :Model  rdf:type        owl:Class ;
         rdfs:label      "Model"@en ;
@@ -184,6 +177,11 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         rdfs:range      :Location ;
         skos:preflabel  "hasLocation"@en .
 
+:hasUnit  rdf:type        owl:ObjectProperty ;
+        rdfs:label        "has unit"@en ;
+        dc11:description  "the unit associated with the resource. More than one property of this kind for one resource should be only used if the units are equivalent"@en ;
+        skos:preflabel    "has unit"@en .
+
 :YieldForce_0.2Percentage
         rdf:type              skos:Concept ;
         rdfs:label            "YieldForce_0.2Percentage"@en ;
@@ -207,18 +205,6 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         rdfs:subPropertyOf  :hasCrossheadSeparationRate ;
         skos:preflabel      "hasCrossheadSeparationRate_mm s -1"@en ;
         :hasUnitLabel       "mm s -1" .
-
-:ShearLengthAfterFracture1
-        rdf:type              skos:Concept ;
-        rdfs:label            "ShearLengthAfterFracture1"@en ;
-        rdfs:seeAlso          :ShearLengthAfterFracture1 ;
-        rdfs:subClassOf       pmdco:ValueObject ;
-        skos:altlabel         "Probenbreite B1 nach Bruch"@de ;
-        skos:preflabel        "ShearLengthAfterFracture1"@en ;
-        skos:related          :ShearLengthAfterFracture1 ;
-        :hasLabelSource       "YS1-Sz0°-S1L"@de ;
-        rdf:type              owl:Class ;
-        :hasTypicalUnitLabel  "mm" .
 
 :hasPermanentSetStrength_MPa
         rdf:type            owl:DatatypeProperty ;
@@ -245,7 +231,7 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         :hasLabelSource       "General Knowledge"@en ;
         :hasLabelSource       "General Knowledge"@de ;
         rdfs:label            "HardeningParameterTau0"@en ;
-        :hasSymbolLatex       "tau_0"@en ;
+        :hasSymbolLatex       "\\tau_0"@en ;
         :hasTypicalUnitLabel  "MPa" .
 
 :hasTrueFractureStrainObject
@@ -306,7 +292,7 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         :hasLabelSource      "General Knowledge"@de ;
         rdfs:label           "EulerAngle1"@en ;
         :hasSymbol           "ϕ_1"@en ;
-        :hasSymbolLatex      "varphi_1"@en .
+        :hasSymbolLatex      "\\varphi_1"@en .
 
 :input  rdf:type        owl:DatatypeProperty ;
         rdfs:domain     :Workflow ;
@@ -394,6 +380,13 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         :hasLabelSource      "General Knowledge"@de ;
         rdfs:label           "EulerAngleConvention"@en .
 
+:hasElasticityModel  rdf:type  owl:ObjectProperty ;
+        rdf:type        owl:DatatypeProperty ;
+        rdf:type        rdf:Property ;
+        rdfs:label      "hasElasticityModel"@en ;
+        rdfs:range      :ElasticityModel ;
+        skos:preflabel  "hasElasticityModel"@en .
+
 :hasInitialThicknessObject
         rdf:type        owl:ObjectProperty ;
         rdf:type        rdf:Property ;
@@ -401,14 +394,13 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         rdfs:range      :InitialThickness ;
         skos:preflabel  "hasInitialThickness"@en .
 
-:RollingDirection  rdfs:seeAlso  :TestingDirection ;
+:RollingDirection  rdf:type  owl:Class ;
+        rdfs:label       "RollingDirection"@en ;
+        rdfs:seeAlso     :TestingDirection ;
         rdfs:subClassOf  pmdco:ValueObject ;
-        skos:altlabel    "Walzrichtung"@de ;
         skos:preflabel   "RollingDirection"@en ;
         skos:related     :TestingDirection ;
-        rdf:type         skos:Concept ;
-        rdf:type         owl:Class ;
-        rdfs:label       "RollingDirection"@en .
+        rdf:type         skos:Concept .
 
 :hasExperimentIdentifier
         rdf:type        owl:DatatypeProperty ;
@@ -419,7 +411,7 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
 :FailureStrain  rdf:type      owl:Class ;
         rdfs:label            "FailureStrain"@en ;
         rdfs:subClassOf       pmdco:ValueObject ;
-        dcterms:description   "Failure strain curve/table or function\nGT.0.0: Load curve ID or table ID. As a load curve, it defines equivalent plastic strain to failure as a function of triaxiality. As a table, it defines for each Lode parameter value (between -1 and 1) a load curve ID giving the\nequivalent plastic strain to failure as a function of triaxiality for that Lode parameter value. With HISVN ≠ 0, a 3D table can be used, where failure strain is a function of the history variable (TABLE_3D), Lode parameter (TABLE), and triaxiality (CURVE). With HISVN = 0, a 3D table introduces thermal effects, that is, failure strain is a function of temperature (TABLE_3D), Lode parameter (TABLE), and triaxiality (CURVE).\nLT.0.0: |LCSDG| is the ID of a function (*DEFINE_FUNCTION) with the arguments triaxiality and Lode parameter: 𝑓 (𝜂, 𝐿)."@en ;
+        dcterms:description   "Failure strain curve/table or function\nGT.0.0: Load curve ID or table ID. As a load curve, it defines equivalent plastic strain to failure as a function of triaxiality. As a table, it defines for each Lode parameter value (between -1 and 1) a load curve ID giving the\nequivalent plastic strain to failure as a function of triaxiality for that Lode parameter value. With HISVN ≠ 0, a 3D table can be used, where failure strain is a function of the history variable (TABLE_3D), Lode parameter (TABLE), and triaxiality (CURVE). With HISVN = 0, a 3D table introduces thermal effects, that is, failure strain is a function of temperature (TABLE_3D), Lode parameter (TABLE), and triaxiality (CURVE).\nLT.0.0: |LCSDG| is the ID of a function (*DEFINE_FUNCTION) with the arguments triaxiality and Lode parameter: ?? (??, ??)."@en ;
         skos:altlabel         "LCSDG"@en ;
         skos:preflabel        "FailureStrain"@en ;
         :hasExampleData       "5" ;
@@ -483,7 +475,7 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         :isBasedOn            :ExtensometerGaugeLength ;
         :isBasedOn            :Time ;
         :hasTypicalUnitLabel  "s-1" ;
-        :hasSymbolLatex       "dot{e(t)}"@en ;
+        :hasSymbolLatex       "\\dot{e(t)}"@en ;
         :hasSymbol            "e(t)"@en ;
         :hasLabelSource       "Standard definition specific"@de ;
         :hasLabelSource       "YS1-Fz-D1Q"@de ;
@@ -494,6 +486,13 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         rdfs:seeAlso          :StrainRate ;
         rdfs:subClassOf       pmdco:ValueObject .
 
+:hasReferenceShearRateObject
+        rdf:type        owl:ObjectProperty ;
+        rdf:type        rdf:Property ;
+        rdfs:label      "hasReferenceShearRate"@en ;
+        rdfs:range      :ReferenceShearRate ;
+        skos:preflabel  "hasReferenceShearRate"@en .
+
 :hasMaterialInstabilityStrain
         rdf:type        owl:ObjectProperty ;
         rdf:type        owl:DatatypeProperty ;
@@ -502,12 +501,13 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         rdfs:range      :MaterialInstabilityStrain ;
         skos:preflabel  "hasMaterialInstabilityStrain"@en .
 
-:hasReferenceShearRateObject
-        rdf:type        owl:ObjectProperty ;
-        rdf:type        rdf:Property ;
-        rdfs:label      "hasReferenceShearRate"@en ;
-        rdfs:range      :ReferenceShearRate ;
-        skos:preflabel  "hasReferenceShearRate"@en .
+:PlasticityModel  rdf:type   owl:Class ;
+        rdfs:label           "PlasticityModel"@en ;
+        rdfs:subClassOf      pmdco:ValueObject ;
+        dcterms:description  "phenomenological crystal plasticity model"@en ;
+        skos:altlabel        "phenopowerlaw"@en ;
+        skos:preflabel       "PlasticityModel"@en ;
+        rdf:type             skos:Concept .
 
 :hasRollingDirectionObject
         rdf:type        owl:ObjectProperty ;
@@ -593,8 +593,8 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         :hasLabelSource      "DIN EN ISO 16808:2022-08, 4"@en ;
         :hasLabelSource      "DIN EN ISO 12004-2: 2021_07, 8"@de ;
         :hasLabelSource      "DIN EN ISO 12004-2: 2021_07, 8"@en ;
+        :hasSymbolLatex      "\\epsilon_3"@en ;
         :hasSymbolLatex      "ε_3"@en ;
-        :hasSymbolLatex      "epsilon_3"@en ;
         :hasSymbol           "ε_3"@en ;
         rdf:type             skos:Concept ;
         rdf:type             owl:Class ;
@@ -638,6 +638,13 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         skos:preflabel  "contact length"@en ;
         skos:preflabel  "gedrückte Länge"@de .
 
+:hasTruePlasticThicknessStrainObject
+        rdf:type        owl:ObjectProperty ;
+        rdf:type        rdf:Property ;
+        rdfs:label      "hasTruePlasticThicknessStrain"@en ;
+        rdfs:range      :TruePlasticThicknessStrain ;
+        skos:preflabel  "hasTruePlasticThicknessStrain"@en .
+
 :NumberOfVirtualExperiments
         rdfs:subClassOf      pmdco:ValueObject ;
         dcterms:description  "Anzahl an durchgeführten virtuellen Versuchen"@de ;
@@ -671,13 +678,6 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         skos:preflabel      "hasDiameter_mm"@en ;
         :hasUnitLabel       "mm" .
 
-:hasTruePlasticThicknessStrainObject
-        rdf:type        owl:ObjectProperty ;
-        rdf:type        rdf:Property ;
-        rdfs:label      "hasTruePlasticThicknessStrain"@en ;
-        rdfs:range      :TruePlasticThicknessStrain ;
-        skos:preflabel  "hasTruePlasticThicknessStrain"@en .
-
 :hasMaterialIdentifier
         rdf:type        owl:ObjectProperty ;
         rdf:type        owl:DatatypeProperty ;
@@ -685,6 +685,14 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         rdfs:label      "hasMaterialIdentifier"@en ;
         rdfs:range      :MaterialIdentifier ;
         skos:preflabel  "hasMaterialIdentifier"@en .
+
+:hasInitialCriticalStrength_Pa
+        rdf:type            owl:DatatypeProperty ;
+        rdf:type            rdf:Property ;
+        rdfs:label          "hasInitialCriticalStrength_Pa"@en ;
+        rdfs:subPropertyOf  :hasInitialCriticalStrength ;
+        skos:preflabel      "hasInitialCriticalStrength_Pa"@en ;
+        :hasUnitLabel       "Pa" .
 
 :MicrostructureModel  rdfs:subClassOf  pmdco:ValueObject ;
         dcterms:description  "Input-Datei eines Mikrostrukturmodells für den jeweiligen Solver"@de ;
@@ -863,18 +871,14 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         skos:preflabel  "hasDeliveryDate"@en .
 
 :PercentageReductionOfArea
+        :hasLabelSource       "AFZ1-Fz-S1Q.xlsx"@en ;
         :hasExampleData       "78.0" ;
         :hasExampleData       "67.42" ;
         skos:preflabel        "PercentageReductionOfArea"@en ;
-        skos:altlabel         "Brucheinschnürung"@de ;
         skos:altlabel         "percentage reduction of area"@en ;
         skos:altlabel         "Brucheinschnürung Z"@de ;
         skos:altlabel         "Z"@en ;
         dcterms:description   "maximum change in cross-sectional area which has occured during the test expressed as a percentage of the original cross-sectional area"@en ;
-        dcterms:description   "größte während des Versuchs aufgetretene Änderung des Querschnitts, angegeben in Prozent, bezogen auf den Anfangsquerschnitt"@de ;
-        rdfs:subClassOf       pmdco:ValueObject ;
-        rdfs:label            "PercentageReductionOfArea"@en ;
-        rdf:type              owl:Class ;
         :isBasedOn            :OriginalCrosssection ;
         :isBasedOn            :MinimumCrosssectionAfterFracture ;
         :hasTypicalUnitLabel  "%" ;
@@ -883,9 +887,11 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         :hasLabelSource       "DIN EN ISO 6892-1, 3.8"@de ;
         :hasLabelSource       "DIN EN ISO 6892-1, 3.8"@en ;
         :hasLabelSource       "YS1-Fz-D1Q"@de ;
-        :hasLabelSource       "YS1-Sz0°-S1L"@de ;
-        :hasLabelSource       "AFZ1-Fz-S1Q.xlsx"@en ;
-        rdf:type              skos:Concept .
+        rdf:type              skos:Concept ;
+        rdf:type              owl:Class ;
+        rdfs:label            "PercentageReductionOfArea"@en ;
+        rdfs:subClassOf       pmdco:ValueObject ;
+        dcterms:description   "größte während des Versuchs aufgetretene Änderung des Querschnitts, angegeben in Prozent, bezogen auf den Anfangsquerschnitt"@de .
 
 :MatTabulatedJohnsonCookLogInterpolation
         rdf:type             owl:Class ;
@@ -997,7 +1003,7 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         :hasLabelSource       "General Knowledge"@en ;
         :hasLabelSource       "General Knowledge"@de ;
         rdfs:label            "ReferenceShearRate"@en ;
-        :hasSymbolLatex       "dot{vargamma}_{0}"@en ;
+        :hasSymbolLatex       "\\dot{\\vargamma}_{0}"@en ;
         :hasTypicalUnitLabel  "-" .
 
 :hasTruePlasticStrainAtFracture
@@ -1072,8 +1078,8 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         skos:preflabel   "Pyiron Job"@en ;
         skos:preflabel   "Pyiron Job"@de .
 
-:EngineeringStress  :hasLabelSource  "YS1-FzR4-S1Q"@de ;
-        :hasLabelSource       "YS1-FzR4-S1Q"@en ;
+:EngineeringStress  :hasLabelSource  "Standard definition specific"@de ;
+        :hasLabelSource       "AFZ1-Fz-S1Q.xlsx"@en ;
         :hasLabelSource       "YS1-Fz-D1Q"@de ;
         :hasExampleData       "9751" ;
         skos:preflabel        "EngineeringStress"@en ;
@@ -1081,11 +1087,6 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         skos:altlabel         "engineering stress"@en ;
         skos:altlabel         "Sigma Tech"@en ;
         dcterms:description   "technische Spannung"@de ;
-        dcterms:description   "engineering stress"@en ;
-        rdfs:subClassOf       pmdco:ValueObject ;
-        rdfs:label            "EngineeringStress"@en ;
-        rdf:type              owl:Class ;
-        rdf:type              skos:Concept ;
         :isBasedOn            :OriginalCrosssection ;
         :isBasedOn            :Force ;
         :hasTypicalUnitLabel  "MPa" ;
@@ -1093,10 +1094,12 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         :hasSymbolLatex       "R"@en ;
         :hasSymbol            "Sig-technisch"@en ;
         :hasSymbol            "R"@en ;
-        :hasLabelSource       "YS1-Sz0°-S1L"@de ;
         :hasLabelSource       "ISO 26203-2, 2011, 4"@en ;
-        :hasLabelSource       "Standard definition specific"@de ;
-        :hasLabelSource       "AFZ1-Fz-S1Q.xlsx"@en .
+        rdf:type              skos:Concept ;
+        rdf:type              owl:Class ;
+        rdfs:label            "EngineeringStress"@en ;
+        rdfs:subClassOf       pmdco:ValueObject ;
+        dcterms:description   "engineering stress"@en .
 
 :hasEulerAngleConvention
         rdf:type        owl:DatatypeProperty ;
@@ -1249,12 +1252,6 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         skos:preflabel  "Ultimate Tensile Strength"@en ;
         skos:preflabel  "Zugfestigkeit"@de .
 
-:hasShearLengthAfterFracture1
-        rdf:type        owl:DatatypeProperty ;
-        rdf:type        rdf:Property ;
-        rdfs:label      "hasShearLengthAfterFracture1"@en ;
-        skos:preflabel  "hasShearLengthAfterFracture1"@en .
-
 :hasEffectiveStress_MPa
         rdf:type            owl:DatatypeProperty ;
         rdf:type            rdf:Property ;
@@ -1274,6 +1271,7 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
 
 :hasTypicalUnitLabel  rdf:type  owl:DatatypeProperty ;
         rdfs:label        "has typical unit label"@en ;
+        rdfs:range        xsd:string ;
         dc11:description  "A typical unit label for the resource"@en ;
         skos:preflabel    "has typical unit label"@en .
 
@@ -1324,7 +1322,7 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         :hasLabelSource       "General Knowledge"@de ;
         :hasLabelSource       "General Knowledge"@en ;
         rdf:type              skos:Concept ;
-        :hasSymbolLatex       "q_0"@en ;
+        :hasSymbolLatex       "\\q_0"@en ;
         :hasTypicalUnitLabel  "-" .
 
 :hasNominalEngineeringStrainRateObject
@@ -1333,6 +1331,14 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         rdfs:label      "hasNominalEngineeringStrainRate"@en ;
         rdfs:range      :NominalEngineeringStrainRate ;
         skos:preflabel  "hasNominalEngineeringStrainRate"@en .
+
+:hasRefernceShearRate
+        rdf:type        owl:ObjectProperty ;
+        rdf:type        owl:DatatypeProperty ;
+        rdf:type        rdf:Property ;
+        rdfs:label      "hasRefernceShearRate"@en ;
+        rdfs:range      :RefernceShearRate ;
+        skos:preflabel  "hasRefernceShearRate"@en .
 
 :hasMinimumCrosssectionAfterFracture_mm2
         rdf:type            owl:DatatypeProperty ;
@@ -1381,25 +1387,21 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         rdf:type             owl:Class ;
         rdf:type             skos:Concept ;
         :hasExampleData      "ZStE340" ;
-        :hasExampleData      "H340LAD" ;
         :hasExampleData      "HX340LAD" ;
         :hasExampleData      "42CrMoS4" ;
         :hasLabelSource      "AFZ1-Fz-S1Q.xlsx"@de ;
         :hasLabelSource      "AFZ-BU-S1.TXT"@de ;
         :hasLabelSource      "DIN EN ISO 16808:2022-08, 12"@de ;
         :hasLabelSource      "DIN EN ISO 16808:2022-08, 12"@en ;
-        :hasLabelSource      "YS1-FzR4-S1Q"@de ;
-        :hasLabelSource      "YS1-FzR4-S1Q"@en ;
         :hasLabelSource      "General Knowledge"@de ;
         :hasLabelSource      "General Knowledge"@en ;
         :hasLabelSource      "AFZ1-ST-D1"@en ;
-        :hasLabelSource      "AFZ1-NZ50-25-D1Q"@de ;
-        :hasLabelSource      "AFZ1-NZ50-25-D1Q"@en ;
-        :hasLabelSource      "AWA_1_01_Rz-46N171"@de ;
         :hasLabelSource      "DIN EN ISO 12004-2: 2021_07"@en ;
         :hasLabelSource      "DIN EN ISO 12004-2: 2021_07, 7"@de ;
         :hasLabelSource      "YS1-Fz-D1Q"@de ;
-        :hasLabelSource      "YS1-Sz0°-S1L"@de .
+        :hasLabelSource      "AWA_1_01_Rz-46N171"@de ;
+        :hasLabelSource      "AFZ1-NZ50-25-D1Q"@en ;
+        :hasLabelSource      "AFZ1-NZ50-25-D1Q"@de .
 
 <https://w3id.org/steel/ProcessOntology/hasPercentagePermanentElongation_%25>
         rdf:type            owl:DatatypeProperty ;
@@ -1437,6 +1439,12 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         rdfs:label      "Bandbreite"@de ;
         skos:preflabel  "strip width"@en ;
         skos:preflabel  "Bandbreite"@de .
+
+:hasUnitLabel  rdf:type   owl:DatatypeProperty ;
+        rdfs:label        "has unit label"@en ;
+        rdfs:range        xsd:string ;
+        dc11:description  "The specific unit label for the resource. More than one property of this kind for one resource should be only used if the units are equivalent"@en ;
+        skos:preflabel    "has unit label"@en .
 
 :TotalLength  rdfs:subClassOf  pmdco:ValueObject ;
         dcterms:description   "Gesamtlänge der Probe"@de ;
@@ -1574,13 +1582,6 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         rdfs:range      :InnerDiameterDie ;
         skos:preflabel  "hasInnerDiameterDie"@en .
 
-:hasNotchTensileStrengthObject
-        rdf:type        owl:ObjectProperty ;
-        rdf:type        rdf:Property ;
-        rdfs:label      "hasNotchTensileStrength"@en ;
-        rdfs:range      :NotchTensileStrength ;
-        skos:preflabel  "hasNotchTensileStrength"@en .
-
 :hasElasticConstantC12_MPa
         rdf:type            owl:DatatypeProperty ;
         rdf:type            rdf:Property ;
@@ -1588,27 +1589,6 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         rdfs:subPropertyOf  :hasElasticConstantC12 ;
         skos:preflabel      "hasElasticConstantC12_MPa"@en ;
         :hasUnitLabel       "MPa" .
-
-:NotchTensileStrength
-        rdfs:label            "NotchTensileStrength"@en ;
-        rdfs:subClassOf       pmdco:ValueObject ;
-        dcterms:description   "notch tensile strength"@en ;
-        skos:altlabel         "Rm"@de ;
-        skos:preflabel        "NotchTensileStrength"@en ;
-        rdf:type              skos:Concept ;
-        :hasExampleData       "468" ;
-        :hasLabelSource       "YS1-FzR4-S1Q"@de ;
-        rdf:type              owl:Class ;
-        :hasTypicalUnitLabel  "MPa" ;
-        :isBasedOn            :EngineeringStress .
-
-:hasElastoplasticModel
-        rdf:type        owl:ObjectProperty ;
-        rdf:type        owl:DatatypeProperty ;
-        rdf:type        rdf:Property ;
-        rdfs:label      "hasElastoplasticModel"@en ;
-        rdfs:range      :ElastoplasticModel ;
-        skos:preflabel  "hasElastoplasticModel"@en .
 
 :HardeningParameterTheta0
         rdfs:subClassOf       pmdco:ValueObject ;
@@ -1620,7 +1600,7 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         :hasLabelSource       "General Knowledge"@en ;
         :hasLabelSource       "General Knowledge"@de ;
         rdfs:label            "HardeningParameterTheta0"@en ;
-        :hasSymbolLatex       "theta_0"@en ;
+        :hasSymbolLatex       "\\theta_0"@en ;
         :hasTypicalUnitLabel  "MPa" .
 
 :Simulation  rdf:type   owl:Class ;
@@ -1643,23 +1623,19 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         rdfs:label      "Resource"@en ;
         skos:preflabel  "Resource"@en .
 
-:Remark  :hasLabelSource     "YS1-Sz0°-S1L"@de ;
-        :hasLabelSource      "DX56_D_FZ2_WR00_43.TXT"@de ;
-        :hasLabelSource      "AFZ-BU-S1.TXT"@de ;
-        :hasExampleData      "Vorversuch" ;
-        skos:preflabel       "Remark"@en ;
-        :hasLabelSource      "deepl translator"@en ;
-        :hasLabelSource      "YS1-FzR4-S1Q"@de ;
-        rdf:type             skos:Concept ;
-        rdf:type             owl:Class ;
-        rdfs:label           "Remark"@en ;
-        rdfs:subClassOf      pmdco:ValueObject ;
+:Remark  rdfs:subClassOf     pmdco:ValueObject ;
         dcterms:description  "A specific comment about the experiment."@en ;
-        skos:altlabel        "Bemerkungen"@de ;
-        skos:altlabel        "Testing Comment"@en ;
         skos:altlabel        "Remark"@en ;
         skos:altlabel        "Kommentar"@de ;
-        skos:altlabel        "Bemerkung"@de .
+        skos:altlabel        "Bemerkung"@de ;
+        skos:preflabel       "Remark"@en ;
+        rdf:type             skos:Concept ;
+        :hasExampleData      "Vorversuch" ;
+        :hasLabelSource      "AFZ-BU-S1.TXT"@de ;
+        :hasLabelSource      "DX56_D_FZ2_WR00_43.TXT"@de ;
+        :hasLabelSource      "deepl translator"@en ;
+        rdf:type             owl:Class ;
+        rdfs:label           "Remark"@en .
 
 :TotalEngineeringStrain
         rdfs:subClassOf       pmdco:ValueObject ;
@@ -1812,6 +1788,13 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         rdfs:label      "hasSpecificPlasticWorkValue"@en ;
         skos:preflabel  "hasSpecificPlasticWorkValue"@en .
 
+:hasPlasticityModel  rdf:type  owl:ObjectProperty ;
+        rdf:type        owl:DatatypeProperty ;
+        rdf:type        rdf:Property ;
+        rdfs:label      "hasPlasticityModel"@en ;
+        rdfs:range      :PlasticityModel ;
+        skos:preflabel  "hasPlasticityModel"@en .
+
 :hasEbsdFileName  rdf:type  owl:DatatypeProperty ;
         rdf:type        rdf:Property ;
         rdfs:label      "hasEbsdFileName"@en ;
@@ -1858,7 +1841,7 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         :hasLabelSource      "General Knowledge"@de ;
         rdfs:label           "EulerAngle3"@en ;
         :hasSymbol           "ϕ_2"@en ;
-        :hasSymbolLatex      "varphi_1"@en .
+        :hasSymbolLatex      "\\varphi_1"@en .
 
 :hasPercentageReductionOfArea
         rdf:type        owl:DatatypeProperty ;
@@ -1946,7 +1929,6 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
 
 :MaximumForce  skos:related   :MeasuringRange ;
         skos:preflabel        "MaximumForce"@en ;
-        skos:altlabel         "Höchstzugkraft Fm"@de ;
         skos:altlabel         "Fm"@de ;
         skos:altlabel         "Maximalkraft"@de ;
         skos:altlabel         "maximum force"@en ;
@@ -1957,22 +1939,19 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         rdfs:seeAlso          :MeasuringRange ;
         rdfs:label            "MaximumForce"@en ;
         rdf:type              owl:Class ;
-        rdf:type              skos:Concept ;
-        :hasExampleData       "7690" ;
-        :hasExampleData       "500 kN" ;
-        :hasExampleData       "7008" ;
-        :hasLabelSource       "K-Item"@de ;
         :isBasedOn            :Force ;
         :hasTypicalUnitLabel  "kN" ;
         :hasTypicalUnitLabel  "N" ;
         :hasSymbolLatex       "F_{m}"@en ;
         :hasSymbolLatex       "Fm"@en ;
         :hasSymbol            "Fm"@en ;
-        :hasLabelSource       "YS1-FzR4-S1Q"@de ;
-        :hasLabelSource       "YS1-Sz0°-S1L"@de ;
         :hasLabelSource       "AFZ1-Fz-S1Q.xlsx"@de ;
         :hasLabelSource       "Standard definition specific"@de ;
-        :hasLabelSource       "ISO 26203-2, 2011, 4"@en .
+        :hasLabelSource       "ISO 26203-2, 2011, 4"@en ;
+        :hasLabelSource       "K-Item"@de ;
+        :hasExampleData       "7008" ;
+        :hasExampleData       "500 kN" ;
+        rdf:type              skos:Concept .
 
 :hasEffecticStrainObject
         rdf:type        owl:ObjectProperty ;
@@ -2003,6 +1982,18 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         rdfs:subPropertyOf  :hasTensileStrength ;
         skos:preflabel      "hasTensileStrength_MPa"@en ;
         :hasUnitLabel       "MPa" .
+
+:FinalCriticalStrength
+        rdf:type              owl:Class ;
+        rdfs:label            "FinalCriticalStrength"@en ;
+        rdfs:seeAlso          :phenopowerlaw ;
+        rdfs:subClassOf       pmdco:ValueObject ;
+        skos:altlabel         "xi_inf_sl"@en ;
+        skos:preflabel        "FinalCriticalStrength"@en ;
+        skos:related          :phenopowerlaw ;
+        :hasExampleData       "[222.e+6, 412.e+6]" ;
+        rdf:type              skos:Concept ;
+        :hasTypicalUnitLabel  "Pa" .
 
 :hasTrueStressAtFracture
         rdf:type        owl:DatatypeProperty ;
@@ -2083,6 +2074,14 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         skos:preflabel      "hasYieldingIdentifier_-"@en ;
         :hasUnitLabel       "-" .
 
+:hasInv_ShearRateSensitivity_1
+        rdf:type            owl:DatatypeProperty ;
+        rdf:type            rdf:Property ;
+        rdfs:label          "hasInv_ShearRateSensitivity_1"@en ;
+        rdfs:subPropertyOf  :hasInv_ShearRateSensitivity ;
+        skos:preflabel      "hasInv_ShearRateSensitivity_1"@en ;
+        :hasUnitLabel       "1" .
+
 :hasCharacteristicEngineeringStrainRate
         rdf:type        owl:DatatypeProperty ;
         rdf:type        rdf:Property ;
@@ -2123,6 +2122,19 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         rdfs:label      "Hochett Sherby Parameter N"@de ;
         skos:preflabel  "Hockett Sherby Parameter N"@en ;
         skos:preflabel  "Hochett Sherby Parameter N"@de .
+
+:Inv_ShearRateSensitivity
+        rdf:type              owl:Class ;
+        rdfs:label            "Inv_ShearRateSensitivity"@en ;
+        rdfs:seeAlso          :phenopowerlaw ;
+        rdfs:subClassOf       pmdco:ValueObject ;
+        dcterms:description   "List of inverse strain rate sensitivity"@en ;
+        skos:altlabel         "n_sl"@en ;
+        skos:preflabel        "Inv_ShearRateSensitivity"@en ;
+        skos:related          :phenopowerlaw ;
+        :hasExampleData       "[20, 20]" ;
+        rdf:type              skos:Concept ;
+        :hasTypicalUnitLabel  "1" .
 
 :hasSymbolLatex  rdf:type  owl:DatatypeProperty ;
         dc11:description  "The typical formula symbol used in latex notation"@en .
@@ -2232,6 +2244,14 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         :hasLabelSource      "General Knowledge"@en ;
         :hasLabelSource      "General Knowledge"@de ;
         rdfs:label           "SpecificPlasticWork"@en .
+
+:hasInitialCriticalStrength
+        rdf:type        owl:ObjectProperty ;
+        rdf:type        owl:DatatypeProperty ;
+        rdf:type        rdf:Property ;
+        rdfs:label      "hasInitialCriticalStrength"@en ;
+        rdfs:range      :InitialCriticalStrength ;
+        skos:preflabel  "hasInitialCriticalStrength"@en .
 
 :hasLatentHardeningQ1_-
         rdf:type            owl:DatatypeProperty ;
@@ -2414,6 +2434,13 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         rdfs:range      :OriginalCrosssection ;
         skos:preflabel  "hasOriginalCrosssection"@en .
 
+:hasWidthAfterFracture1Object
+        rdf:type        owl:ObjectProperty ;
+        rdf:type        rdf:Property ;
+        rdfs:label      "hasWidthAfterFracture1"@en ;
+        rdfs:range      :WidthAfterFracture1 ;
+        skos:preflabel  "hasWidthAfterFracture1"@en .
+
 :HockettSherbyYieldStress
         rdf:type        owl:Class ;
         rdfs:comment    "Yield stress used for the flow curve extrapolation according to Hockett and Sherby (1975)."@en ;
@@ -2422,12 +2449,17 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         skos:preflabel  "Hockett Sherby Yield Stress"@en ;
         skos:preflabel  "Hockett Sherby initiale Fließspannung"@de .
 
-:hasWidthAfterFracture1Object
-        rdf:type        owl:ObjectProperty ;
-        rdf:type        rdf:Property ;
-        rdfs:label      "hasWidthAfterFracture1"@en ;
-        rdfs:range      :WidthAfterFracture1 ;
-        skos:preflabel  "hasWidthAfterFracture1"@en .
+:NumberSlipSystems  rdf:type  owl:Class ;
+        rdfs:label            "NumberSlipSystems"@en ;
+        rdfs:seeAlso          :phenopowerlaw ;
+        rdfs:subClassOf       pmdco:ValueObject ;
+        dcterms:description   "List of number of slip systems per slip system family"@en ;
+        skos:altlabel         "N_sl"@en ;
+        skos:preflabel        "NumberSlipSystems"@en ;
+        skos:related          :phenopowerlaw ;
+        :hasExampleData       "[12, 12]" ;
+        rdf:type              skos:Concept ;
+        :hasTypicalUnitLabel  "1" .
 
 :hasPrincipalStressLimit4PostProcessing
         rdf:type        owl:ObjectProperty ;
@@ -2452,13 +2484,6 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         rdfs:label      "hasFailureCriteriaTypeAdd4ElementDeletion"@en ;
         rdfs:range      :FailureCriteriaTypeAdd4ElementDeletion ;
         skos:preflabel  "hasFailureCriteriaTypeAdd4ElementDeletion"@en .
-
-:hasShearLengthAfterFracture2Object
-        rdf:type        owl:ObjectProperty ;
-        rdf:type        rdf:Property ;
-        rdfs:label      "hasShearLengthAfterFracture2"@en ;
-        rdfs:range      :ShearLengthAfterFracture2 ;
-        skos:preflabel  "hasShearLengthAfterFracture2"@en .
 
 :hasFadingExponent  rdf:type  owl:ObjectProperty ;
         rdf:type        owl:DatatypeProperty ;
@@ -2581,10 +2606,10 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         rdfs:comment    "Stress rate, e.g. referenced by tensile tests"@en ;
         rdfs:label      "Mega Pascal per Second"@en ;
         rdfs:label      "Mega Pascal pro Sekunde"@de ;
-        rdfs:seeAlso    <qudt:MegaPA> ;
+        rdfs:seeAlso    <http://qudt.org/vocab/unit/MegaPA> ;
         skos:preflabel  "Mega Pascal per Second"@en ;
         skos:preflabel  "Mega Pascal pro Sekunde"@de ;
-        skos:related    <qudt:MegaPA> .
+        skos:related    <http://qudt.org/vocab/unit/MegaPA> .
 
 :hasDiscretization  rdf:type  owl:DatatypeProperty ;
         rdf:type        rdf:Property ;
@@ -2923,7 +2948,7 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         :isBasedOn            :Extension ;
         :isBasedOn            :Time ;
         :hasTypicalUnitLabel  "s-1" ;
-        :hasSymbolLatex       "dot{e}_{mean}"@en ;
+        :hasSymbolLatex       "\\dot{e}_{mean}"@en ;
         :hasSymbol            "emean"@en ;
         :hasLabelSource       "Standard definition specific"@de ;
         :hasLabelSource       "ISO 26203-2, 2011, 4"@en ;
@@ -3056,8 +3081,8 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         rdfs:seeAlso          :Time ;
         :hasTypicalUnitLabel  "MPa s -1" ;
         :hasTypicalUnitLabel  "MPa/s" ;
+        :hasSymbolLatex       "\\dot{R}"@en ;
         :hasSymbolLatex       "dSig/dt"@en ;
-        :hasSymbolLatex       "dot{R}"@en ;
         :hasSymbol            "dSig/dt"@en ;
         :hasSymbol            "R"@en ;
         :hasLabelSource       "AFZ1-Fz-S1Q.xlm"@de ;
@@ -3231,6 +3256,14 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         skos:preflabel      "hasMinimumCrossSectionAfterFracture_mm2"@en ;
         :hasUnitLabel       "mm2" .
 
+:hasInv_ShearRateSensitivity
+        rdf:type        owl:ObjectProperty ;
+        rdf:type        owl:DatatypeProperty ;
+        rdf:type        rdf:Property ;
+        rdfs:label      "hasInv_ShearRateSensitivity"@en ;
+        rdfs:range      :Inv_ShearRateSensitivity ;
+        skos:preflabel  "hasInv_ShearRateSensitivity"@en .
+
 :PoissonRatio  rdfs:label     "PoissonRatio"@en ;
         rdfs:label            "Poisson ratio"@en ;
         rdfs:subClassOf       pmdco:ValueObject ;
@@ -3360,7 +3393,8 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         skos:preflabel        "WidthChange"@en ;
         :hasExampleData       "0.001" .
 
-:WidthAfterFracture2  rdfs:label  "WidthAfterFracture2"@en ;
+:WidthAfterFracture2  rdf:type  owl:Class ;
+        rdfs:label            "WidthAfterFracture2"@en ;
         rdfs:seeAlso          :WidthAfterFracture1 ;
         rdfs:subClassOf       pmdco:ValueObject ;
         skos:altlabel         "Probenbreite B2 nach Bruch"@de ;
@@ -3368,7 +3402,6 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         skos:related          :WidthAfterFracture1 ;
         :hasLabelSource       "AFZ1-Fz-S1Q.xlsx"@de ;
         rdf:type              skos:Concept ;
-        rdf:type              owl:Class ;
         :hasTypicalUnitLabel  "mm" .
 
 :hasSoftwareObject  rdf:type  owl:ObjectProperty ;
@@ -3425,16 +3458,15 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         skos:preflabel  "hasSupplier"@en .
 
 :ThicknessAfterFracture1
+        rdf:type              skos:Concept ;
+        rdfs:label            "ThicknessAfterFracture1"@en ;
         rdfs:seeAlso          :ThicknessAfterFracture2 ;
         rdfs:subClassOf       pmdco:ValueObject ;
         skos:altlabel         "Probendicke A1 nach Bruch"@de ;
         skos:preflabel        "ThicknessAfterFracture1"@en ;
         skos:related          :ThicknessAfterFracture2 ;
-        :hasLabelSource       "YS1-Sz0°-S1L"@de ;
         :hasLabelSource       "AFZ1-Fz-S1Q.xlsx"@de ;
         rdf:type              owl:Class ;
-        rdf:type              skos:Concept ;
-        rdfs:label            "ThicknessAfterFracture1"@en ;
         :hasTypicalUnitLabel  "mm" .
 
 :rollingSchedule  rdf:type  owl:Class ;
@@ -3502,6 +3534,14 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         rdfs:range      :BoundaryFile ;
         skos:preflabel  "hasBoundaryFile"@en .
 
+:hasStiffnessComponent_Pa
+        rdf:type            owl:DatatypeProperty ;
+        rdf:type            rdf:Property ;
+        rdfs:label          "hasStiffnessComponent_Pa"@en ;
+        rdfs:subPropertyOf  :hasStiffnessComponent ;
+        skos:preflabel      "hasStiffnessComponent_Pa"@en ;
+        :hasUnitLabel       "Pa" .
+
 :hasStrainRate  rdf:type  owl:DatatypeProperty ;
         rdf:type        rdf:Property ;
         rdfs:label      "hasStrainRate"@en ;
@@ -3556,20 +3596,17 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         rdf:type              skos:Concept ;
         rdf:type              owl:Class ;
         :hasExampleData       "22" ;
-        :hasExampleData       "25" ;
-        :hasLabelSource       "YS1-FzR4-S1Q"@en ;
-        :hasLabelSource       "YS1-FzR4-S1Q"@de ;
-        :hasLabelSource       "DIN EN ISO 12004-2: 2021_07, 13"@de ;
-        :hasLabelSource       "DIN EN ISO 6892-1, K.4"@en ;
         :hasTypicalUnitLabel  "°C" ;
         :hasSymbolLatex       "T"@en ;
         :hasSymbol            "T"@en ;
-        :hasLabelSource       "YS1-Sz0°-S1L"@de ;
         :hasLabelSource       "AFZ1-NZ50-25-D1Q"@en ;
         :hasLabelSource       "DX56_D_FZ2_WR00_43.TXT"@de ;
         :hasLabelSource       "AFZ1-Fz-S1Q.xlsx"@de ;
         :hasLabelSource       "DIN EN ISO 12004-2: 2021_07, 5"@en ;
-        :hasLabelSource       "DIN EN ISO 6892-1, 5"@de .
+        :hasLabelSource       "DIN EN ISO 6892-1, 5"@de ;
+        :hasLabelSource       "DIN EN ISO 6892-1, K.4"@en ;
+        :hasLabelSource       "DIN EN ISO 12004-2: 2021_07, 13"@de ;
+        :hasExampleData       "25" .
 
 :hasMatTabulatedJohnsonCook
         rdf:type        owl:ObjectProperty ;
@@ -3612,6 +3649,14 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         rdfs:label      "hasReferenceElementSize"@en ;
         rdfs:range      :ReferenceElementSize ;
         skos:preflabel  "hasReferenceElementSize"@en .
+
+:hasHomogenizationModel
+        rdf:type        owl:ObjectProperty ;
+        rdf:type        owl:DatatypeProperty ;
+        rdf:type        rdf:Property ;
+        rdfs:label      "hasHomogenizationModel"@en ;
+        rdfs:range      :HomogenizationModel ;
+        skos:preflabel  "hasHomogenizationModel"@en .
 
 :hasSpecimenWidth_mm  rdf:type  owl:DatatypeProperty ;
         rdf:type            rdf:Property ;
@@ -3678,17 +3723,16 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         rdfs:label            "TrueStress"@en .
 
 :ExperimentIdentifier
+        rdfs:subClassOf  pmdco:ValueObject ;
+        skos:altlabel    "LABELS_ID"@en ;
         skos:altlabel    "Proben-ID"@de ;
         skos:altlabel    "Label ID"@en ;
         skos:preflabel   "ExperimentIdentifier"@en ;
         rdf:type         owl:Class ;
         :hasExampleData  "46NT71" ;
         :hasLabelSource  "AWA_1_01_Rz-46N171"@de ;
-        :hasLabelSource  "YS1-FzR4-S1Q"@en ;
         rdf:type         skos:Concept ;
-        rdfs:label       "ExperimentIdentifier"@en ;
-        rdfs:subClassOf  pmdco:ValueObject ;
-        skos:altlabel    "LABELS_ID"@en .
+        rdfs:label       "ExperimentIdentifier"@en .
 
 :hasInteractionMatrixObject
         rdf:type        owl:ObjectProperty ;
@@ -3822,6 +3866,14 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         skos:preflabel      "hasStrain_%"@en ;
         :hasUnitLabel       "%" .
 
+:hasStiffnessComponent
+        rdf:type        owl:ObjectProperty ;
+        rdf:type        owl:DatatypeProperty ;
+        rdf:type        rdf:Property ;
+        rdfs:label      "hasStiffnessComponent"@en ;
+        rdfs:range      :StiffnessComponent ;
+        skos:preflabel  "hasStiffnessComponent"@en .
+
 :hasTransitionRadius_mm
         rdf:type            owl:DatatypeProperty ;
         rdf:type            rdf:Property ;
@@ -3886,6 +3938,17 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         rdfs:label      "hasSampleIdentifier-2"@en ;
         rdfs:range      :SampleIdentifier-2 ;
         skos:preflabel  "hasSampleIdentifier-2"@en .
+
+:CrossHardeningParameter
+        rdf:type              skos:Concept ;
+        rdfs:label            "CrossHardeningParameter"@en ;
+        rdfs:seeAlso          :phenopowerlaw ;
+        rdfs:subClassOf       pmdco:ValueObject ;
+        skos:altlabel         "h_sl-sl"@en ;
+        skos:preflabel        "CrossHardeningParameter"@en ;
+        skos:related          :phenopowerlaw ;
+        rdf:type              owl:Class ;
+        :hasTypicalUnitLabel  "1" .
 
 :ElasticConstantC11  rdfs:subClassOf  pmdco:ValueObject ;
         dcterms:description   "Elastische Konstant, um das richtungsabhängige elastische Materialverhalten zu beschreiben"@de ;
@@ -3952,6 +4015,14 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         rdfs:range      :PercentageElongation ;
         skos:preflabel  "hasPercentageElongation"@en .
 
+:hasCrossHardeningParameter_1
+        rdf:type            owl:DatatypeProperty ;
+        rdf:type            rdf:Property ;
+        rdfs:label          "hasCrossHardeningParameter_1"@en ;
+        rdfs:subPropertyOf  :hasCrossHardeningParameter ;
+        skos:preflabel      "hasCrossHardeningParameter_1"@en ;
+        :hasUnitLabel       "1" .
+
 :hasMaterialIdentifier_-
         rdf:type            owl:DatatypeProperty ;
         rdf:type            rdf:Property ;
@@ -4007,14 +4078,14 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         dcterms:description  "Type of the force transducer"@en ;
         rdfs:subClassOf      pmdco:ValueObject ;
         rdfs:label           "ForceMeasuringDevice"@en ;
-        rdf:type             skos:Concept ;
         :hasLabelSource      "DIN EN ISO 6892-1, 9"@de ;
         :hasLabelSource      "DIN EN ISO 6892-1, 9"@en ;
         :hasLabelSource      "AFZ-BU-S1.TXT"@de ;
         :hasLabelSource      "DIN EN ISO 6892-1, G.3.1.1"@de ;
         :hasLabelSource      "DIN EN ISO 6892-1, G.3.1.1"@en ;
         :hasExampleData      "Bulge Druck: Öldruckaufnehmer in der Kammer unterhalb der Probe, Tiefungskraft: Öldruckaufnehmer am Tiefungskolben" ;
-        rdf:type             owl:Class .
+        rdf:type             owl:Class ;
+        rdf:type             skos:Concept .
 
 :hasTrueFractureStrain
         rdf:type        owl:DatatypeProperty ;
@@ -4115,7 +4186,7 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         :isBasedOn            :ParallelLength ;
         :isBasedOn            :InitialDisplacementRate ;
         :hasTypicalUnitLabel  "s-1" ;
-        :hasSymbolLatex       "dot{e}_{nom}"@en ;
+        :hasSymbolLatex       "\\dot{e}_{nom}"@en ;
         :hasSymbol            "enom"@en ;
         :hasLabelSource       "Standard definition specific"@de ;
         :hasLabelSource       "YS1-Fz-D1Q"@de ;
@@ -4228,12 +4299,6 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         rdfs:label            "OriginalGaugeLength"@en ;
         rdf:type              owl:Class ;
         rdf:type              skos:Concept ;
-        :hasExampleData       "80" ;
-        :hasExampleData       "20" ;
-        :hasExampleData       "30" ;
-        :hasLabelSource       "DX56_D_FZ2_WR00_43.TXT"@de ;
-        :hasLabelSource       "YS1-FzR4-S1Q"@en ;
-        :hasLabelSource       "YS1-FzR4-S1Q"@de ;
         :hasTypicalUnitLabel  "mm" ;
         :hasSymbolLatex       "L_o"@en ;
         :hasSymbolLatex       "L_0"@en ;
@@ -4242,14 +4307,32 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         :hasLabelSource       "DIN EN ISO 6892-1, 3.1.1"@de ;
         :hasLabelSource       "DIN EN ISO 6892-1, 3.1.1"@en ;
         :hasLabelSource       "AFZ1-Fz-S1Q.xlsx"@de ;
-        :hasLabelSource       "YS1-Sz0°-S1L"@de ;
-        :hasLabelSource       "ISO 26203-2, 2011, 4"@en .
+        :hasLabelSource       "ISO 26203-2, 2011, 4"@en ;
+        :hasLabelSource       "DX56_D_FZ2_WR00_43.TXT"@de ;
+        :hasExampleData       "20" ;
+        :hasExampleData       "80" .
 
 :hasPercentageElongationAfterFracture
         rdf:type        owl:DatatypeProperty ;
         rdf:type        rdf:Property ;
         rdfs:label      "hasPercentageElongationAfterFracture"@en ;
         skos:preflabel  "hasPercentageElongationAfterFracture"@en .
+
+:hasHardeningExponent
+        rdf:type        owl:ObjectProperty ;
+        rdf:type        owl:DatatypeProperty ;
+        rdf:type        rdf:Property ;
+        rdfs:label      "hasHardeningExponent"@en ;
+        rdfs:range      :HardeningExponent ;
+        skos:preflabel  "hasHardeningExponent"@en .
+
+:hasHardeningExponent_1
+        rdf:type            owl:DatatypeProperty ;
+        rdf:type            rdf:Property ;
+        rdfs:label          "hasHardeningExponent_1"@en ;
+        rdfs:subPropertyOf  :hasHardeningExponent ;
+        skos:preflabel      "hasHardeningExponent_1"@en ;
+        :hasUnitLabel       "1" .
 
 :PostProcessingSoftware
         rdfs:subClassOf      pmdco:ValueObject ;
@@ -4304,6 +4387,14 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         rdfs:label      "Bandzug"@de ;
         skos:preflabel  "strip tension"@en ;
         skos:preflabel  "Bandzug"@de .
+
+:ElasticityModel  rdf:type   owl:Class ;
+        rdfs:label           "ElasticityModel"@en ;
+        rdfs:subClassOf      pmdco:ValueObject ;
+        dcterms:description  "connects elastic strain with stress vi stiffness matrix"@en ;
+        skos:altlabel        "Hooke"@en ;
+        skos:preflabel       "ElasticityModel"@en ;
+        rdf:type             skos:Concept .
 
 :TargetClampingForce  rdf:type  owl:Class ;
         rdfs:label            "TargetClampingForce"@en ;
@@ -4397,6 +4488,14 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         rdfs:range      :SlipSystemNumber ;
         skos:preflabel  "hasSlipSystemNumber"@en .
 
+:hasFinalCriticalStrength_Pa
+        rdf:type            owl:DatatypeProperty ;
+        rdf:type            rdf:Property ;
+        rdfs:label          "hasFinalCriticalStrength_Pa"@en ;
+        rdfs:subPropertyOf  :hasFinalCriticalStrength ;
+        skos:preflabel      "hasFinalCriticalStrength_Pa"@en ;
+        :hasUnitLabel       "Pa" .
+
 :StandardDeviationOfTheSlope
         rdfs:subClassOf       pmdco:ValueObject ;
         dcterms:description   "zusätzliches Ergebnis der linearen Regression, welches den Unterschied der Spannungswerte von der Ausgleichsgeraden für die gegebenen Extensometer-Dehnungswerte in dem untersuchten Bereich beschreibt"@de ;
@@ -4411,18 +4510,16 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         :hasSymbolLatex       "S_m"@en ;
         :hasTypicalUnitLabel  "MPa" .
 
-:Tester  rdf:type            owl:Class ;
-        rdf:type             skos:Concept ;
-        rdfs:label           "Tester"@en ;
+:Tester  rdfs:label          "Tester"@en ;
         rdfs:subClassOf      pmdco:ValueObject ;
         dcterms:description  "The name or ID of the person who conducted the experiment."@en ;
         skos:altlabel        "Prüfer"@de ;
         skos:preflabel       "Tester"@en ;
+        rdf:type             skos:Concept ;
         :hasExampleData      "Kürzel" ;
         :hasLabelSource      "AFZ1-Fz-S1Q.xlsx"@de ;
-        :hasLabelSource      "YS1-FzR4-S1Q"@de ;
-        :hasLabelSource      "YS1-Sz0°-S1L"@de ;
-        :hasLabelSource      " "@en .
+        :hasLabelSource      " "@en ;
+        rdf:type             owl:Class .
 
 :Steel  rdf:type         skos:Concept ;
         rdfs:label       "Steel"@en ;
@@ -4555,7 +4652,7 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         :hasLabelSource       "DIN EN ISO 16808:2022-08, 4"@de ;
         rdfs:label            "BiaxialStress"@en ;
         :hasSymbol            "σ_B"@en ;
-        :hasSymbolLatex       "sigma_B"@en ;
+        :hasSymbolLatex       "\\sigma_B"@en ;
         :hasTypicalUnitLabel  "MPa" .
 
 :hasTrueFractureStress_MPa
@@ -4628,14 +4725,6 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         skos:altlabel        "major true strain"@en ;
         skos:altlabel        "Hauptformänderung"@de ;
         skos:preflabel       "MajorTrueStrain"@en .
-
-:hasShearLengthAfterFracture1_mm
-        rdf:type            owl:DatatypeProperty ;
-        rdf:type            rdf:Property ;
-        rdfs:label          "hasShearLengthAfterFracture1_mm"@en ;
-        rdfs:subPropertyOf  :hasShearLengthAfterFracture1 ;
-        skos:preflabel      "hasShearLengthAfterFracture1_mm"@en ;
-        :hasUnitLabel       "mm" .
 
 :hasJob  rdf:type         owl:ObjectProperty ;
         rdfs:domain       :PyironProject ;
@@ -4752,7 +4841,7 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
 :DamageTreatment  rdf:type    skos:Concept ;
         rdfs:label            "DamageTreatment"@en ;
         rdfs:subClassOf       pmdco:ValueObject ;
-        dcterms:description   "interpreted digit-wise as follows: DTYP = [𝑁𝑀] = 𝑀+10×𝑁\nM.EQ.0: Damage is accumulated, but there is no coupling to flow stress and no failure.\nM.EQ.1: Damage is accumulated, and element failure occurs for 𝐷 = 1. Coupling of damage to flow stress depending on parameters.\nN.EQ.0: Equivalent plastic strain is the driving quantity for the damage.\nN.GT.0: The Nth additional history variable is the driving quantity for damage."@en ;
+        dcterms:description   "interpreted digit-wise as follows: DTYP = [????] = ??+10×??\nM.EQ.0: Damage is accumulated, but there is no coupling to flow stress and no failure.\nM.EQ.1: Damage is accumulated, and element failure occurs for ?? = 1. Coupling of damage to flow stress depending on parameters.\nN.EQ.0: Equivalent plastic strain is the driving quantity for the damage.\nN.GT.0: The Nth additional history variable is the driving quantity for damage."@en ;
         skos:altlabel         "DTYP"@en ;
         skos:preflabel        "DamageTreatment"@en ;
         :hasExampleData       "1" ;
@@ -4861,6 +4950,14 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         :hasLabelSource      "General Knowledge"@de ;
         rdfs:label           "SpecificPlasticWorkValue"@en .
 
+:hasFinalCriticalStrength
+        rdf:type        owl:ObjectProperty ;
+        rdf:type        owl:DatatypeProperty ;
+        rdf:type        rdf:Property ;
+        rdfs:label      "hasFinalCriticalStrength"@en ;
+        rdfs:range      :FinalCriticalStrength ;
+        skos:preflabel  "hasFinalCriticalStrength"@en .
+
 :hasMinTimeStep4ElementDel
         rdf:type        owl:ObjectProperty ;
         rdf:type        owl:DatatypeProperty ;
@@ -4906,16 +5003,13 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         :hasLabelSource       "ISO 26203-2, 2011, 4"@en ;
         :hasLabelSource       "DIN EN ISO 6892-1, Abb. 9"@de ;
         :hasLabelSource       "DIN EN ISO 6892-1, Fig. 9"@en ;
-        :hasLabelSource       "AFZ1-Fz-S1Q.xlsx"@de ;
-        :hasLabelSource       "AFZ-BU-S1.TXT"@de ;
-        :hasLabelSource       "AFZ1-ST-D1"@en ;
-        :hasLabelSource       "YS1-Sz0°-S1L"@de ;
-        :hasLabelSource       "YS1-FzR4-S1Q"@de ;
         :hasTypicalUnitLabel  "s" ;
         :hasSymbolLatex       "t"@en ;
         :hasSymbol            "t"@en ;
         :hasLabelSource       "AFZ1-NZ50-25-D1Q"@en ;
-        :hasLabelSource       "YS1-FzR4-S1Q"@en .
+        :hasLabelSource       "AFZ1-ST-D1"@en ;
+        :hasLabelSource       "AFZ-BU-S1.TXT"@de ;
+        :hasLabelSource       "AFZ1-Fz-S1Q.xlsx"@de .
 
 :hasResultsFile  rdf:type  owl:DatatypeProperty ;
         rdf:type        rdf:Property ;
@@ -5138,7 +5232,7 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         skos:related          :Time ;
         :hasTypicalUnitLabel  "s-1" ;
         :hasTypicalUnitLabel  "1/s" ;
-        :hasSymbolLatex       "dot{e}_{L_e}"@en ;
+        :hasSymbolLatex       "\\dot{e}_{L_e}"@en ;
         :hasSymbol            "eLe"@en ;
         :hasLabelSource       "DIN EN ISO 6892-1, 3.7.1"@de ;
         :hasLabelSource       "DIN EN ISO 6892-1, 3.7.1"@en ;
@@ -5171,22 +5265,17 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         skos:altlabel         "Stempelgeschwindigkeit"@de ;
         skos:preflabel        "PunchVelocity"@en .
 
-:ExtensionAtFracture  :hasLabelSource  "YS1-Sz0°-S1L"@de ;
-        :hasLabelSource       "AFZ1-Fz-S1Q.xlsx"@de ;
-        :hasLabelSource       "YS1-FzR4-S1Q"@de ;
-        :isBasedOn            :Extension ;
-        :hasTypicalUnitLabel  "mm" ;
-        :hasSymbolLatex       "dLBruch"@en ;
-        rdf:type              owl:Class ;
-        rdf:type              skos:Concept ;
-        rdfs:label            "ExtensionAtFracture"@en ;
-        rdfs:seeAlso          :OriginalCrosssection ;
+:ExtensionAtFracture  rdfs:label  "ExtensionAtFracture"@en ;
         rdfs:subClassOf       pmdco:ValueObject ;
         dcterms:description   "Displacement of the extensometer (!) length at fracture"@en ;
-        skos:altlabel         "Bruchverlängerung"@de ;
         skos:altlabel         "DLBruch"@de ;
         skos:preflabel        "ExtensionAtFracture"@en ;
-        skos:related          :OriginalCrosssection .
+        rdf:type              owl:Class ;
+        :hasLabelSource       "AFZ1-Fz-S1Q.xlsx"@de ;
+        rdf:type              skos:Concept ;
+        :hasSymbolLatex       "dLBruch"@en ;
+        :hasTypicalUnitLabel  "mm" ;
+        :isBasedOn            :Extension .
 
 :FlowStressExponent_a
         rdf:type      owl:Class ;
@@ -5208,6 +5297,18 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         rdf:type        rdf:Property ;
         rdfs:label      "hasFormingLimitDiagram"@en ;
         skos:preflabel  "hasFormingLimitDiagram"@en .
+
+:RefernceShearRate  rdf:type  skos:Concept ;
+        rdfs:label            "RefernceShearRate"@en ;
+        rdfs:seeAlso          :phenopowerlaw ;
+        rdfs:subClassOf       pmdco:ValueObject ;
+        dcterms:description   "List of reference shear rate per slip family"@en ;
+        skos:altlabel         "dot_gamma_0_sl"@en ;
+        skos:preflabel        "RefernceShearRate"@en ;
+        skos:related          :phenopowerlaw ;
+        :hasExampleData       "[0.001, 0.001]" ;
+        rdf:type              owl:Class ;
+        :hasTypicalUnitLabel  "1/s" .
 
 :ProjectName  :hasExampleData  "Crashartig" ;
         skos:preflabel       "ProjectName"@en ;
@@ -5272,7 +5373,7 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         :hasLabelSource       "DIN EN ISO 16808:2022-08, 4"@de ;
         rdfs:label            "RadiusCurvature"@en ;
         :hasSymbol            "ρ"@en ;
-        :hasSymbolLatex       "rho"@en ;
+        :hasSymbolLatex       "\\rho"@en ;
         :hasTypicalUnitLabel  "mm" .
 
 :Diameter  rdf:type           owl:Class ;
@@ -5659,18 +5760,6 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         rdfs:range      :User ;
         skos:preflabel  "hasUser"@en .
 
-:ShearLengthAfterFracture2
-        rdf:type              owl:Class ;
-        rdfs:label            "ShearLengthAfterFracture2"@en ;
-        rdfs:seeAlso          :ShearLengthAfterFracture1 ;
-        rdfs:subClassOf       pmdco:ValueObject ;
-        skos:altlabel         "Probenbreite B2 nach Bruch"@de ;
-        skos:preflabel        "ShearLengthAfterFracture2"@en ;
-        skos:related          :ShearLengthAfterFracture1 ;
-        :hasLabelSource       "YS1-Sz0°-S1L"@de ;
-        rdf:type              skos:Concept ;
-        :hasTypicalUnitLabel  "mm" .
-
 :Ductility  rdf:type    owl:Class ;
         rdfs:label      "ductility"@en ;
         rdfs:label      "Duktilität"@de ;
@@ -5694,7 +5783,7 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         :hasLabelSource       "General Knowledge"@en ;
         :hasLabelSource       "General Knowledge"@de ;
         rdfs:label            "HardeningParameterTau1"@en ;
-        :hasSymbolLatex       "tau_1"@en ;
+        :hasSymbolLatex       "\\tau_1"@en ;
         :hasTypicalUnitLabel  "MPa" .
 
 :hasWidthAfterFracture2Object
@@ -5749,11 +5838,6 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         rdfs:label      "hasLocation"@en ;
         skos:preflabel  "hasLocation"@en .
 
-:hasShearStrength  rdf:type  owl:DatatypeProperty ;
-        rdf:type        rdf:Property ;
-        rdfs:label      "hasShearStrength"@en ;
-        skos:preflabel  "hasShearStrength"@en .
-
 :ExtensionMeasuringSystem
         rdfs:label           "ExtensionMeasuringSystem"@en ;
         rdfs:subClassOf      pmdco:ValueObject ;
@@ -5776,7 +5860,7 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         :hasLabelSource      "General Knowledge"@de ;
         rdfs:label           "EulerAngle2"@en ;
         :hasSymbol           "φ"@en ;
-        :hasSymbolLatex      "phi"@en .
+        :hasSymbolLatex      "\\phi"@en .
 
 :hasExtensionAtFractureObject
         rdf:type        owl:ObjectProperty ;
@@ -5822,27 +5906,23 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         :hasLabelSource       "DIN EN ISO 6892-1, 3.4"@en ;
         :hasLabelSource       "DIN EN ISO 6892-1, 3.4"@de .
 
-:PreliminaryForce  :hasExampleData  "0.105" ;
+:PreliminaryForce  :hasLabelSource  "DX56_D_FZ2_WR00_43.TXT"@de ;
+        :hasExampleData       "2" ;
         skos:related          :ForceMeasuringDevice ;
         skos:preflabel        "PreliminaryForce"@en ;
-        skos:altlabel         "preliminary force"@en ;
-        skos:altlabel         "Vorkraft"@de ;
-        skos:altlabel         "Vorlast"@de ;
-        dcterms:description   "\"Vorkraft\" in DIN EN ISO 6892-1"@en ;
-        dcterms:description   "Um ein Ausrichten der Probe in der Einspannvorrichtung zu erreichen, darf eine Vorkraft aufgebracht werden, die 5 % des spezifizierten oder zu erwartenden Streckgrenzenwertes nicht überschreitet"@de ;
-        rdfs:subClassOf       pmdco:ValueObject ;
-        rdfs:seeAlso          :ForceMeasuringDevice ;
         :hasTypicalUnitLabel  "kN" ;
         :hasTypicalUnitLabel  "MPa" ;
         :hasLabelSource       "DIN EN ISO 6892-1, 10.2"@de ;
         :hasLabelSource       "DIN EN ISO 6892-1, 10.2"@en ;
-        :hasLabelSource       "YS1-FzR4-S1Q"@de ;
-        :hasLabelSource       "YS1-Sz0°-S1L"@de ;
-        :hasLabelSource       "DX56_D_FZ2_WR00_43.TXT"@de ;
-        :hasExampleData       "2" ;
         rdf:type              owl:Class ;
         rdf:type              skos:Concept ;
-        rdfs:label            "PreliminaryForce"@en .
+        rdfs:label            "PreliminaryForce"@en ;
+        rdfs:seeAlso          :ForceMeasuringDevice ;
+        rdfs:subClassOf       pmdco:ValueObject ;
+        dcterms:description   "Um ein Ausrichten der Probe in der Einspannvorrichtung zu erreichen, darf eine Vorkraft aufgebracht werden, die 5 % des spezifizierten oder zu erwartenden Streckgrenzenwertes nicht überschreitet"@de ;
+        dcterms:description   "\"Vorkraft\" in DIN EN ISO 6892-1"@en ;
+        skos:altlabel         "Vorkraft"@de ;
+        skos:altlabel         "preliminary force"@en .
 
 :hasStrainRateScaleIdendifier
         rdf:type        owl:ObjectProperty ;
@@ -5865,16 +5945,13 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         skos:preflabel  "ductile failure"@en ;
         skos:preflabel  "duktiles Versagen"@de .
 
-:SampleCode  skos:altlabel   "QR-Code"@de ;
-        skos:altlabel        "Label ID"@en ;
-        skos:altlabel        "QR-Code from Label System"@en ;
-        skos:preflabel       "SampleCode"@en ;
-        rdf:type             owl:Class ;
-        :hasLabelSource      "AFZ1-NZ50-25-D1Q"@en ;
-        rdf:type             skos:Concept ;
-        rdfs:label           "SampleCode"@en ;
-        rdfs:subClassOf      pmdco:ValueObject ;
-        dcterms:description  "QR-Code from Label System"@en .
+:SampleCode  rdfs:label  "SampleCode"@en ;
+        rdfs:subClassOf  pmdco:ValueObject ;
+        skos:altlabel    "Label ID"@en ;
+        skos:preflabel   "SampleCode"@en ;
+        :hasLabelSource  "AFZ1-NZ50-25-D1Q"@en ;
+        rdf:type         skos:Concept ;
+        rdf:type         owl:Class .
 
 :ReferenceJob  rdf:type  owl:Class ;
         rdfs:comment     "a Pyiron job for ..."@en ;
@@ -5927,13 +6004,6 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         rdf:type              skos:Concept ;
         :hasTypicalUnitLabel  "MPa" ;
         :isBasedOn            :TrueStress .
-
-:hasShearStrengthObject
-        rdf:type        owl:ObjectProperty ;
-        rdf:type        rdf:Property ;
-        rdfs:label      "hasShearStrength"@en ;
-        rdfs:range      :ShearStrength ;
-        skos:preflabel  "hasShearStrength"@en .
 
 :hasInput  rdf:type       owl:ObjectProperty ;
         rdfs:domain       :Code ;
@@ -6351,32 +6421,21 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         :hasTypicalUnitLabel  "MPa" .
 
 :OriginalCrosssection
-        :hasLabelSource       "YS1-Fz-D1Q"@de ;
-        :hasExampleData       "15.05" ;
-        :hasExampleData       "14.98" ;
-        skos:preflabel        "OriginalCrosssection"@en ;
-        skos:altlabel         "Anfangsquerschnitt S0"@de ;
-        skos:altlabel         "S0"@de ;
-        skos:altlabel         "S0"@en ;
-        skos:altlabel         "Anfangsquerschnitt So"@de ;
-        skos:altlabel         "Original cross section"@en ;
-        dcterms:description   "original cross-sectional area of the parallel length"@en ;
-        dcterms:description   "original crosssection area of the parallel length"@en ;
-        rdfs:subClassOf       pmdco:ValueObject ;
-        rdfs:label            "OriginalCrosssection"@en ;
-        :isBasedOn            :OriginalWidth ;
         :isBasedOn            :OriginalThickness ;
-        :isBasedOn            :ShearLength ;
-        :isBasedOn            :Diameter ;
-        :hasTypicalUnitLabel  "mm2" ;
-        :hasSymbolLatex       "S_{0}"@en ;
-        :hasSymbol            "S_{0}"@en ;
-        :hasSymbol            "S0"@en ;
-        :hasLabelSource       "YS1-FzR4-S1Q"@de ;
-        :hasLabelSource       "YS1-FzR4-S1Q"@en ;
-        :hasLabelSource       "YS1-Sz0°-S1L"@de ;
+        :isBasedOn            :OriginalWidth ;
         rdf:type              skos:Concept ;
-        rdf:type              owl:Class .
+        rdf:type              owl:Class ;
+        rdfs:label            "OriginalCrosssection"@en ;
+        rdfs:subClassOf       pmdco:ValueObject ;
+        dcterms:description   "original cross-sectional area of the parallel length"@en ;
+        skos:altlabel         "Original cross section"@en ;
+        skos:altlabel         "Anfangsquerschnitt S0"@de ;
+        skos:preflabel        "OriginalCrosssection"@en ;
+        :hasExampleData       "14.98" ;
+        :hasLabelSource       "YS1-Fz-D1Q"@de ;
+        :hasSymbol            "S_{0}"@en ;
+        :hasTypicalUnitLabel  "mm2" ;
+        :isBasedOn            :Diameter .
 
 :hasMachineObject  rdf:type  owl:ObjectProperty ;
         rdf:type        rdf:Property ;
@@ -6419,36 +6478,32 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         skos:preflabel  "hasPunchDisplacement"@en .
 
 :OriginalThickness  skos:preflabel  "OriginalThickness"@en ;
-        skos:altlabel         "original thickness"@en ;
-        skos:altlabel         "Probendicke a0"@de ;
-        skos:altlabel         "Probendicke a"@de ;
-        skos:altlabel         "Original thickness"@en ;
         skos:altlabel         "Probendicke"@de ;
+        skos:altlabel         "Original thickness"@en ;
+        skos:altlabel         "Probendicke a0"@de ;
+        skos:altlabel         "original thickness"@en ;
+        skos:altlabel         "Probendicke a"@de ;
         skos:altlabel         "Thickness"@en ;
-        dcterms:description   "The initial thickness of the specimen."@en ;
-        dcterms:description   "Original width of the parallel length of a flat test piece"@en ;
-        dcterms:description   "The thickness of the specimen."@en ;
         dcterms:description   "(Anfangs-)Dicke einer Flachprobe oder Wanddicke eines Rohres"@de ;
+        dcterms:description   "Original width of the parallel length of a flat test piece"@en ;
+        dcterms:description   "The initial thickness of the specimen."@en ;
+        dcterms:description   "The thickness of the specimen."@en ;
         rdfs:subClassOf       pmdco:ValueObject ;
         rdfs:label            "OriginalThickness"@en ;
         rdf:type              skos:Concept ;
         rdf:type              owl:Class ;
-        :hasExampleData       "1490" ;
         :hasExampleData       "1.5" ;
-        :hasExampleData       "1.55" ;
-        :hasExampleData       "1499" ;
-        :hasLabelSource       "DIN EN ISO 6892-1, Table 1"@en ;
-        :hasLabelSource       "AFZ1-Fz-S1Q.xlsx"@de ;
-        :hasLabelSource       "DX56_D_FZ2_WR00_43.TXT"@de ;
         :hasTypicalUnitLabel  "mm" ;
         :hasSymbolLatex       "a_o"@en ;
-        :hasSymbol            "ao"@en ;
         :hasSymbol            "a_{0}"@en ;
-        :hasLabelSource       "YS1-FzR4-S1Q"@en ;
-        :hasLabelSource       "YS1-FzR4-S1Q"@de ;
-        :hasLabelSource       "AFZ1-ST-D1"@en ;
+        :hasSymbol            "ao"@en ;
         :hasLabelSource       "YS1-Fz-D1Q"@de ;
-        :hasLabelSource       "YS1-Sz0°-S1L"@de .
+        :hasLabelSource       "DX56_D_FZ2_WR00_43.TXT"@de ;
+        :hasLabelSource       "AFZ1-ST-D1"@en ;
+        :hasLabelSource       "AFZ1-Fz-S1Q.xlsx"@de ;
+        :hasLabelSource       "DIN EN ISO 6892-1, Table 1"@en ;
+        :hasExampleData       "1490" ;
+        :hasExampleData       "1.55" .
 
 :hasStress_MPa  rdf:type    owl:DatatypeProperty ;
         rdf:type            rdf:Property ;
@@ -6483,6 +6538,14 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         rdfs:label      "hasOriginalThickness"@en ;
         rdfs:range      :OriginalThickness ;
         skos:preflabel  "hasOriginalThickness"@en .
+
+:hasNumberSlipSystems_1
+        rdf:type            owl:DatatypeProperty ;
+        rdf:type            rdf:Property ;
+        rdfs:label          "hasNumberSlipSystems_1"@en ;
+        rdfs:subPropertyOf  :hasNumberSlipSystems ;
+        skos:preflabel      "hasNumberSlipSystems_1"@en ;
+        :hasUnitLabel       "1" .
 
 :hasTrueWidthStrain_1
         rdf:type            owl:DatatypeProperty ;
@@ -6694,22 +6757,20 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         :hasTypicalUnitLabel  "%" .
 
 :DisplacementTransducer
-        :hasLabelSource      "deepl translator"@en ;
-        :hasExampleData      "makroXtens" ;
-        :hasExampleData      "Clip gauge" ;
-        :hasExampleData      "Tiefungskolben" ;
-        skos:preflabel       "DisplacementTransducer"@en ;
-        skos:altlabel        "Wegaufnehmer"@de ;
         :hasLabelSource      "DX56_D_FZ2_WR00_43.TXT"@de ;
         :hasLabelSource      "AFZ-BU-S1.TXT"@de ;
+        :hasLabelSource      "deepl translator"@en ;
         rdf:type             skos:Concept ;
         rdf:type             owl:Class ;
         rdfs:label           "DisplacementTransducer"@en ;
         rdfs:subClassOf      pmdco:ValueObject ;
         dcterms:description  "Type of the displacement transducer."@en ;
-        skos:altlabel        "extensometer system"@en ;
         skos:altlabel        "Displacement transducer"@en ;
-        skos:altlabel        "Dehnungsaufnehmer"@de .
+        skos:altlabel        "Wegaufnehmer"@de ;
+        skos:preflabel       "DisplacementTransducer"@en ;
+        :hasExampleData      "Tiefungskolben" ;
+        :hasExampleData      "Clip gauge" ;
+        :hasExampleData      "makroXtens" .
 
 :hasYieldForce_0.2Percentage
         rdf:type        owl:DatatypeProperty ;
@@ -6774,6 +6835,41 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         skos:preflabel      "hasYieldStrength_MPa"@en ;
         :hasUnitLabel       "MPa" .
 
+:hasEngineeringStress
+        rdf:type        owl:DatatypeProperty ;
+        rdf:type        rdf:Property ;
+        rdfs:label      "hasEngineeringStress"@en ;
+        skos:preflabel  "hasEngineeringStress"@en .
+
+:TestPieceGeometry  skos:related  :TestStandard ;
+        skos:preflabel       "TestPieceGeometry"@en ;
+        skos:altlabel        "Test piece geometry"@en ;
+        skos:altlabel        "Probengeometrie"@de ;
+        skos:altlabel        "Probenform"@de ;
+        skos:altlabel        "Specimen Type"@en ;
+        skos:altlabel        "Probentyp"@de ;
+        skos:altlabel        "Specimen type"@en ;
+        dcterms:description  "The type of the specimen."@en ;
+        rdfs:subClassOf      pmdco:ValueObject ;
+        rdfs:seeAlso         :TestStandard ;
+        rdfs:label           "TestPieceGeometry"@en ;
+        rdf:type             skos:Concept ;
+        rdf:type             owl:Class ;
+        :hasExampleData      "Crashbox" ;
+        :hasExampleData      "FZ2 (L0=80_b0=20_R20)" ;
+        :hasExampleData      "FzA20" ;
+        :hasExampleData      "Nakajima Specimen" ;
+        :hasLabelSource      "DX56_D_FZ2_WR00_43.TXT"@de ;
+        :hasLabelSource      "AFZ1-ST-D1"@en ;
+        :hasLabelSource      " "@en ;
+        :hasLabelSource      "DIN EN ISO 12004-2: 2021_07, 11"@de ;
+        :hasLabelSource      "DIN EN ISO 12004-2: 2021_07, 11"@en ;
+        :hasLabelSource      "deepl translator"@en ;
+        :hasLabelSource      "AFZ1-Fz-S1Q.xlsx"@de ;
+        :hasLabelSource      "YS1-Fz-D1Q"@de ;
+        :hasLabelSource      "AFZ1-NZ50-25-D1Q"@en ;
+        :hasExampleData      "Flach-Zug" .
+
 :Supplier  skos:altlabel  "Lieferant"@de ;
         skos:altlabel    "supplier"@en ;
         skos:altlabel    "Hersteller"@de ;
@@ -6785,46 +6881,6 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         rdf:type         skos:Concept ;
         rdfs:label       "Supplier"@en ;
         rdfs:subClassOf  pmdco:ValueObject .
-
-:TestPieceGeometry  skos:related  :TestStandard ;
-        skos:preflabel       "TestPieceGeometry"@en ;
-        skos:altlabel        "Probengeometrie"@de ;
-        skos:altlabel        "Test piece geometry"@en ;
-        skos:altlabel        "Probenform"@de ;
-        skos:altlabel        "Specimen type"@en ;
-        skos:altlabel        "Specimen Type"@en ;
-        skos:altlabel        "Probentyp"@de ;
-        dcterms:description  "The type of the specimen."@en ;
-        rdfs:subClassOf      pmdco:ValueObject ;
-        rdfs:seeAlso         :TestStandard ;
-        rdfs:label           "TestPieceGeometry"@en ;
-        rdf:type             owl:Class ;
-        rdf:type             skos:Concept ;
-        :hasExampleData      "Flach-Zug" ;
-        :hasExampleData      "FzA20" ;
-        :hasExampleData      "FZ2 (L0=80_b0=20_R20)" ;
-        :hasExampleData      "Notched Flat tensile Specimen" ;
-        :hasExampleData      "Nakajima Specimen" ;
-        :hasExampleData      "Sz0°" ;
-        :hasExampleData      "Crashbox" ;
-        :hasLabelSource      "DIN EN ISO 12004-2: 2021_07, 11"@de ;
-        :hasLabelSource      "DIN EN ISO 12004-2: 2021_07, 11"@en ;
-        :hasLabelSource      "AFZ1-Fz-S1Q.xlsx"@de ;
-        :hasLabelSource      "AFZ1-ST-D1"@en ;
-        :hasLabelSource      "YS1-Sz0°-S1L"@de ;
-        :hasLabelSource      "AFZ1-NZ50-25-D1Q"@en ;
-        :hasLabelSource      "deepl translator"@en ;
-        :hasLabelSource      " "@en ;
-        :hasLabelSource      "YS1-FzR4-S1Q"@en ;
-        :hasLabelSource      "YS1-FzR4-S1Q"@de ;
-        :hasLabelSource      "YS1-Fz-D1Q"@de ;
-        :hasLabelSource      "DX56_D_FZ2_WR00_43.TXT"@de .
-
-:hasEngineeringStress
-        rdf:type        owl:DatatypeProperty ;
-        rdf:type        rdf:Property ;
-        rdfs:label      "hasEngineeringStress"@en ;
-        skos:preflabel  "hasEngineeringStress"@en .
 
 :hasStressRateObject  rdf:type  owl:ObjectProperty ;
         rdf:type        rdf:Property ;
@@ -6852,6 +6908,13 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         rdfs:label      "hasReferenceShearRate"@en ;
         skos:preflabel  "hasReferenceShearRate"@en .
 
+:hasFinalGaugeLengthAfterFractureObject
+        rdf:type        owl:ObjectProperty ;
+        rdf:type        rdf:Property ;
+        rdfs:label      "hasFinalGaugeLengthAfterFracture"@en ;
+        rdfs:range      :FinalGaugeLengthAfterFracture ;
+        skos:preflabel  "hasFinalGaugeLengthAfterFracture"@en .
+
 :ForceAtFracture  rdfs:label  "ForceAtFracture"@en ;
         rdfs:seeAlso     :Force ;
         rdfs:subClassOf  pmdco:ValueObject ;
@@ -6860,12 +6923,13 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         rdf:type         skos:Concept ;
         rdf:type         owl:Class .
 
-:hasFinalGaugeLengthAfterFractureObject
-        rdf:type        owl:ObjectProperty ;
-        rdf:type        rdf:Property ;
-        rdfs:label      "hasFinalGaugeLengthAfterFracture"@en ;
-        rdfs:range      :FinalGaugeLengthAfterFracture ;
-        skos:preflabel  "hasFinalGaugeLengthAfterFracture"@en .
+:HomogenizationModel  rdf:type  owl:Class ;
+        rdfs:label           "HomogenizationModel"@en ;
+        rdfs:subClassOf      pmdco:ValueObject ;
+        dcterms:description  "just pass information between upper and lower scale"@en ;
+        skos:altlabel        "pass"@en ;
+        skos:preflabel       "HomogenizationModel"@en ;
+        rdf:type             skos:Concept .
 
 :TestingFacility  :hasLabelSource  "K-Item"@en ;
         :hasLabelSource      "AFZ-BU-S1.TXT"@de ;
@@ -6908,12 +6972,6 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         rdfs:label      "hasStressRate"@en ;
         skos:preflabel  "hasStressRate"@en .
 
-:hasShearLengthAfterFracture2
-        rdf:type        owl:DatatypeProperty ;
-        rdf:type        rdf:Property ;
-        rdfs:label      "hasShearLengthAfterFracture2"@en ;
-        skos:preflabel  "hasShearLengthAfterFracture2"@en .
-
 :hasHCT980C  rdf:type   owl:DatatypeProperty ;
         rdf:type        rdf:Property ;
         rdfs:label      "hasHCT980C"@en ;
@@ -6925,19 +6983,17 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         rdfs:label      "hasExtensionMeasuringSystem"@en ;
         skos:preflabel  "hasExtensionMeasuringSystem"@en .
 
-:TestingDirection  rdf:type  owl:Class ;
-        rdf:type             skos:Concept ;
-        rdfs:label           "TestingDirection"@en ;
+:TestingDirection  rdfs:label  "TestingDirection"@en ;
         rdfs:seeAlso         :RollingDirection ;
         rdfs:subClassOf      pmdco:ValueObject ;
         dcterms:description  "testing direction related to the rolling direction"@en ;
         skos:altlabel        "testing direction"@en ;
-        skos:altlabel        "Orientierung"@de ;
         skos:preflabel       "TestingDirection"@en ;
         skos:related         :RollingDirection ;
+        rdf:type             owl:Class ;
         :hasExampleData      "quer" ;
-        :hasLabelSource      "YS1-Sz0°-S1L"@de ;
-        :hasLabelSource      "AFZ1-Fz-S1Q.xlsx"@de .
+        :hasLabelSource      "AFZ1-Fz-S1Q.xlsx"@de ;
+        rdf:type             skos:Concept .
 
 :hasCoefficientOfCorrelation_-
         rdf:type            owl:DatatypeProperty ;
@@ -7016,7 +7072,7 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         :hasLabelSource       "General Knowledge"@de ;
         :hasLabelSource       "General Knowledge"@en ;
         rdf:type              owl:Class ;
-        :hasSymbolLatex       "q_1"@en ;
+        :hasSymbolLatex       "\\q_1"@en ;
         :hasTypicalUnitLabel  "-" .
 
 :hasInitialSheetThicknessObject
@@ -7060,7 +7116,7 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         :hasLabelSource       "DIN EN ISO 6892-1, 3.7.2"@de ;
         rdfs:label            "EstimatedStrainRateOverTheParallelLength"@en ;
         :hasSymbol            "eLc"@en ;
-        :hasSymbolLatex       "dot{e}_{L_c}"@en ;
+        :hasSymbolLatex       "\\dot{e}_{L_c}"@en ;
         :hasTypicalUnitLabel  "s-1" .
 
 :ConstitutiveModelParameter
@@ -7155,20 +7211,17 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         :hasExampleData       "0.105" ;
         :hasLabelSource       "YS1-Fz-D1Q"@de ;
         :hasLabelSource       "AFZ-BU-S1.TXT"@de ;
-        :hasLabelSource       "YS1-FzR4-S1Q"@de ;
-        :hasLabelSource       "YS1-FzR4-S1Q"@en ;
         :hasLabelSource       "DIN EN ISO 6892-1, Tabelle 1"@de ;
         :hasLabelSource       "DIN EN ISO 6892-1, Table 1"@en ;
-        :hasLabelSource       "AFZ1-NZ50-25-D1Q"@en ;
-        :hasLabelSource       "deepl translator"@en ;
-        :hasLabelSource       "DX56_D_FZ2_WR00_43.TXT"@de ;
         :hasTypicalUnitLabel  "kN" ;
         :hasTypicalUnitLabel  "N" ;
         :hasSymbolLatex       "F"@en ;
         :hasSymbol            "F"@en ;
         :hasLabelSource       "AFZ1-Fz-S1Q.xlsx"@de ;
-        :hasLabelSource       "YS1-Sz0°-S1L"@de ;
-        :hasLabelSource       "AFZ1-ST-D1"@en .
+        :hasLabelSource       "AFZ1-ST-D1"@en ;
+        :hasLabelSource       "DX56_D_FZ2_WR00_43.TXT"@de ;
+        :hasLabelSource       "deepl translator"@en ;
+        :hasLabelSource       "AFZ1-NZ50-25-D1Q"@en .
 
 :hasThicknessAfterFracture1Object
         rdf:type        owl:ObjectProperty ;
@@ -7238,7 +7291,8 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         rdfs:range      :StrainRateScaleParameterP ;
         skos:preflabel  "hasStrainRateScaleParameterP"@en .
 
-:WidthAfterFracture1  rdfs:label  "WidthAfterFracture1"@en ;
+:WidthAfterFracture1  rdf:type  skos:Concept ;
+        rdfs:label            "WidthAfterFracture1"@en ;
         rdfs:seeAlso          :WidthAfterFracture2 ;
         rdfs:subClassOf       pmdco:ValueObject ;
         skos:altlabel         "Probenbreite B1 nach Bruch"@de ;
@@ -7246,7 +7300,6 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         skos:related          :WidthAfterFracture2 ;
         :hasLabelSource       "AFZ1-Fz-S1Q.xlsx"@de ;
         rdf:type              owl:Class ;
-        rdf:type              skos:Concept ;
         :hasTypicalUnitLabel  "mm" .
 
 :hasMaximumForceDiscontinousYielding
@@ -7267,6 +7320,13 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         rdf:type        rdf:Property ;
         rdfs:label      "hasDrawingSpeed"@en ;
         skos:preflabel  "hasDrawingSpeed"@en .
+
+:hasInitialHardening  rdf:type  owl:ObjectProperty ;
+        rdf:type        owl:DatatypeProperty ;
+        rdf:type        rdf:Property ;
+        rdfs:label      "hasInitialHardening"@en ;
+        rdfs:range      :InitialHardening ;
+        skos:preflabel  "hasInitialHardening"@en .
 
 :hasThicknessAfterFracture1
         rdf:type        owl:DatatypeProperty ;
@@ -7338,7 +7398,7 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         :hasLabelSource       "General Knowledge"@en ;
         :hasLabelSource       "General Knowledge"@de ;
         rdfs:label            "HardeningParameterTheta1"@en ;
-        :hasSymbolLatex       "theta_1"@en ;
+        :hasSymbolLatex       "\\theta_1"@en ;
         :hasTypicalUnitLabel  "MPa" .
 
 :hasDiameterAfterFracture1Object
@@ -7399,6 +7459,21 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         rdfs:subPropertyOf  :hasDiameterAfterFracture1 ;
         skos:preflabel      "hasDiameterAfterFracture1_mm"@en ;
         :hasUnitLabel       "mm" .
+
+:StiffnessComponent  :hasTypicalUnitLabel  "Pa" ;
+        rdf:type              skos:Concept ;
+        rdf:type              owl:Class ;
+        rdfs:label            "StiffnessComponent"@en ;
+        rdfs:seeAlso          :Hooke ;
+        rdfs:subClassOf       pmdco:ValueObject ;
+        dcterms:description   "11 component of stiffness matrix"@en ;
+        dcterms:description   "44 component of stiffness matrix"@en ;
+        dcterms:description   "12 component of stiffness matrix"@en ;
+        skos:altlabel         "C_11"@en ;
+        skos:altlabel         "C_44"@en ;
+        skos:altlabel         "C_12"@en ;
+        skos:preflabel        "StiffnessComponent"@en ;
+        skos:related          :Hooke .
 
 :hasOriginalGaugeLength_mm
         rdf:type            owl:DatatypeProperty ;
@@ -7507,22 +7582,19 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         rdfs:label           "AnisotropicYieldFunctionParameters"@en .
 
 :CrossheadDisplacement
-        :hasLabelSource       "AFZ1-Fz-S1Q.xlsx"@de ;
-        :hasLabelSource       "YS1-Sz0°-S1L"@de ;
-        :hasLabelSource       "YS1-FzR4-S1Q"@en ;
-        :hasLabelSource       "AFZ1-ST-D1"@en ;
-        :hasExampleData       "14786" ;
-        :hasTypicalUnitLabel  "mm" ;
-        rdf:type              skos:Concept ;
-        rdf:type              owl:Class ;
-        rdfs:label            "CrossheadDisplacement"@en ;
         rdfs:seeAlso          :Machine ;
         rdfs:subClassOf       pmdco:ValueObject ;
         dcterms:description   "Displacement of the actuator"@en ;
         skos:altlabel         "Machine Displacement"@en ;
-        skos:altlabel         "Maschine"@de ;
         skos:preflabel        "CrossheadDisplacement"@en ;
-        skos:related          :Machine .
+        skos:related          :Machine ;
+        rdf:type              skos:Concept ;
+        :hasExampleData       "14786" ;
+        :hasLabelSource       "AFZ1-ST-D1"@en ;
+        :hasLabelSource       "AFZ1-Fz-S1Q.xlsx"@de ;
+        rdf:type              owl:Class ;
+        rdfs:label            "CrossheadDisplacement"@en ;
+        :hasTypicalUnitLabel  "mm" .
 
 :hasGaugeLengthObject
         rdf:type        owl:ObjectProperty ;
@@ -7608,7 +7680,6 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         :hasExampleData      "SZM100" ;
         :hasLabelSource      "YS1-FzR4-S1Q"@en ;
         :hasLabelSource      "YS1-FzR4-S1Q"@de ;
-        :hasLabelSource      "YS1-Sz0°-S1L"@de ;
         :hasLabelSource      "YS1-Fz-D1Q"@de ;
         :hasLabelSource      "AFZ-BU-S1.TXT"@de ;
         :hasLabelSource      "K-Type"@en ;
@@ -7616,7 +7687,8 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         :hasLabelSource      "standard definition specific"@en ;
         :hasLabelSource      "AFZ1-ST-D1"@en ;
         :hasLabelSource      "deepl translator"@en ;
-        :hasLabelSource      "AFZ1-NZ50-25-D1Q"@en .
+        :hasLabelSource      "AFZ1-NZ50-25-D1Q"@en ;
+        :hasLabelSource      "YS1-Sz0°-S1L"@de .
 
 :Stress  :hasSymbolLatex      "R"@en ;
         :hasTypicalUnitLabel  "MPa" ;
@@ -7711,13 +7783,13 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         rdfs:range      :FailureStrainIdentifier ;
         skos:preflabel  "hasFailureStrainIdentifier"@en .
 
-:hasNotchTensileStrength_MPa
-        rdf:type            owl:DatatypeProperty ;
-        rdf:type            rdf:Property ;
-        rdfs:label          "hasNotchTensileStrength_MPa"@en ;
-        rdfs:subPropertyOf  :hasNotchTensileStrength ;
-        skos:preflabel      "hasNotchTensileStrength_MPa"@en ;
-        :hasUnitLabel       "MPa" .
+:hasCrossHardeningParameter
+        rdf:type        owl:ObjectProperty ;
+        rdf:type        owl:DatatypeProperty ;
+        rdf:type        rdf:Property ;
+        rdfs:label      "hasCrossHardeningParameter"@en ;
+        rdfs:range      :CrossHardeningParameter ;
+        skos:preflabel  "hasCrossHardeningParameter"@en .
 
 :hasLatentHardeningQ0_-
         rdf:type            owl:DatatypeProperty ;
@@ -7828,6 +7900,17 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         rdfs:label      "hasTrueFractureStress"@en ;
         skos:preflabel  "hasTrueFractureStress"@en .
 
+:InitialHardening  rdf:type   skos:Concept ;
+        rdfs:label            "InitialHardening"@en ;
+        rdfs:seeAlso          :phenopowerlaw ;
+        rdfs:subClassOf       pmdco:ValueObject ;
+        skos:altlabel         "h_0_sl-sl"@en ;
+        skos:preflabel        "InitialHardening"@en ;
+        skos:related          :phenopowerlaw ;
+        :hasExampleData       "[1.0e+9, 1.0e+9]" ;
+        rdf:type              owl:Class ;
+        :hasTypicalUnitLabel  "Pa/1" .
+
 :hasComplexPhaseSteelObject
         rdf:type        owl:ObjectProperty ;
         rdf:type        rdf:Property ;
@@ -7841,6 +7924,14 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         rdfs:label      "hasMicroalloyedSteel"@en ;
         rdfs:range      :MicroalloyedSteel ;
         skos:preflabel  "hasMicroalloyedSteel"@en .
+
+<https://w3id.org/steel/ProcessOntology/hasRefernceShearRate_1%2Fs>
+        rdf:type            owl:DatatypeProperty ;
+        rdf:type            rdf:Property ;
+        rdfs:label          "hasRefernceShearRate_1/s"@en ;
+        rdfs:subPropertyOf  :hasRefernceShearRate ;
+        skos:preflabel      "hasRefernceShearRate_1/s"@en ;
+        :hasUnitLabel       "1/s" .
 
 :DynamometerArea  rdfs:subClassOf  pmdco:ValueObject ;
         dcterms:description   "area on the fixed side of the test piece where only elastic deformations are required during the test"@en ;
@@ -7981,12 +8072,6 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         rdfs:range      :TestTemperature ;
         skos:preflabel  "hasTestTemperature"@en .
 
-:hasNotchTensileStrength
-        rdf:type        owl:DatatypeProperty ;
-        rdf:type        rdf:Property ;
-        rdfs:label      "hasNotchTensileStrength"@en ;
-        skos:preflabel  "hasNotchTensileStrength"@en .
-
 :Grain  rdf:type        owl:Class ;
         rdfs:label      "Grain"@en ;
         rdfs:label      "Korn"@de ;
@@ -8004,6 +8089,18 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         :hasLabelSource       "LS-DYNA_Manual_Volume_2"@en ;
         rdf:type              owl:Class ;
         :hasTypicalUnitLabel  "K" .
+
+:InitialCriticalStrength
+        rdf:type              skos:Concept ;
+        rdfs:label            "InitialCriticalStrength"@en ;
+        rdfs:seeAlso          :phenopowerlaw ;
+        rdfs:subClassOf       pmdco:ValueObject ;
+        skos:altlabel         "xi_0_sl"@en ;
+        skos:preflabel        "InitialCriticalStrength"@en ;
+        skos:related          :phenopowerlaw ;
+        :hasExampleData       "[95.e+6, 96.e+6]" ;
+        rdf:type              owl:Class ;
+        :hasTypicalUnitLabel  "Pa" .
 
 :hasMaximumForceNoDiscontinousYieldingObject
         rdf:type        owl:ObjectProperty ;
@@ -8082,6 +8179,18 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         rdfs:label      "hasHardeningParameterTheta1"@en ;
         rdfs:range      :HardeningParameterTheta1 ;
         skos:preflabel  "hasHardeningParameterTheta1"@en .
+
+:HardeningExponent  rdf:type  skos:Concept ;
+        rdfs:label            "HardeningExponent"@en ;
+        rdfs:seeAlso          :phenopowerlaw ;
+        rdfs:subClassOf       pmdco:ValueObject ;
+        dcterms:description   "List of hardening exponent"@en ;
+        skos:altlabel         "a_sl"@en ;
+        skos:preflabel        "HardeningExponent"@en ;
+        skos:related          :phenopowerlaw ;
+        :hasExampleData       "[2.25, 2.25]" ;
+        rdf:type              owl:Class ;
+        :hasTypicalUnitLabel  "1" .
 
 :hasStandardDeviationOfTheSlope_MPa
         rdf:type            owl:DatatypeProperty ;
@@ -8176,19 +8285,19 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         rdfs:range      :SpecificPlasticWork ;
         skos:preflabel  "hasSpecificPlasticWork"@en .
 
-:hasShearStrength_MPa
-        rdf:type            owl:DatatypeProperty ;
-        rdf:type            rdf:Property ;
-        rdfs:label          "hasShearStrength_MPa"@en ;
-        rdfs:subPropertyOf  :hasShearStrength ;
-        skos:preflabel      "hasShearStrength_MPa"@en ;
-        :hasUnitLabel       "MPa" .
-
 :hasInteractionMatrix
         rdf:type        owl:DatatypeProperty ;
         rdf:type        rdf:Property ;
         rdfs:label      "hasInteractionMatrix"@en ;
         skos:preflabel  "hasInteractionMatrix"@en .
+
+:hasNumberSlipSystems
+        rdf:type        owl:ObjectProperty ;
+        rdf:type        owl:DatatypeProperty ;
+        rdf:type        rdf:Property ;
+        rdfs:label      "hasNumberSlipSystems"@en ;
+        rdfs:range      :NumberSlipSystems ;
+        skos:preflabel  "hasNumberSlipSystems"@en .
 
 :hasFLCDetermination  rdf:type  owl:DatatypeProperty ;
         rdf:type        rdf:Property ;
@@ -8448,6 +8557,11 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         rdfs:range      :Extension ;
         skos:preflabel  "hasExtension"@en .
 
+:hasTypicalUnit  rdf:type  owl:ObjectProperty ;
+        rdfs:label        "has typical unit"@en ;
+        dc11:description  "A typical unit associated with the resource"@en ;
+        skos:preflabel    "has typical unit"@en .
+
 :hasDamageThreshold  rdf:type  owl:ObjectProperty ;
         rdf:type        owl:DatatypeProperty ;
         rdf:type        rdf:Property ;
@@ -8522,6 +8636,12 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         rdfs:label      "hasSpecificPlasticWork"@en ;
         skos:preflabel  "hasSpecificPlasticWork"@en .
 
+:hasTruePlasticThicknessStrain
+        rdf:type        owl:DatatypeProperty ;
+        rdf:type        rdf:Property ;
+        rdfs:label      "hasTruePlasticThicknessStrain"@en ;
+        skos:preflabel  "hasTruePlasticThicknessStrain"@en .
+
 :hasEngineeringStress_MPa
         rdf:type            owl:DatatypeProperty ;
         rdf:type            rdf:Property ;
@@ -8540,11 +8660,13 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         skos:preflabel  "Code"@de ;
         skos:related    :Software .
 
-:hasTruePlasticThicknessStrain
-        rdf:type        owl:DatatypeProperty ;
-        rdf:type        rdf:Property ;
-        rdfs:label      "hasTruePlasticThicknessStrain"@en ;
-        skos:preflabel  "hasTruePlasticThicknessStrain"@en .
+<https://w3id.org/steel/ProcessOntology/hasInitialHardening_Pa%2F1>
+        rdf:type            owl:DatatypeProperty ;
+        rdf:type            rdf:Property ;
+        rdfs:label          "hasInitialHardening_Pa/1"@en ;
+        rdfs:subPropertyOf  :hasInitialHardening ;
+        skos:preflabel      "hasInitialHardening_Pa/1"@en ;
+        :hasUnitLabel       "Pa/1" .
 
 :hasPercentageElongationAfterFractureObject
         rdf:type        owl:ObjectProperty ;
@@ -8620,13 +8742,6 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         rdfs:range      :TrueStrain ;
         skos:preflabel  "hasTrueStrain"@en .
 
-:hasShearLengthAfterFracture1Object
-        rdf:type        owl:ObjectProperty ;
-        rdf:type        rdf:Property ;
-        rdfs:label      "hasShearLengthAfterFracture1"@en ;
-        rdfs:range      :ShearLengthAfterFracture1 ;
-        skos:preflabel  "hasShearLengthAfterFracture1"@en .
-
 :CrossheadSeparationRate
         skos:related          :ParallelLength ;
         skos:preflabel        "CrossheadSeparationRate"@en ;
@@ -8641,22 +8756,18 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         rdfs:label            "CrossheadSeparationRate"@en ;
         rdf:type              owl:Class ;
         rdf:type              skos:Concept ;
-        :hasExampleData       "0.01" ;
-        :hasExampleData       "0.1" ;
-        :hasExampleData       "4800" ;
-        :hasExampleData       "0.02" ;
-        :hasLabelSource       "DX56_D_FZ2_WR00_43.TXT"@de ;
-        :hasLabelSource       "YS1-FzR4-S1Q"@en ;
         :hasTypicalUnitLabel  "mm s -1" ;
         :hasTypicalUnitLabel  "mm/s" ;
-        :hasSymbolLatex       "nu_c"@en ;
+        :hasSymbolLatex       "\\nu_c"@en ;
         :hasSymbol            "vc"@en ;
         :hasLabelSource       "AFZ1-ST-D1"@en ;
         :hasLabelSource       "DIN EN ISO 6892-1, 3.7.3"@de ;
-        :hasLabelSource       "YS1-Sz0°-S1L"@de ;
         :hasLabelSource       "DIN EN ISO 6892-1, 3.7.3"@en ;
         :hasLabelSource       "AFZ1-Fz-S1Q.xlsx"@de ;
-        :hasLabelSource       "YS1-FzR4-S1Q"@de .
+        :hasLabelSource       "DX56_D_FZ2_WR00_43.TXT"@de ;
+        :hasExampleData       "0.02" ;
+        :hasExampleData       "4800" ;
+        :hasExampleData       "0.1" .
 
 :hasExtension_mm  rdf:type  owl:DatatypeProperty ;
         rdf:type            rdf:Property ;
@@ -8689,18 +8800,6 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         rdf:type        rdf:Property ;
         rdfs:label      "hasUser"@en ;
         skos:preflabel  "hasUser"@en .
-
-:ShearStrength  rdfs:label    "ShearStrength"@en ;
-        rdfs:subClassOf       pmdco:ValueObject ;
-        dcterms:description   "shear strength"@en ;
-        skos:altlabel         "Zugfestigkeit Rm"@de ;
-        skos:preflabel        "ShearStrength"@en ;
-        rdf:type              owl:Class ;
-        :hasExampleData       "468" ;
-        :hasLabelSource       "YS1-Sz0°-S1L"@de ;
-        rdf:type              skos:Concept ;
-        :hasTypicalUnitLabel  "MPa" ;
-        :isBasedOn            :EngineeringStress .
 
 :hasTotalLengthObject
         rdf:type        owl:ObjectProperty ;
@@ -8744,37 +8843,32 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         rdfs:label      "hasOperator"@en ;
         skos:preflabel  "hasOperator"@en .
 
-:SampleIdentifier  skos:preflabel  "SampleIdentifier"@en ;
-        skos:altlabel        "Specimen name"@en ;
-        skos:altlabel        "Sample identifier"@en ;
+:SampleIdentifier  :hasExampleData  "AFZ-BU-S1" ;
+        skos:preflabel       "SampleIdentifier"@en ;
         skos:altlabel        "Specimen Name"@en ;
-        skos:altlabel        "NAME"@de ;
-        skos:altlabel        "Probennummer"@de ;
         skos:altlabel        "Probenbezeichnung"@de ;
+        skos:altlabel        "Probennummer"@de ;
+        skos:altlabel        "NAME"@de ;
         skos:altlabel        "Proben-Nr."@de ;
+        skos:altlabel        "Sample identifier"@en ;
         dcterms:description  "Unique ID (IWM intern)"@en ;
         rdfs:subClassOf      pmdco:ValueObject ;
         rdfs:label           "SampleIdentifier"@en ;
-        rdf:type             skos:Concept ;
         rdf:type             owl:Class ;
-        :hasExampleData      "YS1-FzR4-S1Q" ;
+        rdf:type             skos:Concept ;
         :hasExampleData      "AFZ1-ST-D1" ;
-        :hasExampleData      "AWA_1_01_Rz" ;
         :hasExampleData      "AFZ1-Fz-101Q" ;
-        :hasExampleData      "AFZ-BU-S1" ;
-        :hasExampleData      "AFZ1-NZ50-25-D1Q" ;
-        :hasLabelSource      "AFZ1-ST-D1"@en ;
+        :hasExampleData      "AWA_1_01_Rz" ;
+        :hasLabelSource      "AWA_1_01_Rz-46N171"@de ;
+        :hasLabelSource      "YS1-Fz-D1Q"@de ;
+        :hasLabelSource      "deepl translator"@en ;
         :hasLabelSource      "AFZ1-Fz-S1Q.xlsx"@de ;
         :hasLabelSource      "AFZ1-NZ50-25-D1Q"@de ;
         :hasLabelSource      "AFZ1-NZ50-25-D1Q"@en ;
-        :hasLabelSource      "deepl translator"@en ;
-        :hasLabelSource      " "@en ;
-        :hasLabelSource      "AWA_1_01_Rz-46N171"@de ;
-        :hasLabelSource      "YS1-FzR4-S1Q"@en ;
-        :hasLabelSource      "YS1-FzR4-S1Q"@de ;
         :hasLabelSource      "AFZ-BU-S1.TXT"@de ;
-        :hasLabelSource      "YS1-Sz0°-S1L"@de ;
-        :hasLabelSource      "YS1-Fz-D1Q"@de .
+        :hasLabelSource      "AFZ1-ST-D1"@en ;
+        :hasLabelSource      " "@en ;
+        :hasExampleData      "AFZ1-NZ50-25-D1Q" .
 
 :hasDescriptionCitationSource
         rdf:type          owl:DatatypeProperty ;
@@ -8816,7 +8910,7 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         :hasLabelSource       "Standard definition specific"@de ;
         rdfs:label            "MeanPlasticStrainRate"@en ;
         :hasSymbol            "epl"@en ;
-        :hasSymbolLatex       "dot{e}_{pl}"@en ;
+        :hasSymbolLatex       "\\dot{e}_{pl}"@en ;
         :hasTypicalUnitLabel  "s-1" .
 
 :OriginalWidth  skos:preflabel  "OriginalWidth"@en ;
@@ -8835,20 +8929,17 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         rdf:type              skos:Concept ;
         rdf:type              owl:Class ;
         skos:related          :TestPieceGeometry ;
-        :hasExampleData       "20.04" ;
-        :hasExampleData       "10040" ;
-        :hasExampleData       "10054" ;
         :hasTypicalUnitLabel  "mm" ;
         :hasSymbolLatex       "b_o"@en ;
         :hasSymbol            "b_{0}"@en ;
         :hasSymbol            "bo"@en ;
-        :hasLabelSource       "YS1-FzR4-S1Q"@de ;
-        :hasLabelSource       "YS1-FzR4-S1Q"@en ;
         :hasLabelSource       "DX56_D_FZ2_WR00_43.TXT"@de ;
         :hasLabelSource       "YS1-Fz-D1Q"@de ;
         :hasLabelSource       "DIN EN ISO 6892-1, Table 1"@en ;
         :hasLabelSource       "DIN EN ISO 6892-1, Tabelle 1"@de ;
-        :hasLabelSource       "AFZ1-Fz-S1Q.xlsx"@de .
+        :hasLabelSource       "AFZ1-Fz-S1Q.xlsx"@de ;
+        :hasExampleData       "10054" ;
+        :hasExampleData       "20.04" .
 
 :hasInnerDiameterBlankHolder
         rdf:type        owl:DatatypeProperty ;
@@ -8971,7 +9062,6 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         dcterms:description  "The norm according to which the experiment was conducted."@en ;
         rdfs:subClassOf      pmdco:ValueObject ;
         rdfs:label           "TestStandard"@en ;
-        rdf:type             owl:Class ;
         :hasLabelSource      "DIN EN ISO 12004-2: 2021_07, 8"@en ;
         :hasLabelSource      "AFZ-BU-S1.TXT"@de ;
         :hasLabelSource      "Authors"@de ;
@@ -8980,18 +9070,18 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         :hasLabelSource      "DIN EN ISO 16808:2022-08, 12"@en ;
         :hasExampleData      "DIN EN ISO 16808" ;
         :hasExampleData      "DIN EN ISO 12004-2" ;
-        rdf:type             skos:Concept .
+        rdf:type             skos:Concept ;
+        rdf:type             owl:Class .
 
 :ThicknessAfterFracture2
+        rdf:type              owl:Class ;
+        rdfs:label            "ThicknessAfterFracture2"@en ;
         rdfs:seeAlso          :ThicknessAfterFracture1 ;
         rdfs:subClassOf       pmdco:ValueObject ;
         skos:altlabel         "Probendicke A2 nach Bruch"@de ;
         skos:preflabel        "ThicknessAfterFracture2"@en ;
         skos:related          :ThicknessAfterFracture1 ;
-        :hasLabelSource       "YS1-Sz0°-S1L"@de ;
         :hasLabelSource       "AFZ1-Fz-S1Q.xlsx"@de ;
-        rdfs:label            "ThicknessAfterFracture2"@en ;
-        rdf:type              owl:Class ;
         rdf:type              skos:Concept ;
         :hasTypicalUnitLabel  "mm" .
 
@@ -9013,6 +9103,21 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         rdfs:label      "hasMinorTrueStrain"@en ;
         skos:preflabel  "hasMinorTrueStrain"@en .
 
+:hasElasticConstantC44Object
+        rdf:type        owl:ObjectProperty ;
+        rdf:type        rdf:Property ;
+        rdfs:label      "hasElasticConstantC44"@en ;
+        rdfs:range      :ElasticConstantC44 ;
+        skos:preflabel  "hasElasticConstantC44"@en .
+
+:TimeSeriesSimulation
+        rdf:type        owl:Class ;
+        rdfs:comment    "A Simulation that return a time Series"@en ;
+        rdfs:label      "Time series simulation"@en ;
+        rdfs:label      "Zeitreihensimulation"@de ;
+        skos:preflabel  "Time series simulation"@en ;
+        skos:preflabel  "Zeitreihensimulation"@de .
+
 :RValue  rdfs:label           "RValue"@en ;
         rdfs:subClassOf       pmdco:ValueObject ;
         skos:altlabel         "Rinc"@en ;
@@ -9025,21 +9130,6 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         :hasTypicalUnitLabel  "1" ;
         :isBasedOn            :WidthStrain ;
         :isBasedOn            :TrueStrain .
-
-:TimeSeriesSimulation
-        rdf:type        owl:Class ;
-        rdfs:comment    "A Simulation that return a time Series"@en ;
-        rdfs:label      "Time series simulation"@en ;
-        rdfs:label      "Zeitreihensimulation"@de ;
-        skos:preflabel  "Time series simulation"@en ;
-        skos:preflabel  "Zeitreihensimulation"@de .
-
-:hasElasticConstantC44Object
-        rdf:type        owl:ObjectProperty ;
-        rdf:type        rdf:Property ;
-        rdfs:label      "hasElasticConstantC44"@en ;
-        rdfs:range      :ElasticConstantC44 ;
-        skos:preflabel  "hasElasticConstantC44"@en .
 
 :hasEffecticStrain_-  rdf:type  owl:DatatypeProperty ;
         rdf:type            rdf:Property ;
@@ -9166,7 +9256,7 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         rdfs:label           "StahlDigital Vocabulary"@en ;
         dc11:description     "Vocabulary of project StahlDigital"@en ;
         dcterms:contributor  "Clemens Fehrenbach, Alexander Butz, Alexander Wessel, Andreas Trondl, Silke Klitschke, Paul Zierep, Lukas Morand, Dirk Helm" ;
-        dcterms:date         "2024-04-10T17:28:26+00:00" ;
+        dcterms:date         "2024-04-16T16:07:33+00:00" ;
         owl:versionInfo      "0.1 (preliminary)"@en ;
         skos:prefLabel       "StahlDigital Vocabulary"@en .
 
@@ -9207,39 +9297,35 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         rdf:type         skos:Concept .
 
 :ExtensometerGaugeLength
+        skos:preflabel        "ExtensometerGaugeLength"@en ;
         skos:altlabel         "Messlänge Lo"@de ;
-        skos:altlabel         "Extensometer gauge length "@en ;
-        skos:altlabel         "L0"@en ;
-        skos:altlabel         "extensometer gauge length"@en ;
         skos:altlabel         "Messlänge L0"@de ;
-        dcterms:description   "Anfangsmesslänge des Dehnungsaufnehmers (Extensometer), die zum Messen der Verlängerung (3.6) benutzt wird"@de ;
+        skos:altlabel         "Extensometer gauge length "@en ;
+        skos:altlabel         "extensometer gauge length"@en ;
         dcterms:description   "The intial gauge length Le used for measurement of extension by means of an extensometer"@en ;
         dcterms:description   "initial extensometer gauge length used for measurement of extension by means of an extensometer"@en ;
         dcterms:description   "The intial gauge length used for measurement of extension by means of an extensometer"@en ;
+        dcterms:description   "Anfangsmesslänge des Dehnungsaufnehmers (Extensometer), die zum Messen der Verlängerung (3.6) benutzt wird"@de ;
         rdfs:subClassOf       pmdco:ValueObject ;
-        rdfs:seeAlso          :ExtensionMeasuringSystem ;
         rdfs:seeAlso          :OriginalGaugeLength ;
+        rdfs:seeAlso          :ExtensionMeasuringSystem ;
         rdfs:label            "ExtensometerGaugeLength"@en ;
-        rdf:type              skos:Concept ;
         rdf:type              owl:Class ;
-        skos:preflabel        "ExtensometerGaugeLength"@en ;
-        skos:related          :ExtensionMeasuringSystem ;
+        rdf:type              skos:Concept ;
         skos:related          :OriginalGaugeLength ;
-        :hasExampleData       "20" ;
-        :hasExampleData       "20.94" ;
-        :hasLabelSource       "ISO 26203-2, 2011, 4"@en ;
-        :hasLabelSource       "YS1-Fz-D1Q"@de ;
-        :hasLabelSource       " "@en ;
+        skos:related          :ExtensionMeasuringSystem ;
         :hasTypicalUnitLabel  "mm" ;
         :hasSymbolLatex       "L_e"@en ;
-        :hasSymbol            "L_{0}"@en ;
         :hasSymbol            "Le"@en ;
-        :hasLabelSource       "AFZ1-Fz-S1Q.xlsx"@de ;
-        :hasLabelSource       "YS1-Sz0°-S1L"@de ;
-        :hasLabelSource       "YS1-FzR4-S1Q"@de ;
-        :hasLabelSource       "YS1-FzR4-S1Q"@en ;
+        :hasSymbol            "L_{0}"@en ;
+        :hasLabelSource       "DIN EN ISO 6892-1, 3.5"@de ;
         :hasLabelSource       "DIN EN ISO 6892-1, 3.5"@en ;
-        :hasLabelSource       "DIN EN ISO 6892-1, 3.5"@de .
+        :hasLabelSource       " "@en ;
+        :hasLabelSource       "ISO 26203-2, 2011, 4"@en ;
+        :hasLabelSource       "YS1-Fz-D1Q"@de ;
+        :hasLabelSource       "AFZ1-Fz-S1Q.xlsx"@de ;
+        :hasExampleData       "20.94" ;
+        :hasExampleData       "20" .
 
 :hasYieldStress_MPa  rdf:type  owl:DatatypeProperty ;
         rdf:type            rdf:Property ;
@@ -9349,6 +9435,14 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         rdfs:label      "hasRollingDirection"@en ;
         skos:preflabel  "hasRollingDirection"@en .
 
+:hasEstimatedStrainRateOverTheParallelLength_s-1
+        rdf:type            owl:DatatypeProperty ;
+        rdf:type            rdf:Property ;
+        rdfs:label          "hasEstimatedStrainRateOverTheParallelLength_s-1"@en ;
+        rdfs:subPropertyOf  :hasEstimatedStrainRateOverTheParallelLength ;
+        skos:preflabel      "hasEstimatedStrainRateOverTheParallelLength_s-1"@en ;
+        :hasUnitLabel       "s-1" .
+
 :StrainRateScaleParameterC
         rdf:type              owl:Class ;
         rdfs:label            "StrainRateScaleParameterC"@en ;
@@ -9359,14 +9453,6 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         :hasLabelSource       "LS-DYNA_Manual_Volume_2"@en ;
         rdf:type              skos:Concept ;
         :hasTypicalUnitLabel  "1" .
-
-:hasEstimatedStrainRateOverTheParallelLength_s-1
-        rdf:type            owl:DatatypeProperty ;
-        rdf:type            rdf:Property ;
-        rdfs:label          "hasEstimatedStrainRateOverTheParallelLength_s-1"@en ;
-        rdfs:subPropertyOf  :hasEstimatedStrainRateOverTheParallelLength ;
-        skos:preflabel      "hasEstimatedStrainRateOverTheParallelLength_s-1"@en ;
-        :hasUnitLabel       "s-1" .
 
 :hasMeanEngineeringStrainRate_s-1
         rdf:type            owl:DatatypeProperty ;
@@ -9397,11 +9483,6 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         skos:related          :DisplacementTransducer ;
         skos:related          :ExtensometerGaugeLength ;
         :hasExampleData       "0.001" ;
-        :hasExampleData       "0.026" ;
-        :hasExampleData       "-3.93633e-05" ;
-        :hasLabelSource       "YS1-Fz-D1Q"@de ;
-        :hasLabelSource       "YS1-FzR4-S1Q"@de ;
-        :hasLabelSource       "YS1-FzR4-S1Q"@en ;
         :isBasedOn            :OriginalGaugeLength ;
         :isBasedOn            :ExtensometerGaugeLength ;
         :hasTypicalUnitLabel  "mm" ;
@@ -9409,9 +9490,11 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         :hasSymbol            "dL"@en ;
         :hasLabelSource       "DIN EN ISO 6892-1, 3.6"@en ;
         :hasLabelSource       "DIN EN ISO 6892-1, 3.6"@de ;
-        :hasLabelSource       "YS1-Sz0°-S1L"@de ;
         :hasLabelSource       "DX56_D_FZ2_WR00_43.TXT"@de ;
-        :hasLabelSource       "AFZ1-Fz-S1Q.xlsx"@de .
+        :hasLabelSource       "AFZ1-Fz-S1Q.xlsx"@de ;
+        :hasLabelSource       "YS1-Fz-D1Q"@de ;
+        :hasExampleData       "-3.93633e-05" ;
+        :hasExampleData       "0.026" .
 
 :hasExtensionMeasuringSystemObject
         rdf:type        owl:ObjectProperty ;
@@ -9469,17 +9552,3 @@ PREFIX pmdco: <https://material-digital.de/pmdco/>
         rdfs:subPropertyOf  :hasMeanPlasticStrainRate ;
         skos:preflabel      "hasMeanPlasticStrainRate_s-1"@en ;
         :hasUnitLabel       "s-1" .
-
-:ElastoplasticModel  rdf:type  owl:Class ;
-        rdfs:label       "ElastoplasticModel"@en ;
-        rdfs:subClassOf  pmdco:ValueObject ;
-        skos:preflabel   "ElastoplasticModel"@en ;
-        rdf:type         skos:Concept .
-
-:hasShearLengthAfterFracture2_mm
-        rdf:type            owl:DatatypeProperty ;
-        rdf:type            rdf:Property ;
-        rdfs:label          "hasShearLengthAfterFracture2_mm"@en ;
-        rdfs:subPropertyOf  :hasShearLengthAfterFracture2 ;
-        skos:preflabel      "hasShearLengthAfterFracture2_mm"@en ;
-        :hasUnitLabel       "mm" .

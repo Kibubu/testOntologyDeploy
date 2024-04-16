@@ -60,7 +60,7 @@
       
       ],
     "https://w3id.org/steel/ProcessOntology/hasSymbolLatex" : [ {
-        "value" : "q_0",
+        "value" : "\\q_0",
         "lang" : "en",
         "type" : "literal"
         }

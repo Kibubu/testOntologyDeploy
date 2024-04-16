@@ -109,7 +109,7 @@
       
       ],
     "https://w3id.org/steel/ProcessOntology/hasSymbolLatex" : [ {
-        "value" : "dot{e(t)}",
+        "value" : "\\dot{e(t)}",
         "lang" : "en",
         "type" : "literal"
         }

@@ -119,13 +119,13 @@
       
       ],
     "https://w3id.org/steel/ProcessOntology/hasSymbolLatex" : [ {
-        "value" : "dSig/dt",
+        "value" : "\\dot{R}",
         "lang" : "en",
         "type" : "literal"
         }
       ,
       {
-        "value" : "dot{R}",
+        "value" : "dSig/dt",
         "lang" : "en",
         "type" : "literal"
         }

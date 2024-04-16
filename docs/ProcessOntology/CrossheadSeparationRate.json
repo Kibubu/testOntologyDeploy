@@ -83,11 +83,6 @@
       
       ],
     "https://w3id.org/steel/ProcessOntology/hasExampleData" : [ {
-        "value" : "0.01",
-        "type" : "literal"
-        }
-      ,
-      {
         "value" : "0.02",
         "type" : "literal"
         }
@@ -132,24 +127,6 @@
         "lang" : "de",
         "type" : "literal"
         }
-      ,
-      {
-        "value" : "YS1-FzR4-S1Q",
-        "lang" : "de",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "YS1-FzR4-S1Q",
-        "lang" : "en",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "YS1-Sz0\u00B0-S1L",
-        "lang" : "de",
-        "type" : "literal"
-        }
       
       ],
     "https://w3id.org/steel/ProcessOntology/hasSymbol" : [ {
@@ -160,7 +137,7 @@
       
       ],
     "https://w3id.org/steel/ProcessOntology/hasSymbolLatex" : [ {
-        "value" : "nu_c",
+        "value" : "\\nu_c",
         "lang" : "en",
         "type" : "literal"
         }

@@ -67,7 +67,7 @@
       
       ],
     "https://w3id.org/steel/ProcessOntology/hasSymbolLatex" : [ {
-        "value" : "phi",
+        "value" : "\\phi",
         "lang" : "en",
         "type" : "literal"
         }

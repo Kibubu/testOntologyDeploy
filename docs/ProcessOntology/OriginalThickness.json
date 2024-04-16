@@ -108,11 +108,6 @@
         "value" : "1490",
         "type" : "literal"
         }
-      ,
-      {
-        "value" : "1499",
-        "type" : "literal"
-        }
       
       ],
     "https://w3id.org/steel/ProcessOntology/hasLabelSource" : [ {
@@ -141,24 +136,6 @@
       ,
       {
         "value" : "YS1-Fz-D1Q",
-        "lang" : "de",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "YS1-FzR4-S1Q",
-        "lang" : "de",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "YS1-FzR4-S1Q",
-        "lang" : "en",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "YS1-Sz0\u00B0-S1L",
         "lang" : "de",
         "type" : "literal"
         }

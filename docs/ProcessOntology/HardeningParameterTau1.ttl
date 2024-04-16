@@ -9,7 +9,7 @@
 <https://w3id.org/steel/ProcessOntology/HardeningParameterTau1> <https://w3id.org/steel/ProcessOntology/hasLabelSource> "General Knowledge"@en .
 <https://w3id.org/steel/ProcessOntology/HardeningParameterTau1> <https://w3id.org/steel/ProcessOntology/hasLabelSource> "General Knowledge"@de .
 <https://w3id.org/steel/ProcessOntology/HardeningParameterTau1> <http://www.w3.org/2000/01/rdf-schema#label> "HardeningParameterTau1"@en .
-<https://w3id.org/steel/ProcessOntology/HardeningParameterTau1> <https://w3id.org/steel/ProcessOntology/hasSymbolLatex> "tau_1"@en .
+<https://w3id.org/steel/ProcessOntology/HardeningParameterTau1> <https://w3id.org/steel/ProcessOntology/hasSymbolLatex> "\\tau_1"@en .
 <https://w3id.org/steel/ProcessOntology/HardeningParameterTau1> <https://w3id.org/steel/ProcessOntology/hasTypicalUnitLabel> "MPa" .
 
 

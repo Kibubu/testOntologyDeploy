@@ -89,6 +89,12 @@
         }
       
       ],
+    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
+        "value" : "LowerYieldStrength",
+        "type" : "literal"
+        }
+      
+      ],
     "https://w3id.org/steel/ProcessOntology/hasSymbol" : [ {
         "value" : "R_{eL}",
         "lang" : "en",
@@ -106,6 +112,12 @@
         "value" : "R_{eL}",
         "lang" : "en",
         "type" : "literal"
+        }
+      
+      ],
+    "https://w3id.org/steel/ProcessOntology/hasTypicalUnit" : [ {
+        "value" : "http://qudt.org/vocab/unit/MegaPA",
+        "type" : "uri"
         }
       
       ],

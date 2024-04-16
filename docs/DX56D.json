@@ -81,6 +81,12 @@
         "type" : "literal"
         }
       
+      ],
+    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
+        "value" : "DX56D",
+        "type" : "literal"
+        }
+      
       ]
     }
   }

@@ -46,6 +46,12 @@
         }
       
       ],
+    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
+        "value" : "RValue",
+        "type" : "literal"
+        }
+      
+      ],
     "https://w3id.org/steel/ProcessOntology/hasSymbol" : [ {
         "value" : "r-ges",
         "lang" : "en",
@@ -57,6 +63,12 @@
         "value" : "r-ges",
         "lang" : "en",
         "type" : "literal"
+        }
+      
+      ],
+    "https://w3id.org/steel/ProcessOntology/hasTypicalUnit" : [ {
+        "value" : "http://qudt.org/vocab/unit/UNITLESS",
+        "type" : "uri"
         }
       
       ],

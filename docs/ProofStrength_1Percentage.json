@@ -53,6 +53,12 @@
         }
       
       ],
+    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
+        "value" : "ProofStrength_1Percentage",
+        "type" : "literal"
+        }
+      
+      ],
     "https://w3id.org/steel/ProcessOntology/hasSymbol" : [ {
         "value" : "Rp1",
         "lang" : "en",
@@ -64,6 +70,12 @@
         "value" : "R_{p1}",
         "lang" : "en",
         "type" : "literal"
+        }
+      
+      ],
+    "https://w3id.org/steel/ProcessOntology/hasTypicalUnit" : [ {
+        "value" : "http://qudt.org/vocab/unit/MegaPA",
+        "type" : "uri"
         }
       
       ],

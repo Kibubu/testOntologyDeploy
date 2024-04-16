@@ -59,10 +59,22 @@
         }
       
       ],
+    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
+        "value" : "HardeningParameterTheta1",
+        "type" : "literal"
+        }
+      
+      ],
     "https://w3id.org/steel/ProcessOntology/hasSymbolLatex" : [ {
         "value" : "\\theta_1",
         "lang" : "en",
         "type" : "literal"
+        }
+      
+      ],
+    "https://w3id.org/steel/ProcessOntology/hasTypicalUnit" : [ {
+        "value" : "http://qudt.org/vocab/unit/MegaPA",
+        "type" : "uri"
         }
       
       ],

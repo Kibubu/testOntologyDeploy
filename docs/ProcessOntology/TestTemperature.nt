@@ -20,6 +20,8 @@
 <https://w3id.org/steel/ProcessOntology/TestTemperature> <https://w3id.org/steel/ProcessOntology/hasLabelSource> "DIN EN ISO 6892-1, 5"@de .
 <https://w3id.org/steel/ProcessOntology/TestTemperature> <https://w3id.org/steel/ProcessOntology/hasLabelSource> "DIN EN ISO 6892-1, K.4"@en .
 <https://w3id.org/steel/ProcessOntology/TestTemperature> <https://w3id.org/steel/ProcessOntology/hasLabelSource> "DX56_D_FZ2_WR00_43.TXT"@de .
+<https://w3id.org/steel/ProcessOntology/TestTemperature> <https://w3id.org/steel/ProcessOntology/hasShortId> "TestTemperature" .
 <https://w3id.org/steel/ProcessOntology/TestTemperature> <https://w3id.org/steel/ProcessOntology/hasSymbol> "T"@en .
 <https://w3id.org/steel/ProcessOntology/TestTemperature> <https://w3id.org/steel/ProcessOntology/hasSymbolLatex> "T"@en .
+<https://w3id.org/steel/ProcessOntology/TestTemperature> <https://w3id.org/steel/ProcessOntology/hasTypicalUnit> <http://qudt.org/vocab/unit/DEG_C> .
 <https://w3id.org/steel/ProcessOntology/TestTemperature> <https://w3id.org/steel/ProcessOntology/hasTypicalUnitLabel> "\u00B0C" .

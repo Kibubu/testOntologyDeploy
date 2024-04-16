@@ -59,6 +59,18 @@
         }
       
       ],
+    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
+        "value" : "YieldStrength",
+        "type" : "literal"
+        }
+      
+      ],
+    "https://w3id.org/steel/ProcessOntology/hasTypicalUnit" : [ {
+        "value" : "http://qudt.org/vocab/unit/MegaPA",
+        "type" : "uri"
+        }
+      
+      ],
     "https://w3id.org/steel/ProcessOntology/hasTypicalUnitLabel" : [ {
         "value" : "MPa",
         "type" : "literal"

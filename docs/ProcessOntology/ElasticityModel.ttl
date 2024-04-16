@@ -7,5 +7,6 @@
 <https://w3id.org/steel/ProcessOntology/ElasticityModel> <http://purl.org/dc/terms/description> "connects elastic strain with stress vi stiffness matrix"@en .
 <https://w3id.org/steel/ProcessOntology/ElasticityModel> <http://www.w3.org/2004/02/skos/core#altlabel> "Hooke"@en .
 <https://w3id.org/steel/ProcessOntology/ElasticityModel> <http://www.w3.org/2004/02/skos/core#preflabel> "ElasticityModel"@en .
+<https://w3id.org/steel/ProcessOntology/ElasticityModel> <https://w3id.org/steel/ProcessOntology/hasShortId> "ElasticityModel" .
 
 

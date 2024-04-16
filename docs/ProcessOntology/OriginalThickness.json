@@ -141,6 +141,12 @@
         }
       
       ],
+    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
+        "value" : "OriginalThickness",
+        "type" : "literal"
+        }
+      
+      ],
     "https://w3id.org/steel/ProcessOntology/hasSymbol" : [ {
         "value" : "a_{0}",
         "lang" : "en",
@@ -158,6 +164,12 @@
         "value" : "a_o",
         "lang" : "en",
         "type" : "literal"
+        }
+      
+      ],
+    "https://w3id.org/steel/ProcessOntology/hasTypicalUnit" : [ {
+        "value" : "http://qudt.org/vocab/unit/MilliM",
+        "type" : "uri"
         }
       
       ],

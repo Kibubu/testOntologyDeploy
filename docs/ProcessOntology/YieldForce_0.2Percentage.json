@@ -52,6 +52,12 @@
         }
       
       ],
+    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
+        "value" : "YieldForce_0.2Percentage",
+        "type" : "literal"
+        }
+      
+      ],
     "https://w3id.org/steel/ProcessOntology/hasSymbol" : [ {
         "value" : "Fp02",
         "lang" : "en",
@@ -63,6 +69,12 @@
         "value" : "F_{p02}",
         "lang" : "en",
         "type" : "literal"
+        }
+      
+      ],
+    "https://w3id.org/steel/ProcessOntology/hasTypicalUnit" : [ {
+        "value" : "http://qudt.org/vocab/unit/KiloN",
+        "type" : "uri"
         }
       
       ],

@@ -59,6 +59,18 @@
         }
       
       ],
+    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
+        "value" : "MinTimeStep4ElementDel",
+        "type" : "literal"
+        }
+      
+      ],
+    "https://w3id.org/steel/ProcessOntology/hasTypicalUnit" : [ {
+        "value" : "https://qudt.org/vocab/unit/SEC",
+        "type" : "uri"
+        }
+      
+      ],
     "https://w3id.org/steel/ProcessOntology/hasTypicalUnitLabel" : [ {
         "value" : "s",
         "type" : "literal"

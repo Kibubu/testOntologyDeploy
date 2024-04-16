@@ -7,5 +7,6 @@
 <https://w3id.org/steel/ProcessOntology/HomogenizationModel> <http://purl.org/dc/terms/description> "just pass information between upper and lower scale"@en .
 <https://w3id.org/steel/ProcessOntology/HomogenizationModel> <http://www.w3.org/2004/02/skos/core#altlabel> "pass"@en .
 <https://w3id.org/steel/ProcessOntology/HomogenizationModel> <http://www.w3.org/2004/02/skos/core#preflabel> "HomogenizationModel"@en .
+<https://w3id.org/steel/ProcessOntology/HomogenizationModel> <https://w3id.org/steel/ProcessOntology/hasShortId> "HomogenizationModel" .
 
 

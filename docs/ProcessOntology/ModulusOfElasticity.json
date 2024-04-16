@@ -134,6 +134,12 @@
         }
       
       ],
+    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
+        "value" : "ModulusOfElasticity",
+        "type" : "literal"
+        }
+      
+      ],
     "https://w3id.org/steel/ProcessOntology/hasSymbol" : [ {
         "value" : "E",
         "lang" : "en",
@@ -145,6 +151,17 @@
         "value" : "E",
         "lang" : "en",
         "type" : "literal"
+        }
+      
+      ],
+    "https://w3id.org/steel/ProcessOntology/hasTypicalUnit" : [ {
+        "value" : "http://qudt.org/vocab/unit/GigaPA",
+        "type" : "uri"
+        }
+      ,
+      {
+        "value" : "http://qudt.org/vocab/unit/MegaPA",
+        "type" : "uri"
         }
       
       ],

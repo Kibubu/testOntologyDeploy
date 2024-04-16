@@ -77,6 +77,23 @@
         }
       
       ],
+    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
+        "value" : "PercentageElongation",
+        "type" : "literal"
+        }
+      
+      ],
+    "https://w3id.org/steel/ProcessOntology/hasTypicalUnit" : [ {
+        "value" : "http://qudt.org/vocab/unit/MilliM",
+        "type" : "uri"
+        }
+      ,
+      {
+        "value" : "http://qudt.org/vocab/unit/PERCENT",
+        "type" : "uri"
+        }
+      
+      ],
     "https://w3id.org/steel/ProcessOntology/hasTypicalUnitLabel" : [ {
         "value" : "%",
         "type" : "literal"

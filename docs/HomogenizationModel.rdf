@@ -21,4 +21,7 @@
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/HomogenizationModel">
     <ns0:preflabel xmlns:ns0="http://www.w3.org/2004/02/skos/core#" xml:lang="en">HomogenizationModel</ns0:preflabel>
   </rdf:Description>
+  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/HomogenizationModel">
+    <ns0:hasShortId xmlns:ns0="https://w3id.org/steel/ProcessOntology/">HomogenizationModel</ns0:hasShortId>
+  </rdf:Description>
 </rdf:RDF>

@@ -45,6 +45,16 @@
         <table>
         
           <tr>
+            <td>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</td>
+            <td>http://www.w3.org/2004/02/skos/core#Concept</td>
+          </tr>
+        
+          <tr>
+            <td>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</td>
+            <td>http://www.w3.org/2002/07/owl#Class</td>
+          </tr>
+        
+          <tr>
             <td>http://www.w3.org/2000/01/rdf-schema#label</td>
             <td>WidthStrain</td>
           </tr>
@@ -70,16 +80,6 @@
           </tr>
         
           <tr>
-            <td>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</td>
-            <td>http://www.w3.org/2004/02/skos/core#Concept</td>
-          </tr>
-        
-          <tr>
-            <td>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</td>
-            <td>http://www.w3.org/2002/07/owl#Class</td>
-          </tr>
-        
-          <tr>
             <td>https://w3id.org/steel/ProcessOntology/hasExampleData</td>
             <td>0.003</td>
           </tr>
@@ -87,6 +87,11 @@
           <tr>
             <td>https://w3id.org/steel/ProcessOntology/hasLabelSource</td>
             <td>AFZ1-Fz-S1Q.xlm</td>
+          </tr>
+        
+          <tr>
+            <td>https://w3id.org/steel/ProcessOntology/hasShortId</td>
+            <td>WidthStrain</td>
           </tr>
         
           <tr>
@@ -100,18 +105,23 @@
           </tr>
         
           <tr>
+            <td>https://w3id.org/steel/ProcessOntology/hasTypicalUnit</td>
+            <td>http://qudt.org/vocab/unit/UNITLESS</td>
+          </tr>
+        
+          <tr>
             <td>https://w3id.org/steel/ProcessOntology/hasTypicalUnitLabel</td>
             <td>1</td>
           </tr>
         
           <tr>
             <td>https://w3id.org/steel/ProcessOntology/isBasedOn</td>
-            <td>https://w3id.org/steel/ProcessOntology/WidthChange</td>
+            <td>https://w3id.org/steel/ProcessOntology/OriginalWidth</td>
           </tr>
         
           <tr>
             <td>https://w3id.org/steel/ProcessOntology/isBasedOn</td>
-            <td>https://w3id.org/steel/ProcessOntology/OriginalWidth</td>
+            <td>https://w3id.org/steel/ProcessOntology/WidthChange</td>
           </tr>
         
         </table>
@@ -120,16 +130,6 @@
           <h3>Linked Resources</h3>
 
 <ul>
-    
-    <li>
-        <a
-            title="http://www.w3.org/2000/01/rdf-schema#subClassOf"
-            href=".//rdfsites/https/material-digital.de/pmdco/ValueObject"
-            >ValueObject</a> via
-        <a
-            href=".//rdfsites/http/www.w3.org/2000/01/rdf-schema#subClassOf"
-            >subClassOf</a>
-    </li>
     
     <li>
         <a
@@ -153,9 +153,29 @@
     
     <li>
         <a
+            title="http://www.w3.org/2000/01/rdf-schema#subClassOf"
+            href=".//rdfsites/https/material-digital.de/pmdco/ValueObject"
+            >ValueObject</a> via
+        <a
+            href=".//rdfsites/http/www.w3.org/2000/01/rdf-schema#subClassOf"
+            >subClassOf</a>
+    </li>
+    
+    <li>
+        <a
+            title="https://w3id.org/steel/ProcessOntology/hasTypicalUnit"
+            href=".//rdfsites/http/qudt.org/vocab/unit/UNITLESS"
+            >UNITLESS</a> via
+        <a
+            href=".//ProcessOntology/hasTypicalUnit"
+            >has typical unit</a>
+    </li>
+    
+    <li>
+        <a
             title="https://w3id.org/steel/ProcessOntology/isBasedOn"
-            href=".//ProcessOntology/WidthChange"
-            >WidthChange</a> via
+            href=".//ProcessOntology/OriginalWidth"
+            >OriginalWidth</a> via
         <a
             href=".//ProcessOntology/isBasedOn"
             >isBasedOn</a>
@@ -164,8 +184,8 @@
     <li>
         <a
             title="https://w3id.org/steel/ProcessOntology/isBasedOn"
-            href=".//ProcessOntology/OriginalWidth"
-            >OriginalWidth</a> via
+            href=".//ProcessOntology/WidthChange"
+            >WidthChange</a> via
         <a
             href=".//ProcessOntology/isBasedOn"
             >isBasedOn</a>
@@ -179,16 +199,6 @@
     
     <li>
         <a
-            title="http://www.w3.org/2000/01/rdf-schema#range"
-            href=".//ProcessOntology/hasWidthStrainObject"
-            >hasWidthStrain</a> via
-        <a
-            href=".//rdfsites/http/www.w3.org/2000/01/rdf-schema#range"
-            >range</a>
-    </li>
-    
-    <li>
-        <a
             title="https://w3id.org/steel/ProcessOntology/isBasedOn"
             href=".//ProcessOntology/TrueWidthStrain"
             >TrueWidthStrain</a> via
@@ -199,12 +209,32 @@
     
     <li>
         <a
+            title="http://www.w3.org/2000/01/rdf-schema#seeAlso"
+            href=".//ProcessOntology/hasWidthStrain_UNITLESS"
+            >has WidthStrain</a> via
+        <a
+            href=".//rdfsites/http/www.w3.org/2000/01/rdf-schema#seeAlso"
+            >seeAlso</a>
+    </li>
+    
+    <li>
+        <a
             title="https://w3id.org/steel/ProcessOntology/isBasedOn"
             href=".//ProcessOntology/RValue"
             >RValue</a> via
         <a
             href=".//ProcessOntology/isBasedOn"
             >isBasedOn</a>
+    </li>
+    
+    <li>
+        <a
+            title="http://www.w3.org/2000/01/rdf-schema#range"
+            href=".//ProcessOntology/hasWidthStrain_Object"
+            >hasWidthStrain</a> via
+        <a
+            href=".//rdfsites/http/www.w3.org/2000/01/rdf-schema#range"
+            >range</a>
     </li>
     
 </ul>

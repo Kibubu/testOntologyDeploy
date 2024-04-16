@@ -45,21 +45,6 @@
         <table>
         
           <tr>
-            <td>https://w3id.org/steel/ProcessOntology/isBasedOn</td>
-            <td>https://w3id.org/steel/ProcessOntology/OriginalThickness</td>
-          </tr>
-        
-          <tr>
-            <td>https://w3id.org/steel/ProcessOntology/isBasedOn</td>
-            <td>https://w3id.org/steel/ProcessOntology/OriginalWidth</td>
-          </tr>
-        
-          <tr>
-            <td>https://w3id.org/steel/ProcessOntology/isBasedOn</td>
-            <td>https://w3id.org/steel/ProcessOntology/Diameter</td>
-          </tr>
-        
-          <tr>
             <td>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</td>
             <td>http://www.w3.org/2004/02/skos/core#Concept</td>
           </tr>
@@ -110,13 +95,38 @@
           </tr>
         
           <tr>
+            <td>https://w3id.org/steel/ProcessOntology/hasShortId</td>
+            <td>OriginalCrosssection</td>
+          </tr>
+        
+          <tr>
             <td>https://w3id.org/steel/ProcessOntology/hasSymbol</td>
             <td>S_{0}</td>
           </tr>
         
           <tr>
+            <td>https://w3id.org/steel/ProcessOntology/hasTypicalUnit</td>
+            <td>http://qudt.org/vocab/unit/MilliM2</td>
+          </tr>
+        
+          <tr>
             <td>https://w3id.org/steel/ProcessOntology/hasTypicalUnitLabel</td>
             <td>mm2</td>
+          </tr>
+        
+          <tr>
+            <td>https://w3id.org/steel/ProcessOntology/isBasedOn</td>
+            <td>https://w3id.org/steel/ProcessOntology/OriginalWidth</td>
+          </tr>
+        
+          <tr>
+            <td>https://w3id.org/steel/ProcessOntology/isBasedOn</td>
+            <td>https://w3id.org/steel/ProcessOntology/OriginalThickness</td>
+          </tr>
+        
+          <tr>
+            <td>https://w3id.org/steel/ProcessOntology/isBasedOn</td>
+            <td>https://w3id.org/steel/ProcessOntology/Diameter</td>
           </tr>
         
         </table>
@@ -125,36 +135,6 @@
           <h3>Linked Resources</h3>
 
 <ul>
-    
-    <li>
-        <a
-            title="https://w3id.org/steel/ProcessOntology/isBasedOn"
-            href=".//ProcessOntology/OriginalThickness"
-            >OriginalThickness</a> via
-        <a
-            href=".//ProcessOntology/isBasedOn"
-            >isBasedOn</a>
-    </li>
-    
-    <li>
-        <a
-            title="https://w3id.org/steel/ProcessOntology/isBasedOn"
-            href=".//ProcessOntology/OriginalWidth"
-            >OriginalWidth</a> via
-        <a
-            href=".//ProcessOntology/isBasedOn"
-            >isBasedOn</a>
-    </li>
-    
-    <li>
-        <a
-            title="https://w3id.org/steel/ProcessOntology/isBasedOn"
-            href=".//ProcessOntology/Diameter"
-            >Diameter</a> via
-        <a
-            href=".//ProcessOntology/isBasedOn"
-            >isBasedOn</a>
-    </li>
     
     <li>
         <a
@@ -186,6 +166,46 @@
             >subClassOf</a>
     </li>
     
+    <li>
+        <a
+            title="https://w3id.org/steel/ProcessOntology/hasTypicalUnit"
+            href=".//rdfsites/http/qudt.org/vocab/unit/MilliM2"
+            >MilliM2</a> via
+        <a
+            href=".//ProcessOntology/hasTypicalUnit"
+            >has typical unit</a>
+    </li>
+    
+    <li>
+        <a
+            title="https://w3id.org/steel/ProcessOntology/isBasedOn"
+            href=".//ProcessOntology/OriginalWidth"
+            >OriginalWidth</a> via
+        <a
+            href=".//ProcessOntology/isBasedOn"
+            >isBasedOn</a>
+    </li>
+    
+    <li>
+        <a
+            title="https://w3id.org/steel/ProcessOntology/isBasedOn"
+            href=".//ProcessOntology/OriginalThickness"
+            >OriginalThickness</a> via
+        <a
+            href=".//ProcessOntology/isBasedOn"
+            >isBasedOn</a>
+    </li>
+    
+    <li>
+        <a
+            title="https://w3id.org/steel/ProcessOntology/isBasedOn"
+            href=".//ProcessOntology/Diameter"
+            >Diameter</a> via
+        <a
+            href=".//ProcessOntology/isBasedOn"
+            >isBasedOn</a>
+    </li>
+    
 </ul>
 
 <h3>Resources linking here</h3>
@@ -215,11 +235,21 @@
     <li>
         <a
             title="http://www.w3.org/2000/01/rdf-schema#range"
-            href=".//ProcessOntology/hasOriginalCrosssectionObject"
+            href=".//ProcessOntology/hasOriginalCrosssection_Object"
             >hasOriginalCrosssection</a> via
         <a
             href=".//rdfsites/http/www.w3.org/2000/01/rdf-schema#range"
             >range</a>
+    </li>
+    
+    <li>
+        <a
+            title="http://www.w3.org/2000/01/rdf-schema#seeAlso"
+            href=".//ProcessOntology/hasOriginalCrosssection_MilliM2"
+            >has OriginalCrosssection</a> via
+        <a
+            href=".//rdfsites/http/www.w3.org/2000/01/rdf-schema#seeAlso"
+            >seeAlso</a>
     </li>
     
     <li>

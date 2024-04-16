@@ -95,6 +95,12 @@
         }
       
       ],
+    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
+        "value" : "InitialDisplacementRate",
+        "type" : "literal"
+        }
+      
+      ],
     "https://w3id.org/steel/ProcessOntology/hasSymbol" : [ {
         "value" : "vo",
         "lang" : "en",
@@ -106,6 +112,12 @@
         "value" : "v_{o}",
         "lang" : "en",
         "type" : "literal"
+        }
+      
+      ],
+    "https://w3id.org/steel/ProcessOntology/hasTypicalUnit" : [ {
+        "value" : "http://qudt.org/vocab/unit/MilliM-PER-SEC",
+        "type" : "uri"
         }
       
       ],

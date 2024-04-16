@@ -45,6 +45,16 @@
         <table>
         
           <tr>
+            <td>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</td>
+            <td>http://www.w3.org/2002/07/owl#Class</td>
+          </tr>
+        
+          <tr>
+            <td>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</td>
+            <td>http://www.w3.org/2004/02/skos/core#Concept</td>
+          </tr>
+        
+          <tr>
             <td>http://www.w3.org/2000/01/rdf-schema#label</td>
             <td>ProofStrength_1Percentage</td>
           </tr>
@@ -70,18 +80,13 @@
           </tr>
         
           <tr>
-            <td>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</td>
-            <td>http://www.w3.org/2002/07/owl#Class</td>
-          </tr>
-        
-          <tr>
-            <td>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</td>
-            <td>http://www.w3.org/2004/02/skos/core#Concept</td>
-          </tr>
-        
-          <tr>
             <td>https://w3id.org/steel/ProcessOntology/hasLabelSource</td>
             <td>AFZ1-Fz-S1Q.xlsx</td>
+          </tr>
+        
+          <tr>
+            <td>https://w3id.org/steel/ProcessOntology/hasShortId</td>
+            <td>ProofStrength_1Percentage</td>
           </tr>
         
           <tr>
@@ -92,6 +97,11 @@
           <tr>
             <td>https://w3id.org/steel/ProcessOntology/hasSymbolLatex</td>
             <td>R_{p1}</td>
+          </tr>
+        
+          <tr>
+            <td>https://w3id.org/steel/ProcessOntology/hasTypicalUnit</td>
+            <td>http://qudt.org/vocab/unit/MegaPA</td>
           </tr>
         
           <tr>
@@ -106,12 +116,12 @@
         
           <tr>
             <td>https://w3id.org/steel/ProcessOntology/isBasedOn</td>
-            <td>https://w3id.org/steel/ProcessOntology/PercentageExtension</td>
+            <td>https://w3id.org/steel/ProcessOntology/ModulusOfElasticity</td>
           </tr>
         
           <tr>
             <td>https://w3id.org/steel/ProcessOntology/isBasedOn</td>
-            <td>https://w3id.org/steel/ProcessOntology/ModulusOfElasticity</td>
+            <td>https://w3id.org/steel/ProcessOntology/PercentageExtension</td>
           </tr>
         
         </table>
@@ -120,16 +130,6 @@
           <h3>Linked Resources</h3>
 
 <ul>
-    
-    <li>
-        <a
-            title="http://www.w3.org/2000/01/rdf-schema#subClassOf"
-            href=".//rdfsites/https/material-digital.de/pmdco/ValueObject"
-            >ValueObject</a> via
-        <a
-            href=".//rdfsites/http/www.w3.org/2000/01/rdf-schema#subClassOf"
-            >subClassOf</a>
-    </li>
     
     <li>
         <a
@@ -153,19 +153,29 @@
     
     <li>
         <a
-            title="https://w3id.org/steel/ProcessOntology/isBasedOn"
-            href=".//ProcessOntology/EngineeringStress"
-            >EngineeringStress</a> via
+            title="http://www.w3.org/2000/01/rdf-schema#subClassOf"
+            href=".//rdfsites/https/material-digital.de/pmdco/ValueObject"
+            >ValueObject</a> via
         <a
-            href=".//ProcessOntology/isBasedOn"
-            >isBasedOn</a>
+            href=".//rdfsites/http/www.w3.org/2000/01/rdf-schema#subClassOf"
+            >subClassOf</a>
+    </li>
+    
+    <li>
+        <a
+            title="https://w3id.org/steel/ProcessOntology/hasTypicalUnit"
+            href=".//rdfsites/http/qudt.org/vocab/unit/MegaPA"
+            >MegaPA</a> via
+        <a
+            href=".//ProcessOntology/hasTypicalUnit"
+            >has typical unit</a>
     </li>
     
     <li>
         <a
             title="https://w3id.org/steel/ProcessOntology/isBasedOn"
-            href=".//ProcessOntology/PercentageExtension"
-            >PercentageExtension</a> via
+            href=".//ProcessOntology/EngineeringStress"
+            >EngineeringStress</a> via
         <a
             href=".//ProcessOntology/isBasedOn"
             >isBasedOn</a>
@@ -181,6 +191,16 @@
             >isBasedOn</a>
     </li>
     
+    <li>
+        <a
+            title="https://w3id.org/steel/ProcessOntology/isBasedOn"
+            href=".//ProcessOntology/PercentageExtension"
+            >PercentageExtension</a> via
+        <a
+            href=".//ProcessOntology/isBasedOn"
+            >isBasedOn</a>
+    </li>
+    
 </ul>
 
 <h3>Resources linking here</h3>
@@ -189,8 +209,18 @@
     
     <li>
         <a
+            title="http://www.w3.org/2000/01/rdf-schema#seeAlso"
+            href=".//ProcessOntology/hasProofStrength_1Percentage_MegaPA"
+            >has ProofStrength_1Percentage</a> via
+        <a
+            href=".//rdfsites/http/www.w3.org/2000/01/rdf-schema#seeAlso"
+            >seeAlso</a>
+    </li>
+    
+    <li>
+        <a
             title="http://www.w3.org/2000/01/rdf-schema#range"
-            href=".//ProcessOntology/hasProofStrength_1PercentageObject"
+            href=".//ProcessOntology/hasProofStrength_1Percentage_Object"
             >hasProofStrength_1Percentage</a> via
         <a
             href=".//rdfsites/http/www.w3.org/2000/01/rdf-schema#range"

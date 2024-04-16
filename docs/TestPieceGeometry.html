@@ -45,13 +45,33 @@
         <table>
         
           <tr>
-            <td>http://www.w3.org/2004/02/skos/core#related</td>
+            <td>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</td>
+            <td>http://www.w3.org/2004/02/skos/core#Concept</td>
+          </tr>
+        
+          <tr>
+            <td>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</td>
+            <td>http://www.w3.org/2002/07/owl#Class</td>
+          </tr>
+        
+          <tr>
+            <td>http://www.w3.org/2000/01/rdf-schema#label</td>
+            <td>TestPieceGeometry</td>
+          </tr>
+        
+          <tr>
+            <td>http://www.w3.org/2000/01/rdf-schema#seeAlso</td>
             <td>https://w3id.org/steel/ProcessOntology/TestStandard</td>
           </tr>
         
           <tr>
-            <td>http://www.w3.org/2004/02/skos/core#preflabel</td>
-            <td>TestPieceGeometry</td>
+            <td>http://www.w3.org/2000/01/rdf-schema#subClassOf</td>
+            <td>https://material-digital.de/pmdco/ValueObject</td>
+          </tr>
+        
+          <tr>
+            <td>http://purl.org/dc/terms/description</td>
+            <td>The type of the specimen.</td>
           </tr>
         
           <tr>
@@ -85,33 +105,13 @@
           </tr>
         
           <tr>
-            <td>http://purl.org/dc/terms/description</td>
-            <td>The type of the specimen.</td>
-          </tr>
-        
-          <tr>
-            <td>http://www.w3.org/2000/01/rdf-schema#subClassOf</td>
-            <td>https://material-digital.de/pmdco/ValueObject</td>
-          </tr>
-        
-          <tr>
-            <td>http://www.w3.org/2000/01/rdf-schema#seeAlso</td>
-            <td>https://w3id.org/steel/ProcessOntology/TestStandard</td>
-          </tr>
-        
-          <tr>
-            <td>http://www.w3.org/2000/01/rdf-schema#label</td>
+            <td>http://www.w3.org/2004/02/skos/core#preflabel</td>
             <td>TestPieceGeometry</td>
           </tr>
         
           <tr>
-            <td>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</td>
-            <td>http://www.w3.org/2004/02/skos/core#Concept</td>
-          </tr>
-        
-          <tr>
-            <td>http://www.w3.org/1999/02/22-rdf-syntax-ns#type</td>
-            <td>http://www.w3.org/2002/07/owl#Class</td>
+            <td>http://www.w3.org/2004/02/skos/core#related</td>
+            <td>https://w3id.org/steel/ProcessOntology/TestStandard</td>
           </tr>
         
           <tr>
@@ -184,42 +184,17 @@
             <td>AFZ1-NZ50-25-D1Q</td>
           </tr>
         
+          <tr>
+            <td>https://w3id.org/steel/ProcessOntology/hasShortId</td>
+            <td>TestPieceGeometry</td>
+          </tr>
+        
         </table>
 
         
           <h3>Linked Resources</h3>
 
 <ul>
-    
-    <li>
-        <a
-            title="http://www.w3.org/2004/02/skos/core#related"
-            href=".//ProcessOntology/TestStandard"
-            >TestStandard</a> via
-        <a
-            href=".//rdfsites/http/www.w3.org/2004/02/skos/core#related"
-            >related</a>
-    </li>
-    
-    <li>
-        <a
-            title="http://www.w3.org/2000/01/rdf-schema#subClassOf"
-            href=".//rdfsites/https/material-digital.de/pmdco/ValueObject"
-            >ValueObject</a> via
-        <a
-            href=".//rdfsites/http/www.w3.org/2000/01/rdf-schema#subClassOf"
-            >subClassOf</a>
-    </li>
-    
-    <li>
-        <a
-            title="http://www.w3.org/2000/01/rdf-schema#seeAlso"
-            href=".//ProcessOntology/TestStandard"
-            >TestStandard</a> via
-        <a
-            href=".//rdfsites/http/www.w3.org/2000/01/rdf-schema#seeAlso"
-            >seeAlso</a>
-    </li>
     
     <li>
         <a
@@ -241,6 +216,36 @@
             >type</a>
     </li>
     
+    <li>
+        <a
+            title="http://www.w3.org/2000/01/rdf-schema#seeAlso"
+            href=".//ProcessOntology/TestStandard"
+            >TestStandard</a> via
+        <a
+            href=".//rdfsites/http/www.w3.org/2000/01/rdf-schema#seeAlso"
+            >seeAlso</a>
+    </li>
+    
+    <li>
+        <a
+            title="http://www.w3.org/2000/01/rdf-schema#subClassOf"
+            href=".//rdfsites/https/material-digital.de/pmdco/ValueObject"
+            >ValueObject</a> via
+        <a
+            href=".//rdfsites/http/www.w3.org/2000/01/rdf-schema#subClassOf"
+            >subClassOf</a>
+    </li>
+    
+    <li>
+        <a
+            title="http://www.w3.org/2004/02/skos/core#related"
+            href=".//ProcessOntology/TestStandard"
+            >TestStandard</a> via
+        <a
+            href=".//rdfsites/http/www.w3.org/2004/02/skos/core#related"
+            >related</a>
+    </li>
+    
 </ul>
 
 <h3>Resources linking here</h3>
@@ -249,8 +254,88 @@
     
     <li>
         <a
+            title="http://www.w3.org/2000/01/rdf-schema#seeAlso"
+            href=".//ProcessOntology/ParallelLength"
+            >ParallelLength</a> via
+        <a
+            href=".//rdfsites/http/www.w3.org/2000/01/rdf-schema#seeAlso"
+            >seeAlso</a>
+    </li>
+    
+    <li>
+        <a
+            title="http://www.w3.org/2004/02/skos/core#related"
+            href=".//ProcessOntology/ParallelLength"
+            >ParallelLength</a> via
+        <a
+            href=".//rdfsites/http/www.w3.org/2004/02/skos/core#related"
+            >related</a>
+    </li>
+    
+    <li>
+        <a
+            title="http://www.w3.org/2000/01/rdf-schema#seeAlso"
+            href=".//ProcessOntology/Radius"
+            >Radius</a> via
+        <a
+            href=".//rdfsites/http/www.w3.org/2000/01/rdf-schema#seeAlso"
+            >seeAlso</a>
+    </li>
+    
+    <li>
+        <a
+            title="http://www.w3.org/2004/02/skos/core#related"
+            href=".//ProcessOntology/Radius"
+            >Radius</a> via
+        <a
+            href=".//rdfsites/http/www.w3.org/2004/02/skos/core#related"
+            >related</a>
+    </li>
+    
+    <li>
+        <a
+            title="http://www.w3.org/2000/01/rdf-schema#seeAlso"
+            href=".//ProcessOntology/ShearLength"
+            >ShearLength</a> via
+        <a
+            href=".//rdfsites/http/www.w3.org/2000/01/rdf-schema#seeAlso"
+            >seeAlso</a>
+    </li>
+    
+    <li>
+        <a
+            title="http://www.w3.org/2004/02/skos/core#related"
+            href=".//ProcessOntology/ShearLength"
+            >ShearLength</a> via
+        <a
+            href=".//rdfsites/http/www.w3.org/2004/02/skos/core#related"
+            >related</a>
+    </li>
+    
+    <li>
+        <a
+            title="http://www.w3.org/2000/01/rdf-schema#seeAlso"
+            href=".//ProcessOntology/Diameter"
+            >Diameter</a> via
+        <a
+            href=".//rdfsites/http/www.w3.org/2000/01/rdf-schema#seeAlso"
+            >seeAlso</a>
+    </li>
+    
+    <li>
+        <a
+            title="http://www.w3.org/2004/02/skos/core#related"
+            href=".//ProcessOntology/Diameter"
+            >Diameter</a> via
+        <a
+            href=".//rdfsites/http/www.w3.org/2004/02/skos/core#related"
+            >related</a>
+    </li>
+    
+    <li>
+        <a
             title="http://www.w3.org/2000/01/rdf-schema#range"
-            href=".//ProcessOntology/hasTestPieceGeometryObject"
+            href=".//ProcessOntology/hasTestPieceGeometry_Object"
             >hasTestPieceGeometry</a> via
         <a
             href=".//rdfsites/http/www.w3.org/2000/01/rdf-schema#range"
@@ -260,81 +345,11 @@
     <li>
         <a
             title="http://www.w3.org/2000/01/rdf-schema#seeAlso"
-            href=".//ProcessOntology/ParallelLength"
-            >ParallelLength</a> via
+            href=".//ProcessOntology/hasTestPieceGeometry"
+            >has TestPieceGeometry</a> via
         <a
             href=".//rdfsites/http/www.w3.org/2000/01/rdf-schema#seeAlso"
             >seeAlso</a>
-    </li>
-    
-    <li>
-        <a
-            title="http://www.w3.org/2004/02/skos/core#related"
-            href=".//ProcessOntology/ParallelLength"
-            >ParallelLength</a> via
-        <a
-            href=".//rdfsites/http/www.w3.org/2004/02/skos/core#related"
-            >related</a>
-    </li>
-    
-    <li>
-        <a
-            title="http://www.w3.org/2000/01/rdf-schema#seeAlso"
-            href=".//ProcessOntology/Radius"
-            >Radius</a> via
-        <a
-            href=".//rdfsites/http/www.w3.org/2000/01/rdf-schema#seeAlso"
-            >seeAlso</a>
-    </li>
-    
-    <li>
-        <a
-            title="http://www.w3.org/2004/02/skos/core#related"
-            href=".//ProcessOntology/Radius"
-            >Radius</a> via
-        <a
-            href=".//rdfsites/http/www.w3.org/2004/02/skos/core#related"
-            >related</a>
-    </li>
-    
-    <li>
-        <a
-            title="http://www.w3.org/2000/01/rdf-schema#seeAlso"
-            href=".//ProcessOntology/ShearLength"
-            >ShearLength</a> via
-        <a
-            href=".//rdfsites/http/www.w3.org/2000/01/rdf-schema#seeAlso"
-            >seeAlso</a>
-    </li>
-    
-    <li>
-        <a
-            title="http://www.w3.org/2004/02/skos/core#related"
-            href=".//ProcessOntology/ShearLength"
-            >ShearLength</a> via
-        <a
-            href=".//rdfsites/http/www.w3.org/2004/02/skos/core#related"
-            >related</a>
-    </li>
-    
-    <li>
-        <a
-            title="http://www.w3.org/2000/01/rdf-schema#seeAlso"
-            href=".//ProcessOntology/Diameter"
-            >Diameter</a> via
-        <a
-            href=".//rdfsites/http/www.w3.org/2000/01/rdf-schema#seeAlso"
-            >seeAlso</a>
-    </li>
-    
-    <li>
-        <a
-            title="http://www.w3.org/2004/02/skos/core#related"
-            href=".//ProcessOntology/Diameter"
-            >Diameter</a> via
-        <a
-            href=".//rdfsites/http/www.w3.org/2004/02/skos/core#related"
-            >related</a>
     </li>
     
     <li>

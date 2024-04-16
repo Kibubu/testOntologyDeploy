@@ -12,4 +12,6 @@
 <https://w3id.org/steel/ProcessOntology/Radius> <https://w3id.org/steel/ProcessOntology/hasExampleData> "4" .
 <https://w3id.org/steel/ProcessOntology/Radius> <https://w3id.org/steel/ProcessOntology/hasLabelSource> "YS1-FzR4-S1Q"@en .
 <https://w3id.org/steel/ProcessOntology/Radius> <https://w3id.org/steel/ProcessOntology/hasLabelSource> "YS1-Sz0\u00B0-S1L"@de .
+<https://w3id.org/steel/ProcessOntology/Radius> <https://w3id.org/steel/ProcessOntology/hasShortId> "Radius" .
+<https://w3id.org/steel/ProcessOntology/Radius> <https://w3id.org/steel/ProcessOntology/hasTypicalUnit> <http://qudt.org/vocab/unit/MilliM> .
 <https://w3id.org/steel/ProcessOntology/Radius> <https://w3id.org/steel/ProcessOntology/hasTypicalUnitLabel> "mm" .

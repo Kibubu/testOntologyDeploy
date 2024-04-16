@@ -38,6 +38,12 @@
         "type" : "literal"
         }
       
+      ],
+    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
+        "value" : "MAT_ADD_DAMAGE_GISSMO",
+        "type" : "literal"
+        }
+      
       ]
     }
   }

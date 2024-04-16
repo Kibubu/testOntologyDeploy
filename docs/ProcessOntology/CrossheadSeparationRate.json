@@ -129,6 +129,12 @@
         }
       
       ],
+    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
+        "value" : "CrossheadSeparationRate",
+        "type" : "literal"
+        }
+      
+      ],
     "https://w3id.org/steel/ProcessOntology/hasSymbol" : [ {
         "value" : "vc",
         "lang" : "en",
@@ -140,6 +146,12 @@
         "value" : "\\nu_c",
         "lang" : "en",
         "type" : "literal"
+        }
+      
+      ],
+    "https://w3id.org/steel/ProcessOntology/hasTypicalUnit" : [ {
+        "value" : "http://qudt.org/vocab/unit/MilliM-PER-SEC",
+        "type" : "uri"
         }
       
       ],

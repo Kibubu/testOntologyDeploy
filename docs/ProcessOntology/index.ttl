@@ -1,15 +1,14 @@
-PREFIX :         <https://w3id.org/steel/ProcessOntology/>
-PREFIX dc:       <http://purl.org/dc/elements/1.1/>
-PREFIX dcterms:  <http://purl.org/dc/terms/>
-PREFIX emmo:     <http://emmo.info/emmo#>
-PREFIX owl:      <http://www.w3.org/2002/07/owl#>
-PREFIX pmdco:    <https://material-digital.de/pmdco/>
-PREFIX qudt:     <http://qudt.org/schema/qudt/>
-PREFIX qudtUnit: <http://qudt.org/vocab/unit/>
-PREFIX rdf:      <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX rdfs:     <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX skos:     <http://www.w3.org/2004/02/skos/core#>
-PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
+PREFIX :        <https://w3id.org/steel/ProcessOntology/>
+PREFIX dc:      <http://purl.org/dc/elements/1.1/>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX emmo:    <http://emmo.info/emmo#>
+PREFIX owl:     <http://www.w3.org/2002/07/owl#>
+PREFIX pmdco:   <https://material-digital.de/pmdco/>
+PREFIX qudt:    <http://qudt.org/schema/qudt/>
+PREFIX rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs:    <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos:    <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd:     <http://www.w3.org/2001/XMLSchema#>
 
 :ElasticConstantC44  rdf:type  owl:Class , skos:Concept;
         rdfs:label            "ElasticConstantC44"@en;
@@ -20,7 +19,7 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
         :hasLabelSource       "General Knowledge"@en , "General Knowledge"@de;
         :hasShortId           "ElasticConstantC44";
         :hasSymbol            "C_44"@en;
-        :hasTypicalUnit       qudtUnit:MegaPA;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/MegaPA>;
         :hasTypicalUnitLabel  "MPa" .
 
 :MinimumCrosssectionAfterFracture
@@ -34,7 +33,7 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
         :hasLabelSource       "YS1-Fz-D1Q"@de;
         :hasShortId           "MinimumCrosssectionAfterFracture";
         :hasSymbol            "S_{u}"@en;
-        :hasTypicalUnit       qudtUnit:MilliM2;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/MilliM2>;
         :hasTypicalUnitLabel  "mm2";
         :isBasedOn            :DiameterAfterFracture2 , :ThicknessAfterFracture2 , :WidthAfterFracture1 , :DiameterAfterFracture1 , :WidthAfterFracture2 , :ThicknessAfterFracture1 .
 
@@ -57,7 +56,7 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
 :hasWidth_MilliM  rdf:type  rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has Width";
         rdfs:seeAlso   :Width , :hasWidth_Object;
-        :hasUnit       qudtUnit:MilliM;
+        :hasUnit       <http://qudt.org/vocab/unit/MilliM>;
         :hasUnitLabel  "mm" .
 
 :ElasticConstantC12  rdf:type  skos:Concept , owl:Class;
@@ -69,7 +68,7 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
         :hasLabelSource       "General Knowledge"@en , "General Knowledge"@de;
         :hasShortId           "ElasticConstantC12";
         :hasSymbol            "C_12"@en;
-        :hasTypicalUnit       qudtUnit:MegaPA;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/MegaPA>;
         :hasTypicalUnitLabel  "MPa" .
 
 :stand  rdf:type        owl:Class;
@@ -109,7 +108,8 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
         rdfs:label    "has LatticeStructure";
         rdfs:seeAlso  :LatticeStructure , :hasLatticeStructure_Object .
 
-qudtUnit:N  rdf:type   qudt:Unit;
+<http://qudt.org/vocab/unit/N>
+        rdf:type       qudt:Unit;
         :hasShortId    "N";
         :hasUnitLabel  "N" .
 
@@ -142,6 +142,14 @@ qudtUnit:N  rdf:type   qudt:Unit;
         rdfs:range      :FailureCriteriaTypeAdd4StrainAverage;
         skos:preflabel  "hasFailureCriteriaTypeAdd4StrainAverage"@en .
 
+:SampleInfos  rdf:type   owl:Class , skos:Concept;
+        rdfs:label       "SampleInfos"@en;
+        rdfs:subClassOf  pmdco:ValueObject;
+        skos:altlabel    "Probeninfos"@de , "sample infos"@en;
+        skos:preflabel   "SampleInfos"@en;
+        :hasLabelSource  "linguee"@en , "K-Item"@de;
+        :hasShortId      "SampleInfos" .
+
 :hasClamping_Object  rdf:type  owl:ObjectProperty , rdf:Property;
         rdfs:label      "hasClamping"@en;
         rdfs:range      :Clamping;
@@ -168,7 +176,7 @@ qudtUnit:N  rdf:type   qudt:Unit;
         rdf:type       rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has BlankHolderForce";
         rdfs:seeAlso   :BlankHolderForce , :hasBlankHolderForce_Object;
-        :hasUnit       qudtUnit:KiloN;
+        :hasUnit       <http://qudt.org/vocab/unit/KiloN>;
         :hasUnitLabel  "kN" .
 
 :MeasuringDevice  rdf:type  owl:Class , skos:Concept;
@@ -209,7 +217,7 @@ qudtUnit:N  rdf:type   qudt:Unit;
         :hasShortId           "YieldForce_0.2Percentage";
         :hasSymbol            "Fp02"@en;
         :hasSymbolLatex       "F_{p02}"@en;
-        :hasTypicalUnit       qudtUnit:KiloN;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/KiloN>;
         :hasTypicalUnitLabel  "kN";
         :isBasedOn            :Force , :ModulusOfElasticity , :PercentageExtension .
 
@@ -217,7 +225,7 @@ qudtUnit:N  rdf:type   qudt:Unit;
         rdf:type       rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has TrueTotalStrain";
         rdfs:seeAlso   :TrueTotalStrain , :hasTrueTotalStrain_Object;
-        :hasUnit       qudtUnit:UNITLESS;
+        :hasUnit       <http://qudt.org/vocab/unit/UNITLESS>;
         :hasUnitLabel  "1" .
 
 :hasWidthChange_Object
@@ -226,13 +234,26 @@ qudtUnit:N  rdf:type   qudt:Unit;
         rdfs:range      :WidthChange;
         skos:preflabel  "hasWidthChange"@en .
 
+:SampleType  rdf:type        owl:Class , skos:Concept;
+        rdfs:label           "SampleType"@en;
+        rdfs:seeAlso         :TestPieceGeometry;
+        rdfs:subClassOf      pmdco:ValueObject;
+        dcterms:description  "The general type of the specimen."@en , "die allgemeine Probenart"@de;
+        skos:altlabel        "Probentyp"@de , "sample type"@en;
+        skos:preflabel       "SampleType"@en;
+        skos:related         :TestPieceGeometry;
+        :hasExampleData      "Flachzugprobe";
+        :hasLabelSource      "K-Item"@de , "linguee"@en;
+        :hasShortId          "SampleType" .
+
 :hasWork_KiloJ  rdf:type  rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has Work";
         rdfs:seeAlso   :Work , :hasWork_Object;
-        :hasUnit       qudtUnit:KiloJ;
+        :hasUnit       <http://qudt.org/vocab/unit/KiloJ>;
         :hasUnitLabel  "kJ" .
 
-qudtUnit:MilliM2  rdf:type  qudt:Unit;
+<http://qudt.org/vocab/unit/MilliM2>
+        rdf:type       qudt:Unit;
         :hasShortId    "MilliM2";
         :hasUnitLabel  "mm2" .
 
@@ -253,7 +274,7 @@ qudtUnit:MilliM2  rdf:type  qudt:Unit;
         :hasLabelSource       "General Knowledge"@en , "General Knowledge"@de;
         :hasShortId           "HardeningParameterTau0";
         :hasSymbolLatex       "\\tau_0"@en;
-        :hasTypicalUnit       qudtUnit:MegaPA;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/MegaPA>;
         :hasTypicalUnitLabel  "MPa" .
 
 :BlankHolderForce  rdf:type   skos:Concept , owl:Class;
@@ -265,7 +286,7 @@ qudtUnit:MilliM2  rdf:type  qudt:Unit;
         :hasExampleData       "600" , "325";
         :hasLabelSource       "DIN EN ISO 12004-2: 2021_07, 13"@de , "DIN EN ISO 12004-2: 2021_07, 5"@en , "AFZ1-NZ50-25-D1Q"@en;
         :hasShortId           "BlankHolderForce";
-        :hasTypicalUnit       qudtUnit:KiloN;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/KiloN>;
         :hasTypicalUnitLabel  "kN" .
 
 :hasGrid  rdf:type    rdf:Property , owl:DatatypeProperty;
@@ -366,7 +387,8 @@ qudtUnit:MilliM2  rdf:type  qudt:Unit;
         rdfs:label    "has SampleCode";
         rdfs:seeAlso  :SampleCode , :hasSampleCode_Object .
 
-qudtUnit:GigaPA  rdf:type  qudt:Unit;
+<http://qudt.org/vocab/unit/GigaPA>
+        rdf:type       qudt:Unit;
         :hasShortId    "GigaPA";
         :hasUnitLabel  "GPa" .
 
@@ -384,7 +406,7 @@ qudtUnit:GigaPA  rdf:type  qudt:Unit;
         rdf:type       rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has PercentageTotalExtensionAtFracture";
         rdfs:seeAlso   :PercentageTotalExtensionAtFracture , :hasPercentageTotalExtensionAtFracture_Object;
-        :hasUnit       qudtUnit:PERCENT;
+        :hasUnit       <http://qudt.org/vocab/unit/PERCENT>;
         :hasUnitLabel  "%" .
 
 :hasElasticityModel  rdf:type  rdf:Property , owl:DatatypeProperty;
@@ -410,7 +432,7 @@ qudtUnit:GigaPA  rdf:type  qudt:Unit;
         rdfs:label    "has ExperimentIdentifier";
         rdfs:seeAlso  :ExperimentIdentifier , :hasExperimentIdentifier_Object .
 
-qudtUnit:MilliM-PER-SEC
+<http://qudt.org/vocab/unit/MilliM-PER-SEC>
         rdf:type       qudt:Unit;
         :hasShortId    "MilliM-PER-SEC";
         :hasUnitLabel  "mm/s" , "mm s -1" .
@@ -452,7 +474,7 @@ qudtUnit:MilliM-PER-SEC
         :hasShortId           "RelativeStandardDeviationOfTheSlope";
         :hasSymbol            "Sm(rel)"@en;
         :hasSymbolLatex       "S_m(rel)"@en;
-        :hasTypicalUnit       qudtUnit:PERCENT;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/PERCENT>;
         :hasTypicalUnitLabel  "%" .
 
 :hasPostProcessingSoftware
@@ -480,7 +502,7 @@ qudtUnit:MilliM-PER-SEC
         :hasShortId           "TimeDependentEngineeringStrainRate";
         :hasSymbol            "e(t)"@en;
         :hasSymbolLatex       "\\dot{e(t)}"@en;
-        :hasTypicalUnit       qudtUnit:PER-SEC;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/PER-SEC>;
         :hasTypicalUnitLabel  "s-1";
         :isBasedOn            :Extension , :ExtensometerGaugeLength , :Time .
 
@@ -491,7 +513,7 @@ qudtUnit:MilliM-PER-SEC
         skos:preflabel        "ClampingForce"@en;
         :hasLabelSource       "AFZ-BU-S1.TXT"@de , "deepl translator"@en;
         :hasShortId           "ClampingForce";
-        :hasTypicalUnit       qudtUnit:N;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/N>;
         :hasTypicalUnitLabel  "N" .
 
 :PlasticityModel  rdf:type   owl:Class , skos:Concept;
@@ -517,7 +539,7 @@ qudtUnit:MilliM-PER-SEC
 :hasForce_N  rdf:type  rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has Force";
         rdfs:seeAlso   :Force , :hasForce_Object;
-        :hasUnit       qudtUnit:N;
+        :hasUnit       <http://qudt.org/vocab/unit/N>;
         :hasUnitLabel  "N" .
 
 :TimeSeries  rdf:type   owl:Class;
@@ -534,7 +556,7 @@ qudtUnit:MilliM-PER-SEC
         :hasShortId           "TestTime";
         :hasSymbol            "tf"@en;
         :hasSymbolLatex       "t_{f]"@en;
-        :hasTypicalUnit       qudtUnit:SEC;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/SEC>;
         :hasTypicalUnitLabel  "s" .
 
 :hasEvaluationMethod_Object
@@ -666,7 +688,7 @@ qudtUnit:MilliM-PER-SEC
         skos:preflabel        "PunchDisplacement"@en;
         :hasLabelSource       "AFZ1-NZ50-25-D1Q"@en;
         :hasShortId           "PunchDisplacement";
-        :hasTypicalUnit       qudtUnit:MilliM;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/MilliM>;
         :hasTypicalUnitLabel  "mm" .
 
 :hasTestingDirection_Object
@@ -711,7 +733,7 @@ qudtUnit:MilliM-PER-SEC
         rdf:type       rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has MeanEngineeringStrainRate";
         rdfs:seeAlso   :MeanEngineeringStrainRate , :hasMeanEngineeringStrainRate_Object;
-        :hasUnit       qudtUnit:PER-SEC;
+        :hasUnit       <http://qudt.org/vocab/unit/PER-SEC>;
         :hasUnitLabel  "s-1" .
 
 :YieldingIdentifierIsoThermal
@@ -730,14 +752,14 @@ qudtUnit:MilliM-PER-SEC
         rdf:type       rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has InnerDiameterDie";
         rdfs:seeAlso   :InnerDiameterDie , :hasInnerDiameterDie_Object;
-        :hasUnit       qudtUnit:MilliM;
+        :hasUnit       <http://qudt.org/vocab/unit/MilliM>;
         :hasUnitLabel  "mm" .
 
 :hasPlasticEngineeringStrain_PERCENT
         rdf:type       rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has PlasticEngineeringStrain";
         rdfs:seeAlso   :PlasticEngineeringStrain , :hasPlasticEngineeringStrain_Object;
-        :hasUnit       qudtUnit:PERCENT;
+        :hasUnit       <http://qudt.org/vocab/unit/PERCENT>;
         :hasUnitLabel  "%" .
 
 :hasHX340LAD  rdf:type  rdf:Property , owl:DatatypeProperty;
@@ -776,14 +798,14 @@ qudtUnit:MilliM-PER-SEC
         rdf:type       rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has PercentagePermanentElongation";
         rdfs:seeAlso   :PercentagePermanentElongation , :hasPercentagePermanentElongation_Object;
-        :hasUnit       qudtUnit:PERCENT;
+        :hasUnit       <http://qudt.org/vocab/unit/PERCENT>;
         :hasUnitLabel  "%" .
 
 :hasRadiusCurvature_MilliM
         rdf:type       rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has RadiusCurvature";
         rdfs:seeAlso   :RadiusCurvature , :hasRadiusCurvature_Object;
-        :hasUnit       qudtUnit:MilliM;
+        :hasUnit       <http://qudt.org/vocab/unit/MilliM>;
         :hasUnitLabel  "mm" .
 
 :hasBoundaryFile_Object
@@ -800,7 +822,7 @@ qudtUnit:MilliM-PER-SEC
         skos:preflabel        "YieldStrength"@en;
         :hasLabelSource       "DIN EN ISO 6892-1, 3.10.2"@en , "DIN EN ISO 6892-1, 3.10.2"@de;
         :hasShortId           "YieldStrength";
-        :hasTypicalUnit       qudtUnit:MegaPA;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/MegaPA>;
         :hasTypicalUnitLabel  "MPa" .
 
 :hasHomogenizationModel_Object
@@ -821,7 +843,7 @@ qudtUnit:MilliM-PER-SEC
         rdf:type              skos:Concept , owl:Class;
         rdfs:label            "PercentageReductionOfArea"@en;
         rdfs:subClassOf       pmdco:ValueObject;
-        dcterms:description   "maximum change in cross-sectional area which has occured during the test expressed as a percentage of the original cross-sectional area"@en , "größte während des Versuchs aufgetretene Änderung des Querschnitts, angegeben in Prozent, bezogen auf den Anfangsquerschnitt"@de;
+        dcterms:description   "größte während des Versuchs aufgetretene Änderung des Querschnitts, angegeben in Prozent, bezogen auf den Anfangsquerschnitt"@de , "maximum change in cross-sectional area which has occured during the test expressed as a percentage of the original cross-sectional area"@en;
         skos:altlabel         "percentage reduction of area"@en , "Brucheinschnürung Z"@de , "Z"@en;
         skos:preflabel        "PercentageReductionOfArea"@en;
         :hasExampleData       "78.0" , "67.42";
@@ -829,7 +851,7 @@ qudtUnit:MilliM-PER-SEC
         :hasShortId           "PercentageReductionOfArea";
         :hasSymbol            "Z"@en;
         :hasSymbolLatex       "Z"@en;
-        :hasTypicalUnit       qudtUnit:PERCENT;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/PERCENT>;
         :hasTypicalUnitLabel  "%";
         :isBasedOn            :OriginalCrosssection , :MinimumCrosssectionAfterFracture .
 
@@ -849,7 +871,7 @@ qudtUnit:MilliM-PER-SEC
         rdf:type       rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has ThicknessAfterFracture2";
         rdfs:seeAlso   :ThicknessAfterFracture2 , :hasThicknessAfterFracture2_Object;
-        :hasUnit       qudtUnit:MilliM;
+        :hasUnit       <http://qudt.org/vocab/unit/MilliM>;
         :hasUnitLabel  "mm" .
 
 :MatTabulatedJohnsonCookLogInterpolation
@@ -866,7 +888,7 @@ qudtUnit:MilliM-PER-SEC
         rdf:type       rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has MaximumForce";
         rdfs:seeAlso   :MaximumForce , :hasMaximumForce_Object;
-        :hasUnit       qudtUnit:KiloN;
+        :hasUnit       <http://qudt.org/vocab/unit/KiloN>;
         :hasUnitLabel  "kN" .
 
 :hasComplexPhaseSteel
@@ -896,7 +918,7 @@ qudtUnit:MilliM-PER-SEC
         :hasShortId           "TrueWidthStrain";
         :hasSymbol            "eps-wBreite"@en;
         :hasSymbolLatex       "eps-wBreite"@en;
-        :hasTypicalUnit       qudtUnit:UNITLESS;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/UNITLESS>;
         :hasTypicalUnitLabel  "1";
         :isBasedOn            :WidthStrain .
 
@@ -925,7 +947,7 @@ qudtUnit:MilliM-PER-SEC
         :hasShortId           "InnerDiameterDie";
         :hasSymbol            "d_die"@en;
         :hasSymbolLatex       "d_die"@en;
-        :hasTypicalUnit       qudtUnit:MilliM;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/MilliM>;
         :hasTypicalUnitLabel  "mm" .
 
 :hasMildSteel  rdf:type  rdf:Property , owl:DatatypeProperty;
@@ -941,7 +963,7 @@ qudtUnit:MilliM-PER-SEC
         :hasLabelSource       "General Knowledge"@en , "General Knowledge"@de;
         :hasShortId           "ReferenceShearRate";
         :hasSymbolLatex       "\\dot{\\vargamma}_{0}"@en;
-        :hasTypicalUnit       qudtUnit:UNITLESS;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/UNITLESS>;
         :hasTypicalUnitLabel  "-" .
 
 :hasHCT980X  rdf:type  rdf:Property , owl:DatatypeProperty;
@@ -973,14 +995,14 @@ qudtUnit:MilliM-PER-SEC
         :hasShortId           "GaugeLength";
         :hasSymbol            "L"@en;
         :hasSymbolLatex       "L"@en;
-        :hasTypicalUnit       qudtUnit:MilliM;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/MilliM>;
         :hasTypicalUnitLabel  "mm" .
 
 :hasPercentageTotalExtensionAtMaximumForce_PERCENT
         rdf:type       rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has PercentageTotalExtensionAtMaximumForce";
         rdfs:seeAlso   :PercentageTotalExtensionAtMaximumForce , :hasPercentageTotalExtensionAtMaximumForce_Object;
-        :hasUnit       qudtUnit:PERCENT;
+        :hasUnit       <http://qudt.org/vocab/unit/PERCENT>;
         :hasUnitLabel  "%" .
 
 :PyironJob  rdf:type     owl:Class;
@@ -1001,7 +1023,7 @@ qudtUnit:MilliM-PER-SEC
         :hasShortId           "EngineeringStress";
         :hasSymbol            "Sig-technisch"@en , "R"@en;
         :hasSymbolLatex       "Sig-technisch"@en , "R"@en;
-        :hasTypicalUnit       qudtUnit:MegaPA;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/MegaPA>;
         :hasTypicalUnitLabel  "MPa";
         :isBasedOn            :OriginalCrosssection , :Force .
 
@@ -1020,13 +1042,13 @@ qudtUnit:MilliM-PER-SEC
         rdf:type       rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has PercentageExtension";
         rdfs:seeAlso   :PercentageExtension , :hasPercentageExtension_Object;
-        :hasUnit       qudtUnit:UNITLESS;
+        :hasUnit       <http://qudt.org/vocab/unit/UNITLESS>;
         :hasUnitLabel  "1" .
 
 :hasDiameter_MilliM  rdf:type  rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has Diameter";
         rdfs:seeAlso   :Diameter , :hasDiameter_Object;
-        :hasUnit       qudtUnit:MilliM;
+        :hasUnit       <http://qudt.org/vocab/unit/MilliM>;
         :hasUnitLabel  "mm" .
 
 :ScriptJob  rdf:type     owl:Class;
@@ -1045,7 +1067,7 @@ qudtUnit:MilliM-PER-SEC
         rdf:type       rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has CrossheadSeparationRate";
         rdfs:seeAlso   :CrossheadSeparationRate , :hasCrossheadSeparationRate_Object;
-        :hasUnit       qudtUnit:MilliM-PER-SEC;
+        :hasUnit       <http://qudt.org/vocab/unit/MilliM-PER-SEC>;
         :hasUnitLabel  "mm/s" , "mm s -1" .
 
 :hasBatchNumber  rdf:type  rdf:Property , owl:DatatypeProperty;
@@ -1101,7 +1123,8 @@ qudtUnit:MilliM-PER-SEC
         rdfs:range      :TargetClampingForce;
         skos:preflabel  "hasTargetClampingForce"@en .
 
-qudtUnit:KiloJ  rdf:type  qudt:Unit;
+<http://qudt.org/vocab/unit/KiloJ>
+        rdf:type       qudt:Unit;
         :hasShortId    "KiloJ";
         :hasUnitLabel  "kJ" .
 
@@ -1114,7 +1137,7 @@ qudtUnit:KiloJ  rdf:type  qudt:Unit;
         rdf:type       rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has EngineeringStrain";
         rdfs:seeAlso   :EngineeringStrain , :hasEngineeringStrain_Object;
-        :hasUnit       qudtUnit:PERCENT;
+        :hasUnit       <http://qudt.org/vocab/unit/PERCENT>;
         :hasUnitLabel  "%" .
 
 :DamaskCode  rdf:type    owl:Class;
@@ -1140,10 +1163,10 @@ qudtUnit:KiloJ  rdf:type  qudt:Unit;
         dcterms:description   "Parameter, der in der Interaktionsmatrix die Fremdverfestigung (latent hardning) eines Gleitsystems innerhalb der gleichen Gleitsystem-Familie beschreibt"@de;
         skos:altlabel         "LatentHardening q0"@en;
         skos:preflabel        "LatentHardeningQ0"@en;
-        :hasLabelSource       "General Knowledge"@de , "General Knowledge"@en;
+        :hasLabelSource       "General Knowledge"@en , "General Knowledge"@de;
         :hasShortId           "LatentHardeningQ0";
         :hasSymbolLatex       "\\q_0"@en;
-        :hasTypicalUnit       qudtUnit:UNITLESS;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/UNITLESS>;
         :hasTypicalUnitLabel  "-" .
 
 :ElementDeletionTreatment
@@ -1171,7 +1194,7 @@ qudtUnit:KiloJ  rdf:type  qudt:Unit;
         skos:altlabel        "material"@en , "Material"@de , "Material"@en , "MATERIAL_NAME"@en , "Werkstoff"@de;
         skos:preflabel       "Material"@en;
         :hasExampleData      "ZStE340" , "HX340LAD" , "42CrMoS4";
-        :hasLabelSource      "AFZ1-Fz-S1Q.xlsx"@de , "AFZ-BU-S1.TXT"@de , "DIN EN ISO 16808:2022-08, 12"@de , "DIN EN ISO 16808:2022-08, 12"@en , "General Knowledge"@de , "General Knowledge"@en , "AFZ1-ST-D1"@en , "AFZ1-NZ50-25-D1Q"@de , "DIN EN ISO 12004-2: 2021_07"@en , "DIN EN ISO 12004-2: 2021_07, 7"@de , "YS1-Fz-D1Q"@de , "AWA_1_01_Rz-46N171"@de , "AFZ1-NZ50-25-D1Q"@en;
+        :hasLabelSource      "AFZ1-Fz-S1Q.xlsx"@de , "AFZ-BU-S1.TXT"@de , "DIN EN ISO 16808:2022-08, 12"@en , "DIN EN ISO 16808:2022-08, 12"@de , "General Knowledge"@en , "General Knowledge"@de , "AFZ1-ST-D1"@en , "AFZ1-NZ50-25-D1Q"@en , "DIN EN ISO 12004-2: 2021_07"@en , "DIN EN ISO 12004-2: 2021_07, 7"@de , "YS1-Fz-D1Q"@de , "AWA_1_01_Rz-46N171"@de , "AFZ1-NZ50-25-D1Q"@de;
         :hasShortId          "Material" .
 
 :TotalLength  rdf:type        owl:Class , skos:Concept;
@@ -1184,7 +1207,7 @@ qudtUnit:KiloJ  rdf:type  qudt:Unit;
         :hasShortId           "TotalLength";
         :hasSymbol            "Lt"@en;
         :hasSymbolLatex       "L_t"@en;
-        :hasTypicalUnit       qudtUnit:MilliM;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/MilliM>;
         :hasTypicalUnitLabel  "mm" .
 
 :stripWidth  rdf:type   owl:Class;
@@ -1201,7 +1224,7 @@ qudtUnit:KiloJ  rdf:type  qudt:Unit;
         rdf:type       rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has TruePlasticStrain";
         rdfs:seeAlso   :TruePlasticStrain , :hasTruePlasticStrain_Object;
-        :hasUnit       qudtUnit:UNITLESS;
+        :hasUnit       <http://qudt.org/vocab/unit/UNITLESS>;
         :hasUnitLabel  "1" .
 
 :hasFailureStrainIdentifier_Object
@@ -1214,7 +1237,7 @@ qudtUnit:KiloJ  rdf:type  qudt:Unit;
         rdf:type       rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has OriginalDiameter";
         rdfs:seeAlso   :OriginalDiameter , :hasOriginalDiameter_Object;
-        :hasUnit       qudtUnit:MilliM;
+        :hasUnit       <http://qudt.org/vocab/unit/MilliM>;
         :hasUnitLabel  "mm" .
 
 :hasMaximumForceNoDiscontinousYielding_Object
@@ -1227,7 +1250,7 @@ qudtUnit:KiloJ  rdf:type  qudt:Unit;
         rdf:type       rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has ProofStrength_1Percentage";
         rdfs:seeAlso   :ProofStrength_1Percentage , :hasProofStrength_1Percentage_Object;
-        :hasUnit       qudtUnit:MegaPA;
+        :hasUnit       <http://qudt.org/vocab/unit/MegaPA>;
         :hasUnitLabel  "MPa" .
 
 :hasMeasuringDevice  rdf:type  rdf:Property , owl:DatatypeProperty;
@@ -1238,7 +1261,7 @@ qudtUnit:KiloJ  rdf:type  qudt:Unit;
         rdf:type       rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has RateSensitivityOfSlip";
         rdfs:seeAlso   :RateSensitivityOfSlip , :hasRateSensitivityOfSlip_Object;
-        :hasUnit       qudtUnit:UNITLESS;
+        :hasUnit       <http://qudt.org/vocab/unit/UNITLESS>;
         :hasUnitLabel  "-" .
 
 :TestTemperatur  rdf:type  owl:Class , skos:Concept;
@@ -1290,7 +1313,7 @@ qudtUnit:KiloJ  rdf:type  qudt:Unit;
         rdf:type       rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has PunchDiameter";
         rdfs:seeAlso   :PunchDiameter , :hasPunchDiameter_Object;
-        :hasUnit       qudtUnit:MilliM;
+        :hasUnit       <http://qudt.org/vocab/unit/MilliM>;
         :hasUnitLabel  "mm" .
 
 :HCT980C  rdf:type       skos:Concept , owl:Class;
@@ -1311,7 +1334,7 @@ qudtUnit:KiloJ  rdf:type  qudt:Unit;
         rdf:type       rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has HardeningParameterTau0";
         rdfs:seeAlso   :HardeningParameterTau0 , :hasHardeningParameterTau0_Object;
-        :hasUnit       qudtUnit:MegaPA;
+        :hasUnit       <http://qudt.org/vocab/unit/MegaPA>;
         :hasUnitLabel  "MPa" .
 
 :EbsdFileName  rdf:type      skos:Concept , owl:Class;
@@ -1333,7 +1356,7 @@ qudtUnit:KiloJ  rdf:type  qudt:Unit;
         :hasLabelSource       "General Knowledge"@en , "General Knowledge"@de;
         :hasShortId           "HardeningParameterTheta0";
         :hasSymbolLatex       "\\theta_0"@en;
-        :hasTypicalUnit       qudtUnit:MegaPA;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/MegaPA>;
         :hasTypicalUnitLabel  "MPa" .
 
 :hasDamageExponent_UNITLESS
@@ -1358,7 +1381,7 @@ qudtUnit:KiloJ  rdf:type  qudt:Unit;
         :hasShortId           "TotalEngineeringStrain";
         :hasSymbol            "et"@en;
         :hasSymbolLatex       "e_{t}"@en;
-        :hasTypicalUnit       qudtUnit:PERCENT;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/PERCENT>;
         :hasTypicalUnitLabel  "%" .
 
 :J-Per-Gm-K  rdf:type  qudt:Unit;
@@ -1473,7 +1496,7 @@ qudtUnit:KiloJ  rdf:type  qudt:Unit;
         rdf:type       rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has DiameterAfterFracture1";
         rdfs:seeAlso   :DiameterAfterFracture1 , :hasDiameterAfterFracture1_Object;
-        :hasUnit       qudtUnit:MilliM;
+        :hasUnit       <http://qudt.org/vocab/unit/MilliM>;
         :hasUnitLabel  "mm" .
 
 :EulerAngle3  rdf:type       skos:Concept , owl:Class;
@@ -1503,7 +1526,7 @@ qudtUnit:KiloJ  rdf:type  qudt:Unit;
         :hasShortId           "UpperYieldStrength";
         :hasSymbol            "ReH"@en;
         :hasSymbolLatex       "R_{eH}"@en;
-        :hasTypicalUnit       qudtUnit:MegaPA;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/MegaPA>;
         :hasTypicalUnitLabel  "MPa" .
 
 :MaximumForceDiscontinousYielding
@@ -1517,7 +1540,7 @@ qudtUnit:KiloJ  rdf:type  qudt:Unit;
         :hasShortId           "MaximumForceDiscontinousYielding";
         :hasSymbol            "Fm"@en;
         :hasSymbolLatex       "F_m"@en;
-        :hasTypicalUnit       qudtUnit:N;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/N>;
         :hasTypicalUnitLabel  "N" .
 
 :metadata  rdf:type     owl:DatatypeProperty;
@@ -1536,7 +1559,7 @@ qudtUnit:KiloJ  rdf:type  qudt:Unit;
         :hasShortId           "FinalGaugeLengthAfterFracture";
         :hasSymbol            "Lu"@en;
         :hasSymbolLatex       "L_u"@en;
-        :hasTypicalUnit       qudtUnit:MilliM;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/MilliM>;
         :hasTypicalUnitLabel  "mm" .
 
 :hasSerialNumber  rdf:type  rdf:Property , owl:DatatypeProperty;
@@ -1550,11 +1573,11 @@ qudtUnit:KiloJ  rdf:type  qudt:Unit;
         skos:altlabel         "Dicke der Probe"@de , "Initial thickness of the sheet"@en;
         skos:preflabel        "InitialThickness"@en , "initial thickness"@en , "Anfangsdicke"@de;
         :hasExampleData       "1.496";
-        :hasLabelSource       "AFZ-BU-S1.TXT"@de , "DIN EN ISO 16808:2022-08, 4"@en , "DIN EN ISO 16808:2022-08, 4"@de;
+        :hasLabelSource       "AFZ-BU-S1.TXT"@de , "DIN EN ISO 16808:2022-08, 4"@de , "DIN EN ISO 16808:2022-08, 4"@en;
         :hasShortId           "InitialThickness";
         :hasSymbol            "t_0"@en;
         :hasSymbolLatex       "t_0"@en;
-        :hasTypicalUnit       qudtUnit:MilliM;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/MilliM>;
         :hasTypicalUnitLabel  "mm" .
 
 :MaximumForce  rdf:type       owl:Class , skos:Concept;
@@ -1562,7 +1585,7 @@ qudtUnit:KiloJ  rdf:type  qudt:Unit;
         rdfs:seeAlso          :MeasuringRange;
         rdfs:subClassOf       pmdco:ValueObject;
         dcterms:description   "Maximalkraft"@de , "highest force that the test piece withstands during the test"@en , "maximum force"@en;
-        skos:altlabel         "Fm"@de , "maximum force"@en , "Maximalkraft"@de;
+        skos:altlabel         "Fm"@de , "Maximalkraft"@de , "maximum force"@en;
         skos:preflabel        "MaximumForce"@en;
         skos:related          :MeasuringRange;
         :hasExampleData       "500 kN" , "7008";
@@ -1570,11 +1593,12 @@ qudtUnit:KiloJ  rdf:type  qudt:Unit;
         :hasShortId           "MaximumForce";
         :hasSymbol            "Fm"@en;
         :hasSymbolLatex       "F_{m}"@en , "Fm"@en;
-        :hasTypicalUnit       qudtUnit:N , qudtUnit:KiloN;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/N> , <http://qudt.org/vocab/unit/KiloN>;
         :hasTypicalUnitLabel  "kN" , "N";
         :isBasedOn            :Force .
 
-qudtUnit:UNITLESS  rdf:type  qudt:Unit;
+<http://qudt.org/vocab/unit/UNITLESS>
+        rdf:type       qudt:Unit;
         :hasShortId    "UNITLESS";
         :hasUnitLabel  "1" , "-" .
 
@@ -1587,7 +1611,7 @@ qudtUnit:UNITLESS  rdf:type  qudt:Unit;
         :hasExampleData       "1000" , "25";
         :hasLabelSource       "YS1-Fz-D1Q"@de , "AFZ1-NZ50-25-D1Q"@en;
         :hasShortId           "FrameRate";
-        :hasTypicalUnit       qudtUnit:PER-SEC;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/PER-SEC>;
         :hasTypicalUnitLabel  "s-1" .
 
 :FinalCriticalStrength
@@ -1627,7 +1651,7 @@ qudtUnit:UNITLESS  rdf:type  qudt:Unit;
         skos:preflabel        "Displacement"@en;
         :hasLabelSource       "deepl translator"@en , "AFZ-BU-S1.TXT"@de;
         :hasShortId           "Displacement";
-        :hasTypicalUnit       qudtUnit:MilliM;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/MilliM>;
         :hasTypicalUnitLabel  "mm" .
 
 <https://qudt.org/vocab/unit/DEG_C>
@@ -1646,7 +1670,7 @@ qudtUnit:UNITLESS  rdf:type  qudt:Unit;
         :hasShortId           "Width";
         :hasSymbol            "B"@en;
         :hasSymbolLatex       "B"@en;
-        :hasTypicalUnit       qudtUnit:MilliM;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/MilliM>;
         :hasTypicalUnitLabel  "mm" .
 
 :Failure  rdf:type      owl:Class;
@@ -1695,7 +1719,7 @@ qudtUnit:UNITLESS  rdf:type  qudt:Unit;
         rdf:type       rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has PreliminaryForce";
         rdfs:seeAlso   :PreliminaryForce , :hasPreliminaryForce_Object;
-        :hasUnit       qudtUnit:KiloN;
+        :hasUnit       <http://qudt.org/vocab/unit/KiloN>;
         :hasUnitLabel  "kN" .
 
 :hasSymbolLatex  rdf:type  owl:DatatypeProperty;
@@ -1709,7 +1733,7 @@ qudtUnit:UNITLESS  rdf:type  qudt:Unit;
         rdf:type       rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has ModulusOfElasticity";
         rdfs:seeAlso   :ModulusOfElasticity , :hasModulusOfElasticity_Object;
-        :hasUnit       qudtUnit:MegaPA;
+        :hasUnit       <http://qudt.org/vocab/unit/MegaPA>;
         :hasUnitLabel  "MPa" .
 
 :hasTestDirection  rdf:type  rdf:Property , owl:DatatypeProperty;
@@ -1766,7 +1790,7 @@ qudtUnit:UNITLESS  rdf:type  qudt:Unit;
         rdf:type       rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has ElasticConstantC11";
         rdfs:seeAlso   :ElasticConstantC11 , :hasElasticConstantC11_Object;
-        :hasUnit       qudtUnit:MegaPA;
+        :hasUnit       <http://qudt.org/vocab/unit/MegaPA>;
         :hasUnitLabel  "MPa" .
 
 :executedBy  rdf:type   owl:DatatypeProperty;
@@ -1829,7 +1853,7 @@ qudtUnit:UNITLESS  rdf:type  qudt:Unit;
         :hasShortId           "ParallelLength";
         :hasSymbol            "Lc"@en , "L_{c}"@en;
         :hasSymbolLatex       "L_c"@en;
-        :hasTypicalUnit       qudtUnit:MilliM;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/MilliM>;
         :hasTypicalUnitLabel  "mm" .
 
 :numberOfPasses  rdf:type  owl:Class;
@@ -1846,7 +1870,7 @@ qudtUnit:UNITLESS  rdf:type  qudt:Unit;
         :hasShortId           "TransitionRadius";
         :hasSymbol            "r"@en;
         :hasSymbolLatex       "r"@en;
-        :hasTypicalUnit       qudtUnit:MilliM;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/MilliM>;
         :hasTypicalUnitLabel  "mm" .
 
 :GrainBoundaries  rdf:type  owl:Class;
@@ -1876,7 +1900,7 @@ qudtUnit:UNITLESS  rdf:type  qudt:Unit;
         :hasLabelSource       "General Knowledge"@en , "General Knowledge"@de;
         :hasShortId           "InteractionMatrix";
         :hasSymbol            "q_ab"@en;
-        :hasTypicalUnit       qudtUnit:UNITLESS;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/UNITLESS>;
         :hasTypicalUnitLabel  "-" .
 
 :MaximumSpeed  rdf:type  skos:Concept , owl:Class;
@@ -1900,14 +1924,14 @@ qudtUnit:UNITLESS  rdf:type  qudt:Unit;
         rdf:type       rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has LatentHardeningQ0";
         rdfs:seeAlso   :LatentHardeningQ0 , :hasLatentHardeningQ0_Object;
-        :hasUnit       qudtUnit:UNITLESS;
+        :hasUnit       <http://qudt.org/vocab/unit/UNITLESS>;
         :hasUnitLabel  "-" .
 
 :hasMinimumCrosssectionAfterFracture_MilliM2
         rdf:type       rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has MinimumCrosssectionAfterFracture";
         rdfs:seeAlso   :MinimumCrosssectionAfterFracture , :hasMinimumCrosssectionAfterFracture_Object;
-        :hasUnit       qudtUnit:MilliM2;
+        :hasUnit       <http://qudt.org/vocab/unit/MilliM2>;
         :hasUnitLabel  "mm2" .
 
 :HockettSherbyYieldStress
@@ -1954,7 +1978,7 @@ qudtUnit:UNITLESS  rdf:type  qudt:Unit;
         rdf:type       rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has ReferenceShearRate";
         rdfs:seeAlso   :ReferenceShearRate , :hasReferenceShearRate_Object;
-        :hasUnit       qudtUnit:UNITLESS;
+        :hasUnit       <http://qudt.org/vocab/unit/UNITLESS>;
         :hasUnitLabel  "-" .
 
 :hasTester_Object  rdf:type  owl:ObjectProperty , rdf:Property;
@@ -1976,7 +2000,7 @@ qudtUnit:UNITLESS  rdf:type  qudt:Unit;
         :hasShortId           "PercentagePlasticExtensionAtMaximumForce";
         :hasSymbol            "Ag"@en , "A_{g}"@en;
         :hasSymbolLatex       "A_g"@en , "A_{g}"@en;
-        :hasTypicalUnit       qudtUnit:PERCENT;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/PERCENT>;
         :hasTypicalUnitLabel  "%";
         :isBasedOn            :TensileStrength , :PercentagePermanentExtension .
 
@@ -2004,9 +2028,9 @@ qudtUnit:UNITLESS  rdf:type  qudt:Unit;
 :MegaPA-PER-SEC  rdf:type  owl:Class , qudt:Unit;
         rdfs:comment    "Stress rate, e.g. referenced by tensile tests"@en;
         rdfs:label      "Mega Pascal per Second"@en , "Mega Pascal pro Sekunde"@de;
-        rdfs:seeAlso    qudtUnit:MegaPA;
+        rdfs:seeAlso    <http://qudt.org/vocab/unit/MegaPA>;
         skos:preflabel  "Mega Pascal per Second"@en , "Mega Pascal pro Sekunde"@de;
-        skos:related    qudtUnit:MegaPA;
+        skos:related    <http://qudt.org/vocab/unit/MegaPA>;
         :hasShortId     "MegaPA-PER-SEC";
         :hasUnitLabel   "MPa/s" .
 
@@ -2018,13 +2042,13 @@ qudtUnit:UNITLESS  rdf:type  qudt:Unit;
         rdf:type       rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has ElasticConstantC44";
         rdfs:seeAlso   :ElasticConstantC44 , :hasElasticConstantC44_Object;
-        :hasUnit       qudtUnit:MegaPA;
+        :hasUnit       <http://qudt.org/vocab/unit/MegaPA>;
         :hasUnitLabel  "MPa" .
 
 :hasRadius_MilliM  rdf:type  rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has Radius";
         rdfs:seeAlso   :Radius , :hasRadius_Object;
-        :hasUnit       qudtUnit:MilliM;
+        :hasUnit       <http://qudt.org/vocab/unit/MilliM>;
         :hasUnitLabel  "mm" .
 
 :hasTestingRate_Object
@@ -2093,7 +2117,7 @@ qudtUnit:UNITLESS  rdf:type  qudt:Unit;
         rdf:type       rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has GaugeLength";
         rdfs:seeAlso   :GaugeLength , :hasGaugeLength_Object;
-        :hasUnit       qudtUnit:MilliM;
+        :hasUnit       <http://qudt.org/vocab/unit/MilliM>;
         :hasUnitLabel  "mm" .
 
 :MassDensity  rdf:type        owl:Class , skos:Concept;
@@ -2112,7 +2136,7 @@ qudtUnit:UNITLESS  rdf:type  qudt:Unit;
         rdf:type       rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has CrossheadDisplacement";
         rdfs:seeAlso   :CrossheadDisplacement , :hasCrossheadDisplacement_Object;
-        :hasUnit       qudtUnit:MilliM;
+        :hasUnit       <http://qudt.org/vocab/unit/MilliM>;
         :hasUnitLabel  "mm" .
 
 :hasMicroalloyedSteel_Object
@@ -2185,14 +2209,14 @@ qudtUnit:UNITLESS  rdf:type  qudt:Unit;
         rdfs:label            "LowerYieldStrength"@en;
         rdfs:subClassOf       pmdco:ValueObject;
         dcterms:description   "kleinste Spannung während des plastischen Fließens, wobei Einschwingerscheinungen nicht berücksichtigt werden"@de , "lowest value of stress during plastic yielding, ignoring any initial transient effects"@en;
-        skos:altlabel         "Dehn-/Streckgr. ReL"@de , "lower yield strength"@en;
+        skos:altlabel         "lower yield strength"@en , "Dehn-/Streckgr. ReL"@de;
         skos:preflabel        "LowerYieldStrength"@en;
         :hasExampleData       "420";
         :hasLabelSource       "YS1-Fz-D1Q"@de , "DIN EN ISO 6892-1, 3.10.2.2"@en , "DIN EN ISO 6892-1, 3.10.2.2"@de , "ISO 26203-2, 2011, 4"@en;
         :hasShortId           "LowerYieldStrength";
         :hasSymbol            "ReL"@en , "R_{eL}"@en;
         :hasSymbolLatex       "R_{eL}"@en;
-        :hasTypicalUnit       qudtUnit:MegaPA;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/MegaPA>;
         :hasTypicalUnitLabel  "MPa";
         :isBasedOn            :EngineeringStress .
 
@@ -2207,7 +2231,7 @@ qudtUnit:UNITLESS  rdf:type  qudt:Unit;
         :hasShortId           "PercentageExtension";
         :hasSymbol            "eps-technisch"@en;
         :hasSymbolLatex       "eps-technisch"@en;
-        :hasTypicalUnit       qudtUnit:UNITLESS;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/UNITLESS>;
         :hasTypicalUnitLabel  "1" , "- ";
         :isBasedOn            :Extension , :ExtensometerGaugeLength .
 
@@ -2221,7 +2245,7 @@ qudtUnit:UNITLESS  rdf:type  qudt:Unit;
         rdf:type       rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has OriginalWidth";
         rdfs:seeAlso   :OriginalWidth , :hasOriginalWidth_Object;
-        :hasUnit       qudtUnit:MilliM;
+        :hasUnit       <http://qudt.org/vocab/unit/MilliM>;
         :hasUnitLabel  "mm" .
 
 :hasProofStrength_1Percentage_Object
@@ -2258,7 +2282,7 @@ qudtUnit:UNITLESS  rdf:type  qudt:Unit;
         :hasShortId           "MeanEngineeringStrainRate";
         :hasSymbol            "emean"@en;
         :hasSymbolLatex       "\\dot{e}_{mean}"@en;
-        :hasTypicalUnit       qudtUnit:PER-SEC;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/PER-SEC>;
         :hasTypicalUnitLabel  "s-1";
         :isBasedOn            :ExtensometerGaugeLength , :Extension , :Time .
 
@@ -2272,7 +2296,7 @@ qudtUnit:UNITLESS  rdf:type  qudt:Unit;
         rdf:type       rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has TruePlasticStrainAtFracture";
         rdfs:seeAlso   :TruePlasticStrainAtFracture , :hasTruePlasticStrainAtFracture_Object;
-        :hasUnit       qudtUnit:PERCENT;
+        :hasUnit       <http://qudt.org/vocab/unit/PERCENT>;
         :hasUnitLabel  "%" .
 
 :hasFormingLimitCurve
@@ -2284,7 +2308,7 @@ qudtUnit:UNITLESS  rdf:type  qudt:Unit;
         rdf:type       rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has TestTemperature";
         rdfs:seeAlso   :TestTemperature , :hasTestTemperature_Object;
-        :hasUnit       qudtUnit:DEG_C;
+        :hasUnit       <http://qudt.org/vocab/unit/DEG_C>;
         :hasUnitLabel  "°C" .
 
 :PercentagePermanentElongation
@@ -2296,7 +2320,7 @@ qudtUnit:UNITLESS  rdf:type  qudt:Unit;
         skos:preflabel        "PercentagePermanentElongation"@en;
         :hasLabelSource       "DIN EN ISO 6892-1, 3.4.1"@en , "DIN EN ISO 6892-1, 3.4.1"@de;
         :hasShortId           "PercentagePermanentElongation";
-        :hasTypicalUnit       qudtUnit:PERCENT;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/PERCENT>;
         :hasTypicalUnitLabel  "%" .
 
 :hasHardeningParameterTau0_Object
@@ -2327,7 +2351,7 @@ qudtUnit:UNITLESS  rdf:type  qudt:Unit;
         rdf:type       rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has MeanPlasticStrainRate";
         rdfs:seeAlso   :MeanPlasticStrainRate , :hasMeanPlasticStrainRate_Object;
-        :hasUnit       qudtUnit:PER-SEC;
+        :hasUnit       <http://qudt.org/vocab/unit/PER-SEC>;
         :hasUnitLabel  "s-1" .
 
 :hasTime_Object  rdf:type  owl:ObjectProperty , rdf:Property;
@@ -2347,7 +2371,7 @@ qudtUnit:UNITLESS  rdf:type  qudt:Unit;
         :hasShortId           "ProofStrength_0.2Percentage";
         :hasSymbol            "Rp02"@en;
         :hasSymbolLatex       "R_{p02}"@en;
-        :hasTypicalUnit       qudtUnit:MegaPA;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/MegaPA>;
         :hasTypicalUnitLabel  "MPa";
         :isBasedOn            :ModulusOfElasticity , :EngineeringStress , :PercentageExtension .
 
@@ -2358,7 +2382,7 @@ qudtUnit:UNITLESS  rdf:type  qudt:Unit;
         dcterms:description   "Zunahme der Spannung je Zeiteinheit"@de , "stress rate"@en;
         skos:altlabel         "Geschw."@de , "stress rate"@en;
         skos:preflabel        "StressRate"@en;
-        skos:related          :Time , :EngineeringStress;
+        skos:related          :EngineeringStress , :Time;
         :hasExampleData       "19.63";
         :hasLabelSource       "AFZ1-Fz-S1Q.xlm"@de , "DIN EN ISO 6892-1, 3.7.4"@en , "DIN EN ISO 6892-1, 3.7.4"@de;
         :hasShortId           "StressRate";
@@ -2421,14 +2445,14 @@ qudtUnit:UNITLESS  rdf:type  qudt:Unit;
         :hasShortId           "MaximumForceNoDiscontinousYielding";
         :hasSymbol            "Fm"@en;
         :hasSymbolLatex       "F_m"@en;
-        :hasTypicalUnit       qudtUnit:N;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/N>;
         :hasTypicalUnitLabel  "N" .
 
 :hasStrainRate_PER-SEC
         rdf:type       rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has StrainRate";
         rdfs:seeAlso   :StrainRate , :hasStrainRate_Object;
-        :hasUnit       qudtUnit:PER-SEC;
+        :hasUnit       <http://qudt.org/vocab/unit/PER-SEC>;
         :hasUnitLabel  "s-1" , "1/s" .
 
 :hasGrainNumber_Object
@@ -2459,7 +2483,7 @@ qudtUnit:UNITLESS  rdf:type  qudt:Unit;
         rdf:type       rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has LatentHardeningQ1";
         rdfs:seeAlso   :LatentHardeningQ1 , :hasLatentHardeningQ1_Object;
-        :hasUnit       qudtUnit:UNITLESS;
+        :hasUnit       <http://qudt.org/vocab/unit/UNITLESS>;
         :hasUnitLabel  "-" .
 
 :Deformation  rdf:type  owl:Class;
@@ -2492,7 +2516,7 @@ qudtUnit:UNITLESS  rdf:type  qudt:Unit;
         :hasShortId           "OriginalDiameter";
         :hasSymbol            "do"@en;
         :hasSymbolLatex       "d_o"@en;
-        :hasTypicalUnit       qudtUnit:MilliM;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/MilliM>;
         :hasTypicalUnitLabel  "mm" .
 
 :hasProjectNumber  rdf:type  owl:ObjectProperty , rdf:Property , owl:DatatypeProperty;
@@ -2506,7 +2530,7 @@ qudtUnit:UNITLESS  rdf:type  qudt:Unit;
         rdf:type       rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has OriginalCrossSection";
         rdfs:seeAlso   :OriginalCrossSection , :hasOriginalCrossSection_Object;
-        :hasUnit       qudtUnit:MilliM2;
+        :hasUnit       <http://qudt.org/vocab/unit/MilliM2>;
         :hasUnitLabel  "mm2" .
 
 <https://qudt.org/vocab/unit/GM-PER-CentiM3>
@@ -2518,14 +2542,14 @@ qudtUnit:UNITLESS  rdf:type  qudt:Unit;
         rdf:type       rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has TrueStressAtFracture";
         rdfs:seeAlso   :TrueStressAtFracture , :hasTrueStressAtFracture_Object;
-        :hasUnit       qudtUnit:MegaPA;
+        :hasUnit       <http://qudt.org/vocab/unit/MegaPA>;
         :hasUnitLabel  "MPa" .
 
 :hasNominalEngineeringStrainRate_PER-SEC
         rdf:type       rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has NominalEngineeringStrainRate";
         rdfs:seeAlso   :NominalEngineeringStrainRate , :hasNominalEngineeringStrainRate_Object;
-        :hasUnit       qudtUnit:PER-SEC;
+        :hasUnit       <http://qudt.org/vocab/unit/PER-SEC>;
         :hasUnitLabel  "s-1" .
 
 :MeasuringRange  rdf:type  owl:Class , skos:Concept;
@@ -2540,7 +2564,7 @@ qudtUnit:UNITLESS  rdf:type  qudt:Unit;
         rdf:type       rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has StandardDeviationOfTheSlope";
         rdfs:seeAlso   :StandardDeviationOfTheSlope , :hasStandardDeviationOfTheSlope_Object;
-        :hasUnit       qudtUnit:MegaPA;
+        :hasUnit       <http://qudt.org/vocab/unit/MegaPA>;
         :hasUnitLabel  "MPa" .
 
 :codeVersion  rdf:type  owl:DatatypeProperty;
@@ -2560,7 +2584,7 @@ qudtUnit:UNITLESS  rdf:type  qudt:Unit;
         :hasExampleData       "1158.37";
         :hasLabelSource       "DX56_D_FZ2_WR00_43.TXT"@de , "deepl translator"@en;
         :hasShortId           "AbsoluteCrossheadTravel";
-        :hasTypicalUnit       qudtUnit:MilliM;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/MilliM>;
         :hasTypicalUnitLabel  "mm" .
 
 :PermanentSetStrength
@@ -2574,7 +2598,7 @@ qudtUnit:UNITLESS  rdf:type  qudt:Unit;
         :hasShortId           "PermanentSetStrength";
         :hasSymbol            "Rr"@en;
         :hasSymbolLatex       "R_{r}"@en;
-        :hasTypicalUnit       qudtUnit:MegaPA;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/MegaPA>;
         :hasTypicalUnitLabel  "MPa" .
 
 :hasDX56D  rdf:type   rdf:Property , owl:DatatypeProperty;
@@ -2590,7 +2614,7 @@ qudtUnit:UNITLESS  rdf:type  qudt:Unit;
         :hasExampleData       "1.14004e-06" , "0.001";
         :hasLabelSource       "AFZ1-Fz-S1Q.xlsx"@de , "deepl translator"@en , "DX56_D_FZ2_WR00_43.TXT"@de;
         :hasShortId           "WidthChange";
-        :hasTypicalUnit       qudtUnit:MilliM;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/MilliM>;
         :hasTypicalUnitLabel  "mm";
         :isBasedOn            :Width .
 
@@ -2603,7 +2627,7 @@ qudtUnit:UNITLESS  rdf:type  qudt:Unit;
         skos:related          :WidthAfterFracture1;
         :hasLabelSource       "AFZ1-Fz-S1Q.xlsx"@de;
         :hasShortId           "WidthAfterFracture2";
-        :hasTypicalUnit       qudtUnit:MilliM;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/MilliM>;
         :hasTypicalUnitLabel  "mm" .
 
 :hasDiameterAfterFracture1_Object
@@ -2636,7 +2660,8 @@ qudtUnit:UNITLESS  rdf:type  qudt:Unit;
         rdfs:label    "has Supplier";
         rdfs:seeAlso  :Supplier , :hasSupplier_Object .
 
-qudtUnit:DEG_C  rdf:type  qudt:Unit;
+<http://qudt.org/vocab/unit/DEG_C>
+        rdf:type       qudt:Unit;
         :hasShortId    "DEG_C";
         :hasUnitLabel  "°C" .
 
@@ -2650,7 +2675,7 @@ qudtUnit:DEG_C  rdf:type  qudt:Unit;
         skos:related          :ThicknessAfterFracture2;
         :hasLabelSource       "AFZ1-Fz-S1Q.xlsx"@de;
         :hasShortId           "ThicknessAfterFracture1";
-        :hasTypicalUnit       qudtUnit:MilliM;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/MilliM>;
         :hasTypicalUnitLabel  "mm" .
 
 :rollingSchedule  rdf:type  owl:Class;
@@ -2675,7 +2700,7 @@ qudtUnit:DEG_C  rdf:type  qudt:Unit;
 :hasMaximumForce_N  rdf:type  rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has MaximumForce";
         rdfs:seeAlso   :MaximumForce , :hasMaximumForce_Object;
-        :hasUnit       qudtUnit:N;
+        :hasUnit       <http://qudt.org/vocab/unit/N>;
         :hasUnitLabel  "N" .
 
 :hasDrawingSpeed_Object
@@ -2761,7 +2786,7 @@ qudtUnit:DEG_C  rdf:type  qudt:Unit;
         :hasShortId           "TestTemperature";
         :hasSymbol            "T"@en;
         :hasSymbolLatex       "T"@en;
-        :hasTypicalUnit       qudtUnit:DEG_C;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/DEG_C>;
         :hasTypicalUnitLabel  "°C" .
 
 :hasMatTabulatedJohnsonCook
@@ -2793,7 +2818,7 @@ qudtUnit:DEG_C  rdf:type  qudt:Unit;
         rdf:type       rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has CoefficientOfCorrelation";
         rdfs:seeAlso   :CoefficientOfCorrelation , :hasCoefficientOfCorrelation_Object;
-        :hasUnit       qudtUnit:UNITLESS;
+        :hasUnit       <http://qudt.org/vocab/unit/UNITLESS>;
         :hasUnitLabel  "-" .
 
 :hasElasticConstantC11_Object
@@ -2831,7 +2856,7 @@ qudtUnit:DEG_C  rdf:type  qudt:Unit;
         :hasShortId           "TrueStress";
         :hasSymbol            "Sigw"@en;
         :hasSymbolLatex       "Sig{w}"@en;
-        :hasTypicalUnit       qudtUnit:MegaPA;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/MegaPA>;
         :hasTypicalUnitLabel  "MPa";
         :isBasedOn            :EngineeringStress , :PercentageExtension .
 
@@ -2855,7 +2880,7 @@ qudtUnit:DEG_C  rdf:type  qudt:Unit;
         rdf:type       rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has MaximumForceNoDiscontinousYielding";
         rdfs:seeAlso   :MaximumForceNoDiscontinousYielding , :hasMaximumForceNoDiscontinousYielding_Object;
-        :hasUnit       qudtUnit:N;
+        :hasUnit       <http://qudt.org/vocab/unit/N>;
         :hasUnitLabel  "N" .
 
 :hasProjectName  rdf:type  owl:ObjectProperty , owl:DatatypeProperty , rdf:Property;
@@ -2884,7 +2909,7 @@ qudtUnit:DEG_C  rdf:type  qudt:Unit;
         rdf:type       rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has PercentageReductionOfArea";
         rdfs:seeAlso   :PercentageReductionOfArea , :hasPercentageReductionOfArea_Object;
-        :hasUnit       qudtUnit:PERCENT;
+        :hasUnit       <http://qudt.org/vocab/unit/PERCENT>;
         :hasUnitLabel  "%" .
 
 <https://qudt.org/vocab/unit/GigaPA>
@@ -2907,7 +2932,7 @@ qudtUnit:DEG_C  rdf:type  qudt:Unit;
         :hasShortId           "PercentageTotalExtensionAtMaximumForce";
         :hasSymbol            "Agt"@en;
         :hasSymbolLatex       "A_{gt}"@en;
-        :hasTypicalUnit       qudtUnit:PERCENT;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/PERCENT>;
         :hasTypicalUnitLabel  "%" .
 
 :hasRemark  rdf:type  rdf:Property , owl:DatatypeProperty;
@@ -2924,7 +2949,7 @@ qudtUnit:DEG_C  rdf:type  qudt:Unit;
         :hasShortId           "Strain";
         :hasSymbol            "e"@en;
         :hasSymbolLatex       "e"@en;
-        :hasTypicalUnit       qudtUnit:PERCENT;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/PERCENT>;
         :hasTypicalUnitLabel  "%" .
 
 :hasTexture  rdf:type  rdf:Property , owl:DatatypeProperty;
@@ -2990,7 +3015,7 @@ qudtUnit:DEG_C  rdf:type  qudt:Unit;
         :hasShortId           "WidthStrain";
         :hasSymbol            "eps-Breite"@en;
         :hasSymbolLatex       "eps-Breite"@en;
-        :hasTypicalUnit       qudtUnit:UNITLESS;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/UNITLESS>;
         :hasTypicalUnitLabel  "1";
         :isBasedOn            :OriginalWidth , :WidthChange .
 
@@ -3015,7 +3040,7 @@ qudtUnit:DEG_C  rdf:type  qudt:Unit;
         :hasLabelSource       "General Knowledge"@en , "General Knowledge"@de;
         :hasShortId           "ElasticConstantC11";
         :hasSymbol            "C_11"@en;
-        :hasTypicalUnit       qudtUnit:MegaPA;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/MegaPA>;
         :hasTypicalUnitLabel  "MPa" .
 
 :hasHX340LAD_Object  rdf:type  owl:ObjectProperty , rdf:Property;
@@ -3054,6 +3079,12 @@ qudtUnit:DEG_C  rdf:type  qudt:Unit;
         rdfs:range      :ElasticConstantC44;
         skos:preflabel  "hasElasticConstantC44"@en .
 
+:hasSampleType_Object
+        rdf:type        owl:ObjectProperty , rdf:Property;
+        rdfs:label      "hasSampleType"@en;
+        rdfs:range      :SampleType;
+        skos:preflabel  "hasSampleType"@en .
+
 :hasMeasuringAid  rdf:type  rdf:Property , owl:DatatypeProperty;
         rdfs:label    "has MeasuringAid";
         rdfs:seeAlso  :MeasuringAid , :hasMeasuringAid_Object .
@@ -3081,7 +3112,7 @@ qudtUnit:DEG_C  rdf:type  qudt:Unit;
         rdf:type       rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has LowerYieldStrength";
         rdfs:seeAlso   :LowerYieldStrength , :hasLowerYieldStrength_Object;
-        :hasUnit       qudtUnit:MegaPA;
+        :hasUnit       <http://qudt.org/vocab/unit/MegaPA>;
         :hasUnitLabel  "MPa" .
 
 :hasForce_Object  rdf:type  owl:ObjectProperty , rdf:Property;
@@ -3155,6 +3186,10 @@ qudtUnit:DEG_C  rdf:type  qudt:Unit;
         rdfs:range      :DeliveryDate;
         skos:preflabel  "hasDeliveryDate"@en .
 
+:hasSampleType  rdf:type  rdf:Property , owl:DatatypeProperty;
+        rdfs:label    "has SampleType";
+        rdfs:seeAlso  :SampleType , :hasSampleType_Object .
+
 :NominalEngineeringStrainRate
         rdf:type              skos:Concept , owl:Class;
         rdfs:label            "NominalEngineeringStrainRate"@en;
@@ -3169,7 +3204,7 @@ qudtUnit:DEG_C  rdf:type  qudt:Unit;
         :hasShortId           "NominalEngineeringStrainRate";
         :hasSymbol            "enom"@en;
         :hasSymbolLatex       "\\dot{e}_{nom}"@en;
-        :hasTypicalUnit       qudtUnit:PER-SEC;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/PER-SEC>;
         :hasTypicalUnitLabel  "s-1";
         :isBasedOn            :ParallelLength , :InitialDisplacementRate .
 
@@ -3183,7 +3218,7 @@ qudtUnit:DEG_C  rdf:type  qudt:Unit;
         rdf:type       rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has DynamometerArea";
         rdfs:seeAlso   :DynamometerArea , :hasDynamometerArea_Object;
-        :hasUnit       qudtUnit:MilliM2;
+        :hasUnit       <http://qudt.org/vocab/unit/MilliM2>;
         :hasUnitLabel  "mm2" .
 
 :SpecificHeatCapacity
@@ -3240,6 +3275,12 @@ qudtUnit:DEG_C  rdf:type  qudt:Unit;
         rdfs:range      :GaugeLength;
         skos:preflabel  "hasGaugeLength"@en .
 
+:hasSampleProduction_Object
+        rdf:type        owl:ObjectProperty , rdf:Property;
+        rdfs:label      "hasSampleProduction"@en;
+        rdfs:range      :SampleProduction;
+        skos:preflabel  "hasSampleProduction"@en .
+
 :hasCrossheadDisplacement_Object
         rdf:type        owl:ObjectProperty , rdf:Property;
         rdfs:label      "hasCrossheadDisplacement"@en;
@@ -3250,14 +3291,14 @@ qudtUnit:DEG_C  rdf:type  qudt:Unit;
         rdf:type       rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has ParallelLength";
         rdfs:seeAlso   :ParallelLength , :hasParallelLength_Object;
-        :hasUnit       qudtUnit:MilliM;
+        :hasUnit       <http://qudt.org/vocab/unit/MilliM>;
         :hasUnitLabel  "mm" .
 
 :hasInitialSheetThickness_MilliM
         rdf:type       rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has InitialSheetThickness";
         rdfs:seeAlso   :InitialSheetThickness , :hasInitialSheetThickness_Object;
-        :hasUnit       qudtUnit:MilliM;
+        :hasUnit       <http://qudt.org/vocab/unit/MilliM>;
         :hasUnitLabel  "mm" .
 
 :hasFailureTreatment_UNITLESS
@@ -3271,7 +3312,7 @@ qudtUnit:DEG_C  rdf:type  qudt:Unit;
         rdf:type       rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has ThicknessAfterFracture1";
         rdfs:seeAlso   :ThicknessAfterFracture1 , :hasThicknessAfterFracture1_Object;
-        :hasUnit       qudtUnit:MilliM;
+        :hasUnit       <http://qudt.org/vocab/unit/MilliM>;
         :hasUnitLabel  "mm" .
 
 :TestingMachine  rdf:type  owl:Class;
@@ -3283,7 +3324,7 @@ qudtUnit:DEG_C  rdf:type  qudt:Unit;
         rdf:type       rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has PreliminaryForce";
         rdfs:seeAlso   :PreliminaryForce , :hasPreliminaryForce_Object;
-        :hasUnit       qudtUnit:MegaPA;
+        :hasUnit       <http://qudt.org/vocab/unit/MegaPA>;
         :hasUnitLabel  "MPa" .
 
 :hasLatentHardeningQ0_Object
@@ -3311,7 +3352,7 @@ qudtUnit:DEG_C  rdf:type  qudt:Unit;
         :hasShortId           "OriginalGaugeLength";
         :hasSymbol            "L0"@en , "Lo"@en;
         :hasSymbolLatex       "L_o"@en , "L_0"@en;
-        :hasTypicalUnit       qudtUnit:MilliM;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/MilliM>;
         :hasTypicalUnitLabel  "mm" .
 
 :hasOriginalWidth_Object
@@ -3356,7 +3397,7 @@ qudtUnit:DEG_C  rdf:type  qudt:Unit;
         rdf:type       rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has PercentageElongation";
         rdfs:seeAlso   :PercentageElongation , :hasPercentageElongation_Object;
-        :hasUnit       qudtUnit:MilliM;
+        :hasUnit       <http://qudt.org/vocab/unit/MilliM>;
         :hasUnitLabel  "mm" .
 
 :TargetClampingForce  rdf:type  owl:Class , skos:Concept;
@@ -3367,7 +3408,7 @@ qudtUnit:DEG_C  rdf:type  qudt:Unit;
         :hasExampleData       "600";
         :hasLabelSource       "deepl translator"@en , "AFZ-BU-S1.TXT"@de;
         :hasShortId           "TargetClampingForce";
-        :hasTypicalUnit       qudtUnit:KiloN;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/KiloN>;
         :hasTypicalUnitLabel  "kN" .
 
 :stripTension  rdf:type  owl:Class;
@@ -3407,7 +3448,7 @@ qudtUnit:DEG_C  rdf:type  qudt:Unit;
         rdf:type       rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has TestPieceLength";
         rdfs:seeAlso   :TestPieceLength , :hasTestPieceLength_Object;
-        :hasUnit       qudtUnit:MilliM;
+        :hasUnit       <http://qudt.org/vocab/unit/MilliM>;
         :hasUnitLabel  "mm" .
 
 :FeedbackLoop  rdf:type  owl:Class;
@@ -3454,7 +3495,7 @@ qudtUnit:DEG_C  rdf:type  qudt:Unit;
         :hasShortId           "StandardDeviationOfTheSlope";
         :hasSymbol            "Sm"@en;
         :hasSymbolLatex       "S_m"@en;
-        :hasTypicalUnit       qudtUnit:MegaPA;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/MegaPA>;
         :hasTypicalUnitLabel  "MPa" .
 
 :hasCharacteristicEngineeringStrainRate_Object
@@ -3520,7 +3561,7 @@ qudtUnit:DEG_C  rdf:type  qudt:Unit;
         :hasShortId           "ProofStrength_1Percentage";
         :hasSymbol            "Rp1"@en;
         :hasSymbolLatex       "R_{p1}"@en;
-        :hasTypicalUnit       qudtUnit:MegaPA;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/MegaPA>;
         :hasTypicalUnitLabel  "MPa";
         :isBasedOn            :EngineeringStress , :ModulusOfElasticity , :PercentageExtension .
 
@@ -3582,7 +3623,7 @@ qudtUnit:DEG_C  rdf:type  qudt:Unit;
         :hasExampleData       "4" , "2";
         :hasLabelSource       "YS1-FzR4-S1Q"@en , "YS1-Sz0°-S1L"@de;
         :hasShortId           "Radius";
-        :hasTypicalUnit       qudtUnit:MilliM;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/MilliM>;
         :hasTypicalUnitLabel  "mm" .
 
 :CrystalPlasticityParameterFile
@@ -3614,7 +3655,7 @@ qudtUnit:DEG_C  rdf:type  qudt:Unit;
         :hasShortId           "BiaxialStress";
         :hasSymbol            "σ_B"@en;
         :hasSymbolLatex       "\\sigma_B"@en;
-        :hasTypicalUnit       qudtUnit:MegaPA;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/MegaPA>;
         :hasTypicalUnitLabel  "MPa" .
 
 :Experiment  rdf:type   owl:Class;
@@ -3652,7 +3693,8 @@ qudtUnit:DEG_C  rdf:type  qudt:Unit;
         rdfs:range      :TotalEngineeringStrain;
         skos:preflabel  "hasTotalEngineeringStrain"@en .
 
-qudtUnit:KiloN  rdf:type  qudt:Unit;
+<http://qudt.org/vocab/unit/KiloN>
+        rdf:type       qudt:Unit;
         :hasShortId    "KiloN";
         :hasUnitLabel  "kN" .
 
@@ -3700,7 +3742,7 @@ qudtUnit:KiloN  rdf:type  qudt:Unit;
         rdf:type       rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has HardeningParameterTheta1";
         rdfs:seeAlso   :HardeningParameterTheta1 , :hasHardeningParameterTheta1_Object;
-        :hasUnit       qudtUnit:MegaPA;
+        :hasUnit       <http://qudt.org/vocab/unit/MegaPA>;
         :hasUnitLabel  "MPa" .
 
 :hasSpecificHeatCapacity_J-Per-Gm-K
@@ -3719,7 +3761,7 @@ qudtUnit:KiloN  rdf:type  qudt:Unit;
         :hasExampleData       "0.15";
         :hasLabelSource       "AFZ-BU-S1.TXT"@de , "DIN EN ISO 16808:2022-08, 12"@en , "DIN EN ISO 16808:2022-08, 12"@de;
         :hasShortId           "PistonSpeed";
-        :hasTypicalUnit       qudtUnit:MilliM-PER-SEC;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/MilliM-PER-SEC>;
         :hasTypicalUnitLabel  "mm/s" .
 
 :Work   rdf:type              owl:Class , skos:Concept;
@@ -3730,7 +3772,7 @@ qudtUnit:KiloN  rdf:type  qudt:Unit;
         skos:preflabel        "Work"@en;
         :hasLabelSource       "AFZ1-ST-D1"@en;
         :hasShortId           "Work";
-        :hasTypicalUnit       qudtUnit:KiloJ;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/KiloJ>;
         :hasTypicalUnitLabel  "kJ" .
 
 :TensileStrength  rdf:type    owl:Class , skos:Concept;
@@ -3744,7 +3786,7 @@ qudtUnit:KiloN  rdf:type  qudt:Unit;
         :hasShortId           "TensileStrength";
         :hasSymbol            "R_{m}"@en , "Rm"@en;
         :hasSymbolLatex       "R_{m}"@en , "R_m"@en;
-        :hasTypicalUnit       qudtUnit:MegaPA;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/MegaPA>;
         :hasTypicalUnitLabel  "MPa";
         :isBasedOn            :EngineeringStress .
 
@@ -3774,7 +3816,7 @@ qudtUnit:KiloN  rdf:type  qudt:Unit;
         rdf:type       rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has InitialThickness";
         rdfs:seeAlso   :InitialThickness , :hasInitialThickness_Object;
-        :hasUnit       qudtUnit:MilliM;
+        :hasUnit       <http://qudt.org/vocab/unit/MilliM>;
         :hasUnitLabel  "mm" .
 
 :DamageTreatment  rdf:type    skos:Concept , owl:Class;
@@ -3793,7 +3835,7 @@ qudtUnit:KiloN  rdf:type  qudt:Unit;
         rdf:type       rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has UpperYieldStrength";
         rdfs:seeAlso   :UpperYieldStrength , :hasUpperYieldStrength_Object;
-        :hasUnit       qudtUnit:MegaPA;
+        :hasUnit       <http://qudt.org/vocab/unit/MegaPA>;
         :hasUnitLabel  "MPa" .
 
 :jobStartTime  rdf:type  owl:DatatypeProperty;
@@ -3813,7 +3855,7 @@ qudtUnit:KiloN  rdf:type  qudt:Unit;
         :hasShortId           "RadiusDie";
         :hasSymbol            "R_1"@en;
         :hasSymbolLatex       "R_1"@en;
-        :hasTypicalUnit       qudtUnit:MilliM;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/MilliM>;
         :hasTypicalUnitLabel  "mm" .
 
 :StrainRateScaleIdendifier
@@ -3849,7 +3891,7 @@ qudtUnit:KiloN  rdf:type  qudt:Unit;
         :hasExampleData       "7";
         :hasLabelSource       "YS1-Sz0°-S1L"@de;
         :hasShortId           "ShearLength";
-        :hasTypicalUnit       qudtUnit:MilliM;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/MilliM>;
         :hasTypicalUnitLabel  "mm" .
 
 :ShearTest  rdf:type    owl:Class;
@@ -3898,11 +3940,11 @@ qudtUnit:KiloN  rdf:type  qudt:Unit;
         skos:altlabel         "Zeit"@de , "time"@en , "Prüfzeit"@de , "Time"@en;
         skos:preflabel        "Time"@en;
         :hasExampleData       "0.694" , "s" , "0.05";
-        :hasLabelSource       "YS1-Fz-D1Q"@de , "DIN EN ISO 16808:2022-08, 12"@de , "DIN EN ISO 16808:2022-08, 12"@en , "Authors"@de , "DX56_D_FZ2_WR00_43.TXT"@de , "ISO 26203-2, 2011, 4"@en , "DIN EN ISO 6892-1, Abb. 9"@de , "DIN EN ISO 6892-1, Fig. 9"@en , "AFZ1-Fz-S1Q.xlsx"@de , "AFZ-BU-S1.TXT"@de , "AFZ1-NZ50-25-D1Q"@en , "AFZ1-ST-D1"@en;
+        :hasLabelSource       "YS1-Fz-D1Q"@de , "DIN EN ISO 16808:2022-08, 12"@en , "DIN EN ISO 16808:2022-08, 12"@de , "Authors"@de , "DX56_D_FZ2_WR00_43.TXT"@de , "ISO 26203-2, 2011, 4"@en , "DIN EN ISO 6892-1, Abb. 9"@de , "DIN EN ISO 6892-1, Fig. 9"@en , "AFZ1-Fz-S1Q.xlsx"@de , "AFZ-BU-S1.TXT"@de , "AFZ1-NZ50-25-D1Q"@en , "AFZ1-ST-D1"@en;
         :hasShortId           "Time";
         :hasSymbol            "t"@en;
         :hasSymbolLatex       "t"@en;
-        :hasTypicalUnit       qudtUnit:SEC;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/SEC>;
         :hasTypicalUnitLabel  "s" .
 
 :hasResultsFile  rdf:type  rdf:Property , owl:DatatypeProperty;
@@ -3924,7 +3966,7 @@ qudtUnit:KiloN  rdf:type  qudt:Unit;
         skos:preflabel        "DiameterAfterFracture2"@en;
         skos:related          :DiameterAfterFracture1;
         :hasShortId           "DiameterAfterFracture2";
-        :hasTypicalUnit       qudtUnit:MilliM;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/MilliM>;
         :hasTypicalUnitLabel  "mm" .
 
 :hasLatentHardeningQ1_Object
@@ -3954,7 +3996,7 @@ qudtUnit:KiloN  rdf:type  qudt:Unit;
         :hasShortId           "CoefficientOfCorrelation";
         :hasSymbol            "R2"@en;
         :hasSymbolLatex       "R^2"@en;
-        :hasTypicalUnit       qudtUnit:UNITLESS;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/UNITLESS>;
         :hasTypicalUnitLabel  "-" .
 
 :hasDamageTreatment_UNITLESS
@@ -3964,7 +4006,8 @@ qudtUnit:KiloN  rdf:type  qudt:Unit;
         :hasUnit       <https://qudt.org/vocab/unit/UNITLESS>;
         :hasUnitLabel  "1" .
 
-qudtUnit:SEC  rdf:type  qudt:Unit;
+<http://qudt.org/vocab/unit/SEC>
+        rdf:type       qudt:Unit;
         :hasShortId    "SEC";
         :hasUnitLabel  "s" .
 
@@ -3972,7 +4015,7 @@ qudtUnit:SEC  rdf:type  qudt:Unit;
         rdf:type       rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has MaximumForceDiscontinousYielding";
         rdfs:seeAlso   :MaximumForceDiscontinousYielding , :hasMaximumForceDiscontinousYielding_Object;
-        :hasUnit       qudtUnit:N;
+        :hasUnit       <http://qudt.org/vocab/unit/N>;
         :hasUnitLabel  "N" .
 
 :PhaseBoundary  rdf:type  owl:Class;
@@ -3989,7 +4032,7 @@ qudtUnit:SEC  rdf:type  qudt:Unit;
         rdf:type       rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has TrueStress";
         rdfs:seeAlso   :TrueStress , :hasTrueStress_Object;
-        :hasUnit       qudtUnit:MegaPA;
+        :hasUnit       <http://qudt.org/vocab/unit/MegaPA>;
         :hasUnitLabel  "MPa" .
 
 :hasNumberOfVirtualExperiments
@@ -4001,7 +4044,7 @@ qudtUnit:SEC  rdf:type  qudt:Unit;
         rdf:type       rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has EffectiveStress";
         rdfs:seeAlso   :EffectiveStress , :hasEffectiveStress_Object;
-        :hasUnit       qudtUnit:MegaPA;
+        :hasUnit       <http://qudt.org/vocab/unit/MegaPA>;
         :hasUnitLabel  "MPa" .
 
 :TestPiece  rdf:type     skos:Concept , owl:Class;
@@ -4023,7 +4066,7 @@ qudtUnit:SEC  rdf:type  qudt:Unit;
         rdf:type       rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has TargetClampingForce";
         rdfs:seeAlso   :TargetClampingForce , :hasTargetClampingForce_Object;
-        :hasUnit       qudtUnit:KiloN;
+        :hasUnit       <http://qudt.org/vocab/unit/KiloN>;
         :hasUnitLabel  "kN" .
 
 :hasReferenceShearRate_Object
@@ -4058,7 +4101,7 @@ qudtUnit:SEC  rdf:type  qudt:Unit;
         :hasShortId           "StrainRate";
         :hasSymbol            "eLe"@en;
         :hasSymbolLatex       "\\dot{e}_{L_e}"@en;
-        :hasTypicalUnit       qudtUnit:PER-SEC;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/PER-SEC>;
         :hasTypicalUnitLabel  "1/s" , "s-1" .
 
 :PunchVelocity  rdf:type      owl:Class , skos:Concept;
@@ -4072,7 +4115,7 @@ qudtUnit:SEC  rdf:type  qudt:Unit;
         :hasShortId           "PunchVelocity";
         :hasSymbol            "v_0"@en;
         :hasSymbolLatex       "v_0"@en;
-        :hasTypicalUnit       qudtUnit:MilliM-PER-SEC;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/MilliM-PER-SEC>;
         :hasTypicalUnitLabel  "mm/s" .
 
 :ExtensionAtFracture  rdf:type  owl:Class , skos:Concept;
@@ -4084,7 +4127,7 @@ qudtUnit:SEC  rdf:type  qudt:Unit;
         :hasLabelSource       "AFZ1-Fz-S1Q.xlsx"@de;
         :hasShortId           "ExtensionAtFracture";
         :hasSymbolLatex       "dLBruch"@en;
-        :hasTypicalUnit       qudtUnit:MilliM;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/MilliM>;
         :hasTypicalUnitLabel  "mm";
         :isBasedOn            :Extension .
 
@@ -4150,7 +4193,7 @@ qudtUnit:SEC  rdf:type  qudt:Unit;
         rdf:type       rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has RelativeStandardDeviationOfTheSlope";
         rdfs:seeAlso   :RelativeStandardDeviationOfTheSlope , :hasRelativeStandardDeviationOfTheSlope_Object;
-        :hasUnit       qudtUnit:PERCENT;
+        :hasUnit       <http://qudt.org/vocab/unit/PERCENT>;
         :hasUnitLabel  "%" .
 
 :RadiusCurvature  rdf:type    skos:Concept , owl:Class;
@@ -4163,7 +4206,7 @@ qudtUnit:SEC  rdf:type  qudt:Unit;
         :hasShortId           "RadiusCurvature";
         :hasSymbol            "ρ"@en;
         :hasSymbolLatex       "\\rho"@en;
-        :hasTypicalUnit       qudtUnit:MilliM;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/MilliM>;
         :hasTypicalUnitLabel  "mm" .
 
 :hasLowerYieldStrength_Object
@@ -4182,28 +4225,28 @@ qudtUnit:SEC  rdf:type  qudt:Unit;
         skos:preflabel        "Diameter"@en;
         skos:related          :TestPieceGeometry;
         :hasShortId           "Diameter";
-        :hasTypicalUnit       qudtUnit:MilliM;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/MilliM>;
         :hasTypicalUnitLabel  "mm" .
 
 :hasInnerDiameterBlankHolder_MilliM
         rdf:type       rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has InnerDiameterBlankHolder";
         rdfs:seeAlso   :InnerDiameterBlankHolder , :hasInnerDiameterBlankHolder_Object;
-        :hasUnit       qudtUnit:MilliM;
+        :hasUnit       <http://qudt.org/vocab/unit/MilliM>;
         :hasUnitLabel  "mm" .
 
 :hasTrueStrain_UNITLESS
         rdf:type       rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has TrueStrain";
         rdfs:seeAlso   :TrueStrain , :hasTrueStrain_Object;
-        :hasUnit       qudtUnit:UNITLESS;
+        :hasUnit       <http://qudt.org/vocab/unit/UNITLESS>;
         :hasUnitLabel  "1" .
 
 :hasFrameRate_PER-SEC
         rdf:type       rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has FrameRate";
         rdfs:seeAlso   :FrameRate , :hasFrameRate_Object;
-        :hasUnit       qudtUnit:PER-SEC;
+        :hasUnit       <http://qudt.org/vocab/unit/PER-SEC>;
         :hasUnitLabel  "s-1" .
 
 :Precipitation  rdf:type  owl:Class;
@@ -4227,7 +4270,7 @@ qudtUnit:SEC  rdf:type  qudt:Unit;
         rdf:type       rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has PoissonsRatio";
         rdfs:seeAlso   :PoissonsRatio , :hasPoissonsRatio_Object;
-        :hasUnit       qudtUnit:UNITLESS;
+        :hasUnit       <http://qudt.org/vocab/unit/UNITLESS>;
         :hasUnitLabel  "1" .
 
 :Microstructure  rdf:type  owl:Class;
@@ -4249,13 +4292,13 @@ qudtUnit:SEC  rdf:type  qudt:Unit;
         rdf:type       rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has BiaxialStress";
         rdfs:seeAlso   :BiaxialStress , :hasBiaxialStress_Object;
-        :hasUnit       qudtUnit:MegaPA;
+        :hasUnit       <http://qudt.org/vocab/unit/MegaPA>;
         :hasUnitLabel  "MPa" .
 
 :hasTime_SEC  rdf:type  rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has Time";
         rdfs:seeAlso   :Time , :hasTime_Object;
-        :hasUnit       qudtUnit:SEC;
+        :hasUnit       <http://qudt.org/vocab/unit/SEC>;
         :hasUnitLabel  "s" .
 
 :TrueStressAtFracture
@@ -4269,7 +4312,7 @@ qudtUnit:SEC  rdf:type  qudt:Unit;
         :hasLabelSource       "YS1-Fz-D1Q"@de;
         :hasShortId           "TrueStressAtFracture";
         :hasSymbol            "Sig_{w Bruch}"@en;
-        :hasTypicalUnit       qudtUnit:MegaPA;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/MegaPA>;
         :hasTypicalUnitLabel  "MPa";
         :isBasedOn            :MinimumCrosssectionAfterFracture , :ForceAtFracture .
 
@@ -4277,7 +4320,7 @@ qudtUnit:SEC  rdf:type  qudt:Unit;
         rdf:type       rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has PercentagePermanentExtension";
         rdfs:seeAlso   :PercentagePermanentExtension , :hasPercentagePermanentExtension_Object;
-        :hasUnit       qudtUnit:UNITLESS;
+        :hasUnit       <http://qudt.org/vocab/unit/UNITLESS>;
         :hasUnitLabel  "1" .
 
 :JobOutput  rdf:type    owl:Class;
@@ -4313,7 +4356,7 @@ qudtUnit:SEC  rdf:type  qudt:Unit;
         rdf:type       rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has FinalGaugeLengthAfterFracture";
         rdfs:seeAlso   :FinalGaugeLengthAfterFracture , :hasFinalGaugeLengthAfterFracture_Object;
-        :hasUnit       qudtUnit:MilliM;
+        :hasUnit       <http://qudt.org/vocab/unit/MilliM>;
         :hasUnitLabel  "mm" .
 
 :workRollDiameter  rdf:type  owl:Class;
@@ -4354,7 +4397,7 @@ qudtUnit:SEC  rdf:type  qudt:Unit;
         :hasShortId           "PercentageYieldPointExtension";
         :hasSymbol            "Ae"@en;
         :hasSymbolLatex       "A_e"@en;
-        :hasTypicalUnit       qudtUnit:PERCENT;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/PERCENT>;
         :hasTypicalUnitLabel  "%" .
 
 :Strip  rdf:type        owl:Class;
@@ -4386,7 +4429,7 @@ qudtUnit:SEC  rdf:type  qudt:Unit;
         skos:preflabel        "EffecticStrain"@en;
         :hasLabelSource       "General Knowledge"@en , "General Knowledge"@de;
         :hasShortId           "EffecticStrain";
-        :hasTypicalUnit       qudtUnit:UNITLESS;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/UNITLESS>;
         :hasTypicalUnitLabel  "-" .
 
 :hasParallelLength_Object
@@ -4411,7 +4454,7 @@ qudtUnit:SEC  rdf:type  qudt:Unit;
         rdf:type       rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has ShearLength";
         rdfs:seeAlso   :ShearLength , :hasShearLength_Object;
-        :hasUnit       qudtUnit:MilliM;
+        :hasUnit       <http://qudt.org/vocab/unit/MilliM>;
         :hasUnitLabel  "mm" .
 
 :FailureTreatment  rdf:type   skos:Concept , owl:Class;
@@ -4435,7 +4478,7 @@ qudtUnit:SEC  rdf:type  qudt:Unit;
         rdf:type       rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has PercentageYieldPointExtension";
         rdfs:seeAlso   :PercentageYieldPointExtension , :hasPercentageYieldPointExtension_Object;
-        :hasUnit       qudtUnit:PERCENT;
+        :hasUnit       <http://qudt.org/vocab/unit/PERCENT>;
         :hasUnitLabel  "%" .
 
 :SimulationCode  rdf:type  owl:Class;
@@ -4453,7 +4496,7 @@ qudtUnit:SEC  rdf:type  qudt:Unit;
 :hasExtension_MilliM  rdf:type  rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has Extension";
         rdfs:seeAlso   :Extension , :hasExtension_Object;
-        :hasUnit       qudtUnit:MilliM;
+        :hasUnit       <http://qudt.org/vocab/unit/MilliM>;
         :hasUnitLabel  "mm" .
 
 :draught  rdf:type      owl:Class;
@@ -4471,7 +4514,7 @@ qudtUnit:SEC  rdf:type  qudt:Unit;
         rdf:type       rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has WidthAfterFracture2";
         rdfs:seeAlso   :WidthAfterFracture2 , :hasWidthAfterFracture2_Object;
-        :hasUnit       qudtUnit:MilliM;
+        :hasUnit       <http://qudt.org/vocab/unit/MilliM>;
         :hasUnitLabel  "mm" .
 
 :hasStrainRateFormulationFlag_Object
@@ -4491,7 +4534,7 @@ qudtUnit:SEC  rdf:type  qudt:Unit;
         rdf:type       rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has PunchDisplacement";
         rdfs:seeAlso   :PunchDisplacement , :hasPunchDisplacement_Object;
-        :hasUnit       qudtUnit:MilliM;
+        :hasUnit       <http://qudt.org/vocab/unit/MilliM>;
         :hasUnitLabel  "mm" .
 
 :hasPercentageElongation_Object
@@ -4525,7 +4568,7 @@ qudtUnit:SEC  rdf:type  qudt:Unit;
         :hasLabelSource       "General Knowledge"@en , "General Knowledge"@de;
         :hasShortId           "HardeningParameterTau1";
         :hasSymbolLatex       "\\tau_1"@en;
-        :hasTypicalUnit       qudtUnit:MegaPA;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/MegaPA>;
         :hasTypicalUnitLabel  "MPa" .
 
 :hasTruePlasticStrain_Object
@@ -4577,7 +4620,7 @@ qudtUnit:SEC  rdf:type  qudt:Unit;
         :hasShortId           "ModulusOfElasticity";
         :hasSymbol            "E"@en;
         :hasSymbolLatex       "E"@en;
-        :hasTypicalUnit       qudtUnit:MegaPA , qudtUnit:GigaPA;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/MegaPA> , <http://qudt.org/vocab/unit/GigaPA>;
         :hasTypicalUnitLabel  "MPa" , "GPa" .
 
 :hasHardeningLaw_Object
@@ -4601,7 +4644,8 @@ qudtUnit:SEC  rdf:type  qudt:Unit;
         :hasLabelSource      "YS1-Fz-D1Q"@de;
         :hasShortId          "ExtensionMeasuringSystem" .
 
-qudtUnit:MilliM  rdf:type  qudt:Unit;
+<http://qudt.org/vocab/unit/MilliM>
+        rdf:type       qudt:Unit;
         :hasShortId    "MilliM";
         :hasUnitLabel  "mm" .
 
@@ -4609,7 +4653,7 @@ qudtUnit:MilliM  rdf:type  qudt:Unit;
         rdf:type       rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has OriginalThickness";
         rdfs:seeAlso   :OriginalThickness , :hasOriginalThickness_Object;
-        :hasUnit       qudtUnit:MilliM;
+        :hasUnit       <http://qudt.org/vocab/unit/MilliM>;
         :hasUnitLabel  "mm" .
 
 :EulerAngle2  rdf:type       owl:Class , skos:Concept;
@@ -4639,7 +4683,7 @@ qudtUnit:MilliM  rdf:type  qudt:Unit;
         :hasExampleData       "-3.93633e-05";
         :hasLabelSource       "DIN EN ISO 6892-1, 3.4"@en , "DIN EN ISO 6892-1, 3.4"@de , "DX56_D_FZ2_WR00_43.TXT"@de;
         :hasShortId           "PercentageElongation";
-        :hasTypicalUnit       qudtUnit:MilliM , qudtUnit:PERCENT;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/MilliM> , <http://qudt.org/vocab/unit/PERCENT>;
         :hasTypicalUnitLabel  "%" , "mm" .
 
 :HardeningCurve  rdf:type    owl:Class , skos:Concept;
@@ -4662,7 +4706,7 @@ qudtUnit:MilliM  rdf:type  qudt:Unit;
         :hasExampleData       "2";
         :hasLabelSource       "DX56_D_FZ2_WR00_43.TXT"@de , "DIN EN ISO 6892-1, 10.2"@de , "DIN EN ISO 6892-1, 10.2"@en;
         :hasShortId           "PreliminaryForce";
-        :hasTypicalUnit       qudtUnit:KiloN , qudtUnit:MegaPA;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/KiloN> , <http://qudt.org/vocab/unit/MegaPA>;
         :hasTypicalUnitLabel  "kN" , "MPa" .
 
 :hasTrueTotalStrain_Object
@@ -4713,7 +4757,8 @@ qudtUnit:MilliM  rdf:type  qudt:Unit;
         :hasLabelSource      "DIN EN 10346_2015"@de;
         :hasShortId          "DualPhaseSteel" .
 
-qudtUnit:MegaPA  rdf:type  qudt:Unit;
+<http://qudt.org/vocab/unit/MegaPA>
+        rdf:type       qudt:Unit;
         :hasShortId    "MegaPA";
         :hasUnitLabel  "MPa" .
 
@@ -4730,7 +4775,7 @@ qudtUnit:MegaPA  rdf:type  qudt:Unit;
         skos:preflabel        "TrueFractureStress"@en;
         :hasLabelSource       "AFZ1-Fz-S1Q.xlsx"@en;
         :hasShortId           "TrueFractureStress";
-        :hasTypicalUnit       qudtUnit:MegaPA;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/MegaPA>;
         :hasTypicalUnitLabel  "MPa";
         :isBasedOn            :TrueStress .
 
@@ -4770,7 +4815,7 @@ qudtUnit:MegaPA  rdf:type  qudt:Unit;
         :hasShortId           "GridSize";
         :hasSymbol            "L_0"@en;
         :hasSymbolLatex       "L_0"@en;
-        :hasTypicalUnit       qudtUnit:MilliM;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/MilliM>;
         :hasTypicalUnitLabel  "mm" .
 
 :UnusualResult  rdf:type  owl:Class;
@@ -4783,14 +4828,14 @@ qudtUnit:MegaPA  rdf:type  qudt:Unit;
         rdf:type       rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has ModulusOfElasticity";
         rdfs:seeAlso   :ModulusOfElasticity , :hasModulusOfElasticity_Object;
-        :hasUnit       qudtUnit:GigaPA;
+        :hasUnit       <http://qudt.org/vocab/unit/GigaPA>;
         :hasUnitLabel  "GPa" .
 
 :hasPercentageElongation_PERCENT
         rdf:type       rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has PercentageElongation";
         rdfs:seeAlso   :PercentageElongation , :hasPercentageElongation_Object;
-        :hasUnit       qudtUnit:PERCENT;
+        :hasUnit       <http://qudt.org/vocab/unit/PERCENT>;
         :hasUnitLabel  "%" .
 
 :hasUpperYieldStrength_Object
@@ -4808,6 +4853,12 @@ qudtUnit:MegaPA  rdf:type  qudt:Unit;
         skos:related     :MildSteel;
         :hasLabelSource  "VDA 239-100"@de , "DIN EN 10346_2015"@en , "DIN EN 10346_2015"@de;
         :hasShortId      "DX56D" .
+
+:hasSampleInfos_Object
+        rdf:type        owl:ObjectProperty , rdf:Property;
+        rdfs:label      "hasSampleInfos"@en;
+        rdfs:range      :SampleInfos;
+        skos:preflabel  "hasSampleInfos"@en .
 
 :hasLaboratory_Object
         rdf:type        owl:ObjectProperty , rdf:Property;
@@ -4872,7 +4923,7 @@ qudtUnit:MegaPA  rdf:type  qudt:Unit;
         skos:preflabel        "TrueTotalStrain"@en;
         :hasLabelSource       "ISO 26203-2, 2011, 4"@en , "Standard definition specific"@de;
         :hasShortId           "TrueTotalStrain";
-        :hasTypicalUnit       qudtUnit:UNITLESS;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/UNITLESS>;
         :hasTypicalUnitLabel  "1" .
 
 :ProjectNumber  rdf:type     skos:Concept , owl:Class;
@@ -4960,7 +5011,7 @@ qudtUnit:MegaPA  rdf:type  qudt:Unit;
 :hasTestTime_SEC  rdf:type  rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has TestTime";
         rdfs:seeAlso   :TestTime , :hasTestTime_Object;
-        :hasUnit       qudtUnit:SEC;
+        :hasUnit       <http://qudt.org/vocab/unit/SEC>;
         :hasUnitLabel  "s" .
 
 :PercentagePermanentExtension
@@ -4975,7 +5026,7 @@ qudtUnit:MegaPA  rdf:type  qudt:Unit;
         :hasShortId           "PercentagePermanentExtension";
         :hasSymbol            "eps-plast"@en;
         :hasSymbolLatex       "eps-plast"@en;
-        :hasTypicalUnit       qudtUnit:PERCENT , qudtUnit:UNITLESS;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/PERCENT> , <http://qudt.org/vocab/unit/UNITLESS>;
         :hasTypicalUnitLabel  "1" , "%";
         :isBasedOn            :ExtensometerGaugeLength , :Extension , :ModulusOfElasticity .
 
@@ -4995,7 +5046,7 @@ qudtUnit:MegaPA  rdf:type  qudt:Unit;
         :hasShortId           "OriginalCrossSection";
         :hasSymbol            "So"@en , "S0"@en;
         :hasSymbolLatex       "S_{0}"@en , "S_{o}"@en;
-        :hasTypicalUnit       qudtUnit:MilliM2;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/MilliM2>;
         :hasTypicalUnitLabel  "mm2";
         :isBasedOn            :OriginalThickness , :OriginalWidth , :Diameter .
 
@@ -5003,7 +5054,7 @@ qudtUnit:MegaPA  rdf:type  qudt:Unit;
         rdf:type       rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has YieldStrength";
         rdfs:seeAlso   :YieldStrength , :hasYieldStrength_Object;
-        :hasUnit       qudtUnit:MegaPA;
+        :hasUnit       <http://qudt.org/vocab/unit/MegaPA>;
         :hasUnitLabel  "MPa" .
 
 :Lsdyna  rdf:type        owl:Class;
@@ -5016,7 +5067,7 @@ qudtUnit:MegaPA  rdf:type  qudt:Unit;
         rdf:type       rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has ProofStrengthTotalExtension";
         rdfs:seeAlso   :ProofStrengthTotalExtension , :hasProofStrengthTotalExtension_Object;
-        :hasUnit       qudtUnit:MegaPA;
+        :hasUnit       <http://qudt.org/vocab/unit/MegaPA>;
         :hasUnitLabel  "MPa" .
 
 :YoungsModulus  rdf:type      skos:Concept , owl:Class;
@@ -5043,7 +5094,7 @@ qudtUnit:MegaPA  rdf:type  qudt:Unit;
         :hasLabelSource       "YS1-Fz-D1Q"@de;
         :hasShortId           "OriginalCrosssection";
         :hasSymbol            "S_{0}"@en;
-        :hasTypicalUnit       qudtUnit:MilliM2;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/MilliM2>;
         :hasTypicalUnitLabel  "mm2";
         :isBasedOn            :OriginalWidth , :OriginalThickness , :Diameter .
 
@@ -5077,7 +5128,7 @@ qudtUnit:MegaPA  rdf:type  qudt:Unit;
         :hasShortId           "OriginalThickness";
         :hasSymbol            "ao"@en , "a_{0}"@en;
         :hasSymbolLatex       "a_o"@en;
-        :hasTypicalUnit       qudtUnit:MilliM;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/MilliM>;
         :hasTypicalUnitLabel  "mm" .
 
 :hasSpecificPlasticWork_Object
@@ -5097,7 +5148,7 @@ qudtUnit:MegaPA  rdf:type  qudt:Unit;
         :hasShortId           "SlopeElasticPartStressStrainCurve";
         :hasSymbol            "mE"@en;
         :hasSymbolLatex       "m_{E}"@en;
-        :hasTypicalUnit       qudtUnit:MegaPA;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/MegaPA>;
         :hasTypicalUnitLabel  "MPa" .
 
 :InitialSheetThickness
@@ -5112,7 +5163,7 @@ qudtUnit:MegaPA  rdf:type  qudt:Unit;
         :hasShortId           "InitialSheetThickness";
         :hasSymbol            "t_0"@en;
         :hasSymbolLatex       "t_0"@en;
-        :hasTypicalUnit       qudtUnit:MilliM;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/MilliM>;
         :hasTypicalUnitLabel  "mm" .
 
 :ResultsFile  rdf:type       skos:Concept , owl:Class;
@@ -5135,7 +5186,7 @@ qudtUnit:MegaPA  rdf:type  qudt:Unit;
         :hasShortId           "PunchDiameter";
         :hasSymbol            "D"@en;
         :hasSymbolLatex       "D"@en;
-        :hasTypicalUnit       qudtUnit:MilliM;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/MilliM>;
         :hasTypicalUnitLabel  "mm";
         :isBasedOn            :TestStandard .
 
@@ -5146,11 +5197,11 @@ qudtUnit:MegaPA  rdf:type  qudt:Unit;
         dcterms:description   "gesamte Verlängerung (elastische plus plastische Verlängerung) der Extensometer-Messlänge beim Bruch, angegeben in Prozent, bezogen auf die Extensometer-Messlänge"@de;
         skos:altlabel         "percentage total extension at fracture"@en;
         skos:preflabel        "PercentageTotalExtensionAtFracture"@en;
-        :hasLabelSource       "DIN EN ISO 6892-1, 3.6.6"@de , "DIN EN ISO 6892-1, 3.6.6"@en;
+        :hasLabelSource       "DIN EN ISO 6892-1, 3.6.6"@en , "DIN EN ISO 6892-1, 3.6.6"@de;
         :hasShortId           "PercentageTotalExtensionAtFracture";
         :hasSymbol            "At"@en;
         :hasSymbolLatex       "A_t"@en;
-        :hasTypicalUnit       qudtUnit:PERCENT;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/PERCENT>;
         :hasTypicalUnitLabel  "%" .
 
 :JobInput  rdf:type      owl:Class;
@@ -5176,7 +5227,7 @@ qudtUnit:MegaPA  rdf:type  qudt:Unit;
         rdf:type       rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has TrueWidthStrain";
         rdfs:seeAlso   :TrueWidthStrain , :hasTrueWidthStrain_Object;
-        :hasUnit       qudtUnit:UNITLESS;
+        :hasUnit       <http://qudt.org/vocab/unit/UNITLESS>;
         :hasUnitLabel  "1" .
 
 :hasTruePlasticStrainAtFracture_Object
@@ -5207,7 +5258,7 @@ qudtUnit:MegaPA  rdf:type  qudt:Unit;
         rdf:type       rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has TransitionRadius";
         rdfs:seeAlso   :TransitionRadius , :hasTransitionRadius_Object;
-        :hasUnit       qudtUnit:MilliM;
+        :hasUnit       <http://qudt.org/vocab/unit/MilliM>;
         :hasUnitLabel  "mm" .
 
 :hasInnerDiameterBlankHolder_Object
@@ -5234,7 +5285,7 @@ qudtUnit:MegaPA  rdf:type  qudt:Unit;
         rdf:type       rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has OriginalCrosssection";
         rdfs:seeAlso   :OriginalCrosssection , :hasOriginalCrosssection_Object;
-        :hasUnit       qudtUnit:MilliM2;
+        :hasUnit       <http://qudt.org/vocab/unit/MilliM2>;
         :hasUnitLabel  "mm2" .
 
 :EngineeringStrain  rdf:type  skos:Concept , owl:Class;
@@ -5247,7 +5298,7 @@ qudtUnit:MegaPA  rdf:type  qudt:Unit;
         :hasShortId           "EngineeringStrain";
         :hasSymbol            "e"@en;
         :hasSymbolLatex       "e"@en;
-        :hasTypicalUnit       qudtUnit:PERCENT;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/PERCENT>;
         :hasTypicalUnitLabel  "%" .
 
 :DisplacementTransducer
@@ -5279,7 +5330,7 @@ qudtUnit:MegaPA  rdf:type  qudt:Unit;
         rdf:type       rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has TotalEngineeringStrain";
         rdfs:seeAlso   :TotalEngineeringStrain , :hasTotalEngineeringStrain_Object;
-        :hasUnit       qudtUnit:PERCENT;
+        :hasUnit       <http://qudt.org/vocab/unit/PERCENT>;
         :hasUnitLabel  "%" .
 
 :hasSlipSystemNumber  rdf:type  rdf:Property , owl:DatatypeProperty;
@@ -5308,16 +5359,16 @@ qudtUnit:MegaPA  rdf:type  qudt:Unit;
         rdfs:range      :CrystalPlasticityParameterFile;
         skos:preflabel  "hasCrystalPlasticityParameterFile"@en .
 
-:TestPieceGeometry  rdf:type  skos:Concept , owl:Class;
+:TestPieceGeometry  rdf:type  owl:Class , skos:Concept;
         rdfs:label           "TestPieceGeometry"@en;
-        rdfs:seeAlso         :TestStandard;
+        rdfs:seeAlso         :SampleType , :TestStandard;
         rdfs:subClassOf      pmdco:ValueObject;
-        dcterms:description  "The type of the specimen."@en;
-        skos:altlabel        "Test piece geometry"@en , "Probengeometrie"@de , "Probenform"@de , "Specimen Type"@en , "Probentyp"@de , "Specimen type"@en;
+        dcterms:description  "The type of the specimen."@en , "The specimen geometry including nominal dimensions"@en , "die Probengeometrie incl. Sollabmessungen"@de;
+        skos:altlabel        "Probengeometrie"@de , "Test piece geometry"@en , "Probenform"@de , "Specimen type"@en , "Specimen Type"@en , "Probentyp"@de;
         skos:preflabel       "TestPieceGeometry"@en;
-        skos:related         :TestStandard;
-        :hasExampleData      "Crashbox" , "FZ2 (L0=80_b0=20_R20)" , "FzA20" , "Nakajima Specimen" , "Flach-Zug";
-        :hasLabelSource      "DX56_D_FZ2_WR00_43.TXT"@de , "AFZ1-ST-D1"@en , " "@en , "DIN EN ISO 12004-2: 2021_07, 11"@en , "DIN EN ISO 12004-2: 2021_07, 11"@de , "deepl translator"@en , "AFZ1-Fz-S1Q.xlsx"@de , "YS1-Fz-D1Q"@de , "AFZ1-NZ50-25-D1Q"@en;
+        skos:related         :SampleType , :TestStandard;
+        :hasExampleData      "Flach-Zug" , "FzA20" , "FZ2 (L0=80_b0=20_R20)" , "Nakajima Specimen" , "Crashbox";
+        :hasLabelSource      "DIN EN ISO 12004-2: 2021_07, 11"@de , "DIN EN ISO 12004-2: 2021_07, 11"@en , "AFZ1-NZ50-25-D1Q"@en , "deepl translator"@en , " "@en , "YS1-Fz-D1Q"@de , "DX56_D_FZ2_WR00_43.TXT"@de , "AFZ1-ST-D1"@en , "AFZ1-Fz-S1Q.xlsx"@de , "AFZ1-Fz-S1Q.xlsx"@en;
         :hasShortId          "TestPieceGeometry" .
 
 :Supplier  rdf:type      owl:Class , skos:Concept;
@@ -5349,7 +5400,7 @@ qudtUnit:MegaPA  rdf:type  qudt:Unit;
 :hasForce_KiloN  rdf:type  rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has Force";
         rdfs:seeAlso   :Force , :hasForce_Object;
-        :hasUnit       qudtUnit:KiloN;
+        :hasUnit       <http://qudt.org/vocab/unit/KiloN>;
         :hasUnitLabel  "kN" .
 
 :ForceAtFracture  rdf:type  skos:Concept , owl:Class;
@@ -5363,7 +5414,7 @@ qudtUnit:MegaPA  rdf:type  qudt:Unit;
 :hasRValue_UNITLESS  rdf:type  rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has RValue";
         rdfs:seeAlso   :RValue , :hasRValue_Object;
-        :hasUnit       qudtUnit:UNITLESS;
+        :hasUnit       <http://qudt.org/vocab/unit/UNITLESS>;
         :hasUnitLabel  "1" .
 
 :hasTrueThicknessStrain
@@ -5400,14 +5451,14 @@ qudtUnit:MegaPA  rdf:type  qudt:Unit;
 :hasStrain_PERCENT  rdf:type  rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has Strain";
         rdfs:seeAlso   :Strain , :hasStrain_Object;
-        :hasUnit       qudtUnit:PERCENT;
+        :hasUnit       <http://qudt.org/vocab/unit/PERCENT>;
         :hasUnitLabel  "%" .
 
 :hasPistonSpeed_MilliM-PER-SEC
         rdf:type       rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has PistonSpeed";
         rdfs:seeAlso   :PistonSpeed , :hasPistonSpeed_Object;
-        :hasUnit       qudtUnit:MilliM-PER-SEC;
+        :hasUnit       <http://qudt.org/vocab/unit/MilliM-PER-SEC>;
         :hasUnitLabel  "mm/s" .
 
 :ReferenceElementSize
@@ -5469,7 +5520,7 @@ qudtUnit:MegaPA  rdf:type  qudt:Unit;
         :hasShortId           "InitialDisplacementRate";
         :hasSymbol            "vo"@en;
         :hasSymbolLatex       "v_{o}"@en;
-        :hasTypicalUnit       qudtUnit:MilliM-PER-SEC;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/MilliM-PER-SEC>;
         :hasTypicalUnitLabel  "mm s -1" , "mm/s or m/s" .
 
 :Phase  rdf:type        owl:Class;
@@ -5495,7 +5546,7 @@ qudtUnit:MegaPA  rdf:type  qudt:Unit;
         rdf:type       rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has CharacteristicEngineeringStrainRate";
         rdfs:seeAlso   :CharacteristicEngineeringStrainRate , :hasCharacteristicEngineeringStrainRate_Object;
-        :hasUnit       qudtUnit:PER-SEC;
+        :hasUnit       <http://qudt.org/vocab/unit/PER-SEC>;
         :hasUnitLabel  "s-1" .
 
 :LatentHardeningQ1  rdf:type  skos:Concept , owl:Class;
@@ -5504,10 +5555,10 @@ qudtUnit:MegaPA  rdf:type  qudt:Unit;
         dcterms:description   "Parameter, der in der Interaktionsmatrix die Fremdverfestigung (latent hardning) eines Gleitsystems infolge eines Gleitsystems aus einer anderen Gleitsystem-Familie beschreibt"@de;
         skos:altlabel         "LatentHardening q1"@en;
         skos:preflabel        "LatentHardeningQ1"@en;
-        :hasLabelSource       "General Knowledge"@de , "General Knowledge"@en;
+        :hasLabelSource       "General Knowledge"@en , "General Knowledge"@de;
         :hasShortId           "LatentHardeningQ1";
         :hasSymbolLatex       "\\q_1"@en;
-        :hasTypicalUnit       qudtUnit:UNITLESS;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/UNITLESS>;
         :hasTypicalUnitLabel  "-" .
 
 :DrawingSpeed  rdf:type       skos:Concept , owl:Class;
@@ -5531,14 +5582,14 @@ qudtUnit:MegaPA  rdf:type  qudt:Unit;
         :hasShortId           "EstimatedStrainRateOverTheParallelLength";
         :hasSymbol            "eLc"@en;
         :hasSymbolLatex       "\\dot{e}_{L_c}"@en;
-        :hasTypicalUnit       qudtUnit:PER-SEC;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/PER-SEC>;
         :hasTypicalUnitLabel  "s-1" .
 
 :hasPercentagePermanentExtension_PERCENT
         rdf:type       rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has PercentagePermanentExtension";
         rdfs:seeAlso   :PercentagePermanentExtension , :hasPercentagePermanentExtension_Object;
-        :hasUnit       qudtUnit:PERCENT;
+        :hasUnit       <http://qudt.org/vocab/unit/PERCENT>;
         :hasUnitLabel  "%" .
 
 :hasShearLength_Object
@@ -5578,21 +5629,21 @@ qudtUnit:MegaPA  rdf:type  qudt:Unit;
         :hasShortId           "SpecimenWidth";
         :hasSymbol            "B"@en , "b"@en;
         :hasSymbolLatex       "b"@en , "B"@en;
-        :hasTypicalUnit       qudtUnit:MilliM;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/MilliM>;
         :hasTypicalUnitLabel  "mm" .
 
 :hasEstimatedStrainRateOverTheParallelLength_PER-SEC
         rdf:type       rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has EstimatedStrainRateOverTheParallelLength";
         rdfs:seeAlso   :EstimatedStrainRateOverTheParallelLength , :hasEstimatedStrainRateOverTheParallelLength_Object;
-        :hasUnit       qudtUnit:PER-SEC;
+        :hasUnit       <http://qudt.org/vocab/unit/PER-SEC>;
         :hasUnitLabel  "s-1" .
 
 :hasTotalLength_MilliM
         rdf:type       rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has TotalLength";
         rdfs:seeAlso   :TotalLength , :hasTotalLength_Object;
-        :hasUnit       qudtUnit:MilliM;
+        :hasUnit       <http://qudt.org/vocab/unit/MilliM>;
         :hasUnitLabel  "mm" .
 
 :hasCrossHardeningParameter_UNITLESS
@@ -5630,7 +5681,7 @@ qudtUnit:MegaPA  rdf:type  qudt:Unit;
         :hasShortId           "Force";
         :hasSymbol            "F"@en;
         :hasSymbolLatex       "F"@en;
-        :hasTypicalUnit       qudtUnit:KiloN , qudtUnit:N;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/KiloN> , <http://qudt.org/vocab/unit/N>;
         :hasTypicalUnitLabel  "kN" , "N" .
 
 :hasWidthAfterFracture2_Object
@@ -5665,14 +5716,14 @@ qudtUnit:MegaPA  rdf:type  qudt:Unit;
         rdf:type       rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has PressureChamber";
         rdfs:seeAlso   :PressureChamber , :hasPressureChamber_Object;
-        :hasUnit       qudtUnit:MegaPA;
+        :hasUnit       <http://qudt.org/vocab/unit/MegaPA>;
         :hasUnitLabel  "MPa" .
 
 :hasPermanentSetStrength_MegaPA
         rdf:type       rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has PermanentSetStrength";
         rdfs:seeAlso   :PermanentSetStrength , :hasPermanentSetStrength_Object;
-        :hasUnit       qudtUnit:MegaPA;
+        :hasUnit       <http://qudt.org/vocab/unit/MegaPA>;
         :hasUnitLabel  "MPa" .
 
 :hasCrossHardeningParameter_Object
@@ -5685,7 +5736,7 @@ qudtUnit:MegaPA  rdf:type  qudt:Unit;
         rdf:type       rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has InitialDisplacementRate";
         rdfs:seeAlso   :InitialDisplacementRate , :hasInitialDisplacementRate_Object;
-        :hasUnit       qudtUnit:MilliM-PER-SEC;
+        :hasUnit       <http://qudt.org/vocab/unit/MilliM-PER-SEC>;
         :hasUnitLabel  "mm s -1" .
 
 :WidthAfterFracture1  rdf:type  skos:Concept , owl:Class;
@@ -5697,7 +5748,7 @@ qudtUnit:MegaPA  rdf:type  qudt:Unit;
         skos:related          :WidthAfterFracture2;
         :hasLabelSource       "AFZ1-Fz-S1Q.xlsx"@de;
         :hasShortId           "WidthAfterFracture1";
-        :hasTypicalUnit       qudtUnit:MilliM;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/MilliM>;
         :hasTypicalUnitLabel  "mm" .
 
 :hasTimeDependentEngineeringStrainRate_Object
@@ -5752,13 +5803,13 @@ qudtUnit:MegaPA  rdf:type  qudt:Unit;
         :hasLabelSource       "General Knowledge"@en , "General Knowledge"@de;
         :hasShortId           "HardeningParameterTheta1";
         :hasSymbolLatex       "\\theta_1"@en;
-        :hasTypicalUnit       qudtUnit:MegaPA;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/MegaPA>;
         :hasTypicalUnitLabel  "MPa" .
 
 :hasGridSize_MilliM  rdf:type  rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has GridSize";
         rdfs:seeAlso   :GridSize , :hasGridSize_Object;
-        :hasUnit       qudtUnit:MilliM;
+        :hasUnit       <http://qudt.org/vocab/unit/MilliM>;
         :hasUnitLabel  "mm" .
 
 :hasTestDirection_Object
@@ -5778,7 +5829,7 @@ qudtUnit:MegaPA  rdf:type  qudt:Unit;
         :hasLabelSource       "YS1-Fz-D1Q"@de;
         :hasShortId           "TruePlasticStrainAtFracture";
         :hasSymbol            "e_{w Bruch}"@en;
-        :hasTypicalUnit       qudtUnit:PERCENT;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/PERCENT>;
         :hasTypicalUnitLabel  "%";
         :isBasedOn            :OriginalCrosssection , :MinimumCrosssectionAfterFracture .
 
@@ -5841,11 +5892,11 @@ qudtUnit:MegaPA  rdf:type  qudt:Unit;
         skos:altlabel         "SU"@en , "minimum cross-sectional area after fracture"@en;
         skos:preflabel        "MinimumCrossSectionAfterFracture"@en;
         :hasExampleData       "4879";
-        :hasLabelSource       "AFZ1-Fz-S1Q.xlsx"@en , "DIN EN ISO 6892-1, Table 1"@en , "DIN EN ISO 6892-1, Tabelle 1"@de;
+        :hasLabelSource       "DIN EN ISO 6892-1, Table 1"@en , "DIN EN ISO 6892-1, Tabelle 1"@de , "AFZ1-Fz-S1Q.xlsx"@en;
         :hasShortId           "MinimumCrossSectionAfterFracture";
         :hasSymbol            "Su"@en;
         :hasSymbolLatex       "S_{u}"@en;
-        :hasTypicalUnit       qudtUnit:MilliM2;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/MilliM2>;
         :hasTypicalUnitLabel  "mm2";
         :isBasedOn            :ThicknessAfterFracture1 , :DiameterAfterFracture1 , :DiameterAfterFracture2 , :WidthAfterFracture2 , :WidthAfterFracture1 , :ThicknessAfterFracture2 .
 
@@ -5865,7 +5916,7 @@ qudtUnit:MegaPA  rdf:type  qudt:Unit;
         rdf:type       rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has TrueFractureStress";
         rdfs:seeAlso   :TrueFractureStress , :hasTrueFractureStress_Object;
-        :hasUnit       qudtUnit:MegaPA;
+        :hasUnit       <http://qudt.org/vocab/unit/MegaPA>;
         :hasUnitLabel  "MPa" .
 
 :AnisotropicYieldFunctionParameters
@@ -5890,7 +5941,7 @@ qudtUnit:MegaPA  rdf:type  qudt:Unit;
         :hasExampleData       "14786";
         :hasLabelSource       "AFZ1-ST-D1"@en , "AFZ1-Fz-S1Q.xlsx"@de;
         :hasShortId           "CrossheadDisplacement";
-        :hasTypicalUnit       qudtUnit:MilliM;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/MilliM>;
         :hasTypicalUnitLabel  "mm" .
 
 <https://qudt.org/vocab/unit/K>
@@ -5914,7 +5965,7 @@ qudtUnit:MegaPA  rdf:type  qudt:Unit;
         rdf:type       rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has TensileStrength";
         rdfs:seeAlso   :TensileStrength , :hasTensileStrength_Object;
-        :hasUnit       qudtUnit:MegaPA;
+        :hasUnit       <http://qudt.org/vocab/unit/MegaPA>;
         :hasUnitLabel  "MPa" .
 
 :StrainRateFormulationFlag
@@ -5932,7 +5983,7 @@ qudtUnit:MegaPA  rdf:type  qudt:Unit;
         rdf:type       rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has ProofStrengthPlasticExtension";
         rdfs:seeAlso   :ProofStrengthPlasticExtension , :hasProofStrengthPlasticExtension_Object;
-        :hasUnit       qudtUnit:MegaPA;
+        :hasUnit       <http://qudt.org/vocab/unit/MegaPA>;
         :hasUnitLabel  "MPa" .
 
 :TruePlasticStrain  rdf:type  owl:Class , skos:Concept;
@@ -5943,7 +5994,7 @@ qudtUnit:MegaPA  rdf:type  qudt:Unit;
         skos:preflabel        "TruePlasticStrain"@en;
         :hasLabelSource       "ISO 26203-2, 2011, 4"@en , "Standard definition specific"@de;
         :hasShortId           "TruePlasticStrain";
-        :hasTypicalUnit       qudtUnit:UNITLESS;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/UNITLESS>;
         :hasTypicalUnitLabel  "1" .
 
 :TimeIncrementStep  rdf:type  owl:Class;
@@ -5976,7 +6027,7 @@ qudtUnit:MegaPA  rdf:type  qudt:Unit;
         skos:altlabel        "Testing machine"@en , "Maschinendaten"@de , "Prüfmasch."@de , "Machine Type"@en , "Prüfmaschine"@de , "Testing Machine"@en;
         skos:preflabel       "Machine"@en;
         :hasExampleData      "SZM500" , "Instron 5985" , "ZwickRoell Blechumformprüfmaschine 600kN - BUP600" , "SZM100";
-        :hasLabelSource      "YS1-FzR4-S1Q"@de , "YS1-FzR4-S1Q"@en , "YS1-Sz0°-S1L"@de , "YS1-Fz-D1Q"@de , "AFZ-BU-S1.TXT"@de , "K-Type"@en , "AFZ1-Fz-S1Q.xlsx"@de , "standard definition specific"@en , "AFZ1-ST-D1"@en , "deepl translator"@en , "AFZ1-NZ50-25-D1Q"@en;
+        :hasLabelSource      "YS1-Sz0°-S1L"@de , "YS1-FzR4-S1Q"@en , "AFZ1-NZ50-25-D1Q"@en , "YS1-FzR4-S1Q"@de , "YS1-Fz-D1Q"@de , "AFZ-BU-S1.TXT"@de , "K-Type"@en , "AFZ1-Fz-S1Q.xlsx"@de , "standard definition specific"@en , "AFZ1-ST-D1"@en , "deepl translator"@en;
         :hasShortId          "Machine" .
 
 :Stress  rdf:type             skos:Concept , owl:Class;
@@ -5989,7 +6040,7 @@ qudtUnit:MegaPA  rdf:type  qudt:Unit;
         :hasShortId           "Stress";
         :hasSymbol            "R"@en;
         :hasSymbolLatex       "R"@en;
-        :hasTypicalUnit       qudtUnit:MegaPA;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/MegaPA>;
         :hasTypicalUnitLabel  "MPa" .
 
 :PlasticEngineeringStrain
@@ -6003,7 +6054,7 @@ qudtUnit:MegaPA  rdf:type  qudt:Unit;
         :hasShortId           "PlasticEngineeringStrain";
         :hasSymbol            "epl"@en;
         :hasSymbolLatex       "e_{pl}"@en;
-        :hasTypicalUnit       qudtUnit:PERCENT;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/PERCENT>;
         :hasTypicalUnitLabel  "%" .
 
 :hasYieldStrength_Object
@@ -6053,14 +6104,14 @@ qudtUnit:MegaPA  rdf:type  qudt:Unit;
         :hasShortId           "PressureChamber";
         :hasSymbol            "p"@en;
         :hasSymbolLatex       "p"@en;
-        :hasTypicalUnit       qudtUnit:MegaPA;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/MegaPA>;
         :hasTypicalUnitLabel  "N/mm2" , "MPa" .
 
 :hasExtensometerGaugeLength_MilliM
         rdf:type       rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has ExtensometerGaugeLength";
         rdfs:seeAlso   :ExtensometerGaugeLength , :hasExtensometerGaugeLength_Object;
-        :hasUnit       qudtUnit:MilliM;
+        :hasUnit       <http://qudt.org/vocab/unit/MilliM>;
         :hasUnitLabel  "mm" .
 
 :MaterialCard  rdf:type      owl:Class , skos:Concept;
@@ -6091,7 +6142,7 @@ qudtUnit:MegaPA  rdf:type  qudt:Unit;
         rdf:type       rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has SpecimenWidth";
         rdfs:seeAlso   :SpecimenWidth , :hasSpecimenWidth_Object;
-        :hasUnit       qudtUnit:MilliM;
+        :hasUnit       <http://qudt.org/vocab/unit/MilliM>;
         :hasUnitLabel  "mm" .
 
 :ComponentTest  rdf:type  owl:Class;
@@ -6114,7 +6165,8 @@ qudtUnit:MegaPA  rdf:type  qudt:Unit;
         rdfs:range      :Fracture;
         skos:preflabel  "hasFracture"@en .
 
-qudtUnit:PER-SEC  rdf:type  qudt:Unit;
+<http://qudt.org/vocab/unit/PER-SEC>
+        rdf:type       qudt:Unit;
         :hasShortId    "PER-SEC";
         :hasUnitLabel  "s-1" , "1/s" .
 
@@ -6122,7 +6174,7 @@ qudtUnit:PER-SEC  rdf:type  qudt:Unit;
         rdf:type       rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has HardeningParameterTau1";
         rdfs:seeAlso   :HardeningParameterTau1 , :hasHardeningParameterTau1_Object;
-        :hasUnit       qudtUnit:MegaPA;
+        :hasUnit       <http://qudt.org/vocab/unit/MegaPA>;
         :hasUnitLabel  "MPa" .
 
 :hasPercentagePlasticExtensionAtMaximumForce_Object
@@ -6141,7 +6193,7 @@ qudtUnit:PER-SEC  rdf:type  qudt:Unit;
         :hasShortId           "DynamometerArea";
         :hasSymbol            "SD"@en;
         :hasSymbolLatex       "S_{D}"@en;
-        :hasTypicalUnit       qudtUnit:MilliM2;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/MilliM2>;
         :hasTypicalUnitLabel  "mm2" .
 
 :CharacteristicEngineeringStrainRate
@@ -6156,7 +6208,7 @@ qudtUnit:PER-SEC  rdf:type  qudt:Unit;
         :hasExampleData       "0.8";
         :hasLabelSource       "YS1-Fz-D1Q"@de;
         :hasShortId           "CharacteristicEngineeringStrainRate";
-        :hasTypicalUnit       qudtUnit:PER-SEC;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/PER-SEC>;
         :hasTypicalUnitLabel  "s-1";
         :isBasedOn            :Time , :ExtensometerGaugeLength , :ProofStrength_0.2Percentage , :Extension .
 
@@ -6168,7 +6220,7 @@ qudtUnit:PER-SEC  rdf:type  qudt:Unit;
         skos:preflabel        "Dehnung"@de , "Elongation"@en;
         :hasLabelSource       "ISO 26203-2, 2011, 4"@en , "DIN EN ISO 6892-1, 3.3"@de , "DIN EN ISO 6892-1, 3.3"@en;
         :hasShortId           "Elongation";
-        :hasTypicalUnit       qudtUnit:MilliM;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/MilliM>;
         :hasTypicalUnitLabel  "mm" .
 
 :hasTensileTestingMachine_Object
@@ -6188,7 +6240,7 @@ qudtUnit:PER-SEC  rdf:type  qudt:Unit;
         :hasShortId           "InnerDiameterBlankHolder";
         :hasSymbol            "d_BH"@en;
         :hasSymbolLatex       "d_BH"@en;
-        :hasTypicalUnit       qudtUnit:MilliM;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/MilliM>;
         :hasTypicalUnitLabel  "mm" .
 
 :Plasticity  rdf:type   owl:Class;
@@ -6199,7 +6251,7 @@ qudtUnit:PER-SEC  rdf:type  qudt:Unit;
         rdf:type       rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has SlopeElasticPartStressStrainCurve";
         rdfs:seeAlso   :SlopeElasticPartStressStrainCurve , :hasSlopeElasticPartStressStrainCurve_Object;
-        :hasUnit       qudtUnit:MegaPA;
+        :hasUnit       <http://qudt.org/vocab/unit/MegaPA>;
         :hasUnitLabel  "MPa" .
 
 :YieldStress  rdf:type        skos:Concept , owl:Class;
@@ -6232,7 +6284,7 @@ qudtUnit:PER-SEC  rdf:type  qudt:Unit;
         :hasShortId           "PoissonsRatio";
         :hasSymbol            "nue"@en;
         :hasSymbolLatex       "nue"@en;
-        :hasTypicalUnit       qudtUnit:UNITLESS;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/UNITLESS>;
         :hasTypicalUnitLabel  "1" .
 
 :hasMatPiecewiseLinearPlasticityLogInterpolation
@@ -6278,11 +6330,15 @@ qudtUnit:PER-SEC  rdf:type  qudt:Unit;
         :hasLabelSource      "General Knowledge"@en , "General Knowledge"@de;
         :hasShortId          "Texture" .
 
+:hasSampleInfos  rdf:type  rdf:Property , owl:DatatypeProperty;
+        rdfs:label    "has SampleInfos";
+        rdfs:seeAlso  :SampleInfos , :hasSampleInfos_Object .
+
 :hasHardeningParameterTheta0_MegaPA
         rdf:type       rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has HardeningParameterTheta0";
         rdfs:seeAlso   :HardeningParameterTheta0 , :hasHardeningParameterTheta0_Object;
-        :hasUnit       qudtUnit:MegaPA;
+        :hasUnit       <http://qudt.org/vocab/unit/MegaPA>;
         :hasUnitLabel  "MPa" .
 
 :hasMaterialCard  rdf:type  rdf:Property , owl:DatatypeProperty;
@@ -6344,7 +6400,8 @@ qudtUnit:PER-SEC  rdf:type  qudt:Unit;
         rdfs:range      :ComplexPhaseSteel;
         skos:preflabel  "hasComplexPhaseSteel"@en .
 
-qudtUnit:PERCENT  rdf:type  qudt:Unit;
+<http://qudt.org/vocab/unit/PERCENT>
+        rdf:type       qudt:Unit;
         :hasShortId    "PERCENT";
         :hasUnitLabel  "%" .
 
@@ -6402,14 +6459,14 @@ qudtUnit:PERCENT  rdf:type  qudt:Unit;
         :hasShortId           "ProofStrengthTotalExtension";
         :hasSymbol            "Rt"@en;
         :hasSymbolLatex       "R_{t}"@en;
-        :hasTypicalUnit       qudtUnit:MegaPA;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/MegaPA>;
         :hasTypicalUnitLabel  "MPa" .
 
 :hasYieldForce_0.2Percentage_KiloN
         rdf:type       rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has YieldForce_0.2Percentage";
         rdfs:seeAlso   :YieldForce_0.2Percentage , :hasYieldForce_0.2Percentage_Object;
-        :hasUnit       qudtUnit:KiloN;
+        :hasUnit       <http://qudt.org/vocab/unit/KiloN>;
         :hasUnitLabel  "kN" .
 
 :hasSampleIdentifier_Object
@@ -6422,7 +6479,7 @@ qudtUnit:PERCENT  rdf:type  qudt:Unit;
         rdf:type       rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has DiameterAfterFracture2";
         rdfs:seeAlso   :DiameterAfterFracture2 , :hasDiameterAfterFracture2_Object;
-        :hasUnit       qudtUnit:MilliM;
+        :hasUnit       <http://qudt.org/vocab/unit/MilliM>;
         :hasUnitLabel  "mm" .
 
 :hasOriginalCrossSection_Object
@@ -6481,7 +6538,7 @@ qudtUnit:PERCENT  rdf:type  qudt:Unit;
         rdf:type       rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has WidthChange";
         rdfs:seeAlso   :WidthChange , :hasWidthChange_Object;
-        :hasUnit       qudtUnit:MilliM;
+        :hasUnit       <http://qudt.org/vocab/unit/MilliM>;
         :hasUnitLabel  "mm" .
 
 :LubricationSystem  rdf:type  skos:Concept , owl:Class;
@@ -6534,13 +6591,17 @@ qudtUnit:PERCENT  rdf:type  qudt:Unit;
         :hasShortId           "ProofStrengthPlasticExtension";
         :hasSymbol            "Rp"@en;
         :hasSymbolLatex       "R_{p}"@en;
-        :hasTypicalUnit       qudtUnit:MegaPA;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/MegaPA>;
         :hasTypicalUnitLabel  "MPa" .
 
 :hasLabelSource  rdf:type  owl:DatatypeProperty;
         rdfs:label      "has label source"@en;
         dc:description  "The source for the resource label (rdfs:label or skos:preflabel). The language tag denotes the language of the label this source is for."@en;
         skos:preflabel  "has label source"@en .
+
+:hasSampleProduction  rdf:type  rdf:Property , owl:DatatypeProperty;
+        rdfs:label    "has SampleProduction";
+        rdfs:seeAlso  :SampleProduction , :hasSampleProduction_Object .
 
 :EvaluationMethod  rdf:type  skos:Concept , owl:Class;
         rdfs:label           "EvaluationMethod"@en;
@@ -6555,7 +6616,7 @@ qudtUnit:PERCENT  rdf:type  qudt:Unit;
         rdf:type       rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has ExtensionAtFracture";
         rdfs:seeAlso   :ExtensionAtFracture , :hasExtensionAtFracture_Object;
-        :hasUnit       qudtUnit:MilliM;
+        :hasUnit       <http://qudt.org/vocab/unit/MilliM>;
         :hasUnitLabel  "mm" .
 
 :hasOperator_Object  rdf:type  owl:ObjectProperty , rdf:Property;
@@ -6571,7 +6632,7 @@ qudtUnit:PERCENT  rdf:type  qudt:Unit;
         rdf:type       rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has PercentageElongationAfterFracture";
         rdfs:seeAlso   :PercentageElongationAfterFracture , :hasPercentageElongationAfterFracture_Object;
-        :hasUnit       qudtUnit:PERCENT;
+        :hasUnit       <http://qudt.org/vocab/unit/PERCENT>;
         :hasUnitLabel  "%" .
 
 :hasTestPieceGeometry
@@ -6583,7 +6644,7 @@ qudtUnit:PERCENT  rdf:type  qudt:Unit;
         rdf:type       rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has InteractionMatrix";
         rdfs:seeAlso   :InteractionMatrix , :hasInteractionMatrix_Object;
-        :hasUnit       qudtUnit:UNITLESS;
+        :hasUnit       <http://qudt.org/vocab/unit/UNITLESS>;
         :hasUnitLabel  "-" .
 
 :hasInitialCriticalStrength_Object
@@ -6611,7 +6672,7 @@ qudtUnit:PERCENT  rdf:type  qudt:Unit;
         rdf:type       rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has TimeDependentEngineeringStrainRate";
         rdfs:seeAlso   :TimeDependentEngineeringStrainRate , :hasTimeDependentEngineeringStrainRate_Object;
-        :hasUnit       qudtUnit:PER-SEC;
+        :hasUnit       <http://qudt.org/vocab/unit/PER-SEC>;
         :hasUnitLabel  "s-1" .
 
 :TestPieceLength  rdf:type    skos:Concept , owl:Class;
@@ -6624,14 +6685,14 @@ qudtUnit:PERCENT  rdf:type  qudt:Unit;
         :hasLabelSource       "YS1-Fz-D1Q"@de;
         :hasShortId           "TestPieceLength";
         :hasSymbol            "L_{t}"@en;
-        :hasTypicalUnit       qudtUnit:MilliM;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/MilliM>;
         :hasTypicalUnitLabel  "mm" .
 
 :hasProofStrength_0.2Percentage_MegaPA
         rdf:type       rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has ProofStrength_0.2Percentage";
         rdfs:seeAlso   :ProofStrength_0.2Percentage , :hasProofStrength_0.2Percentage_Object;
-        :hasUnit       qudtUnit:MegaPA;
+        :hasUnit       <http://qudt.org/vocab/unit/MegaPA>;
         :hasUnitLabel  "MPa" .
 
 :hasComputerControlledTensileTestingMachine_Object
@@ -6667,7 +6728,7 @@ qudtUnit:PERCENT  rdf:type  qudt:Unit;
         rdf:type       rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has OriginalGaugeLength";
         rdfs:seeAlso   :OriginalGaugeLength , :hasOriginalGaugeLength_Object;
-        :hasUnit       qudtUnit:MilliM;
+        :hasUnit       <http://qudt.org/vocab/unit/MilliM>;
         :hasUnitLabel  "mm" .
 
 :hasPermanentSetStrength_Object
@@ -6680,7 +6741,7 @@ qudtUnit:PERCENT  rdf:type  qudt:Unit;
         rdf:type       rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has ElasticConstantC12";
         rdfs:seeAlso   :ElasticConstantC12 , :hasElasticConstantC12_Object;
-        :hasUnit       qudtUnit:MegaPA;
+        :hasUnit       <http://qudt.org/vocab/unit/MegaPA>;
         :hasUnitLabel  "MPa" .
 
 :transverseDirection  rdf:type  owl:Class;
@@ -6699,7 +6760,7 @@ qudtUnit:PERCENT  rdf:type  qudt:Unit;
         rdf:type       rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has PercentagePlasticExtensionAtMaximumForce";
         rdfs:seeAlso   :PercentagePlasticExtensionAtMaximumForce , :hasPercentagePlasticExtensionAtMaximumForce_Object;
-        :hasUnit       qudtUnit:PERCENT;
+        :hasUnit       <http://qudt.org/vocab/unit/PERCENT>;
         :hasUnitLabel  "%" .
 
 :InventoryNumber  rdf:type  owl:Class , skos:Concept;
@@ -6775,14 +6836,14 @@ qudtUnit:PERCENT  rdf:type  qudt:Unit;
         rdf:type       rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has Elongation";
         rdfs:seeAlso   :Elongation , :hasElongation_Object;
-        :hasUnit       qudtUnit:MilliM;
+        :hasUnit       <http://qudt.org/vocab/unit/MilliM>;
         :hasUnitLabel  "mm" .
 
 :hasPunchVelocity_MilliM-PER-SEC
         rdf:type       rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has PunchVelocity";
         rdfs:seeAlso   :PunchVelocity , :hasPunchVelocity_Object;
-        :hasUnit       qudtUnit:MilliM-PER-SEC;
+        :hasUnit       <http://qudt.org/vocab/unit/MilliM-PER-SEC>;
         :hasUnitLabel  "mm/s" .
 
 :CrossheadSeparationRate
@@ -6799,7 +6860,7 @@ qudtUnit:PERCENT  rdf:type  qudt:Unit;
         :hasShortId           "CrossheadSeparationRate";
         :hasSymbol            "vc"@en;
         :hasSymbolLatex       "\\nu_c"@en;
-        :hasTypicalUnit       qudtUnit:MilliM-PER-SEC;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/MilliM-PER-SEC>;
         :hasTypicalUnitLabel  "mm s -1" , "mm/s" .
 
 :hasGridSize_Object  rdf:type  owl:ObjectProperty , rdf:Property;
@@ -6832,7 +6893,7 @@ qudtUnit:PERCENT  rdf:type  qudt:Unit;
         rdf:type       rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has MinimumCrossSectionAfterFracture";
         rdfs:seeAlso   :MinimumCrossSectionAfterFracture , :hasMinimumCrossSectionAfterFracture_Object;
-        :hasUnit       qudtUnit:MilliM2;
+        :hasUnit       <http://qudt.org/vocab/unit/MilliM2>;
         :hasUnitLabel  "mm2" .
 
 :hasUser  rdf:type    rdf:Property , owl:DatatypeProperty;
@@ -6860,7 +6921,7 @@ qudtUnit:PERCENT  rdf:type  qudt:Unit;
         skos:preflabel        "DiameterAfterFracture1"@en;
         skos:related          :DiameterAfterFracture2;
         :hasShortId           "DiameterAfterFracture1";
-        :hasTypicalUnit       qudtUnit:MilliM;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/MilliM>;
         :hasTypicalUnitLabel  "mm" .
 
 :MaterialInstabilityStrain
@@ -6879,21 +6940,21 @@ qudtUnit:PERCENT  rdf:type  qudt:Unit;
         rdf:type       rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has EffecticStrain";
         rdfs:seeAlso   :EffecticStrain , :hasEffecticStrain_Object;
-        :hasUnit       qudtUnit:UNITLESS;
+        :hasUnit       <http://qudt.org/vocab/unit/UNITLESS>;
         :hasUnitLabel  "-" .
 
 :hasWidthStrain_UNITLESS
         rdf:type       rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has WidthStrain";
         rdfs:seeAlso   :WidthStrain , :hasWidthStrain_Object;
-        :hasUnit       qudtUnit:UNITLESS;
+        :hasUnit       <http://qudt.org/vocab/unit/UNITLESS>;
         :hasUnitLabel  "1" .
 
 :hasDisplacement_MilliM
         rdf:type       rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has Displacement";
         rdfs:seeAlso   :Displacement , :hasDisplacement_Object;
-        :hasUnit       qudtUnit:MilliM;
+        :hasUnit       <http://qudt.org/vocab/unit/MilliM>;
         :hasUnitLabel  "mm" .
 
 :hasOperator  rdf:type  rdf:Property , owl:DatatypeProperty;
@@ -6907,7 +6968,7 @@ qudtUnit:PERCENT  rdf:type  qudt:Unit;
         skos:altlabel        "Specimen Name"@en , "Probenbezeichnung"@de , "Probennummer"@de , "NAME"@de , "Proben-Nr."@de , "Sample identifier"@en;
         skos:preflabel       "SampleIdentifier"@en;
         :hasExampleData      "AFZ-BU-S1" , "AFZ1-ST-D1" , "AFZ1-Fz-101Q" , "AWA_1_01_Rz" , "AFZ1-NZ50-25-D1Q";
-        :hasLabelSource      "AWA_1_01_Rz-46N171"@de , "YS1-Fz-D1Q"@de , "deepl translator"@en , "AFZ1-Fz-S1Q.xlsx"@de , "AFZ1-NZ50-25-D1Q"@en , "AFZ1-NZ50-25-D1Q"@de , "AFZ-BU-S1.TXT"@de , "AFZ1-ST-D1"@en , " "@en;
+        :hasLabelSource      "AWA_1_01_Rz-46N171"@de , "YS1-Fz-D1Q"@de , "deepl translator"@en , "AFZ1-Fz-S1Q.xlsx"@de , "AFZ1-NZ50-25-D1Q"@en , "AFZ1-NZ50-25-D1Q"@de , "AFZ1-ST-D1"@en , "AFZ-BU-S1.TXT"@de , " "@en;
         :hasShortId          "SampleIdentifier" .
 
 :hasTestingFacility_Object
@@ -6945,7 +7006,7 @@ qudtUnit:PERCENT  rdf:type  qudt:Unit;
         :hasShortId           "MeanPlasticStrainRate";
         :hasSymbol            "epl"@en;
         :hasSymbolLatex       "\\dot{e}_{pl}"@en;
-        :hasTypicalUnit       qudtUnit:PER-SEC;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/PER-SEC>;
         :hasTypicalUnitLabel  "s-1" .
 
 :OriginalWidth  rdf:type      skos:Concept , owl:Class;
@@ -6961,15 +7022,25 @@ qudtUnit:PERCENT  rdf:type  qudt:Unit;
         :hasShortId           "OriginalWidth";
         :hasSymbol            "b_{0}"@en , "bo"@en;
         :hasSymbolLatex       "b_o"@en;
-        :hasTypicalUnit       qudtUnit:MilliM;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/MilliM>;
         :hasTypicalUnitLabel  "mm" .
 
 :hasEngineeringStress_MegaPA
         rdf:type       rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has EngineeringStress";
         rdfs:seeAlso   :EngineeringStress , :hasEngineeringStress_Object;
-        :hasUnit       qudtUnit:MegaPA;
+        :hasUnit       <http://qudt.org/vocab/unit/MegaPA>;
         :hasUnitLabel  "MPa" .
+
+:SampleProduction  rdf:type  owl:Class , skos:Concept;
+        rdfs:label           "SampleProduction"@en;
+        rdfs:subClassOf      pmdco:ValueObject;
+        dcterms:description  "der Herstellungsprozess der Probe"@de , "the production type for the manufactoring of the sample"@en;
+        skos:altlabel        "sample production"@en , "Probenherstellung"@de;
+        skos:preflabel       "SampleProduction"@en;
+        :hasExampleData      "Wasserstrahlschneiden";
+        :hasLabelSource      "K-Item"@de , "linguee"@en;
+        :hasShortId          "SampleProduction" .
 
 :DefaultValue  rdf:type      owl:Class , skos:Concept;
         rdfs:label           "DefaultValue"@en;
@@ -7011,7 +7082,7 @@ qudtUnit:PERCENT  rdf:type  qudt:Unit;
         :hasLabelSource       "General Knowledge"@en , "General Knowledge"@de;
         :hasShortId           "RateSensitivityOfSlip";
         :hasSymbol            "m"@en;
-        :hasTypicalUnit       qudtUnit:UNITLESS;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/UNITLESS>;
         :hasTypicalUnitLabel  "-" .
 
 :Grid   rdf:type             skos:Concept , owl:Class;
@@ -7041,7 +7112,7 @@ qudtUnit:PERCENT  rdf:type  qudt:Unit;
         rdf:type       rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has WidthAfterFracture1";
         rdfs:seeAlso   :WidthAfterFracture1 , :hasWidthAfterFracture1_Object;
-        :hasUnit       qudtUnit:MilliM;
+        :hasUnit       <http://qudt.org/vocab/unit/MilliM>;
         :hasUnitLabel  "mm" .
 
 :ThicknessAfterFracture2
@@ -7054,7 +7125,7 @@ qudtUnit:PERCENT  rdf:type  qudt:Unit;
         skos:related          :ThicknessAfterFracture1;
         :hasLabelSource       "AFZ1-Fz-S1Q.xlsx"@de;
         :hasShortId           "ThicknessAfterFracture2";
-        :hasTypicalUnit       qudtUnit:MilliM;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/MilliM>;
         :hasTypicalUnitLabel  "mm" .
 
 :hasMinorTrueStrain  rdf:type  rdf:Property , owl:DatatypeProperty;
@@ -7076,14 +7147,14 @@ qudtUnit:PERCENT  rdf:type  qudt:Unit;
         :hasShortId           "RValue";
         :hasSymbol            "r-ges"@en;
         :hasSymbolLatex       "r-ges"@en;
-        :hasTypicalUnit       qudtUnit:UNITLESS;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/UNITLESS>;
         :hasTypicalUnitLabel  "1";
         :isBasedOn            :WidthStrain , :TrueStrain .
 
 :hasClampingForce_N  rdf:type  rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has ClampingForce";
         rdfs:seeAlso   :ClampingForce , :hasClampingForce_Object;
-        :hasUnit       qudtUnit:N;
+        :hasUnit       <http://qudt.org/vocab/unit/N>;
         :hasUnitLabel  "N" .
 
 :hasLaboratory  rdf:type  rdf:Property , owl:DatatypeProperty;
@@ -7144,7 +7215,7 @@ qudtUnit:PERCENT  rdf:type  qudt:Unit;
         rdf:type       rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has AbsoluteCrossheadTravel";
         rdfs:seeAlso   :AbsoluteCrossheadTravel , :hasAbsoluteCrossheadTravel_Object;
-        :hasUnit       qudtUnit:MilliM;
+        :hasUnit       <http://qudt.org/vocab/unit/MilliM>;
         :hasUnitLabel  "mm" .
 
 :hasStressRate_Object
@@ -7185,7 +7256,7 @@ qudtUnit:PERCENT  rdf:type  qudt:Unit;
         rdfs:label           "StahlDigital Vocabulary"@en;
         dc:description       "Vocabulary of project StahlDigital"@en;
         dcterms:contributor  "Clemens Fehrenbach, Alexander Butz, Alexander Wessel, Andreas Trondl, Silke Klitschke, Paul Zierep, Lukas Morand, Dirk Helm";
-        dcterms:date         "2024-04-16T19:52:35+00:00";
+        dcterms:date         "2024-04-17T07:34:28+00:00";
         owl:versionInfo      "0.1 (preliminary)"@en;
         skos:prefLabel       "StahlDigital Vocabulary"@en .
 
@@ -7216,7 +7287,7 @@ qudtUnit:PERCENT  rdf:type  qudt:Unit;
 :hasRadiusDie_MilliM  rdf:type  rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has RadiusDie";
         rdfs:seeAlso   :RadiusDie , :hasRadiusDie_Object;
-        :hasUnit       qudtUnit:MilliM;
+        :hasUnit       <http://qudt.org/vocab/unit/MilliM>;
         :hasUnitLabel  "mm" .
 
 :ExtensometerGaugeLength
@@ -7233,13 +7304,13 @@ qudtUnit:PERCENT  rdf:type  qudt:Unit;
         :hasShortId           "ExtensometerGaugeLength";
         :hasSymbol            "Le"@en , "L_{0}"@en;
         :hasSymbolLatex       "L_e"@en;
-        :hasTypicalUnit       qudtUnit:MilliM;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/MilliM>;
         :hasTypicalUnitLabel  "mm" .
 
 :hasStress_MegaPA  rdf:type  rdf:Property , owl:DatatypeProperty;
         rdfs:label     "has Stress";
         rdfs:seeAlso   :Stress , :hasStress_Object;
-        :hasUnit       qudtUnit:MegaPA;
+        :hasUnit       <http://qudt.org/vocab/unit/MegaPA>;
         :hasUnitLabel  "MPa" .
 
 :hasSpecimenWidth_Object
@@ -7256,7 +7327,7 @@ qudtUnit:PERCENT  rdf:type  qudt:Unit;
         skos:preflabel        "EffectiveStress"@en;
         :hasLabelSource       "General Knowledge"@en , "General Knowledge"@de;
         :hasShortId           "EffectiveStress";
-        :hasTypicalUnit       qudtUnit:MegaPA;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/MegaPA>;
         :hasTypicalUnitLabel  "MPa" .
 
 :rollingDirection  rdf:type  owl:Class;
@@ -7275,7 +7346,7 @@ qudtUnit:PERCENT  rdf:type  qudt:Unit;
         :hasShortId           "TrueStrain";
         :hasSymbol            "epsw(dL)"@en;
         :hasSymbolLatex       "epsw(dL)"@en;
-        :hasTypicalUnit       qudtUnit:UNITLESS;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/UNITLESS>;
         :hasTypicalUnitLabel  "1";
         :isBasedOn            :PercentageExtension .
 
@@ -7294,7 +7365,7 @@ qudtUnit:PERCENT  rdf:type  qudt:Unit;
         :hasShortId           "PercentageElongationAfterFracture";
         :hasSymbol            "A"@en , "A20mm"@en , "A_{20mm}"@en;
         :hasSymbolLatex       "A"@en , "A_{20mm}"@en;
-        :hasTypicalUnit       qudtUnit:PERCENT;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/PERCENT>;
         :hasTypicalUnitLabel  "%";
         :isBasedOn            :PercentageExtension , :EngineeringStress , :ModulusOfElasticity .
 
@@ -7338,7 +7409,7 @@ qudtUnit:PERCENT  rdf:type  qudt:Unit;
         :hasShortId           "Extension";
         :hasSymbol            "dL"@en;
         :hasSymbolLatex       "dL"@en;
-        :hasTypicalUnit       qudtUnit:MilliM;
+        :hasTypicalUnit       <http://qudt.org/vocab/unit/MilliM>;
         :hasTypicalUnitLabel  "mm";
         :isBasedOn            :OriginalGaugeLength , :ExtensometerGaugeLength .
 

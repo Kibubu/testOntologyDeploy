@@ -2,8 +2,20 @@
 {
   "https://w3id.org/steel/ProcessOntology/TestPieceGeometry" : {
     "http://purl.org/dc/terms/description" : [ {
+        "value" : "The specimen geometry including nominal dimensions",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      ,
+      {
         "value" : "The type of the specimen.",
         "lang" : "en",
+        "type" : "literal"
+        }
+      ,
+      {
+        "value" : "die Probengeometrie incl. Sollabmessungen",
+        "lang" : "de",
         "type" : "literal"
         }
       
@@ -27,6 +39,11 @@
       
       ],
     "http://www.w3.org/2000/01/rdf-schema#seeAlso" : [ {
+        "value" : "https://w3id.org/steel/ProcessOntology/SampleType",
+        "type" : "uri"
+        }
+      ,
+      {
         "value" : "https://w3id.org/steel/ProcessOntology/TestStandard",
         "type" : "uri"
         }
@@ -83,6 +100,11 @@
       
       ],
     "http://www.w3.org/2004/02/skos/core#related" : [ {
+        "value" : "https://w3id.org/steel/ProcessOntology/SampleType",
+        "type" : "uri"
+        }
+      ,
+      {
         "value" : "https://w3id.org/steel/ProcessOntology/TestStandard",
         "type" : "uri"
         }
@@ -123,6 +145,12 @@
       {
         "value" : "AFZ1-Fz-S1Q.xlsx",
         "lang" : "de",
+        "type" : "literal"
+        }
+      ,
+      {
+        "value" : "AFZ1-Fz-S1Q.xlsx",
+        "lang" : "en",
         "type" : "literal"
         }
       ,

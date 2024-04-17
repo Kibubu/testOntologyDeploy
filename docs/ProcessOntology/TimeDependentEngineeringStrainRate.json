@@ -2,13 +2,13 @@
 {
   "https://w3id.org/steel/ProcessOntology/TimeDependentEngineeringStrainRate" : {
     "http://purl.org/dc/terms/description" : [ {
-        "value" : "time-dependent engineering strain rate = de(t)/dt",
+        "value" : "\"time-dependent engineering strain rate = de(t)/dt\" [ISO 26203-2, 2011, 4]",
         "lang" : "en",
         "type" : "literal"
         }
       ,
       {
-        "value" : "zeitabh\u00E4ngige technische Dehnrate = de(t)/dt",
+        "value" : "\"zeitabh\u00E4ngige technische Dehnrate = de(t)/dt\" [Authors]",
         "lang" : "de",
         "type" : "literal"
         }
@@ -73,6 +73,25 @@
     "http://www.w3.org/2004/02/skos/core#related" : [ {
         "value" : "https://w3id.org/steel/ProcessOntology/StrainRate",
         "type" : "uri"
+        }
+      
+      ],
+    "https://w3id.org/steel/ProcessOntology/hasDescriptionCitationSource" : [ {
+        "value" : "Authors",
+        "lang" : "de",
+        "type" : "literal"
+        }
+      ,
+      {
+        "value" : "Authors",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      ,
+      {
+        "value" : "ISO 26203-2, 2011, 4",
+        "lang" : "en",
+        "type" : "literal"
         }
       
       ],

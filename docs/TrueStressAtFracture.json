@@ -2,7 +2,7 @@
 {
   "https://w3id.org/steel/ProcessOntology/TrueStressAtFracture" : {
     "http://purl.org/dc/terms/description" : [ {
-        "value" : "true stress at fracture",
+        "value" : "\"true stress at fracture\" [Authors]",
         "lang" : "en",
         "type" : "literal"
         }
@@ -47,6 +47,13 @@
       ],
     "http://www.w3.org/2004/02/skos/core#preflabel" : [ {
         "value" : "TrueStressAtFracture",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      
+      ],
+    "https://w3id.org/steel/ProcessOntology/hasDescriptionCitationSource" : [ {
+        "value" : "Authors",
         "lang" : "en",
         "type" : "literal"
         }

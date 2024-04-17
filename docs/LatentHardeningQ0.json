@@ -2,7 +2,7 @@
 {
   "https://w3id.org/steel/ProcessOntology/LatentHardeningQ0" : {
     "http://purl.org/dc/terms/description" : [ {
-        "value" : "Parameter, der in der Interaktionsmatrix die Fremdverfestigung (latent hardning) eines Gleitsystems innerhalb der gleichen Gleitsystem-Familie beschreibt",
+        "value" : "\"Parameter, der in der Interaktionsmatrix die Fremdverfestigung (latent hardning) eines Gleitsystems innerhalb der gleichen Gleitsystem-Familie beschreibt\" [General Knowledge]",
         "lang" : "de",
         "type" : "literal"
         }
@@ -42,6 +42,13 @@
     "http://www.w3.org/2004/02/skos/core#preflabel" : [ {
         "value" : "LatentHardeningQ0",
         "lang" : "en",
+        "type" : "literal"
+        }
+      
+      ],
+    "https://w3id.org/steel/ProcessOntology/hasDescriptionCitationSource" : [ {
+        "value" : "General Knowledge",
+        "lang" : "de",
         "type" : "literal"
         }
       

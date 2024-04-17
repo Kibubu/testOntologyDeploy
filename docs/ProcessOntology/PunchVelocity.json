@@ -2,13 +2,13 @@
 {
   "https://w3id.org/steel/ProcessOntology/PunchVelocity" : {
     "http://purl.org/dc/terms/description" : [ {
-        "value" : "Stempelgeschwindigkeit",
+        "value" : "\"Stempelgeschwindigkeit\" [DIN EN ISO 12004-2: 2021_07, 13]",
         "lang" : "de",
         "type" : "literal"
         }
       ,
       {
-        "value" : "punch velocity",
+        "value" : "\"punch velocity\" [DIN EN ISO 12004-2: 2021_07, 13]",
         "lang" : "en",
         "type" : "literal"
         }
@@ -59,6 +59,19 @@
       ],
     "http://www.w3.org/2004/02/skos/core#preflabel" : [ {
         "value" : "PunchVelocity",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      
+      ],
+    "https://w3id.org/steel/ProcessOntology/hasDescriptionCitationSource" : [ {
+        "value" : "DIN EN ISO 12004-2: 2021_07, 13",
+        "lang" : "de",
+        "type" : "literal"
+        }
+      ,
+      {
+        "value" : "DIN EN ISO 12004-2: 2021_07, 13",
         "lang" : "en",
         "type" : "literal"
         }

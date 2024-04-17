@@ -2,13 +2,13 @@
 {
   "https://w3id.org/steel/ProcessOntology/Radius" : {
     "http://purl.org/dc/terms/description" : [ {
-        "value" : "Kerbradius (nur bei Schr\u00E4gkerb-Scherzugproben)",
+        "value" : "\"Kerbradius (nur bei Schr\u00E4gkerb-Scherzugproben)\" [Authors]",
         "lang" : "de",
         "type" : "literal"
         }
       ,
       {
-        "value" : "Radius of the notch (only for notched shear tensile specimens)",
+        "value" : "\"Radius of the notch (only for notched shear tensile specimens)\" [Authors]",
         "lang" : "en",
         "type" : "literal"
         }
@@ -61,6 +61,19 @@
     "http://www.w3.org/2004/02/skos/core#related" : [ {
         "value" : "https://w3id.org/steel/ProcessOntology/TestPieceGeometry",
         "type" : "uri"
+        }
+      
+      ],
+    "https://w3id.org/steel/ProcessOntology/hasDescriptionCitationSource" : [ {
+        "value" : "Authors",
+        "lang" : "de",
+        "type" : "literal"
+        }
+      ,
+      {
+        "value" : "Authors",
+        "lang" : "en",
+        "type" : "literal"
         }
       
       ],

@@ -2,7 +2,7 @@
 {
   "https://w3id.org/steel/ProcessOntology/TrueStrain" : {
     "http://purl.org/dc/terms/description" : [ {
-        "value" : "true strain",
+        "value" : "\"true strain\" [Authors]",
         "lang" : "en",
         "type" : "literal"
         }
@@ -66,6 +66,13 @@
       {
         "value" : "wahre Dehnung",
         "lang" : "de",
+        "type" : "literal"
+        }
+      
+      ],
+    "https://w3id.org/steel/ProcessOntology/hasDescriptionCitationSource" : [ {
+        "value" : "Authors",
+        "lang" : "en",
         "type" : "literal"
         }
       

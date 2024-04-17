@@ -2,7 +2,7 @@
 {
   "https://w3id.org/steel/ProcessOntology/TruePlasticStrainAtFracture" : {
     "http://purl.org/dc/terms/description" : [ {
-        "value" : "true plastic strain at fracture",
+        "value" : "\"true plastic strain at fracture\" [Authors]",
         "lang" : "en",
         "type" : "literal"
         }
@@ -47,6 +47,13 @@
       ],
     "http://www.w3.org/2004/02/skos/core#preflabel" : [ {
         "value" : "TruePlasticStrainAtFracture",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      
+      ],
+    "https://w3id.org/steel/ProcessOntology/hasDescriptionCitationSource" : [ {
+        "value" : "Authors",
         "lang" : "en",
         "type" : "literal"
         }

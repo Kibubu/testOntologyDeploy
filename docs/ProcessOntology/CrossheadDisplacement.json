@@ -2,7 +2,7 @@
 {
   "https://w3id.org/steel/ProcessOntology/CrossheadDisplacement" : {
     "http://purl.org/dc/terms/description" : [ {
-        "value" : "Displacement of the actuator",
+        "value" : "\"Displacement of the actuator\" [Authors]",
         "lang" : "en",
         "type" : "literal"
         }
@@ -55,6 +55,13 @@
     "http://www.w3.org/2004/02/skos/core#related" : [ {
         "value" : "https://w3id.org/steel/ProcessOntology/Machine",
         "type" : "uri"
+        }
+      
+      ],
+    "https://w3id.org/steel/ProcessOntology/hasDescriptionCitationSource" : [ {
+        "value" : "Authors",
+        "lang" : "en",
+        "type" : "literal"
         }
       
       ],

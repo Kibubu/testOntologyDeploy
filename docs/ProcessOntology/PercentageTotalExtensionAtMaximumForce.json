@@ -2,19 +2,19 @@
 {
   "https://w3id.org/steel/ProcessOntology/PercentageTotalExtensionAtMaximumForce" : {
     "http://purl.org/dc/terms/description" : [ {
-        "value" : "Percentage total extension at maximum force Fm (total strain at maximum force, Fm)",
+        "value" : "\"Percentage total extension at maximum force Fm (total strain at maximum force, Fm)\" [DIN EN ISO 6892-1, 3.6.4]",
         "lang" : "en",
         "type" : "literal"
         }
       ,
       {
-        "value" : "gesamte Verl\u00E4ngerung (elastische plus plastische Verl\u00E4ngerung) der Extensometer-Messl\u00E4nge bei H\u00F6chstkraft, angegeben in Prozent, bezogen auf die Extensometer-Messl\u00E4nge",
+        "value" : "\"gesamte Verl\u00E4ngerung (elastische plus plastische Verl\u00E4ngerung) der Extensometer-Messl\u00E4nge bei H\u00F6chstkraft, angegeben in Prozent, bezogen auf die Extensometer-Messl\u00E4nge\" [DIN EN ISO 6892-1, 3.6.4]",
         "lang" : "de",
         "type" : "literal"
         }
       ,
       {
-        "value" : "gesamte Verl\u00E4ngerung der Extensometer-Messl\u00E4nge bei H\u00F6chstkraft, angegeben in Prozent, bezogen auf die Extensometer-Messl\u00E4nge",
+        "value" : "\"gesamte Verl\u00E4ngerung der Extensometer-Messl\u00E4nge bei H\u00F6chstkraft, angegeben in Prozent, bezogen auf die Extensometer-Messl\u00E4nge\" [DIN EN ISO 6892-1, 3.6.4]",
         "lang" : "de",
         "type" : "literal"
         }
@@ -53,6 +53,19 @@
       ],
     "http://www.w3.org/2004/02/skos/core#preflabel" : [ {
         "value" : "PercentageTotalExtensionAtMaximumForce",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      
+      ],
+    "https://w3id.org/steel/ProcessOntology/hasDescriptionCitationSource" : [ {
+        "value" : "DIN EN ISO 6892-1, 3.6.4",
+        "lang" : "de",
+        "type" : "literal"
+        }
+      ,
+      {
+        "value" : "DIN EN ISO 6892-1, 3.6.4",
         "lang" : "en",
         "type" : "literal"
         }

@@ -2,7 +2,7 @@
 {
   "https://w3id.org/steel/ProcessOntology/MicroalloyedSteel" : {
     "http://purl.org/dc/terms/description" : [ {
-        "value" : "Mikrolegierte St\u00E4hle erzielen ihre hohen Festigkeiten durch die Legierung mit Niob, Titan und Vanadium",
+        "value" : "\"Mikrolegierte St\u00E4hle erzielen ihre hohen Festigkeiten durch die Legierung mit Niob, Titan und Vanadium\" [DIN EN 10346_2015]",
         "lang" : "de",
         "type" : "literal"
         }
@@ -55,6 +55,13 @@
     "http://www.w3.org/2004/02/skos/core#related" : [ {
         "value" : "https://w3id.org/steel/ProcessOntology/Grade",
         "type" : "uri"
+        }
+      
+      ],
+    "https://w3id.org/steel/ProcessOntology/hasDescriptionCitationSource" : [ {
+        "value" : "DIN EN 10346_2015",
+        "lang" : "de",
+        "type" : "literal"
         }
       
       ],

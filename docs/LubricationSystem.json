@@ -2,13 +2,13 @@
 {
   "https://w3id.org/steel/ProcessOntology/LubricationSystem" : {
     "http://purl.org/dc/terms/description" : [ {
-        "value" : "Schmiermittelschicht zwischen Stempel und Probe",
+        "value" : "\"Schmiermittelschicht zwischen Stempel und Probe\" [DIN EN ISO 12004-2: 2021_07, 16]",
         "lang" : "de",
         "type" : "literal"
         }
       ,
       {
-        "value" : "lubrication layer between specimen and punch",
+        "value" : "\"lubrication layer between specimen and punch\" [DIN EN ISO 12004-2: 2021_07, 8]",
         "lang" : "en",
         "type" : "literal"
         }
@@ -53,6 +53,19 @@
       ],
     "http://www.w3.org/2004/02/skos/core#preflabel" : [ {
         "value" : "LubricationSystem",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      
+      ],
+    "https://w3id.org/steel/ProcessOntology/hasDescriptionCitationSource" : [ {
+        "value" : "DIN EN ISO 12004-2: 2021_07, 16",
+        "lang" : "de",
+        "type" : "literal"
+        }
+      ,
+      {
+        "value" : "DIN EN ISO 12004-2: 2021_07, 8",
         "lang" : "en",
         "type" : "literal"
         }

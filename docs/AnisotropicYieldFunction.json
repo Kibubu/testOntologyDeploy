@@ -2,7 +2,7 @@
 {
   "https://w3id.org/steel/ProcessOntology/AnisotropicYieldFunction" : {
     "http://purl.org/dc/terms/description" : [ {
-        "value" : "Anisotropes Flie\u00DFortmodell, das f\u00FCr die Bestimmung der Parameter verwendet wurde",
+        "value" : "\"Anisotropes Flie\u00DFortmodell, das f\u00FCr die Bestimmung der Parameter verwendet wurde\" [General Knowledge]",
         "lang" : "de",
         "type" : "literal"
         }
@@ -41,6 +41,19 @@
       ],
     "http://www.w3.org/2004/02/skos/core#preflabel" : [ {
         "value" : "AnisotropicYieldFunction",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      
+      ],
+    "https://w3id.org/steel/ProcessOntology/hasDescriptionCitationSource" : [ {
+        "value" : "General Knowledge",
+        "lang" : "de",
+        "type" : "literal"
+        }
+      ,
+      {
+        "value" : "General Knowledge",
         "lang" : "en",
         "type" : "literal"
         }

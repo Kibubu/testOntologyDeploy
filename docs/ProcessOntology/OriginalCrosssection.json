@@ -2,7 +2,7 @@
 {
   "https://w3id.org/steel/ProcessOntology/OriginalCrosssection" : {
     "http://purl.org/dc/terms/description" : [ {
-        "value" : "original cross-sectional area of the parallel length",
+        "value" : "\"original cross-sectional area of the parallel length\" [Authors]",
         "lang" : "en",
         "type" : "literal"
         }
@@ -47,6 +47,13 @@
       ],
     "http://www.w3.org/2004/02/skos/core#preflabel" : [ {
         "value" : "OriginalCrosssection",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      
+      ],
+    "https://w3id.org/steel/ProcessOntology/hasDescriptionCitationSource" : [ {
+        "value" : "Authors",
         "lang" : "en",
         "type" : "literal"
         }

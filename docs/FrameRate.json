@@ -2,7 +2,7 @@
 {
   "https://w3id.org/steel/ProcessOntology/FrameRate" : {
     "http://purl.org/dc/terms/description" : [ {
-        "value" : "sampling rate of the strain measuring system (e.g. high speed video recording)",
+        "value" : "\"sampling rate of the strain measuring system (e.g. high speed video recording)\" [Authors]",
         "lang" : "en",
         "type" : "literal"
         }
@@ -53,6 +53,13 @@
       ],
     "http://www.w3.org/2004/02/skos/core#preflabel" : [ {
         "value" : "FrameRate",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      
+      ],
+    "https://w3id.org/steel/ProcessOntology/hasDescriptionCitationSource" : [ {
+        "value" : "Authors",
         "lang" : "en",
         "type" : "literal"
         }

@@ -2,7 +2,7 @@
 {
   "https://w3id.org/steel/ProcessOntology/AmplitudeFile" : {
     "http://purl.org/dc/terms/description" : [ {
-        "value" : "Datei mit Informationen zu den verwendeten Amplituden f\u00FCr die Mikrostruktursimulation",
+        "value" : "\"Datei mit Informationen zu den verwendeten Amplituden f\u00FCr die Mikrostruktursimulation\" [General Knowledge]",
         "lang" : "de",
         "type" : "literal"
         }
@@ -41,6 +41,19 @@
       ],
     "http://www.w3.org/2004/02/skos/core#preflabel" : [ {
         "value" : "AmplitudeFile",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      
+      ],
+    "https://w3id.org/steel/ProcessOntology/hasDescriptionCitationSource" : [ {
+        "value" : "General Knowledge",
+        "lang" : "de",
+        "type" : "literal"
+        }
+      ,
+      {
+        "value" : "General Knowledge",
         "lang" : "en",
         "type" : "literal"
         }

@@ -2,7 +2,7 @@
 {
   "https://w3id.org/steel/ProcessOntology/PercentageExtension" : {
     "http://purl.org/dc/terms/description" : [ {
-        "value" : "engineering strain",
+        "value" : "\"engineering strain\" [Authors]",
         "lang" : "en",
         "type" : "literal"
         }
@@ -53,6 +53,13 @@
       ],
     "http://www.w3.org/2004/02/skos/core#preflabel" : [ {
         "value" : "PercentageExtension",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      
+      ],
+    "https://w3id.org/steel/ProcessOntology/hasDescriptionCitationSource" : [ {
+        "value" : "Authors",
         "lang" : "en",
         "type" : "literal"
         }

@@ -2,7 +2,7 @@
 {
   "https://w3id.org/steel/ProcessOntology/Width" : {
     "http://purl.org/dc/terms/description" : [ {
-        "value" : "width of the extensometer gauge length in thickness direction",
+        "value" : "\"width of the extensometer gauge length in thickness direction\" [Authors]",
         "lang" : "en",
         "type" : "literal"
         }
@@ -41,6 +41,13 @@
       ],
     "http://www.w3.org/2004/02/skos/core#preflabel" : [ {
         "value" : "Width",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      
+      ],
+    "https://w3id.org/steel/ProcessOntology/hasDescriptionCitationSource" : [ {
+        "value" : "Authors",
         "lang" : "en",
         "type" : "literal"
         }

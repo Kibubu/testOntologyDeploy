@@ -2,13 +2,13 @@
 {
   "https://w3id.org/steel/ProcessOntology/MinorTrueStrain" : {
     "http://purl.org/dc/terms/description" : [ {
-        "value" : "Kleinere Form\u00E4nderung",
+        "value" : "\"Kleinere Form\u00E4nderung\" [DIN EN ISO 12004-2: 2021_07, 8]",
         "lang" : "de",
         "type" : "literal"
         }
       ,
       {
-        "value" : "minor true strain",
+        "value" : "\"minor true strain\" [DIN EN ISO 12004-2: 2021_07, 8]",
         "lang" : "en",
         "type" : "literal"
         }
@@ -59,6 +59,19 @@
       ],
     "http://www.w3.org/2004/02/skos/core#preflabel" : [ {
         "value" : "MinorTrueStrain",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      
+      ],
+    "https://w3id.org/steel/ProcessOntology/hasDescriptionCitationSource" : [ {
+        "value" : "DIN EN ISO 12004-2: 2021_07, 8",
+        "lang" : "de",
+        "type" : "literal"
+        }
+      ,
+      {
+        "value" : "DIN EN ISO 12004-2: 2021_07, 8",
         "lang" : "en",
         "type" : "literal"
         }

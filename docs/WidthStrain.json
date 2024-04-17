@@ -2,7 +2,7 @@
 {
   "https://w3id.org/steel/ProcessOntology/WidthStrain" : {
     "http://purl.org/dc/terms/description" : [ {
-        "value" : "engineering strain in width direction",
+        "value" : "\"engineering strain in width direction\" [Authors]",
         "lang" : "en",
         "type" : "literal"
         }
@@ -41,6 +41,13 @@
       ],
     "http://www.w3.org/2004/02/skos/core#preflabel" : [ {
         "value" : "WidthStrain",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      
+      ],
+    "https://w3id.org/steel/ProcessOntology/hasDescriptionCitationSource" : [ {
+        "value" : "Authors",
         "lang" : "en",
         "type" : "literal"
         }

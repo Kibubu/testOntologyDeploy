@@ -2,13 +2,13 @@
 {
   "https://w3id.org/steel/ProcessOntology/TransitionRadius" : {
     "http://purl.org/dc/terms/description" : [ {
-        "value" : "transition radius between parallel part and clamping part of the test piece",
+        "value" : "\"transition radius between parallel part and clamping part of the test piece\" [Authors]",
         "lang" : "en",
         "type" : "literal"
         }
       ,
       {
-        "value" : "\u00DCbergangsradius zwischewn dem Parallelen Bereich und dem Kopfbereich der Probe",
+        "value" : "\"\u00DCbergangsradius zwischewn dem Parallelen Bereich und dem Kopfbereich der Probe\" [Authors]",
         "lang" : "de",
         "type" : "literal"
         }
@@ -47,6 +47,19 @@
       ],
     "http://www.w3.org/2004/02/skos/core#preflabel" : [ {
         "value" : "TransitionRadius",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      
+      ],
+    "https://w3id.org/steel/ProcessOntology/hasDescriptionCitationSource" : [ {
+        "value" : "Authors",
+        "lang" : "de",
+        "type" : "literal"
+        }
+      ,
+      {
+        "value" : "Authors",
         "lang" : "en",
         "type" : "literal"
         }

@@ -2,7 +2,7 @@
 {
   "https://w3id.org/steel/ProcessOntology/Laboratory" : {
     "http://purl.org/dc/terms/description" : [ {
-        "value" : "Pr\u00FCflabor, das die Werte des hydraulischen Tiefungsversuchs gemessen hat.",
+        "value" : "\"Pr\u00FCflabor, das die Werte des hydraulischen Tiefungsversuchs gemessen hat.\" [DIN EN ISO 16808:2022-08, 12]",
         "lang" : "de",
         "type" : "literal"
         }
@@ -41,6 +41,19 @@
       ],
     "http://www.w3.org/2004/02/skos/core#preflabel" : [ {
         "value" : "Laboratory",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      
+      ],
+    "https://w3id.org/steel/ProcessOntology/hasDescriptionCitationSource" : [ {
+        "value" : "DIN EN ISO 16808:2022-08, 12",
+        "lang" : "de",
+        "type" : "literal"
+        }
+      ,
+      {
+        "value" : "DIN EN ISO 16808:2022-08, 12",
         "lang" : "en",
         "type" : "literal"
         }

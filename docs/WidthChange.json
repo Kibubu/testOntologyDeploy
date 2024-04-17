@@ -2,13 +2,13 @@
 {
   "https://w3id.org/steel/ProcessOntology/WidthChange" : {
     "http://purl.org/dc/terms/description" : [ {
-        "value" : "Change of the sample width.",
+        "value" : "\"Change of the sample width.\" [Authors]",
         "lang" : "en",
         "type" : "literal"
         }
       ,
       {
-        "value" : "change of width of the extensometer gauge length",
+        "value" : "\"change of width of the extensometer gauge length\" [Authors]",
         "lang" : "en",
         "type" : "literal"
         }
@@ -59,6 +59,13 @@
       ],
     "http://www.w3.org/2004/02/skos/core#preflabel" : [ {
         "value" : "WidthChange",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      
+      ],
+    "https://w3id.org/steel/ProcessOntology/hasDescriptionCitationSource" : [ {
+        "value" : "Authors",
         "lang" : "en",
         "type" : "literal"
         }

@@ -46,12 +46,6 @@
         }
       
       ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "RValue",
-        "type" : "literal"
-        }
-      
-      ],
     "https://w3id.org/steel/ProcessOntology/hasSymbol" : [ {
         "value" : "r-ges",
         "lang" : "en",

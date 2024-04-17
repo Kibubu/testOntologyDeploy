@@ -59,12 +59,6 @@
         }
       
       ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "PercentagePermanentElongation",
-        "type" : "literal"
-        }
-      
-      ],
     "https://w3id.org/steel/ProcessOntology/hasTypicalUnit" : [ {
         "value" : "http://qudt.org/vocab/unit/PERCENT",
         "type" : "uri"

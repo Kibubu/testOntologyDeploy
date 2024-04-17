@@ -89,12 +89,6 @@
         }
       
       ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "PunchVelocity",
-        "type" : "literal"
-        }
-      
-      ],
     "https://w3id.org/steel/ProcessOntology/hasSymbol" : [ {
         "value" : "v_0",
         "lang" : "en",

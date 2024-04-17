@@ -13,7 +13,6 @@
 <https://w3id.org/steel/ProcessOntology/WidthChange> <https://w3id.org/steel/ProcessOntology/hasLabelSource> "AFZ1-Fz-S1Q.xlsx"@de .
 <https://w3id.org/steel/ProcessOntology/WidthChange> <https://w3id.org/steel/ProcessOntology/hasLabelSource> "DX56_D_FZ2_WR00_43.TXT"@de .
 <https://w3id.org/steel/ProcessOntology/WidthChange> <https://w3id.org/steel/ProcessOntology/hasLabelSource> "deepl translator"@en .
-<https://w3id.org/steel/ProcessOntology/WidthChange> <https://w3id.org/steel/ProcessOntology/hasShortId> "WidthChange" .
 <https://w3id.org/steel/ProcessOntology/WidthChange> <https://w3id.org/steel/ProcessOntology/hasTypicalUnit> <http://qudt.org/vocab/unit/MilliM> .
 <https://w3id.org/steel/ProcessOntology/WidthChange> <https://w3id.org/steel/ProcessOntology/hasTypicalUnitLabel> "mm" .
 <https://w3id.org/steel/ProcessOntology/WidthChange> <https://w3id.org/steel/ProcessOntology/isBasedOn> <https://w3id.org/steel/ProcessOntology/Width> .

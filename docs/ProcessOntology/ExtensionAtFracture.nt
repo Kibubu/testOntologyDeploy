@@ -6,7 +6,6 @@
 <https://w3id.org/steel/ProcessOntology/ExtensionAtFracture> <http://www.w3.org/2004/02/skos/core#altlabel> "DLBruch"@de .
 <https://w3id.org/steel/ProcessOntology/ExtensionAtFracture> <http://www.w3.org/2004/02/skos/core#preflabel> "ExtensionAtFracture"@en .
 <https://w3id.org/steel/ProcessOntology/ExtensionAtFracture> <https://w3id.org/steel/ProcessOntology/hasLabelSource> "AFZ1-Fz-S1Q.xlsx"@de .
-<https://w3id.org/steel/ProcessOntology/ExtensionAtFracture> <https://w3id.org/steel/ProcessOntology/hasShortId> "ExtensionAtFracture" .
 <https://w3id.org/steel/ProcessOntology/ExtensionAtFracture> <https://w3id.org/steel/ProcessOntology/hasSymbolLatex> "dLBruch"@en .
 <https://w3id.org/steel/ProcessOntology/ExtensionAtFracture> <https://w3id.org/steel/ProcessOntology/hasTypicalUnit> <http://qudt.org/vocab/unit/MilliM> .
 <https://w3id.org/steel/ProcessOntology/ExtensionAtFracture> <https://w3id.org/steel/ProcessOntology/hasTypicalUnitLabel> "mm" .

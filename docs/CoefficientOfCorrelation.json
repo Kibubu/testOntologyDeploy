@@ -59,12 +59,6 @@
         }
       
       ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "CoefficientOfCorrelation",
-        "type" : "literal"
-        }
-      
-      ],
     "https://w3id.org/steel/ProcessOntology/hasSymbol" : [ {
         "value" : "R2",
         "lang" : "en",

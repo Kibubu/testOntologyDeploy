@@ -59,12 +59,6 @@
         }
       
       ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "ProofStrength_0.2Percentage",
-        "type" : "literal"
-        }
-      
-      ],
     "https://w3id.org/steel/ProcessOntology/hasSymbol" : [ {
         "value" : "Rp02",
         "lang" : "en",

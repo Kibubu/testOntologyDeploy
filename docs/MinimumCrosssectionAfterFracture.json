@@ -65,12 +65,6 @@
         }
       
       ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "MinimumCrosssectionAfterFracture",
-        "type" : "literal"
-        }
-      
-      ],
     "https://w3id.org/steel/ProcessOntology/hasSymbol" : [ {
         "value" : "S_{u}",
         "lang" : "en",

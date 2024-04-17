@@ -156,12 +156,6 @@
         "type" : "literal"
         }
       
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "SampleIdentifier",
-        "type" : "literal"
-        }
-      
       ]
     }
   }

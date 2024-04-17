@@ -9,4 +9,3 @@
 <https://w3id.org/steel/ProcessOntology/SampleIdentifier-2> <https://w3id.org/steel/ProcessOntology/hasExampleData> "DX56_D_FZ2_WR00_43" .
 <https://w3id.org/steel/ProcessOntology/SampleIdentifier-2> <https://w3id.org/steel/ProcessOntology/hasLabelSource> "DX56_D_FZ2_WR00_43.TXT"@de .
 <https://w3id.org/steel/ProcessOntology/SampleIdentifier-2> <https://w3id.org/steel/ProcessOntology/hasLabelSource> "deepl translator"@en .
-<https://w3id.org/steel/ProcessOntology/SampleIdentifier-2> <https://w3id.org/steel/ProcessOntology/hasShortId> "SampleIdentifier-2" .

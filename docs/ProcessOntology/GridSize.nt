@@ -9,7 +9,6 @@
 <https://w3id.org/steel/ProcessOntology/GridSize> <https://w3id.org/steel/ProcessOntology/hasLabelSource> "AFZ1-NZ50-25-D1Q"@en .
 <https://w3id.org/steel/ProcessOntology/GridSize> <https://w3id.org/steel/ProcessOntology/hasLabelSource> "DIN EN ISO 12004-2: 2021_07, 12"@de .
 <https://w3id.org/steel/ProcessOntology/GridSize> <https://w3id.org/steel/ProcessOntology/hasLabelSource> "DIN EN ISO 12004-2: 2021_07, 12"@en .
-<https://w3id.org/steel/ProcessOntology/GridSize> <https://w3id.org/steel/ProcessOntology/hasShortId> "GridSize" .
 <https://w3id.org/steel/ProcessOntology/GridSize> <https://w3id.org/steel/ProcessOntology/hasSymbol> "L_0"@en .
 <https://w3id.org/steel/ProcessOntology/GridSize> <https://w3id.org/steel/ProcessOntology/hasSymbolLatex> "L_0"@en .
 <https://w3id.org/steel/ProcessOntology/GridSize> <https://w3id.org/steel/ProcessOntology/hasTypicalUnit> <http://qudt.org/vocab/unit/MilliM> .

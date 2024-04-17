@@ -12,6 +12,5 @@
 <https://w3id.org/steel/ProcessOntology/SampleProduction> <https://w3id.org/steel/ProcessOntology/hasExampleData> "Wasserstrahlschneiden" .
 <https://w3id.org/steel/ProcessOntology/SampleProduction> <https://w3id.org/steel/ProcessOntology/hasLabelSource> "K-Item"@de .
 <https://w3id.org/steel/ProcessOntology/SampleProduction> <https://w3id.org/steel/ProcessOntology/hasLabelSource> "linguee"@en .
-<https://w3id.org/steel/ProcessOntology/SampleProduction> <https://w3id.org/steel/ProcessOntology/hasShortId> "SampleProduction" .
 
 

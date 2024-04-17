@@ -23,7 +23,6 @@
 <https://w3id.org/steel/ProcessOntology/StrainRate> <https://w3id.org/steel/ProcessOntology/hasLabelSource> "DIN EN ISO 6892-1, 3.7.1"@en .
 <https://w3id.org/steel/ProcessOntology/StrainRate> <https://w3id.org/steel/ProcessOntology/hasLabelSource> "General Knowledge"@de .
 <https://w3id.org/steel/ProcessOntology/StrainRate> <https://w3id.org/steel/ProcessOntology/hasLabelSource> "General Knowledge"@en .
-<https://w3id.org/steel/ProcessOntology/StrainRate> <https://w3id.org/steel/ProcessOntology/hasShortId> "StrainRate" .
 <https://w3id.org/steel/ProcessOntology/StrainRate> <https://w3id.org/steel/ProcessOntology/hasSymbol> "eLe"@en .
 <https://w3id.org/steel/ProcessOntology/StrainRate> <https://w3id.org/steel/ProcessOntology/hasSymbolLatex> "\\dot{e}_{L_e}"@en .
 <https://w3id.org/steel/ProcessOntology/StrainRate> <https://w3id.org/steel/ProcessOntology/hasTypicalUnit> <http://qudt.org/vocab/unit/PER-SEC> .

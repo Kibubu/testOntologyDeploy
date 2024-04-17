@@ -53,12 +53,6 @@
         }
       
       ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "ExtensionAtFracture",
-        "type" : "literal"
-        }
-      
-      ],
     "https://w3id.org/steel/ProcessOntology/hasSymbolLatex" : [ {
         "value" : "dLBruch",
         "lang" : "en",

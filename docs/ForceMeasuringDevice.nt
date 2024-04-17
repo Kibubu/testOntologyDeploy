@@ -17,4 +17,3 @@
 <https://w3id.org/steel/ProcessOntology/ForceMeasuringDevice> <https://w3id.org/steel/ProcessOntology/hasLabelSource> "DIN EN ISO 6892-1, 9"@en .
 <https://w3id.org/steel/ProcessOntology/ForceMeasuringDevice> <https://w3id.org/steel/ProcessOntology/hasLabelSource> "DIN EN ISO 6892-1, G.3.1.1"@de .
 <https://w3id.org/steel/ProcessOntology/ForceMeasuringDevice> <https://w3id.org/steel/ProcessOntology/hasLabelSource> "DIN EN ISO 6892-1, G.3.1.1"@en .
-<https://w3id.org/steel/ProcessOntology/ForceMeasuringDevice> <https://w3id.org/steel/ProcessOntology/hasShortId> "ForceMeasuringDevice" .

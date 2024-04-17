@@ -57,7 +57,4 @@
   <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/ForceMeasuringDevice">
     <ns0:hasLabelSource xmlns:ns0="https://w3id.org/steel/ProcessOntology/" xml:lang="de">DIN EN ISO 6892-1, G.3.1.1</ns0:hasLabelSource>
   </rdf:Description>
-  <rdf:Description rdf:about="https://w3id.org/steel/ProcessOntology/ForceMeasuringDevice">
-    <ns0:hasShortId xmlns:ns0="https://w3id.org/steel/ProcessOntology/">ForceMeasuringDevice</ns0:hasShortId>
-  </rdf:Description>
 </rdf:RDF>

@@ -86,12 +86,6 @@
         "type" : "literal"
         }
       
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "DisplacementTransducer",
-        "type" : "literal"
-        }
-      
       ]
     }
   }

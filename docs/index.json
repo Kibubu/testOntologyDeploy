@@ -1,555 +1,5 @@
 
 {
-  "http://qudt.org/vocab/unit/DEG_C" : {
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-        "value" : "http://qudt.org/schema/qudt/Unit",
-        "type" : "uri"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "DEG_C",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasUnitLabel" : [ {
-        "value" : "\u00B0C",
-        "type" : "literal"
-        }
-      
-      ]
-    }
-  ,
-  "http://qudt.org/vocab/unit/GigaPA" : {
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-        "value" : "http://qudt.org/schema/qudt/Unit",
-        "type" : "uri"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "GigaPA",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasUnitLabel" : [ {
-        "value" : "GPa",
-        "type" : "literal"
-        }
-      
-      ]
-    }
-  ,
-  "http://qudt.org/vocab/unit/KiloJ" : {
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-        "value" : "http://qudt.org/schema/qudt/Unit",
-        "type" : "uri"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "KiloJ",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasUnitLabel" : [ {
-        "value" : "kJ",
-        "type" : "literal"
-        }
-      
-      ]
-    }
-  ,
-  "http://qudt.org/vocab/unit/KiloN" : {
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-        "value" : "http://qudt.org/schema/qudt/Unit",
-        "type" : "uri"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "KiloN",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasUnitLabel" : [ {
-        "value" : "kN",
-        "type" : "literal"
-        }
-      
-      ]
-    }
-  ,
-  "http://qudt.org/vocab/unit/MegaPA" : {
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-        "value" : "http://qudt.org/schema/qudt/Unit",
-        "type" : "uri"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "MegaPA",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasUnitLabel" : [ {
-        "value" : "MPa",
-        "type" : "literal"
-        }
-      
-      ]
-    }
-  ,
-  "http://qudt.org/vocab/unit/MilliM" : {
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-        "value" : "http://qudt.org/schema/qudt/Unit",
-        "type" : "uri"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "MilliM",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasUnitLabel" : [ {
-        "value" : "mm",
-        "type" : "literal"
-        }
-      
-      ]
-    }
-  ,
-  "http://qudt.org/vocab/unit/MilliM-PER-SEC" : {
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-        "value" : "http://qudt.org/schema/qudt/Unit",
-        "type" : "uri"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "MilliM-PER-SEC",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasUnitLabel" : [ {
-        "value" : "mm s -1",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "mm/s",
-        "type" : "literal"
-        }
-      
-      ]
-    }
-  ,
-  "http://qudt.org/vocab/unit/MilliM2" : {
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-        "value" : "http://qudt.org/schema/qudt/Unit",
-        "type" : "uri"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "MilliM2",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasUnitLabel" : [ {
-        "value" : "mm2",
-        "type" : "literal"
-        }
-      
-      ]
-    }
-  ,
-  "http://qudt.org/vocab/unit/N" : {
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-        "value" : "http://qudt.org/schema/qudt/Unit",
-        "type" : "uri"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "N",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasUnitLabel" : [ {
-        "value" : "N",
-        "type" : "literal"
-        }
-      
-      ]
-    }
-  ,
-  "http://qudt.org/vocab/unit/PER-SEC" : {
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-        "value" : "http://qudt.org/schema/qudt/Unit",
-        "type" : "uri"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "PER-SEC",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasUnitLabel" : [ {
-        "value" : "1/s",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "s-1",
-        "type" : "literal"
-        }
-      
-      ]
-    }
-  ,
-  "http://qudt.org/vocab/unit/PERCENT" : {
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-        "value" : "http://qudt.org/schema/qudt/Unit",
-        "type" : "uri"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "PERCENT",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasUnitLabel" : [ {
-        "value" : "%",
-        "type" : "literal"
-        }
-      
-      ]
-    }
-  ,
-  "http://qudt.org/vocab/unit/SEC" : {
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-        "value" : "http://qudt.org/schema/qudt/Unit",
-        "type" : "uri"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "SEC",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasUnitLabel" : [ {
-        "value" : "s",
-        "type" : "literal"
-        }
-      
-      ]
-    }
-  ,
-  "http://qudt.org/vocab/unit/UNITLESS" : {
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-        "value" : "http://qudt.org/schema/qudt/Unit",
-        "type" : "uri"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "UNITLESS",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasUnitLabel" : [ {
-        "value" : "-",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "1",
-        "type" : "literal"
-        }
-      
-      ]
-    }
-  ,
-  "https://qudt.org/vocab/unit/DEG_C" : {
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-        "value" : "http://qudt.org/schema/qudt/Unit",
-        "type" : "uri"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "DEG_C",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasUnitLabel" : [ {
-        "value" : "C",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "\u00B0C",
-        "type" : "literal"
-        }
-      
-      ]
-    }
-  ,
-  "https://qudt.org/vocab/unit/GM-PER-CentiM3" : {
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-        "value" : "http://qudt.org/schema/qudt/Unit",
-        "type" : "uri"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "GM-PER-CentiM3",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasUnitLabel" : [ {
-        "value" : "g/cm^3",
-        "type" : "literal"
-        }
-      
-      ]
-    }
-  ,
-  "https://qudt.org/vocab/unit/GigaPA" : {
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-        "value" : "http://qudt.org/schema/qudt/Unit",
-        "type" : "uri"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "GigaPA",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasUnitLabel" : [ {
-        "value" : "GPa",
-        "type" : "literal"
-        }
-      
-      ]
-    }
-  ,
-  "https://qudt.org/vocab/unit/K" : {
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-        "value" : "http://qudt.org/schema/qudt/Unit",
-        "type" : "uri"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "K",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasUnitLabel" : [ {
-        "value" : "K",
-        "type" : "literal"
-        }
-      
-      ]
-    }
-  ,
-  "https://qudt.org/vocab/unit/KiloN" : {
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-        "value" : "http://qudt.org/schema/qudt/Unit",
-        "type" : "uri"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "KiloN",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasUnitLabel" : [ {
-        "value" : "kN",
-        "type" : "literal"
-        }
-      
-      ]
-    }
-  ,
-  "https://qudt.org/vocab/unit/MegaPA" : {
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-        "value" : "http://qudt.org/schema/qudt/Unit",
-        "type" : "uri"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "MegaPA",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasUnitLabel" : [ {
-        "value" : "MPa",
-        "type" : "literal"
-        }
-      
-      ]
-    }
-  ,
-  "https://qudt.org/vocab/unit/MilliM" : {
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-        "value" : "http://qudt.org/schema/qudt/Unit",
-        "type" : "uri"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "MilliM",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasUnitLabel" : [ {
-        "value" : "mm",
-        "type" : "literal"
-        }
-      
-      ]
-    }
-  ,
-  "https://qudt.org/vocab/unit/MilliM2" : {
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-        "value" : "http://qudt.org/schema/qudt/Unit",
-        "type" : "uri"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "MilliM2",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasUnitLabel" : [ {
-        "value" : "mm2",
-        "type" : "literal"
-        }
-      
-      ]
-    }
-  ,
-  "https://qudt.org/vocab/unit/PER-SEC" : {
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-        "value" : "http://qudt.org/schema/qudt/Unit",
-        "type" : "uri"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "PER-SEC",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasUnitLabel" : [ {
-        "value" : "1/s",
-        "type" : "literal"
-        }
-      ,
-      {
-        "value" : "s-1",
-        "type" : "literal"
-        }
-      
-      ]
-    }
-  ,
-  "https://qudt.org/vocab/unit/PERCENT" : {
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-        "value" : "http://qudt.org/schema/qudt/Unit",
-        "type" : "uri"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "PERCENT",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasUnitLabel" : [ {
-        "value" : "%",
-        "type" : "literal"
-        }
-      
-      ]
-    }
-  ,
-  "https://qudt.org/vocab/unit/SEC" : {
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-        "value" : "http://qudt.org/schema/qudt/Unit",
-        "type" : "uri"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "SEC",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasUnitLabel" : [ {
-        "value" : "s",
-        "type" : "literal"
-        }
-      
-      ]
-    }
-  ,
-  "https://qudt.org/vocab/unit/UNITLESS" : {
-    "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
-        "value" : "http://qudt.org/schema/qudt/Unit",
-        "type" : "uri"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "UNITLESS",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasUnitLabel" : [ {
-        "value" : "1",
-        "type" : "literal"
-        }
-      
-      ]
-    }
-  ,
   "https://w3id.org/steel/ProcessOntology" : {
     "http://purl.org/dc/elements/1.1/description" : [ {
         "value" : "Vocabulary of project StahlDigital",
@@ -565,7 +15,7 @@
       
       ],
     "http://purl.org/dc/terms/date" : [ {
-        "value" : "2024-04-17T07:34:28+00:00",
+        "value" : "2024-04-17T09:28:12+00:00",
         "type" : "literal"
         }
       
@@ -724,12 +174,6 @@
         }
       
       ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "AbsoluteCrossheadTravel",
-        "type" : "literal"
-        }
-      
-      ],
     "https://w3id.org/steel/ProcessOntology/hasTypicalUnit" : [ {
         "value" : "http://qudt.org/vocab/unit/MilliM",
         "type" : "uri"
@@ -802,12 +246,6 @@
         "type" : "literal"
         }
       
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "AmplitudeFile",
-        "type" : "literal"
-        }
-      
       ]
     }
   ,
@@ -866,12 +304,6 @@
       {
         "value" : "General Knowledge",
         "lang" : "en",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "AnisotropicYieldFunction",
         "type" : "literal"
         }
       
@@ -936,12 +368,6 @@
         "type" : "literal"
         }
       
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "AnisotropicYieldFunctionParameters",
-        "type" : "literal"
-        }
-      
       ]
     }
   ,
@@ -987,12 +413,6 @@
     "https://w3id.org/steel/ProcessOntology/hasLabelSource" : [ {
         "value" : "K-Item",
         "lang" : "de",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "BatchNumber",
         "type" : "literal"
         }
       
@@ -1108,12 +528,6 @@
       {
         "value" : "DIN EN ISO 16808:2022-08, 4",
         "lang" : "en",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "BiaxialStress",
         "type" : "literal"
         }
       
@@ -1240,12 +654,6 @@
         }
       
       ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "BlankHolderForce",
-        "type" : "literal"
-        }
-      
-      ],
     "https://w3id.org/steel/ProcessOntology/hasTypicalUnit" : [ {
         "value" : "http://qudt.org/vocab/unit/KiloN",
         "type" : "uri"
@@ -1315,12 +723,6 @@
       {
         "value" : "General Knowledge",
         "lang" : "en",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "BoundaryFile",
         "type" : "literal"
         }
       
@@ -1425,12 +827,6 @@
         "type" : "literal"
         }
       
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "CalibrationComponents",
-        "type" : "literal"
-        }
-      
       ]
     }
   ,
@@ -1509,12 +905,6 @@
         "type" : "literal"
         }
       
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "CalibrationStatus",
-        "type" : "literal"
-        }
-      
       ]
     }
   ,
@@ -1573,12 +963,6 @@
       {
         "value" : "DIN EN ISO 16808:2022-08, 12",
         "lang" : "en",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "CameraSystem",
         "type" : "literal"
         }
       
@@ -1658,12 +1042,6 @@
     "https://w3id.org/steel/ProcessOntology/hasLabelSource" : [ {
         "value" : "YS1-Fz-D1Q",
         "lang" : "de",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "CharacteristicEngineeringStrainRate",
         "type" : "literal"
         }
       
@@ -1789,12 +1167,6 @@
         "type" : "literal"
         }
       
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "Clamping",
-        "type" : "literal"
-        }
-      
       ]
     }
   ,
@@ -1852,12 +1224,6 @@
       {
         "value" : "deepl translator",
         "lang" : "en",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "ClampingForce",
         "type" : "literal"
         }
       
@@ -2116,12 +1482,6 @@
         }
       
       ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "CoefficientOfCorrelation",
-        "type" : "literal"
-        }
-      
-      ],
     "https://w3id.org/steel/ProcessOntology/hasSymbol" : [ {
         "value" : "R2",
         "lang" : "en",
@@ -2266,12 +1626,6 @@
     "https://w3id.org/steel/ProcessOntology/hasLabelSource" : [ {
         "value" : "DIN EN 10346_2015",
         "lang" : "de",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "ComplexPhaseSteel",
         "type" : "literal"
         }
       
@@ -2424,12 +1778,6 @@
         "type" : "literal"
         }
       
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "Composition",
-        "type" : "literal"
-        }
-      
       ]
     }
   ,
@@ -2488,12 +1836,6 @@
       {
         "value" : "DIN EN ISO 6892-1, 3.12",
         "lang" : "en",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "ComputerControlledTensileTestingMachine",
         "type" : "literal"
         }
       
@@ -2646,12 +1988,6 @@
         }
       
       ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "CrossHardeningParameter",
-        "type" : "literal"
-        }
-      
-      ],
     "https://w3id.org/steel/ProcessOntology/hasTypicalUnit" : [ {
         "value" : "https://qudt.org/vocab/unit/UNITLESS",
         "type" : "uri"
@@ -2739,12 +2075,6 @@
       {
         "value" : "AFZ1-ST-D1",
         "lang" : "en",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "CrossheadDisplacement",
         "type" : "literal"
         }
       
@@ -2892,12 +2222,6 @@
         }
       
       ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "CrossheadSeparationRate",
-        "type" : "literal"
-        }
-      
-      ],
     "https://w3id.org/steel/ProcessOntology/hasSymbol" : [ {
         "value" : "vc",
         "lang" : "en",
@@ -2989,12 +2313,6 @@
         "type" : "literal"
         }
       
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "CrystalPlasticityConstitutiveModel",
-        "type" : "literal"
-        }
-      
       ]
     }
   ,
@@ -3053,12 +2371,6 @@
       {
         "value" : "General Knowledge",
         "lang" : "en",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "CrystalPlasticityParameterFile",
         "type" : "literal"
         }
       
@@ -3181,12 +2493,6 @@
         "type" : "literal"
         }
       
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "DX56D",
-        "type" : "literal"
-        }
-      
       ]
     }
   ,
@@ -3284,12 +2590,6 @@
         }
       
       ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "DamageExponent",
-        "type" : "literal"
-        }
-      
-      ],
     "https://w3id.org/steel/ProcessOntology/hasTypicalUnit" : [ {
         "value" : "https://qudt.org/vocab/unit/UNITLESS",
         "type" : "uri"
@@ -3363,12 +2663,6 @@
         }
       
       ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "DamageThreshold",
-        "type" : "literal"
-        }
-      
-      ],
     "https://w3id.org/steel/ProcessOntology/hasTypicalUnit" : [ {
         "value" : "https://qudt.org/vocab/unit/UNITLESS",
         "type" : "uri"
@@ -3438,12 +2732,6 @@
     "https://w3id.org/steel/ProcessOntology/hasLabelSource" : [ {
         "value" : "LS-DYNA_Manual_Volume_2",
         "lang" : "en",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "DamageTreatment",
         "type" : "literal"
         }
       
@@ -3574,12 +2862,6 @@
         "type" : "literal"
         }
       
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "DataSamplingFrequency",
-        "type" : "literal"
-        }
-      
       ]
     }
   ,
@@ -3638,12 +2920,6 @@
       {
         "value" : "DIN EN ISO 6892-1, 3.14",
         "lang" : "en",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "DefaultValue",
         "type" : "literal"
         }
       
@@ -3730,12 +3006,6 @@
         "type" : "literal"
         }
       
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "DeliveryDate",
-        "type" : "literal"
-        }
-      
       ]
     }
   ,
@@ -3810,12 +3080,6 @@
         }
       
       ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "Diameter",
-        "type" : "literal"
-        }
-      
-      ],
     "https://w3id.org/steel/ProcessOntology/hasTypicalUnit" : [ {
         "value" : "http://qudt.org/vocab/unit/MilliM",
         "type" : "uri"
@@ -3881,12 +3145,6 @@
         }
       
       ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "DiameterAfterFracture1",
-        "type" : "literal"
-        }
-      
-      ],
     "https://w3id.org/steel/ProcessOntology/hasTypicalUnit" : [ {
         "value" : "http://qudt.org/vocab/unit/MilliM",
         "type" : "uri"
@@ -3949,12 +3207,6 @@
     "http://www.w3.org/2004/02/skos/core#related" : [ {
         "value" : "https://w3id.org/steel/ProcessOntology/DiameterAfterFracture1",
         "type" : "uri"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "DiameterAfterFracture2",
-        "type" : "literal"
         }
       
       ],
@@ -4032,12 +3284,6 @@
       {
         "value" : "deepl translator",
         "lang" : "en",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "DieTool",
         "type" : "literal"
         }
       
@@ -4150,12 +3396,6 @@
         "type" : "literal"
         }
       
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "Discretization",
-        "type" : "literal"
-        }
-      
       ]
     }
   ,
@@ -4213,12 +3453,6 @@
       {
         "value" : "deepl translator",
         "lang" : "en",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "Displacement",
         "type" : "literal"
         }
       
@@ -4323,12 +3557,6 @@
         "type" : "literal"
         }
       
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "DisplacementTransducer",
-        "type" : "literal"
-        }
-      
       ]
     }
   ,
@@ -4386,12 +3614,6 @@
       {
         "value" : "deepl translator",
         "lang" : "en",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "DrawingSpeed",
         "type" : "literal"
         }
       
@@ -4477,12 +3699,6 @@
     "https://w3id.org/steel/ProcessOntology/hasLabelSource" : [ {
         "value" : "DIN EN 10346_2015",
         "lang" : "de",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "DualPhaseSteel",
         "type" : "literal"
         }
       
@@ -4624,12 +3840,6 @@
         }
       
       ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "DynamometerArea",
-        "type" : "literal"
-        }
-      
-      ],
     "https://w3id.org/steel/ProcessOntology/hasSymbol" : [ {
         "value" : "SD",
         "lang" : "en",
@@ -4716,12 +3926,6 @@
         "type" : "literal"
         }
       
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "EbsdFileName",
-        "type" : "literal"
-        }
-      
       ]
     }
   ,
@@ -4780,12 +3984,6 @@
       {
         "value" : "General Knowledge",
         "lang" : "en",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "EffecticStrain",
         "type" : "literal"
         }
       
@@ -4863,12 +4061,6 @@
         }
       
       ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "EffectiveStress",
-        "type" : "literal"
-        }
-      
-      ],
     "https://w3id.org/steel/ProcessOntology/hasTypicalUnit" : [ {
         "value" : "http://qudt.org/vocab/unit/MegaPA",
         "type" : "uri"
@@ -4938,12 +4130,6 @@
       {
         "value" : "General Knowledge",
         "lang" : "en",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "ElasticConstantC11",
         "type" : "literal"
         }
       
@@ -5028,12 +4214,6 @@
         }
       
       ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "ElasticConstantC12",
-        "type" : "literal"
-        }
-      
-      ],
     "https://w3id.org/steel/ProcessOntology/hasSymbol" : [ {
         "value" : "C_12",
         "lang" : "en",
@@ -5110,12 +4290,6 @@
       {
         "value" : "General Knowledge",
         "lang" : "en",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "ElasticConstantC44",
         "type" : "literal"
         }
       
@@ -5230,12 +4404,6 @@
         "type" : "literal"
         }
       
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "ElasticityModel",
-        "type" : "literal"
-        }
-      
       ]
     }
   ,
@@ -5347,12 +4515,6 @@
         }
       
       ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "ElementDeletionFlag",
-        "type" : "literal"
-        }
-      
-      ],
     "https://w3id.org/steel/ProcessOntology/hasTypicalUnitLabel" : [ {
         "value" : "-",
         "type" : "literal"
@@ -5416,12 +4578,6 @@
     "https://w3id.org/steel/ProcessOntology/hasLabelSource" : [ {
         "value" : "LS-DYNA_Manual_Volume_2",
         "lang" : "en",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "ElementDeletionTreatment",
         "type" : "literal"
         }
       
@@ -5517,12 +4673,6 @@
         }
       
       ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "Elongation",
-        "type" : "literal"
-        }
-      
-      ],
     "https://w3id.org/steel/ProcessOntology/hasTypicalUnit" : [ {
         "value" : "http://qudt.org/vocab/unit/MilliM",
         "type" : "uri"
@@ -5598,12 +4748,6 @@
       {
         "value" : "Standard definition specific",
         "lang" : "de",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "EngineeringStrain",
         "type" : "literal"
         }
       
@@ -5731,12 +4875,6 @@
         }
       
       ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "EngineeringStress",
-        "type" : "literal"
-        }
-      
-      ],
     "https://w3id.org/steel/ProcessOntology/hasSymbol" : [ {
         "value" : "R",
         "lang" : "en",
@@ -5847,12 +4985,6 @@
         }
       
       ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "EstimatedStrainRateOverTheParallelLength",
-        "type" : "literal"
-        }
-      
-      ],
     "https://w3id.org/steel/ProcessOntology/hasSymbol" : [ {
         "value" : "eLc",
         "lang" : "en",
@@ -5940,12 +5072,6 @@
         }
       
       ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "EulerAngle1",
-        "type" : "literal"
-        }
-      
-      ],
     "https://w3id.org/steel/ProcessOntology/hasSymbol" : [ {
         "value" : "\u03D5_1",
         "lang" : "en",
@@ -6017,12 +5143,6 @@
       {
         "value" : "General Knowledge",
         "lang" : "en",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "EulerAngle2",
         "type" : "literal"
         }
       
@@ -6102,12 +5222,6 @@
         }
       
       ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "EulerAngle3",
-        "type" : "literal"
-        }
-      
-      ],
     "https://w3id.org/steel/ProcessOntology/hasSymbol" : [ {
         "value" : "\u03D5_2",
         "lang" : "en",
@@ -6182,12 +5296,6 @@
         "type" : "literal"
         }
       
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "EulerAngleConvention",
-        "type" : "literal"
-        }
-      
       ]
     }
   ,
@@ -6246,12 +5354,6 @@
       {
         "value" : "DIN EN ISO 16808:2022-08, 12",
         "lang" : "en",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "EvaluationMethod",
         "type" : "literal"
         }
       
@@ -6353,12 +5455,6 @@
     "https://w3id.org/steel/ProcessOntology/hasLabelSource" : [ {
         "value" : "AWA_1_01_Rz-46N171",
         "lang" : "de",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "ExperimentIdentifier",
         "type" : "literal"
         }
       
@@ -6615,12 +5711,6 @@
         }
       
       ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "Extension",
-        "type" : "literal"
-        }
-      
-      ],
     "https://w3id.org/steel/ProcessOntology/hasSymbol" : [ {
         "value" : "dL",
         "lang" : "en",
@@ -6713,12 +5803,6 @@
         }
       
       ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "ExtensionAtFracture",
-        "type" : "literal"
-        }
-      
-      ],
     "https://w3id.org/steel/ProcessOntology/hasSymbolLatex" : [ {
         "value" : "dLBruch",
         "lang" : "en",
@@ -6807,12 +5891,6 @@
     "https://w3id.org/steel/ProcessOntology/hasLabelSource" : [ {
         "value" : "YS1-Fz-D1Q",
         "lang" : "de",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "ExtensionMeasuringSystem",
         "type" : "literal"
         }
       
@@ -6971,12 +6049,6 @@
         }
       
       ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "ExtensometerGaugeLength",
-        "type" : "literal"
-        }
-      
-      ],
     "https://w3id.org/steel/ProcessOntology/hasSymbol" : [ {
         "value" : "L_{0}",
         "lang" : "en",
@@ -7069,12 +6141,6 @@
         "type" : "literal"
         }
       
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "FEMSolver",
-        "type" : "literal"
-        }
-      
       ]
     }
   ,
@@ -7155,12 +6221,6 @@
         }
       
       ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "FLCDetermination",
-        "type" : "literal"
-        }
-      
-      ],
     "https://w3id.org/steel/ProcessOntology/isBasedOn" : [ {
         "value" : "https://w3id.org/steel/ProcessOntology/TestStandard",
         "type" : "uri"
@@ -7224,12 +6284,6 @@
     "https://w3id.org/steel/ProcessOntology/hasLabelSource" : [ {
         "value" : "LS-DYNA_Manual_Volume_2",
         "lang" : "en",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "FadingExponent",
         "type" : "literal"
         }
       
@@ -7342,12 +6396,6 @@
         }
       
       ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "FailureCriteriaTypeAdd",
-        "type" : "literal"
-        }
-      
-      ],
     "https://w3id.org/steel/ProcessOntology/hasTypicalUnitLabel" : [ {
         "value" : "-",
         "type" : "literal"
@@ -7411,12 +6459,6 @@
     "https://w3id.org/steel/ProcessOntology/hasLabelSource" : [ {
         "value" : "LS-DYNA_Manual_Volume_2",
         "lang" : "en",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "FailureCriteriaTypeAdd4ElementDeletion",
         "type" : "literal"
         }
       
@@ -7494,12 +6536,6 @@
         }
       
       ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "FailureCriteriaTypeAdd4StrainAverage",
-        "type" : "literal"
-        }
-      
-      ],
     "https://w3id.org/steel/ProcessOntology/hasTypicalUnit" : [ {
         "value" : "https://qudt.org/vocab/unit/UNITLESS",
         "type" : "uri"
@@ -7573,12 +6609,6 @@
         }
       
       ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "FailureStrain",
-        "type" : "literal"
-        }
-      
-      ],
     "https://w3id.org/steel/ProcessOntology/hasTypicalUnitLabel" : [ {
         "value" : "-",
         "type" : "literal"
@@ -7642,12 +6672,6 @@
     "https://w3id.org/steel/ProcessOntology/hasLabelSource" : [ {
         "value" : "LS-DYNA_Manual_Volume_2",
         "lang" : "en",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "FailureStrainIdentifier",
         "type" : "literal"
         }
       
@@ -7719,12 +6743,6 @@
         }
       
       ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "FailureStrainIdentifier4MeshDependency",
-        "type" : "literal"
-        }
-      
-      ],
     "https://w3id.org/steel/ProcessOntology/hasTypicalUnitLabel" : [ {
         "value" : "-",
         "type" : "literal"
@@ -7788,12 +6806,6 @@
     "https://w3id.org/steel/ProcessOntology/hasLabelSource" : [ {
         "value" : "LS-DYNA_Manual_Volume_2",
         "lang" : "en",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "FailureStrainIdentifier4StrainRate",
         "type" : "literal"
         }
       
@@ -7865,12 +6877,6 @@
         }
       
       ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "FailureStrainIdentifier4Temperature",
-        "type" : "literal"
-        }
-      
-      ],
     "https://w3id.org/steel/ProcessOntology/hasTypicalUnitLabel" : [ {
         "value" : "-",
         "type" : "literal"
@@ -7934,12 +6940,6 @@
     "https://w3id.org/steel/ProcessOntology/hasLabelSource" : [ {
         "value" : "LS-DYNA_Manual_Volume_2",
         "lang" : "en",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "FailureTreatment",
         "type" : "literal"
         }
       
@@ -8050,12 +7050,6 @@
         }
       
       ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "FinalCriticalStrength",
-        "type" : "literal"
-        }
-      
-      ],
     "https://w3id.org/steel/ProcessOntology/hasTypicalUnitLabel" : [ {
         "value" : "Pa",
         "type" : "literal"
@@ -8141,12 +7135,6 @@
       {
         "value" : "DIN EN ISO 6892-1, 3.1.2",
         "lang" : "en",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "FinalGaugeLengthAfterFracture",
         "type" : "literal"
         }
       
@@ -8475,12 +7463,6 @@
         }
       
       ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "Force",
-        "type" : "literal"
-        }
-      
-      ],
     "https://w3id.org/steel/ProcessOntology/hasSymbol" : [ {
         "value" : "F",
         "lang" : "en",
@@ -8560,12 +7542,6 @@
     "http://www.w3.org/2004/02/skos/core#related" : [ {
         "value" : "https://w3id.org/steel/ProcessOntology/Force",
         "type" : "uri"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "ForceAtFracture",
-        "type" : "literal"
         }
       
       ]
@@ -8689,12 +7665,6 @@
         "type" : "literal"
         }
       
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "ForceMeasuringDevice",
-        "type" : "literal"
-        }
-      
       ]
     }
   ,
@@ -8762,12 +7732,6 @@
         "type" : "literal"
         }
       
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "ForceMeasuringSystem",
-        "type" : "literal"
-        }
-      
       ]
     }
   ,
@@ -8832,12 +7796,6 @@
       {
         "value" : "DIN EN ISO 12004-2: 2021_07, 7",
         "lang" : "en",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "FormingLimitCurve",
         "type" : "literal"
         }
       
@@ -8919,12 +7877,6 @@
         "type" : "literal"
         }
       
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "FormingLimitDiagram",
-        "type" : "literal"
-        }
-      
       ]
     }
   ,
@@ -8983,12 +7935,6 @@
       {
         "value" : "DIN EN ISO 6892-1, 3.11",
         "lang" : "en",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "Fracture",
         "type" : "literal"
         }
       
@@ -9217,12 +8163,6 @@
         }
       
       ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "FrameRate",
-        "type" : "literal"
-        }
-      
-      ],
     "https://w3id.org/steel/ProcessOntology/hasTypicalUnit" : [ {
         "value" : "http://qudt.org/vocab/unit/PER-SEC",
         "type" : "uri"
@@ -9298,12 +8238,6 @@
       {
         "value" : "DIN EN ISO 6892-1, 3.1",
         "lang" : "en",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "GaugeLength",
         "type" : "literal"
         }
       
@@ -9419,12 +8353,6 @@
     "https://w3id.org/steel/ProcessOntology/hasLabelSource" : [ {
         "value" : "K-Item",
         "lang" : "de",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "Grade",
         "type" : "literal"
         }
       
@@ -9566,12 +8494,6 @@
         "type" : "literal"
         }
       
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "GrainNumber",
-        "type" : "literal"
-        }
-      
       ]
     }
   ,
@@ -9703,12 +8625,6 @@
         "type" : "literal"
         }
       
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "Grid",
-        "type" : "literal"
-        }
-      
       ]
     }
   ,
@@ -9779,12 +8695,6 @@
       {
         "value" : "DIN EN ISO 12004-2: 2021_07, 12",
         "lang" : "en",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "GridSize",
         "type" : "literal"
         }
       
@@ -9874,12 +8784,6 @@
         "type" : "literal"
         }
       
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "HCT980C",
-        "type" : "literal"
-        }
-      
       ]
     }
   ,
@@ -9961,12 +8865,6 @@
       {
         "value" : "VDA 239-100",
         "lang" : "de",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "HCT980X",
         "type" : "literal"
         }
       
@@ -10101,12 +8999,6 @@
         "type" : "literal"
         }
       
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "HX340LAD",
-        "type" : "literal"
-        }
-      
       ]
     }
   ,
@@ -10165,12 +9057,6 @@
       {
         "value" : "General Knowledge",
         "lang" : "en",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "HardeningCurve",
         "type" : "literal"
         }
       
@@ -10237,12 +9123,6 @@
       ],
     "https://w3id.org/steel/ProcessOntology/hasExampleData" : [ {
         "value" : "[2.25, 2.25]",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "HardeningExponent",
         "type" : "literal"
         }
       
@@ -10316,12 +9196,6 @@
       {
         "value" : "General Knowledge",
         "lang" : "en",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "HardeningLaw",
         "type" : "literal"
         }
       
@@ -10399,12 +9273,6 @@
       {
         "value" : "General Knowledge",
         "lang" : "en",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "HardeningParameterTau0",
         "type" : "literal"
         }
       
@@ -10489,12 +9357,6 @@
         }
       
       ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "HardeningParameterTau1",
-        "type" : "literal"
-        }
-      
-      ],
     "https://w3id.org/steel/ProcessOntology/hasSymbolLatex" : [ {
         "value" : "\\tau_1",
         "lang" : "en",
@@ -10575,12 +9437,6 @@
         }
       
       ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "HardeningParameterTheta0",
-        "type" : "literal"
-        }
-      
-      ],
     "https://w3id.org/steel/ProcessOntology/hasSymbolLatex" : [ {
         "value" : "\\theta_0",
         "lang" : "en",
@@ -10657,12 +9513,6 @@
       {
         "value" : "General Knowledge",
         "lang" : "en",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "HardeningParameterTheta1",
         "type" : "literal"
         }
       
@@ -10901,12 +9751,6 @@
         "type" : "literal"
         }
       
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "HomogenizationModel",
-        "type" : "literal"
-        }
-      
       ]
     }
   ,
@@ -10963,12 +9807,6 @@
       ],
     "https://w3id.org/steel/ProcessOntology/hasExampleData" : [ {
         "value" : "[95.e+6, 96.e+6]",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "InitialCriticalStrength",
         "type" : "literal"
         }
       
@@ -11072,12 +9910,6 @@
       {
         "value" : "YS1-Fz-D1Q",
         "lang" : "de",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "InitialDisplacementRate",
         "type" : "literal"
         }
       
@@ -11188,12 +10020,6 @@
         }
       
       ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "InitialHardening",
-        "type" : "literal"
-        }
-      
-      ],
     "https://w3id.org/steel/ProcessOntology/hasTypicalUnitLabel" : [ {
         "value" : "Pa/1",
         "type" : "literal"
@@ -11275,12 +10101,6 @@
       {
         "value" : "DIN EN ISO 12004-2: 2021_07, 9",
         "lang" : "de",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "InitialSheetThickness",
         "type" : "literal"
         }
       
@@ -11414,12 +10234,6 @@
         }
       
       ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "InitialThickness",
-        "type" : "literal"
-        }
-      
-      ],
     "https://w3id.org/steel/ProcessOntology/hasSymbol" : [ {
         "value" : "t_0",
         "lang" : "en",
@@ -11503,12 +10317,6 @@
       {
         "value" : "DIN EN ISO 16808:2022-08, 4",
         "lang" : "en",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "InnerDiameterBlankHolder",
         "type" : "literal"
         }
       
@@ -11600,12 +10408,6 @@
         }
       
       ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "InnerDiameterDie",
-        "type" : "literal"
-        }
-      
-      ],
     "https://w3id.org/steel/ProcessOntology/hasSymbol" : [ {
         "value" : "d_die",
         "lang" : "en",
@@ -11689,12 +10491,6 @@
       {
         "value" : "General Knowledge",
         "lang" : "en",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "InteractionMatrix",
         "type" : "literal"
         }
       
@@ -11784,12 +10580,6 @@
         }
       
       ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "Inv_ShearRateSensitivity",
-        "type" : "literal"
-        }
-      
-      ],
     "https://w3id.org/steel/ProcessOntology/hasTypicalUnit" : [ {
         "value" : "https://qudt.org/vocab/unit/UNITLESS",
         "type" : "uri"
@@ -11849,12 +10639,6 @@
         "type" : "literal"
         }
       
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "InventoryNumber",
-        "type" : "literal"
-        }
-      
       ]
     }
   ,
@@ -11862,12 +10646,6 @@
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
         "value" : "http://qudt.org/schema/qudt/Unit",
         "type" : "uri"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "J-Per-Gm-K",
-        "type" : "literal"
         }
       
       ],
@@ -12123,12 +10901,6 @@
         "type" : "literal"
         }
       
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "Laboratory",
-        "type" : "literal"
-        }
-      
       ]
     }
   ,
@@ -12187,12 +10959,6 @@
       {
         "value" : "General Knowledge",
         "lang" : "en",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "LatentHardeningQ0",
         "type" : "literal"
         }
       
@@ -12277,12 +11043,6 @@
         }
       
       ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "LatentHardeningQ1",
-        "type" : "literal"
-        }
-      
-      ],
     "https://w3id.org/steel/ProcessOntology/hasSymbolLatex" : [ {
         "value" : "\\q_1",
         "lang" : "en",
@@ -12362,12 +11122,6 @@
         "type" : "literal"
         }
       
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "LatticeStructure",
-        "type" : "literal"
-        }
-      
       ]
     }
   ,
@@ -12419,12 +11173,6 @@
     "https://w3id.org/steel/ProcessOntology/hasLabelSource" : [ {
         "value" : "Messmitteldatenbank",
         "lang" : "de",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "Location",
         "type" : "literal"
         }
       
@@ -12516,12 +11264,6 @@
       {
         "value" : "YS1-Fz-D1Q",
         "lang" : "de",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "LowerYieldStrength",
         "type" : "literal"
         }
       
@@ -12684,12 +11426,6 @@
         "type" : "literal"
         }
       
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "LubricationSystem",
-        "type" : "literal"
-        }
-      
       ]
     }
   ,
@@ -12728,12 +11464,6 @@
     "https://w3id.org/steel/ProcessOntology/hasLabelSource" : [ {
         "value" : "LS-DYNA_Manual_Volume_2",
         "lang" : "en",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "MAT_ADD_DAMAGE_GISSMO",
         "type" : "literal"
         }
       
@@ -12903,12 +11633,6 @@
         "type" : "literal"
         }
       
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "Machine",
-        "type" : "literal"
-        }
-      
       ]
     }
   ,
@@ -13001,12 +11725,6 @@
         }
       
       ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "MajorTrueStrain",
-        "type" : "literal"
-        }
-      
-      ],
     "https://w3id.org/steel/ProcessOntology/hasSymbol" : [ {
         "value" : "\u03B5_1",
         "lang" : "en",
@@ -13082,12 +11800,6 @@
         }
       
       ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "MassDensity",
-        "type" : "literal"
-        }
-      
-      ],
     "https://w3id.org/steel/ProcessOntology/hasTypicalUnit" : [ {
         "value" : "https://qudt.org/vocab/unit/GM-PER-CentiM3",
         "type" : "uri"
@@ -13154,12 +11866,6 @@
         "type" : "literal"
         }
       
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "MatPiecewiseLinearPlasticity",
-        "type" : "literal"
-        }
-      
       ]
     }
   ,
@@ -13212,12 +11918,6 @@
     "https://w3id.org/steel/ProcessOntology/hasLabelSource" : [ {
         "value" : "LS-DYNA_Manual_Volume_2",
         "lang" : "en",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "MatPiecewiseLinearPlasticityLogInterpolation",
         "type" : "literal"
         }
       
@@ -13276,12 +11976,6 @@
         "type" : "literal"
         }
       
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "MatTabulatedJohnsonCook",
-        "type" : "literal"
-        }
-      
       ]
     }
   ,
@@ -13334,12 +12028,6 @@
     "https://w3id.org/steel/ProcessOntology/hasLabelSource" : [ {
         "value" : "LS-DYNA_Manual_Volume_2",
         "lang" : "en",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "MatTabulatedJohnsonCookLogInterpolation",
         "type" : "literal"
         }
       
@@ -13516,12 +12204,6 @@
         "type" : "literal"
         }
       
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "Material",
-        "type" : "literal"
-        }
-      
       ]
     }
   ,
@@ -13649,12 +12331,6 @@
         "type" : "literal"
         }
       
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "MaterialCard",
-        "type" : "literal"
-        }
-      
       ]
     }
   ,
@@ -13718,12 +12394,6 @@
     "https://w3id.org/steel/ProcessOntology/hasLabelSource" : [ {
         "value" : "K-Item",
         "lang" : "de",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "MaterialClass",
         "type" : "literal"
         }
       
@@ -13800,12 +12470,6 @@
         }
       
       ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "MaterialIdentifier",
-        "type" : "literal"
-        }
-      
-      ],
     "https://w3id.org/steel/ProcessOntology/hasTypicalUnitLabel" : [ {
         "value" : "-",
         "type" : "literal"
@@ -13869,12 +12533,6 @@
     "https://w3id.org/steel/ProcessOntology/hasLabelSource" : [ {
         "value" : "LS-DYNA_Manual_Volume_2",
         "lang" : "en",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "MaterialInstabilityStrain",
         "type" : "literal"
         }
       
@@ -14005,12 +12663,6 @@
         }
       
       ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "MaximumForce",
-        "type" : "literal"
-        }
-      
-      ],
     "https://w3id.org/steel/ProcessOntology/hasSymbol" : [ {
         "value" : "Fm",
         "lang" : "en",
@@ -14120,12 +12772,6 @@
         }
       
       ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "MaximumForceDiscontinousYielding",
-        "type" : "literal"
-        }
-      
-      ],
     "https://w3id.org/steel/ProcessOntology/hasSymbol" : [ {
         "value" : "Fm",
         "lang" : "en",
@@ -14209,12 +12855,6 @@
       {
         "value" : "DIN EN ISO 6892-1, 3.9.1",
         "lang" : "en",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "MaximumForceNoDiscontinousYielding",
         "type" : "literal"
         }
       
@@ -14307,12 +12947,6 @@
     "https://w3id.org/steel/ProcessOntology/hasLabelSource" : [ {
         "value" : "K-Item",
         "lang" : "de",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "MaximumSpeed",
         "type" : "literal"
         }
       
@@ -14416,12 +13050,6 @@
       {
         "value" : "YS1-Fz-D1Q",
         "lang" : "de",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "MeanEngineeringStrainRate",
         "type" : "literal"
         }
       
@@ -14535,12 +13163,6 @@
         }
       
       ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "MeanPlasticStrainRate",
-        "type" : "literal"
-        }
-      
-      ],
     "https://w3id.org/steel/ProcessOntology/hasSymbol" : [ {
         "value" : "epl",
         "lang" : "en",
@@ -14632,12 +13254,6 @@
         "type" : "literal"
         }
       
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "MeasuringAid",
-        "type" : "literal"
-        }
-      
       ]
     }
   ,
@@ -14704,12 +13320,6 @@
         "type" : "literal"
         }
       
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "MeasuringDevice",
-        "type" : "literal"
-        }
-      
       ]
     }
   ,
@@ -14755,12 +13365,6 @@
     "https://w3id.org/steel/ProcessOntology/hasLabelSource" : [ {
         "value" : "K-Item",
         "lang" : "de",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "MeasuringRange",
         "type" : "literal"
         }
       
@@ -14821,12 +13425,6 @@
     "http://www.w3.org/2004/02/skos/core#related" : [ {
         "value" : "http://qudt.org/vocab/unit/MegaPA",
         "type" : "uri"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "MegaPA-PER-SEC",
-        "type" : "literal"
         }
       
       ],
@@ -14905,12 +13503,6 @@
     "https://w3id.org/steel/ProcessOntology/hasLabelSource" : [ {
         "value" : "DIN EN 10346_2015",
         "lang" : "de",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "MicroalloyedSteel",
         "type" : "literal"
         }
       
@@ -15010,12 +13602,6 @@
         "type" : "literal"
         }
       
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "MicrostructureModel",
-        "type" : "literal"
-        }
-      
       ]
     }
   ,
@@ -15089,12 +13675,6 @@
         "type" : "literal"
         }
       
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "MildSteel",
-        "type" : "literal"
-        }
-      
       ]
     }
   ,
@@ -15102,12 +13682,6 @@
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
         "value" : "http://qudt.org/schema/qudt/Unit",
         "type" : "uri"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "MilliM-PER-MIN",
-        "type" : "literal"
         }
       
       ],
@@ -15174,12 +13748,6 @@
     "https://w3id.org/steel/ProcessOntology/hasLabelSource" : [ {
         "value" : "LS-DYNA_Manual_Volume_2",
         "lang" : "en",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "MinTimeStep4ElementDel",
         "type" : "literal"
         }
       
@@ -15277,12 +13845,6 @@
       {
         "value" : "DIN EN ISO 6892-1, Table 1",
         "lang" : "en",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "MinimumCrossSectionAfterFracture",
         "type" : "literal"
         }
       
@@ -15407,12 +13969,6 @@
     "https://w3id.org/steel/ProcessOntology/hasLabelSource" : [ {
         "value" : "YS1-Fz-D1Q",
         "lang" : "de",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "MinimumCrosssectionAfterFracture",
         "type" : "literal"
         }
       
@@ -15554,12 +14110,6 @@
       {
         "value" : "DIN EN ISO 12004-2: 2021_07, 8",
         "lang" : "en",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "MinorTrueStrain",
         "type" : "literal"
         }
       
@@ -15745,12 +14295,6 @@
       {
         "value" : "YS1-Fz-D1Q",
         "lang" : "de",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "ModulusOfElasticity",
         "type" : "literal"
         }
       
@@ -15970,12 +14514,6 @@
         }
       
       ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "NominalEngineeringStrainRate",
-        "type" : "literal"
-        }
-      
-      ],
     "https://w3id.org/steel/ProcessOntology/hasSymbol" : [ {
         "value" : "enom",
         "lang" : "en",
@@ -16074,12 +14612,6 @@
         }
       
       ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "NumberFailedIntegrationPoints",
-        "type" : "literal"
-        }
-      
-      ],
     "https://w3id.org/steel/ProcessOntology/hasTypicalUnit" : [ {
         "value" : "https://qudt.org/vocab/unit/UNITLESS",
         "type" : "uri"
@@ -16149,12 +14681,6 @@
       {
         "value" : "General Knowledge",
         "lang" : "en",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "NumberGrains",
         "type" : "literal"
         }
       
@@ -16233,12 +14759,6 @@
         "type" : "literal"
         }
       
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "NumberOfVirtualExperiments",
-        "type" : "literal"
-        }
-      
       ]
     }
   ,
@@ -16302,12 +14822,6 @@
       ],
     "https://w3id.org/steel/ProcessOntology/hasExampleData" : [ {
         "value" : "[12, 12]",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "NumberSlipSystems",
         "type" : "literal"
         }
       
@@ -16420,12 +14934,6 @@
         "type" : "literal"
         }
       
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "Operator",
-        "type" : "literal"
-        }
-      
       ]
     }
   ,
@@ -16520,12 +15028,6 @@
       {
         "value" : "ISO 26203-2, 2011, 4",
         "lang" : "en",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "OriginalCrossSection",
         "type" : "literal"
         }
       
@@ -16651,12 +15153,6 @@
         }
       
       ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "OriginalCrosssection",
-        "type" : "literal"
-        }
-      
-      ],
     "https://w3id.org/steel/ProcessOntology/hasSymbol" : [ {
         "value" : "S_{0}",
         "lang" : "en",
@@ -16749,12 +15245,6 @@
       {
         "value" : "DIN EN ISO 6892-1, Table 1",
         "lang" : "en",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "OriginalDiameter",
         "type" : "literal"
         }
       
@@ -16901,12 +15391,6 @@
       {
         "value" : "ISO 26203-2, 2011, 4",
         "lang" : "en",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "OriginalGaugeLength",
         "type" : "literal"
         }
       
@@ -17092,12 +15576,6 @@
         }
       
       ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "OriginalThickness",
-        "type" : "literal"
-        }
-      
-      ],
     "https://w3id.org/steel/ProcessOntology/hasSymbol" : [ {
         "value" : "a_{0}",
         "lang" : "en",
@@ -17270,12 +15748,6 @@
       {
         "value" : "YS1-Fz-D1Q",
         "lang" : "de",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "OriginalWidth",
         "type" : "literal"
         }
       
@@ -17462,12 +15934,6 @@
         }
       
       ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "ParallelLength",
-        "type" : "literal"
-        }
-      
-      ],
     "https://w3id.org/steel/ProcessOntology/hasSymbol" : [ {
         "value" : "L_{c}",
         "lang" : "en",
@@ -17575,12 +16041,6 @@
       {
         "value" : "DX56_D_FZ2_WR00_43.TXT",
         "lang" : "de",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "PercentageElongation",
         "type" : "literal"
         }
       
@@ -17717,12 +16177,6 @@
       {
         "value" : "YS1-Fz-D1Q",
         "lang" : "de",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "PercentageElongationAfterFracture",
         "type" : "literal"
         }
       
@@ -17877,12 +16331,6 @@
         }
       
       ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "PercentageExtension",
-        "type" : "literal"
-        }
-      
-      ],
     "https://w3id.org/steel/ProcessOntology/hasSymbol" : [ {
         "value" : "eps-technisch",
         "lang" : "en",
@@ -17986,12 +16434,6 @@
         }
       
       ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "PercentagePermanentElongation",
-        "type" : "literal"
-        }
-      
-      ],
     "https://w3id.org/steel/ProcessOntology/hasTypicalUnit" : [ {
         "value" : "http://qudt.org/vocab/unit/PERCENT",
         "type" : "uri"
@@ -18085,12 +16527,6 @@
       {
         "value" : "DIN EN ISO 6892-1, 3.6.2",
         "lang" : "en",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "PercentagePermanentExtension",
         "type" : "literal"
         }
       
@@ -18279,12 +16715,6 @@
         }
       
       ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "PercentagePlasticExtensionAtMaximumForce",
-        "type" : "literal"
-        }
-      
-      ],
     "https://w3id.org/steel/ProcessOntology/hasSymbol" : [ {
         "value" : "A_{g}",
         "lang" : "en",
@@ -18436,12 +16866,6 @@
         }
       
       ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "PercentageReductionOfArea",
-        "type" : "literal"
-        }
-      
-      ],
     "https://w3id.org/steel/ProcessOntology/hasSymbol" : [ {
         "value" : "Z",
         "lang" : "en",
@@ -18536,12 +16960,6 @@
       {
         "value" : "DIN EN ISO 6892-1, 3.6.6",
         "lang" : "en",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "PercentageTotalExtensionAtFracture",
         "type" : "literal"
         }
       
@@ -18651,12 +17069,6 @@
         }
       
       ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "PercentageTotalExtensionAtMaximumForce",
-        "type" : "literal"
-        }
-      
-      ],
     "https://w3id.org/steel/ProcessOntology/hasSymbol" : [ {
         "value" : "Agt",
         "lang" : "en",
@@ -18744,12 +17156,6 @@
         }
       
       ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "PercentageYieldPointExtension",
-        "type" : "literal"
-        }
-      
-      ],
     "https://w3id.org/steel/ProcessOntology/hasSymbol" : [ {
         "value" : "Ae",
         "lang" : "en",
@@ -18833,12 +17239,6 @@
       {
         "value" : "DIN EN ISO 6892-1, 3.10.5",
         "lang" : "en",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "PermanentSetStrength",
         "type" : "literal"
         }
       
@@ -19025,12 +17425,6 @@
         }
       
       ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "PistonSpeed",
-        "type" : "literal"
-        }
-      
-      ],
     "https://w3id.org/steel/ProcessOntology/hasTypicalUnit" : [ {
         "value" : "http://qudt.org/vocab/unit/MilliM-PER-SEC",
         "type" : "uri"
@@ -19106,12 +17500,6 @@
       {
         "value" : "Standard definition specific",
         "lang" : "de",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "PlasticEngineeringStrain",
         "type" : "literal"
         }
       
@@ -19224,12 +17612,6 @@
         "type" : "literal"
         }
       
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "PlasticityModel",
-        "type" : "literal"
-        }
-      
       ]
     }
   ,
@@ -19300,12 +17682,6 @@
     "https://w3id.org/steel/ProcessOntology/hasLabelSource" : [ {
         "value" : "LS-DYNA_Manual_Volume_2",
         "lang" : "en",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "PoissonRatio",
         "type" : "literal"
         }
       
@@ -19412,12 +17788,6 @@
         }
       
       ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "PoissonsRatio",
-        "type" : "literal"
-        }
-      
-      ],
     "https://w3id.org/steel/ProcessOntology/hasSymbol" : [ {
         "value" : "nue",
         "lang" : "en",
@@ -19501,12 +17871,6 @@
       {
         "value" : "General Knowledge",
         "lang" : "en",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "PostProcessingSoftware",
         "type" : "literal"
         }
       
@@ -19650,12 +18014,6 @@
         }
       
       ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "PreliminaryForce",
-        "type" : "literal"
-        }
-      
-      ],
     "https://w3id.org/steel/ProcessOntology/hasTypicalUnit" : [ {
         "value" : "http://qudt.org/vocab/unit/KiloN",
         "type" : "uri"
@@ -19751,12 +18109,6 @@
         }
       
       ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "PressureChamber",
-        "type" : "literal"
-        }
-      
-      ],
     "https://w3id.org/steel/ProcessOntology/hasSymbol" : [ {
         "value" : "p",
         "lang" : "en",
@@ -19845,12 +18197,6 @@
     "https://w3id.org/steel/ProcessOntology/hasLabelSource" : [ {
         "value" : "LS-DYNA_Manual_Volume_2",
         "lang" : "en",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "PrincipalStressLimit4PostProcessing",
         "type" : "literal"
         }
       
@@ -20020,12 +18366,6 @@
         "type" : "literal"
         }
       
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "ProjectName",
-        "type" : "literal"
-        }
-      
       ]
     }
   ,
@@ -20162,12 +18502,6 @@
         "type" : "literal"
         }
       
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "ProjectNumber",
-        "type" : "literal"
-        }
-      
       ]
     }
   ,
@@ -20238,12 +18572,6 @@
       {
         "value" : "ISO 26203-2, 2011, 4",
         "lang" : "en",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "ProofStrengthPlasticExtension",
         "type" : "literal"
         }
       
@@ -20335,12 +18663,6 @@
         }
       
       ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "ProofStrengthTotalExtension",
-        "type" : "literal"
-        }
-      
-      ],
     "https://w3id.org/steel/ProcessOntology/hasSymbol" : [ {
         "value" : "Rt",
         "lang" : "en",
@@ -20424,12 +18746,6 @@
     "https://w3id.org/steel/ProcessOntology/hasLabelSource" : [ {
         "value" : "AFZ1-Fz-S1Q.xlsx",
         "lang" : "en",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "ProofStrength_0.2Percentage",
         "type" : "literal"
         }
       
@@ -20527,12 +18843,6 @@
     "https://w3id.org/steel/ProcessOntology/hasLabelSource" : [ {
         "value" : "AFZ1-Fz-S1Q.xlsx",
         "lang" : "en",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "ProofStrength_1Percentage",
         "type" : "literal"
         }
       
@@ -20694,12 +19004,6 @@
         }
       
       ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "PunchDiameter",
-        "type" : "literal"
-        }
-      
-      ],
     "https://w3id.org/steel/ProcessOntology/hasSymbol" : [ {
         "value" : "D",
         "lang" : "en",
@@ -20776,12 +19080,6 @@
     "https://w3id.org/steel/ProcessOntology/hasLabelSource" : [ {
         "value" : "AFZ1-NZ50-25-D1Q",
         "lang" : "en",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "PunchDisplacement",
         "type" : "literal"
         }
       
@@ -20885,12 +19183,6 @@
       {
         "value" : "DIN EN ISO 12004-2: 2021_07, 13",
         "lang" : "en",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "PunchVelocity",
         "type" : "literal"
         }
       
@@ -21132,12 +19424,6 @@
         }
       
       ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "RValue",
-        "type" : "literal"
-        }
-      
-      ],
     "https://w3id.org/steel/ProcessOntology/hasSymbol" : [ {
         "value" : "r-ges",
         "lang" : "en",
@@ -21265,12 +19551,6 @@
         }
       
       ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "Radius",
-        "type" : "literal"
-        }
-      
-      ],
     "https://w3id.org/steel/ProcessOntology/hasTypicalUnit" : [ {
         "value" : "http://qudt.org/vocab/unit/MilliM",
         "type" : "uri"
@@ -21340,12 +19620,6 @@
       {
         "value" : "DIN EN ISO 16808:2022-08, 4",
         "lang" : "de",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "RadiusCurvature",
         "type" : "literal"
         }
       
@@ -21437,12 +19711,6 @@
         }
       
       ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "RadiusDie",
-        "type" : "literal"
-        }
-      
-      ],
     "https://w3id.org/steel/ProcessOntology/hasSymbol" : [ {
         "value" : "R_1",
         "lang" : "en",
@@ -21530,12 +19798,6 @@
         }
       
       ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "RateSensitivityOfSlip",
-        "type" : "literal"
-        }
-      
-      ],
     "https://w3id.org/steel/ProcessOntology/hasSymbol" : [ {
         "value" : "m",
         "lang" : "en",
@@ -21612,12 +19874,6 @@
     "https://w3id.org/steel/ProcessOntology/hasLabelSource" : [ {
         "value" : "LS-DYNA_Manual_Volume_2",
         "lang" : "en",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "ReferenceElementSize",
         "type" : "literal"
         }
       
@@ -21731,12 +19987,6 @@
         }
       
       ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "ReferenceShearRate",
-        "type" : "literal"
-        }
-      
-      ],
     "https://w3id.org/steel/ProcessOntology/hasSymbolLatex" : [ {
         "value" : "\\dot{\\vargamma}_{0}",
         "lang" : "en",
@@ -21813,12 +20063,6 @@
     "https://w3id.org/steel/ProcessOntology/hasLabelSource" : [ {
         "value" : "LS-DYNA_Manual_Volume_2",
         "lang" : "en",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "ReferenceTemperature",
         "type" : "literal"
         }
       
@@ -21901,12 +20145,6 @@
         }
       
       ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "RefernceShearRate",
-        "type" : "literal"
-        }
-      
-      ],
     "https://w3id.org/steel/ProcessOntology/hasTypicalUnit" : [ {
         "value" : "https://qudt.org/vocab/unit/PER-SEC",
         "type" : "uri"
@@ -21976,12 +20214,6 @@
       {
         "value" : "DIN EN ISO 6892-1, 3.17",
         "lang" : "en",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "RelativeStandardDeviationOfTheSlope",
         "type" : "literal"
         }
       
@@ -22096,12 +20328,6 @@
         "type" : "literal"
         }
       
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "Remark",
-        "type" : "literal"
-        }
-      
       ]
     }
   ,
@@ -22163,12 +20389,6 @@
         "type" : "literal"
         }
       
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "ResultsFile",
-        "type" : "literal"
-        }
-      
       ]
     }
   ,
@@ -22213,12 +20433,6 @@
     "http://www.w3.org/2004/02/skos/core#related" : [ {
         "value" : "https://w3id.org/steel/ProcessOntology/TestingDirection",
         "type" : "uri"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "RollingDirection",
-        "type" : "literal"
         }
       
       ]
@@ -22301,12 +20515,6 @@
     "https://w3id.org/steel/ProcessOntology/hasLabelSource" : [ {
         "value" : "AFZ1-NZ50-25-D1Q",
         "lang" : "en",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "SampleCode",
         "type" : "literal"
         }
       
@@ -22469,12 +20677,6 @@
         "type" : "literal"
         }
       
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "SampleIdentifier",
-        "type" : "literal"
-        }
-      
       ]
     }
   ,
@@ -22548,12 +20750,6 @@
         "type" : "literal"
         }
       
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "SampleIdentifier-2",
-        "type" : "literal"
-        }
-      
       ]
     }
   ,
@@ -22611,12 +20807,6 @@
       {
         "value" : "linguee",
         "lang" : "en",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "SampleInfos",
         "type" : "literal"
         }
       
@@ -22696,12 +20886,6 @@
       {
         "value" : "linguee",
         "lang" : "en",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "SampleProduction",
         "type" : "literal"
         }
       
@@ -22796,12 +20980,6 @@
         "type" : "literal"
         }
       
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "SampleType",
-        "type" : "literal"
-        }
-      
       ]
     }
   ,
@@ -22892,12 +21070,6 @@
         "type" : "literal"
         }
       
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "SerialNumber",
-        "type" : "literal"
-        }
-      
       ]
     }
   ,
@@ -22974,12 +21146,6 @@
     "https://w3id.org/steel/ProcessOntology/hasLabelSource" : [ {
         "value" : "YS1-Sz0\u00B0-S1L",
         "lang" : "de",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "ShearLength",
         "type" : "literal"
         }
       
@@ -23105,12 +21271,6 @@
     "https://w3id.org/steel/ProcessOntology/hasLabelSource" : [ {
         "value" : "K-Item",
         "lang" : "de",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "SheetThickness",
         "type" : "literal"
         }
       
@@ -23305,12 +21465,6 @@
         "type" : "literal"
         }
       
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "SlipSystemNumber",
-        "type" : "literal"
-        }
-      
       ]
     }
   ,
@@ -23375,12 +21529,6 @@
       {
         "value" : "ISO 26203-2, 2011, 4",
         "lang" : "en",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "SlopeElasticPartStressStrainCurve",
         "type" : "literal"
         }
       
@@ -23501,12 +21649,6 @@
         "type" : "literal"
         }
       
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "Software",
-        "type" : "literal"
-        }
-      
       ]
     }
   ,
@@ -23618,12 +21760,6 @@
         }
       
       ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "SpecificHeatCapacity",
-        "type" : "literal"
-        }
-      
-      ],
     "https://w3id.org/steel/ProcessOntology/hasTypicalUnit" : [ {
         "value" : "https://w3id.org/steel/ProcessOntology/J-Per-Gm-K",
         "type" : "uri"
@@ -23696,12 +21832,6 @@
         "type" : "literal"
         }
       
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "SpecificPlasticWork",
-        "type" : "literal"
-        }
-      
       ]
     }
   ,
@@ -23760,12 +21890,6 @@
       {
         "value" : "General Knowledge",
         "lang" : "en",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "SpecificPlasticWorkValue",
         "type" : "literal"
         }
       
@@ -23845,12 +21969,6 @@
       {
         "value" : "DIN EN ISO 12004-2: 2021_07, 12",
         "lang" : "de",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "SpecimenWidth",
         "type" : "literal"
         }
       
@@ -23996,12 +22114,6 @@
         }
       
       ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "StandardDeviationOfTheSlope",
-        "type" : "literal"
-        }
-      
-      ],
     "https://w3id.org/steel/ProcessOntology/hasSymbol" : [ {
         "value" : "Sm",
         "lang" : "en",
@@ -24117,12 +22229,6 @@
         "type" : "literal"
         }
       
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "Steel",
-        "type" : "literal"
-        }
-      
       ]
     }
   ,
@@ -24205,12 +22311,6 @@
     "http://www.w3.org/2004/02/skos/core#related" : [ {
         "value" : "https://w3id.org/steel/ProcessOntology/Hooke",
         "type" : "uri"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "StiffnessComponent",
-        "type" : "literal"
         }
       
       ],
@@ -24301,12 +22401,6 @@
       {
         "value" : "ISO 26203-2, 2011, 4",
         "lang" : "en",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "Strain",
         "type" : "literal"
         }
       
@@ -24488,12 +22582,6 @@
         }
       
       ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "StrainRate",
-        "type" : "literal"
-        }
-      
-      ],
     "https://w3id.org/steel/ProcessOntology/hasSymbol" : [ {
         "value" : "eLe",
         "lang" : "en",
@@ -24585,12 +22673,6 @@
         "type" : "literal"
         }
       
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "StrainRateFormulationFlag",
-        "type" : "literal"
-        }
-      
       ]
     }
   ,
@@ -24653,12 +22735,6 @@
         }
       
       ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "StrainRateScaleIdendifier",
-        "type" : "literal"
-        }
-      
-      ],
     "https://w3id.org/steel/ProcessOntology/hasTypicalUnitLabel" : [ {
         "value" : "-",
         "type" : "literal"
@@ -24716,12 +22792,6 @@
     "https://w3id.org/steel/ProcessOntology/hasLabelSource" : [ {
         "value" : "LS-DYNA_Manual_Volume_2",
         "lang" : "en",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "StrainRateScaleParameterC",
         "type" : "literal"
         }
       
@@ -24789,12 +22859,6 @@
     "https://w3id.org/steel/ProcessOntology/hasLabelSource" : [ {
         "value" : "LS-DYNA_Manual_Volume_2",
         "lang" : "en",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "StrainRateScaleParameterP",
         "type" : "literal"
         }
       
@@ -24880,12 +22944,6 @@
       {
         "value" : "DIN EN ISO 6892-1, 3.10",
         "lang" : "en",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "Stress",
         "type" : "literal"
         }
       
@@ -25039,12 +23097,6 @@
         }
       
       ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "StressRate",
-        "type" : "literal"
-        }
-      
-      ],
     "https://w3id.org/steel/ProcessOntology/hasSymbol" : [ {
         "value" : "R",
         "lang" : "en",
@@ -25187,12 +23239,6 @@
         "type" : "literal"
         }
       
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "Supplier",
-        "type" : "literal"
-        }
-      
       ]
     }
   ,
@@ -25251,12 +23297,6 @@
     "https://w3id.org/steel/ProcessOntology/hasLabelSource" : [ {
         "value" : "LS-DYNA_Manual_Volume_2",
         "lang" : "en",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "TangentYieldModulus",
         "type" : "literal"
         }
       
@@ -25339,12 +23379,6 @@
         }
       
       ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "TargetClampingForce",
-        "type" : "literal"
-        }
-      
-      ],
     "https://w3id.org/steel/ProcessOntology/hasTypicalUnit" : [ {
         "value" : "http://qudt.org/vocab/unit/KiloN",
         "type" : "uri"
@@ -25414,12 +23448,6 @@
     "https://w3id.org/steel/ProcessOntology/hasLabelSource" : [ {
         "value" : "LS-DYNA_Manual_Volume_2",
         "lang" : "en",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "TaylorQuinneyCoefficient",
         "type" : "literal"
         }
       
@@ -25546,12 +23574,6 @@
       {
         "value" : "YS1-Fz-D1Q",
         "lang" : "de",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "TensileStrength",
         "type" : "literal"
         }
       
@@ -25749,12 +23771,6 @@
         "type" : "literal"
         }
       
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "TensileTestingMachine",
-        "type" : "literal"
-        }
-      
       ]
     }
   ,
@@ -25882,12 +23898,6 @@
         "type" : "literal"
         }
       
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "TestDirection",
-        "type" : "literal"
-        }
-      
       ]
     }
   ,
@@ -25982,12 +23992,6 @@
       {
         "value" : "DIN EN ISO 6892-1, Table 1",
         "lang" : "en",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "TestPiece",
         "type" : "literal"
         }
       
@@ -26190,12 +24194,6 @@
         "type" : "literal"
         }
       
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "TestPieceGeometry",
-        "type" : "literal"
-        }
-      
       ]
     }
   ,
@@ -26259,12 +24257,6 @@
     "https://w3id.org/steel/ProcessOntology/hasLabelSource" : [ {
         "value" : "YS1-Fz-D1Q",
         "lang" : "de",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "TestPieceLength",
         "type" : "literal"
         }
       
@@ -26412,12 +24404,6 @@
         "type" : "literal"
         }
       
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "TestStandard",
-        "type" : "literal"
-        }
-      
       ]
     }
   ,
@@ -26475,12 +24461,6 @@
     "https://w3id.org/steel/ProcessOntology/hasLabelSource" : [ {
         "value" : "YS1-Fz-D1Q",
         "lang" : "de",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "TestTemperatur",
         "type" : "literal"
         }
       
@@ -26623,12 +24603,6 @@
         }
       
       ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "TestTemperature",
-        "type" : "literal"
-        }
-      
-      ],
     "https://w3id.org/steel/ProcessOntology/hasSymbol" : [ {
         "value" : "T",
         "lang" : "en",
@@ -26718,12 +24692,6 @@
       {
         "value" : "Standard definition specific",
         "lang" : "en",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "TestTime",
         "type" : "literal"
         }
       
@@ -26820,12 +24788,6 @@
         "type" : "literal"
         }
       
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "Tester",
-        "type" : "literal"
-        }
-      
       ]
     }
   ,
@@ -26896,12 +24858,6 @@
     "https://w3id.org/steel/ProcessOntology/hasLabelSource" : [ {
         "value" : "AFZ1-Fz-S1Q.xlsx",
         "lang" : "de",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "TestingDirection",
         "type" : "literal"
         }
       
@@ -26999,12 +24955,6 @@
       {
         "value" : "deepl translator",
         "lang" : "en",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "TestingFacility",
         "type" : "literal"
         }
       
@@ -27111,12 +25061,6 @@
         "type" : "literal"
         }
       
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "TestingRate",
-        "type" : "literal"
-        }
-      
       ]
     }
   ,
@@ -27196,12 +25140,6 @@
         "type" : "literal"
         }
       
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "Texture",
-        "type" : "literal"
-        }
-      
       ]
     }
   ,
@@ -27259,12 +25197,6 @@
     "https://w3id.org/steel/ProcessOntology/hasLabelSource" : [ {
         "value" : "AFZ1-Fz-S1Q.xlsx",
         "lang" : "de",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "ThicknessAfterFracture1",
         "type" : "literal"
         }
       
@@ -27337,12 +25269,6 @@
     "https://w3id.org/steel/ProcessOntology/hasLabelSource" : [ {
         "value" : "AFZ1-Fz-S1Q.xlsx",
         "lang" : "de",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "ThicknessAfterFracture2",
         "type" : "literal"
         }
       
@@ -27538,12 +25464,6 @@
         }
       
       ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "Time",
-        "type" : "literal"
-        }
-      
-      ],
     "https://w3id.org/steel/ProcessOntology/hasSymbol" : [ {
         "value" : "t",
         "lang" : "en",
@@ -27669,12 +25589,6 @@
       {
         "value" : "YS1-Fz-D1Q",
         "lang" : "de",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "TimeDependentEngineeringStrainRate",
         "type" : "literal"
         }
       
@@ -27968,12 +25882,6 @@
         "type" : "literal"
         }
       
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "TimeStamp",
-        "type" : "literal"
-        }
-      
       ]
     }
   ,
@@ -28077,12 +25985,6 @@
         }
       
       ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "TotalEngineeringStrain",
-        "type" : "literal"
-        }
-      
-      ],
     "https://w3id.org/steel/ProcessOntology/hasSymbol" : [ {
         "value" : "et",
         "lang" : "en",
@@ -28166,12 +26068,6 @@
       {
         "value" : "DIN EN ISO 6892-1, Table 1",
         "lang" : "en",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "TotalLength",
         "type" : "literal"
         }
       
@@ -28269,12 +26165,6 @@
         }
       
       ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "TransitionRadius",
-        "type" : "literal"
-        }
-      
-      ],
     "https://w3id.org/steel/ProcessOntology/hasSymbol" : [ {
         "value" : "r",
         "lang" : "en",
@@ -28349,12 +26239,6 @@
         }
       
       ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "TrueFractureStrain",
-        "type" : "literal"
-        }
-      
-      ],
     "https://w3id.org/steel/ProcessOntology/isBasedOn" : [ {
         "value" : "https://w3id.org/steel/ProcessOntology/TrueStrain",
         "type" : "uri"
@@ -28405,12 +26289,6 @@
     "https://w3id.org/steel/ProcessOntology/hasLabelSource" : [ {
         "value" : "AFZ1-Fz-S1Q.xlsx",
         "lang" : "en",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "TrueFractureStress",
         "type" : "literal"
         }
       
@@ -28500,12 +26378,6 @@
         }
       
       ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "TruePlasticStrain",
-        "type" : "literal"
-        }
-      
-      ],
     "https://w3id.org/steel/ProcessOntology/hasTypicalUnit" : [ {
         "value" : "http://qudt.org/vocab/unit/UNITLESS",
         "type" : "uri"
@@ -28581,12 +26453,6 @@
     "https://w3id.org/steel/ProcessOntology/hasLabelSource" : [ {
         "value" : "YS1-Fz-D1Q",
         "lang" : "de",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "TruePlasticStrainAtFracture",
         "type" : "literal"
         }
       
@@ -28678,12 +26544,6 @@
       {
         "value" : "DIN EN ISO 16808:2022-08, 4",
         "lang" : "en",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "TruePlasticThicknessStrain",
         "type" : "literal"
         }
       
@@ -28783,12 +26643,6 @@
     "https://w3id.org/steel/ProcessOntology/hasLabelSource" : [ {
         "value" : "AFZ1-Fz-S1Q.xlsx",
         "lang" : "en",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "TrueStrain",
         "type" : "literal"
         }
       
@@ -28946,12 +26800,6 @@
         }
       
       ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "TrueStress",
-        "type" : "literal"
-        }
-      
-      ],
     "https://w3id.org/steel/ProcessOntology/hasSymbol" : [ {
         "value" : "Sigw",
         "lang" : "en",
@@ -29052,12 +26900,6 @@
     "https://w3id.org/steel/ProcessOntology/hasLabelSource" : [ {
         "value" : "YS1-Fz-D1Q",
         "lang" : "de",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "TrueStressAtFracture",
         "type" : "literal"
         }
       
@@ -29177,12 +27019,6 @@
         }
       
       ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "TrueThicknessStrain",
-        "type" : "literal"
-        }
-      
-      ],
     "https://w3id.org/steel/ProcessOntology/hasSymbol" : [ {
         "value" : "\u03B5_3",
         "lang" : "en",
@@ -29270,12 +27106,6 @@
         }
       
       ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "TrueTotalStrain",
-        "type" : "literal"
-        }
-      
-      ],
     "https://w3id.org/steel/ProcessOntology/hasTypicalUnit" : [ {
         "value" : "http://qudt.org/vocab/unit/UNITLESS",
         "type" : "uri"
@@ -29345,12 +27175,6 @@
     "https://w3id.org/steel/ProcessOntology/hasLabelSource" : [ {
         "value" : "AFZ1-Fz-S1Q.xlm",
         "lang" : "de",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "TrueWidthStrain",
         "type" : "literal"
         }
       
@@ -29574,12 +27398,6 @@
         }
       
       ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "UpperYieldStrength",
-        "type" : "literal"
-        }
-      
-      ],
     "https://w3id.org/steel/ProcessOntology/hasSymbol" : [ {
         "value" : "ReH",
         "lang" : "en",
@@ -29663,12 +27481,6 @@
       {
         "value" : "General Knowledge",
         "lang" : "en",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "User",
         "type" : "literal"
         }
       
@@ -29782,12 +27594,6 @@
         }
       
       ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "Width",
-        "type" : "literal"
-        }
-      
-      ],
     "https://w3id.org/steel/ProcessOntology/hasSymbol" : [ {
         "value" : "B",
         "lang" : "en",
@@ -29874,12 +27680,6 @@
         }
       
       ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "WidthAfterFracture1",
-        "type" : "literal"
-        }
-      
-      ],
     "https://w3id.org/steel/ProcessOntology/hasTypicalUnit" : [ {
         "value" : "http://qudt.org/vocab/unit/MilliM",
         "type" : "uri"
@@ -29948,12 +27748,6 @@
     "https://w3id.org/steel/ProcessOntology/hasLabelSource" : [ {
         "value" : "AFZ1-Fz-S1Q.xlsx",
         "lang" : "de",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "WidthAfterFracture2",
         "type" : "literal"
         }
       
@@ -30066,12 +27860,6 @@
         }
       
       ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "WidthChange",
-        "type" : "literal"
-        }
-      
-      ],
     "https://w3id.org/steel/ProcessOntology/hasTypicalUnit" : [ {
         "value" : "http://qudt.org/vocab/unit/MilliM",
         "type" : "uri"
@@ -30147,12 +27935,6 @@
     "https://w3id.org/steel/ProcessOntology/hasLabelSource" : [ {
         "value" : "AFZ1-Fz-S1Q.xlm",
         "lang" : "de",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "WidthStrain",
         "type" : "literal"
         }
       
@@ -30245,12 +28027,6 @@
     "https://w3id.org/steel/ProcessOntology/hasLabelSource" : [ {
         "value" : "AFZ1-ST-D1",
         "lang" : "en",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "Work",
         "type" : "literal"
         }
       
@@ -30398,12 +28174,6 @@
         }
       
       ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "YieldForce_0.2Percentage",
-        "type" : "literal"
-        }
-      
-      ],
     "https://w3id.org/steel/ProcessOntology/hasSymbol" : [ {
         "value" : "Fp02",
         "lang" : "en",
@@ -30507,12 +28277,6 @@
         }
       
       ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "YieldStrength",
-        "type" : "literal"
-        }
-      
-      ],
     "https://w3id.org/steel/ProcessOntology/hasTypicalUnit" : [ {
         "value" : "http://qudt.org/vocab/unit/MegaPA",
         "type" : "uri"
@@ -30606,12 +28370,6 @@
     "https://w3id.org/steel/ProcessOntology/hasLabelSource" : [ {
         "value" : "LS-DYNA_Manual_Volume_2",
         "lang" : "en",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "YieldStress",
         "type" : "literal"
         }
       
@@ -30735,12 +28493,6 @@
         }
       
       ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "YieldingIdentifier",
-        "type" : "literal"
-        }
-      
-      ],
     "https://w3id.org/steel/ProcessOntology/hasTypicalUnitLabel" : [ {
         "value" : "-",
         "type" : "literal"
@@ -30804,12 +28556,6 @@
     "https://w3id.org/steel/ProcessOntology/hasLabelSource" : [ {
         "value" : "LS-DYNA_Manual_Volume_2",
         "lang" : "en",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "YieldingIdentifierIsoThermal",
         "type" : "literal"
         }
       
@@ -30896,12 +28642,6 @@
     "https://w3id.org/steel/ProcessOntology/hasLabelSource" : [ {
         "value" : "LS-DYNA_Manual_Volume_2",
         "lang" : "en",
-        "type" : "literal"
-        }
-      
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "YoungsModulus",
         "type" : "literal"
         }
       

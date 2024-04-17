@@ -7,6 +7,5 @@
 <https://w3id.org/steel/ProcessOntology/PercentagePermanentElongation> <http://www.w3.org/2004/02/skos/core#preflabel> "PercentagePermanentElongation"@en .
 <https://w3id.org/steel/ProcessOntology/PercentagePermanentElongation> <https://w3id.org/steel/ProcessOntology/hasLabelSource> "DIN EN ISO 6892-1, 3.4.1"@de .
 <https://w3id.org/steel/ProcessOntology/PercentagePermanentElongation> <https://w3id.org/steel/ProcessOntology/hasLabelSource> "DIN EN ISO 6892-1, 3.4.1"@en .
-<https://w3id.org/steel/ProcessOntology/PercentagePermanentElongation> <https://w3id.org/steel/ProcessOntology/hasShortId> "PercentagePermanentElongation" .
 <https://w3id.org/steel/ProcessOntology/PercentagePermanentElongation> <https://w3id.org/steel/ProcessOntology/hasTypicalUnit> <http://qudt.org/vocab/unit/PERCENT> .
 <https://w3id.org/steel/ProcessOntology/PercentagePermanentElongation> <https://w3id.org/steel/ProcessOntology/hasTypicalUnitLabel> "%" .

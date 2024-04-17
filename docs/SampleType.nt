@@ -12,4 +12,3 @@
 <https://w3id.org/steel/ProcessOntology/SampleType> <https://w3id.org/steel/ProcessOntology/hasExampleData> "Flachzugprobe" .
 <https://w3id.org/steel/ProcessOntology/SampleType> <https://w3id.org/steel/ProcessOntology/hasLabelSource> "K-Item"@de .
 <https://w3id.org/steel/ProcessOntology/SampleType> <https://w3id.org/steel/ProcessOntology/hasLabelSource> "linguee"@en .
-<https://w3id.org/steel/ProcessOntology/SampleType> <https://w3id.org/steel/ProcessOntology/hasShortId> "SampleType" .

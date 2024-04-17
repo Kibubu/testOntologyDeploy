@@ -17,7 +17,6 @@
 <https://w3id.org/steel/ProcessOntology/MaximumForce> <https://w3id.org/steel/ProcessOntology/hasLabelSource> "ISO 26203-2, 2011, 4"@en .
 <https://w3id.org/steel/ProcessOntology/MaximumForce> <https://w3id.org/steel/ProcessOntology/hasLabelSource> "K-Item"@de .
 <https://w3id.org/steel/ProcessOntology/MaximumForce> <https://w3id.org/steel/ProcessOntology/hasLabelSource> "Standard definition specific"@de .
-<https://w3id.org/steel/ProcessOntology/MaximumForce> <https://w3id.org/steel/ProcessOntology/hasShortId> "MaximumForce" .
 <https://w3id.org/steel/ProcessOntology/MaximumForce> <https://w3id.org/steel/ProcessOntology/hasSymbol> "Fm"@en .
 <https://w3id.org/steel/ProcessOntology/MaximumForce> <https://w3id.org/steel/ProcessOntology/hasSymbolLatex> "F_{m}"@en .
 <https://w3id.org/steel/ProcessOntology/MaximumForce> <https://w3id.org/steel/ProcessOntology/hasSymbolLatex> "Fm"@en .

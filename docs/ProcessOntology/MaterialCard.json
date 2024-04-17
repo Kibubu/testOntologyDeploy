@@ -124,12 +124,6 @@
         "type" : "literal"
         }
       
-      ],
-    "https://w3id.org/steel/ProcessOntology/hasShortId" : [ {
-        "value" : "MaterialCard",
-        "type" : "literal"
-        }
-      
       ]
     }
   }

@@ -24,6 +24,12 @@
         "lang" : "en",
         "type" : "literal"
         }
+      ,
+      {
+        "value" : "\"original thickness of a flat test piece or wall thickness of a tube\" [DIN EN ISO 6892-1, Table 1]",
+        "lang" : "en",
+        "type" : "literal"
+        }
       
       ],
     "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
@@ -134,6 +140,11 @@
         "value" : "1490",
         "type" : "literal"
         }
+      ,
+      {
+        "value" : "1499",
+        "type" : "literal"
+        }
       
       ],
     "https://w3id.org/steel/ProcessOntology/hasLabelSource" : [ {
@@ -162,6 +173,24 @@
       ,
       {
         "value" : "YS1-Fz-D1Q",
+        "lang" : "de",
+        "type" : "literal"
+        }
+      ,
+      {
+        "value" : "YS1-FzR4-S1Q",
+        "lang" : "de",
+        "type" : "literal"
+        }
+      ,
+      {
+        "value" : "YS1-FzR4-S1Q",
+        "lang" : "en",
+        "type" : "literal"
+        }
+      ,
+      {
+        "value" : "YS1-Sz0\u00B0-S1L",
         "lang" : "de",
         "type" : "literal"
         }

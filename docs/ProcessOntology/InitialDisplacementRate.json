@@ -45,7 +45,7 @@
       
       ],
     "http://www.w3.org/2004/02/skos/core#altlabel" : [ {
-        "value" : "Abzugsgeschw.",
+        "value" : "Abzugsgeschwindigkeit",
         "lang" : "de",
         "type" : "literal"
         }
@@ -53,6 +53,12 @@
       {
         "value" : "Initial displacement rate v0",
         "lang" : "en",
+        "type" : "literal"
+        }
+      ,
+      {
+        "value" : "P\u00FCfgeschwindigkeit",
+        "lang" : "de",
         "type" : "literal"
         }
       ,

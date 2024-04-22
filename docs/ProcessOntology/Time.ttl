@@ -5,6 +5,7 @@
 <https://w3id.org/steel/ProcessOntology/Time> <http://www.w3.org/2000/01/rdf-schema#label> "Time"@en .
 <https://w3id.org/steel/ProcessOntology/Time> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://material-digital.de/pmdco/ValueObject> .
 <https://w3id.org/steel/ProcessOntology/Time> <http://purl.org/dc/terms/description> "Authors"@de .
+<https://w3id.org/steel/ProcessOntology/Time> <http://purl.org/dc/terms/description> "\"Recorded time during the hydraulic bulge test.\" [Authors]"@en .
 <https://w3id.org/steel/ProcessOntology/Time> <http://purl.org/dc/terms/description> "\"Zeit während des hydraulischen Tiefungsversuchs.\" [wes]"@de .
 <https://w3id.org/steel/ProcessOntology/Time> <http://purl.org/dc/terms/description> "\"0.694\" [The time when the data point is recorded in relation to the start. ]"@en .
 <https://w3id.org/steel/ProcessOntology/Time> <http://purl.org/dc/terms/description> "\"The time when the data point is recorded in relation to the start. \" [Authors]"@en .
@@ -32,9 +33,12 @@
 <https://w3id.org/steel/ProcessOntology/Time> <https://w3id.org/steel/ProcessOntology/hasLabelSource> "DIN EN ISO 6892-1, Abb. 9"@de .
 <https://w3id.org/steel/ProcessOntology/Time> <https://w3id.org/steel/ProcessOntology/hasLabelSource> "DIN EN ISO 6892-1, Fig. 9"@en .
 <https://w3id.org/steel/ProcessOntology/Time> <https://w3id.org/steel/ProcessOntology/hasLabelSource> "AFZ1-Fz-S1Q.xlsx"@de .
-<https://w3id.org/steel/ProcessOntology/Time> <https://w3id.org/steel/ProcessOntology/hasLabelSource> "AFZ1-NZ50-25-D1Q"@en .
-<https://w3id.org/steel/ProcessOntology/Time> <https://w3id.org/steel/ProcessOntology/hasLabelSource> "AFZ1-ST-D1"@en .
 <https://w3id.org/steel/ProcessOntology/Time> <https://w3id.org/steel/ProcessOntology/hasLabelSource> "AFZ-BU-S1.TXT"@de .
+<https://w3id.org/steel/ProcessOntology/Time> <https://w3id.org/steel/ProcessOntology/hasLabelSource> "AFZ1-ST-D1"@en .
+<https://w3id.org/steel/ProcessOntology/Time> <https://w3id.org/steel/ProcessOntology/hasLabelSource> "YS1-Sz0°-S1L"@de .
+<https://w3id.org/steel/ProcessOntology/Time> <https://w3id.org/steel/ProcessOntology/hasLabelSource> "YS1-FzR4-S1Q"@de .
+<https://w3id.org/steel/ProcessOntology/Time> <https://w3id.org/steel/ProcessOntology/hasLabelSource> "YS1-FzR4-S1Q"@en .
+<https://w3id.org/steel/ProcessOntology/Time> <https://w3id.org/steel/ProcessOntology/hasLabelSource> "AFZ1-NZ50-25-D1Q"@en .
 <https://w3id.org/steel/ProcessOntology/Time> <https://w3id.org/steel/ProcessOntology/hasSymbol> "t"@en .
 <https://w3id.org/steel/ProcessOntology/Time> <https://w3id.org/steel/ProcessOntology/hasSymbolLatex> "t"@en .
 <https://w3id.org/steel/ProcessOntology/Time> <https://w3id.org/steel/ProcessOntology/hasTypicalUnit> <http://qudt.org/vocab/unit/SEC> .

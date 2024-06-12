@@ -1591,6 +1591,14 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
   rdfs:label "output"@en;
   skos:preflabel "output"@en .
 
+:SpecimenCrossSection
+  rdf:type skos:Concept , owl:Class;
+  rdfs:label "SpecimenCrossSection"@en;
+  rdfs:subClassOf pmdco:ValueObject;
+  dcterms:description "Cross section of a specimen, used for example in tensile tests"@en;
+  skos:altlabel "Specimen cross section"@en , "Probenquerschnitt"@de;
+  skos:preflabel "SpecimenCrossSection"@en .
+
 :SlipSystemNumber
   rdf:type skos:Concept , owl:Class;
   rdfs:label "SlipSystemNumber"@en;
@@ -3064,6 +3072,12 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
   rdfs:label "hasTrueStrain"@en;
   rdfs:range :TrueStrain;
   skos:preflabel "hasTrueStrain"@en .
+
+:hasSpecimenCrossSection_Object
+  rdf:type owl:ObjectProperty , rdf:Property;
+  rdfs:label "hasSpecimenCrossSection"@en;
+  rdfs:range :SpecimenCrossSection;
+  skos:preflabel "hasSpecimenCrossSection"@en .
 
 :hasMinimumCrosssectionAfterFracture_Object
   rdf:type owl:ObjectProperty , rdf:Property;
@@ -7062,6 +7076,11 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
   rdfs:label "has MaterialCard";
   rdfs:seeAlso :MaterialCard , :hasMaterialCard_Object .
 
+:hasSpecimenCrossSection
+  rdf:type rdf:Property , owl:DatatypeProperty;
+  rdfs:label "has SpecimenCrossSection";
+  rdfs:seeAlso :SpecimenCrossSection , :hasSpecimenCrossSection_Object .
+
 :Software
   rdf:type owl:Class , skos:Concept;
   rdfs:label "Software"@en , "Software"@de , "software"@en;
@@ -8157,7 +8176,7 @@ PREFIX xsd:      <http://www.w3.org/2001/XMLSchema#>
   rdfs:label "StahlDigital Vocabulary"@en;
   dc:description "Vocabulary of project StahlDigital"@en;
   dcterms:contributor "Clemens Fehrenbach, Alexander Butz, Alexander Wessel, Andreas Trondl, Silke Klitschke, Paul Zierep, Lukas Morand, Dirk Helm";
-  dcterms:date "2024-06-12T04:44:06+00:00";
+  dcterms:date "2024-06-12T07:44:06+00:00";
   owl:versionInfo "0.1 (preliminary)"@en;
   skos:prefLabel "StahlDigital Vocabulary"@en .
 
